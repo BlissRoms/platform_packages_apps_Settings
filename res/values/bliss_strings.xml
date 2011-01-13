@@ -27,4 +27,7 @@
     <!-- Bliss maintainer -->
     <string name="maintainer">Maintainer</string>
     <string name="bliss_maintainer">Unofficial Maintainer</string>
+
+    <!-- Hostname setting -->
+    <string name="device_hostname">Device hostname</string>
 </resources>
