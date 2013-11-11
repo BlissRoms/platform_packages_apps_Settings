@@ -123,4 +123,8 @@
     <string name="increasing_ring_min_volume_title">Start volume</string>
     <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 
+   <!-- Show CPU info-->
+    <string name="show_cpu_info">Show CPU info</string>
+    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+
 </resources>
