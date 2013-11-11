@@ -141,6 +141,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private static final String DISABLE_OVERLAYS_KEY = "disable_overlays";
     private static final String SIMULATE_COLOR_SPACE = "simulate_color_space";
     private static final String USB_AUDIO_KEY = "usb_audio";
+    private static final String SHOW_CPU_INFO_KEY = "show_cpu_info";
     private static final String FORCE_HARDWARE_UI_KEY = "force_hw_ui";
     private static final String FORCE_MSAA_KEY = "force_msaa";
     private static final String TRACK_FRAME_TIME_KEY = "track_frame_time";
@@ -271,6 +272,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private SwitchPreference mShowTouches;
     private SwitchPreference mShowScreenUpdates;
     private SwitchPreference mDisableOverlays;
+    private SwitchPreference mShowCpuInfo;
     private SwitchPreference mForceHardwareUi;
     private SwitchPreference mForceMsaa;
     private SwitchPreference mShowHwScreenUpdates;
@@ -419,6 +421,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mShowTouches = findAndInitSwitchPref(SHOW_TOUCHES_KEY);
         mShowScreenUpdates = findAndInitSwitchPref(SHOW_SCREEN_UPDATES_KEY);
         mDisableOverlays = findAndInitSwitchPref(DISABLE_OVERLAYS_KEY);
+        mShowCpuInfo = findAndInitSwitchPref(SHOW_CPU_INFO_KEY);
         mForceHardwareUi = findAndInitSwitchPref(FORCE_HARDWARE_UI_KEY);
         mForceMsaa = findAndInitSwitchPref(FORCE_MSAA_KEY);
         mTrackFrameTime = addListPreference(TRACK_FRAME_TIME_KEY);
@@ -687,6 +690,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         updatePointerLocationOptions();
         updateShowTouchesOptions();
         updateFlingerOptions();
+        updateCpuInfoOptions();
         updateHardwareUiOptions();
         updateMsaaOptions();
         updateTrackFrameTimeOptions();
@@ -1685,6 +1689,24 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }
     }
 
+    private void updateCpuInfoOptions() {
+        updateSwitchPreference(mShowCpuInfo, Settings.Global.getInt(getActivity().getContentResolver(),
+                Settings.Global.SHOW_CPU, 0) != 0);
+    }
+
+    private void writeCpuInfoOptions() {
+        boolean value = mShowCpuInfo.isChecked();
+        Settings.Global.putInt(getActivity().getContentResolver(),
+                Settings.Global.SHOW_CPU, value ? 1 : 0);
+        Intent service = (new Intent())
+                .setClassName("com.android.systemui", "com.android.systemui.CPUInfoService");
+        if (value) {
+            getActivity().startService(service);
+        } else {
+            getActivity().stopService(service);
+        }
+    }
+
     private void writeImmediatelyDestroyActivitiesOptions() {
         try {
             ActivityManagerNative.getDefault().setAlwaysFinish(
@@ -1965,6 +1987,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             writeShowUpdatesOption();
         } else if (preference == mDisableOverlays) {
             writeDisableOverlaysOption();
+        } else if (preference == mShowCpuInfo) {
+            writeCpuInfoOptions();
         } else if (preference == mImmediatelyDestroyActivities) {
             writeImmediatelyDestroyActivitiesOptions();
         } else if (preference == mShowAllANRs) {

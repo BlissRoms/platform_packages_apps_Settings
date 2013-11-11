@@ -320,6 +320,11 @@
             android:entries="@array/track_frame_time_entries"
             android:entryValues="@array/track_frame_time_values" />
 
+       <SwitchPreference
+            android:key="show_cpu_info"
+            android:title="@string/show_cpu_info"
+            android:summary="@string/show_cpu_info_summary"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory android:key="debug_applications_category"
