@@ -15,6 +15,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+<!-- Development Settings -->
+    <!-- ADB debugging notifications -->
+    <string name="enable_adb_custom">Android debugging</string>
+    <string name="enable_adb_summary_custom">Enable the Android Debug Bridge (adb) interface</string>
+    <string name="adb_notify">ADB notification</string>
+    <string name="adb_notify_summary">Display a notification when android debugging is enabled</string>
+
     <!-- About phone screen, Bliss version -->
     <string name="bliss_version">Bliss version</string>
     <string name="bliss_version_default">Unknown</string>

@@ -122,6 +122,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     public static final String PREF_SHOW = "show";
 
     private static final String ENABLE_ADB = "enable_adb";
+    private static final String ADB_NOTIFY = "adb_notify";
     private static final String CLEAR_ADB_KEYS = "clear_adb_keys";
     private static final String ENABLE_TERMINAL = "enable_terminal";
     private static final String KEEP_SCREEN_ON = "keep_screen_on";
@@ -260,6 +261,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private boolean mOtaDisabledOnce = false;
 
     private SwitchPreference mEnableAdb;
+    private SwitchPreference mAdbNotify;
     private Preference mClearAdbKeys;
     private SwitchPreference mEnableTerminal;
     private RestrictedSwitchPreference mKeepScreenOn;
@@ -411,6 +413,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         final PreferenceGroup debugDebuggingCategory = (PreferenceGroup)
                 findPreference(DEBUG_DEBUGGING_CATEGORY_KEY);
         mEnableAdb = findAndInitSwitchPref(ENABLE_ADB);
+        mAdbNotify = findAndInitSwitchPref(ADB_NOTIFY);
         mClearAdbKeys = findPreference(CLEAR_ADB_KEYS);
         if (!SystemProperties.getBoolean("ro.adb.secure", false)) {
             if (debugDebuggingCategory != null) {
@@ -771,6 +774,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mHaveDebugSettings = false;
         updateSwitchPreference(mEnableAdb, Settings.Global.getInt(cr,
                 Settings.Global.ADB_ENABLED, 0) != 0);
+        updateSwitchPreference(mAdbNotify, Settings.Secure.getInt(cr,
+                Settings.Secure.ADB_NOTIFY, 1) != 0);
         if (mEnableTerminal != null) {
             updateSwitchPreference(mEnableTerminal,
                     context.getPackageManager().getApplicationEnabledSetting(TERMINAL_APP_PACKAGE)
@@ -2410,6 +2415,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 mVerifyAppsOverUsbController.updatePreference();
                 updateBugreportOptions();
             }
+        } else if (preference == mAdbNotify) {
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.ADB_NOTIFY,
+                    mAdbNotify.isChecked() ? 1 : 0);
         } else if (preference == mClearAdbKeys) {
             if (mAdbKeysDialog != null) dismissDialogs();
             mAdbKeysDialog = new AlertDialog.Builder(getActivity())
