@@ -170,4 +170,6 @@ public class Settings extends SettingsActivity {
 
     // Bliss Additions
     public static class BlissifyActivity extends SettingsActivity { /* empty */ }
+    public static class SubstratumActivity extends SettingsActivity { /* empty */ }
+    public static class SuperSUActivity extends SettingsActivity { /* empty */ }
 }
