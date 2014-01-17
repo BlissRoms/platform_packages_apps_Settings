@@ -15,6 +15,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Dashboard -->
+    <string name="supersu_title">SuperSU</string>
+    <string name="supersu_summary">Manage Root Settings</string>
+    <string name="substratum_title">Substratum</string>
+    <string name="substratum_summary">Manage System Themes</string>
+
     <!-- About phone screen, Bliss version -->
     <string name="bliss_version">Bliss version</string>
     <string name="bliss_version_default">Unknown</string>
