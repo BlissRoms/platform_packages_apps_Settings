@@ -115,4 +115,7 @@
     <string name="bliss_ota">Bliss OTA</string>
     <string name="about_tab_title">About</string>
 
+    <!-- About phone screen, processor info label  [CHAR LIMIT=40] -->
+    <string name="processor_info">Processor</string>
+
 </resources>
