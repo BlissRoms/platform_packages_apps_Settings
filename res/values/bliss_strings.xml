@@ -114,4 +114,8 @@
     <string name="connected_devices_category_title">Connected Devices</string>
     <string name="theme_customization_category">Theming</string>
 
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Since the last update</string>
+    <string name="changelog_error">Unable to load changelog</string>
 </resources>
