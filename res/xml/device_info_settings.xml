@@ -151,6 +151,12 @@
                 android:shouldDisableView="false"
                 android:title="@string/build_number"
                 android:summary="@string/device_info_default"/>
+                
+        <!-- Bliss build date -->
+        <Preference android:key="build_date"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/build_date"
+                android:summary="@string/build_date_default" />
 
         <!-- Device QGP version -->
         <Preference android:key="qgp_version"
