@@ -21,4 +21,10 @@
     <!-- Default value for battery light pulse -->
     <bool name="def_battery_light_pulse">true</bool>
 
+    <!-- Share BlissPop -->
+    <string name="share_bliss_title">Share BlissPop</string>
+    <string name="share_bliss_summary">Let others know about BlissPop</string>
+    <string name="share_message">Check out what #BlissPop is all about @ http://www.blissroms.com</string>
+    <string name="share_chooser_title">Share BlissPop</string>
+
 </resources>
