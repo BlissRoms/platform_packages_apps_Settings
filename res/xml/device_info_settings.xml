@@ -26,14 +26,11 @@
                     android:targetClass="com.android.settings.bliss.extrainfo.MainActivity" />
         </PreferenceScreen>
 
-        <!-- CyanogenMod Updates -->
-        <PreferenceScreen android:key="cm_updates"
-                android:title="@string/cmupdate_settings_title"
-                android:summary="@string/system_update_settings_list_item_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.cyanogenmod.updater"
-                    android:targetClass="com.cyanogenmod.updater.UpdatesSettings" />
-        </PreferenceScreen>
+        <!-- Bliss Share -->
+        <Preference
+            android:key="share"
+            android:title="@string/share_bliss_title"
+            android:summary="@string/share_bliss_summary" />
 
         <!-- Change Log -->
         <PreferenceScreen android:key="changelog"

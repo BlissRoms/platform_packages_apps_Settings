@@ -26,7 +26,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.os.SELinux;
-import android.os.SystemClock;
+import android.os.SystemClock;l
 import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
@@ -59,6 +59,8 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.android.settings.R;
+
 public class DeviceInfoSettings extends SettingsPreferenceFragment implements Indexable {
 
     private static final String LOG_TAG = "DeviceInfoSettings";
@@ -84,6 +86,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_MOD_VERSION = "mod_version";
     private static final String KEY_BUILD_VERSION = "mod_build_version";
+    private static final String KEY_BLISS_SHARE = "share";
+
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -281,6 +285,13 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             }
         } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
             sendFeedback();
+        } else if (preference.getKey().equals(KEY_BLISS_SHARE)) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, String.format(
+                getActivity().getString(R.string.share_message), Build.MODEL));
+        startActivity(Intent.createChooser(intent, getActivity().getString(R.string.share_chooser_title)));
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
