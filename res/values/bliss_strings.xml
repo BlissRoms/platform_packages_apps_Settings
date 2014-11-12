@@ -30,4 +30,14 @@
    <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
    <string name="local_backup_password_title">Desktop backup password</string>
 
+   <!--- Volume key cursor control -->
+   <string name="volume_rocker_screen_title">Volume rocker</string>
+   <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+   <string name="volume_key_cursor_control_off">Disabled</string>
+   <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+   <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+
+   <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
+   <string name="bluetooth_accept_all_files">Accept all file types</string>
+
 </resources>
