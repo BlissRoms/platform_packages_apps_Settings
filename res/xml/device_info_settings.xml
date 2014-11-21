@@ -34,13 +34,13 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen>
 		
-        <!-- Liquid Extra Info -->
+        <!-- Bliss Extra Info -->
         <PreferenceScreen android:key="extrainfo"
                 android:title="@string/lsextrainfo"
                 android:summary="@string/lsextrainfo_summary">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.settings"
-                    android:targetClass="com.android.settings.liquid.extrainfo.MainActivity" />
+                    android:targetClass="com.android.settings.bliss.extrainfo.MainActivity" />
         </PreferenceScreen>
 
         <!-- CyanogenMod Updates -->
