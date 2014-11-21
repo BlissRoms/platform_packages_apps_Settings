@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.liquid.extrainfo;
+package com.android.settings.bliss.extrainfo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
