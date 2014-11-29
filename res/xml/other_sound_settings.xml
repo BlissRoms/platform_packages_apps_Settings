@@ -66,4 +66,21 @@
             android:title="@string/emergency_tone_title"
             android:summary="%s" />
 
+    <PreferenceCategory
+        android:key="advanced_sound_category"
+        android:title="@string/advanced_sound_category" > 
+
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="volume_keys_control_media_stream"
+        android:title="@string/volume_keys_control_media_stream_title"
+        android:summary="@string/volume_keys_control_media_stream_summary"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="volume_rocker_music_controls"
+        android:title="@string/volbtn_music_controls_title"
+        android:summary="@string/volbtn_music_controls_summary"
+        android:persistent="false"
+        android:defaultValue="false" />
+    </PreferenceCategory>
 </PreferenceScreen>

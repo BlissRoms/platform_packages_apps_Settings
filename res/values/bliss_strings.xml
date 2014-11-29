@@ -15,17 +15,17 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- About phone screen, Bliss version -->
-    <string name="bliss_version">Bliss version</string>
-    <string name="bliss_version_default">Unknown</string>
+   <!-- About phone screen, Bliss version -->
+   <string name="bliss_version">Bliss version</string>
+   <string name="bliss_version_default">Unknown</string>
 
-    <!-- About phone screen, Bliss build date -->
+   <!-- About phone screen, Bliss build date -->
    <string name="build_date">Bliss build date</string>
    <string name="build_date_default">2014-01-01-0000</string>
 
-    <!-- Vendor version -->
-    <string name="vendor_version">Vendor version</string>
-    <string name="vendor_version_default">Unknown</string>
+   <!-- Vendor version -->
+   <string name="vendor_version">Vendor version</string>
+   <string name="vendor_version_default">Unknown</string>
 
    <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
    <string name="local_backup_password_title">Desktop backup password</string>
@@ -47,6 +47,17 @@
 
    <!-- Wakeup options -->
    <string name="pref_volume_wake_title">Volume rocker wake</string>
-   <string name="pref_volume_wake_summary">Pressing the volume rocker up/down will wake the device</string>
+   <string name="pref_volume_wake_summary">Pressing the volume rocker may not wake device if music control is active and music is playing</string>
+
+   <!-- Advanced sound category -->
+   <string name="advanced_sound_category">Advanced sounds</string>
+
+   <!-- Volume rocker music seek options -->
+   <string name="volbtn_music_controls_title">Volume rocker music controls</string>
+   <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
+
+   <!-- Volume key controls media stream -->
+   <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
+   <string name="volume_keys_control_media_stream_summary">Force volume keys to control media stream</string>
 
 </resources>
