@@ -136,6 +136,12 @@
                 android:title="@string/build_date"
                 android:summary="@string/build_date_default" />
 
+        <!-- Build Type -->
+        <Preference android:key="build_type"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/build_type"
+                android:summary="@string/build_type_default" />
+
         <!-- Detailed build version -->
         <Preference android:key="build_number"
                 style="?android:preferenceInformationStyle"
