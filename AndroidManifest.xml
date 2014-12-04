@@ -2752,7 +2752,22 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/sim_settings" />
         </activity>
+        
+        <!-- Bliss Settings -->
+        <activity android:name="Settings$MainSettingsActivity"
+             android:label="@string/bliss_settings_title"
+             android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.bliss.MainSettings" />
+        </activity>
 
+        <activity
+             android:name=".bliss.MainSettings" />
+             
         <activity android:name=".sim.SimPreferenceDialog"
             android:theme="@style/Theme.SettingsDialog"
             android:excludeFromRecents="true">
