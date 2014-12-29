@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright 2014-2015 The Euphoria-OS Project
-     Copyright 2013, The ChameleonOS Open Source Project
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2014 crDroid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,11 +13,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <declare-styleable name="SeekBarPreference">
-        <attr name="interval" format="integer" />
-        <attr name="minimum" format="integer" />
-        <attr name="unitsLeft" format="string|reference" />
-        <attr name="unitsRight" format="string|reference" />
-    </declare-styleable>
-</resources>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/animation_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <PreferenceScreen
+        android:key="aokp_animation"
+        android:title="@string/system_animation_title"
+        android:fragment="com.android.settings.rr.animation.AnimationControls" />
+
+</PreferenceScreen>
