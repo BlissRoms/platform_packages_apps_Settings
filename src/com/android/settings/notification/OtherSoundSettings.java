@@ -219,6 +219,14 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements
         mVolBtnMusicCtrl.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.VOLUME_ROCKER_MUSIC_CONTROLS, 1) != 0);
         mVolBtnMusicCtrl.setOnPreferenceChangeListener(this);
+        try {
+            if (Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.VOLUME_ROCKER_WAKE) == 1) {
+                mVolBtnMusicCtrl.setEnabled(false);
+		mVolBtnMusicCtrl.setSummary(R.string.volume_button_toggle_info);
+            }
+        } catch (SettingNotFoundException e) {
+        }
 
         for (SettingPref pref : PREFS) {
             pref.init(this);
