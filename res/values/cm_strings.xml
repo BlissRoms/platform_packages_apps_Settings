@@ -914,6 +914,7 @@
     <string name="select_custom_app_title">Select custom app</string>
     <string name="select_custom_activity_title">Select custom activity</string>
 
+
     <!-- Blacklist preferences -->
     <string name="blacklist_title">Blocked caller list</string>
     <string name="blacklist_edit_dialog_title">Edit blocked phone number</string>
