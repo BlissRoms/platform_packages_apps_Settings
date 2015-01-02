@@ -154,6 +154,15 @@
             android:fragment="com.android.settings.deviceinfo.batteryinfo.BatteryInfoFragment"
             settings:keywords="@string/keywords_battery_info"
             settings:controller="com.android.settings.deviceinfo.batteryinfo.BatteryInfoPreferenceController"/>
+
+	<!-- Bliss version -->
+    	<Preference
+            android:key="bliss_version"
+            android:order="43"
+            android:title="@string/bliss_version"
+            android:summary="@string/summary_placeholder"
+            android:fragment="com.android.settings.deviceinfo.bliss.BlissVersionSettings"
+            settings:controller="com.android.settings.deviceinfo.bliss.BlissVersionPreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
