@@ -124,6 +124,15 @@
         android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
+    <!-- Bliss version -->
+    <Preference
+        android:key="bliss_version"
+        android:order="43"
+        android:title="@string/bliss_version"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.deviceinfo.bliss.BlissVersionSettings"
+        settings:controller="com.android.settings.deviceinfo.bliss.BlissVersionPreferenceController"/>
+
     <!--IP address -->
     <Preference
         android:key="wifi_ip_address"
