@@ -1316,24 +1316,4 @@ public final class Utils extends com.android.settingslib.Utils {
     public static boolean isPackageInstalled(Context context, String pkg) {
         return isPackageInstalled(context, pkg, true);
     }
-
-    /**
-     * check whether NetworkSetting apk exist in system, if yes, return true, else
-     * return false.
-     */
-    public static boolean isNetworkSettingsApkAvailable(Context context) {
-        // check whether the target handler exist in system
-        Intent intent = new Intent("org.codeaurora.settings.NETWORK_OPERATOR_SETTINGS_ASYNC");
-        PackageManager pm = context.getPackageManager();
-        List<ResolveInfo> list = pm.queryIntentActivities(intent, 0);
-        for (ResolveInfo resolveInfo : list){
-            // check is it installed in system.img, exclude the application
-            // installed by user
-            if ((resolveInfo.activityInfo.applicationInfo.flags &
-                    ApplicationInfo.FLAG_SYSTEM) != 0) {
-                return true;
-            }
-        }
-        return false;
-    }
 }

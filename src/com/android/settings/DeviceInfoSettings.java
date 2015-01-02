@@ -65,6 +65,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_BUILD_NUMBER = "build_number";
     private static final String KEY_DEVICE_MODEL = "device_model";
     private static final String KEY_SELINUX_STATUS = "selinux_status";
+    private static final String KEY_BLISS_VERSION = "bliss_version";
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
     private static final String KEY_SECURITY_PATCH = "security_patch";
@@ -140,6 +141,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 getResources().getBoolean(R.bool.def_hide_kernel_version_name)));
         String mMbnVersion = getMBNVersionValue();
         setStringSummary(KEY_MBN_VERSION, mMbnVersion);
+        setValueSummary(KEY_BLISS_VERSION, "ro.bliss.version");
         if(mMbnVersion == null){
             getPreferenceScreen().removePreference(findPreference(KEY_MBN_VERSION));
         }
