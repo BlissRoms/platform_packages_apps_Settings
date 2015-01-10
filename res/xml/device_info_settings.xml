@@ -32,6 +32,14 @@
             android:title="@string/share_bliss_title"
             android:summary="@string/share_bliss_summary" />
 
+        <!-- Change Log -->
+        <PreferenceScreen android:key="changelog"
+             android:title="@string/changelog_title">
+           <intent android:action="android.intent.action.MAIN"
+                  android:targetPackage="com.android.settings"
+                  android:targetClass="com.android.settings.bliss.ChangeLog" />
+        </PreferenceScreen>  
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"

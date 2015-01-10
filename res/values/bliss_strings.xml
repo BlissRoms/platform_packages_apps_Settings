@@ -19,4 +19,18 @@
     <string name="lsextrainfo">Extra information</string>
     <string name="lsextrainfo_summary">Display extra info for cpu, display, etc</string>
 
+    <!-- Share BlissPop -->
+    <string name="share_bliss_title">Share BlissPop</string>
+    <string name="share_bliss_summary">Let others know about BlissPop</string>
+    <string name="share_message">Check out what #BlissPop is all about @ http://www.blissroms.com</string>
+    <string name="share_chooser_title">Share BlissPop</string>
+    
+    <!-- Change Log strings -->
+    <string name="changelog_title">View changelog</string>
+    <string name="changelog_dialog">Changelog</string>
+    <string name="changelog_loading">Loading changelog...</string>
+    <string name="changelog_error">Unable to load changelog</string>
+    <string name="changelog_unknown">Unknown</string>
+    <string name="changelog_version">Version</string>    
+
 </resources>
