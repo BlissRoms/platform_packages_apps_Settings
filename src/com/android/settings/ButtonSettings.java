@@ -89,6 +89,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             = "camera_double_tap_power_gesture";
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
     private static final String HOLD_BACK_TO_KILL_TIMEOUT = "hold_back_to_kill_timeout";
+    private static final String KEY_VOLUME_ANSWER_CALL = "volume_answer_call";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -147,6 +148,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mCameraDoubleTapPowerGesture;
     private SwitchPreference mKillAppLongpressBack;
     private SeekBarPreference mHoldBackToKillTimeout;
+    private SwitchPreference mVolumeAnswerCall;
 
     private PreferenceCategory mNavigationPreferencesCat;
 
@@ -179,7 +181,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final boolean hasAppSwitchKey = (deviceKeys & KEY_MASK_APP_SWITCH) != 0;
         final boolean hasCameraKey = (deviceKeys & KEY_MASK_CAMERA) != 0;
         final boolean hasVolumeKeys = (deviceKeys & KEY_MASK_VOLUME) != 0;
-
         final boolean showHomeWake = (deviceWakeKeys & KEY_MASK_HOME) != 0;
         final boolean showBackWake = (deviceWakeKeys & KEY_MASK_BACK) != 0;
         final boolean showMenuWake = (deviceWakeKeys & KEY_MASK_MENU) != 0;
@@ -187,6 +188,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final boolean showAppSwitchWake = (deviceWakeKeys & KEY_MASK_APP_SWITCH) != 0;
         final boolean showCameraWake = (deviceWakeKeys & KEY_MASK_CAMERA) != 0;
         final boolean showVolumeWake = (deviceWakeKeys & KEY_MASK_VOLUME) != 0;
+
+        // Volume button answers calls.
+        mVolumeAnswerCall = (SwitchPreference) findPreference(KEY_VOLUME_ANSWER_CALL);
+        mVolumeAnswerCall.setOnPreferenceChangeListener(this);
 
         boolean hasAnyBindableKey = false;
         final PreferenceCategory powerCategory =
@@ -492,6 +497,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mHomeAnswerCall.setChecked(homeButtonAnswersCall);
         }
         updateKillAppLongpressBackOptions();
+
+        // Volume button answers calls.
+        mVolumeAnswerCall.setChecked((Settings.System.getInt(getContentResolver(),
+                  Settings.System.ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER, 0) == 1));
+
     }
 
     private ListPreference initActionList(String key, int value) {
@@ -649,7 +659,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.HOLD_BACK_TO_KILL_TIMEOUT, killTimeout * 1);
             return true;
-		}
+        } else if (preference == mVolumeAnswerCall) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(),
+                   Settings.System.ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER, value ? 1 : 0);
+            return true;
+        }
         return false;
     }
 
