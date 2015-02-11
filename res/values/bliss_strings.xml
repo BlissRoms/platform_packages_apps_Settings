@@ -358,4 +358,8 @@
     <!-- AdAway -->
     <string name="adaway_settings_title">AdAway</string>
 
+    <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Volume key Answer</string>
+    <string name="volume_answer_call_summary">Volume up key Answer</string>
+
 </resources>
