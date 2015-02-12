@@ -90,6 +90,8 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
     // false: on ICS or later
     private static final boolean SHOW_INPUT_METHOD_SWITCHER_SETTINGS = false;
 
+    private static final String SHOW_ENTER_KEY = "show_enter_key";
+
     private int mDefaultInputMethodSelectorVisibility = 0;
     private ListPreference mShowInputMethodSelectorPref;
     private PreferenceCategory mKeyboardSettingsCategory;
@@ -106,6 +108,7 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
     private Intent mIntentWaitingForResult;
     private InputMethodSettingValuesWrapper mInputMethodSettingValues;
     private DevicePolicyManager mDpm;
+    private SwitchPreference mShowEnterKey;
 
     @Override
     protected int getMetricsCategory() {
@@ -117,6 +120,11 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.language_settings);
+
+	mShowEnterKey = (SwitchPreference) findPreference(SHOW_ENTER_KEY);
+        mShowEnterKey.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.FORMAL_TEXT_INPUT, 0) == 1);
+        mShowEnterKey.setOnPreferenceChangeListener(this);
 
         final Activity activity = getActivity();
         mImm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -382,7 +390,11 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
                     saveInputMethodSelectorVisibility((String)value);
                 }
             }
-        }
+	} else if (preference == mShowEnterKey) {
+            Settings.System.putInt(getContentResolver(),
+                Settings.System.FORMAL_TEXT_INPUT, (Boolean) value ? 1 : 0);
+            return true;
+	}
         return false;
     }
 

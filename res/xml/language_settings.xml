@@ -70,6 +70,12 @@
              <!--with low order values to set the key map of each attached keyboard. &ndash;&gt;-->
     <!--</PreferenceCategory>-->
 
+    <SwitchPreference
+            android:key="show_enter_key"
+            android:title="@string/show_enter_key_title"
+            android:summary="@string/show_enter_key_summary"
+            android:persistent="false" />
+
     <PreferenceCategory
             android:key="voice_category"
             android:title="@string/voice_category" >
