@@ -60,4 +60,8 @@
    <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
    <string name="volume_keys_control_media_stream_summary">Force volume keys to control media stream</string>
 
+   <!-- Keyboard and Input ASS methods -->
+   <string name="show_enter_key_title">Show enter key</string>
+   <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
+
 </resources>
