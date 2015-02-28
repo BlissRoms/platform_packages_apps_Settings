@@ -97,7 +97,7 @@
 
     <!-- Headphones icon switch -->
     <string name="show_headset_icon_title">Headset icon</string>
-    <string name="show_headset_icon_summary">Shows icon when headsets are connected.</string>
+    <string name="show_headset_icon_summary">Shows icon when headsets are connected</string>
 
     <!-- Hold back to kill timeout -->
     <string name="hold_back_to_kill_timeout_title">Kill app back button timeout</string>
@@ -355,5 +355,9 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Volume key Answer</string>
     <string name="volume_answer_call_summary">Volume up key Answer</string>
+
+    <!-- Show bluetooth icon when disconnected -->
+    <string name="status_bar_bluetooth_icon">Bluetooth icon</string>
+    <string name="status_bar_bluetooth_icon_summary">Shows icon when it is enabled but not connected</string>
 
 </resources>
