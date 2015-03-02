@@ -126,4 +126,10 @@
             android:summary="@string/show_headset_icon_summary"
             android:defaultValue="true" />
 
+    <!-- Force Expanded Notification -->
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="force_expanded_notifications"
+            android:title="@string/force_expanded_notifications_title"
+            android:summary="@string/force_expanded_notifications_summary" />
+
 </PreferenceScreen>
