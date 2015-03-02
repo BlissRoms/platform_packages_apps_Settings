@@ -195,4 +195,8 @@
     <string name="summary_animation_no_override">Prevent apps from overriding transitions</string>
     <string name="animation_duration_default">Default</string>
 
+   <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
+    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+
 </resources>
