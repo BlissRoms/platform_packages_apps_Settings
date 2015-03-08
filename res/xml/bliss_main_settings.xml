@@ -66,6 +66,14 @@ Project
                 android:title="@string/system_app_remover"
                 android:summary="@string/systemappremover_summary"
                 android:fragment="com.android.settings.bliss.SystemappRemover" />
+
+        <!-- Wakelock blocker -->
+        <PreferenceScreen
+            android:key="wakelock_blocker"
+            android:fragment="com.android.settings.bliss.WakeLockBlocker"
+            android:title="@string/wakelock_blocker_title"
+            android:icon="@drawable/ic_xd_wakelock" 
+            />
 		
     </PreferenceCategory> 
 
