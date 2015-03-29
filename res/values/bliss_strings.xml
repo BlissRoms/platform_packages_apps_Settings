@@ -67,4 +67,7 @@
     <!-- Blissify -->
     <string name="blissify_settings_title">Blissify</string>
     <string name="blissify_settings_summary">Blissify your device!</string>
+
+    <!-- Screenshot shutter -->
+    <string name="screenshot_shutter_sound_title">Screenshot shutter sound</string>
 </resources>
