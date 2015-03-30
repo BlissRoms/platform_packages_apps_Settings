@@ -2647,7 +2647,7 @@
             </intent-filter>
         </activity>
 
-        <!-- Liquid Extra info -->
+        <!-- Bliss Extras -->
         <activity android:name="com.android.settings.bliss.extrainfo.MainActivity"
                   android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth">
             <intent-filter>
