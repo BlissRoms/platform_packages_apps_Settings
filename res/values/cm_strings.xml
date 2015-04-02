@@ -44,9 +44,7 @@
     <!-- NFC PreferenceCategory title -->
     <string name="nfc_title_category">NFC</string>
 
-    <!-- About phone screen, CyanogenMod version -->
-    <string name="mod_version">CyanogenMod version</string>
-    <string name="mod_version_default">Unknown</string>
+    <!-- About phone screen, model name -->
     <string name="model_name">Model name</string>
 
     <!-- About phone screen, CyanogenMod Api Level -->
