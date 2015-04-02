@@ -33,4 +33,8 @@
     <string name="changelog_unknown">Unknown</string>
     <string name="changelog_version">Version</string>    
 
+    <!-- About phone screen, Bliss version -->
+    <string name="mod_version">Bliss version</string>
+    <string name="mod_version_default">Unknown</string>
+
 </resources>

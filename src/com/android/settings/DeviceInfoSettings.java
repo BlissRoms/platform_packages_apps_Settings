@@ -86,6 +86,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_API_LEVEL = "mod_api_level";
     private static final String KEY_MOD_BUILD_TYPE = "build_type";
     private static final String KEY_BLISS_SHARE = "share";
+    private static final String KEY_MOD_VERSION = "mod_version";
 
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
@@ -139,6 +140,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_MOD_API_LEVEL).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_TYPE, "ro.bliss.display.buildtype");
         findPreference(KEY_MOD_BUILD_TYPE).setEnabled(true);
+        setValueSummary(KEY_MOD_VERSION, "ro.bliss.version");
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
