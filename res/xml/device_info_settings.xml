@@ -37,6 +37,16 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen> -->
 
+        <!-- BlissRoms OTA -->
+        <PreferenceScreen 
+            android:key="bliss_ota"
+            android:title="@string/bliss_ota">
+                <intent
+                    android:action="android.intent.action.MAIN"
+    		        android:targetPackage="blissroms.updates"
+                    android:targetClass="blissroms.updates.activities.MainActivity" />
+        </PreferenceScreen>
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
