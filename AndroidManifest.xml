@@ -2671,6 +2671,9 @@
         <!-- Kernel Adiutor -->
         <activity android:name="com.grarak.kerneladiutor.MainActivity"/>
 
+    	<!-- BlissRoms OTA Update -->
+		<activity android:name="com.chummy.blissroms.updates.activities.MainActivity" />
+
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
                 android:exported="false"

@@ -292,4 +292,8 @@
     <string name="system_app_remover">System App Remover</string>
     <string name="systemappremover_summary">Remove system apps by your own risk</string>
 
+    <!-- BlissRoms OTA -->
+    <string name="bliss_ota">Updates</string>
+
+
 </resources>

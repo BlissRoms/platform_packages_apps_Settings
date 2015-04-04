@@ -102,9 +102,8 @@
 
 <PreferenceCategory
 			android:title="@string/about_phone"
-			android:key="about_phone"
-			android:title="@string/about_phone">
-        
+			android:key="about_phone">
+
         </PreferenceScreen>
 
         <!-- Device status - launches activity -->
