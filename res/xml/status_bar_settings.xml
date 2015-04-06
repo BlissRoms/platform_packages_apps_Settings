@@ -70,4 +70,11 @@
         android:summary="@string/status_bar_quick_qs_pulldown_summary"
         android:defaultValue="true" />
 
+    <!-- Status bar Bliss logo -->
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="status_bar_bliss_logo"
+        android:title="@string/status_bar_bliss_logo_title"
+        android:summary="@string/status_bar_bliss_logo_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
