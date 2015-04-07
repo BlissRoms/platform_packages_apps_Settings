@@ -15,6 +15,11 @@
      limitations under the License.
 -->
 <resources>
+
+    <!-- Gesture Anywhere -->
+    <dimen name="ga_gesture_thumbnail_inset">8dip</dimen>
+    <dimen name="ga_gesture_thumbnail_size">64dip</dimen>
+
     <dimen name="profile_instruction_padding">8dp</dimen>
     <dimen name="fab_line_width">2dp</dimen>
     <dimen name="oval_notification_size">26dp</dimen>
