@@ -24,14 +24,10 @@
     <string name="share_bliss_summary">Let others know about BlissPop</string>
     <string name="share_message">Check out what #BlissPop is all about @ http://www.blissroms.com</string>
     <string name="share_chooser_title">Share BlissPop</string>
-    
-    <!-- Change Log strings -->
-    <string name="changelog_title">View changelog</string>
-    <string name="changelog_dialog">Changelog</string>
-    <string name="changelog_loading">Loading changelog...</string>
-    <string name="changelog_error">Unable to load changelog</string>
-    <string name="changelog_unknown">Unknown</string>
-    <string name="changelog_version">Version</string>    
+
+    <!-- Changelog -->
+    <string name="changelog_bliss_title">Changelog</string>
+    <string name="changelog_bliss_error">Unable to load changelog</string>
 
     <!-- About phone screen, Bliss version -->
     <string name="mod_version">Bliss version</string>

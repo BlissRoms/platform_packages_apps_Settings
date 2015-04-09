@@ -2655,7 +2655,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".bliss.ChangeLog" android:label="@string/changelog_title">
+        <activity android:name=".bliss.ChangeLog" android:label="@string/changelog_bliss_title">
            <intent-filter>
                <action android:name="android.intent.action.MAIN"/>
            </intent-filter>
