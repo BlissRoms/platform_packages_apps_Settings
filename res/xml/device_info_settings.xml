@@ -103,6 +103,18 @@
                 android:title="@string/fcc_equipment_id"
                 android:summary="@string/device_info_default"/>
 
+        <!-- Bliss Version -->
+        <Preference android:key="mod_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/mod_version"
+                android:summary="@string/mod_version_default" />
+
+        <!-- Bliss Build Version -->
+        <Preference android:key="mod_build_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/mod_build_version"
+                android:summary="@string/mod_version_default" />
+
         <!-- Device Baseband version -->
         <Preference android:key="baseband_version"
                 style="?android:preferenceInformationStyle"
