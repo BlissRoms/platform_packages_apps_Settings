@@ -118,6 +118,12 @@
                 android:title="@string/mod_version"
                 android:summary="@string/mod_version_default" />
 
+        <!-- Bliss Build Version -->
+        <Preference android:key="mod_build_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/mod_build_version"
+                android:summary="@string/mod_version_default" />
+
         <!-- Device Baseband version -->
         <Preference android:key="baseband_version"
                 style="?android:preferenceInformationStyle"
