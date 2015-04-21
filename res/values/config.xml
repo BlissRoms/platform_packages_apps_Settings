@@ -83,4 +83,7 @@
     <!-- Display ro.product.name above Device model -->
     <bool name="config_displayDeviceName">false</bool>
 
+    <!-- Display ro.product.name above Device model -->
+    <bool name="config_displayDeviceName">false</bool>
+
 </resources>
