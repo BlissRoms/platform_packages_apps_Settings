@@ -64,7 +64,7 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 public class StatusBarClockandDate extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener, Indexable {
 
-    private static final String TAG = "StatusBar";
+    private static final String TAG = "StatusBarClockandDate";
 
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
@@ -187,7 +187,6 @@ public class StatusBarClockandDate extends SettingsPreferenceFragment
                 Settings.System.STATUSBAR_CLOCK_FONT_SIZE, 14));
         mStatusBarDateSize.setOnPreferenceChangeListener(this);
 
-        setHasOptionsMenu(true);
         mCheckPreferences = true;
         return prefScreen;
     }
@@ -313,6 +312,24 @@ public class StatusBarClockandDate extends SettingsPreferenceFragment
         return false;
     }
 
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.add(0, MENU_RESET, 0, R.string.reset)
+                .setIcon(R.drawable.ic_settings_reset)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case MENU_RESET:
+                showDialogInner(DLG_RESET);
+                return true;
+             default:
+                return super.onContextItemSelected(item);
+        }
+    }
+
     private void enableStatusBarClockDependents() {
         int clockStyle = CMSettings.System.getInt(getActivity()
                 .getContentResolver(), CMSettings.System.STATUS_BAR_CLOCK, 1);
@@ -416,7 +433,7 @@ public class StatusBarClockandDate extends SettingsPreferenceFragment
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.status_bar_settings;
+                    sir.xmlResId = R.xml.status_bar_clock_and_date;
                     result.add(sir);
 
                     return result;
