@@ -23,6 +23,10 @@
    <string name="build_date">Bliss build date</string>
    <string name="build_date_default">2014-01-01-0000</string>
 
+   <!-- Bliss Settings -->
+   <string name="header_category_bliss_options">Bliss Options</string>
+   <string name="bliss_settings_title">Blissify</string>
+
    <!-- Vendor version -->
    <string name="vendor_version">Vendor version</string>
    <string name="vendor_version_default">Unknown</string>
