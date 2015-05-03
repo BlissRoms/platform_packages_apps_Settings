@@ -15,6 +15,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Bliss Settings -->
+    <string name="header_category_bliss_options">Bliss Options</string>
+    <string name="bliss_settings_title">Blissify</string>
+
     <!-- Dashboard -->
     <string name="supersu_title">SuperSU</string>
     <string name="supersu_summary">Manage Root Settings</string>
