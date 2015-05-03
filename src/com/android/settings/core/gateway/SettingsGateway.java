@@ -137,6 +137,8 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
+import com.blissroms.blissify.BlissifySettings;
+
 import org.omnirom.omnigears.OmniDashboardFragment;
 import org.omnirom.omnigears.ButtonSettings;
 import org.omnirom.omnigears.GestureSettings;
@@ -271,6 +273,8 @@ public class SettingsGateway {
             DirectoryAccessDetails.class.getName(),
             ToggleBackupSettingFragment.class.getName(),
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
+            
+            BlissifySettings.class.getName(),
 
             // omni additions start
             OmniDashboardFragment.class.getName(),
@@ -320,7 +324,9 @@ public class SettingsGateway {
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.MyDeviceInfoActivity.class.getName(),
-
+            
+            Settings.BlissifyActivity.class.getName(),
+            
             // Home page > OmniGears
             Settings.OmniDashboardActivity.class.getName(),
     };

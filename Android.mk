@@ -19,9 +19,11 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../Blissify/src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../OmniGears/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
+    $(ANDROID_SUPPORT_DESIGN_TARGETS) \
     android-slices-builders \
     android-slices-core \
     android-slices-view \
@@ -33,6 +35,7 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-support-v7-preference \
     android-support-v7-recyclerview \
     android-support-v14-preference \
+    android-support-transition \
 
 LOCAL_JAVA_LIBRARIES := \
     bouncycastle \
@@ -49,9 +52,11 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
+    --extra-packages com.blissroms.blissify \
     --extra-packages org.omnirom.omnigears
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+    packages/apps/Blissify/res \
     packages/apps/OmniGears/res
 
 ifneq ($(INCREMENTAL_BUILDS),)

@@ -152,6 +152,8 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String EXTRA_UI_OPTIONS = "settings:ui_options";
 
+    private static final String BLISSIFY_FRAGMENT = "com.android.settings.Blissify";
+
     private String mFragmentClass;
 
     private CharSequence mInitialTitle;
@@ -585,6 +587,15 @@ public class SettingsActivity extends SettingsDrawerActivity
      */
     private Fragment switchToFragment(String fragmentName, Bundle args, boolean validate,
             boolean addToBackStack, int titleResId, CharSequence title, boolean withTransition) {
+            
+        if (BLISSIFY_FRAGMENT.equals(fragmentName)) {
+            Intent BlissifyIntent = new Intent();
+            BlissifyIntent.setClassName("com.blissroms.blissify", "com.blissroms.blissify.BlissifySettings");
+            startActivity(BlissifyIntent);
+            finish();
+            return null;
+        }
+            
         Log.d(LOG_TAG, "Switching to fragment " + fragmentName);
         if (DEVICE_PARTS_FRAGMENT.equals(fragmentName)) {
             Intent devicePartsIntent = new Intent();

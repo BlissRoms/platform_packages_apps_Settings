@@ -3366,5 +3366,31 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                        android:value="com.android.settings.gestures.SwipeToNotificationSettings"/>
         </activity>
+        
+                <activity
+            android:name="com.blissroms.blissify.BlissifySettings"
+            android:label="@string/blissify_dashboard_title">
+            <intent-filter>
+                <action android:name="com.blissroms.blissify.BlissifySettings" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+</activity>
+        
+        <!-- Blissify -->
+        <activity android:name="Settings$BlissifyActivity"
+                android:label="@string/blissify_dashboard_title"
+                android:icon="@drawable/ic_dashboard_blissify"
+                android:taskAffinity="">
+            <intent-filter android:priority="10">
+                <action android:name="com.android.settings.action.SETTINGS"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.homepage"/>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.Blissify" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/blissify_dashboard_summary"/>
+        </activity>
+        
     </application>
 </manifest>
