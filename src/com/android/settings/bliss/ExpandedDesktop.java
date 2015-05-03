@@ -577,6 +577,6 @@ public class ExpandedDesktop extends SettingsPreferenceFragment
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.ANIMATION_SETTINGS;
+        return MetricsEvent.BLISSIFY;
     }
 }
