@@ -2920,5 +2920,8 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                        android:value="com.android.settings.cyanogenmod.WeatherServiceSettings" />
         </activity>
+
+        <activity android:name=".headsup.HeadsUpSettings" />
+
     </application>
 </manifest>
