@@ -15,6 +15,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Bliss general settings -->
+    <string name="colors_title">Colors</string>
+    <string name="text_title">Text</string>
+    <string name="icons_title">Icons</string>
+    <string name="dlg_reset_values_message">Reset values to\nAndroid or Bliss default?</string>
+    <string name="dlg_reset_android">Android</string>
+    <string name="dlg_reset_bliss">Bliss</string>
+
     <!-- Bliss settings screens -->
     <string name="header_category_bliss">Bliss Options</string>
     <string name="bliss_settings_title">Bliss Settings</string>
@@ -396,7 +404,7 @@
     <string name="headset_connect_player_title">Launch music app</string>
     <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
 
-   <!-- MediaScanner behavior on boot -->
+    <!-- MediaScanner behavior on boot -->
     <string name="options_settings_title">Options</string>
     <string name="media_scanner_on_boot_title">MediaScanner behavior on boot</string>
     <string name="media_scanner_on_boot_enabled">Scan media</string>
@@ -413,7 +421,7 @@
     <string name="lockscreen_clock_date_color">Lockscreen Date</string>
     <string name="lockscreen_colors_reset_title">Reset lockscreen colors</string>
     <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
-    <string name="yes">YES</string>
+    <string name="yes">Yes</string>
     <string name="double_tap_ls">Double tap to sleep on lockscreen</string>
     <string name="double_tap_ls_summary">Double tap anywhere on lockscreen to sleep</string>
 
@@ -622,5 +630,25 @@
     <string name="select_custom_app_title">Select custom app</string>
     <string name="select_custom_activity_title">Select custom activity</string>
     <string name="profile_applist_title">Applications</string>
+
+    <!-- Lock screen -->
+    <string name="lock_screen_weather_settings_title">Weather</string>
+    <string name="lock_screen_weather_settings_summary">Customize Weather</string>
+    <string name="lock_screen_color_settings_summary">Customize colors</string>
+
+    <!-- Weather settings -->
+    <string name="weather_show_weather_title">Show weather</string>
+    <string name="weather_show_weather_summary">Enable to show weather informations</string>
+    <string name="weather_show_location_title">Show location</string>
+    <string name="weather_show_location_summary">Enable to show the location</string>
+    <string name="weather_show_timestamp_title">Show timestamp</string>
+    <string name="weather_show_timestamp_summary">Enable to show the timestamp</string>
+    <string name="weather_condition_icon_title">Condition icon</string>
+    <string name="weather_condition_icon_dlg_title">Coose an icon for displaying the weather condition</string>
+    <string name="weather_condition_icon_monochrome_title">Monochrome</string>
+    <string name="weather_condition_icon_colored_title">Colored</string>
+    <string name="weather_condition_icon_vclouds_title">VClouds</string>
+    <string name="weather_colorize_all_icons_title">Colorize all icons</string>
+    <string name="weather_colorize_all_icons_summary">Enable to colorize all icons, disable to colorize only the monochrome icons</string>
 
 </resources>
