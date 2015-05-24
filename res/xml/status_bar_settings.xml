@@ -66,6 +66,11 @@
     </PreferenceScreen>
 
     <PreferenceScreen
+        android:key="carrier_options"
+        android:fragment="com.android.settings.bliss.CarrierLabel"
+        android:title="@string/carrier_options" />
+    
+    <PreferenceScreen
         android:key="network_traffic"
         android:title="@string/network_traffic_title"
 	    android:fragment="com.android.settings.bliss.NetworkTraffic"
