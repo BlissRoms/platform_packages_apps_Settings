@@ -88,12 +88,6 @@
 	    	android:summary="@string/lock_screen_weather_settings_summary"
             android:fragment="com.android.settings.bliss.LockScreenWeatherSettings" />
 
-        <PreferenceScreen
-            android:key="lock_screen_color_settings"
-            android:title="@string/colors_title"
-		    android:summary="@string/lock_screen_color_settings_summary"
-            android:fragment="com.android.settings.bliss.LockScreenColorSettings" />
-
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="double_tap_sleep_lock_screen"
             android:title="@string/double_tap_ls"
