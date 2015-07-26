@@ -35,6 +35,8 @@ import android.widget.LinearLayout;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
+import com.android.settings.Utils;
+import com.android.settings.bliss.SeekBarPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,10 +54,14 @@ public class StatusBarWeather extends SettingsPreferenceFragment
     private static final String STATUS_BAR_TEMPERATURE = "status_bar_temperature";
     private static final String STATUS_BAR_TEMPERATURE_STYLE = "status_bar_temperature_style";
     private static final String PREF_STATUS_BAR_WEATHER_COLOR = "status_bar_weather_color";
+    private static final String PREF_STATUS_BAR_WEATHER_SIZE = "status_bar_weather_size";
+    private static final String PREF_STATUS_BAR_WEATHER_FONT_STYLE = "status_bar_weather_font_style";
 
     private ListPreference mStatusBarTemperature;
     private ListPreference mStatusBarTemperatureStyle;
     private ColorPickerPreference mStatusBarTemperatureColor;
+    private SeekBarPreference mStatusBarTemperatureSize;
+    private ListPreference mStatusBarTemperatureFontStyle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,6 +70,7 @@ public class StatusBarWeather extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.status_bar_weather);
 
         ContentResolver resolver = getActivity().getContentResolver();
+
         mStatusBarTemperature = (ListPreference) findPreference(STATUS_BAR_TEMPERATURE);
         int temperatureShow = Settings.System.getIntForUser(resolver,
                 Settings.System.STATUS_BAR_SHOW_WEATHER_TEMP, 0,
@@ -88,6 +95,17 @@ public class StatusBarWeather extends SettingsPreferenceFragment
         String hexColor = String.format("#%08x", (0xffffffff & intColor));
             mStatusBarTemperatureColor.setSummary(hexColor);
             mStatusBarTemperatureColor.setNewPreviewColor(intColor);
+
+        mStatusBarTemperatureSize = (SeekBarPreference) findPreference(PREF_STATUS_BAR_WEATHER_SIZE);
+        mStatusBarTemperatureSize.setValue(Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_WEATHER_SIZE, 14));
+        mStatusBarTemperatureSize.setOnPreferenceChangeListener(this);
+
+        mStatusBarTemperatureFontStyle = (ListPreference) findPreference(PREF_STATUS_BAR_WEATHER_FONT_STYLE);
+        mStatusBarTemperatureFontStyle.setOnPreferenceChangeListener(this);
+        mStatusBarTemperatureFontStyle.setValue(Integer.toString(Settings.System.getInt(getActivity()
+                .getContentResolver(), Settings.System.STATUS_BAR_WEATHER_FONT_STYLE, 0)));
+        mStatusBarTemperatureFontStyle.setSummary(mStatusBarTemperatureFontStyle.getEntry());
 
         updateWeatherOptions();
     }
@@ -122,6 +140,18 @@ public class StatusBarWeather extends SettingsPreferenceFragment
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_WEATHER_COLOR, intHex);
             return true;
+        } else if (preference == mStatusBarTemperatureSize) {
+            int width = ((Integer)newValue).intValue();
+            Settings.System.putInt(resolver,
+                    Settings.System.STATUS_BAR_WEATHER_SIZE, width);
+            return true;
+        } else if (preference == mStatusBarTemperatureFontStyle) {
+            int val = Integer.parseInt((String) newValue);
+            int index = mStatusBarTemperatureFontStyle.findIndexOfValue((String) newValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_WEATHER_FONT_STYLE, val);
+            mStatusBarTemperatureFontStyle.setSummary(mStatusBarTemperatureFontStyle.getEntries()[index]);
+            return true;
         }
         return false;
     }
@@ -131,9 +161,13 @@ public class StatusBarWeather extends SettingsPreferenceFragment
             Settings.System.STATUS_BAR_SHOW_WEATHER_TEMP, 0) == 0) {
             mStatusBarTemperatureStyle.setEnabled(false);
             mStatusBarTemperatureColor.setEnabled(false);
+            mStatusBarTemperatureSize.setEnabled(false);
+            mStatusBarTemperatureFontStyle.setEnabled(false);
         } else {
             mStatusBarTemperatureStyle.setEnabled(true);
             mStatusBarTemperatureColor.setEnabled(true);
+            mStatusBarTemperatureSize.setEnabled(true);
+            mStatusBarTemperatureFontStyle.setEnabled(true);
         }
     }
 
