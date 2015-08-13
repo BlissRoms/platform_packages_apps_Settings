@@ -590,4 +590,8 @@
     <string name="notification_color_mode_always_title">Always</string>
     <string name="notification_drawer_clear_all_icon_color_title">Clear all icon</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
 </resources>

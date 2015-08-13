@@ -126,6 +126,13 @@
                 android:summary="@string/proximity_wake_summary"
                 android:defaultValue="true" />
 
+        <!-- Three-fingers-swipe to screenshot -->
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+                android:key="three_finger_gesture"
+                android:title="@string/three_finger_gesture"
+                android:summary="@string/three_finger_gesture_summary"
+                android:defaultValue="false" />
+
         <!-- Seconds before sleep -->
         <ListPreference
                 android:key="screen_timeout"
