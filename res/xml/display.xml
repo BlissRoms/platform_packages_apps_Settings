@@ -177,6 +177,12 @@
                 android:title="@string/notification_light_title"
                 android:fragment="com.android.settings.notificationlight.NotificationLightSettings" />
 
-    </PreferenceCategory>
+         <!-- Toast Icons -->
+         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+                android:key="toast_icon"
+                android:title="@string/toast_icon_title"
+                android:defaultValue="true" />
+
+	</PreferenceCategory>
 
 </PreferenceScreen>
