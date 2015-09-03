@@ -45,6 +45,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.android.internal.logging.MetricsLogger;
+import com.android.settings.bliss.SeekBarPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -72,6 +73,7 @@ public class StatusBarClockandDate extends SettingsPreferenceFragment
     private static final String STATUS_BAR_DATE_FORMAT = "status_bar_date_format";
     private static final String PREF_COLOR_PICKER = "clock_color";
     private static final String PREF_FONT_STYLE = "font_style";
+    private static final String PREF_FONT_SIZE  = "font_size";
 
     public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
@@ -87,6 +89,8 @@ public class StatusBarClockandDate extends SettingsPreferenceFragment
     private ListPreference mStatusBarDateStyle;
     private ListPreference mStatusBarDateFormat;
     private ListPreference mFontStyle;
+
+    private SeekBarPreference mStatusBarDateSize;
 
     private ColorPickerPreference mColorPicker;
     
@@ -178,6 +182,11 @@ public class StatusBarClockandDate extends SettingsPreferenceFragment
                 0)));
         mFontStyle.setSummary(mFontStyle.getEntry());
 
+        mStatusBarDateSize = (SeekBarPreference) findPreference(PREF_FONT_SIZE);
+        mStatusBarDateSize.setValue(Settings.System.getInt(resolver,
+                Settings.System.STATUSBAR_CLOCK_FONT_SIZE, 14));
+        mStatusBarDateSize.setOnPreferenceChangeListener(this);
+
         setHasOptionsMenu(true);
         mCheckPreferences = true;
         return prefScreen;
@@ -235,6 +244,11 @@ public class StatusBarClockandDate extends SettingsPreferenceFragment
             Settings.System.putInt(
                     resolver, STATUS_BAR_DATE_STYLE, statusBarDateStyle);
             mStatusBarDateStyle.setSummary(mStatusBarDateStyle.getEntries()[index]);
+            return true;
+        } else if (preference == mStatusBarDateSize) {
+            int width = ((Integer)newValue).intValue();
+            Settings.System.putInt(resolver,
+                    Settings.System.STATUSBAR_CLOCK_FONT_SIZE, width);
             return true;
         } else if (preference ==  mStatusBarDateFormat) {
             int index = mStatusBarDateFormat.findIndexOfValue((String) newValue);
@@ -305,10 +319,12 @@ public class StatusBarClockandDate extends SettingsPreferenceFragment
         if (clockStyle == 0) {
             mStatusBarDate.setEnabled(false);
             mStatusBarDateStyle.setEnabled(false);
+            mStatusBarDateSize.setEnabled(false);
             mStatusBarDateFormat.setEnabled(false);
         } else {
             mStatusBarDate.setEnabled(true);
             mStatusBarDateStyle.setEnabled(true);
+            mStatusBarDateSize.setEnabled(true);
             mStatusBarDateFormat.setEnabled(true);
         }
     }
