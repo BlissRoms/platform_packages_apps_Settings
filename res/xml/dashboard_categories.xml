@@ -110,7 +110,6 @@
        <dashboard-tile
            android:id="@+id/audiofx_settings"
            android:title="@string/audiofx_settings_title"
-           android:summary="@string/audiofx_summary"
            android:icon="@drawable/ic_bliss_equalizer" >
            <intent
               android:action="android.intent.action.MAIN"
@@ -122,7 +121,6 @@
        <dashboard-tile
            android:id="@+id/viper_settings"
            android:title="@string/viper_settings_title"
-           android:summary="@string/viper_summary"
            android:icon="@drawable/ic_bliss_equalizer" >
            <intent
               android:action="android.intent.action.MAIN"

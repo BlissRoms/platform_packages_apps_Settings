@@ -136,12 +136,10 @@
 
     <!--Embedded AudioFX-->
     <string name="audiofx_settings_title">Equalizer</string>
-    <string name="audiofx_summary">AudioFX Access</string>
 
     <!--Embedded Viper4Android-->
     <string name="viper_settings_title">Equalizer</string>
-    <string name="viper_summary">Viper4Android Access</string>
-    
+
     <!-- Kernel Adiutor -->
     <string name="kernel_adiutor_title">Kernel Adiutor</string>
 
@@ -150,5 +148,8 @@
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
+
+    <!-- AdAway -->
+    <string name="adaway_settings_title">AdAway</string>
 
 </resources>

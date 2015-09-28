@@ -27,10 +27,15 @@
                 android:targetClass="com.android.development.Development" />
     </PreferenceScreen>
 
-    <com.android.settings.BugreportPreference
-            android:key="bugreport"
-            android:title="@*android:string/bugreport_title"
-            android:dialogTitle="@*android:string/bugreport_title" />
+    <PreferenceScreen
+        android:key="adaway"
+        android:title="@string/adaway_settings_title"
+        android:persistent="false" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="org.adaway"
+            android:targetClass="org.adaway.ui.BaseActivity" />
+    </PreferenceScreen>
 
     <SwitchPreference
         android:key="advanced_reboot"
@@ -135,11 +140,6 @@
             android:key="enable_terminal"
             android:title="@string/enable_terminal_title"
             android:summary="@string/enable_terminal_summary" />
-
-        <SwitchPreference
-            android:key="bugreport_in_power"
-            android:title="@string/bugreport_in_power"
-            android:summary="@string/bugreport_in_power_summary"/>
 
         <PreferenceScreen android:key="mock_location_app"
             android:title="@string/mock_location_app" />
