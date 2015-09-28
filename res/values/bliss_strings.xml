@@ -315,10 +315,6 @@
     <string name="system_app_remover">System App Remover</string>
     <string name="systemappremover_summary">Remove system apps by your own risk</string>
 
-    <!-- BlissRoms OTA -->
-    <string name="bliss_ota">Updates</string>
-
-
     <!-- Sound settings -->
     <string name="advanced_sound_title">Advanced options</string>
     <string name="sound_title">Sound</string>
@@ -340,5 +336,16 @@
     <string name="omniswitch_start_settings_summary">Open OmniSwitch settings</string>
     <string name="omniswitch_first_time_title">Information</string>
     <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
+
+    <!-- Battery Settings -->
+    <string name="battery_settings_title">Battery</string>
+    <string name="battery_settings_summary">Customize the battery on the status bar and the battery bar</string>
+    <string name="status_bar_battery_cat">Status bar options</string>
+
+    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <string name="supersu_title">SuperSU</string> 
+
+    <!-- AdAway -->
+    <string name="adaway_settings_title">AdAway</string>
 
 </resources>
