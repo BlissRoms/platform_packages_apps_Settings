@@ -27,6 +27,8 @@
 -keep class com.android.settings.bluetooth.BluetoothEnabler { *; }
 -keep class com.android.settings.dashboard.MobileNetworksEnabler { *; }
 
+-keep class com.android.settings.bliss.*Settings
+
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
   *** onClick*(...);

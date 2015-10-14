@@ -41,6 +41,13 @@ Project
             android:icon="@drawable/ic_settings_buttons"
             />
 
+        <!-- Recents -->
+        <PreferenceScreen
+            android:id="@+id/recents_settings"
+            android:fragment="com.android.settings.bliss.RecentsSettings"
+            android:title="@string/recents_settings_title"
+            android:icon="@drawable/ic_xd_recents"
+	    />
 
     </PreferenceCategory> 
 

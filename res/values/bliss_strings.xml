@@ -24,6 +24,9 @@
     <string name="status_bar_title">Status Bar</string>
     <string name="status_bar_style_title">Style and Tweaks</string>
 
+    <!-- Recents -->
+    <string name="recents_settings_title">Recents</string>
+
     <!-- Bliss Extra Info -->
     <string name="lsextrainfo">Extra information</string>
     <string name="lsextrainfo_summary">Display extra info for cpu, display, etc</string>
