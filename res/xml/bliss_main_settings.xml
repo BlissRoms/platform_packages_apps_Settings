@@ -58,7 +58,13 @@ Project
             android:fragment="com.android.settings.bliss.ScreenAndAnimations"
             android:title="@string/screen_and_animations_title"
 	    />
-
+        <!-- Animation Settings -->
+        <PreferenceScreen
+            android:key="animation_settings"
+            android:title="@string/animation_title"
+            android:fragment="com.android.settings.rr.animation.AnimationSettings" 
+            android:icon="@drawable/ic_xd_animation"
+            />
 
     </PreferenceCategory> 
 
