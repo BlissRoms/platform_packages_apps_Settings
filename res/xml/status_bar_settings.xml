@@ -128,4 +128,11 @@
             android:title="@string/disable_immersive_message_title"
             android:summary="@string/disable_immersive_message_summary" />
 
+     <!-- Superuser Indicator -->
+     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="show_su_indicator"
+        android:title="@string/su_indicator"
+        android:summaryOn="@string/su_indicator_summary_on"
+        android:summaryOff="@string/su_indicator_summary_off"
+        android:defaultValue="true" />
 </PreferenceScreen>
