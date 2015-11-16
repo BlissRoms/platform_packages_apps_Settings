@@ -563,4 +563,6 @@
     <string name="doze_brightness_title">Doze brightness level</string>
     <string name="doze_brightness_summary">Brightness level of doze pulse screen (% of max allowed brightness)</string>
 
+    <string name="allow_lights_title">Lights in do not disturb mode</string>
+
 </resources>
