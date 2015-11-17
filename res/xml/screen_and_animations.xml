@@ -34,6 +34,11 @@
             android:entryValues="@array/listview_interpolator_values"
             android:defaultValue="0" />
 
+        <PreferenceScreen
+            android:key="aokp_animation"
+            android:title="@string/system_animation_title"
+            android:fragment="com.android.settings.rr.animation.AnimationControls" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
