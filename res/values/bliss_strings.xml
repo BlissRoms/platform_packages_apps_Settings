@@ -360,4 +360,8 @@
     <string name="status_bar_bluetooth_icon">Bluetooth icon</string>
     <string name="status_bar_bluetooth_icon_summary">Shows icon when it is enabled but not connected</string>
 
+    <!-- Battery saver color -->
+    <string name="battery_saver_color_title">Warning color</string>
+    <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
+
 </resources>
