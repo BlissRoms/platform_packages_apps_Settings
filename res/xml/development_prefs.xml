@@ -97,6 +97,11 @@
         android:title="@string/update_recovery_title"
         android:summary="@string/update_recovery_summary" />
 
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="disable_fc_notifications"
+        android:title="@string/disable_fc_notifications_title"
+        android:summary="@string/disable_fc_notifications_summary" />
+
     <com.android.settings.ColorModePreference
         android:key="color_mode"
         android:title="@string/picture_color_mode"
