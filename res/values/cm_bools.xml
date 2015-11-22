@@ -21,4 +21,6 @@
     <!-- Default value for battery light pulse -->
     <bool name="def_battery_light_pulse">true</bool>
 
+      <dimen name="fab_margin">16dp</dimen>
+
 </resources>
