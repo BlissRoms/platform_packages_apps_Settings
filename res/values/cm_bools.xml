@@ -27,4 +27,6 @@
     <string name="share_message">Check out what #BlissPop is all about @ http://www.blissroms.com</string>
     <string name="share_chooser_title">Share BlissPop</string>
 
+      <dimen name="fab_margin">16dp</dimen>
+
 </resources>

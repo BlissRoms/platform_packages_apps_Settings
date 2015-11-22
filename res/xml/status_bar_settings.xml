@@ -66,7 +66,7 @@
     </PreferenceScreen>
 
     <PreferenceScreen
-        android:key="carrier_options"
+        android:key="carrierlabel"
         android:fragment="com.android.settings.bliss.CarrierLabel"
         android:title="@string/carrier_options" />
     
