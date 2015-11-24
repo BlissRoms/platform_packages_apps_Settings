@@ -736,7 +736,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private void updateAdvancedRebootOptions() {
         mAdvancedReboot.setChecked(CMSettings.Secure.getInt(getActivity().getContentResolver(),
-                CMSettings.Secure.ADVANCED_REBOOT, 0) != 0);
+                CMSettings.Secure.ADVANCED_REBOOT, 1) != 0);
     }
 
     private void resetDevelopmentShortcutOptions() {
