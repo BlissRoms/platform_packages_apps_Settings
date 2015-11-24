@@ -31,4 +31,9 @@
 
     <string name="screenshot_shutter_sound_title">Screenshot sound</string>
 
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="ok_string">Ok</string>
+
 </resources>
