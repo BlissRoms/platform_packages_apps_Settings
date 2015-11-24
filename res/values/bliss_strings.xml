@@ -382,4 +382,9 @@
     <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Back gesture animation</string>
     <string name="back_gesture_arrow_summary">Show an animated arrow for back gesture</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+
 </resources>
