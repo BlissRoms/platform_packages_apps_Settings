@@ -196,4 +196,9 @@
     <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
     <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
 
+    <!-- RAM bar -->
+    <string name="recents_show_membar_title">RAM memory bar</string>
+    <string name="recents_show_membar_summary_on">Available RAM memory bar will be displayed on recents view</string>
+    <string name="recents_show_membar_summary_off">Toggle to display available RAM memory bar on recents view</string>
+
 </resources>
