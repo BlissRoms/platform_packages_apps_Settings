@@ -46,6 +46,12 @@
                 android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
         </PreferenceScreen>
 
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_lock_screen"
+            android:title="@string/double_tap_ls"
+            android:summary="@string/double_tap_ls_summary"
+            android:defaultValue="true" />
+
         <com.android.settings.cyanogenmod.CMSecureSettingSwitchPreference
             android:key="lockscreen_visualizer"
             android:title="@string/lockscreen_visualizer_title"

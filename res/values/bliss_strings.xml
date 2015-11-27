@@ -401,6 +401,10 @@
     <string name="lockscreen_colors_reset_title">Reset lockscreen colors</string>
     <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
     <string name="yes">YES</string>
+    <string name="double_tap_ls">Double tap to sleep on lockscreen</string>
+    <string name="double_tap_ls_summary">Double tap anywhere on lockscreen to sleep</string>
+
+
 
     <!-- Volume Steps Fragment -->
     <string name="volume_steps_fragment_title">Volume steps</string>
