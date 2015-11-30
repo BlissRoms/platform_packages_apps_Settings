@@ -73,6 +73,7 @@ public class NetworkTraffic extends SettingsPreferenceFragment
     private static final String NETWORK_TRAFFIC_AUTOHIDE = "network_traffic_autohide";
     private static final String NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD = "network_traffic_autohide_threshold";
     private static final String NETWORK_TRAFFIC_HIDEARROW = "network_traffic_hidearrow";
+    private static final String NETWORK_TRAFFIC_COLOR = "network_traffic_color";
 
     private ListPreference mNetTrafficState;
     private ListPreference mNetTrafficUnit;
@@ -80,6 +81,7 @@ public class NetworkTraffic extends SettingsPreferenceFragment
     private SwitchPreference mNetTrafficAutohide;
     private SeekBarPreference mNetTrafficAutohideThreshold;
     private SwitchPreference mNetTrafficHidearrow;
+    private ColorPickerPreference mNetTrafficColor;
 
     private int mNetTrafficVal;
     private int MASK_UP;
@@ -101,6 +103,8 @@ public class NetworkTraffic extends SettingsPreferenceFragment
         mNetTrafficPeriod = (ListPreference) prefScreen.findPreference(NETWORK_TRAFFIC_PERIOD);
         mNetTrafficAutohide = (SwitchPreference) prefScreen.findPreference(NETWORK_TRAFFIC_AUTOHIDE);
         mNetTrafficAutohideThreshold = (SeekBarPreference) prefScreen.findPreference(NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD);
+ 	    mNetTrafficColor =
+                (ColorPickerPreference) prefScreen.findPreference(NETWORK_TRAFFIC_COLOR);
 
         // TrafficStats will return UNSUPPORTED if the device does not support it.
         if (TrafficStats.getTotalTxBytes() != TrafficStats.UNSUPPORTED &&
@@ -138,11 +142,19 @@ public class NetworkTraffic extends SettingsPreferenceFragment
                     Settings.System.NETWORK_TRAFFIC_HIDEARROW, 0) == 1));
             mNetTrafficHidearrow.setOnPreferenceChangeListener(this);
 
-            mNetTrafficUnit.setEnabled(intIndex != 0);
-            mNetTrafficPeriod.setEnabled(intIndex != 0);
-            mNetTrafficAutohide.setEnabled(intIndex != 0);
-            mNetTrafficAutohideThreshold.setEnabled(intIndex != 0);
-            mNetTrafficHidearrow.setEnabled(intIndex != 0);
+            mNetTrafficColor.setOnPreferenceChangeListener(this);
+            int intColor = Settings.System.getInt(getContentResolver(),
+                Settings.System.NETWORK_TRAFFIC_COLOR, 0xffffffff);
+            String hexColor = String.format("#%08x", (0xffffffff & intColor));
+            mNetTrafficColor.setSummary(hexColor);
+            mNetTrafficColor.setNewPreviewColor(intColor);
+
+            mNetTrafficUnit.setEnabled(intIndex > 0);
+            mNetTrafficPeriod.setEnabled(intIndex > 0);
+            mNetTrafficAutohide.setEnabled(intIndex > 0);
+            mNetTrafficAutohideThreshold.setEnabled(intIndex > 0);
+            mNetTrafficHidearrow.setEnabled(intIndex > 0);
+            mNetTrafficColor.setEnabled(intIndex > 0);
 
         } else {
             prefScreen.removePreference(findPreference(NETWORK_TRAFFIC_STATE));
@@ -150,8 +162,9 @@ public class NetworkTraffic extends SettingsPreferenceFragment
             prefScreen.removePreference(findPreference(NETWORK_TRAFFIC_PERIOD));
             prefScreen.removePreference(findPreference(NETWORK_TRAFFIC_AUTOHIDE));
             prefScreen.removePreference(findPreference(NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD));
+            prefScreen.removePreference(findPreference(NETWORK_TRAFFIC_HIDEARROW));
+            prefScreen.removePreference(findPreference(NETWORK_TRAFFIC_COLOR));
         }
-        
     }
 
     @Override
@@ -176,6 +189,7 @@ public class NetworkTraffic extends SettingsPreferenceFragment
             mNetTrafficAutohide.setEnabled(intState != 0);
             mNetTrafficAutohideThreshold.setEnabled(intState != 0);
             mNetTrafficHidearrow.setEnabled(intState != 0);
+            mNetTrafficColor.setEnabled(intState != 0);
 
             return true;
         } else if (preference == mNetTrafficUnit) {
@@ -206,6 +220,14 @@ public class NetworkTraffic extends SettingsPreferenceFragment
             boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.NETWORK_TRAFFIC_HIDEARROW, value ? 1 : 0);
+            return true;
+        } else if (preference == mNetTrafficColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(resolver,
+                    Settings.System.NETWORK_TRAFFIC_COLOR, intHex);
             return true;
         }
         return false;
