@@ -2,28 +2,28 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@android:id/widget_frame"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
     android:paddingStart="?android:attr/listPreferredItemPaddingStart"
     android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
-    android:paddingTop="8dp"
-    android:paddingBottom="6dp"
-    >
+    android:background="?android:attr/selectableItemBackground" >
 
     <TextView android:id="@android:id/title"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-            android:textColor="?android:attr/textColorPrimary" />
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceListItem" />
 
     <TextView android:id="@android:id/summary"
             android:layout_alignParentLeft="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@android:id/title"
-            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
             android:textColor="?android:attr/textColorSecondary" />
 
     <RelativeLayout
