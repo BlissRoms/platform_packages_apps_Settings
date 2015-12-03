@@ -125,6 +125,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private static final String OPENGL_TRACES_PROPERTY = "debug.egl.trace";
     private static final String TUNER_UI_KEY = "tuner_ui";
     private static final String COLOR_TEMPERATURE_PROPERTY = "persist.sys.debug.color_temp";
+   private static final String MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
 
     private static final String DEBUG_APP_KEY = "debug_app";
     private static final String WAIT_FOR_DEBUGGER_KEY = "wait_for_debugger";
@@ -293,6 +294,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private Dialog mAdbKeysDialog;
     private boolean mUnavailable;
     private Dialog mRootDialog;
+	private ListPreference mMSOB;
 
     @Override
     protected int getMetricsCategory() {
@@ -475,6 +477,11 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             removePreference(COLOR_TEMPERATURE_KEY);
             mColorTemperaturePreference = null;
         }
+
+        mMSOB = (ListPreference) findPreference(MEDIA_SCANNER_ON_BOOT);
+        mAllPrefs.add(mMSOB);
+        mMSOB.setOnPreferenceChangeListener(this);
+        updateMSOBOptions();
     }
 
     private ListPreference addListPreference(String prefKey) {
@@ -1953,9 +1960,30 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         } else if (preference == mKeepScreenOn) {
             writeStayAwakeOptions(newValue);
             return true;
+        } else if (preference == mMSOB) {
+            writeMSOBOptions(newValue);
+            return true;
         }
-        
         return false;
+    }
+
+    private void resetMSOBOptions() {
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.MEDIA_SCANNER_ON_BOOT, 0);
+    }
+
+    private void writeMSOBOptions(Object newValue) {
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.MEDIA_SCANNER_ON_BOOT,
+                Integer.valueOf((String) newValue));
+        updateMSOBOptions();
+    }
+
+    private void updateMSOBOptions() {
+        int value = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.MEDIA_SCANNER_ON_BOOT, 0);
+        mMSOB.setValue(String.valueOf(value));
+        mMSOB.setSummary(mMSOB.getEntry());
     }
 
     private void dismissDialogs() {
