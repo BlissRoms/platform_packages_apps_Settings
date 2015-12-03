@@ -59,6 +59,12 @@
             android:title="@string/media_art_title"
             android:summary="@string/media_art_summary"
             android:defaultValue="true" />
+			
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="power_menu_lockscreen"
+            android:title="@string/powermenu_lockscreen_title"
+            android:summary="@string/powermenu_lockscreen_summary"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 

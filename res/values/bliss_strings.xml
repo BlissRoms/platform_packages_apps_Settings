@@ -375,4 +375,8 @@
     <string name="show_fourg_summary">Replaces LTE statusbar indicator with 4G</string>
     <string name="statusbar_tuner_category_title">Hide items from statusbar</string>
 
+    <!-- Hide power menu on Lockscreen -->
+    <string name="powermenu_lockscreen_title">Power menu on lock screen</string>
+    <string name="powermenu_lockscreen_summary">Show power menu on the lock screen</string>
+
 </resources>
