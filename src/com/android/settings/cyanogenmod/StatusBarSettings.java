@@ -157,6 +157,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mNetTrafficAutohideThreshold.setValue(netTrafficAutohideThreshold / 1);
             mNetTrafficAutohideThreshold.setOnPreferenceChangeListener(this);
 
+            mNetTrafficAutohide.setChecked((Settings.System.getInt(resolver,
+                Settings.System.NETWORK_TRAFFIC_AUTOHIDE, 0) == 1));
+            mNetTrafficAutohide.setOnPreferenceChangeListener(this);
+
+
             mNetTrafficUnit.setEnabled(intIndex != 0);
             mNetTrafficPeriod.setEnabled(intIndex != 0);
             mNetTrafficAutohide.setEnabled(intIndex != 0);
@@ -228,6 +233,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             Settings.System.putInt(resolver, Settings.System.NETWORK_TRAFFIC_STATE, mNetTrafficVal);
             int index = mNetTrafficPeriod.findIndexOfValue((String) newValue);
             mNetTrafficPeriod.setSummary(mNetTrafficPeriod.getEntries()[index]);
+            return true;
+        } else if (preference == mNetTrafficAutohide) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NETWORK_TRAFFIC_AUTOHIDE, value ? 1 : 0);
             return true;
         } else if (preference == mNetTrafficAutohideThreshold) {
             int threshold = (Integer) newValue;
