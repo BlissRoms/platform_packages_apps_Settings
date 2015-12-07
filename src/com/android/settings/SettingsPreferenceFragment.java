@@ -72,6 +72,9 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
 
     private String mHelpUri;
 
+    protected Context mContext;
+    protected ContentResolver mContentRes;
+
     private static final int ORDER_FIRST = -1;
     private static final int ORDER_LAST = Integer.MAX_VALUE -1;
 
@@ -107,6 +110,9 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+
+        mContext = getActivity().getApplicationContext();
+        mContentRes = getActivity().getContentResolver();
 
         if (icicle != null) {
             mPreferenceHighlighted = icicle.getBoolean(SAVE_HIGHLIGHTED_KEY);
@@ -767,5 +773,8 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
                 mHighlightPosition = -1;
             }
         }
+    }
+    public void setTitle(int resId) {
+        getActivity().setTitle(resId);
     }
 }
