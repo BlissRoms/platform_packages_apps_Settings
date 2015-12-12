@@ -124,15 +124,14 @@
     <PreferenceCategory
             android:key="interface"
             android:title="@string/category_interface">
-
-        <!-- Wallpaper -->
+        <!-- wallpaper -->
         <PreferenceScreen
                 android:key="wallpaper"
                 android:title="@string/wallpaper_settings_title"
                 settings:keywords="@string/keywords_display_wallpaper"
                 android:fragment="com.android.settings.WallpaperTypeSettings" />
 
-        <!-- Expanded desktop -->
+        <!-- expanded desktop -->
         <PreferenceScreen
                 android:key="expanded_desktop"
                 android:title="@string/power_menu_expanded_desktop"
