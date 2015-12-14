@@ -82,7 +82,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
-    private static final String KEY_MOD_API_LEVEL = "mod_api_level";
     private static final String KEY_MOD_VERSION = "mod_version";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
@@ -131,9 +130,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
-        setExplicitValueSummary(KEY_MOD_API_LEVEL, constructApiLevelString());
-        findPreference(KEY_MOD_API_LEVEL).setEnabled(true);
-        findPreference(KEY_MOD_BUILD_DATE).setEnabled(true);
         setValueSummary(KEY_MOD_VERSION, "ro.bliss.version");
 
         if (!SELinux.isSELinuxEnabled()) {
@@ -392,14 +388,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
             return "Unavailable";
         }
-    }
-
-    private static String constructApiLevelString() {
-        int sdkInt = cyanogenmod.os.Build.CM_VERSION.SDK_INT;
-        StringBuilder builder = new StringBuilder();
-        builder.append(cyanogenmod.os.Build.getNameForSDKInt(sdkInt))
-                .append(" (" + sdkInt + ")");
-        return builder.toString();
     }
 
     public static String formatKernelVersion(String rawKernelVersion) {
