@@ -91,12 +91,6 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/device_info_default"/>
 
-        <!-- CyanogenMod API Version -->
-        <Preference android:key="mod_api_level"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/mod_api_level"
-                android:summary="@string/mod_api_level_default" />
-
         <!-- Security patch level -->
         <Preference android:key="security_patch"
                 style="?android:preferenceInformationStyle"
