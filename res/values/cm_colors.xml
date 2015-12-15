@@ -85,9 +85,6 @@ limitations under the License.
     <color name="storage_volume_color_private4">#ffec407a</color> <!-- pink -->
     <color name="storage_volume_color_private5">#ffc0ca33</color> <!-- green -->
     <color name="eject_icon_tint_color">#8a000000</color>
-    <!-- Contributors -->
-    <color name="contributors_cloud_fg_color">@color/theme_accent</color>
-    <color name="contributors_cloud_selected_color">#ff5252</color>
 
     <color name="external_tile_icon_tint_color">?android:attr/colorAccent</color>
     <color name="factory_reset_color">#FFFE412C</color>
