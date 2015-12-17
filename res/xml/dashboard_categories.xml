@@ -143,6 +143,17 @@
             </intent>
         </dashboard-tile>
 
+    <!-- Kernel Adiutor -->
+        <dashboard-tile
+        android:id="@+id/kernel_adiutor"
+        android:title="@string/kernel_adiutor_title"
+        android:icon="@drawable/ic_settings_performance">
+            <intent
+                android:action="android.intent.action.MAIN"
+		        android:targetPackage="com.grarak.kerneladiutor"
+                android:targetClass="com.grarak.kerneladiutor.MainActivity" />
+        </dashboard-tile>
+
         <!-- Sound -->
         <dashboard-tile
                 android:id="@+id/sound_settings"
