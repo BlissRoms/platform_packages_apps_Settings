@@ -30,8 +30,11 @@
     <string name="changelog_bliss_error">Unable to load changelog</string>
 
     <!-- About phone screen, Bliss version -->
-    <string name="mod_version">Bliss version</string>
+    <string name="bliss_mod_version">Bliss version</string>
     <string name="mod_build_version">Bliss build</string>
     <string name="mod_version_default">Unknown</string>
+
+    <!-- Kernel Adiutor -->
+    <string name="kernel_adiutor_title">Kernel Adiutor</string>
 
 </resources>
