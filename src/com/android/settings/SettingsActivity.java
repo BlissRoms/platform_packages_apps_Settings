@@ -1322,6 +1322,26 @@ public class SettingsActivity extends Activity
                     if (!supported) {
                         removeTile = true;
                     }
+                } else if (id == R.id.audiofx_settings) {
+                    // Embedding into Settings is supported
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("org.cyanogenmod.audiofx", 0).versionCode >= 1);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
+                } else if (id == R.id.viper_settings) {
+                    // Embedding into Settings is supported
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("com.vipercn.viper4android_v2", 0).versionCode >= 1);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
                 }
 
                 if (UserHandle.MU_ENABLED && UserHandle.myUserId() != 0
