@@ -47,6 +47,7 @@ import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.TwoStatePreference;
 import android.text.TextUtils;
 import android.util.Log;
@@ -83,7 +84,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
     private static final String KEY_VIBRATE_WHEN_RINGING = "vibrate_when_ringing";
     private static final String KEY_ZEN_MODE = "zen_mode";
     private static final String KEY_CELL_BROADCAST_SETTINGS = "cell_broadcast_settings";
-
+    private static final String KEY_INCREASING_RING_VOLUME = "increasing_ring_volume";
     private static final String SELECTED_PREFERENCE_KEY = "selected_preference";
     private static final int REQUEST_CODE = 200;
 
@@ -98,6 +99,16 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
     private static final int SAMPLE_CUTOFF = 2000;  // manually cap sample playback at 2 seconds
 
     private final VolumePreferenceCallback mVolumeCallback = new VolumePreferenceCallback();
+    private final IncreasingRingVolumePreference.Callback mIncreasingRingVolumeCallback =
+            new IncreasingRingVolumePreference.Callback() {
+        @Override
+        public void onStartingSample() {
+            mVolumeCallback.stopSample();
+            mHandler.removeMessages(H.STOP_SAMPLE);
+            mHandler.sendEmptyMessageDelayed(H.STOP_SAMPLE, SAMPLE_CUTOFF);
+        }
+    };
+
     private final H mHandler = new H();
     private final SettingsObserver mSettingsObserver = new SettingsObserver();
     private final Receiver mReceiver = new Receiver();
@@ -109,6 +120,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
     private AudioManager mAudioManager;
     private VolumeSeekBarPreference mRingOrNotificationPreference;
 
+    private TwoStatePreference mIncreasingRing;
+    private IncreasingRingVolumePreference mIncreasingRingVolume;
     private Preference mPhoneRingtonePreference;
     private Preference mNotificationRingtonePreference;
     private Preference mAlarmRingtonePreference;
@@ -177,6 +190,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
         }
         initRingtones();
         initVibrateWhenRinging();
+        initIncreasingRing();
         updateRingerMode();
         updateEffectsSuppressor();
 
@@ -199,6 +213,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
         updateVibrateWhenRinging();
         for (VolumeSeekBarPreference volumePref : mVolumePrefs) {
             volumePref.onActivityResume();
+        }
+        if (mIncreasingRingVolume != null) {
+            mIncreasingRingVolume.onActivityResume();
         }
 
         final EnforcedAdmin admin = RestrictedLockUtils.checkIfRestrictionEnforced(mContext,
@@ -229,8 +246,19 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
             volumePref.onActivityPause();
         }
         mVolumeCallback.stopSample();
+        if (mIncreasingRingVolume != null) {
+            mIncreasingRingVolume.stopSample();
+        }
         mSettingsObserver.register(false);
         mReceiver.register(false);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (mIncreasingRingVolume != null) {
+            mIncreasingRingVolume.onActivityStop();
+        }
     }
 
     @Override
@@ -346,6 +374,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
             if (mCurrent != null && mCurrent != sbv) {
                 mCurrent.stopSample();
             }
+            if (mIncreasingRingVolume != null) {
+                mIncreasingRingVolume.stopSample();
+            }
             mCurrent = sbv;
             if (mCurrent != null) {
                 mHandler.removeMessages(H.STOP_SAMPLE);
@@ -449,6 +480,29 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
         return summary;
     }
 
+    // === Increasing ringtone ===
+
+    private void initIncreasingRing() {
+        PreferenceScreen root = getPreferenceScreen();
+        mIncreasingRing = (TwoStatePreference)
+		        root.findPreference(Settings.System.INCREASING_RING);
+        mIncreasingRingVolume = (IncreasingRingVolumePreference)
+                root.findPreference(KEY_INCREASING_RING_VOLUME);
+
+        if (mIncreasingRing == null || mIncreasingRingVolume == null || !mVoiceCapable) {
+            if (mIncreasingRing != null) {
+                root.removePreference(mIncreasingRing);
+                mIncreasingRing = null;
+            }
+            if (mIncreasingRingVolume != null) {
+                root.removePreference(mIncreasingRingVolume);
+                mIncreasingRingVolume = null;
+            }
+        } else {
+            mIncreasingRingVolume.setCallback(mIncreasingRingVolumeCallback);
+        }
+    }
+
     // === Vibrate when ringing ===
 
     private void initVibrateWhenRinging() {
@@ -533,6 +587,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
                     break;
                 case STOP_SAMPLE:
                     mVolumeCallback.stopSample();
+                    if (mIncreasingRingVolume != null) {
+                        mIncreasingRingVolume.stopSample();
+                    }
                     break;
                 case UPDATE_EFFECTS_SUPPRESSOR:
                     updateEffectsSuppressor();
