@@ -374,7 +374,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mPassword = (PreferenceScreen) findPreference(LOCAL_BACKUP_PASSWORD);
         mAllPrefs.add(mPassword);
         mAdvancedReboot = findAndInitSwitchPref(ADVANCED_REBOOT_KEY);
-
         mDevelopmentShortcut = findAndInitSwitchPref(DEVELOPMENT_SHORTCUT_KEY);
 
 
