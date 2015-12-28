@@ -130,8 +130,10 @@ public class StatusBarWeather extends SettingsPreferenceFragment
         if (Settings.System.getInt(getActivity().getContentResolver(),
             Settings.System.STATUS_BAR_SHOW_WEATHER_TEMP, 0) == 0) {
             mStatusBarTemperatureStyle.setEnabled(false);
+            mStatusBarTemperatureColor.setEnabled(false);
         } else {
             mStatusBarTemperatureStyle.setEnabled(true);
+            mStatusBarTemperatureColor.setEnabled(true);
         }
     }
 
@@ -139,7 +141,7 @@ public class StatusBarWeather extends SettingsPreferenceFragment
     public void onResume() {
         super.onResume();
     }
-      protected int getMetricsCategory() {
+    protected int getMetricsCategory() {
         return MetricsLogger.APPLICATION;
     }
 }
