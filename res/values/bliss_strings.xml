@@ -238,4 +238,8 @@
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
 
+    <!-- Clock Settings -->
+    <string name="status_bar_show_clock_second_title">Clock seconds</string>
+
+
 </resources>
