@@ -20,7 +20,10 @@
     <string name="bliss_settings_title">Bliss Settings</string>
     <string name="bliss_cat_title">Categories</string>
 
-    <!-- Status bar -->
+   <!-- Bliss Display Optionss -->
+    <string name="bliss_display">Bliss Display Options</string>
+   
+   <!-- Status bar -->
     <string name="status_bar_title">Status Bar</string>
     <string name="status_bar_style_title">Style and Tweaks</string>
 
