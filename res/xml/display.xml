@@ -18,6 +18,38 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     settings:keywords="@string/keywords_display">
 
+	<PreferenceCategory
+        android:key="Bliss Display Options"
+        android:title="@string/bliss_display">
+
+	 <!-- Toast Icons -->
+     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="toast_icon"
+        android:title="@string/toast_icon_title"
+       android:defaultValue="true" />
+				
+     <!-- Force Expanded Notification -->
+     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="force_expanded_notifications"
+        android:title="@string/force_expanded_notifications_title"
+        android:summary="@string/force_expanded_notifications_summary" />
+
+	 <!-- Disable Immersive Messages -->
+	 <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="disable_immersive_message"
+        android:title="@string/disable_immersive_message_title"
+        android:summary="@string/disable_immersive_message_summary" />
+
+     <!-- Superuser Indicator -->
+     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="show_su_indicator"
+        android:title="@string/su_indicator"
+        android:summaryOn="@string/su_indicator_summary_on"
+        android:summaryOff="@string/su_indicator_summary_off"
+        android:defaultValue="true" />
+
+    </PreferenceCategory>
+	
     <PreferenceCategory
         android:key="display"
         android:title="@string/display_label">
@@ -176,11 +208,7 @@
                 android:title="@string/notification_light_title"
                 android:fragment="com.android.settings.notificationlight.NotificationLightSettings" />
 
-         <!-- Toast Icons -->
-         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-                android:key="toast_icon"
-                android:title="@string/toast_icon_title"
-                android:defaultValue="true" />
+        </PreferenceCategory>
 
         <PreferenceCategory
                 android:key="interface"
