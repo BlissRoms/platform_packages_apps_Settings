@@ -116,6 +116,4 @@
             android:summary="@string/show_headset_icon_summary"
             android:defaultValue="true" />
 
-     </PreferenceCategory>
-
 </PreferenceScreen>
