@@ -52,13 +52,12 @@ Project
             android:icon="@drawable/ic_xd_recents"
 	    />
 
-        <!-- Screen and animations -->
+        <!-- Animation Settings -->
         <PreferenceScreen
             android:key="screen_and_animations"
             android:fragment="com.android.settings.bliss.ScreenAndAnimations"
             android:title="@string/screen_and_animations_title"
 	    />
-
 
     </PreferenceCategory> 
 
