@@ -21,7 +21,7 @@ Project
 
         <!-- Animation Settings -->
         <PreferenceScreen
-            android:key="screen_and_animations"
+            android:key="Animations"
             android:fragment="com.android.settings.bliss.ScreenAndAnimations"
             android:title="@string/screen_and_animations_title"
             android:icon="@drawable/ic_xd_animation"
@@ -44,14 +44,6 @@ Project
             <extra android:name="filter_type" android:value="0"/>
             </PreferenceScreen>
 			
-        <!-- Recents -->
-        <PreferenceScreen
-            android:id="@+id/recents_settings"
-            android:fragment="com.android.settings.bliss.RecentsSettings"
-            android:title="@string/recents_settings_title"
-            android:icon="@drawable/ic_xd_recents"
-	        />
-		
    	    <!-- Status bar -->
         <PreferenceScreen
             android:id="@+id/status_bar_settings"

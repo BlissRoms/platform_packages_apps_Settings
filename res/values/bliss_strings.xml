@@ -28,7 +28,7 @@
     <string name="status_bar_style_title">Style and Tweaks</string>
 
     <!-- Recents -->
-    <string name="recents_settings_title">Recents</string>
+<!--    <string name="recents_settings_title">Recents</string> -->
 
     <!-- Weather Options -->
     <string name="weather_settings_title">Weather</string>    
@@ -135,7 +135,7 @@
     <string name="toast_icon_title">Toast icon</string>
 
     <!-- Toast Animations -->
-    <string name="screen_and_animations_title">Screen and animations</string>
+    <string name="screen_and_animations_title">Animations</string>
     <string name="toast_animation_title">Toast animations</string>
     <string name="toast_animation_summary">Select and preview system toast animation</string>
     <string name="toast_none_animation">None</string>
