@@ -160,7 +160,7 @@
              android:summary="@string/network_traffic_autohide_summary"
              android:defaultValue="false"/>
 
-         <com.android.settings.benzo.SeekBarPreference
+         <com.android.settings.bliss.SeekBarPreference
              android:key="network_traffic_autohide_threshold"
              android:title="@string/network_traffic_autohide_threshold"
              android:max="100"
