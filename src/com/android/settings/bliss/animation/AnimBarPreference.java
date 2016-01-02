@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.rr.animation;
+package com.android.settings.bliss.animation;
 
 import android.content.Context;
 import android.content.res.TypedArray;
