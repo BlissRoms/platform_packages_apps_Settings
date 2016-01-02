@@ -1,4 +1,4 @@
-package com.android.settings.benzo;
+package com.android.settings.bliss;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -31,7 +31,6 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
     private String mUnitsRight = "";
     private SeekBar mSeekBar;
     private TextView mTitle;
-
     private TextView mStatusText;
 
     public SeekBarPreference(Context context, AttributeSet attrs) {
@@ -82,9 +81,9 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
 
     private String getAttributeStringValue(AttributeSet attrs, String namespace, String name, String defaultValue) {
         String value = attrs.getAttributeValue(namespace, name);
-        if(value == null)
+        if(value == null) {
             value = defaultValue;
-
+		}
         return value;
     }
 
@@ -92,10 +91,12 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
     public void onDependencyChanged(Preference dependency, boolean disableDependent) {
         super.onDependencyChanged(dependency, disableDependent);
         this.setShouldDisableView(true);
-        if (mTitle != null)
+        if (mTitle != null) {
             mTitle.setEnabled(!disableDependent);
-        if (mSeekBar != null)
+        }
+        if (mSeekBar != null) {
             mSeekBar.setEnabled(!disableDependent);
+        }
     }
 
     @Override
@@ -117,8 +118,7 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
     @Override
     public void onBindView(View view) {
         super.onBindView(view);
-        try
-        {
+        try {
             // move our seekbar to the new view we've been given
             ViewParent oldContainer = mSeekBar.getParent();
             ViewGroup newContainer = (ViewGroup) view.findViewById(R.id.seekBarPrefBarContainer);
@@ -166,18 +166,21 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         int newValue = progress + mMinValue;
-        if(newValue > mMaxValue)
+
+        if(newValue > mMaxValue) {
             newValue = mMaxValue;
-        else if(newValue < mMinValue)
+        } else if(newValue < mMinValue) {
             newValue = mMinValue;
-        else if(mInterval != 1 && newValue % mInterval != 0)
+        } else if(mInterval != 1 && newValue % mInterval != 0) {
             newValue = Math.round(((float)newValue)/mInterval)*mInterval;
+        }
 
         // change rejected, revert to the previous value
-        if(!callChangeListener(newValue)){
+        if (!callChangeListener(newValue)) {
             seekBar.setProgress(mCurrentValue - mMinValue);
             return;
         }
+
         // change accepted, store it
         mCurrentValue = newValue;
         mStatusText.setText(String.valueOf(newValue));
@@ -200,15 +203,13 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
 
     @Override
     protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
-        if(restoreValue) {
+        if (restoreValue) {
             mCurrentValue = getPersistedInt(mCurrentValue);
-        }
-        else {
+        } else {
             int temp = 0;
             try {
                 temp = (Integer)defaultValue;
-            }
-            catch(Exception ex) {
+            } catch(Exception ex) {
                 Log.e(TAG, "Invalid default value: " + defaultValue.toString());
             }
             persistInt(temp);
@@ -218,6 +219,18 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
 
     public void setValue(int value) {
         mCurrentValue = value;
+    }
+
+    public void setMaxValue(int value) {
+        mMaxValue = value;
+    }
+
+    public void setMinValue(int value) {
+        mMinValue = value;
+    }
+
+    public void updateSeekValue() {
+        mSeekBar.setMax(mMaxValue - mMinValue);
     }
 
     @Override

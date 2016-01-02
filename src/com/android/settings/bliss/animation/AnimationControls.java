@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.rr.animation;
+package com.android.settings.bliss.animation;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -29,11 +29,11 @@ import android.preference.SwitchPreference;
 import android.provider.Settings;
 
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.rr.animation.AnimBarPreference;
+import com.android.settings.bliss.animation.AnimBarPreference;
 import com.android.settings.R;
 
 import com.android.internal.logging.MetricsLogger;
-import com.android.internal.util.benzo.AwesomeAnimationHelper;
+import com.android.internal.util.bliss.AwesomeAnimationHelper;
 
 import java.util.Arrays;
 
