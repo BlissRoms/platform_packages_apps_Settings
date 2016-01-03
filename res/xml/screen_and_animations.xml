@@ -37,7 +37,7 @@
         <PreferenceScreen
             android:key="aokp_animation"
             android:title="@string/system_animation_title"
-            android:fragment="com.android.settings.rr.animation.AnimationControls" />
+            android:fragment="com.android.settings.bliss.animation.AnimationControls" />
 
     </PreferenceCategory>
 
