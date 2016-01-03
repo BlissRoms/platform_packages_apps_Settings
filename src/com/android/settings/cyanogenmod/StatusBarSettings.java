@@ -276,49 +276,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         }
     }
 
-    private void enableStatusBarClockDependents() {
-        int clockStyle = CMSettings.System.getInt(getActivity()
-                .getContentResolver(), CMSettings.System.STATUS_BAR_CLOCK, 1);
-        if (clockStyle == 0) {
-            mStatusBarDate.setEnabled(false);
-            mStatusBarDateStyle.setEnabled(false);
-            mStatusBarDateFormat.setEnabled(false);
-        } else {
-            mStatusBarDate.setEnabled(true);
-            mStatusBarDateStyle.setEnabled(true);
-            mStatusBarDateFormat.setEnabled(true);
-        }
-    }
-
-    private void parseClockDateFormats() {
-        // Parse and repopulate mClockDateFormats's entries based on current date.
-        String[] dateEntries = getResources().getStringArray(R.array.status_bar_date_format_entries_values);
-        CharSequence parsedDateEntries[];
-        parsedDateEntries = new String[dateEntries.length];
-        Date now = new Date();
-
-        int lastEntry = dateEntries.length - 1;
-        int dateFormat = Settings.System.getInt(getActivity()
-                .getContentResolver(), Settings.System.STATUS_BAR_DATE_STYLE, 0);
-        for (int i = 0; i < dateEntries.length; i++) {
-            if (i == lastEntry) {
-                parsedDateEntries[i] = dateEntries[i];
-            } else {
-                String newDate;
-                CharSequence dateString = DateFormat.format(dateEntries[i], now);
-                if (dateFormat == CLOCK_DATE_STYLE_LOWERCASE) {
-                    newDate = dateString.toString().toLowerCase();
-                } else if (dateFormat == CLOCK_DATE_STYLE_UPPERCASE) {
-                    newDate = dateString.toString().toUpperCase();
-                } else {
-                    newDate = dateString.toString();
-                }
-
-                parsedDateEntries[i] = newDate;
-            }
-        }
-        mStatusBarDateFormat.setEntries(parsedDateEntries);
-    }
     private void loadResources() {
         Resources resources = getActivity().getResources();
         MASK_UP = resources.getInteger(R.integer.maskUp);
