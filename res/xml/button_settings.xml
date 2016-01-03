@@ -264,16 +264,12 @@
             android:title="@string/swap_volume_buttons_title"
             android:summary="@string/swap_volume_buttons_summary" />
 
-
-
         <SwitchPreference
             android:key="kill_app_longpress_back"
             android:title="@string/kill_app_longpress_back"
             android:summary="@string/kill_app_longpress_back_summary"/>
 
-
-
-        <com.android.settings.widget.SeekBarPreferenceCham 
+        <com.android.settings.bliss.SeekBarPreference
             android:key="hold_back_to_kill_timeout"
             android:title="@string/hold_back_to_kill_timeout_title"
             android:max="2000"

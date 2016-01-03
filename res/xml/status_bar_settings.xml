@@ -64,6 +64,12 @@
         android:entries="@array/status_bar_date_format_entries_values"
         android:entryValues="@array/status_bar_date_format_entries_values" />
 
+    <PreferenceScreen
+        android:key="status_bar_clock_and_date"
+        android:title="@string/status_bar_clock_and_date"
+	    android:fragment="com.android.settings.bliss.StatusBarClockandDate" 
+	    android:summary="@string/status_bar_clock_and_date_summary" />
+
     <ListPreference
         android:key="status_bar_battery_style"
         android:title="@string/status_bar_battery_style_title"
@@ -71,11 +77,33 @@
         android:entries="@array/status_bar_battery_style_entries"
         android:entryValues="@array/status_bar_battery_style_values" />
 
+    <ListPreference
+        android:key="status_bar_show_battery_percent"
+        android:title="@string/status_bar_battery_percentage_title"
+        android:dialogTitle="@string/status_bar_battery_percentage_title"
+        android:entries="@array/status_bar_battery_percentage_entries"
+        android:entryValues="@array/status_bar_battery_percentage_values" />
+
     <PreferenceScreen
         android:key="status_bar_weather"
         android:title="@string/status_bar_temperature_title"
 	    android:fragment="com.android.settings.bliss.StatusBarWeather"
 	    android:summary="@string/status_bar_temperature_summary" />
+
+     <!-- Superuser Indicator -->
+     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="show_su_indicator"
+        android:title="@string/su_indicator"
+        android:summaryOn="@string/su_indicator_summary_on"
+        android:summaryOff="@string/su_indicator_summary_off"
+        android:defaultValue="true" />
+
+    <!-- Headset icon switch -->
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="show_headset_icon"
+            android:title="@string/show_headset_icon_title"
+            android:summary="@string/show_headset_icon_summary"
+            android:defaultValue="true" />
 
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="status_bar_custom_header"
@@ -120,13 +148,6 @@
             android:title="@string/status_bar_bliss_logo_color"
             android:defaultValue="0xffffffff"
             android:dependency="status_bar_bliss_logo" />
-
-    <!-- Headset icon switch -->
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-            android:key="show_headset_icon"
-            android:title="@string/show_headset_icon_title"
-            android:summary="@string/show_headset_icon_summary"
-            android:defaultValue="true" />
 
      <!-- Network traffic meter -->
      <PreferenceCategory

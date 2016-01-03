@@ -50,11 +50,15 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
 import cyanogenmod.hardware.CMHardwareManager;
+import com.android.settings.bliss.SeekBarPreference;
 import cyanogenmod.providers.CMSettings;
 
 import org.cyanogenmod.internal.logging.CMMetricsLogger;
 import org.cyanogenmod.internal.util.ScreenType;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 import static android.provider.Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED;
@@ -83,6 +87,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_VOLUME_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
     private static final String KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE
             = "camera_double_tap_power_gesture";
+    private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
+    private static final String HOLD_BACK_TO_KILL_TIMEOUT = "hold_back_to_kill_timeout";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -139,8 +145,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mPowerEndCall;
     private SwitchPreference mHomeAnswerCall;
     private SwitchPreference mCameraDoubleTapPowerGesture;
+    private SwitchPreference mKillAppLongpressBack;
+    private SeekBarPreference mHoldBackToKillTimeout;
 
     private PreferenceCategory mNavigationPreferencesCat;
+
+    private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
+    private final ArrayList<SwitchPreference> mResetSwitchPrefs
+            = new ArrayList<SwitchPreference>();
 
     private Handler mHandler;
 
@@ -446,6 +458,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mVolumeWakeScreen.setDisableDependentsState(true);
             }
         }
+
+        mKillAppLongpressBack = findAndInitSwitchPref(KILL_APP_LONGPRESS_BACK);
+        mHoldBackToKillTimeout =
+                    (SeekBarPreference) findPreference(HOLD_BACK_TO_KILL_TIMEOUT);
+        int holdBackToKillTimeout = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.HOLD_BACK_TO_KILL_TIMEOUT, 750);
+        mHoldBackToKillTimeout.setValue(holdBackToKillTimeout / 1);
+        mHoldBackToKillTimeout.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -471,6 +491,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (incallHomeBehavior == CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER);
             mHomeAnswerCall.setChecked(homeButtonAnswersCall);
         }
+        updateKillAppLongpressBackOptions();
     }
 
     private ListPreference initActionList(String key, int value) {
@@ -623,7 +644,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             Settings.Secure.putInt(getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,
                     value ? 0 : 1 /* Backwards because setting is for disabling */);
             return true;
-        }
+        } else if (preference == mHoldBackToKillTimeout) {
+            int killTimeout = (Integer) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.HOLD_BACK_TO_KILL_TIMEOUT, killTimeout * 1);
+            return true;
+		}
         return false;
     }
 
@@ -691,7 +717,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 CMSettings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0);
     }
 
-
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mSwapVolumeButtons) {
@@ -719,6 +744,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mHomeAnswerCall) {
             handleToggleHomeButtonAnswersCallPreferenceClick();
             return true;
+        } else if (preference == mKillAppLongpressBack) {
+            writeKillAppLongpressBackOptions();
+            return true;
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -741,5 +769,26 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static boolean isCameraDoubleTapPowerGestureAvailable(Resources res) {
         return res.getBoolean(
                 com.android.internal.R.bool.config_cameraDoubleTapPowerGestureEnabled);
+    }
+
+    private SwitchPreference findAndInitSwitchPref(String key) {
+        SwitchPreference pref = (SwitchPreference) findPreference(key);
+        if (pref == null) {
+            throw new IllegalArgumentException("Cannot find preference with key = " + key);
+        }
+        mAllPrefs.add(pref);
+        mResetSwitchPrefs.add(pref);
+        return pref;
+    }
+
+    private void writeKillAppLongpressBackOptions() {
+        CMSettings.Secure.putInt(getActivity().getContentResolver(),
+                CMSettings.Secure.KILL_APP_LONGPRESS_BACK,
+                mKillAppLongpressBack.isChecked() ? 1 : 0);
+    }
+
+    private void updateKillAppLongpressBackOptions() {
+        mKillAppLongpressBack.setChecked(CMSettings.Secure.getInt(
+            getActivity().getContentResolver(), CMSettings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
     }
 }

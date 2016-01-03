@@ -20,15 +20,15 @@
     <string name="bliss_settings_title">Bliss Settings</string>
     <string name="bliss_cat_title">Categories</string>
 
-   <!-- Bliss Display Optionss -->
+    <!-- Bliss Display Optionss -->
     <string name="bliss_display">Bliss Display Options</string>
    
-   <!-- Status bar -->
+    <!-- Status bar -->
     <string name="status_bar_title">Status Bar</string>
     <string name="status_bar_style_title">Style and Tweaks</string>
 
     <!-- Recents -->
-<!--    <string name="recents_settings_title">Recents</string> -->
+    <string name="recents_settings_title">Recents</string>
 
     <!-- Weather Options -->
     <string name="weather_settings_title">Weather</string>    
@@ -100,7 +100,7 @@
     
     <!-- Status bar temperature -->
     <string name="status_bar_temperature_title">Temperature</string>
-    <string name="status_bar_temperature_summary">Show the weather temperature on the status bar </string>
+    <string name="status_bar_temperature_summary">Show the weather temperature on the status bar</string>
     <string name="status_bar_temperature_hidden">Hidden</string>
     <string name="status_bar_temperature_show_scale">Show with scale</string>
     <string name="status_bar_temperature_hide_scale">Show without scale</string>
@@ -111,6 +111,8 @@
     <string name="status_bar_weather_color_title">Temperature color</string>
 
     <!--Status bar date -->
+    <string name="status_bar_clock_and_date">Clock and Date</string>
+    <string name="status_bar_clock_and_date_summary">Clock and Date options</string>
     <string name="status_bar_clock_category">Clock</string>
     <string name="status_bar_date_title">Date</string>
     <string name="status_bar_date_none">Hidden (default)</string>
