@@ -391,7 +391,7 @@
     <string name="media_scanner_on_boot_disabled">Do not scan media</string>
 
     <!-- Lockscreen Colors -->
-    <string name="lockscreen_colors">Lockscreen Colors</string>
+    <string name="lockscreen_colors">Lockscreen Colors and Fonts</string>
     <string name="lockscreen_phone_icon_color">Lockscreen Bottom Left shortcut</string>
     <string name="lockscreen_lock_icon_color">Lockscreen Lock icon</string>
     <string name="lockscreen_camera_icon_color">Lockscreen Bottom Right shortcut</string>
@@ -418,5 +418,22 @@
     <string name="battery_stats_reset">Reset stats</string>
     <string name="battery_stats_message">Battery history stats are going to be reset</string>
     <string name="ok_string">Ok</string>
+
+     <!-- Lock Clock Fonts -->
+    <string name="lock_clock_font_title">Lock Clock Fonts</string>
+    <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
+    <string name="lock_clock_font_dialog_title">Select lock clock font</string>
+    <string name="lock_clock_font_stock">Normal (default)</string>
+    <string name="lock_clock_font_bold">Bold</string>
+    <string name="lock_clock_font_italic">Italic</string>
+    <string name="lock_clock_font_bold_italic">Bold Italic</string>
+    <string name="lock_clock_font_light_italic">Light Italic</string>
+    <string name="lock_clock_font_thin_italic">Thin Italic</string>
+    <string name="lock_clock_font_condensed_normal">Condensed</string>
+    <string name="lock_clock_font_condensed_italic">Condensed Italic</string>
+    <string name="lock_clock_font_condensed_bold">Condensed Bold</string>
+    <string name="lock_clock_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="lock_clock_font_medium_normal">Medium</string>
+    <string name="lock_clock_font_medium_italic">Medium Italic</string>
 
 </resources>
