@@ -24,6 +24,7 @@ import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.os.Bundle;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
@@ -53,6 +54,9 @@ public class LockscreenColors extends SettingsPreferenceFragment implements
     static final int DEFAULT = 0xffffffff;
     private static final int MENU_RESET = Menu.FIRST;
 
+    private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";
+
+    private ListPreference mLockClockFonts;
     private ColorPickerPreference mLockscreenPhoneColorPicker;
     private ColorPickerPreference mLockscreenLockColorPicker;
     private ColorPickerPreference mLockscreenCameraColorPicker;
@@ -120,6 +124,12 @@ public class LockscreenColors extends SettingsPreferenceFragment implements
         mLockscreenClockDateColorPicker.setSummary(hexColor);
         mLockscreenClockDateColorPicker.setNewPreviewColor(intColor);
 
+        mLockClockFonts = (ListPreference) findPreference(LOCK_CLOCK_FONTS);
+        mLockClockFonts.setValue(String.valueOf(Settings.System.getInt(
+              resolver, Settings.System.LOCK_CLOCK_FONTS, 0)));
+        mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+        mLockClockFonts.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -176,6 +186,12 @@ public class LockscreenColors extends SettingsPreferenceFragment implements
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.LOCKSCREEN_CLOCK_DATE_COLOR, intHex);
+            return true;
+	    } else if (preference == mLockClockFonts) {
+            Settings.System.putInt(resolver, Settings.System.LOCK_CLOCK_FONTS,
+                    Integer.valueOf((String) newValue));
+            mLockClockFonts.setValue(String.valueOf(newValue));
+            mLockClockFonts.setSummary(mLockClockFonts.getEntry());
             return true;
          }
          return false;
