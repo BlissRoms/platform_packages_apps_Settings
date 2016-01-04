@@ -79,7 +79,7 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
         super.onCreate(savedInstanceState);
         setTitle(R.string.system_animation_title);
         // Load the preferences from an XML resource
-        addPreferencesFromResource(R.xml.aokp_animation_controls);
+        addPreferencesFromResource(R.xml.bliss_animation_controls);
 
         PreferenceScreen prefs = getPreferenceScreen();
         mAnimations = AwesomeAnimationHelper.getAnimationsList();
