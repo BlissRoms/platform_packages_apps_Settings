@@ -3,31 +3,54 @@ package com.android.settings.bliss;
 import android.os.Bundle;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.Preference.OnPreferenceClickListener;
+import android.preference.PreferenceGroup;
+import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 import android.provider.Settings;
+import android.view.IWindowManager;
 import android.widget.Toast;
 
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.AnimationScalePreference;
 import com.android.settings.R;
 
 import com.android.internal.logging.MetricsLogger;
 
+import java.util.ArrayList;
+
 public class ScreenAndAnimations extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, OnPreferenceClickListener {
 
     private static final String TAG = "ScreenAndAnimations";
 
     private static final String KEY_TOAST_ANIMATION = "toast_animation";
     private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
+	private static final String WINDOW_ANIMATION_SCALE_KEY = "window_animation_scale";
+    private static final String TRANSITION_ANIMATION_SCALE_KEY = "transition_animation_scale";
+    private static final String ANIMATOR_DURATION_SCALE_KEY = "animator_duration_scale";
 
     private Context mContext;
 
     private ListPreference mToastAnimation;
     private ListPreference mListViewAnimation;
     private ListPreference mListViewInterpolator;
+    private AnimationScalePreference mWindowAnimationScale;
+    private AnimationScalePreference mTransitionAnimationScale;
+    private AnimationScalePreference mAnimatorDurationScale;
+
+    private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
+    private final ArrayList<SwitchPreference> mResetSwitchPrefs
+            = new ArrayList<SwitchPreference>();
+
+    private IWindowManager mWindowManager;
+    private boolean mLastEnabledState;
 
     @Override
     protected int getMetricsCategory() {
@@ -38,6 +61,8 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.screen_and_animations);
+
+        mWindowManager = IWindowManager.Stub.asInterface(ServiceManager.getService("window"));
 
         ContentResolver resolver = getActivity().getContentResolver();
 
@@ -67,11 +92,18 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
         mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
         mListViewInterpolator.setOnPreferenceChangeListener(this);
         mListViewInterpolator.setEnabled(listviewanimation > 0);
+
+		//Animation scales
+        mWindowAnimationScale = findAndInitAnimationScalePreference(WINDOW_ANIMATION_SCALE_KEY);
+        mTransitionAnimationScale = findAndInitAnimationScalePreference(TRANSITION_ANIMATION_SCALE_KEY);
+        mAnimatorDurationScale = findAndInitAnimationScalePreference(ANIMATOR_DURATION_SCALE_KEY);
+
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        updateAnimationScaleOptions();
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -81,6 +113,15 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
             Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) objValue);
             mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
             Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (preference == mWindowAnimationScale) {
+            writeAnimationScaleOption(0, mWindowAnimationScale, objValue);
+            return true;
+        } else if (preference == mTransitionAnimationScale) {
+            writeAnimationScaleOption(1, mTransitionAnimationScale, objValue);
+            return true;
+        } else if (preference == mAnimatorDurationScale) {
+            writeAnimationScaleOption(2, mAnimatorDurationScale, objValue);
             return true;
         }
         if (KEY_LISTVIEW_ANIMATION.equals(key)) {
@@ -102,4 +143,50 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
         }
         return false;
     }
+
+
+
+    private void updateAnimationScaleValue(int which, AnimationScalePreference pref) {
+        try {
+            float scale = mWindowManager.getAnimationScale(which);
+            pref.setScale(scale);
+        } catch (RemoteException e) {
+        }
+    }
+
+    private void updateAnimationScaleOptions() {
+        updateAnimationScaleValue(0, mWindowAnimationScale);
+        updateAnimationScaleValue(1, mTransitionAnimationScale);
+        updateAnimationScaleValue(2, mAnimatorDurationScale);
+    }
+
+    private void writeAnimationScaleOption(int which, AnimationScalePreference pref,
+            Object newValue) {
+        try {
+            float scale = newValue != null ? Float.parseFloat(newValue.toString()) : 1;
+            mWindowManager.setAnimationScale(which, scale);
+            updateAnimationScaleValue(which, pref);
+        } catch (RemoteException e) {
+        }
+    }
+
+    private AnimationScalePreference findAndInitAnimationScalePreference(String key) {
+        AnimationScalePreference pref = (AnimationScalePreference) findPreference(key);
+        pref.setOnPreferenceChangeListener(this);
+        pref.setOnPreferenceClickListener(this);
+        mAllPrefs.add(pref);
+        return pref;
+    }
+
+    @Override
+    public boolean onPreferenceClick(Preference preference) {
+        if (preference == mWindowAnimationScale ||
+                preference == mTransitionAnimationScale ||
+                preference == mAnimatorDurationScale) {
+            ((AnimationScalePreference) preference).click();
+        }
+        return false;
+    }
+
+
 }

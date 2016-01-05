@@ -60,7 +60,6 @@ import android.os.UserManager;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
@@ -95,8 +94,7 @@ import java.util.List;
  */
 public class DevelopmentSettings extends SettingsPreferenceFragment
         implements DialogInterface.OnClickListener, DialogInterface.OnDismissListener,
-                OnPreferenceChangeListener, SwitchBar.OnSwitchChangeListener, Indexable,
-                OnPreferenceClickListener {
+                OnPreferenceChangeListener, SwitchBar.OnSwitchChangeListener, Indexable {
     private static final String TAG = "DevelopmentSettings";
 
     /**
@@ -150,9 +148,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private static final String DEBUG_HW_OVERDRAW_KEY = "debug_hw_overdraw";
     private static final String DEBUG_LAYOUT_KEY = "debug_layout";
     private static final String FORCE_RTL_LAYOUT_KEY = "force_rtl_layout_all_locales";
-    private static final String WINDOW_ANIMATION_SCALE_KEY = "window_animation_scale";
-    private static final String TRANSITION_ANIMATION_SCALE_KEY = "transition_animation_scale";
-    private static final String ANIMATOR_DURATION_SCALE_KEY = "animator_duration_scale";
     private static final String OVERLAY_DISPLAY_DEVICES_KEY = "overlay_display_devices";
     private static final String ENABLE_MULTI_WINDOW_KEY = "enable_multi_window";
     private static final String DEBUG_DEBUGGING_CATEGORY_KEY = "debug_debugging_category";
@@ -262,9 +257,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private ListPreference mUsbConfiguration;
     private ListPreference mTrackFrameTime;
     private ListPreference mShowNonRectClip;
-    private AnimationScalePreference mWindowAnimationScale;
-    private AnimationScalePreference mTransitionAnimationScale;
-    private AnimationScalePreference mAnimatorDurationScale;
     private ListPreference mOverlayDisplayDevices;
     private ListPreference mOpenGLTraces;
 
@@ -420,9 +412,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mLogdSize = addListPreference(SELECT_LOGD_SIZE_KEY);
         mUsbConfiguration = addListPreference(USB_CONFIGURATION_KEY);
 
-        mWindowAnimationScale = findAndInitAnimationScalePreference(WINDOW_ANIMATION_SCALE_KEY);
-        mTransitionAnimationScale = findAndInitAnimationScalePreference(TRANSITION_ANIMATION_SCALE_KEY);
-        mAnimatorDurationScale = findAndInitAnimationScalePreference(ANIMATOR_DURATION_SCALE_KEY);
         mOverlayDisplayDevices = addListPreference(OVERLAY_DISPLAY_DEVICES_KEY);
         mEnableMultiWindow = findAndInitSwitchPref(ENABLE_MULTI_WINDOW_KEY);
         if (!showEnableMultiWindowPreference()) {
@@ -499,14 +488,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             pref.setEnabled(false);
             mDisabledPrefs.add(pref);
         }
-    }
-
-    private AnimationScalePreference findAndInitAnimationScalePreference(String key) {
-        AnimationScalePreference pref = (AnimationScalePreference) findPreference(key);
-        pref.setOnPreferenceChangeListener(this);
-        pref.setOnPreferenceClickListener(this);
-        mAllPrefs.add(pref);
-        return pref;
     }
 
     private SwitchPreference findAndInitSwitchPref(String key) {
@@ -694,7 +675,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateShowHwLayersUpdatesOptions();
         updateDebugHwOverdrawOptions();
         updateDebugLayoutOptions();
-        updateAnimationScaleOptions();
         updateOverlayDisplayDevicesOptions();
         if (mEnableMultiWindow != null) {
             updateSwitchPreference(mEnableMultiWindow,
@@ -791,9 +771,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         resetAdbNotifyOptions();
         resetVerifyAppsOverUsbOptions();
         resetDevelopmentShortcutOptions();
-        writeAnimationScaleOption(0, mWindowAnimationScale, null);
-        writeAnimationScaleOption(1, mTransitionAnimationScale, null);
-        writeAnimationScaleOption(2, mAnimatorDurationScale, null);
         // Only poke the color space setting if we control it.
         if (usingDevelopmentColorSpace()) {
             writeSimulateColorSpace(-1);
@@ -1608,33 +1585,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 getActivity().getContentResolver(), Settings.Global.ALWAYS_FINISH_ACTIVITIES, 0) != 0);
     }
 
-    private void updateAnimationScaleValue(int which, AnimationScalePreference pref) {
-        try {
-            float scale = mWindowManager.getAnimationScale(which);
-            if (scale != 1) {
-                mHaveDebugSettings = true;
-            }
-            pref.setScale(scale);
-        } catch (RemoteException e) {
-        }
-    }
-
-    private void updateAnimationScaleOptions() {
-        updateAnimationScaleValue(0, mWindowAnimationScale);
-        updateAnimationScaleValue(1, mTransitionAnimationScale);
-        updateAnimationScaleValue(2, mAnimatorDurationScale);
-    }
-
-    private void writeAnimationScaleOption(int which, AnimationScalePreference pref,
-            Object newValue) {
-        try {
-            float scale = newValue != null ? Float.parseFloat(newValue.toString()) : 1;
-            mWindowManager.setAnimationScale(which, scale);
-            updateAnimationScaleValue(which, pref);
-        } catch (RemoteException e) {
-        }
-    }
-
     private void updateOverlayDisplayDevicesOptions() {
         String value = Settings.Global.getString(getActivity().getContentResolver(),
                 Settings.Global.OVERLAY_DISPLAY_DEVICES);
@@ -1823,16 +1773,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     }
 
     @Override
-    public boolean onPreferenceClick(Preference preference) {
-        if (preference == mWindowAnimationScale ||
-                preference == mTransitionAnimationScale ||
-                preference == mAnimatorDurationScale) {
-            ((AnimationScalePreference) preference).click();
-        }
-        return false;
-    }
-
-    @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (Utils.isMonkeyRunning()) {
             return false;
@@ -2008,15 +1948,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             return true;
         } else if (preference == mUsbConfiguration) {
             writeUsbConfigurationOption(newValue);
-            return true;
-        } else if (preference == mWindowAnimationScale) {
-            writeAnimationScaleOption(0, mWindowAnimationScale, newValue);
-            return true;
-        } else if (preference == mTransitionAnimationScale) {
-            writeAnimationScaleOption(1, mTransitionAnimationScale, newValue);
-            return true;
-        } else if (preference == mAnimatorDurationScale) {
-            writeAnimationScaleOption(2, mAnimatorDurationScale, newValue);
             return true;
         } else if (preference == mOverlayDisplayDevices) {
             writeOverlayDisplayDevicesOptions(newValue);

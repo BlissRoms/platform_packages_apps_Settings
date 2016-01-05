@@ -24,6 +24,7 @@ Project
             android:key="Animations"
             android:fragment="com.android.settings.bliss.ScreenAndAnimations"
             android:title="@string/screen_and_animations_title"
+            android:icon="@drawable/ic_xd_animation"
 	        />
 		
 	    <!-- Buttons -->
