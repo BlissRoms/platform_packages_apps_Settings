@@ -92,11 +92,6 @@
         android:entries="@array/root_access_entries"
         android:entryValues="@array/root_access_values" />
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="disable_fc_notifications"
-        android:title="@string/disable_fc_notifications_title"
-        android:summary="@string/disable_fc_notifications_summary" />
-
     <com.android.settings.ColorModePreference
         android:key="color_mode"
         android:title="@string/picture_color_mode"
@@ -256,24 +251,6 @@
             android:key="force_rtl_layout_all_locales"
             android:title="@string/force_rtl_layout_all_locales"
             android:summary="@string/force_rtl_layout_all_locales_summary"/>
-
-        <com.android.settings.AnimationScalePreference
-            android:key="window_animation_scale"
-            android:title="@string/window_animation_scale_title"
-            android:dialogTitle="@string/window_animation_scale_title"
-            android:persistent="false" />
-
-        <com.android.settings.AnimationScalePreference
-            android:key="transition_animation_scale"
-            android:title="@string/transition_animation_scale_title"
-            android:dialogTitle="@string/transition_animation_scale_title"
-            android:persistent="false" />
-
-        <com.android.settings.AnimationScalePreference
-            android:key="animator_duration_scale"
-            android:title="@string/animator_duration_scale_title"
-            android:dialogTitle="@string/animator_duration_scale_title"
-            android:persistent="false" />
 
         <ListPreference
             android:key="overlay_display_devices"

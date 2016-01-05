@@ -26,13 +26,14 @@
      <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="toast_icon"
         android:title="@string/toast_icon_title"
-       android:defaultValue="true" />
-	   
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:defaultValue="true" />
+
+     <!-- Disable force close notifications -->
+     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="disable_fc_notifications"
         android:title="@string/disable_fc_notifications_title"
         android:summary="@string/disable_fc_notifications_summary" />
-				
+
      <!-- Force Expanded Notification -->
      <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="force_expanded_notifications"
