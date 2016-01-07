@@ -21,16 +21,17 @@
                           android:enabled="false"
                           android:layout="@layout/bliss_logo_row" />
 
-        <!-- Bliss Extra Info -->
-        <PreferenceScreen android:key="extrainfo"
-                android:title="@string/lsextrainfo"
-                android:summary="@string/lsextrainfo_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.settings"
-                    android:targetClass="com.android.settings.bliss.extrainfo.MainActivity" />
-        </PreferenceScreen>
-
-        <!-- Bliss Share -->
+		<PreferenceCategory android:key="about_bliss"
+	        android:title="@string/about_bliss">
+  
+  <!-- Officially Supported Devices -->
+		<PreferenceScreen
+		    android:key="DeviceMaintainersFragment"
+		    android:title="@string/official_devices"
+		    android:summary="@string/official_devices_summary"
+		    android:fragment="com.android.settings.bliss.DeviceMaintainersFragment" /> 
+  
+  <!-- Bliss Share -->
         <Preference
             android:key="share"
             android:title="@string/share_bliss_title"
@@ -48,9 +49,20 @@
                 <intent
                     android:action="android.intent.action.MAIN"
     		        android:targetPackage="com.chummy.blissroms.updates"
-                    android:targetClass="com.chummy.blissroms.updates.activities.MainActivity" />
+                    android:targetClass="com.chummy.blissroms.updates.activities.MainActivity" />		
+					
+        <!-- Bliss Extra Info -->
+        <PreferenceScreen android:key="extrainfo"
+                android:title="@string/lsextrainfo"
+                android:summary="@string/lsextrainfo_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.settings"
+                    android:targetClass="com.android.settings.bliss.extrainfo.MainActivity" />
         </PreferenceScreen>
 
+
+        </PreferenceScreen>
+      
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
@@ -90,11 +102,6 @@
                 android:title="@string/device_name"
                 android:summary="@string/device_info_default"/>
 
-        <!-- Device name -->
-        <Preference android:key="device_name"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/device_name"
-                android:summary="@string/device_info_default"/>
 
         <!-- Device hardware model -->
         <Preference android:key="device_model"
@@ -112,12 +119,6 @@
         <Preference android:key="security_patch"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/security_patch"
-                android:summary="@string/device_info_default"/>
-
-        <!-- Device FCC equipment id -->
-        <Preference android:key="fcc_equipment_id"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/fcc_equipment_id"
                 android:summary="@string/device_info_default"/>
 
         <!-- Bliss Version -->
@@ -168,4 +169,5 @@
                 android:title="@string/selinux_status"
                 android:summary="@string/selinux_status_enforcing"/>
 
+		</PreferenceCategory>		
 </PreferenceScreen>

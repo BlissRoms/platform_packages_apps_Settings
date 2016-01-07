@@ -33,6 +33,11 @@
     <!-- Weather Options -->
     <string name="weather_settings_title">Weather</string>    
 
+	<!-- About bliss -->
+	<string name="about_bliss"><b>About Bliss</b></string>
+	<string name="official_devices">Official Devices</string>
+	<string name="official_devices_summary">List of officially supported devices by Bliss</string>
+	
     <!-- Bliss Extra Info -->
     <string name="lsextrainfo">Extra information</string>
     <string name="lsextrainfo_summary">Display extra info for cpu, display, etc</string>

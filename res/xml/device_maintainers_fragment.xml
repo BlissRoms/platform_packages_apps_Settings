@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/device_maintainers_title"
+		android:summary="@string/device_maintainers_summary">
+
+   <PreferenceCategory
+        android:id="@+id/device_category_google"
+        android:title="@string/device_category_google_title" >
+    <Preference
+        android:id="@+id/device_nexus6"
+        android:title="@string/device_nexus6"		
+        android:summary="@string/device_nexus6_summary"
+        android:selectable="false" 
+        />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
