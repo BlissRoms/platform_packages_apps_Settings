@@ -44,7 +44,8 @@
                 <intent
                     android:action="android.intent.action.MAIN"
     		        android:targetPackage="com.chummy.blissroms.updates"
-                    android:targetClass="com.chummy.blissroms.updates.activities.MainActivity" />		
+                    android:targetClass="com.chummy.blissroms.updates.activities.MainActivity" />	
+        </PreferenceScreen>					
 					
         <!-- Bliss Extra Info -->
         <PreferenceScreen android:key="extrainfo"
@@ -65,6 +66,19 @@
         <PreferenceScreen android:key="changelog"
                 android:title="@string/changelog_bliss_title"
                 android:fragment="com.android.settings.bliss.ChangeLog" />
+
+        <!-- BlissRoms OTA -->
+        <PreferenceScreen 
+            android:id="@+id/bliss_ota"
+            android:title="@string/bliss_ota">
+                <intent
+                    android:action="android.intent.action.MAIN"
+    		        android:targetPackage="com.chummy.blissroms.updates"
+                    android:targetClass="com.chummy.blissroms.updates.activities.MainActivity" />
+</PreferenceCategory>
+
+<PreferenceCategory
+			android:title="@string/about_phone">
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"

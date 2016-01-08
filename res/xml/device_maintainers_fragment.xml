@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-       
 	   android:title="@string/device_maintainers_title"
 	   android:summary="@string/device_maintainers_summary">
 
@@ -14,6 +13,7 @@
 		android:summary="@string/device_m8_summary"
 		android:selectable="false"
 		/>
+    </PreferenceCategory>	
 	
 	<!--Google Devices -->
     <PreferenceCategory
@@ -39,7 +39,7 @@
 		
 	<Preference
 		android:title="@string/device_nexus7_12"
-		android:summary="@string/device_nexus7_summary"
+		android:summary="@string/device_nexus7_12_summary"
 		android:selectable="false"
 		/>
 		
@@ -48,6 +48,7 @@
 		android:summary="@string/device_nexus7_13_summary"
 		android:selectable="false"
 		/>
+    </PreferenceCategory>		
 		
 	<!-- LG Devices -->	
 	<PreferenceCategory
@@ -64,6 +65,7 @@
 		android:summary="@string/device_g4_summary"
 		android:selectable="false"
 		/>
+    </PreferenceCategory>		
 		
 	<!-- Motorola Devices -->
 	<PreferenceCategory
@@ -74,7 +76,8 @@
 		android:summary="@string/device_clark_summary"
 		android:selectable="false"
 		/>
-		
+    </PreferenceCategory>	
+	
 	<!-- Samsung Devices -->
 	<PreferenceCategory
 		android:title="@string/device_category_samsung_title">
