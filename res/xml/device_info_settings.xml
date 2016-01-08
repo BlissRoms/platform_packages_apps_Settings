@@ -67,7 +67,8 @@
                 <intent
                     android:action="android.intent.action.MAIN"
     		        android:targetPackage="com.chummy.blissroms.updates"
-                    android:targetClass="com.chummy.blissroms.updates.activities.MainActivity" />		
+                    android:targetClass="com.chummy.blissroms.updates.activities.MainActivity" />	
+        </PreferenceScreen>					
 					
         <!-- Bliss Extra Info -->
         <PreferenceScreen android:key="extrainfo"
@@ -81,11 +82,8 @@
 </PreferenceCategory>
 
 <PreferenceCategory
-			android:key="about_phone"
 			android:title="@string/about_phone">
-        
-        </PreferenceScreen>
-      
+              
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"

@@ -37,6 +37,7 @@
 	<string name="about_bliss"><b>About Bliss</b></string>
 	<string name="official_devices">Official Devices</string>
 	<string name="official_devices_summary">List of officially supported devices by Bliss</string>
+	<string name="about_phone"><b>About Phone</b></string>
 	
     <!-- Bliss Extra Info -->
     <string name="lsextrainfo">Extra information</string>
