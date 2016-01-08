@@ -30,6 +30,7 @@ import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,6 +58,8 @@ public class SimDialogActivity extends Activity {
     public static final int CALLS_PICK = 1;
     public static final int SMS_PICK = 2;
     public static final int PREFERRED_PICK = 3;
+
+    private static final String SETTING_USER_PREF_DATA_SUB = "user_preferred_data_sub";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,6 +101,7 @@ public class SimDialogActivity extends Activity {
                     PhoneAccountHandle phoneAccountHandle =
                             subscriptionIdToPhoneAccountHandle(subId);
                     setDefaultDataSubId(context, subId);
+                    setUserPrefDataSubIdInDb(subId);
                     setDefaultSmsSubId(context, subId);
                     setUserSelectedOutgoingPhoneAccount(phoneAccountHandle);
                     finish();
@@ -121,6 +125,12 @@ public class SimDialogActivity extends Activity {
         final SubscriptionManager subscriptionManager = SubscriptionManager.from(context);
         subscriptionManager.setDefaultDataSubId(subId);
         Toast.makeText(context, R.string.data_switch_started, Toast.LENGTH_LONG).show();
+    }
+
+    private void setUserPrefDataSubIdInDb(int subId) {
+        android.provider.Settings.Global.putInt(getContentResolver(),
+                SETTING_USER_PREF_DATA_SUB, subId);
+        Log.d(TAG, "updating data subId: " + subId + " in DB");
     }
 
     private static void setDefaultSmsSubId(final Context context, final int subId) {
@@ -172,6 +182,7 @@ public class SimDialogActivity extends Activity {
                             case DATA_PICK:
                                 sir = subInfoList.get(value);
                                 setDefaultDataSubId(context, sir.getSubscriptionId());
+                                setUserPrefDataSubIdInDb(sir.getSubscriptionId());
                                 break;
                             case CALLS_PICK:
                                 final TelecomManager telecomManager =
