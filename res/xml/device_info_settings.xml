@@ -30,7 +30,30 @@
 		    android:title="@string/official_devices"
 		    android:summary="@string/official_devices_summary"
 		    android:fragment="com.android.settings.bliss.DeviceMaintainersFragment" /> 
-  
+			
+        <!-- Bliss Version -->
+        <Preference android:key="mod_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/bliss_mod_version"
+                android:summary="@string/mod_version_default" />
+
+        <!-- Bliss Build Version -->
+        <Preference android:key="mod_build_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/mod_build_version"
+                android:summary="@string/mod_version_default" />
+				
+        <!-- Build Type -->
+        <Preference android:key="build_type"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/build_type"
+                android:summary="@string/build_type_default" />
+
+        <!-- Bliss Share -->
+        <Preference
+            android:key="share"
+            android:title="@string/share_bliss_title"
+            android:summary="@string/share_bliss_summary" />
 
         <!-- Change Log -->
         <PreferenceScreen android:key="changelog"
@@ -78,7 +101,11 @@
 </PreferenceCategory>
 
 <PreferenceCategory
+			android:title="@string/about_phone"
+			android:key="about_phone"
 			android:title="@string/about_phone">
+        
+        </PreferenceScreen>
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
@@ -87,13 +114,6 @@
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.settings"
                     android:targetClass="com.android.settings.deviceinfo.Status" />
-        </PreferenceScreen>
-
-        <!-- Manual -->
-        <PreferenceScreen
-                android:key="manual"
-                android:title="@string/manual">
-            <intent android:action="android.settings.SHOW_MANUAL" />
         </PreferenceScreen>
 
         <!-- Legal Information -->
@@ -137,18 +157,6 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/security_patch"
                 android:summary="@string/device_info_default"/>
-
-        <!-- Bliss Version -->
-        <Preference android:key="mod_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/bliss_mod_version"
-                android:summary="@string/mod_version_default" />
-
-        <!-- Bliss Build Version -->
-        <Preference android:key="mod_build_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/mod_build_version"
-                android:summary="@string/mod_version_default" />
 
         <!-- Device Baseband version -->
         <Preference android:key="baseband_version"
