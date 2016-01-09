@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-	   android:title="@string/device_maintainers_title"
-	   android:summary="@string/device_maintainers_summary">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+       
+    <!-- Title and notes -->
+    <PreferenceCategory>
 
+    <Preference
+       android:summary="@string/device_maintainers_summary"
+       android:selectable="false"
+       />
+    </PreferenceCategory>
+		   
 	<!-- HTC Devices -->   
     <PreferenceCategory   
 		android:title="@string/device_category_htc_title">
