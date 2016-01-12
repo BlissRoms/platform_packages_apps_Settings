@@ -16,7 +16,7 @@
  *
  */
 
-package com.android.settings.crdroid;
+package com.android.settings.bliss;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
@@ -64,7 +64,7 @@ public class OmniSwitch extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.crdroid_omniswitch);
+        addPreferencesFromResource(R.xml.bliss_omniswitch);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
