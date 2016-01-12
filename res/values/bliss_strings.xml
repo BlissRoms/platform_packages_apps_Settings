@@ -140,6 +140,8 @@
     <string name="status_bar_weather_font_medium_italic">Medium Italic</string>
 
     <!--Status bar date -->
+    <string name="clock_category">Clock</string>
+    <string name="date_category">Date</string>
     <string name="status_bar_clock_and_date">Clock</string>
     <string name="status_bar_clock_and_date_summary">Customize the clock on the status bar</string>
     <string name="clock_color_title">Color</string>
@@ -174,6 +176,7 @@
     <string name="clock_font_condensed_bold_italic">Condensed Bold Italic</string>
     <string name="clock_font_medium">Medium</string>
     <string name="clock_font_medium_italic">Medium Italic</string>
+    <string name="clock_font_size_title">Font size</string>
 
     <!-- Toast Icons -->
     <string name="toast_icon_title">Toast icon</string>
