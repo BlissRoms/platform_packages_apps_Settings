@@ -31,6 +31,7 @@ import android.os.Handler;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
+import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
@@ -61,6 +62,8 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
 import static android.provider.Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED;
 
 public class ButtonSettings extends SettingsPreferenceFragment implements
@@ -90,6 +93,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
     private static final String HOLD_BACK_TO_KILL_TIMEOUT = "hold_back_to_kill_timeout";
     private static final String KEY_VOLUME_ANSWER_CALL = "volume_answer_call";
+    private static final String NAVIGATION_BAR_TINT = "navigation_bar_tint";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -125,6 +129,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     public static final int KEY_MASK_CAMERA = 0x20;
     public static final int KEY_MASK_VOLUME = 0x40;
 
+    private ColorPickerPreference mNavbarButtonTint;
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
     private ListPreference mMenuPressAction;
@@ -229,6 +234,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Navigation bar left
         mNavigationBarLeftPref = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
+
+        // Navigation bar button color
+        mNavbarButtonTint = (ColorPickerPreference) findPreference(NAVIGATION_BAR_TINT);
+        mNavbarButtonTint.setOnPreferenceChangeListener(this);
+        int intColor = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NAVIGATION_BAR_TINT, 0xffffffff);
+        String hexColor = String.format("#%08x", (0xffffffff & intColor));
+        mNavbarButtonTint.setSummary(hexColor);
+        mNavbarButtonTint.setNewPreviewColor(intColor);
 
         // Navigation bar recents long press activity needs custom setup
         mNavigationRecentsLongPressAction =
@@ -619,6 +633,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mVolumeKeyCursorControl) {
             handleSystemActionListChange(mVolumeKeyCursorControl, newValue,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
+            return true;
+        } else if (preference == mNavbarButtonTint) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_TINT, intHex);
             return true;
         } else if (preference == mNavigationRecentsLongPressAction) {
             // RecentsLongPressAction is handled differently because it intentionally uses
