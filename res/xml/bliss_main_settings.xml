@@ -43,7 +43,15 @@ Project
             android:icon="@drawable/ic_settings_security">
             <extra android:name="filter_type" android:value="0"/>
             </PreferenceScreen>
-			
+
+	    <!-- Recents -->
+	    <PreferenceScreen
+	        android:id="@+id/recents_settings"
+            android:title="@string/recents_settings_title"
+            android:fragment="com.android.settings.bliss.RecentsSettings"
+            android:icon="@drawable/ic_settings_recents"
+            />
+
    	    <!-- Status bar -->
         <PreferenceScreen
             android:id="@+id/status_bar_settings"
