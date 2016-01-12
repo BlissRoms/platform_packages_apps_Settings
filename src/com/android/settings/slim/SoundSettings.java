@@ -112,7 +112,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             switch (id) {
                 case DLG_CAMERA_SOUND:
                     return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.attention)
                     .setMessage(R.string.camera_sound_warning_dialog_text)
                     .setPositiveButton(R.string.dlg_ok,
                         new DialogInterface.OnClickListener() {
