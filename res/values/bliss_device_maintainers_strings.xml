@@ -27,7 +27,12 @@
     <string name="device_maintainers_title"><b>Devices and Maintainers</b></string>
     <string name="device_maintainers_summary">List of devices and their Bliss ROM maintainers</string>
  
-   <!-- HTC Devices -->
+  <!-- Asus Devices -->
+   <string name="device_category_asus_title">Asus</string>
+   <string name="device_zen2">Zenfone 2- Z00A and Z008</string>
+   <string name="device_zen2_summary">BitOBSessiOn</string>
+ 
+  <!-- HTC Devices -->
    <string name="device_category_htc_title"><b>HTC</b></string> 
    <string name="device_m8">M8</string>
    <string name="device_m8_summary">fizbanrapper, pstrang</string>
@@ -49,6 +54,8 @@
       <string name="device_category_lg_title"><b>LG</b></string> 
    <string name="device_g2">G2- d80X 0-3, f320, ls980 and vs980</string>
    <string name="device_g2_summary">electrikjesus</string>
+   <string name="device_g3">G3- d85X, ls990 and vs985</string>
+   <string name="device_g3_summary">aclegg2011</string>
    <string name="device_g4">G4- h811 and h815</string>
    <string name="device_g4_summary">Genesixxbf3</string>
    
@@ -57,12 +64,17 @@
    <string name="device_clark">Moto X pure- Clark</string>
    <string name="device_clark_summary">pjgraber03</string>
    
+   <!-- NVIDIA Devices -->
+   <string name="device_category_nvidia_title">NVIDIA</string>
+   <string name="device_shieldtab">Shield Tablet</string>
+   <string name="device_shieldtab_summary">BitOBSessiOn</string>
+   
    <!-- Samsung Devices -->
    <string name="device_category_samsung_title"><b>Samsung</b></string> 
    <string name="device_s4">Galaxy S4, jflte, jflteatt, jfltetmo, i9500, jfltexx and jfltespr</string>
    <string name="device_s4_summary">electrikjesus</string>
    <string name="device_s5">Galaxy S5, klte</string>
-   <string name="device_s5_summary">lunerceli</string>
+   <string name="device_s5_summary">KeTuRr74</string>
    <string name="device_note2">Galaxy Note 2, N711</string>
    <string name="device_note2_summary">KeTuRr74</string>
    <string name="device_note4">Galaxy Note 4 Snapdragon Variants- Trltexx, trltetd, trltetmo and trltecan</string>

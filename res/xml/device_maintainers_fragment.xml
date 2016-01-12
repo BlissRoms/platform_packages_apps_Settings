@@ -11,6 +11,16 @@
        />
     </PreferenceCategory>
 		   
+	<!-- Asus Devices -->
+	<PreferenceCategory
+		android:title="@string/device_category_asus_title">
+		
+	<Preference
+		android:title="@string/device_zen2"
+		android:summary="@string/device_zen2_summary"
+		/>
+	</PreferenceCategory>
+	
 	<!-- HTC Devices -->   
     <PreferenceCategory   
 		android:title="@string/device_category_htc_title">
@@ -66,7 +76,13 @@
 		android:summary="@string/device_g2_summary"
 		android:selectable="false"
 		/>
-		
+
+	<Preference
+		android:title="@string/device_g3"
+		android:summary="@string/device_g3_summary"
+		android:selectable="false"
+		/>
+	
 	<Preference
 		android:title="@string/device_g4"
 		android:summary="@string/device_g4_summary"
@@ -84,6 +100,15 @@
 		android:selectable="false"
 		/>
     </PreferenceCategory>	
+	
+	<PreferenceCategory
+		android:title="@string/device_category_nvidia_title">
+		
+	<Preference
+		android:title="@string/device_shieldtab"
+		android:summary="@string/device_shieldtab_summary"
+		/>
+	</PreferenceCategory>
 	
 	<!-- Samsung Devices -->
 	<PreferenceCategory
