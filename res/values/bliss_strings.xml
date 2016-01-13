@@ -165,11 +165,15 @@
     <string name="clock_font_thin_italic">Thin Italic</string>
     <string name="clock_font_condensed">Condensed</string>
     <string name="clock_font_condensed_italic">Condensed Italic</string>
+    <string name="clock_font_condensed_light">Condensed Light</string>
+    <string name="clock_font_condensed_light_italic">Condensed Light Italic</string>
     <string name="clock_font_condensed_bold">Condensed Bold</string>
     <string name="clock_font_condensed_bold_italic">Condensed Bold Italic</string>
     <string name="clock_font_medium">Medium</string>
     <string name="clock_font_medium_italic">Medium Italic</string>
     <string name="clock_font_size_title">Font size</string>
+    <string name="clock_font_black">Black</string>
+    <string name="clock_font_black_italic">Black Italic</string>
 
     <!-- Toast Icons -->
     <string name="toast_icon_title">Toast icon</string>
