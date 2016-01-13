@@ -258,6 +258,7 @@
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
+    <string name="network_traffic_summary">Show the traffic monitor on the status bar</string>
     <string name="show_network_traffic_state">Status bar traffic monitor</string>
     <string name="show_network_traffic_unit">Display unit</string>
     <string name="show_network_traffic_frequency">Update interval</string>

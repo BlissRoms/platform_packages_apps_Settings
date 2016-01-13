@@ -102,7 +102,7 @@
                 android:key="advanced_sound_settings"
                 android:title="@string/advanced_sound_title"
                 android:persistent="false"
-                android:fragment="com.android.settings.slim.SoundSettings" />
+                android:fragment="com.android.settings.bliss.SoundSettings" />
 
     </PreferenceCategory>
 
