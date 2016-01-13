@@ -53,6 +53,11 @@
         android:title="@string/disable_immersive_message_title"
         android:summary="@string/disable_immersive_message_summary" />
 
+     <PreferenceScreen
+        android:id="@+id/notification_colors"
+        android:title="@string/cat_colors_title"
+        android:fragment="com.android.settings.bliss.NotificationColorSettings" />
+        
     </PreferenceCategory>
 	
     <PreferenceCategory
