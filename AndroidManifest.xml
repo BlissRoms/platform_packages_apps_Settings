@@ -150,7 +150,7 @@
         </activity>
 
         <!-- SystemApp Remover -->
-        <activity android:name="com.android.settings.crdroid.fragments.SystemappRemover" />
+        <activity android:name="com.android.settings.bliss.SystemappRemover" />
 
         <!-- Wireless Controls -->
 
