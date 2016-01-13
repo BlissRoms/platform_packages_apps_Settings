@@ -20,7 +20,7 @@
  *
  *=========================================================================
  */
-package com.android.settings.crdroid.fragments;
+package com.android.settings.bliss;
 
 import java.io.BufferedWriter;
 import java.io.DataOutputStream;
