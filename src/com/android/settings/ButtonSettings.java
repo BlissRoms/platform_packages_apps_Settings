@@ -42,8 +42,6 @@ import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
 
-import com.android.internal.logging.MetricsLogger;
-
 import com.android.settings.cyanogenmod.ButtonBacklightBrightness;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -55,6 +53,7 @@ import cyanogenmod.hardware.CMHardwareManager;
 import com.android.settings.bliss.SeekBarPreference;
 import cyanogenmod.providers.CMSettings;
 
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 import org.cyanogenmod.internal.util.ScreenType;
 
 import java.util.ArrayList;
@@ -585,7 +584,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.DONT_TRACK_ME_BRO;
+        return CMMetricsLogger.BUTTON_SETTINGS;
     }
 
     @Override
