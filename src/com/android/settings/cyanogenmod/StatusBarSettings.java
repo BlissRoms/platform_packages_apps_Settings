@@ -63,15 +63,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     private ColorPickerPreference mBlissLogoColor;
 
-    private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
-    private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
-
-    private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
-    private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
-
-    private ListPreference mStatusBarBattery;
-    private ListPreference mStatusBarBatteryShowPercent;
-
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -79,23 +70,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
-
-        mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
-        mStatusBarBatteryShowPercent =
-                (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
-
-        int batteryStyle = CMSettings.System.getInt(resolver,
-                CMSettings.System.STATUS_BAR_BATTERY_STYLE, 0);
-        mStatusBarBattery.setValue(String.valueOf(batteryStyle));
-        mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
-        mStatusBarBattery.setOnPreferenceChangeListener(this);
-
-        int batteryShowPercent = CMSettings.System.getInt(resolver,
-                CMSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
-        mStatusBarBatteryShowPercent.setValue(String.valueOf(batteryShowPercent));
-        mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
-        enableStatusBarBatteryDependents(batteryStyle);
-        mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
 
         // Bliss logo color
         mBlissLogoColor =
@@ -118,40 +92,16 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         AlertDialog dialog;
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mStatusBarBattery) {
-            int batteryStyle = Integer.valueOf((String) newValue);
-            int index = mStatusBarBattery.findIndexOfValue((String) newValue);
-            CMSettings.System.putInt(
-                    resolver, CMSettings.System.STATUS_BAR_BATTERY_STYLE, batteryStyle);
-            mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
-            enableStatusBarBatteryDependents(batteryStyle);
-            return true;
-        } else if (preference == mStatusBarBatteryShowPercent) {
-            int batteryShowPercent = Integer.valueOf((String) newValue);
-            int index = mStatusBarBatteryShowPercent.findIndexOfValue((String) newValue);
-            CMSettings.System.putInt(
-                    resolver, CMSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, batteryShowPercent);
-            mStatusBarBatteryShowPercent.setSummary(
-                    mStatusBarBatteryShowPercent.getEntries()[index]);
-            return true;
-        } else if (preference == mBlissLogoColor) {
+        if (preference == mBlissLogoColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_BLISS_LOGO_COLOR, intHex);
+            return true;
         }
         return false;
-    }
-
-    private void enableStatusBarBatteryDependents(int batteryIconStyle) {
-        if (batteryIconStyle == STATUS_BAR_BATTERY_STYLE_HIDDEN ||
-                batteryIconStyle == STATUS_BAR_BATTERY_STYLE_TEXT) {
-            mStatusBarBatteryShowPercent.setEnabled(false);
-        } else {
-            mStatusBarBatteryShowPercent.setEnabled(true);
-        }
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

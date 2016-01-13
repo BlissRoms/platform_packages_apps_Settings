@@ -307,7 +307,10 @@
     <string name="system_app_remover">System App Remover</string>
     <string name="systemappremover_summary">Remove system apps by your own risk</string>
 
-    <!-- Battery Bar -->
+    <!-- Battery Settings -->
+    <string name="battery_settings_title">Battery</string>
+    <string name="battery_settings_summary">Customize the battery on the status bar and the battery bar</string>
+    <string name="status_bar_battery_cat">Status bar options</string>
     <string name="battery_icon">Battery icon style</string>
     <string name="battery_not_title">Battery icon in notifications</string>
     <string name="battery_not_summary">Battery icon will show up where the clear all button shows up</string>
