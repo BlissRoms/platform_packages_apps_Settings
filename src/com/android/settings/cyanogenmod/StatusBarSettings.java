@@ -28,6 +28,7 @@ import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
@@ -45,6 +46,7 @@ import com.android.settings.Utils;
 import com.android.settings.bliss.SeekBarPreference;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+import com.android.internal.util.bliss.BlissUtils;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -58,6 +60,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener, Indexable {
 
     private static final String TAG = "StatusBar";
+  
+    private static final String SHOW_FOURG = "show_fourg";
+    private SwitchPreference mShowFourG;
 
     private static final String KEY_BLISS_LOGO_COLOR = "status_bar_bliss_logo_color";
 
@@ -80,6 +85,15 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         String hexColor = String.format("#%08x", (0xffffffff & intColor));
             mBlissLogoColor.setSummary(hexColor);
             mBlissLogoColor.setNewPreviewColor(intColor);
+
+	    mShowFourG = (SwitchPreference) findPreference(SHOW_FOURG);
+        if (BlissUtils.isWifiOnly(getActivity())) {
+            prefScreen.removePreference(mShowFourG);
+        } else {
+        mShowFourG.setChecked((Settings.System.getInt(resolver,
+                Settings.System.SHOW_FOURG, 0) == 1));
+        }
+
     }
 
     @Override
@@ -104,6 +118,18 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         return false;
     }
 
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if  (preference == mShowFourG) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SHOW_FOURG, checked ? 1:0);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+   
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
                 @Override
