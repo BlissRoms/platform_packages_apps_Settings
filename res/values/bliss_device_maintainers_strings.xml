@@ -1,84 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
    resurrection_strings.xml
-   
+
    Copyright 2014 westcrip <westcrip@westcrip-altankrk>
-   
+
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
    the Free Software Foundation; either version 2 of the License, or
    (at your option) any later version.
-   
+
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
-   
+
    You should have received a copy of the GNU General Public License
    along with this program; if not, write to the Free Software
    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
    MA 02110-1301, USA.
-   
-   
+
+
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    
+
     <string name="device_maintainers_title"><b>Devices and Maintainers</b></string>
     <string name="device_maintainers_summary">List of devices and their Bliss ROM maintainers</string>
- 
+
   <!-- Asus Devices -->
    <string name="device_category_asus_title">Asus</string>
    <string name="device_zen2">Zenfone 2- Z00A and Z008</string>
    <string name="device_zen2_summary">BitOBSessiOn</string>
- 
+
   <!-- HTC Devices -->
-   <string name="device_category_htc_title"><b>HTC</b></string> 
+   <string name="device_category_htc_title"><b>HTC</b></string>
    <string name="device_m8">M8</string>
    <string name="device_m8_summary">fizbanrapper, pstrang</string>
- 
+
    <!-- Google Devices -->
-   <string name="device_category_google_title"><b>GOOGLE</b></string> 
+   <string name="device_category_google_title"><b>GOOGLE</b></string>
    <string name="device_nexus4">Nexus 4- Mako</string>
    <string name="device_nexus4_summary">rwaterspf1</string>
    <string name="device_nexus5">Nexus 5- Hammerhead</string>
    <string name="device_nexus5_summary">Dark_Eyes_</string>
+   <string name="device_5x">Nexus 5x- Bullhead</string>
+   <string name="device_5x_summary">blueyes</string>
    <string name="device_nexus6">Nexus 6- Shamu</string>
    <string name="device_nexus6_summary">pjgraber03</string>
    <string name="device_nexus7_12">Nexus 7 2012- Grouper and Tilapia</string>
    <string name="device_nexus7_12_summary">electrikjesus</string>
    <string name="device_nexus7_13">Nexus 7 2013- Flo and Deb</string>
    <string name="device_nexus7_13_summary">blueyes, pjgraber03</string>
-	
+
    <!-- LG Devices -->
-      <string name="device_category_lg_title"><b>LG</b></string> 
+      <string name="device_category_lg_title"><b>LG</b></string>
    <string name="device_g2">G2- d80X 0-3, f320, ls980 and vs980</string>
    <string name="device_g2_summary">electrikjesus</string>
    <string name="device_g3">G3- d85X, ls990 and vs985</string>
    <string name="device_g3_summary">aclegg2011</string>
    <string name="device_g4">G4- h811 and h815</string>
    <string name="device_g4_summary">Genesixxbf3</string>
-   
+
    <!-- Motorola Devices -->
-   <string name="device_category_motorola_title"><b>Motorola</b></string> 
+   <string name="device_category_motorola_title"><b>Motorola</b></string>
    <string name="device_clark">Moto X pure- Clark</string>
    <string name="device_clark_summary">pjgraber03</string>
-   
+
    <!-- NVIDIA Devices -->
    <string name="device_category_nvidia_title">NVIDIA</string>
    <string name="device_shieldtab">Shield Tablet</string>
    <string name="device_shieldtab_summary">BitOBSessiOn</string>
-   
+
    <!-- Samsung Devices -->
-   <string name="device_category_samsung_title"><b>Samsung</b></string> 
+   <string name="device_category_samsung_title"><b>Samsung</b></string>
    <string name="device_s4">Galaxy S4, jflte, jflteatt, jfltetmo, i9500, jfltexx and jfltespr</string>
    <string name="device_s4_summary">electrikjesus</string>
    <string name="device_s5">Galaxy S5, klte</string>
    <string name="device_s5_summary">KeTuRr74</string>
-   <string name="device_note2">Galaxy Note 2, N711</string>
+   <string name="device_note2">Galaxy Note 2, N7100</string>
    <string name="device_note2_summary">KeTuRr74</string>
-   <string name="device_note4">Galaxy Note 4 Snapdragon Variants- Trltexx, trltetd, trltetmo and trltecan</string>
+   <string name="device_note4">Galaxy Note 4 Snapdragon Variants- Trltexx, td, tmo and can</string>
    <string name="device_note4_summary">KeTuRr74</string>
-   
-    
+
+
  </resources>
