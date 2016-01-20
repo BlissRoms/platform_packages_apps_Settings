@@ -22,6 +22,13 @@
         android:key="bliss_display_options"
         android:title="@string/bliss_display">
 
+     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="dashboard_two_columns"
+        android:title="@string/dashboard_two_columns_title"
+        android:summaryOn="@string/dashboard_two_columns_summary_on"
+        android:summaryOff="@string/dashboard_two_columns_summary_off"
+        android:defaultValue="false" />
+
 	 <!-- Toast Icons -->
      <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="toast_icon"
