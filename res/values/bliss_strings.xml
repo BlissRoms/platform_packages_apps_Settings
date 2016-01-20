@@ -480,4 +480,9 @@
     <string name="less_notification_sounds_2m">2 minutes</string>
     <string name="less_notification_sounds_5m">5 minutes</string>
 
+    <!-- Dashboard tileview double lines -->
+    <string name="dashboard_two_columns_title">Dashboard settings layout</string>
+    <string name="dashboard_two_columns_summary_on">Show settings dashboard in two columns</string>
+    <string name="dashboard_two_columns_summary_off">Show settings dashboard in one column</string>
+
 </resources>
