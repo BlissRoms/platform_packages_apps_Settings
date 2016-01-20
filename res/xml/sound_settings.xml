@@ -38,4 +38,12 @@
         android:title="@string/volume_steps_fragment_title"
         android:summary="@string/volume_steps_summary" />
 
+  <ListPreference
+        android:key="less_notification_sounds"
+        android:title="@string/less_notification_sounds_title"
+        android:summary="@string/less_notification_sounds_summary"
+        android:entries="@array/less_notification_sounds_entries"
+        android:entryValues="@array/less_notification_sounds_values"
+        android:persistent="false" />
+
 </PreferenceScreen>
