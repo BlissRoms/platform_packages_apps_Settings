@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.rr;
+package com.android.settings.bliss;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
