@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2014 Resurrection Remix
+ * Copyright (C) 2016 The BlissRoms Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -7,143 +25,175 @@
 
     <Preference
        android:summary="@string/device_maintainers_summary"
-       android:selectable="false"
-       />
+       android:selectable="false" />
     </PreferenceCategory>
 
-	<!-- Asus Devices -->
-	<PreferenceCategory
-		android:title="@string/device_category_asus_title">
-
-	<Preference
-		android:title="@string/device_zen2"
-		android:summary="@string/device_zen2_summary"
-		/>
-	</PreferenceCategory>
-
-	<!-- HTC Devices -->
+    <!-- Asus Devices -->
     <PreferenceCategory
-		android:title="@string/device_category_htc_title">
+	android:title="@string/device_category_asus_title">
 
-	<Preference
-		android:title="@string/device_m8"
-		android:summary="@string/device_m8_summary"
-		android:selectable="false"
-		/>
+    <Preference
+	android:title="@string/device_zen2"
+	android:summary="@string/device_zen2_summary"
+        android:selectable="false" />
+
     </PreferenceCategory>
 
-	<!--Google Devices -->
+    <!--Google Devices -->
     <PreferenceCategory
         android:title="@string/device_category_google_title" >
 
-	<Preference
-		android:title="@string/device_nexus4"
-		android:summary="@string/device_nexus4_summary"
-		android:selectable="false"
-		/>
+    <Preference
+	android:title="@string/device_nexus4"
+	android:summary="@string/device_nexus4_summary"
+	android:selectable="false" />
 
-	<Preference
-		android:title="@string/device_nexus5"
-		android:summary="@string/device_nexus5_summary"
-		android:selectable="false"
-		/>
+    <Preference
+	android:title="@string/device_nexus5"
+	android:summary="@string/device_nexus5_summary"
+	android:selectable="false" />
 
-        <Preference
-          	android:title="@string/device_5x"
-          	android:summary="@string/device_5x_summary"
-          	android:selectable="false"
-          	/>
+    <Preference
+       	android:title="@string/device_5x"
+       	android:summary="@string/device_5x_summary"
+     	android:selectable="false" />
 
+    <Preference
+       	android:title="@string/device_nexus6"
+       	android:summary="@string/device_nexus6_summary"
+       	android:selectable="false" />
 
-	<Preference
-        	android:title="@string/device_nexus6"
-        	android:summary="@string/device_nexus6_summary"
-        	android:selectable="false"
-        	/>
+    <Preference
+	android:title="@string/device_nexus7_12"
+	android:summary="@string/device_nexus7_12_summary"
+	android:selectable="false" />
 
-	<Preference
-		android:title="@string/device_nexus7_12"
-		android:summary="@string/device_nexus7_12_summary"
-		android:selectable="false"
-		/>
+    <Preference
+	android:title="@string/device_nexus7_13"
+	android:summary="@string/device_nexus7_13_summary"
+	android:selectable="false" />
 
-	<Preference
-		android:title="@string/device_nexus7_13"
-		android:summary="@string/device_nexus7_13_summary"
-		android:selectable="false"
-		/>
     </PreferenceCategory>
 
-	<!-- LG Devices -->
-	<PreferenceCategory
-		android:title="@string/device_category_lg_title">
+    <!-- HTC Devices -->
+    <PreferenceCategory
+        android:title="@string/device_category_htc_title">
 
-	<Preference
-		android:title="@string/device_g2"
-		android:summary="@string/device_g2_summary"
-		android:selectable="false"
-		/>
+    <Preference
+        android:title="@string/device_m8"
+        android:summary="@string/device_m8_summary"
+        android:selectable="false" />
 
-	<Preference
-		android:title="@string/device_g3"
-		android:summary="@string/device_g3_summary"
-		android:selectable="false"
-		/>
-
-	<Preference
-		android:title="@string/device_g4"
-		android:summary="@string/device_g4_summary"
-		android:selectable="false"
-		/>
     </PreferenceCategory>
 
-	<!-- Motorola Devices -->
-	<PreferenceCategory
-		android:title="@string/device_category_motorola_title">
+    <!-- LG Devices -->
+    <PreferenceCategory
+	android:title="@string/device_category_lg_title">
 
-	<Preference
-		android:title="@string/device_clark"
-		android:summary="@string/device_clark_summary"
-		android:selectable="false"
-		/>
+    <Preference
+	android:title="@string/device_g2"
+	android:summary="@string/device_g2_summary"
+	android:selectable="false" />
+
+    <Preference
+	android:title="@string/device_g3"
+	android:summary="@string/device_g3_summary"
+	android:selectable="false" />
+
+    <Preference
+	android:title="@string/device_g4"
+	android:summary="@string/device_g4_summary"
+	android:selectable="false" />
+
     </PreferenceCategory>
 
-	<PreferenceCategory
-		android:title="@string/device_category_nvidia_title">
+    <!-- Motorola Devices -->
+    <PreferenceCategory
+	android:title="@string/device_category_motorola_title">
 
-	<Preference
-		android:title="@string/device_shieldtab"
-		android:summary="@string/device_shieldtab_summary"
-		/>
-	</PreferenceCategory>
+    <Preference
+	android:title="@string/device_clark"
+	android:summary="@string/device_clark_summary"
+	android:selectable="false" />
 
-	<!-- Samsung Devices -->
-	<PreferenceCategory
-		android:title="@string/device_category_samsung_title">
+    <Preference
+        android:title="@string/device_falcon"
+        android:summary="@string/device_falcon_summary"
+        android:selectable="false" />
 
-	<Preference
-		android:title="@string/device_s4"
-		android:summary="@string/device_s4_summary"
-		android:selectable="false"
-		/>
+    <Preference
+        android:title="@string/device_titan"
+        android:summary="@string/device_titan_summary"
+        android:selectable="false" />
 
-	<Preference
-		android:title="@string/device_s5"
-		android:summary="@string/device_s5_summary"
-		android:selectable="false"
-		/>
+    <Preference
+        android:title="@string/device_condor"
+        android:summary="@string/device_condor_summary"
+        android:selectable="false" />
 
-	<Preference
-		android:title="@string/device_note2"
-		android:summary="@string/device_note2_summary"
-		android:selectable="false"
-		/>
+    <Preference
+        android:title="@string/device_otus"
+        android:summary="@string/device_otus_summary"
+        android:selectable="false" />
 
-	<Preference
-		android:title="@string/device_note4"
-		android:summary="@string/device_note4_summary"
-		android:selectable="false"
-		/>
+    </PreferenceCategory>
+
+    <!-- NVIDIA Devices -->
+    <PreferenceCategory
+	android:title="@string/device_category_nvidia_title">
+
+    <Preference
+	android:title="@string/device_shieldtab"
+	android:summary="@string/device_shieldtab_summary"
+        android:selectable="false" />
+
+    </PreferenceCategory>
+
+    <!-- OnePlus Devices -->
+    <PreferenceCategory
+        android:title="@string/device_category_oneplus_title">
+
+    <Preference
+        android:title="@string/device_bacon"
+        android:summary="@string/device_bacon_summary"
+        android:selectable="false" />
+
+    </PreferenceCategory>
+
+    <!-- Samsung Devices -->
+    <PreferenceCategory
+	android:title="@string/device_category_samsung_title">
+
+    <Preference
+	android:title="@string/device_s4"
+	android:summary="@string/device_s4_summary"
+	android:selectable="false" />
+
+    <Preference
+	android:title="@string/device_s5"
+	android:summary="@string/device_s5_summary"
+	android:selectable="false" />
+
+    <Preference
+	android:title="@string/device_note2"
+	android:summary="@string/device_note2_summary"
+	android:selectable="false" />
+
+    <Preference
+	android:title="@string/device_note4"
+	android:summary="@string/device_note4_summary"
+	android:selectable="false" />
+
+    </PreferenceCategory>
+
+    <!-- YU Devices -->
+    <PreferenceCategory
+        android:title="@string/device_category_yu_title">
+
+    <Preference
+        android:title="@string/device_yureka"
+        android:summary="@string/device_yureka_summary"
+        android:selectable="false" />
 
     </PreferenceCategory>
 
