@@ -72,12 +72,14 @@ public class NetworkTraffic extends SettingsPreferenceFragment
     private static final String NETWORK_TRAFFIC_PERIOD = "network_traffic_period";
     private static final String NETWORK_TRAFFIC_AUTOHIDE = "network_traffic_autohide";
     private static final String NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD = "network_traffic_autohide_threshold";
+    private static final String NETWORK_TRAFFIC_HIDEARROW = "network_traffic_hidearrow";
 
     private ListPreference mNetTrafficState;
     private ListPreference mNetTrafficUnit;
     private ListPreference mNetTrafficPeriod;
     private SwitchPreference mNetTrafficAutohide;
     private SeekBarPreference mNetTrafficAutohideThreshold;
+    private SwitchPreference mNetTrafficHidearrow;
 
     private int mNetTrafficVal;
     private int MASK_UP;
@@ -130,10 +132,18 @@ public class NetworkTraffic extends SettingsPreferenceFragment
                 Settings.System.NETWORK_TRAFFIC_AUTOHIDE, 0) == 1));
             mNetTrafficAutohide.setOnPreferenceChangeListener(this);
 
+            mNetTrafficHidearrow =
+            (SwitchPreference) prefScreen.findPreference(NETWORK_TRAFFIC_HIDEARROW);
+            mNetTrafficHidearrow.setChecked((Settings.System.getInt(resolver,
+                    Settings.System.NETWORK_TRAFFIC_HIDEARROW, 0) == 1));
+            mNetTrafficHidearrow.setOnPreferenceChangeListener(this);
+
             mNetTrafficUnit.setEnabled(intIndex != 0);
             mNetTrafficPeriod.setEnabled(intIndex != 0);
             mNetTrafficAutohide.setEnabled(intIndex != 0);
             mNetTrafficAutohideThreshold.setEnabled(intIndex != 0);
+            mNetTrafficHidearrow.setEnabled(intIndex != 0);
+
         } else {
             prefScreen.removePreference(findPreference(NETWORK_TRAFFIC_STATE));
             prefScreen.removePreference(findPreference(NETWORK_TRAFFIC_UNIT));
@@ -165,6 +175,8 @@ public class NetworkTraffic extends SettingsPreferenceFragment
             mNetTrafficPeriod.setEnabled(intState != 0);
             mNetTrafficAutohide.setEnabled(intState != 0);
             mNetTrafficAutohideThreshold.setEnabled(intState != 0);
+            mNetTrafficHidearrow.setEnabled(intState != 0);
+
             return true;
         } else if (preference == mNetTrafficUnit) {
             // 1 = Display as Byte/s; default is bit/s
@@ -189,6 +201,11 @@ public class NetworkTraffic extends SettingsPreferenceFragment
             int threshold = (Integer) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, threshold * 1);
+            return true;
+        } else if (preference == mNetTrafficHidearrow) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.NETWORK_TRAFFIC_HIDEARROW, value ? 1 : 0);
             return true;
         }
         return false;
