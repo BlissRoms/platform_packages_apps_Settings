@@ -32,13 +32,19 @@
         android:summary="@string/screenshot_sound_summary"
         android:defaultValue="true" />
 
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="safe_headset_volume"
+        android:title="@string/safe_headset_volume_title"
+        android:summary="@string/safe_headset_volume_summary"
+        android:defaultValue="true"/>
+
     <PreferenceScreen
         android:key="vol_steps"
         android:fragment="com.android.settings.bliss.VolumeSteps"
         android:title="@string/volume_steps_fragment_title"
         android:summary="@string/volume_steps_summary" />
 
-  <ListPreference
+    <ListPreference
         android:key="less_notification_sounds"
         android:title="@string/less_notification_sounds_title"
         android:summary="@string/less_notification_sounds_summary"
