@@ -182,7 +182,7 @@
                 android:fragment="com.android.settings.notification.NotificationManagerSettings"
                 android:icon="@drawable/ic_settings_notifications"
                 />
-      
+
         <!-- O-Click -->
         <dashboard-tile
                 android:id="@+id/oclick"
