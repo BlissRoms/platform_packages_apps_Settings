@@ -83,6 +83,9 @@
     <string name="viper_settings_title">Equalizer</string>
     <string name="viper_summary">Viper4Android Access</string>
 
+    <!-- cLock -->
+    <string name="menu_item_widget_settings">cLock settings</string>
+
     <!-- Statusbar Bliss logo -->
     <string name="status_bar_bliss_logo_title">Bliss logo</string>
     <string name="status_bar_bliss_logo_summary">Enable to show Bliss logo on the left side of statusbar</string>
