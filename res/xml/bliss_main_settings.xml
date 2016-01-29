@@ -64,8 +64,9 @@ Project
         <PreferenceScreen
                 android:key="system_app_remover"
                 android:title="@string/system_app_remover"
-                android:summary="@string/systemappremover_summary"
-                android:fragment="com.android.settings.bliss.SystemappRemover" />
+                android:fragment="com.android.settings.bliss.SystemappRemover" 
+		android:icon="@drawable/ic_app_remover"
+		/>
 
         <!-- Wakelock blocker -->
         <PreferenceScreen
