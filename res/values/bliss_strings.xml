@@ -90,6 +90,9 @@
     <!-- AdAway -->
     <string name="adaway_settings_title">AdAway</string>
 
+    <!-- cLock -->
+    <string name="menu_item_widget_settings">cLock settings</string>
+
     <!-- Statusbar Bliss logo -->
     <string name="status_bar_bliss_logo_title">Bliss logo</string>
     <string name="status_bar_bliss_logo_summary">Enable to show Bliss logo on the left side of statusbar</string>

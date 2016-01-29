@@ -74,7 +74,18 @@ Project
             android:title="@string/wakelock_blocker_title"
             android:icon="@drawable/ic_xd_wakelock" 
             />
-		
+
+        <PreferenceScreen
+            android:key="lockclock_settings"
+            android:title="@string/menu_item_widget_settings"
+            android:persistent="false"
+            android:icon="@drawable/clock_preferences" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.lockclock"
+                android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
+        </PreferenceScreen>
+
     </PreferenceCategory> 
 
 </PreferenceScreen>
