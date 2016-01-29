@@ -316,7 +316,6 @@
     <string name="sizer_message_filefail">Failed to create profile</string>
     <string name="sizer_message_noselect">Nothing selected</string>
     <string name="system_app_remover">System App Remover</string>
-    <string name="systemappremover_summary">Remove system apps by your own risk</string>
 
     <!-- Battery Settings -->
     <string name="battery_settings_title">Battery</string>
