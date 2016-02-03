@@ -188,6 +188,13 @@
     <string name="clock_font_size_title">Font size</string>
     <string name="clock_font_black">Black</string>
     <string name="clock_font_black_italic">Black Italic</string>
+    <string name="clock_font_dancingscript">DancingScript</string>
+    <string name="clock_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="clock_font_comingsoon">ComingSoon</string>
+    <string name="clock_font_notoserif">NotoSerif Normal</string>
+    <string name="clock_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="clock_font_notoserif_bold">NotoSerif Bold</string>
+    <string name="clock_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
 
     <!-- Toast Icons -->
     <string name="toast_icon_title">Toast icon</string>
