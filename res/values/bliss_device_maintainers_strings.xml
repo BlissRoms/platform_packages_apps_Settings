@@ -38,6 +38,8 @@
    <string name="device_5x_summary">blueyes</string>
    <string name="device_nexus6">Nexus 6- Shamu</string>
    <string name="device_nexus6_summary">pjgraber03</string>
+   <string name="device_nexus6p">Nexus 6p- Angler</string>
+   <string name="device_nexus6p_summary">Deliberate</string>
    <string name="device_nexus7_12">Nexus 7 2012- Grouper and Tilapia</string>
    <string name="device_nexus7_12_summary">electrikjesus</string>
    <string name="device_nexus7_13">Nexus 7 2013- Flo and Deb</string>

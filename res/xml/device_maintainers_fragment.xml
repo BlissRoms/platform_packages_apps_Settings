@@ -24,8 +24,8 @@
     <PreferenceCategory>
 
     <Preference
-       android:summary="@string/device_maintainers_summary"
-       android:selectable="false" />
+    android:summary="@string/device_maintainers_summary"
+    android:selectable="false" />
     </PreferenceCategory>
 
     <!-- Asus Devices -->
@@ -35,13 +35,13 @@
     <Preference
 	android:title="@string/device_zen2"
 	android:summary="@string/device_zen2_summary"
-        android:selectable="false" />
+    android:selectable="false" />
 
     </PreferenceCategory>
 
     <!--Google Devices -->
     <PreferenceCategory
-        android:title="@string/device_category_google_title" >
+    android:title="@string/device_category_google_title" >
 
     <Preference
 	android:title="@string/device_nexus4"
@@ -54,15 +54,20 @@
 	android:selectable="false" />
 
     <Preference
-       	android:title="@string/device_5x"
-       	android:summary="@string/device_5x_summary"
-     	android:selectable="false" />
+    android:title="@string/device_5x"
+    android:summary="@string/device_5x_summary"
+    android:selectable="false" />
 
     <Preference
-       	android:title="@string/device_nexus6"
-       	android:summary="@string/device_nexus6_summary"
-       	android:selectable="false" />
+    android:title="@string/device_nexus6"
+    android:summary="@string/device_nexus6_summary"
+    android:selectable="false" />
 
+	<Preference
+	android:title="@string/device_nexus6p"
+	android:summary="@string/device_nexus6p_summary"
+	android:selectable="false" />
+		
     <Preference
 	android:title="@string/device_nexus7_12"
 	android:summary="@string/device_nexus7_12_summary"
@@ -77,12 +82,12 @@
 
     <!-- HTC Devices -->
     <PreferenceCategory
-        android:title="@string/device_category_htc_title">
+    android:title="@string/device_category_htc_title">
 
     <Preference
-        android:title="@string/device_m8"
-        android:summary="@string/device_m8_summary"
-        android:selectable="false" />
+    android:title="@string/device_m8"
+    android:summary="@string/device_m8_summary"
+    android:selectable="false" />
 
     </PreferenceCategory>
 
@@ -117,24 +122,24 @@
 	android:selectable="false" />
 
     <Preference
-        android:title="@string/device_falcon"
-        android:summary="@string/device_falcon_summary"
-        android:selectable="false" />
+    android:title="@string/device_falcon"
+    android:summary="@string/device_falcon_summary"
+    android:selectable="false" />
 
     <Preference
-        android:title="@string/device_titan"
-        android:summary="@string/device_titan_summary"
-        android:selectable="false" />
+    android:title="@string/device_titan"
+    android:summary="@string/device_titan_summary"
+    android:selectable="false" />
 
     <Preference
-        android:title="@string/device_condor"
-        android:summary="@string/device_condor_summary"
-        android:selectable="false" />
+    android:title="@string/device_condor"
+    android:summary="@string/device_condor_summary"
+    android:selectable="false" />
 
     <Preference
-        android:title="@string/device_otus"
-        android:summary="@string/device_otus_summary"
-        android:selectable="false" />
+    android:title="@string/device_otus"
+    android:summary="@string/device_otus_summary"
+    android:selectable="false" />
 
     </PreferenceCategory>
 
@@ -145,18 +150,18 @@
     <Preference
 	android:title="@string/device_shieldtab"
 	android:summary="@string/device_shieldtab_summary"
-        android:selectable="false" />
+    android:selectable="false" />
 
     </PreferenceCategory>
 
     <!-- OnePlus Devices -->
     <PreferenceCategory
-        android:title="@string/device_category_oneplus_title">
+    android:title="@string/device_category_oneplus_title">
 
     <Preference
-        android:title="@string/device_bacon"
-        android:summary="@string/device_bacon_summary"
-        android:selectable="false" />
+    android:title="@string/device_bacon"
+    android:summary="@string/device_bacon_summary"
+    android:selectable="false" />
 
     </PreferenceCategory>
 
@@ -188,12 +193,12 @@
 
     <!-- YU Devices -->
     <PreferenceCategory
-        android:title="@string/device_category_yu_title">
+    android:title="@string/device_category_yu_title">
 
     <Preference
-        android:title="@string/device_yureka"
-        android:summary="@string/device_yureka_summary"
-        android:selectable="false" />
+    android:title="@string/device_yureka"
+    android:summary="@string/device_yureka_summary"
+    android:selectable="false" />
 
     </PreferenceCategory>
 
