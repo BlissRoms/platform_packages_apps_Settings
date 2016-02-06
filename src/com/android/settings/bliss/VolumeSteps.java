@@ -37,6 +37,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 
+import cyanogenmod.providers.CMSettings;
+
 public class VolumeSteps extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
@@ -189,6 +191,16 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
         Settings.System.putInt(getActivity().getContentResolver(), pref.getKey(), steps);
         mAudioManager.setStreamMaxVolume(volume_map.get(pref.getKey()), steps);
         updateVolumeStepPrefs(pref, steps);
+        if (volume_map.get(pref.getKey()) == AudioManager.STREAM_MUSIC) {
+            if (CMSettings.System.getInt(getActivity().getContentResolver(), 
+                        CMSettings.System.STREAM_VOLUME_STEPS_CHANGED, 0) != 0) {
+               CMSettings.System.putInt(getActivity().getContentResolver(), 
+                        CMSettings.System.STREAM_VOLUME_STEPS_CHANGED, 0);
+            } else {
+               CMSettings.System.putInt(getActivity().getContentResolver(),
+                        CMSettings.System.STREAM_VOLUME_STEPS_CHANGED, 1);
+            }
+        }
         Log.i(TAG, "Volume steps:" + pref.getKey() + "" + String.valueOf(steps));
     }
 }
