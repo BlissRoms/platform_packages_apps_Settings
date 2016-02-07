@@ -36,6 +36,21 @@
         android:title="@string/title_general">
 
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="left_default_voice"
+            android:title="@string/left_default_voice_title"
+            android:summaryOn="@string/left_default_voice_summary_on"
+            android:summaryOff="@string/left_default_voice_summary_off"
+            android:defaultValue="true" />
+
+        <PreferenceScreen
+            android:key="lockscreen_shortcuts_settings"
+            android:title="@string/lockscreen_targets_message" >
+            <intent
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
+        </PreferenceScreen>
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="lockscreen_quick_unlock_control"
             android:title="@string/unlock_quick_unlock_control_title"
             android:summary="@string/unlock_quick_unlock_control_summary" />
@@ -95,14 +110,6 @@
             android:key="owner_info_settings"
             android:title="@string/owner_info_settings_title"
             android:summary="@string/owner_info_settings_summary"/>
-
-        <PreferenceScreen
-            android:key="lockscreen_shortcuts_settings"
-            android:title="@string/lockscreen_targets_message" >
-            <intent
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
-        </PreferenceScreen>
 
         <Preference android:key="manage_trust_agents"
                     android:title="@string/manage_trust_agents"
