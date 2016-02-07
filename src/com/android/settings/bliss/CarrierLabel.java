@@ -60,6 +60,7 @@ public class CarrierLabel  extends SettingsPreferenceFragment
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
     private static final String STATUS_BAR_CARRIER_COLOR = "status_bar_carrier_color";
     private static final String STATUS_BAR_CARRIER_FONT_SIZE  = "status_bar_carrier_font_size";
+    private static final String STATUS_BAR_CARRIER_FONT_STYLE = "status_bar_carrier_font_style";
 
     static final int DEFAULT_STATUS_CARRIER_COLOR = 0xffffffff;
 
@@ -69,6 +70,7 @@ public class CarrierLabel  extends SettingsPreferenceFragment
     private String mCustomCarrierLabelText;
     private ColorPickerPreference mCarrierColorPicker;
     private SeekBarPreference mStatusBarCarrierSize;	
+    private ListPreference mStatusBarCarrierFontStyle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -106,6 +108,12 @@ public class CarrierLabel  extends SettingsPreferenceFragment
         mStatusBarCarrierSize.setValue(Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_CARRIER_FONT_SIZE, 14));
 
+        mStatusBarCarrierFontStyle = (ListPreference) findPreference(STATUS_BAR_CARRIER_FONT_STYLE);
+        mStatusBarCarrierFontStyle.setOnPreferenceChangeListener(this);
+        mStatusBarCarrierFontStyle.setValue(Integer.toString(Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_CARRIER_FONT_STYLE, 0)));
+        mStatusBarCarrierFontStyle.setSummary(mStatusBarCarrierFontStyle.getEntry());
+
     }
 
     private void updateCustomLabelTextSummary() {
@@ -140,6 +148,13 @@ public class CarrierLabel  extends SettingsPreferenceFragment
             int width = ((Integer)newValue).intValue();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_CARRIER_FONT_SIZE, width);
+            return true;
+         } else if (preference == mStatusBarCarrierFontStyle) {
+            int val = Integer.parseInt((String) newValue);
+            int index = mStatusBarCarrierFontStyle.findIndexOfValue((String) newValue);
+            Settings.System.putInt(resolver,
+                    Settings.System.STATUS_BAR_CARRIER_FONT_STYLE, val);
+            mStatusBarCarrierFontStyle.setSummary(mStatusBarCarrierFontStyle.getEntries()[index]);
             return true;
 	     }
          return false;
