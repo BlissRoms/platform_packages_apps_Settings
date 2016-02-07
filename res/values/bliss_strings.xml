@@ -538,4 +538,10 @@
     <string name="left_default_voice_summary_on">Default shortcut on lockscreen is voice assistant</string>
     <string name="left_default_voice_summary_off">Default shortcut on lockscreen is phone</string>
 
+
+    <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_items_title">Lockscreen items</string>
+    <string name="hide_lockscreen_clock_title">Show lockscreen clock</string>
+    <string name="hide_lockscreen_date_title">Show lockscreen date</string>
+
 </resources>

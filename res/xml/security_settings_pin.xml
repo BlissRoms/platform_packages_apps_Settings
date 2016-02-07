@@ -101,6 +101,16 @@
             android:summary="@string/powermenu_lockscreen_summary"
             android:defaultValue="true" />
 
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_clock"
+            android:title="@string/hide_lockscreen_clock_title"
+            android:defaultValue="true" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_date"
+            android:title="@string/hide_lockscreen_date_title"
+            android:defaultValue="true" />
+
         <PreferenceScreen
            android:key="lockscreen_colors"
            android:title="@string/lockscreen_colors"
