@@ -33,11 +33,6 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatDelegate;
-import android.support.v7.widget.Toolbar;
 import android.telephony.TelephonyManager;
 import android.text.Spannable;
 import android.text.TextUtils;
@@ -106,22 +101,12 @@ public class CarrierLabel  extends SettingsPreferenceFragment
         mCarrierColorPicker.setSummary(hexColor);
         mCarrierColorPicker.setNewPreviewColor(intColor);
 
-
         mStatusBarCarrierSize = (SeekBarPreference) findPreference(STATUS_BAR_CARRIER_FONT_SIZE);
-        mStatusBarCarrierSize.setValue(Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.STATUS_BAR_CARRIER_FONT_SIZE, 14));
         mStatusBarCarrierSize.setOnPreferenceChangeListener(this);
+        mStatusBarCarrierSize.setValue(Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_CARRIER_FONT_SIZE, 14));
 
-
-
- 	if (TelephonyManager.getDefault().isMultiSimEnabled()) {
-            prefSet.removePreference(mShowCarrierLabel);
-            prefSet.removePreference(mCustomCarrierLabel);
-        } else {
-            updateCustomLabelTextSummary();
-        }
-
-}
+    }
 
     private void updateCustomLabelTextSummary() {
         mCustomCarrierLabelText = Settings.System.getString(
@@ -156,7 +141,7 @@ public class CarrierLabel  extends SettingsPreferenceFragment
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_CARRIER_FONT_SIZE, width);
             return true;
-	}
+	     }
          return false;
     }
 
