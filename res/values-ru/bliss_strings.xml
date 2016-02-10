@@ -16,8 +16,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Bliss settings screens -->
-    <string name="header_category_bliss">Bliss Options</string>
-    <string name="bliss_settings_title">Bliss Settings</string>
+    <string name="header_category_bliss">Опции Bliss</string>
+    <string name="bliss_settings_title">Настройки Bliss</string>
     <string name="bliss_cat_title">Категории</string>
 
     <!-- Bliss Display Optionss -->
