@@ -45,7 +45,7 @@
 
     <!-- Share Bliss -->
     <string name="share_bliss_title">Поделиться информацией</string>
-    <string name="share_bliss_summary">Рассказать другим о пришивке</string>
+    <string name="share_bliss_summary">Рассказать другим о прошивке</string>
     <string name="share_message">Посетить сайт создателей прошивки @ http://www.blissroms.com</string>
     <string name="share_chooser_title">Поделиться информацией</string>
 
@@ -85,7 +85,7 @@
     <string name="bliss_ota">Обновление</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
-    <string name="supersu_title">Супер пользователь</string>
+    <string name="supersu_title">Суперпользователь</string>
 
     <!-- AdAway -->
     <string name="adaway_settings_title">Блокировка рекламы</string>
@@ -111,8 +111,8 @@
     <string name="disable_fc_notifications_summary">Это скроет все уведомления о принудительном закрытии приложения</string>
 
     <!--Time Contexual Header -->
-    <string name="status_bar_custom_header_title">Time Contextual Header</string>
-    <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
+    <string name="status_bar_custom_header_title">Контекстное изображение</string>
+    <string name="status_bar_custom_header_summary">Включить отображение контекстного изображения в панели уведомлений</string>
 
     <!-- Status bar temperature -->
     <string name="status_bar_temperature_title">Температура</string>
@@ -160,7 +160,7 @@
     <string name="status_bar_date_none">Не отображается (по умолчанию)</string>
     <string name="status_bar_date_small">Маленький</string>
     <string name="status_bar_date_normal">Нормальный</string>
-    <string name="status_bar_date_format_title">Фортмат даты</string>
+    <string name="status_bar_date_format_title">Формат даты</string>
     <string name="status_bar_date_style">Стиль даты</string>
     <string name="status_bar_date_style_normal">Нормальный</string>
     <string name="status_bar_date_style_lowercase">Маленький</string>
@@ -210,7 +210,7 @@
     <string name="toast_SlideLeft_animation">Скольжение слева</string>
     <string name="toast_Xylon_animation">Xylon анимация</string>
     <string name="toast_Toko_animation">Toko анимация</string>
-    <string name="toast_Tn_animation">Tn animation</string>
+    <string name="toast_Tn_animation">Tn анимация</string>
     <string name="toast_Honami_animation">Honami анимация</string>
     <string name="toast_FastFade_animation">Быстрое угасание</string>
     <string name="toast_GrowFade_animation">Растущее угасание</string>
@@ -218,141 +218,141 @@
     <string name="toast_GrowFadeBottom_animation">Растущее угасание снизу</string>
     <string name="toast_Translucent_animation">Прозрачная анимация</string>
     <string name="toast_SlideLeftRight_animation">Скольжение слева направо</string>
-    <string name="toast_SlideRightLeft_animation">Скольжение справо налево</string>
+    <string name="toast_SlideRightLeft_animation">Скольжение справа налево</string>
 
     <!-- ListView animation -->
-    <string name="interface_settings_animation_title">Animation options</string>
-    <string name="listview_animation_title">ListView animation</string>
-    <string name="listview_off">Default</string>
-    <string name="listview_wave_left">Wave (left)</string>
-    <string name="listview_wave_right">Wave (right)</string>
-    <string name="listview_alpha">Alpha</string>
-    <string name="listview_scale">Scale</string>
-    <string name="listview_stack_top">Stack (top)</string>
-    <string name="listview_stack_bottom">Stack (bottom)</string>
-    <string name="listview_unfold">Unfold</string>
-    <string name="listview_fold">Fold</string>
-    <string name="listview_translate_left">Translate (left)</string>
-    <string name="listview_translate_right">Translate (right)</string>
+    <string name="interface_settings_animation_title">Настройки анимации</string>
+    <string name="listview_animation_title">Анимация списков</string>
+    <string name="listview_off">По умолчанию</string>
+    <string name="listview_wave_left">Волна (слева)</string>
+    <string name="listview_wave_right">Волна (справа)</string>
+    <string name="listview_alpha">Альфа</string>
+    <string name="listview_scale">Масштаб</string>
+    <string name="listview_stack_top">Стек (сверху)</string>
+    <string name="listview_stack_bottom">Стек (снизу)</string>
+    <string name="listview_unfold">Раскрывающийся</string>
+    <string name="listview_fold">Складывающийся</string>
+    <string name="listview_translate_left">Появляться (слева)</string>
+    <string name="listview_translate_right">Появляться (справа)</string>
 
     <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">ListView interpolator</string>
-    <string name="listview_accelerate_interpolator">Accelerate</string>
-    <string name="listview_decelerate_interpolator">Decelerate</string>
-    <string name="listview_accelerate_decelerate_interpolator">Accelerate and decelerate</string>
-    <string name="listview_anticipate_interpolator">Anticipate</string>
-    <string name="listview_overshoot_interpolator">Overshoot</string>
-    <string name="listview_anticipate_overshoot_interpolator">Anticipate and overshoot</string>
-    <string name="listview_bounce_interpolator">Bounce</string>
+    <string name="listview_interpolator_title">Интерполяция анимации списков</string>
+    <string name="listview_accelerate_interpolator">Ускорить</string>
+    <string name="listview_decelerate_interpolator">Замедлить</string>
+    <string name="listview_accelerate_decelerate_interpolator">Ускорить и замедлить</string>
+    <string name="listview_anticipate_interpolator">Опережать</string>
+    <string name="listview_overshoot_interpolator">Выбрасывать</string>
+    <string name="listview_anticipate_overshoot_interpolator">опережать и выбрасывать</string>
+    <string name="listview_bounce_interpolator">Отскок</string>
 
     <!-- AOKP custom system animations -->
-    <string name="animation_title">Animations</string>        
-    <string name="system_animation_title">System animations</string>
-    <string name="activity_open_title">Activity open animation</string>
-    <string name="activity_close_title">Activity close animation</string>
-    <string name="task_open_title">Task open animation</string>
-    <string name="task_close_title">Task close animation</string>
-    <string name="task_move_to_front_title">Move to front animation</string>
-    <string name="task_move_to_back_title">Move to back animation</string>
-    <string name="wallpaper_open_title">Wallpaper open animation</string>
-    <string name="wallpaper_close_title">Wallpaper close animation</string>
-    <string name="wallpaper_intra_open_title">Wallpaper intra open animation</string>
-    <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
-    <string name="animation_duration_title">Animation duration</string>
-    <string name="title_animation_no_override">Prevent app overrides</string>
-    <string name="summary_animation_no_override">Prevent apps from overriding transitions</string>
-    <string name="animation_duration_default">Default</string>
+    <string name="animation_title">Анимации</string>        
+    <string name="system_animation_title">Системные анимации</string>
+    <string name="activity_open_title">Анимация открытия активности</string>
+    <string name="activity_close_title">Анимация закрытия активности</string>
+    <string name="task_open_title">Анимация открытия задачи</string>
+    <string name="task_close_title">Анимация закрытия задачи</string>
+    <string name="task_move_to_front_title">Анимация движения вперед</string>
+    <string name="task_move_to_back_title">Анимация движения назад</string>
+    <string name="wallpaper_open_title">Анимация открытия обоев</string>
+    <string name="wallpaper_close_title">Анимация закрытия обоев</string>
+    <string name="wallpaper_intra_open_title">Анимация внутри открытия обоев</string>
+    <string name="wallpaper_intra_close_title">Анимация внутри закрытия обоев</string>
+    <string name="animation_duration_title">Длительность анимации</string>
+    <string name="title_animation_no_override">Предотвращать переопределение</string>
+    <string name="summary_animation_no_override">Предотвращать переопределение переходов для приложений</string>
+    <string name="animation_duration_default">По умолчанию</string>
 
    <!-- Force expanded notifications -->
-    <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
-    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+    <string name="force_expanded_notifications_title">Принудительно развернутые уведомления</string>
+    <string name="force_expanded_notifications_summary">Доступно только для приложений поддерживающих развернутые уведомления</string>
 
     <!-- Disabling immersive mode messages -->
-    <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
-    <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+    <string name="disable_immersive_message_title">Отключить уведомления полноэкранного режима</string>
+    <string name="disable_immersive_message_summary">Это отключит все уведомления полноэкранного режима</string>
 
     <!-- RAM bar -->
-    <string name="recents_show_membar_title">RAM memory bar</string>
-    <string name="recents_show_membar_summary_on">Available RAM memory bar will be displayed on recents view</string>
-    <string name="recents_show_membar_summary_off">Toggle to display available RAM memory bar on recents view</string>
+    <string name="recents_show_membar_title">Строка отображения оперативной памяти</string>
+    <string name="recents_show_membar_summary_on">Доступная оперативная память будет отображаться в списке недавних приложений</string>
+    <string name="recents_show_membar_summary_off">Переключить отображение свободной оперативной памяти в списке недавних приложений</string>
 
     <!-- Superuser indicator on status bar -->
-    <string name="su_indicator">Superuser indicator</string>
-    <string name="su_indicator_summary_on">Superuser indicator is visible when a session is active</string>
-    <string name="su_indicator_summary_off">Toggle to show superuser indicator when a session is active</string>
+    <string name="su_indicator">Индикатор суперпользователя</string>
+    <string name="su_indicator_summary_on">Индикатор суперпользователя будет отображаться при его активности в приложении</string>
+    <string name="su_indicator_summary_off">Включить отображение индикатора суперпользователя при его активности в приложении</string>
 
     <!-- Network traffic -->
-    <string name="network_traffic_title">Network traffic</string>
-    <string name="network_traffic_summary">Show the traffic monitor on the status bar</string>
-    <string name="show_network_traffic_state">Status bar traffic monitor</string>
-    <string name="show_network_traffic_unit">Display unit</string>
-    <string name="show_network_traffic_frequency">Update interval</string>
-    <string name="show_network_traffic_disable">Disabled</string>
-    <string name="show_network_traffic_up">Outgoing</string>
-    <string name="show_network_traffic_down">Incoming</string>
-    <string name="show_network_traffic_all">Outgoing and incoming</string>
-    <string name="show_network_traffic_bit">Bits per second</string>
-    <string name="show_network_traffic_byte">Bytes per second</string>
-    <string name="show_network_traffic_500">500 ms</string>
-    <string name="show_network_traffic_1000">1000 ms</string>
-    <string name="show_network_traffic_1500">1500 ms</string>
-    <string name="show_network_traffic_2000">2000 ms</string>
-    <string name="network_traffic_autohide_title">Auto hide</string>
-    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-    <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
+    <string name="network_traffic_title">Сетевой трафик</string>
+    <string name="network_traffic_summary">Показывать монитор сетевого трафика в строке состояния</string>
+    <string name="show_network_traffic_state">Монитор сетевого трафика в строке состояния</string>
+    <string name="show_network_traffic_unit">Показывать единицы</string>
+    <string name="show_network_traffic_frequency">Время обновления</string>
+    <string name="show_network_traffic_disable">Выключен</string>
+    <string name="show_network_traffic_up">Исходящий</string>
+    <string name="show_network_traffic_down">Входящий</string>
+    <string name="show_network_traffic_all">Исходящий и входящий</string>
+    <string name="show_network_traffic_bit">Бит в секунду</string>
+    <string name="show_network_traffic_byte">Байт в секунду</string>
+    <string name="show_network_traffic_500">500 мс</string>
+    <string name="show_network_traffic_1000">1000 мс</string>
+    <string name="show_network_traffic_1500">1500 мс</string>
+    <string name="show_network_traffic_2000">2000 мс</string>
+    <string name="network_traffic_autohide_title">Авто скрытие</string>
+    <string name="network_traffic_autohide_summary">Скрывать монитор трафика, если нет сетевой активности</string>
+    <string name="network_traffic_autohide_threshold">Порог неактивности</string>
 
     <!-- Clock Settings -->
-    <string name="status_bar_show_clock_second_title">Clock seconds</string>
+    <string name="status_bar_show_clock_second_title">Секунды на часах</string>
 
     <!-- SlimSizer  -->
-    <string name="listsystem">list</string>
-    <string name="sizer_title">App remover</string>
-    <string name="caution">Caution!</string>
-    <string name="sizer_message_startup">This tool allows you to delete system apps. Use with caution and only delete apps you know are safe to be removed.</string>
-    <string name="cancel">Cancel</string>
-    <string name="sizer_message_delete">Are you sure you want to delete this app?</string>
-    <string name="btn_delete">Delete selected APPs now!</string>
-    <string name="delete_progress_title">Deleting</string>
-    <string name="delete_progress">Selected files are being deleted...</string>
-    <string name="delete_success">Deleted</string>
-    <string name="delete_fail">Unable to delete</string>
-    <string name="btn_profile">Profile</string>
-    <string name="sizer_message_sdnowrite">Cannot write to SD card</string>
-    <string name="sizer_message_sdnoread">Cannot read SD card</string>
-    <string name="sizer_message_filesuccess">Created profile</string>
-    <string name="sizer_message_filefail">Failed to create profile</string>
-    <string name="sizer_message_noselect">Nothing selected</string>
-    <string name="system_app_remover">System App Remover</string>
+    <string name="listsystem">Список</string>
+    <string name="sizer_title">Удаление приложений</string>
+    <string name="caution">Внимание!</string>
+    <string name="sizer_message_startup">Эта утилита позволит удалять системные приложения. Используйте с осторожностью и удаляйте только приложения, которые безопасно удалять</string>
+    <string name="cancel">Отмена</string>
+    <string name="sizer_message_delete">Вы уверены что хотите удалить это приложение?</string>
+    <string name="btn_delete">Удалить выбранные приложения сейчас!</string>
+    <string name="delete_progress_title">Удаление</string>
+    <string name="delete_progress">Выбранные файлы удалены...</string>
+    <string name="delete_success">Удалено</string>
+    <string name="delete_fail">Невозможно удалить</string>
+    <string name="btn_profile">Профиль</string>
+    <string name="sizer_message_sdnowrite">Невозможно записать на карту памяти</string>
+    <string name="sizer_message_sdnoread">Невозможно прочитать карту памяти</string>
+    <string name="sizer_message_filesuccess">Созданные профили</string>
+    <string name="sizer_message_filefail">Ошибка при создании профиля</string>
+    <string name="sizer_message_noselect">Ничего не выбрано</string>
+    <string name="system_app_remover">Удаление системных приложений</string>
 
     <!-- Battery Settings -->
-    <string name="battery_settings_title">Battery</string>
-    <string name="battery_settings_summary">Customize the battery on the status bar and the battery bar</string>
-    <string name="status_bar_battery_cat">Status bar options</string>
-    <string name="battery_icon">Battery icon style</string>
-    <string name="battery_not_title">Battery icon in notifications</string>
-    <string name="battery_not_summary">Battery icon will show up where the clear all button shows up</string>
-    <string name="battery_bar_location">Battery bar location</string>
-    <string name="battery_bar_color">Battery bar color</string>
-    <string name="battery_bar">Battery bar options</string>
-    <string name="battery_bar_style_title">Battery bar style</string>
-    <string name="battery_bar_thickness_title">Battery bar thickness</string>
-    <string name="battery_bar_animate_title">Charging animation</string>
-    <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
+    <string name="battery_settings_title">Батарея</string>
+    <string name="battery_settings_summary">Настроить отображение батареи и строки состояния батареи</string>
+    <string name="status_bar_battery_cat">Настройки строки состояния</string>
+    <string name="battery_icon">Стиль иконки батареи</string>
+    <string name="battery_not_title">Иконка батареи в уведомлениях</string>
+    <string name="battery_not_summary">Иконка батареи будет отображаться в кнопке очистке всех приложений</string>
+    <string name="battery_bar_location">Место отображения строки заряда</string>
+    <string name="battery_bar_color">Цвет строки заряда</string>
+    <string name="battery_bar">Настройки строки заряда</string>
+    <string name="battery_bar_style_title">Стиль строки заряда</string>
+    <string name="battery_bar_thickness_title">Толщина строки заряда</string>
+    <string name="battery_bar_animate_title">Анимация зарядки аккумулятора</string>
+    <string name="battery_bar_animate_summary">Анимация зарядки может влиять на производительность</string>
 
     <!-- Sound settings -->
-    <string name="advanced_sound_title">Advanced options</string>
-    <string name="sound_title">Sound</string>
+    <string name="advanced_sound_title">Расширенные настройки</string>
+    <string name="sound_title">Звук</string>
 
     <!-- sound switches -->
-    <string name="camera_sounds_title">Camera shutter sound</string>
-    <string name="camera_sounds_summary">Enable system camera shutter sound</string>
-    <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
-    <string name="screenshot_sound_title">Screenshot sound</string>
-    <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+    <string name="camera_sounds_title">Звук затвора камеры</string>
+    <string name="camera_sounds_summary">Включить звук затвора камеры</string>
+    <string name="camera_sound_warning_dialog_text">Отключение звука затвора камеры незаконно в некоторых странах! Пожалуйста, проверьте соответствующий закон в вашей стране.</string>
+    <string name="screenshot_sound_title">Звук снимка экрана</string>
+    <string name="screenshot_sound_summary">Проигрывать звук при снимке экрана</string>
 
     <!-- Media art -->
-    <string name="media_art_title">Media cover art</string>
-    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+    <string name="media_art_title">Обложка альбома</string>
+    <string name="media_art_summary">Включить отображение обложки альбома на экране блокировки</string>
 
     <!-- Recents OmniSwitch -->
     <string name="omniswitch_settings_title">OmniSwitch</string>
@@ -364,16 +364,16 @@
     <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
 
     <!-- The volume key answer -->
-    <string name="volume_answer_call_title">Volume key Answer</string>
-    <string name="volume_answer_call_summary">Volume up key Answer</string>
+    <string name="volume_answer_call_title">Ответ кнопкой громкости</string>
+    <string name="volume_answer_call_summary">Ответ на звонок кнопкой увеличения громкости</string>
 
     <!-- Show bluetooth icon when disconnected -->
-    <string name="status_bar_bluetooth_icon">Bluetooth icon</string>
-    <string name="status_bar_bluetooth_icon_summary">Shows icon when it is enabled but not connected</string>
+    <string name="status_bar_bluetooth_icon">Иконка bluetooth</string>
+    <string name="status_bar_bluetooth_icon_summary">Показывать иконку когда bluetooth включен, но нет сопряжения</string>
 
     <!-- Battery saver color -->
-    <string name="battery_saver_color_title">Warning color</string>
-    <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
+    <string name="battery_saver_color_title">Цвет предупреждения</string>
+    <string name="battery_saver_color_summary">Включить окраску строки состояния и панели навигации в оранжевый цвет, когда включен режим энергосбережения</string>
 
     <!-- 4G LTE switch -->
     <string name="show_fourg_title">Show 4G instead of LTE</string>
