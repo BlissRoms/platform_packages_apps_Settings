@@ -165,7 +165,7 @@
     <string name="status_bar_date_style_normal">Нормальный</string>
     <string name="status_bar_date_style_lowercase">Маленький</string>
     <string name="status_bar_date_style_uppercase">Большой</string>
-    <string name="status_bar_date_format_custom">Настроить фотмат</string>
+    <string name="status_bar_date_format_custom">Настроить формат</string>
     <string name="status_bar_date_string_edittext_title">Должно быть в формате, напр. MM/dd/yy</string>
     <string name="status_bar_date_string_edittext_summary">Ввести значение</string>
     <string name="clock_font_style_title">Шрифт</string>
@@ -197,28 +197,28 @@
     <string name="clock_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
 
     <!-- Toast Icons -->
-    <string name="toast_icon_title">Toast icon</string>
+    <string name="toast_icon_title">Иконка уведомлений</string>
 
     <!-- Toast Animations -->
-    <string name="screen_and_animations_title">Animations</string>
-    <string name="toast_animation_title">Toast animations</string>
-    <string name="toast_animation_summary">Select and preview system toast animation</string>
-    <string name="toast_none_animation">None</string>
-    <string name="toast_default_animation">Default</string>
-    <string name="toast_fade_animation">Fade animation</string>
-    <string name="toast_SlideRight_animation">Slide right</string>
-    <string name="toast_SlideLeft_animation">Slide left</string>
-    <string name="toast_Xylon_animation">Xylon animation</string>
-    <string name="toast_Toko_animation">Toko animation</string>
+    <string name="screen_and_animations_title">Анимации</string>
+    <string name="toast_animation_title">Анимации уведомлений</string>
+    <string name="toast_animation_summary">Выбор и предпросмотр анимации уведомлений</string>
+    <string name="toast_none_animation">Нет</string>
+    <string name="toast_default_animation">По умолчанию</string>
+    <string name="toast_fade_animation">Угасание</string>
+    <string name="toast_SlideRight_animation">Скольжение справа</string>
+    <string name="toast_SlideLeft_animation">Скольжение слева</string>
+    <string name="toast_Xylon_animation">Xylon анимация</string>
+    <string name="toast_Toko_animation">Toko анимация</string>
     <string name="toast_Tn_animation">Tn animation</string>
-    <string name="toast_Honami_animation">Honami animation</string>
-    <string name="toast_FastFade_animation">Fast fade</string>
-    <string name="toast_GrowFade_animation">Grow fade</string>
-    <string name="toast_GrowFadeCenter_animation">Grow fade center</string>
-    <string name="toast_GrowFadeBottom_animation">Grow fade bottom</string>
-    <string name="toast_Translucent_animation">Translucent animation</string>
-    <string name="toast_SlideLeftRight_animation">Slide left to right</string>
-    <string name="toast_SlideRightLeft_animation">Slide right to left</string>
+    <string name="toast_Honami_animation">Honami анимация</string>
+    <string name="toast_FastFade_animation">Быстрое угасание</string>
+    <string name="toast_GrowFade_animation">Растущее угасание</string>
+    <string name="toast_GrowFadeCenter_animation">Растущее угасание по центру</string>
+    <string name="toast_GrowFadeBottom_animation">Растущее угасание снизу</string>
+    <string name="toast_Translucent_animation">Прозрачная анимация</string>
+    <string name="toast_SlideLeftRight_animation">Скольжение слева направо</string>
+    <string name="toast_SlideRightLeft_animation">Скольжение справо налево</string>
 
     <!-- ListView animation -->
     <string name="interface_settings_animation_title">Animation options</string>
