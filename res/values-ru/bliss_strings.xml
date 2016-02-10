@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2014 Resurrection Remix ROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Bliss settings screens -->
+    <string name="header_category_bliss">Bliss Options</string>
+    <string name="bliss_settings_title">Bliss Settings</string>
+    <string name="bliss_cat_title">Категории</string>
+
+    <!-- Bliss Display Optionss -->
+    <string name="bliss_display">Настройки дисплея</string>
+   
+    <!-- Status bar -->
+    <string name="status_bar_title">Строка состояния</string>
+    <string name="status_bar_style_title">Стиль и настройки</string>
+
+    <!-- Recents -->
+    <string name="recents_settings_title">Недавние</string>
+
+    <!-- Weather Options -->
+    <string name="weather_settings_title">Погода</string>    
+
+	<!-- About bliss -->
+	<string name="about_bliss"><b>О прошивке</b></string>
+	<string name="official_devices">Поддерживаемые устройства</string>
+	<string name="official_devices_summary">Список официально поддерживаемых устройств</string>
+	<string name="about_phone"><b>О телефоне</b></string>
+	
+    <!-- Bliss Extra Info -->
+    <string name="lsextrainfo">Дополнительная информация</string>
+    <string name="lsextrainfo_summary">Информация о процессоре, дисплее и т.д.</string>
+
+    <!-- Share Bliss -->
+    <string name="share_bliss_title">Поделиться информацией</string>
+    <string name="share_bliss_summary">Рассказать другим о пришивке</string>
+    <string name="share_message">Посетить сайт создателей прошивки @ http://www.blissroms.com</string>
+    <string name="share_chooser_title">Поделиться информацией</string>
+
+    <!-- Changelog -->
+    <string name="changelog_bliss_title">Изменения</string>
+    <string name="changelog_bliss_error">Невозможно загрузить список изменений</string>
+
+    <!-- About phone screen, Bliss version -->
+    <string name="bliss_mod_version">Версия Bliss</string>
+    <string name="mod_build_version">Билд Bliss</string>
+    <string name="mod_version_default">Неизвестно</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker_title">Выбор цвета</string>
+    <string name="press_color_to_apply">Нажмите на цвет для применения</string>
+    <string name="palette_bliss_title">Bliss</string>
+    <string name="palette_material_title">Material</string>
+    <string name="palette_rgb_title">RGB</string>
+    <string name="reset_android_title">Android по умолчанию</string>
+    <string name="reset_bliss_title">Bliss по умолчанию</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Установить</string>
+
+    <!--Embedded AudioFX-->
+    <string name="audiofx_settings_title">Эквалайзер</string>
+
+    <!--Embedded Viper4Android-->
+    <string name="viper_settings_title">Эквалайзер</string>
+
+    <!-- Kernel Adiutor -->
+    <string name="kernel_adiutor_title">Настройка ядра</string>
+
+    <!-- BlissRoms OTA -->
+    <string name="bliss_ota">Обновление</string>
+
+    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <string name="supersu_title">Супер пользователь</string>
+
+    <!-- AdAway -->
+    <string name="adaway_settings_title">Блокировка рекламы</string>
+
+    <!-- cLock -->
+    <string name="menu_item_widget_settings">Виджет часов</string>
+
+    <!-- Statusbar Bliss logo -->
+    <string name="status_bar_bliss_logo_title">Логотип Bliss</string>
+    <string name="status_bar_bliss_logo_summary">Включить отображение логотипа Bliss слева в строке состояния</string>
+    <string name="status_bar_bliss_logo_color">Цвет логотипа</string>
+
+    <!-- Headphones icon switch -->
+    <string name="show_headset_icon_title">Иконка гарнитуры</string>
+    <string name="show_headset_icon_summary">Показывать когда гарнитура подключена</string>
+
+    <!-- Hold back to kill timeout -->
+    <string name="hold_back_to_kill_timeout_title">Длительность удержания кнопки для закрытия приложения</string>
+    <string name="default_string">По умолчанию</string>
+
+    <!-- Text for forcing expanded notifications -->
+    <string name="disable_fc_notifications_title">Отключить уведомления о принудительном закрытиии приложения</string>
+    <string name="disable_fc_notifications_summary">Это скроет все уведомления о принудительном закрытии приложения</string>
+
+    <!--Time Contexual Header -->
+    <string name="status_bar_custom_header_title">Time Contextual Header</string>
+    <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
+
+    <!-- Status bar temperature -->
+    <string name="status_bar_temperature_title">Температура</string>
+    <string name="status_bar_temperature_summary">Показывать температуру в строке состояния</string>
+    <string name="status_bar_temperature_hidden">Скрыто</string>
+    <string name="status_bar_temperature_show_scale">Показывать со значком</string>
+    <string name="status_bar_temperature_hide_scale">Показывать без значка</string>
+    <string name="status_bar_temperature_location_title">Положение</string>
+    <string name="status_bar_temperature_location_summary">Выбрать положение где будет отображаться температура</string>
+    <string name="status_bar_temperature_location_right">Справа</string>
+    <string name="status_bar_temperature_location_left">Слева</string>
+    <string name="status_bar_weather_color_title">Цвет</string>
+    <string name="status_bar_weather_size_title">Размер шрифта</string>
+    <string name="status_bar_weather_font_style_title">Шрифт</string>
+    <string name="status_bar_weather_font_normal">Нормальный</string>
+    <string name="status_bar_weather_font_italic">Курсив</string>
+    <string name="status_bar_weather_font_bold">Жирный</string>
+    <string name="status_bar_weather_font_bold_italic">Жирный курсив</string>
+    <string name="status_bar_weather_font_light">Маленький</string>
+    <string name="status_bar_weather_font_light_italic">Маленький курсив</string>
+    <string name="status_bar_weather_font_thin">Тонкий</string>
+    <string name="status_bar_weather_font_thin_italic">Тонкий курсив</string>
+    <string name="status_bar_weather_font_condensed">Узкий</string>
+    <string name="status_bar_weather_font_condensed_italic">Узкий курсив</string>
+    <string name="status_bar_weather_font_condensed_light">Узкий маленький</string>
+    <string name="status_bar_weather_font_condensed_light_italic">Узкий маленький курсив</string>
+    <string name="status_bar_weather_font_condensed_bold">Узкий жирный</string>
+    <string name="status_bar_weather_font_condensed_bold_italic">Узкий жирный курсив</string>
+    <string name="status_bar_weather_font_medium">Средний</string>
+    <string name="status_bar_weather_font_medium_italic">Средний курсив</string>
+    <string name="status_bar_weather_font_black">Черный</string>
+    <string name="status_bar_weather_font_black_italic">Черный курсив</string>
+
+    <!--Status bar date -->
+    <string name="clock_category">Часы</string>
+    <string name="date_category">Дата</string>
+    <string name="status_bar_clock_and_date">Часы</string>
+    <string name="status_bar_clock_and_date_summary">Настроить часы в строке состояния</string>
+    <string name="clock_color_title">Цвет</string>
+    <string name="reset">Сбросить</string>
+    <string name="status_bar_clock_style_reset">Сбросить цвет</string>
+    <string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
+    <string name="status_bar_clock_category">Часы</string>
+    <string name="status_bar_date_title">Дата</string>
+    <string name="status_bar_date_none">Не отображается (по умолчанию)</string>
+    <string name="status_bar_date_small">Маленький</string>
+    <string name="status_bar_date_normal">Нормальный</string>
+    <string name="status_bar_date_format_title">Фортмат даты</string>
+    <string name="status_bar_date_style">Стиль даты</string>
+    <string name="status_bar_date_style_normal">Нормальный</string>
+    <string name="status_bar_date_style_lowercase">Маленький</string>
+    <string name="status_bar_date_style_uppercase">Большой</string>
+    <string name="status_bar_date_format_custom">Настроить фотмат</string>
+    <string name="status_bar_date_string_edittext_title">Должно быть в формате, напр. MM/dd/yy</string>
+    <string name="status_bar_date_string_edittext_summary">Ввести значение</string>
+    <string name="clock_font_style_title">Шрифт</string>
+    <string name="clock_font_normal">Нормальный</string>
+    <string name="clock_font_italic">Курсив</string>
+    <string name="clock_font_bold">Жирный</string>
+    <string name="clock_font_bold_italic">Жирный курсив</string>
+    <string name="clock_font_light">Маленький</string>
+    <string name="clock_font_light_italic">Маленький курсив</string>
+    <string name="clock_font_thin">Тонкий</string>
+    <string name="clock_font_thin_italic">Тонкий курсив</string>
+    <string name="clock_font_condensed">Узкий</string>
+    <string name="clock_font_condensed_italic">Узкий курсив</string>
+    <string name="clock_font_condensed_light">Узкий маленький</string>
+    <string name="clock_font_condensed_light_italic">Узкий маленький курсив</string>
+    <string name="clock_font_condensed_bold">Узкий жирный</string>
+    <string name="clock_font_condensed_bold_italic">Узкий жирный курсив</string>
+    <string name="clock_font_medium">Средний</string>
+    <string name="clock_font_medium_italic">Средний курсив</string>
+    <string name="clock_font_size_title">Размер шрифта</string>
+    <string name="clock_font_black">Черный</string>
+    <string name="clock_font_black_italic">Черный курсив</string>
+    <string name="clock_font_dancingscript">DancingScript</string>
+    <string name="clock_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="clock_font_comingsoon">ComingSoon</string>
+    <string name="clock_font_notoserif">NotoSerif Normal</string>
+    <string name="clock_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="clock_font_notoserif_bold">NotoSerif Bold</string>
+    <string name="clock_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast icon</string>
+
+    <!-- Toast Animations -->
+    <string name="screen_and_animations_title">Animations</string>
+    <string name="toast_animation_title">Toast animations</string>
+    <string name="toast_animation_summary">Select and preview system toast animation</string>
+    <string name="toast_none_animation">None</string>
+    <string name="toast_default_animation">Default</string>
+    <string name="toast_fade_animation">Fade animation</string>
+    <string name="toast_SlideRight_animation">Slide right</string>
+    <string name="toast_SlideLeft_animation">Slide left</string>
+    <string name="toast_Xylon_animation">Xylon animation</string>
+    <string name="toast_Toko_animation">Toko animation</string>
+    <string name="toast_Tn_animation">Tn animation</string>
+    <string name="toast_Honami_animation">Honami animation</string>
+    <string name="toast_FastFade_animation">Fast fade</string>
+    <string name="toast_GrowFade_animation">Grow fade</string>
+    <string name="toast_GrowFadeCenter_animation">Grow fade center</string>
+    <string name="toast_GrowFadeBottom_animation">Grow fade bottom</string>
+    <string name="toast_Translucent_animation">Translucent animation</string>
+    <string name="toast_SlideLeftRight_animation">Slide left to right</string>
+    <string name="toast_SlideRightLeft_animation">Slide right to left</string>
+
+    <!-- ListView animation -->
+    <string name="interface_settings_animation_title">Animation options</string>
+    <string name="listview_animation_title">ListView animation</string>
+    <string name="listview_off">Default</string>
+    <string name="listview_wave_left">Wave (left)</string>
+    <string name="listview_wave_right">Wave (right)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Scale</string>
+    <string name="listview_stack_top">Stack (top)</string>
+    <string name="listview_stack_bottom">Stack (bottom)</string>
+    <string name="listview_unfold">Unfold</string>
+    <string name="listview_fold">Fold</string>
+    <string name="listview_translate_left">Translate (left)</string>
+    <string name="listview_translate_right">Translate (right)</string>
+
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">ListView interpolator</string>
+    <string name="listview_accelerate_interpolator">Accelerate</string>
+    <string name="listview_decelerate_interpolator">Decelerate</string>
+    <string name="listview_accelerate_decelerate_interpolator">Accelerate and decelerate</string>
+    <string name="listview_anticipate_interpolator">Anticipate</string>
+    <string name="listview_overshoot_interpolator">Overshoot</string>
+    <string name="listview_anticipate_overshoot_interpolator">Anticipate and overshoot</string>
+    <string name="listview_bounce_interpolator">Bounce</string>
+
+    <!-- AOKP custom system animations -->
+    <string name="animation_title">Animations</string>        
+    <string name="system_animation_title">System animations</string>
+    <string name="activity_open_title">Activity open animation</string>
+    <string name="activity_close_title">Activity close animation</string>
+    <string name="task_open_title">Task open animation</string>
+    <string name="task_close_title">Task close animation</string>
+    <string name="task_move_to_front_title">Move to front animation</string>
+    <string name="task_move_to_back_title">Move to back animation</string>
+    <string name="wallpaper_open_title">Wallpaper open animation</string>
+    <string name="wallpaper_close_title">Wallpaper close animation</string>
+    <string name="wallpaper_intra_open_title">Wallpaper intra open animation</string>
+    <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
+    <string name="animation_duration_title">Animation duration</string>
+    <string name="title_animation_no_override">Prevent app overrides</string>
+    <string name="summary_animation_no_override">Prevent apps from overriding transitions</string>
+    <string name="animation_duration_default">Default</string>
+
+   <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
+    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+
+    <!-- Disabling immersive mode messages -->
+    <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
+    <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+
+    <!-- RAM bar -->
+    <string name="recents_show_membar_title">RAM memory bar</string>
+    <string name="recents_show_membar_summary_on">Available RAM memory bar will be displayed on recents view</string>
+    <string name="recents_show_membar_summary_off">Toggle to display available RAM memory bar on recents view</string>
+
+    <!-- Superuser indicator on status bar -->
+    <string name="su_indicator">Superuser indicator</string>
+    <string name="su_indicator_summary_on">Superuser indicator is visible when a session is active</string>
+    <string name="su_indicator_summary_off">Toggle to show superuser indicator when a session is active</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Network traffic</string>
+    <string name="network_traffic_summary">Show the traffic monitor on the status bar</string>
+    <string name="show_network_traffic_state">Status bar traffic monitor</string>
+    <string name="show_network_traffic_unit">Display unit</string>
+    <string name="show_network_traffic_frequency">Update interval</string>
+    <string name="show_network_traffic_disable">Disabled</string>
+    <string name="show_network_traffic_up">Outgoing</string>
+    <string name="show_network_traffic_down">Incoming</string>
+    <string name="show_network_traffic_all">Outgoing and incoming</string>
+    <string name="show_network_traffic_bit">Bits per second</string>
+    <string name="show_network_traffic_byte">Bytes per second</string>
+    <string name="show_network_traffic_500">500 ms</string>
+    <string name="show_network_traffic_1000">1000 ms</string>
+    <string name="show_network_traffic_1500">1500 ms</string>
+    <string name="show_network_traffic_2000">2000 ms</string>
+    <string name="network_traffic_autohide_title">Auto hide</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
+    <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
+
+    <!-- Clock Settings -->
+    <string name="status_bar_show_clock_second_title">Clock seconds</string>
+
+    <!-- SlimSizer  -->
+    <string name="listsystem">list</string>
+    <string name="sizer_title">App remover</string>
+    <string name="caution">Caution!</string>
+    <string name="sizer_message_startup">This tool allows you to delete system apps. Use with caution and only delete apps you know are safe to be removed.</string>
+    <string name="cancel">Cancel</string>
+    <string name="sizer_message_delete">Are you sure you want to delete this app?</string>
+    <string name="btn_delete">Delete selected APPs now!</string>
+    <string name="delete_progress_title">Deleting</string>
+    <string name="delete_progress">Selected files are being deleted...</string>
+    <string name="delete_success">Deleted</string>
+    <string name="delete_fail">Unable to delete</string>
+    <string name="btn_profile">Profile</string>
+    <string name="sizer_message_sdnowrite">Cannot write to SD card</string>
+    <string name="sizer_message_sdnoread">Cannot read SD card</string>
+    <string name="sizer_message_filesuccess">Created profile</string>
+    <string name="sizer_message_filefail">Failed to create profile</string>
+    <string name="sizer_message_noselect">Nothing selected</string>
+    <string name="system_app_remover">System App Remover</string>
+
+    <!-- Battery Settings -->
+    <string name="battery_settings_title">Battery</string>
+    <string name="battery_settings_summary">Customize the battery on the status bar and the battery bar</string>
+    <string name="status_bar_battery_cat">Status bar options</string>
+    <string name="battery_icon">Battery icon style</string>
+    <string name="battery_not_title">Battery icon in notifications</string>
+    <string name="battery_not_summary">Battery icon will show up where the clear all button shows up</string>
+    <string name="battery_bar_location">Battery bar location</string>
+    <string name="battery_bar_color">Battery bar color</string>
+    <string name="battery_bar">Battery bar options</string>
+    <string name="battery_bar_style_title">Battery bar style</string>
+    <string name="battery_bar_thickness_title">Battery bar thickness</string>
+    <string name="battery_bar_animate_title">Charging animation</string>
+    <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
+
+    <!-- Sound settings -->
+    <string name="advanced_sound_title">Advanced options</string>
+    <string name="sound_title">Sound</string>
+
+    <!-- sound switches -->
+    <string name="camera_sounds_title">Camera shutter sound</string>
+    <string name="camera_sounds_summary">Enable system camera shutter sound</string>
+    <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
+    <string name="screenshot_sound_title">Screenshot sound</string>
+    <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+
+    <!-- Media art -->
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+
+    <!-- Recents OmniSwitch -->
+    <string name="omniswitch_settings_title">OmniSwitch</string>
+    <string name="recents_use_omniswitch_title">Use for recents</string>
+    <string name="recents_use_omniswitch_summary">Use OmniSwitch instead of default recents view</string>
+    <string name="omniswitch_start_settings_title">Settings</string>
+    <string name="omniswitch_start_settings_summary">Open OmniSwitch settings</string>
+    <string name="omniswitch_first_time_title">Information</string>
+    <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
+
+    <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Volume key Answer</string>
+    <string name="volume_answer_call_summary">Volume up key Answer</string>
+
+    <!-- Show bluetooth icon when disconnected -->
+    <string name="status_bar_bluetooth_icon">Bluetooth icon</string>
+    <string name="status_bar_bluetooth_icon_summary">Shows icon when it is enabled but not connected</string>
+
+    <!-- Battery saver color -->
+    <string name="battery_saver_color_title">Warning color</string>
+    <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
+
+    <!-- 4G LTE switch -->
+    <string name="show_fourg_title">Show 4G instead of LTE</string>
+    <string name="show_fourg_summary">Replaces LTE statusbar indicator with 4G</string>
+    <string name="statusbar_tuner_category_title">Hide items from statusbar</string>
+
+    <!-- Hide power menu on Lockscreen -->
+    <string name="powermenu_lockscreen_title">Power menu on lock screen</string>
+    <string name="powermenu_lockscreen_summary">Show power menu on the lock screen</string>
+
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app</string>
+    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+
+   <!-- MediaScanner behavior on boot -->
+    <string name="options_settings_title">Options</string>
+    <string name="media_scanner_on_boot_title">MediaScanner behavior on boot</string>
+    <string name="media_scanner_on_boot_enabled">Scan media</string>
+    <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
+    <string name="media_scanner_on_boot_disabled">Do not scan media</string>
+
+    <!-- Lockscreen Colors -->
+    <string name="lockscreen_colors">Lockscreen Colors and Fonts</string>
+    <string name="lockscreen_phone_icon_color">Lockscreen Bottom Left shortcut</string>
+    <string name="lockscreen_lock_icon_color">Lockscreen Lock icon</string>
+    <string name="lockscreen_camera_icon_color">Lockscreen Bottom Right shortcut</string>
+    <string name="lockscreen_indication_text_color">Lockscreen Indication text</string>
+    <string name="lockscreen_clock_color">Lockscreen Clock</string>
+    <string name="lockscreen_clock_date_color">Lockscreen Date</string>
+    <string name="lockscreen_colors_reset_title">Reset lockscreen colors</string>
+    <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
+    <string name="yes">YES</string>
+    <string name="double_tap_ls">Double tap to sleep on lockscreen</string>
+    <string name="double_tap_ls_summary">Double tap anywhere on lockscreen to sleep</string>
+
+
+
+    <!-- Volume Steps Fragment -->
+    <string name="volume_steps_fragment_title">Volume steps</string>
+    <string name="volume_steps_summary">Customize volume steps</string>
+    <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
+    <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
+    <string name="volume_steps_music_title">Volume steps: Media</string>
+    <string name="volume_steps_notification_title">Volume steps: Notification</string>
+    <string name="volume_steps_ring_title">Volume steps: Ringer</string>
+    <string name="volume_steps_system_title">Volume steps: System</string>
+    <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
+    <string name="volume_steps_reset">Reset</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="ok_string">Ok</string>
+
+    <!-- Lock Clock Fonts -->
+    <string name="lock_clock_font_title">Lock Clock Fonts</string>
+    <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
+    <string name="lock_clock_font_dialog_title">Select lock clock font</string>
+    <string name="lock_clock_font_normal">Roboto (default)</string>
+    <string name="lock_clock_font_bold">Roboto Bold</string>
+    <string name="lock_clock_font_italic">Roboto Italic</string>
+    <string name="lock_clock_font_bold_italic">Roboto Bold Italic</string>
+    <string name="lock_clock_font_light_normal">Roboto Light</string>
+    <string name="lock_clock_font_light_italic">Roboto Light Italic</string>
+    <string name="lock_clock_font_thin_normal">Roboto Thin</string>
+    <string name="lock_clock_font_thin_italic">Roboto Thin Italic</string>
+    <string name="lock_clock_font_condensed_normal">Roboto Condensed</string>
+    <string name="lock_clock_font_condensed_bold">Roboto Condensed Bold</string>
+    <string name="lock_clock_font_condensed_italic">Roboto Condensed Italic</string>
+    <string name="lock_clock_font_condensed_bold_italic">Roboto Condensed Bold Italic</string>
+    <string name="lock_clock_font_medium_normal">Roboto Medium</string>
+    <string name="lock_clock_font_medium_italic">Roboto Medium Italic</string>
+    <string name="lock_clock_font_black_normal">Roboto Black</string>
+    <string name="lock_clock_font_black_italic">Roboto Black Italic</string>
+    <string name="lock_clock_font_condensed_light_normal">Roboto Condensed Light</string>
+    <string name="lock_clock_font_condensed_light_italic">Roboto Condensed Light Italic</string>
+    <string name="status_bar_weather_font_dancingscript">DancingScript</string>
+    <string name="status_bar_weather_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="status_bar_weather_font_comingsoon">ComingSoon</string>
+    <string name="status_bar_weather_font_notoserif">NotoSerif Normal</string>
+    <string name="status_bar_weather_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="status_bar_weather_font_notoserif_bold">NotoSerif Bold</string>
+    <string name="status_bar_weather_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+
+    <!-- Lockscreen Torch -->
+    <string name="keyguard_torch_title">Lockscreen torch</string>
+    <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
+
+    <!-- Keyboard and Input ASS methods  -->
+    <string name="title_keyboard_input">Advanced options</string>
+    <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
+    <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
+    <string name="keyboard_rotation_toggle_title">Auto keyboard rotation</string>
+    <string name="keyboard_rotation_toggle_summary">Force auto-rotate when keyboard is shown</string>
+    <string name="keyboard_rotation_timeout_title">Auto-rotate timeout</string>
+    <string name="keyboard_rotation_timeout_summary">Disables auto-rotate sensor <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
+    <string name="keyboard_rotation_dialog">This feature forces auto-rotate to turn on temporarily while the keyboard is shown.  It has no effect when auto-rotate is already enabled.</string>
+    <string name="show_enter_key_title">Show enter key</string>
+    <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
+
+    <!-- Extra Needed Strings for dialogs -->
+    <string name="attention">Attention</string>
+
+    <!-- Annoying Notifications -->
+    <string name="notifications_category_title">Notifications</string>
+    <string name="less_notification_sounds_title">Less frequent notification sounds</string>
+    <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
+    <string name="less_notification_sounds_default">Default Behaviour</string>
+    <string name="less_notification_sounds_3s">3 seconds</string>
+    <string name="less_notification_sounds_5s">5 seconds</string>
+    <string name="less_notification_sounds_10s">10 seconds</string>
+    <string name="less_notification_sounds_15s">15 seconds</string>
+    <string name="less_notification_sounds_30s">30 seconds</string>
+    <string name="less_notification_sounds_45s">45 seconds</string>
+    <string name="less_notification_sounds_1m">1 minute</string>
+    <string name="less_notification_sounds_2m">2 minutes</string>
+    <string name="less_notification_sounds_5m">5 minutes</string>
+
+    <!-- Dashboard tileview double lines -->
+    <string name="dashboard_two_columns_title">Dashboard settings layout</string>
+    <string name="dashboard_two_columns_summary_on">Show settings dashboard in two columns</string>
+    <string name="dashboard_two_columns_summary_off">Show settings dashboard in one column</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_title">Wakelock Blocker</string>
+    <string name="wakelock_blocker_summary">Block system wakelocks</string>
+    <string name="wakelock_blocker_save">Save</string>
+    <string name="wakelock_list_header">Available wakelocks</string>
+    <string name="wakelock_blocker_reload">Reload</string>
+    <string name="wakelock_blocker_warning_title">Proceed with caution</string>
+    <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Safe headset volume</string>
+    <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is plugged in</string>
+    <string name="safe_headset_volume_warning_dialog_text">Listening at high volume for long periods may damage your hearing. Disable it with caution.</string>
+
+    <!-- Show carrier label and custom color -->
+    <string name="carrier_options">Carrier Label</string>
+    <string name="show_status_bar_carrier_title">Status bar carrier</string>
+    <string name="show_status_bar_carrier_summary">Show carrier in status bar</string>
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="status_bar_carrier_color">Carrier label color</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="show_carrier_title">Carrier label</string>
+    <string name="show_carrier_disabled">Disabled</string>
+    <string name="show_carrier_keyguard">Keyguard carrier</string>
+    <string name="show_carrier_statusbar">Status bar carrier</string>
+    <string name="show_carrier_enabled">Enabled</string>
+    <string name="status_bar_carrier_size">Font size</string>
+    <string name="status_bar_carrier_font_style">Font style</string>
+    <string name="status_bar_carrier_summary">Show carrier label in status bar or on lockscreen</string>
+
+    <!-- Default left shortcut on lockscreen -->
+    <string name="left_default_voice_title">Voice assist as default left shortcut</string>
+    <string name="left_default_voice_summary_on">Default shortcut on lockscreen is voice assistant</string>
+    <string name="left_default_voice_summary_off">Default shortcut on lockscreen is phone</string>
+
+
+    <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_items_title">Lockscreen items</string>
+    <string name="hide_lockscreen_clock_title">Show lockscreen clock</string>
+    <string name="hide_lockscreen_date_title">Show lockscreen date</string>
+
+</resources>
