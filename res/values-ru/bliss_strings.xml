@@ -107,8 +107,8 @@
     <string name="default_string">По умолчанию</string>
 
     <!-- Text for forcing expanded notifications -->
-    <string name="disable_fc_notifications_title">Отключить уведомления о принудительном закрытиии приложения</string>
-    <string name="disable_fc_notifications_summary">Это скроет все уведомления о принудительном закрытии приложения</string>
+    <string name="disable_fc_notifications_title">Отключить уведомления о принудительном закрытиии приложений</string>
+    <string name="disable_fc_notifications_summary">Это скроет все уведомления о принудительном закрытии приложений</string>
 
     <!--Time Contexual Header -->
     <string name="status_bar_custom_header_title">Контекстное изображение</string>
@@ -189,12 +189,12 @@
     <string name="clock_font_black">Черный</string>
     <string name="clock_font_black_italic">Черный курсив</string>
     <string name="clock_font_dancingscript">DancingScript</string>
-    <string name="clock_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="clock_font_dancingscript_bold">DancingScript Жирный</string>
     <string name="clock_font_comingsoon">ComingSoon</string>
-    <string name="clock_font_notoserif">NotoSerif Normal</string>
-    <string name="clock_font_notoserif_italic">NotoSerif Italic</string>
-    <string name="clock_font_notoserif_bold">NotoSerif Bold</string>
-    <string name="clock_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+    <string name="clock_font_notoserif">NotoSerif Нормальный</string>
+    <string name="clock_font_notoserif_italic">NotoSerif Курсив</string>
+    <string name="clock_font_notoserif_bold">NotoSerif Жирный</string>
+    <string name="clock_font_notoserif_bold_italic">NotoSerif Жирный Курсив</string>
 
     <!-- Toast Icons -->
     <string name="toast_icon_title">Иконка уведомлений</string>
@@ -242,7 +242,7 @@
     <string name="listview_accelerate_decelerate_interpolator">Ускорить и замедлить</string>
     <string name="listview_anticipate_interpolator">Опережать</string>
     <string name="listview_overshoot_interpolator">Выбрасывать</string>
-    <string name="listview_anticipate_overshoot_interpolator">опережать и выбрасывать</string>
+    <string name="listview_anticipate_overshoot_interpolator">Опережать и выбрасывать</string>
     <string name="listview_bounce_interpolator">Отскок</string>
 
     <!-- AOKP custom system animations -->
@@ -327,7 +327,7 @@
     <!-- Battery Settings -->
     <string name="battery_settings_title">Батарея</string>
     <string name="battery_settings_summary">Настроить отображение батареи и строки состояния батареи</string>
-    <string name="status_bar_battery_cat">Настройки строки состояния</string>
+    <string name="status_bar_battery_cat">Настройки в строке состояния</string>
     <string name="battery_icon">Стиль иконки батареи</string>
     <string name="battery_not_title">Иконка батареи в уведомлениях</string>
     <string name="battery_not_summary">Иконка батареи будет отображаться в кнопке очистке всех приложений</string>
@@ -348,7 +348,7 @@
     <string name="camera_sounds_summary">Включить звук затвора камеры</string>
     <string name="camera_sound_warning_dialog_text">Отключение звука затвора камеры незаконно в некоторых странах! Пожалуйста, проверьте соответствующий закон в вашей стране.</string>
     <string name="screenshot_sound_title">Звук снимка экрана</string>
-    <string name="screenshot_sound_summary">Проигрывать звук при снимке экрана</string>
+    <string name="screenshot_sound_summary">Проигрывать звук при создании снимка экрана</string>
 
     <!-- Media art -->
     <string name="media_art_title">Обложка альбома</string>
@@ -356,12 +356,12 @@
 
     <!-- Recents OmniSwitch -->
     <string name="omniswitch_settings_title">OmniSwitch</string>
-    <string name="recents_use_omniswitch_title">Use for recents</string>
-    <string name="recents_use_omniswitch_summary">Use OmniSwitch instead of default recents view</string>
-    <string name="omniswitch_start_settings_title">Settings</string>
-    <string name="omniswitch_start_settings_summary">Open OmniSwitch settings</string>
-    <string name="omniswitch_first_time_title">Information</string>
-    <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
+    <string name="recents_use_omniswitch_title">использовать для недавних приложений</string>
+    <string name="recents_use_omniswitch_summary">Использовать вместо панели недавних приложений</string>
+    <string name="omniswitch_start_settings_title">Настройки</string>
+    <string name="omniswitch_start_settings_summary">Открыть настройки OmniSwitch</string>
+    <string name="omniswitch_first_time_title">Информация</string>
+    <string name="omniswitch_first_time_message">Убедитесь, что вы включили OmniSwitch. Вы можете сделать это в \"Настройках\" внизу</string>
 
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Ответ кнопкой громкости</string>
@@ -376,172 +376,172 @@
     <string name="battery_saver_color_summary">Включить окраску строки состояния и панели навигации в оранжевый цвет, когда включен режим энергосбережения</string>
 
     <!-- 4G LTE switch -->
-    <string name="show_fourg_title">Show 4G instead of LTE</string>
-    <string name="show_fourg_summary">Replaces LTE statusbar indicator with 4G</string>
-    <string name="statusbar_tuner_category_title">Hide items from statusbar</string>
+    <string name="show_fourg_title">Показывать индикатор 4G вместо LTE</string>
+    <string name="show_fourg_summary">Заменить индикатор LTE в строке состояния значком 4G</string>
+    <string name="statusbar_tuner_category_title">Скрыть из строки состояния</string>
 
     <!-- Hide power menu on Lockscreen -->
-    <string name="powermenu_lockscreen_title">Power menu on lock screen</string>
-    <string name="powermenu_lockscreen_summary">Show power menu on the lock screen</string>
+    <string name="powermenu_lockscreen_title">Меню выключения на экране блокировки</string>
+    <string name="powermenu_lockscreen_summary">Показывать меню выключения на экране блокировки</string>
 
     <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+    <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
+    <string name="unlock_quick_unlock_control_summary">Разблокиравать сразу, если введен правильный пинкод или пароль</string>
 
     <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Launch music app</string>
-    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+    <string name="headset_connect_player_title">Запуск проигрывателя</string>
+    <string name="headset_connect_player_summary">Запускать стандартный проигрыватель при подключении гарнитуры</string>
 
    <!-- MediaScanner behavior on boot -->
-    <string name="options_settings_title">Options</string>
-    <string name="media_scanner_on_boot_title">MediaScanner behavior on boot</string>
-    <string name="media_scanner_on_boot_enabled">Scan media</string>
-    <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
-    <string name="media_scanner_on_boot_disabled">Do not scan media</string>
+    <string name="options_settings_title">Настройки</string>
+    <string name="media_scanner_on_boot_title">Поведение медиа сканнера при загрузке</string>
+    <string name="media_scanner_on_boot_enabled">Сканировать медиа</string>
+    <string name="media_scanner_on_boot_ask">Спрашивать о сканировании (уведомление)</string>
+    <string name="media_scanner_on_boot_disabled">Не сканировать медиа</string>
 
     <!-- Lockscreen Colors -->
-    <string name="lockscreen_colors">Lockscreen Colors and Fonts</string>
-    <string name="lockscreen_phone_icon_color">Lockscreen Bottom Left shortcut</string>
-    <string name="lockscreen_lock_icon_color">Lockscreen Lock icon</string>
-    <string name="lockscreen_camera_icon_color">Lockscreen Bottom Right shortcut</string>
-    <string name="lockscreen_indication_text_color">Lockscreen Indication text</string>
-    <string name="lockscreen_clock_color">Lockscreen Clock</string>
-    <string name="lockscreen_clock_date_color">Lockscreen Date</string>
-    <string name="lockscreen_colors_reset_title">Reset lockscreen colors</string>
-    <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
-    <string name="yes">YES</string>
-    <string name="double_tap_ls">Double tap to sleep on lockscreen</string>
-    <string name="double_tap_ls_summary">Double tap anywhere on lockscreen to sleep</string>
+    <string name="lockscreen_colors">Цвета и шрифты экрана блокировки</string>
+    <string name="lockscreen_phone_icon_color">Левый ярлык на экране блокировки</string>
+    <string name="lockscreen_lock_icon_color">Иконка блокировки</string>
+    <string name="lockscreen_camera_icon_color">Правый ярлык на экране блокировки</string>
+    <string name="lockscreen_indication_text_color">Текст индикатора экрана блокировки</string>
+    <string name="lockscreen_clock_color">Часы на экране блокировки</string>
+    <string name="lockscreen_clock_date_color">Дата на экране блокировки</string>
+    <string name="lockscreen_colors_reset_title">Сбросить цвета</string>
+    <string name="lockscreen_colors_reset_message">Вы хотите сбросить цвета на значения по умолчанию?</string>
+    <string name="yes">Да</string>
+    <string name="double_tap_ls">Двойное нажатие для отключения экрана</string>
+    <string name="double_tap_ls_summary">Двойное нажатие в любом месте для отключения экрана</string>
 
 
 
     <!-- Volume Steps Fragment -->
-    <string name="volume_steps_fragment_title">Volume steps</string>
-    <string name="volume_steps_summary">Customize volume steps</string>
-    <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
-    <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
-    <string name="volume_steps_music_title">Volume steps: Media</string>
-    <string name="volume_steps_notification_title">Volume steps: Notification</string>
-    <string name="volume_steps_ring_title">Volume steps: Ringer</string>
-    <string name="volume_steps_system_title">Volume steps: System</string>
-    <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
-    <string name="volume_steps_reset">Reset</string>
+    <string name="volume_steps_fragment_title">Уровни громкости</string>
+    <string name="volume_steps_summary">Настроить уровни громкости</string>
+    <string name="volume_steps_alarm_title">Уровни громкости: Будильник</string>
+    <string name="volume_steps_dtmf_title">Уровни громкости: DTMF</string>
+    <string name="volume_steps_music_title">Уровни громкости: Медиа</string>
+    <string name="volume_steps_notification_title">Уровни громкости: Уведомления</string>
+    <string name="volume_steps_ring_title">Уровни громкости: Звонок</string>
+    <string name="volume_steps_system_title">Уровни громкости: Система</string>
+    <string name="volume_steps_voice_call_title">Уровни громкости: Голосовой вызов</string>
+    <string name="volume_steps_reset">Сбросить</string>
 
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Reset stats</string>
-    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="battery_stats_reset">Сбросить статистику</string>
+    <string name="battery_stats_message">Статистика батареи будет очищена</string>
     <string name="ok_string">Ok</string>
 
     <!-- Lock Clock Fonts -->
-    <string name="lock_clock_font_title">Lock Clock Fonts</string>
-    <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
-    <string name="lock_clock_font_dialog_title">Select lock clock font</string>
-    <string name="lock_clock_font_normal">Roboto (default)</string>
-    <string name="lock_clock_font_bold">Roboto Bold</string>
-    <string name="lock_clock_font_italic">Roboto Italic</string>
-    <string name="lock_clock_font_bold_italic">Roboto Bold Italic</string>
-    <string name="lock_clock_font_light_normal">Roboto Light</string>
-    <string name="lock_clock_font_light_italic">Roboto Light Italic</string>
-    <string name="lock_clock_font_thin_normal">Roboto Thin</string>
-    <string name="lock_clock_font_thin_italic">Roboto Thin Italic</string>
-    <string name="lock_clock_font_condensed_normal">Roboto Condensed</string>
-    <string name="lock_clock_font_condensed_bold">Roboto Condensed Bold</string>
-    <string name="lock_clock_font_condensed_italic">Roboto Condensed Italic</string>
-    <string name="lock_clock_font_condensed_bold_italic">Roboto Condensed Bold Italic</string>
-    <string name="lock_clock_font_medium_normal">Roboto Medium</string>
-    <string name="lock_clock_font_medium_italic">Roboto Medium Italic</string>
-    <string name="lock_clock_font_black_normal">Roboto Black</string>
-    <string name="lock_clock_font_black_italic">Roboto Black Italic</string>
-    <string name="lock_clock_font_condensed_light_normal">Roboto Condensed Light</string>
-    <string name="lock_clock_font_condensed_light_italic">Roboto Condensed Light Italic</string>
+    <string name="lock_clock_font_title">Шрифты экрана блокировки</string>
+    <string name="lock_clock_font_summary">Изменить стандартный шрифт часов на экране блокировки</string>
+    <string name="lock_clock_font_dialog_title">Выбрать шрифт</string>
+    <string name="lock_clock_font_normal">Roboto (по умолчанию)</string>
+    <string name="lock_clock_font_bold">Roboto Жирный</string>
+    <string name="lock_clock_font_italic">Roboto Курсив</string>
+    <string name="lock_clock_font_bold_italic">Roboto Жирный Курсив</string>
+    <string name="lock_clock_font_light_normal">Roboto Маленький</string>
+    <string name="lock_clock_font_light_italic">Roboto Маленький Курсив</string>
+    <string name="lock_clock_font_thin_normal">Roboto Тонкий</string>
+    <string name="lock_clock_font_thin_italic">Roboto Тонкий Курсив</string>
+    <string name="lock_clock_font_condensed_normal">Roboto Узкий</string>
+    <string name="lock_clock_font_condensed_bold">Roboto Узкий Жирный</string>
+    <string name="lock_clock_font_condensed_italic">Roboto Узкий Курсив</string>
+    <string name="lock_clock_font_condensed_bold_italic">Roboto Узкий Жирный Курсив</string>
+    <string name="lock_clock_font_medium_normal">Roboto Средний</string>
+    <string name="lock_clock_font_medium_italic">Roboto Средний Курсив</string>
+    <string name="lock_clock_font_black_normal">Roboto Черный</string>
+    <string name="lock_clock_font_black_italic">Roboto Черный Курсив</string>
+    <string name="lock_clock_font_condensed_light_normal">Roboto Узкий Маленький</string>
+    <string name="lock_clock_font_condensed_light_italic">Roboto Узкий Маленький Курсив</string>
     <string name="status_bar_weather_font_dancingscript">DancingScript</string>
-    <string name="status_bar_weather_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="status_bar_weather_font_dancingscript_bold">DancingScript Жирный</string>
     <string name="status_bar_weather_font_comingsoon">ComingSoon</string>
-    <string name="status_bar_weather_font_notoserif">NotoSerif Normal</string>
-    <string name="status_bar_weather_font_notoserif_italic">NotoSerif Italic</string>
-    <string name="status_bar_weather_font_notoserif_bold">NotoSerif Bold</string>
-    <string name="status_bar_weather_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+    <string name="status_bar_weather_font_notoserif">NotoSerif Обычный</string>
+    <string name="status_bar_weather_font_notoserif_italic">NotoSerif Курсив</string>
+    <string name="status_bar_weather_font_notoserif_bold">NotoSerif Жирный</string>
+    <string name="status_bar_weather_font_notoserif_bold_italic">NotoSerif Жирный Курсив</string>
 
     <!-- Lockscreen Torch -->
-    <string name="keyguard_torch_title">Lockscreen torch</string>
-    <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
+    <string name="keyguard_torch_title">Фонарик на экране блокировки</string>
+    <string name="keyguard_torch_summary">Долгое нажатие кнопки питания при выключенном экране включит фонарик</string>
 
     <!-- Keyboard and Input ASS methods  -->
-    <string name="title_keyboard_input">Advanced options</string>
-    <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
-    <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
-    <string name="keyboard_rotation_toggle_title">Auto keyboard rotation</string>
-    <string name="keyboard_rotation_toggle_summary">Force auto-rotate when keyboard is shown</string>
-    <string name="keyboard_rotation_timeout_title">Auto-rotate timeout</string>
-    <string name="keyboard_rotation_timeout_summary">Disables auto-rotate sensor <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
-    <string name="keyboard_rotation_dialog">This feature forces auto-rotate to turn on temporarily while the keyboard is shown.  It has no effect when auto-rotate is already enabled.</string>
-    <string name="show_enter_key_title">Show enter key</string>
-    <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
+    <string name="title_keyboard_input">Расширенные настройки</string>
+    <string name="disable_fullscreen_keyboard_title">Отключить полноэкранную клавиатуру</string>
+    <string name="disable_fullscreen_keyboard_summary">В ландшафтной ориентации клавиатура не будет показываться на полный экран</string>
+    <string name="keyboard_rotation_toggle_title">Автоповорот клавиатуры</string>
+    <string name="keyboard_rotation_toggle_summary">Принудительно включать автоповорот при запуске клавиатуры</string>
+    <string name="keyboard_rotation_timeout_title">Таймаут автоповорота</string>
+    <string name="keyboard_rotation_timeout_summary">Отключать автоповорот через <xliff:g id="rotate_timeout">%1$с</xliff:g> секунд после скрытия клавиатуры</string>
+    <string name="keyboard_rotation_dialog">Эта опция принудительно на время включит автоповорот при открытой клавиатуре. Не будет работать, если автоповорот уже включен.</string>
+    <string name="show_enter_key_title">Показывать кнопку ввода</string>
+    <string name="show_enter_key_summary">Принудительно показывать кнопку ввода вместо кнопки смайлов</string>
 
     <!-- Extra Needed Strings for dialogs -->
-    <string name="attention">Attention</string>
+    <string name="attention">Внимание</string>
 
     <!-- Annoying Notifications -->
-    <string name="notifications_category_title">Notifications</string>
-    <string name="less_notification_sounds_title">Less frequent notification sounds</string>
-    <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
-    <string name="less_notification_sounds_default">Default Behaviour</string>
-    <string name="less_notification_sounds_3s">3 seconds</string>
-    <string name="less_notification_sounds_5s">5 seconds</string>
-    <string name="less_notification_sounds_10s">10 seconds</string>
-    <string name="less_notification_sounds_15s">15 seconds</string>
-    <string name="less_notification_sounds_30s">30 seconds</string>
-    <string name="less_notification_sounds_45s">45 seconds</string>
-    <string name="less_notification_sounds_1m">1 minute</string>
-    <string name="less_notification_sounds_2m">2 minutes</string>
-    <string name="less_notification_sounds_5m">5 minutes</string>
+    <string name="notifications_category_title">Уведомления</string>
+    <string name="less_notification_sounds_title">Уменьшить частоту уведомлений</string>
+    <string name="less_notification_sounds_summary">Ограничить звуки уведомлений для каждого приложения одноразовым проигрыванием в указанный период</string>
+    <string name="less_notification_sounds_default">Поведение по умолчанию</string>
+    <string name="less_notification_sounds_3s">3 секунды</string>
+    <string name="less_notification_sounds_5s">5 секунд</string>
+    <string name="less_notification_sounds_10s">10 секунд</string>
+    <string name="less_notification_sounds_15s">15 секунд</string>
+    <string name="less_notification_sounds_30s">30 секунд</string>
+    <string name="less_notification_sounds_45s">45 секунд</string>
+    <string name="less_notification_sounds_1m">1 минута</string>
+    <string name="less_notification_sounds_2m">2 минуты</string>
+    <string name="less_notification_sounds_5m">5 минут</string>
 
     <!-- Dashboard tileview double lines -->
-    <string name="dashboard_two_columns_title">Dashboard settings layout</string>
-    <string name="dashboard_two_columns_summary_on">Show settings dashboard in two columns</string>
-    <string name="dashboard_two_columns_summary_off">Show settings dashboard in one column</string>
+    <string name="dashboard_two_columns_title">Пункты настроек</string>
+    <string name="dashboard_two_columns_summary_on">Показывать пункты настроек в две строки</string>
+    <string name="dashboard_two_columns_summary_off">Показывать пункты настроек в одну строку</string>
 
     <!-- Wakelock blocker -->
-    <string name="wakelock_blocker_title">Wakelock Blocker</string>
-    <string name="wakelock_blocker_summary">Block system wakelocks</string>
-    <string name="wakelock_blocker_save">Save</string>
-    <string name="wakelock_list_header">Available wakelocks</string>
-    <string name="wakelock_blocker_reload">Reload</string>
-    <string name="wakelock_blocker_warning_title">Proceed with caution</string>
-    <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+    <string name="wakelock_blocker_title">Блокировка пробуждений</string>
+    <string name="wakelock_blocker_summary">Блокировать системные пробуждения</string>
+    <string name="wakelock_blocker_save">Сохранить</string>
+    <string name="wakelock_list_header">Доступные пробуждения</string>
+    <string name="wakelock_blocker_reload">Перезагрузить</string>
+    <string name="wakelock_blocker_warning_title">Делайте с осторожностью</string>
+    <string name="wakelock_blocker_warning">Блокировка пробуждений может вызывать нестабильность, закрытие приложений, потерю данных</string>
 
     <!-- Safe headset volume restore checkbox -->
-    <string name="safe_headset_volume_title">Safe headset volume</string>
-    <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is plugged in</string>
-    <string name="safe_headset_volume_warning_dialog_text">Listening at high volume for long periods may damage your hearing. Disable it with caution.</string>
+    <string name="safe_headset_volume_title">Безопасная громкость в наушниках</string>
+    <string name="safe_headset_volume_summary">Предотвращать высокую громкость когда подключена гарнитура</string>
+    <string name="safe_headset_volume_warning_dialog_text">Прослушивание на высокой громкости длительный период может повредить слух. Отключайте это с осторожностью.</string>
 
     <!-- Show carrier label and custom color -->
-    <string name="carrier_options">Carrier Label</string>
-    <string name="show_status_bar_carrier_title">Status bar carrier</string>
-    <string name="show_status_bar_carrier_summary">Show carrier in status bar</string>
-    <string name="custom_carrier_label_title">Custom carrier label</string>
-    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
-    <string name="custom_carrier_label_notset">Custom label currently not set</string>
-    <string name="status_bar_carrier_color">Carrier label color</string>
-    <string name="custom_carrier_label_notset">Custom label currently not set</string>
-    <string name="show_carrier_title">Carrier label</string>
-    <string name="show_carrier_disabled">Disabled</string>
-    <string name="show_carrier_keyguard">Keyguard carrier</string>
-    <string name="show_carrier_statusbar">Status bar carrier</string>
-    <string name="show_carrier_enabled">Enabled</string>
-    <string name="status_bar_carrier_size">Font size</string>
-    <string name="status_bar_carrier_font_style">Font style</string>
-    <string name="status_bar_carrier_summary">Show carrier label in status bar or on lockscreen</string>
+    <string name="carrier_options">Логотип оператора</string>
+    <string name="show_status_bar_carrier_title">Логотип оператора в строке состояния</string>
+    <string name="show_status_bar_carrier_summary">Показывать логотип оператора в строке состояния</string>
+    <string name="custom_carrier_label_title">Пользовательский логотип</string>
+    <string name="custom_carrier_label_explain">Пожалуйста введите новый логотип. Оставьте пустым для отображения по умолчанию.</string>
+    <string name="custom_carrier_label_notset">Пользовательский логотип не установлен</string>
+    <string name="status_bar_carrier_color">Цвет логотипа</string>
+    <string name="custom_carrier_label_notset">Пользовательский логотип не установлен</string>
+    <string name="show_carrier_title">Логотип оператора</string>
+    <string name="show_carrier_disabled">Отключен</string>
+    <string name="show_carrier_keyguard">Логотип на экране блокировки</string>
+    <string name="show_carrier_statusbar">Логотип в строке состояния</string>
+    <string name="show_carrier_enabled">Включен</string>
+    <string name="status_bar_carrier_size">Размер шрифта</string>
+    <string name="status_bar_carrier_font_style">Стиль шрифта</string>
+    <string name="status_bar_carrier_summary">Показывать логотип оператора в строке состояния и на экране блокировки</string>
 
     <!-- Default left shortcut on lockscreen -->
-    <string name="left_default_voice_title">Voice assist as default left shortcut</string>
-    <string name="left_default_voice_summary_on">Default shortcut on lockscreen is voice assistant</string>
-    <string name="left_default_voice_summary_off">Default shortcut on lockscreen is phone</string>
+    <string name="left_default_voice_title">Голосовой ассистент по умолчанию на левом ярлыке экрана блокировки</string>
+    <string name="left_default_voice_summary_on">Голосовой ассистент - ярлык по умолчанию</string>
+    <string name="left_default_voice_summary_off">Телефон - ярлык по умолчанию</string>
 
 
     <!-- Hide Lockscreen clock & date -->
-    <string name="hide_lockscreen_items_title">Lockscreen items</string>
-    <string name="hide_lockscreen_clock_title">Show lockscreen clock</string>
-    <string name="hide_lockscreen_date_title">Show lockscreen date</string>
+    <string name="hide_lockscreen_items_title">Содержание экрана блокировки</string>
+    <string name="hide_lockscreen_clock_title">Показывать часы на экране блокировки</string>
+    <string name="hide_lockscreen_date_title">Показывать дату на экране блокировки</string>
 
 </resources>
