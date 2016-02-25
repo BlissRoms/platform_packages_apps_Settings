@@ -34,7 +34,15 @@ Project
             android:fragment="com.android.settings.ButtonSettings"
             android:icon="@drawable/ic_settings_buttons"
             />
-			
+
+        <!-- Gesture anywhere -->
+        <PreferenceScreen
+            android:key="gesture_anywhere"
+            android:fragment="com.android.settings.bliss.gestureanywhere.GestureAnywhereSettings"
+            android:title="@string/gesture_anywhere_title"
+	        android:icon="@drawable/ic_settings_gestures"
+	        />
+
 	    <!-- Lock Screen -->
         <PreferenceScreen
             android:id="@+id/lockscreen_settings"
