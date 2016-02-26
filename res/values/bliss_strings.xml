@@ -565,31 +565,6 @@
 
     <string name="allow_lights_title">Lights in do not disturb mode</string>
 
-    <!-- Notification color settings -->
-    <string name="notification_color">Notification Colors</string>
-    <string name="notification_drawer_clear_all_icon_color_title">Clear all icon</string>
-
-    <string name="dlg_reset_bliss">Bliss</string>
-    <string name="dlg_reset_values_message">Reset values to default?</string>	
-    <string name="dlg_reset_android">Ok</string>	      
-    <string name="cat_colors_title">Customize notification colors</string>
-    <string name="background_title">Background</string>
-    <string name="icon_title">Icon</string>
-    <string name="colors_title">Colors</string>
-    <string name="text_title">Text</string>
-
-    <string name="notification_color_settings_title">Notification colors</string>
-    <string name="notification_media_bg_mode_title">Colorize the media background</string>
-    <string name="notification_app_icon_bg_mode_title">Colorize the app icon background</string>
-    <string name="notification_app_icon_color_mode_title">Colorize app icon</string>
-    <string name="notification_bg_guts_color_title">Background on longpress</string>
-    <string name="notification_app_icon_bg_color_title">App icon background</string>
-    <string name="notification_color_mode_never_title">Never</string>
-    <string name="notification_icon_color_mode_greyscale_title">If the icon is an greyscale icon</string>
-    <string name="notification_bg_color_mode_no_color_title">If the notification doesn\`t include an own color</string>
-    <string name="notification_color_mode_always_title">Always</string>
-    <string name="notification_drawer_clear_all_icon_color_title">Clear all icon</string>
-
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Three finger gesture</string>
     <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
