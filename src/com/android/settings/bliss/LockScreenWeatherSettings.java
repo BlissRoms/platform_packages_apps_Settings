@@ -148,6 +148,29 @@ public class LockScreenWeatherSettings extends SettingsPreferenceFragment implem
             mHideWeather.setValue(String.valueOf(hideWeather));
             mHideWeather.setOnPreferenceChangeListener(this);
 
+            int intColor;
+            String hexColor;
+
+            mTextColor =
+                (ColorPickerPreference) findPreference(PREF_TEXT_COLOR);
+            intColor = Settings.System.getInt(mResolver,
+                Settings.System.LOCK_SCREEN_WEATHER_TEXT_COLOR,
+                DEFAULT_COLOR); 
+            mTextColor.setNewPreviewColor(intColor);
+            hexColor = String.format("#%08x", (0xffffffff & intColor));
+            mTextColor.setSummary(hexColor);
+            mTextColor.setOnPreferenceChangeListener(this);
+
+            mIconColor =
+                (ColorPickerPreference) findPreference(PREF_ICON_COLOR);
+            intColor = Settings.System.getInt(mResolver,
+                Settings.System.LOCK_SCREEN_WEATHER_ICON_COLOR,
+                DEFAULT_COLOR); 
+            mIconColor.setNewPreviewColor(intColor);
+            hexColor = String.format("#%08x", (0xffffffff & intColor));
+            mIconColor.setSummary(hexColor);
+            mIconColor.setOnPreferenceChangeListener(this);
+
             if (hideWeather == 0) {
                 mHideWeather.setSummary(R.string.weather_hide_panel_auto_summary);
                 catNotifications.removePreference(mNumberOfNotifications);
@@ -169,33 +192,12 @@ public class LockScreenWeatherSettings extends SettingsPreferenceFragment implem
             removePreference(PREF_SHOW_TIMESTAMP);
             removePreference(PREF_CONDITION_ICON);
             removePreference(PREF_COLORIZE_ALL_ICONS);
+            removePreference(PREF_TEXT_COLOR);
+            removePreference(PREF_ICON_COLOR);
             catNotifications.removePreference(mHideWeather);
             catNotifications.removePreference(mNumberOfNotifications);
             removePreference(PREF_CAT_NOTIFICATIONS);
         }
-        
-        int intColor;
-        String hexColor;
-
-        mTextColor =
-                (ColorPickerPreference) findPreference(PREF_TEXT_COLOR);
-        intColor = Settings.System.getInt(mResolver,
-                Settings.System.LOCK_SCREEN_WEATHER_TEXT_COLOR,
-                DEFAULT_COLOR); 
-        mTextColor.setNewPreviewColor(intColor);
-        hexColor = String.format("#%08x", (0xffffffff & intColor));
-        mTextColor.setSummary(hexColor);
-        mTextColor.setOnPreferenceChangeListener(this);
-
-        mIconColor =
-                (ColorPickerPreference) findPreference(PREF_ICON_COLOR);
-        intColor = Settings.System.getInt(mResolver,
-                Settings.System.LOCK_SCREEN_WEATHER_ICON_COLOR,
-                DEFAULT_COLOR); 
-        mIconColor.setNewPreviewColor(intColor);
-        hexColor = String.format("#%08x", (0xffffffff & intColor));
-        mIconColor.setSummary(hexColor);
-        mIconColor.setOnPreferenceChangeListener(this);
 
         setHasOptionsMenu(true);
     }
