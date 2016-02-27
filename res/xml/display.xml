@@ -29,6 +29,15 @@
         android:summaryOff="@string/dashboard_two_columns_summary_off"
         android:defaultValue="false" />
 
+     <ListPreference
+         android:key="dashboard_switches"
+         android:title="@string/dashboard_switches_title"
+         android:dialogTitle="@string/dashboard_switches_dialog_title"
+         android:entries="@array/dashboard_switches_entries"
+         android:entryValues="@array/dashboard_switches_values"
+         android:summary="@string/dashboard_switches_summary"
+         android:persistent="false" />
+
 	 <!-- Toast Icons -->
      <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="toast_icon"

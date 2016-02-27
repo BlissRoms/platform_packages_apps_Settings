@@ -767,4 +767,11 @@
      <string name="force_headsup_title">Force heads up</string>
      <string name="force_headsup_summary">Force heads up in all applications</string>
 
+     <!-- Optional Dashboard Switches -->
+     <string name="dashboard_switches_title">Dashboard Switches</string>
+     <string name="dashboard_switches_off">Switches Off</string>
+     <string name="dashboard_switches_on">Switches On</string>
+     <string name="dashboard_switches_summary">Change the position of the dashboard switches</string>
+     <string name="dashboard_switches_dialog_title">Select switch state</string>
+
 </resources>
