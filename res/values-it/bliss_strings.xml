@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2014 Resurrection Remix ROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     
+          http://www.apache.org/licenses/LICENSE-2.0
+
+          
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<!-- Bliss general settings -->
+    <string name="colors_title">Colori</string>
+    <string name="text_title">Testo</string>
+    <string name="icons_title">Icone</string>
+    <string name="dlg_reset_values_message">Ripristinare i valori di Nandroid o Bliss come predefinito?</string>
+    <string name="dlg_reset_android">Android</string>
+    <string name="dlg_reset_bliss">Bliss</string>
+
+    <!-- Bliss settings screens -->
+    <string name="header_category_bliss">Opzioni Bliss</string>
+    <string name="bliss_settings_title">Impostazioni Bliss</string>
+    <string name="bliss_cat_title">Categorie</string>
+
+    <!-- Bliss Display Optionss -->
+    <string name="bliss_display">Opzioni Display Bliss</string>
+   
+    <!-- Status bar -->
+    <string name="status_bar_title">Barra di stato</string>
+    <string name="status_bar_style_title">Stile e Tweaks</string>
+
+    <!-- Recents -->
+    <string name="recents_settings_title">Recenti</string>
+
+    <!-- Weather Options -->
+    <string name="weather_settings_title">Meteo</string>
+
+    
+    <!-- About bliss -->
+	<string name="about_bliss"><b>Riguardo a Bliss</b></string>
+	<string name="official_devices">Dispositivi ufficiali</string>
+	<string name="official_devices_summary">Elenco dei dispositivi ufficialmente supportati by Bliss</string>
+	<string name="about_phone"><b>Riguardo al telefono</b></string>
+	
+	<!-- Bliss Extra Info -->
+    <string name="lsextrainfo">Informazioni extra</string>
+    <string name="lsextrainfo_summary">Visualizzare informazioni extra per cpu, schermo, etc</string>
+
+    <!-- Share Bliss -->
+    <string name="share_bliss_title">Codividere Bliss</string>
+    <string name="share_bliss_summary">Lasciate che gli altri sanno di Bliss</string>
+    <string name="share_message">Verificare tutto a proposito di Bliss http://www.blissroms.com</string>
+    <string name="share_chooser_title">Codividere Bliss</string>
+
+    
+    <!-- Changelog -->
+    <string name="changelog_bliss_title">Changelog</string>
+    <string name="changelog_bliss_error">Impossibile caricare changelog</string>
+
+    <!-- About phone screen, Bliss version -->
+    <string name="bliss_mod_version">Versione Bliss</string>
+    <string name="mod_build_version">>Build Bliss</string>
+    <string name="mod_version_default">Sconosciuto</string>
+
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker_title">Color picker</string>
+    <string name="press_color_to_apply">Premere sul colore qui sotto per applicare</string>
+    <string name="palette_bliss_title">Bliss</string>
+    <string name="palette_material_title">Material</string>
+    <string name="palette_rgb_title">RGB</string>
+    <string name="reset_android_title">Predefinito Android</string>
+    <string name="reset_bliss_title">Predefinito Bliss</string>
+    <string name="arrow_right">?</string>
+    <string name="arrow_down">?</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Impostato</string>
+
+    
+    <!--Embedded AudioFX-->
+    <string name="audiofx_settings_title">Equalizzatore</string>
+
+    <!--Embedded Viper4Android-->
+    <string name="viper_settings_title">Equalizzatore</string>
+
+    <!-- Kernel Adiutor -->
+    <string name="kernel_adiutor_title">Kernel Adiutor</string>
+
+    <!-- BlissRoms OTA -->
+    <string name="bliss_ota">Aggiornamenti</string>
+
+    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- AdAway -->
+    <string name="adaway_settings_title">AdAway</string>
+
+    <!-- cLock -->
+    <string name="menu_item_widget_settings">Impostazioni cLock</string>
+
+    <!-- Statusbar Bliss logo -->
+    <string name="status_bar_bliss_logo_title">Logo Bliss</string>
+    <string name="status_bar_bliss_logo_summary">Abilita e mostra il logo Bliss sul lato sinistro della barra di stato</string>
+    <string name="status_bar_bliss_logo_color">Bliss logo color</string>
+
+    <!-- Headphones icon switch -->
+    <string name="show_headset_icon_title">Icona cuffia</string>
+    <string name="show_headset_icon_summary">Mostra un\'icona quando sono collegate le cuffie</string>
+
+    <!-- Hold back to kill timeout -->
+    <string name="hold_back_to_kill_timeout_title">Uccidere app con pulsante indietro</string>
+    <string name="default_string">Predefinito</string>
+
+    <!-- Text for forcing expanded notifications -->
+    <string name="disable_fc_notifications_title">Disattivare le notifiche FB</string>
+    <string name="disable_fc_notifications_summary">In questo modo si consente di nascondere tutte le notifiche e di forzare la chiusura</string>
+
+    <!--Time Contexual Header -->
+    <string name="status_bar_custom_header_title">Tempo contestuale intestazione</string>
+    <string name="status_bar_custom_header_summary">Attivare l\'immagine di intestazione del pannello di notifica</string>
+
+	<!-- Status bar temperature -->
+    
+
+    <String name="status_bar_temperature_title">Temperatura</string>
+    <String name="status_bar_temperature_summary">Mostra la temperatura del meteo sulla barra di stato</string>
+    <String name="status_bar_temperature_hidden">Nascosto</string>
+    <String name="status_bar_temperature_show_scale">Indicato con scala</string>
+    <String name="status_bar_temperature_hide_scale">Visibile senza scala</string>
+    <String name="status_bar_temperature_location_title">Posizionamento</string>
+    <String name="status_bar_temperature_location_summary">Selezionare dove viene mostrata la temperatura del meteo sulla barra di stato</string>
+    <String name="status_bar_temperature_location_right">Mostra a destra</string>
+    <String name="status_bar_temperature_location_left">Mostra a sinistra</string>
+    <String name="status_bar_weather_color_title">Colore temperatura</string>
+    <String name="status_bar_weather_size_title">Dimensione carattere</string>
+    <String name="status_bar_weather_font_style_title">Carattere</string>
+    <String name="status_bar_weather_font_normal">Normale</string>
+    <String name="status_bar_weather_font_italic">Corsivo</string>
+    <String name="status_bar_weather_font_bold">Grassetto</string>
+    <String name="status_bar_weather_font_bold_italic">Grassetto corsivo</string>
+    <String name="status_bar_weather_font_light">Light</string>
+    <String name="status_bar_weather_font_light_italic">Light Italic</string>
+    <String name="status_bar_weather_font_thin">Thin</string>
+    <String name="status_bar_weather_font_thin_italic">Thin Corsivo</string>
+    <String name="status_bar_weather_font_condensed">Abbreviato</string>
+    <String name="status_bar_weather_font_condensed_italic">Condensed Italic</string>
+    <String name="status_bar_weather_font_condensed_light">Condensed Light</string>
+    <String name="status_bar_weather_font_condensed_light_italic">Condensed Light Italic</string>
+    <String name="status_bar_weather_font_condensed_bold">Condensed Bold</string>
+    <String name="status_bar_weather_font_condensed_bold_italic">Condensed grassetto corsivo</string>
+    <String name="status_bar_weather_font_medium">Medio</string>
+    <String name="status_bar_weather_font_medium_italic">Medio corsivo</string>
+    <String name="status_bar_weather_font_black">Nero</string>
+    <String name="status_bar_weather_font_black_italic">Black Italic</string>
+
+<!--Status bar date -->
+ 
+    <String name="clock_category">Orologio</string>
+    <String name="date_category">Data</string>
+    <String name="status_bar_clock_and_date">Orologio</string>
+    <String name="status_bar_clock_and_date_summary">Personalizza l\'orologio sulla barra di stato</string>
+    <String name="clock_color_title">Colore</string>
+    <String name="reset">Ripristina</string>
+    <String name="status_bar_clock_style_reset">Ripristina colore</string>
+    <String name="status_bar_clock_style_reset_message">Ripristina colore orologio?</String>
+    <String name="status_bar_clock_category">Orologio</string>
+    <String name="status_bar_date_title">Data</string>
+    <String name="status_bar_date_none">Nascosto (default)</string>
+    <String name="status_bar_date_small">Piccolo</string>
+    <String name="status_bar_date_normal">Normale</string>
+    <String name="status_bar_date_format_title">Formato della data</string>
+    <String name="status_bar_date_style">Data stile</string>
+    <String name="status_bar_date_style_normal">Normale</string>
+    <String name="status_bar_date_style_lowercase">Minuscolo</string>
+    <String name="status_bar_date_style_uppercase">Maiuscolo</string>
+    <String name="status_bar_date_format_custom">Formato java personalizzato</string>
+    <String name="status_bar_date_string_edittext_title">Deve essere in DateFormat ad es. MM / gg / aa</string>
+    <String name="status_bar_date_string_edittext_summary">Inserisci stringa</string>
+    <String name="clock_font_style_title">Carattere</string>
+    <String name="clock_font_normal">Normale</string>
+    <String name="clock_font_italic">Corsivo</string>
+    <String name="clock_font_bold">Grassetto</string>
+    <String name="clock_font_bold_italic">Grassetto corsivo</string>
+    <String name="clock_font_light">Light</string>
+    <String name="clock_font_light_italic">Light Italic</string>
+    <String name="clock_font_thin">Thin</string>
+    <String name="clock_font_thin_italic">Thin Corsivo</string>
+    <String name="clock_font_condensed">Abbreviato</string>
+    <String name="clock_font_condensed_italic">Condensed Italic</string>
+    <String name="clock_font_condensed_light">Condensed Light</string>
+    <String name="clock_font_condensed_light_italic">Condensed Light Italic</string>
+    <String name="clock_font_condensed_bold">Condensed Bold</string>
+    <String name="clock_font_condensed_bold_italic">Condensed grassetto corsivo</string>
+    <String name="clock_font_medium">Medio</string>
+    <String name="clock_font_medium_italic">Medio corsivo</string>
+    <String name="clock_font_size_title">Dimensione carattere</string>
+    <String name="clock_font_black">Nero</string>
+    <String name="clock_font_black_italic">Black Italic</string>
+    <String name="clock_font_dancingscript">DancingScript</string>
+    <String name="clock_font_dancingscript_bold">DancingScript Grassetto</string>
+    <String name="clock_font_comingsoon">ComingSoon</string>
+    <String name="clock_font_notoserif">NotoSerif Normal</string>
+    <String name="clock_font_notoserif_italic">NotoSerif Corsivo</string>
+    <String name="clock_font_notoserif_bold">NotoSerif Grassetto</string>
+    <String name="clock_font_notoserif_bold_italic">NotoSerif grassetto corsivo</string>
+
+<!-- Toast Icons -->
+    
+    <String name="toast_icon_title">Icona Toast</string>
+
+ <!-- Toast Animations -->
+   
+    <String name="screen_and_animations_title">Animazioni</string>
+    <String name="toast_animation_title">Animazioni Toast</string>
+    <String name="toast_animation_summary">Selezionare e visualizzare in anteprima il sistema di animazione toast</string>
+    <String name="toast_none_animation">Nessuno</string>
+    <String name="toast_default_animation">Predefinito</string>
+    <String name="toast_fade_animation">Dissolvenza animazione</string>
+    <String name="toast_SlideRight_animation">Scorrere a destra</string>
+    <String name="toast_SlideLeft_animation">Scorrere a sinistra</string>
+    <String name="toast_Xylon_animation">Animazione Xylon</string>
+    <String name="toast_Toko_animation">Animazione Toko</string>
+    <String name="toast_Tn_animation">Animazione Tn</string>
+    <String name="toast_Honami_animation">Animazione Honami</string>
+    <String name="toast_FastFade_animation">Dissolvenza veloce</string>
+    <String name="toast_GrowFade_animation">Dissolvenza in crescita</string>
+    <String name="toast_GrowFadeCenter_animation">Dissolvenza in crescita dal centro</string>
+    <String name="toast_GrowFadeBottom_animation">Dissolvenza in crescita dal fondo</string>
+    <String name="toast_Translucent_animation">Animazione traslucido</string>
+    <String name="toast_SlideLeftRight_animation">Scorrere da sinistra a destra</string>
+    <String name="toast_SlideRightLeft_animation">Scorrere da destra a sinistra</string>
+
+<!-- ListView animation -->
+
+    <String name="interface_settings_animation_title">Opzioni di animazione</string>
+    <String name="listview_animation_title">Elenco animazioni</string>
+    <String name="listview_off">Predefinito</string>
+    <String name="listview_wave_left">Onda (a sinistra)</string>
+    <String name="listview_wave_right">Onda (a destra)</string>
+    <String name="listview_alpha">Alpha</string>
+    <String name="listview_scale">Scala</string>
+    <String name="listview_stack_top">Pila (in alto)</string>
+    <String name="listview_stack_bottom">Pila (in basso)</string>
+    <String name="listview_unfold">Spiegare</string>
+    <String name="listview_fold">Fold</string>
+    <String name="listview_translate_left">Translate (a sinistra)</string>
+    <String name="listview_translate_right">Translate (a destra)</string>
+
+   <!-- ListView interpolator -->
+    <String name="listview_interpolator_title">Elenco interpolazione</string>
+    <String name="listview_accelerate_interpolator">Accelerare</string>
+    <String name="listview_decelerate_interpolator">Decelerare</string>
+    <String name="listview_accelerate_decelerate_interpolator">Accelerare e decelerare</string>
+    <String name="listview_anticipate_interpolator">Anticipare</string>
+    <String name="listview_overshoot_interpolator">Superamento</string>
+    <String name="listview_anticipate_overshoot_interpolator">Anticipare e superare</string>
+    <String name="listview_bounce_interpolator">Rimbalzo</string>
+
+ <!-- AOKP custom system animations -->
+    
+    <String name="animation_title">Animazioni</string>        
+    <string name="system_animation_title">Aanimazioni di sistema</string>
+    <String name="activity_open_title">Animazione di apertura</string>
+    <String name="activity_close_title">Animazione di chiusura</string>
+    <String name="task_open_title">attività Animazione aperto</string>
+    <String name="task_close_title">Task vicino animazione</string>
+    <String name="task_move_to_front_title">Sposta all'animazione fronte</string>
+    <String name="task_move_to_back_title">Sposta per eseguire l'animazione</string>
+    <String name="wallpaper_open_title">Sfondo di animazione aperto</string>
+    <String name="wallpaper_close_title">Sfondo vicino animazione</string>
+    <String name="wallpaper_intra_open_title">Sfondo intra animazione aperto</string>
+    <String name="wallpaper_intra_close_title">Sfondo intra vicino animazione</string>
+    <String name="animation_duration_title">Durata Animazione</string>
+    <String name="title_animation_no_override">Prevenire le sostituzioni app</string>
+    <String name="summary_animation_no_override">Prevenire applicazioni da sovrascrivendo transizioni</string>
+    <String name="animation_duration_default">Predefinito</string>
+
+<!-- Force expanded notifications -->
+   
+    <String name="force_expanded_notifications_title">Forza espansione notifiche</string>
+    <String name="force_expanded_notifications_summary">Disponibile solo per le applicazioni che supporto esteso notifiche</string>
+
+ <!-- Disabling immersive mode messages -->
+  
+    <String name="disable_immersive_message_title">Messaggi disabilitare la modalità immersiva</string>
+    <String name="disable_immersive_message_summary">Questo nasconderà tutti i messaggi modalità immersiva</string>
+
+    <!-- RAM bar -->
+    <string name="recents_show_membar_title">Barra di memoria RAM</string>
+    <string name="recents_show_membar_summary_on">La barra di memoria RAM sar visualizzata nel Display App Recenti</string>
+    <string name="recents_show_membar_summary_off">Toggle Visualizza memoria RAM Disponibile Sulla barra di Visualizzazione delle app Recenti</string>
+
+ <!-- Superuser indicator on status bar -->
+
+    <string name="su_indicator">Indicatore Superuser</string>
+    <string name="su_indicator_summary_on">Indicatore Superuser visibile quando una sessione è attiva</string>
+    <string name="su_indicator_summary_off">Toggle per mostrare Indicatore Superuser quando una sessione è attiva</string>
+
+<!-- Network traffic -->
+   
+    <string name="network_traffic_title">Traffico di rete</string>
+    <string name="show_network_traffic_state">Monitorare il traffico di rete nella barra di stato</string>
+    <string name="network_traffic_summary">Abilita varie opzioni del traffico di rete nella barra di stato</string>
+    <string name="show_network_traffic_unit">Unità  di visualizzazione</string>
+    <string name="show_network_traffic_frequency">Intervallo di aggiornamento</string>
+    <string name="show_network_traffic_disable">Disabilitato</string>
+    <string name="show_network_traffic_up">Estroverso</string>
+    <string name="show_network_traffic_down">In arrivo</string>
+    <string name="show_network_traffic_all">Uscita e in entrata</string>
+    <string name="show_network_traffic_bit">Bit al secondo</string>
+    <string name="show_network_traffic_byte">Byte al secondo</string>
+    <string name="show_network_traffic_500">500 ms</string>
+    <string name="show_network_traffic_1000">1000 ms</string>
+    <string name="show_network_traffic_1500">1500 ms</string>
+    <string name="show_network_traffic_2000">2000 ms</string>
+    <string name="network_traffic_autohide">Nascondi automaticamente</string>
+    <string name="network_traffic_autohide_summary">Nascondere il traffico rete quando non c'è attività </string>
+    <string name="network_traffic_autohide_threshold">Soglia di inattività </string>
+
+    <!-- Impostazioni orologio -->
+    <string name="status_bar_show_clock_second_title">Ssecondi orologio</string>
+
+    <!-- SlimSizer-->
+    <String name="listsystem">Elenco</string>
+    <String name="sizer_title">App rimozione</string>
+
+
+    <String name="cautela">Attenzione!</String>
+    <String name="sizer_message_startup">Questo strumento consente di eliminare le applicazioni di sistema. Usare con cautela ed eliminare le applicazioni che sono sicure di essere rimosse.</String>
+    <String name="cancel">Annulla</string>
+    <String name="sizer_message_delete">Sei sicuro di voler eliminare questa applicazione?</String>
+    <String name="btn_delete">Elimina applicazioni selezionate ora!</String>
+    <String name="delete_progress_title">Eliminazione</string>
+    <String name="delete_progress">I file selezionati vengono eliminati ...</string>
+    <String name="delete_success">Soppresso</string>
+    <String name="delete_fail">Impossibile eliminare</string>
+    <String name="btn_profile">Profilo</string>
+    <String name="sizer_message_sdnowrite">Impossibile scrivere sulla scheda SD</string>
+    <String name="sizer_message_sdnoread">Impossibile leggere la scheda SD</string>
+    <String name="sizer_message_filesuccess">del profilo Creato</string>
+    <String name="sizer_message_filefail">Impossibile creare il profilo</string>
+    <String name="sizer_message_noselect">Nessuna selezione</string>
+    <String name="system_app_remover">Sistema App Remover</string>
+
+ <!-- Battery Settings -->
+    
+    <String name="battery_settings_title">Batteria</string>
+    <String name="battery_settings_summary">Personalizza la batteria sulla barra di stato e la barra della batteria</string>
+    <String name="status_bar_battery_cat">Opzioni della barra di stato</string>
+    <String name="battery_icon">Stile icona batteria</string>
+    <String name="battery_not_title">Icona batteria nelle notifiche</string>
+
+    <String name="battery_not_summary">Icona batteria mostrerà dove il pulsante cancella tutto si presenta</string>
+    <String name="battery_bar_location">Posizione barra batteria</string>
+    <String name="battery_bar_color">Colorebarra batteria</string>
+    <String name="battery_bar">Opzioni barra della batteria</string>
+    <String name="battery_bar_style_title">Stile barra batteria</string>
+    <String name="battery_bar_thickness_title">Spessore della barra di batteria</string>
+    <String name="battery_bar_animate_title">Animazione di carica</string>
+
+    <String name="battery_bar_animate_summary">L\'animazione di ricarica può tradursi in una scarsa esperienza degli utenti. Attiva a propria discrezione.</String>
+
+
+    <!-- Impostazioni audio -->
+    <String name="advanced_sound_title">Opzioni avanzate</string>
+    <String name="sound_title">Audio</string>
+
+<!-- sound switches -->
+    
+    <String name="camera_sounds_title">Suono dell\'otturatore</string>
+    <String name="camera_sounds_summary">Attiva sistema di suono dell\'otturatore</string>
+    <String name="camera_sound_warning_dialog_text">La disattivazione del suono dell\'otturatore è illegale in alcune zone! Si prega di verificare la legge applicabile nel vostro paese</string>
+   
+    <String name="screenshot_sound_title">Suono screenshot</string>
+    <String name="screenshot_sound_summary">Riproduce effetto sonoro quando viene scattato uno screenshot</string>
+
+    <!-- Media arte-->
+	
+    <String name="media_art_title">Cover Media arte</string>
+    <String name="media_art_summary">Attiva supporto copertina sulla lockscreen</string>
+
+    <!-- Recenti OmniSwitch-->
+	
+    <String name="omniswitch_settings_title">OmniSwitch</string>
+    <String name="recents_use_omniswitch_title">Usa per recenti</string>
+    <String name="recents_use_omniswitch_summary">Usa OmniSwitch invece di visualizzare recenti come predefinito</string>
+    <String name="omniswitch_start_settings_title">Impostazioni</string>
+    <string name="omniswitch_start_settings_summary">apri impostazioni di OmniSwitch</string>
+    <String name="omniswitch_first_time_title">Informazioni</string>
+    <String name="omniswitch_first_time_message">Assicurarsi di aver abilitato OmniSwitch. È possibile farlo utilizzando sotto \"Impostazioni\"</string>
+
+    <!-- La risposta tasto del volume-->
+	
+    <String name="volume_answer_call_title">Risposta con tasto volume</string>
+    <String name="volume_answer_call_summary">Tasto volume su risponde</string>
+
+
+    <!-- Mostra un'icona Bluetooth quando non sono connessi-->
+    <String name="status_bar_bluetooth_icon">Bluetooth icona</string>
+    <String name="status_bar_bluetooth_icon_summary">Mostra l\'icona quando è abilitato ma non collegato</string>
+
+
+    <!-- Risparmio Batteria colore-->
+    <String name="battery_saver_color_title">Colore avvertimento</string>
+    <String name="battery_saver_color_summary">Attiva la barra di stato di colore arancio quando viene attivato il risparmio batteria</string>
+
+
+    <!-- Interruttore 4G LTE-->
+    <String name="show_fourg_title">Mostra 4G al posto di LTE</string>
+    <String name="show_fourg_summary">Sostituisce indicatore LTE  barra di stato con 4G</string>
+    <String name="statusbar_tuner_category_title">Nascondi oggetti dalla barra di stato</string>
+
+
+    <!-- Menu alimentazione Nascondi sulla Lockscreen-->
+    <String name="powermenu_lockscreen_title">Menu alimentazione sulla schermata di blocco</string>
+    <String name="powermenu_lockscreen_summary">Mostra menu alimentazione per bloccare lo schermo</string>
+
+
+    <!-- Rapido sblocco-->
+    <String name="unlock_quick_unlock_control_title">Sblocco rapido</string>
+    <String name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando viene inserito il codice Pin/Password corretto</string>
+
+
+    <!-- Lancio musica giocatore quando l'auricolare è collegato-->
+    <String name="headset_connect_player_title">Avviare app Musica</string>
+    <String name="headset_connect_player_summary">Avviare l\'applicazione musicale predefinita quando viene collegato l\'auricolare</string>
+
+
+   <!-- Comportamento MediaScanner sul caricamento del sistema-->
+    <String name="options_settings_title">Opzioni</string>
+    <String name="media_scanner_on_boot_title">comportamento MediaScanner all'avvio</string>
+    <String name="media_scanner_on_boot_enabled">supporto scansione</string>
+    <String name="media_scanner_on_boot_ask">Fai per eseguire la scansione (notifica)</string>
+    <String name="media_scanner_on_boot_disabled">Non esaminare i media</string>
+
+
+    <!-- Lockscreen Colori --> 
+    <string name="lockscreen_colors">Colori e caratteri schermata di blocco</string>
+    <String name="lockscreen_phone_icon_color">Schermata di blocco scorciatoia inferiore sinistra</string>
+    <String name="lockscreen_lock_icon_color">Blocco icona nella schermata di blocco </string>
+    <String name="lockscreen_camera_icon_color">Schermata di blocco scorciatoia inferiore destra</string>
+    <String name="lockscreen_indication_text_color">Indicazione testo schermata di blocco</string>
+    <String name="lockscreen_clock_color">Orologio nella schermata di blocco</string>
+    <String name="lockscreen_clock_date_color">Data nella schermata di blocco</string>
+    <String name="lockscreen_colors_reset_title">Ripristina colori della schermata di blocco</string>
+    <String name="lockscreen_colors_reset_message">Sei sicuro di voler ripristinare i colori predefiniti?</String>
+    <String name="yes">Si</string>
+    <String name="double_tap_ls">Doppio tap sulla schermata di blocco per spegnere</string>
+    <String name="double_tap_ls_summary">Doppio tap ovunque sulla schermata di blocco per spegnere</string>
+
+    <!-- Volume Livello Fragment-->
+    
+    <String name="volume_steps_fragment_title">Livelli volume</string>
+    <String name="volume_steps_summary">Personalizza livelli di volume</string>
+    <String name="volume_steps_alarm_title">Livello Volume: Allarme</string>
+    <String name="volume_steps_dtmf_title">Livello Volume: DTMF</string>
+    <String name="volume_steps_music_title">Livello Volume: media</string>
+    <String name="volume_steps_notification_title">Livello Volume: Notifica</string>
+    <String name="volume_steps_ring_title">Livello Volume: Ringer</string>
+    <String name="volume_steps_system_title">Livello Volume: Sistema</string>
+    <String name="volume_steps_voice_call_title">Livello Volume: Chiamata vocale</string>
+    <String name="volume_steps_reset">Ripristina</string>
+
+
+    <!-- Statistiche batteria RESET-->
+    <String name="battery_stats_reset">Ripristina statistiche</string>
+    <String name="battery_stats_message">Cronologia statistiche della batteria stanno per essere ripristinate</string>
+    <String name="ok_string">Ok</string>
+
+    <!-- Blocco Clock Fonts-->
+    <String name="lock_clock_font_title">Font orologio</string>
+    <String name="lock_clock_font_summary">Modificare il carattere predefinito del widget orologio nel LockScreen</string>
+    <String name="lock_clock_font_dialog_title">Seleziona carattere del blocco orologio</string>
+    <String name="lock_clock_font_normal">Roboto (predefinito)</string>
+    <String name="lock_clock_font_bold">Roboto Grassetto</string>
+    <String name="lock_clock_font_italic">Roboto Corsivo</string>
+    <String name="lock_clock_font_bold_italic">Roboto grassetto corsivo</string>
+    <String name="lock_clock_font_light_normal">Roboto Light</string>
+    <String name="lock_clock_font_light_italic">Roboto Light Italic</string>
+    <String name="lock_clock_font_thin_normal">Roboto sottile</string>
+    <String name="lock_clock_font_thin_italic">Roboto Thin italico</string>
+    <String name="lock_clock_font_condensed_normal">Roboto abbreviato</string>
+    <String name="lock_clock_font_condensed_bold">Roboto Condensed Bold</string>
+    <String name="lock_clock_font_condensed_italic">Roboto Condensed Italic</string>
+    <String name="lock_clock_font_condensed_bold_italic">Roboto Condensed Bold Italic</string>
+    <String name="lock_clock_font_medium_normal">Roboto medio</string>
+    <String name="lock_clock_font_medium_italic">Roboto medio corsivo</string>
+    <String name="lock_clock_font_black_normal">Roboto Nero</string>
+    <String name="lock_clock_font_black_italic">Roboto Black Italic</string>
+    <String name="lock_clock_font_condensed_light_normal">Roboto Condensed Light</string>
+    <String name="lock_clock_font_condensed_light_italic">Roboto Condensed Light Italic</string>
+    <String name="status_bar_weather_font_dancingscript">DancingScript</string>
+    <String name="status_bar_weather_font_dancingscript_bold">DancingScript Grassetto</string>
+    <String name="status_bar_weather_font_comingsoon">ComingSoon</string>
+    <String name="status_bar_weather_font_notoserif">NotoSerif Normal</string>
+    <String name="status_bar_weather_font_notoserif_italic">NotoSerif Corsivo</string>
+    <String name="status_bar_weather_font_notoserif_bold">NotoSerif Grassetto</string>
+    <String name="status_bar_weather_font_notoserif_bold_italic">NotoSerif grassetto corsivo</string>
+
+    <!-- Lockscreen Torch-->
+    <String name="keyguard_torch_title">Torcia nella schermata di blocco </string>
+    <String name="keyguard_torch_summary">Pressione prolungata sul pulsante alimentazione mentre lo schermo è disattivato per accendere la torcia elettrica</string>
+
+
+    <!-- Metodi di input da tastiera e ASS-->
+    <String name="title_keyboard_input">Opzioni avanzate</string>
+    <String name="disable_fullscreen_keyboard_title">Disattiva tastiera a schermo intero</string>
+    <String name="disable_fullscreen_keyboard_summary">La tastiera in orizontale non potrà mai occupare tutto lo schermo</string>
+    <String name="keyboard_rotation_toggle_title">Auto rotazione tastiera</string>
+    <String name="keyboard_rotation_toggle_summary">Forza la rotazione automatica quando viene visualizzata la tastiera</string>
+    <String name="keyboard_rotation_timeout_title">Timeout Rotazione automatica</string>
+    <String name="keyboard_rotation_timeout_summary">Disattiva sensore rotazione automatica <xliff:g id="rotate_timeout"> secondi dopo che la tastiera è nascosta</string>
+
+    <String name="keyboard_rotation_dialog">Con questa funzione, la rotazione automatica per accendere temporaneamente mentre viene visualizzata la tastiera. Non ha alcun effetto quando la rotazione automatica è già attivata.</String>
+    <String name="show_enter_key_title">Mostra tasto incio</string>
+    <String name="show_enter_key_summary">Forza la tastiera a mostrare il tasto invio invece che emoticon</string>
+
+
+    <!-- Aggiuntivo necessario Corde per le finestre di dialogo-->
+    <String name="attention">Attenzione</string>
+
+
+    <!-- Notifiche Annoying --> 
+    <String nam="notifications_category_title">Notifiche</string>
+    <String name="less_notification_sounds_title">Suoni di notifica meno frequenti</string>
+    <String name="less_notification_sounds_summary">Limitare i suoni di notifica di ciascuna applicazione per riprodurre solo una volta per ogni periodo di tempo impostato</string>
+    <String name="less_notification_sounds_default">default Comportamento</string>
+    <String name="less_notification_sounds_3s">3 secondi</string>
+    <String name="less_notification_sounds_5s">5 secondi</string>
+    <String name="less_notification_sounds_10s">10 secondi</string>
+    <String name="less_notification_sounds_15s">15 secondi</string>
+    <String name="less_notification_sounds_30s">30 secondi</string>
+    <String name="less_notification_sounds_45s">45 secondi</string>
+    <String name="less_notification_sounds_1m">1 minuto</string>
+    <String name="less_notification_sounds_2m">2 minuti</string>
+    <String name="less_notification_sounds_5m">5 minuti</string>
+
+    <!-- Dashboard tileview doppie linee-->
+    <String name="dashboard_two_columns_title">Impostazioni layout Dashboard</string>
+    <String name="dashboard_two_columns_summary_on">Mostra le impostazioni del Dashboard in due colonne</string>
+    <String name="dashboard_two_columns_summary_off">Mostra le impostazioni del Dashboard in una colonna</string>
+
+    <!-- Wakelock blocker-->
+    <String name="wakelock_blocker_title">Wakelock Blocker</string>
+    <String name="wakelock_blocker_summary">Wakelocks blocco di sistema</string>
+    <String name="wakelock_blocker_save">Salva</string>
+    <String name="wakelock_list_header">Wakelocks disponibili</string>
+    <String name="wakelock_blocker_reload">Ricarica</string>
+    <String name="wakelock_blocker_warning_title">Procedere con cautela</string>
+
+    <String name="wakelock_blocker_warning">Il blocco Wakelocks ha il potenziale di causare instabilità, crash o perdita di dati</string>
+
+    <!-- Volume delle cuffie sicuro ripristinare casella di controllo-->
+    <String name="safe_headset_volume_title">Volume delle cuffie sicuro</string>
+    <String name="safe_headset_volume_summary">Evitare livelli di volume ad alta voce quando l\'auricolare è collegato</string>
+    <String name="safe_headset_volume_warning_dialog_text">L\'ascolto ad alto volume per lunghi periodi potrebbe danneggiare l\'udito. Disabilitare con cautela.</String>
+
+
+    <!-- Label Show vettore e colore personalizzato-->
+    <string name="carrier_options">Etichetta</string>
+    <String name="show_status_bar_carrier_title">Etichetta barra di stato</string>
+    <String name="show_status_bar_carrier_summary">Mostra etichetta nella barra di stato</string>
+    <String name="custom_carrier_label_title">Etichetta personalizzata</string>
+    <String name="custom_carrier_label_explain">Si prega di inserire una nuova etichetta. Lasciare vuoto per tornare al magazzino etichette.</String>
+    <String name="custom_carrier_label_notset">Etichetta personalizzata al momento impostato</string>
+    <String name="status_bar_carrier_color">Colore dell\'etichetta</string>
+    <String name="custom_carrier_label_notset">Etichetta personalizzata al momento impostata</string>
+    <String name="show_carrier_title">Etichetta</string>
+    <String name="show_carrier_disabled">Disabilitato</string>
+    <String name="show_carrier_keyguard">Etichetta Blocco tastiera</string>
+    <String name="show_carrier_statusbar">Etichetta barra di stato</string>
+    <String name="show_carrier_enabled">Abilitato</string>
+    <String name="status_bar_carrier_size">Dimensione carattere</string>
+    <String name="status_bar_carrier_font_style">Stile carattere</string>
+    <String name="status_bar_carrier_summary">Mostra etichetta nella barra di stato o sulla schermata di sblocco</string>
+
+
+    <!-- Di default lasciato collegamento sul lockscreen-->
+    <String name="left_default_voice_title">Assistente vocale come impostazione predefinita scelta rapida a sinistra</string>
+    <String name="left_default_voice_summary_on">Scorciatoia predefinita sulla schermata di sblocco è assistente vocale</string>
+    <String name="left_default_voice_summary_off">Scorciatoia predefinita sulla schermata di sblocco è il telefono</string>
+
+
+    <!-- Orologio Nascondi Lockscreen e data-->
+    <String name="hide_lockscreen_items_title">Oggetti nella schermata di sblocco</string>
+    <String name="hide_lockscreen_clock_title">Mostra orologio nella schermata di sblocco</string>
+    <String name="hide_lockscreen_date_title">Mostra data nella schermata di sblocco</string>
+
+
+    <!-- Opzioni Doze-->
+    <string name="display_category_doze_options_title">Display ambiente</string>
+    <string name="doze_settings_title">Opzioni avanzate Doze</string>
+    <string name="doze_timeout_title">Doze tempo di impulso</string>
+    <string name="doze_timeout_summary">Ora che lo schermo rimane accesa per impulso di notifica</string>
+    <string name="doze_trigger_pickup_title">Pick up gesture trigger gesto</string>
+    <string name="doze_trigger_pickup_summary_on">Impulso Doze sarà attivato da raccogliere eventi sensore gesto</string>
+    <string name="doze_trigger_pickup_summary_off">Pick up sensore gesto non sarà  utilizzato come un meccanismo di attivazione</string>
+    <string name="doze_trigger_sigmotion_title">Trigger movimento significativo</string>
+    <string name="doze_trigger_sigmotion_summary_on">Impulso Doze sarà innescato da eventi del sensore di movimento significativo</string>
+    <string name="doze_trigger_sigmotion_summary_off">Sensore di movimento significativo non sarà  utilizzato come un meccanismo di attivazione</string>
+    <string name="doze_trigger_notification_title">Innesco di notifica</string>
+    <string name="doze_trigger_notification_summary_on">Impulso Doze sarà  attivato da notifiche</string>
+    <string name="doze_trigger_notification_summary_off">Le notifiche non saranno utilizzati come obbiettivo</string>
+    <string name="doze_schedule_title">Programma doze</string>
+    <string name="doze_schedule_summary_on">Predefiniti doze ripetere gli intervalli (di norma [1s, 10s, 30s, 60s, 120s]) saranno utilizzati (predefinito)</string>
+    <string name="doze_schedule_summary_off">Doze sarà  solo una volta per impulso di notifica</string>
+    <string name="doze_brightness_title">Doze livello di luminosità </string>
+    <string name="doze_brightness_summary">Il livello di luminosità dello schermo impulso pisolino (% del massimo consentito luminosità )</string>
+
+    <String name="allow_lights_title">Luci in modalità silenziosa</string>
+
+    <!-- Le impostazioni del colore di notifica-->
+    <String name="notification_color">Notifica Colori</string>
+    <String name="notification_drawer_clear_all_icon_color_title">Cancella tutte le icone</string>
+
+    <String name="dlg_reset_bliss">Bliss</string>
+    <String name="dlg_reset_values_message">Ripristina valori di default?</String> 
+    <String name="dlg_reset_android">Ok</string>       
+    <String name="cat_colors_title">Personalizza colori di notifica</string>
+    <String name="background_title">Sfondo</string>
+    <String name="icon_title">Icona</string>
+    <String name="colors_title">Colori</string>
+    <String name="text_title">Testo</string>
+
+    <String name="notification_color_settings_title">Colori di notifica</string>
+    <String name="notification_media_bg_mode_title">Colorare lo sfondo dei media</string>
+    <String name="notification_app_icon_bg_mode_title">Colorare lo sfondo dell\'icona di una applicazione</string>
+    <String name="notification_app_icon_color_mode_title">Colorare icona dell\'applicazione</string>
+    <String name="notification_bg_guts_color_title">Sfondo su pressione prolungata</string>
+    <String name="notification_app_icon_bg_color_title">Sfondo icona App</string>
+    <String name="notification_color_mode_never_title">Mai</string>
+    <String name="notification_icon_color_mode_greyscale_title">Se l\'icona è un\'icona in scala di grigi</string>
+    <String name="notification_bg_color_mode_no_color_title">Se la notifica non includono un proprio colore</string>
+    <String name="notification_color_mode_always_title">Sempre</string>
+    <String name="notification_drawer_clear_all_icon_color_title">Cancella tutte le icone</string>
+
+    <!-- Tre-dita-colpo di screenshot-->
+    <string name="three_finger_gesture">Gesto tre dita</string>
+    <string name="three_finger_gesture_summary">Strisciare tre dita per screenshot</string>
+
+      <!-- Gesture Anywhere -->
+    <string name="gesture_anywhere_title">Gesto ovunque</string>
+    <string name="gesture_anywhere_enabled_title">Gesto ovunque</string>
+    <string name="gesture_anywhere_enabled_summary">Attivare il gesto caratterizzato ovunque</string>
+    <string name="gesture_anywhere_position_title">Posizione</string>
+    <string name="gesture_anywhere_position_left">bordo sinistro</string>
+    <string name="gesture_anywhere_position_right">bordo destro</string>
+    <string name="gesture_anywhere_gestures_title">mimica</string>
+    <string name="gesture_anywhere_gestures_summary">Aggiungere, rimuovere e modificare i gesti</string>
+    <!-- Label, button used to add a gesture -->
+    <string name="ga_button_add">Aggiungere gesto</string>
+    <!-- Label, button used to reload all gestures -->
+    <string name="ga_button_reload">Ricaricare</string>
+    <!-- Label, button used to cancel the operation of adding a gesture -->
+    <string name="ga_button_discard">Scartare</string>
+    <!-- Label, button used to save a gesture newly created -->
+    <string name="ga_button_done">Fatto</string>
+    <!-- Label, prompt asking the user to enter the name of the gesture -->
+    <string name="ga_prompt_gesture_name">Nome</string>
+    <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+    <string name="ga_error_missing_name">E necessario inserire un nome</string>
+    <!-- success message, tells the user where the gesture was saved -->
+    <string name="ga_save_success">Gesto salvato in %s</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_rename_action">Ok</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_cancel_action">Annulla</string>
+    <!-- Message displayed when the user opens the gestures settings screen -->
+    <string name="ga_gestures_loading">Caricamento gesti ...</string>
+    <!-- Message displayed when the user has no gestures -->
+    <string name="ga_gestures_empty">Non ci sono gesti</string>
+    <!-- Title of the screen used to view/manage gestures -->
+    <string name="ga_gestures_activity">Mimica</string>
+    <!-- Noun, menu item used to edit a gesture -->
+    <string name="ga_gestures_edit">Modifica</string>
+    <!-- Noun, menu item used to remove a gesture -->
+    <string name="ga_gestures_delete">Cancellare</string>
+    <!-- Message displayed when a gesture is successfully deleted -->
+    <string name="ga_gestures_delete_success">Gesto cancellato</string>
+    <!-- Title of dialog box -->
+    <string name="ga_gestures_rename_title">Rinomina gesto</string>
+    <!-- Label of gesture name field in Rename gesture dialog box -->
+    <string name="ga_gestures_rename_label">Nome gesto</string>
+    <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
+    <string name="ga_gestures_error_loading">Impossibile caricare %s. Assicurarsi di avere memoria disponibile.</string>
+    <string name="trigger_category">Zona avvio</string>
+    <string name="trigger_width_title">Larghezza avvio</string>
+    <string name="trigger_width_summary">Regolare la larghezza della zona di avvio</string>
+    <string name="trigger_top_title">Posizione avvio</string>
+    <string name="trigger_top_summary">Regolare la postion verticale della zona di avvio</string>
+    <string name="trigger_bottom_title">Altezza avvio</string>
+    <string name="trigger_bottom_summary">Regolare l\'altezza della zona di avvio</string>
+    <string name="picker_activities">Attività</string>
+    <string name="select_custom_app_title">Selezionare un\'applicazione personalizzata</string>
+    <string name="select_custom_activity_title">Selezionare un\'attività personalizzata</string>
+    <string name="profile_applist_title">Applicazioni</string>
+
+ <!-- Lock screen -->
+    <string name="lock_screen_weather_settings_title">Meteo</string>
+    <string name="lock_screen_weather_settings_summary">Personalizza meteo</string>
+    <string name="lock_screen_color_settings_summary">Personalizza colori</string>
+
+    <!-- Weather settings -->
+    <string name="weather_cat_notifications_title">Notifiche</string>
+    <string name="weather_show_weather_title">Mostra meteo</string>
+    <string name="weather_show_weather_summary">Abilita e mostra le informazioni del meteo</string>
+    <string name="weather_show_location_title">Mostra la posizione</string>
+    <string name="weather_show_location_summary">Abilita e mostra la posizione</string>
+    <string name="weather_show_timestamp_title">Mostra timestamp</string>
+    <string name="weather_show_timestamp_summary">Abilita e mostra il timestamp</string>
+    <string name="weather_condition_icon_title">Icona condizione</string>
+    <string name="weather_condition_icon_dlg_title">Scegliere un\'icona per visualizzare le condizioni meteo</string>
+    <string name="weather_condition_icon_monochrome_title">Monochrome</string>
+    <string name="weather_condition_icon_colored_title">Colorate</string>
+    <string name="weather_condition_icon_vclouds_title">VClouds</string>
+    <string name="weather_colorize_all_icons_title">Colora tutte le icone</string>
+    <string name="weather_colorize_all_icons_summary">Abilita per colorare tutte le icone, disabilitare per colorare solo le icone monocromatiche</string>
+    <string name="weather_hide_panel_title">Nascondi pannello meteo</string>
+    <string name="weather_hide_panel_dlg_title">Scegli se il pannello meteo deve restare nascosto</string>
+    <string name="weather_hide_panel_auto_title">Auto</string>
+    <string name="weather_hide_panel_custom_title">Personalizzato</string>
+    <string name="weather_hide_panel_never_title">Mai</string>
+    <string name="weather_hide_panel_auto_summary">Il pannello meteo sarà nascosto quando le notifiche visibili raggiungeranno le notifiche massime consentite sulla schermata di blocco</string>
+    <string name="weather_hide_panel_custom_summary">Il pannello meteo sarà nascosto quando le notifiche visibili raggiungeranno il numero scelto di notifiche (%s)</string>
+    <string name="weather_hide_panel_never_summary">Il pannello meteo non sarà nascosto</string>
+    <string name="weather_number_of_notifications_title">Numero di notifiche</string>
+    <string name="weather_number_of_notifications_dlg_title">Scegliere il numero di notifiche per nascondere il pannello meteo</string>
+    <string name="weather_number_of_notifications_always_title">Sempre</string>
+    <string name="weather_number_of_notifications_two_title">2</string>
+    <string name="weather_number_of_notifications_three_title">3</string>
+    <string name="weather_number_of_notifications_four_title">4</string>
+    <string name="weather_number_of_notifications_five_title">5</string>
+    <string name="weather_number_of_notifications_six_title">6</string>
+
+
+
+</resources>
