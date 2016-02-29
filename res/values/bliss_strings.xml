@@ -660,7 +660,7 @@
     <string name="weather_hide_panel_never_title">Never</string>
     <string name="weather_hide_panel_auto_summary">The weather panel will be hidden, when the visible notifications will reach the maximum allowed notifications on the lock screen</string>
     <string name="weather_hide_panel_custom_summary">The weather panel will be hidden, when the visible notifications will reach the choosen number of notifications (%s)</string>
-    <string name="weather_hide_panel_never_summary">The weather panel whon/`t be hidden</string>
+    <string name="weather_hide_panel_never_summary">The weather panel won\'t be hidden</string>
     <string name="weather_number_of_notifications_title">Number of notifications</string>
     <string name="weather_number_of_notifications_dlg_title">Choose the number of notifications to hide the weather panel</string>
     <string name="weather_number_of_notifications_always_title">Always</string>
@@ -680,5 +680,17 @@
     <string name="nfc_polling_mode_screen_off">Screen off</string>
     <string name="nfc_polling_mode_screen_locked">Screen on, locked</string>
     <string name="nfc_polling_mode_screen_unlocked">Screen on, unlocked (default)</string>
+
+    <string name="status_bar_colors_title">Status bar icon colors</string>
+    <string name="status_bar_colors_summary">Customize the colors of status bar icons</string>
+    <string name="status_bar_network_icons_settings_title">Network icons</string>
+    <string name="status_bar_network_icons_settings_summary">Customize the network icons</string>
+    <!-- Status bar network icons settings -->
+    <string name="icon_category">Icons</string>	
+    <string name="network_icons_cat_signal_colors_title">Signal colors</string>
+    <string name="network_icons_cat_no_sim_colors_title">No sim card colors</string>
+    <string name="network_icons_cat_airplane_mode_colors_title">Airplane mode colors</string>
+    <string name="status_bar_notification_icons">Notification icons colors</string>
+    <string name="network_status_icons_cat_status_colors_title">Statusbar icons colors</string>
 
 </resources>
