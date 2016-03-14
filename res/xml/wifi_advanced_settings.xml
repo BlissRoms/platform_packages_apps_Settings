@@ -62,6 +62,13 @@
             android:entryValues="@array/wifi_countrycode_values"
             />
 
+    <PreferenceScreen
+            android:key="wifi_status_bar_ssid"
+            android:title="@string/status_bar_show_wifi_ssid"
+            android:summary="@string/status_bar_show_wifi_ssid_summary"
+	        android:fragment="com.android.settings.bliss.WifiSsid"
+	        />
+
     <Preference
             android:key="install_credentials"
             android:title="@string/wifi_install_credentials"

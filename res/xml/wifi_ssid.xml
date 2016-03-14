@@ -1,0 +1,32 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/status_bar_show_wifi_ssid">
+
+        <SwitchPreference
+            android:key="wifi_status_bar_ssid"
+            android:title="@string/status_bar_show_wifi_ssid"
+            android:summary="@string/status_bar_show_wifi_ssid_summary"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="wifi_status_bar_ssid_font_style"
+            android:entries="@array/status_bar_weather_font_style_entries"
+            android:entryValues="@array/status_bar_weather_font_style_values"
+            android:title="@string/status_bar_ssid_font_style_title" />
+
+        <com.android.settings.bliss.SeekBarPreference
+            android:key="wifi_status_bar_ssid_size"
+            android:title="@string/status_bar_ssid_size_title"
+            android:defaultValue="14"
+            android:max="23"
+            settings:minimum="4"
+            settings:unitsLeft=""
+            settings:unitsRight="dp" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="wifi_status_bar_ssid_color"
+            android:title="@string/status_bar_ssid_color_title"
+            android:defaultValue="0xffffffff" />
+
+</PreferenceScreen>
