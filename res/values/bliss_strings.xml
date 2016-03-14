@@ -693,4 +693,11 @@
     <string name="status_bar_notification_icons">Notification icons colors</string>
     <string name="network_status_icons_cat_status_colors_title">Statusbar icons colors</string>
 
+    <!-- SSID in status bar -->
+    <string name="status_bar_show_wifi_ssid">Show Wi-Fi SSID</string>
+    <string name="status_bar_show_wifi_ssid_summary">Show the Wi-Fi SSID of a connected network in the status bar</string>
+    <string name="status_bar_ssid_font_style_title">Font</string>
+    <string name="status_bar_ssid_size_title">Font size</string>
+    <string name="status_bar_ssid_color_title">Color</string>
+    
 </resources>
