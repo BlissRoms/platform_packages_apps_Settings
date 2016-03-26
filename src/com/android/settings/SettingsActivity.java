@@ -1355,7 +1355,7 @@ public class SettingsActivity extends Activity
                     // Embedding into Settings is supported
                     boolean supported = false;
                     try {
-                        supported = (getPackageManager().getPackageInfo("com.grarak.kerneladiutor", 0).versionCode >= 1);
+                        supported = (getPackageManager().getPackageInfo("com.kerneladiutor.mod", 0).versionCode >= 1);
                     } catch (PackageManager.NameNotFoundException e) {
                     }
                     if (!supported) {
