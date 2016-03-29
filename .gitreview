@@ -1,0 +1,6 @@
+
+[gerrit]
+host=review.blissroms.com
+port=29418
+project=platform_packages_apps_Settings.git
+defaultbranch=new-mm6.0
