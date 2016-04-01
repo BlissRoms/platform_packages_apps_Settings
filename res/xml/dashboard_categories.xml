@@ -154,6 +154,14 @@
                 android:targetClass="com.grarak.kerneladiutor.MainActivity" />
         </dashboard-tile>
 
+        <!-- Display & lights -->
+        <dashboard-tile
+                android:id="@+id/display_and_lights_settings"
+                android:title="@string/display_and_lights"
+                android:fragment="com.android.settings.DisplaySettings"
+                android:icon="@drawable/ic_settings_display"
+                />
+
         <!-- Notification manager -->
         <dashboard-tile
                 android:id="@+id/notification_manager"
