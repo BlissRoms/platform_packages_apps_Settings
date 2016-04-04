@@ -186,8 +186,6 @@ public class StatusBarClockandDate extends SettingsPreferenceFragment
         mStatusBarClockFontSize.setValue(Settings.System.getInt(resolver,
                 Settings.System.STATUSBAR_CLOCK_FONT_SIZE, 14));
         mStatusBarClockFontSize.setOnPreferenceChangeListener(this);
-
-                0)));
         mFontStyle.setSummary(mFontStyle.getEntry());
 
         setHasOptionsMenu(true);
