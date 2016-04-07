@@ -148,6 +148,7 @@ import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.tether.WifiTetherSettings;
+import com.android.settings.GesturesSettings;
 
 import com.blissroms.blissify.Blissify;
  
@@ -288,7 +289,8 @@ public class SettingsGateway {
             BatterySaverScheduleSettings.class.getName(),
             MobileNetworkListFragment.class.getName(),
             GlobalActionsPanelSettings.class.getName(),
-            Blissify.class.getName()
+            Blissify.class.getName(),
+            GesturesSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
