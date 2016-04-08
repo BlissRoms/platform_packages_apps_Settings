@@ -80,6 +80,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
+        mQuickPulldown = (ListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
         int quickPulldown = CMSettings.System.getInt(resolver,
                 CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
         mQuickPulldown.setValue(String.valueOf(quickPulldown));
