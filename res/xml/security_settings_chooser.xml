@@ -38,13 +38,6 @@
             android:title="@string/owner_info_settings_title"
             android:summary="@string/owner_info_settings_summary"/>
 
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-            android:key="left_default_voice"
-            android:title="@string/left_default_voice_title"
-            android:summaryOn="@string/left_default_voice_summary_on"
-            android:summaryOff="@string/left_default_voice_summary_off"
-            android:defaultValue="true" />
-
         <PreferenceScreen
             android:key="lockscreen_shortcuts_settings"
             android:title="@string/lockscreen_targets_message" >
@@ -54,10 +47,22 @@
         </PreferenceScreen>
 
         <PreferenceScreen
+           android:key="lockscreen_colors"
+           android:title="@string/lockscreen_colors"
+           android:fragment="com.android.settings.bliss.LockscreenColors" />
+
+        <PreferenceScreen
             android:key="lock_screen_weather_settings"
             android:title="@string/lock_screen_weather_settings_title"
 	    	android:summary="@string/lock_screen_weather_settings_summary"
             android:fragment="com.android.settings.bliss.LockScreenWeatherSettings" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="left_default_voice"
+            android:title="@string/left_default_voice_title"
+            android:summaryOn="@string/left_default_voice_summary_on"
+            android:summaryOff="@string/left_default_voice_summary_off"
+            android:defaultValue="true" />
 
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="double_tap_sleep_lock_screen"
@@ -99,11 +104,6 @@
             android:key="hide_lockscreen_date"
             android:title="@string/hide_lockscreen_date_title"
             android:defaultValue="true" />
-
-        <PreferenceScreen
-           android:key="lockscreen_colors"
-           android:title="@string/lockscreen_colors"
-           android:fragment="com.android.settings.bliss.LockscreenColors" />
 
     </PreferenceCategory>
 
