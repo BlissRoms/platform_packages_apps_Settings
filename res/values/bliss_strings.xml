@@ -774,4 +774,7 @@
      <string name="dashboard_switches_summary">Change the position of the dashboard switches</string>
      <string name="dashboard_switches_dialog_title">Select switch state</string>
 
+     <string name="lock_screen_show_current">Charging Current</string>
+     <string name="lock_screen_show_current_summary">Show Charging Current rate on lock screen</string>
+
 </resources>

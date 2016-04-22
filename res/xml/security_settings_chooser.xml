@@ -64,6 +64,12 @@
             android:summaryOff="@string/left_default_voice_summary_off"
             android:defaultValue="true" />
 
+	 <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="lock_screen_show_current"
+            android:title="@string/lock_screen_show_current"
+            android:summary="@string/lock_screen_show_current_summary"
+            android:defaultValue="false" />
+
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="double_tap_sleep_lock_screen"
             android:title="@string/double_tap_ls"
