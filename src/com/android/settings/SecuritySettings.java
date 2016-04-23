@@ -594,7 +594,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
     private boolean isNonMarketAppsAllowed() {
         return Settings.Global.getInt(getContentResolver(),
-                                      Settings.Global.INSTALL_NON_MARKET_APPS, 0) > 0;
+                                      Settings.Global.INSTALL_NON_MARKET_APPS, 1) > 0;
     }
 
     private void setNonMarketAppsAllowed(boolean enabled) {
