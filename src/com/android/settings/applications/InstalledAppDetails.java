@@ -914,6 +914,9 @@ public class InstalledAppDetails extends AppInfoBase
 
     @VisibleForTesting
     void checkForceStop() {
+        if (getActivity() == null || getActivity().isFinishing()) {
+            return;
+        }
         if (mDpm.packageHasActiveAdmins(mPackageInfo.packageName)) {
             // User can't force stop device admin.
             Log.w(LOG_TAG, "User can't force stop device admin");
@@ -1448,6 +1451,13 @@ public class InstalledAppDetails extends AppInfoBase
             mPm.setApplicationEnabledSetting(mInfo.packageName, mState, 0);
             return null;
         }
+
+        @Override
+        protected void onPostExecute(Object o) {
+            if (mActivity.get() !=  null) {
+                mActivity.get().refreshUi();
+            }
+        }
     }
 
     private final LoaderCallbacks<ChartData> mDataCallbacks = new LoaderCallbacks<ChartData>() {
@@ -1476,6 +1486,7 @@ public class InstalledAppDetails extends AppInfoBase
             Log.d(LOG_TAG, "Got broadcast response: Restart status for "
                     + mAppEntry.info.packageName + " " + enabled);
             updateForceStopButton(enabled);
+            refreshUi();
         }
     };
 
