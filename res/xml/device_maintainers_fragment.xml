@@ -11,44 +11,17 @@
        />
     </PreferenceCategory>
 		   
-	<!-- HTC Devices -->   
-    <PreferenceCategory   
-		android:title="@string/device_category_htc_title">
-		
-	<Preference
-		android:title="@string/device_m8"
-		android:summary="@string/device_m8_summary"
-		android:selectable="false"
-		/>
-    </PreferenceCategory>	
 	
 	<!--Google Devices -->
     <PreferenceCategory
         android:title="@string/device_category_google_title" >
     
-	<Preference
-		android:title="@string/device_nexus4"
-		android:summary="@string/device_nexus4_summary"
-		android:selectable="false"
-		/>
-		
-	<Preference
-		android:title="@string/device_nexus5"
-		android:summary="@string/device_nexus5_summary"
-		android:selectable="false"
-		/>
 	
 	<Preference
-        android:title="@string/device_nexus6"		
-        android:summary="@string/device_nexus6_summary"
+        android:title="@string/device_nexus6p"		
+        android:summary="@string/device_nexus6p_summary"
         android:selectable="false" 
         />
-		
-	<Preference
-		android:title="@string/device_nexus7_12"
-		android:summary="@string/device_nexus7_12_summary"
-		android:selectable="false"
-		/>
 		
 	<Preference
 		android:title="@string/device_nexus7_13"
@@ -57,22 +30,6 @@
 		/>
     </PreferenceCategory>		
 		
-	<!-- LG Devices -->	
-	<PreferenceCategory
-		android:title="@string/device_category_lg_title">
-		
-	<Preference
-		android:title="@string/device_g2"
-		android:summary="@string/device_g2_summary"
-		android:selectable="false"
-		/>
-		
-	<Preference
-		android:title="@string/device_g4"
-		android:summary="@string/device_g4_summary"
-		android:selectable="false"
-		/>
-    </PreferenceCategory>		
 		
 	<!-- Motorola Devices -->
 	<PreferenceCategory
@@ -85,34 +42,5 @@
 		/>
     </PreferenceCategory>	
 	
-	<!-- Samsung Devices -->
-	<PreferenceCategory
-		android:title="@string/device_category_samsung_title">
-		
-	<Preference
-		android:title="@string/device_s4"
-		android:summary="@string/device_s4_summary"
-		android:selectable="false"
-		/>
-
-	<Preference
-		android:title="@string/device_s5"
-		android:summary="@string/device_s5_summary"
-		android:selectable="false"
-		/>
-		
-	<Preference
-		android:title="@string/device_note2"
-		android:summary="@string/device_note2_summary"
-		android:selectable="false"
-		/>
-		
-	<Preference
-		android:title="@string/device_note4"
-		android:summary="@string/device_note4_summary"
-		android:selectable="false"
-		/>
-		
-    </PreferenceCategory>
 
 </PreferenceScreen>
