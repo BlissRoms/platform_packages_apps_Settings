@@ -27,4 +27,7 @@
     <string name="vendor_version">Vendor version</string>
     <string name="vendor_version_default">Unknown</string>
 
+   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+   <string name="local_backup_password_title">Desktop backup password</string>
+
 </resources>
