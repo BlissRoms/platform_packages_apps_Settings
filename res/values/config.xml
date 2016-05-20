@@ -115,4 +115,7 @@
     <!-- When true Live lock screen settings will be positioned at the top -->
     <bool name="config_showLiveLockScreenSettingsFirst">false</bool>
 
+    <!-- When true, "show built-in" option in Privacy Guard will be available -->
+    <bool name="config_showBuiltInAppsForPG">true</bool>
+
 </resources>
