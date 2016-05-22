@@ -51,12 +51,6 @@
            android:title="@string/lockscreen_colors"
            android:fragment="com.android.settings.bliss.LockscreenColors" />
 
-        <PreferenceScreen
-            android:key="lock_screen_weather_settings"
-            android:title="@string/lock_screen_weather_settings_title"
-	    	android:summary="@string/lock_screen_weather_settings_summary"
-            android:fragment="com.android.settings.bliss.LockScreenWeatherSettings" />
-
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="left_default_voice"
             android:title="@string/left_default_voice_title"
