@@ -28,6 +28,12 @@
 		android:summary="@string/device_nexus7_13_summary"
 		android:selectable="false"
 		/>
+
+        <Preference
+                android:title="@string/device_nexus4"
+                android:summary="@string/device_nexus4_summary"
+                android:selectable="false"
+                />
     </PreferenceCategory>		
 		
 		
