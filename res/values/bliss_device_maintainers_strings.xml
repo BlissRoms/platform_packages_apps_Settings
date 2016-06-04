@@ -41,6 +41,11 @@
    <string name="device_nexus4">Nexus 4 - Mako</string>
    <string name="device_nexus4_summary">rwaterspf1</string>
    
+   <!-- LG Devices -->
+   <string name="device_category_lge_title"><b>LGE</b></string> 
+   <string name="device_g2">G2</string>
+   <string name="device_g2_summary">electrikjesus</string>
+   
    <!-- Motorola Devices -->
    <string name="device_category_motorola_title"><b>Motorola</b></string> 
    <string name="device_clark">Moto X pure- Clark</string>

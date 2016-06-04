@@ -36,6 +36,16 @@
                 />
     </PreferenceCategory>		
 		
+	<!-- LG Devices -->
+	<PreferenceCategory
+		android:title="@string/device_category_lge_title">
+		
+	<Preference
+		android:title="@string/device_g2"
+		android:summary="@string/device_g2_summary"
+		android:selectable="false"
+		/>
+    </PreferenceCategory>
 		
 	<!-- Motorola Devices -->
 	<PreferenceCategory
