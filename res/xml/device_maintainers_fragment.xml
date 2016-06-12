@@ -34,6 +34,12 @@
                 android:summary="@string/device_nexus4_summary"
                 android:selectable="false"
                 />
+
+        <Preference
+                android:title="@string/device_zf2"
+                android:summary="@string/device_zf2_summary"
+                android:selectable="false"
+                />
     </PreferenceCategory>		
 		
 	<!-- LG Devices -->

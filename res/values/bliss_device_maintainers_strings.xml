@@ -26,7 +26,12 @@
     
     <string name="device_maintainers_title"><b>Devices and Maintainers</b></string>
     <string name="device_maintainers_summary">List of devices and their Bliss ROM maintainers</string>
- 
+   
+   <!-- ASUS Devices -->
+   <string name="device_category_asus_title"><b>ASUS</b></string> 
+   <string name="device_zf2">Zenfone 2 - Z00A and Z008</string>
+   <string name="device_zf2_summary">Nyks45</string>
+
    <!-- HTC Devices -->
    <string name="device_category_htc_title"><b>HTC</b></string> 
    <string name="device_m8">M8</string>
