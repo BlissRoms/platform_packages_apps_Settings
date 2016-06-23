@@ -23,6 +23,7 @@ import android.hardware.fingerprint.FingerprintSensorPropertiesInternal;
 import android.os.Bundle;
 import android.view.View;
 import android.view.accessibility.AccessibilityManager;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
@@ -51,6 +52,11 @@ public class FingerprintEnrollFindSensor extends BiometricEnrollBase implements
     private FingerprintEnrollSidecar mSidecar;
     private boolean mNextClicked;
     private boolean mCanAssumeUdfps;
+
+    private static final int SENSOR_LOCATION_BACK = 0;
+    private static final int SENSOR_LOCATION_FRONT = 1;
+    private static final int SENSOR_LOCATION_LEFT = 2;
+    private static final int SENSOR_LOCATION_RIGHT = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,7 +97,34 @@ public class FingerprintEnrollFindSensor extends BiometricEnrollBase implements
 
         } else {
             setHeaderText(R.string.security_settings_fingerprint_enroll_find_sensor_title);
-            setDescriptionText(R.string.security_settings_fingerprint_enroll_find_sensor_message);
+
+            int sensorLocation = getResources().getInteger(R.integer.config_fingerprintSensorLocation);
+            if (sensorLocation < SENSOR_LOCATION_BACK || sensorLocation > SENSOR_LOCATION_RIGHT) {
+                sensorLocation = SENSOR_LOCATION_BACK;
+            }
+
+            int resId = R.string.security_settings_fingerprint_enroll_find_sensor_message;
+
+            switch (sensorLocation) {
+                case SENSOR_LOCATION_FRONT:
+                    resId = R.string.security_settings_fingerprint_enroll_find_sensor_message_front;
+                    break;
+                case SENSOR_LOCATION_LEFT:
+                    resId = R.string.security_settings_fingerprint_enroll_find_sensor_message_left;
+                    break;
+                 case SENSOR_LOCATION_RIGHT:
+                    resId = R.string.security_settings_fingerprint_enroll_find_sensor_message_right;
+                    break;
+                default:
+                    resId = R.string.security_settings_fingerprint_enroll_find_sensor_message;
+                    break;
+            }
+
+            if (sensorLocation == SENSOR_LOCATION_FRONT) {
+                findViewById(R.id.fingerprint_sensor_location_front_overlay)
+                        .setVisibility(View.VISIBLE);
+            }
+            setDescriptionText(resId);
         }
 
         // This is an entry point for SetNewPasswordController, e.g.
