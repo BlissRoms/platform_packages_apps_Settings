@@ -15,16 +15,7 @@
      limitations under the License.
 -->
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Defines the location of the fingerprint sensor on the device
-         0 = back
-         1 = front
-         2 = left side
-         3 = right side
-    -->
-    <integer name="config_fingerprintSensorLocation">0</integer>
-
-    <!-- Does the device allow for manual subscription provisioning? Only works for multi-sim devices,
-         and depends on QC's proprietary telephony stack or OSS telephony-ext implementation -->
-    <bool name="config_enableManualSubProvisioning">true</bool>
+<resources>
+    <!-- Fingerprint -->
+    <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
 </resources>
