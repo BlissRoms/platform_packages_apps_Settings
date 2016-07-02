@@ -25,4 +25,8 @@
     <string name="show_light_on_zen_title">Blink during Do Not Disturb</string>
 
     <string name="select_sim_for_sms">Select a SIM for SMS</string>
+
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+
 </resources>
