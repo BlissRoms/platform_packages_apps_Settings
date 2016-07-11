@@ -743,4 +743,7 @@
      <string name="lock_screen_show_current">Charging Current</string>
      <string name="lock_screen_show_current_summary">Show Charging Current rate on lock screen</string>
 
+     <!-- Show CPU info -->
+     <string name="show_cpu_info">Show CPU info</string>
+     <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 </resources>
