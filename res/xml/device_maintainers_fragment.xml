@@ -22,7 +22,26 @@
         android:summary="@string/device_nexus6p_summary"
         android:selectable="false" 
         />
-		
+
+        <Preference
+                android:title="@string/device_nexus5x"
+                android:summary="@string/device_nexus5x_summary"
+                android:selectable="false"
+                />
+           
+        <Preference
+                android:title="@string/device_nexus9"
+                android:summary="@string/device_nexus9_summary"
+                android:selectable="false"
+                />     
+
+        <Preference
+                android:title="@string/device_nexus6"
+                android:summary="@string/device_nexus6_summary"
+                android:selectable="false"
+                />     
+      
+
 	<Preference
 		android:title="@string/device_nexus7_13"
 		android:summary="@string/device_nexus7_13_summary"

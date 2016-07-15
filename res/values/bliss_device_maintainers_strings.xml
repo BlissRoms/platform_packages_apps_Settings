@@ -40,7 +40,13 @@
    <!-- Google Devices -->
    <string name="device_category_google_title"><b>GOOGLE</b></string> 
    <string name="device_nexus6p">Nexus 6p - Angler</string>
-   <string name="device_nexus6p_summary">pjgraber03</string>
+   <string name="device_nexus6p_summary">blueyes, pjgraber03</string>
+   <string name="device_nexus5x">Nexus 5x - Bullhead</string>
+   <string name="device_nexus5x_summary">ideaman924, blueyes</string>
+   <string name="device_nexus6">Nexus 6 - Shamu</string>
+   <string name="device_nexus6_summary">nprev420</string>
+   <string name="device_nexus9">Nexus 9 - Flounder</string>
+   <string name="device_nexus9_summary">blueyes</string>
    <string name="device_nexus7_13">Nexus 7 2013- Flo and Deb</string>
    <string name="device_nexus7_13_summary">blueyes, pjgraber03</string>
    <string name="device_nexus4">Nexus 4 - Mako</string>
