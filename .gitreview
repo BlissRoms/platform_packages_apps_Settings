@@ -1,0 +1,5 @@
+[gerrit]
+host=review.blissroms.com
+port=29418
+project=platform_packages_apps_Settings.git
+defaultbranch=q
