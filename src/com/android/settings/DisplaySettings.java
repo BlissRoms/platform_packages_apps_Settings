@@ -32,11 +32,13 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.database.ContentObserver;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.RemoteException;
+import android.os.Handler;
 import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
@@ -45,6 +47,7 @@ import android.provider.Settings;
 import android.support.v14.preference.SwitchPreference;
  import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.DropDownPreference;
+import android.support.v14.preference.MultiSelectListPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
@@ -68,7 +71,10 @@ import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedPreference;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import static android.provider.Settings.Secure.CAMERA_GESTURE_DISABLED;
 import static android.provider.Settings.Secure.DOUBLE_TAP_TO_WAKE;
@@ -101,7 +107,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_DOZE = "doze";
     private static final String KEY_TAP_TO_WAKE = "tap_to_wake";
     private static final String KEY_AUTO_BRIGHTNESS = "auto_brightness";
-    private static final String KEY_AUTO_ROTATE = "auto_rotate";
     private static final String KEY_NIGHT_DISPLAY = "night_display";
     private static final String KEY_NIGHT_MODE = "night_mode";
     private static final String KEY_CAMERA_GESTURE = "camera_gesture";
@@ -121,6 +126,17 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String FONT_SIZE_MEDIUM = "1.05";
     private static final String FONT_SIZE_LARGE = "1.15";
     private static final String FONT_SIZE_VERYLARGE = "1.30";
+    private static final String KEY_ROTATION_CATEGORY = "rotation_category";
+    private static final String KEY_ACCELEROMETER = "accelerometer";
+    private static final String KEY_ROTATION_ANGLES = "rotation_angles";
+    private static final String ROTATION_ANGLE_0 = "0";
+    private static final String ROTATION_ANGLE_90 = "90";
+    private static final String ROTATION_ANGLE_180 = "180";
+    private static final String ROTATION_ANGLE_270 = "270";
+    private static final int ROTATION_0_MODE = 1;
+    private static final int ROTATION_90_MODE = 2;
+    private static final int ROTATION_180_MODE = 4;
+    private static final int ROTATION_270_MODE = 8;
 
     private Preference mFontSizePref;
     private ScreenZoomPreference mScreenZoomPref;
@@ -146,6 +162,16 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SharedPreferences.Editor mEditor;
     private boolean isRJILMode;
     private final Configuration mCurConfig = new Configuration();
+    private SwitchPreference mAccelerometerPreference;
+    private MultiSelectListPreference mRotationAnglesPreference;
+
+    private ContentObserver mAccelerometerRotationObserver =
+            new ContentObserver(new Handler()) {
+                @Override
+                public void onChange(boolean selfChange) {
+                    updateRotationPreferencesState();
+                }
+            };
 
     @Override
     protected int getMetricsCategory() {
@@ -234,44 +260,21 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             removePreference(KEY_CAMERA_GESTURE);
         }
 
-        if (RotationPolicy.isRotationLockToggleVisible(activity)) {
-            DropDownPreference rotatePreference =
-                    (DropDownPreference) findPreference(KEY_AUTO_ROTATE);
-            int rotateLockedResourceId;
-            // The following block sets the string used when rotation is locked.
-            // If the device locks specifically to portrait or landscape (rather than current
-            // rotation), then we use a different string to include this information.
-            if (allowAllRotations(activity)) {
-                rotateLockedResourceId = R.string.display_auto_rotate_stay_in_current;
-            } else {
-                if (RotationPolicy.getRotationLockOrientation(activity)
-                        == Configuration.ORIENTATION_PORTRAIT) {
-                    rotateLockedResourceId =
-                            R.string.display_auto_rotate_stay_in_portrait;
-                } else {
-                    rotateLockedResourceId =
-                            R.string.display_auto_rotate_stay_in_landscape;
-                }
-            }
-            rotatePreference.setEntries(new CharSequence[] {
-                    activity.getString(R.string.display_auto_rotate_rotate),
-                    activity.getString(rotateLockedResourceId),
-            });
-            rotatePreference.setEntryValues(new CharSequence[] { "0", "1" });
-            rotatePreference.setValueIndex(RotationPolicy.isRotationLocked(activity) ?
-                    1 : 0);
-            rotatePreference.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
-                @Override
-                public boolean onPreferenceChange(Preference preference, Object newValue) {
-                    final boolean locked = Integer.parseInt((String) newValue) != 0;
-                    MetricsLogger.action(getActivity(), MetricsEvent.ACTION_ROTATION_LOCK,
-                            locked);
-                    RotationPolicy.setRotationLock(activity, locked);
-                    return true;
-                }
-            });
+        if (RotationPolicy.isRotationSupported(activity)) {
+            mAccelerometerPreference = (SwitchPreference) findPreference(KEY_ACCELEROMETER);
+            Boolean rotationEnabled = Settings.System.getInt(getContentResolver(),
+                    Settings.System.ACCELEROMETER_ROTATION, 0) != 0;
+            mAccelerometerPreference.setChecked(rotationEnabled);
+            mAccelerometerPreference.setOnPreferenceChangeListener(this);
+
+            mRotationAnglesPreference = (MultiSelectListPreference) findPreference(KEY_ROTATION_ANGLES);
+            int mode = Settings.System.getInt(getContentResolver(),
+                    Settings.System.ACCELEROMETER_ROTATION_ANGLES,
+                    ROTATION_0_MODE | ROTATION_90_MODE | ROTATION_270_MODE);
+            mRotationAnglesPreference.setValues(getRotationValuesFromBits(mode));
+            mRotationAnglesPreference.setOnPreferenceChangeListener(this);
         } else {
-            removePreference(KEY_AUTO_ROTATE);
+            removePreference(KEY_ROTATION_CATEGORY);
         }
 
         if (isVrDisplayModeAvailable(activity)) {
@@ -362,11 +365,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
     }
 
-    private static boolean allowAllRotations(Context context) {
-        return Resources.getSystem().getBoolean(
-                com.android.internal.R.bool.config_allowAllRotations);
-    }
-
     private static boolean isLiftToWakeAvailable(Context context) {
         SensorManager sensors = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
         return sensors != null && sensors.getDefaultSensor(Sensor.TYPE_WAKE_GESTURE) != null;
@@ -437,6 +435,88 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         pref.setSummary(pref.getWarnedPreferenceSummary());
     }
 
+    private void updateRotationPreferencesState() {
+        if (mRotationAnglesPreference == null || mAccelerometerPreference == null) {
+            return;
+        }
+        StringBuilder summary = new StringBuilder();
+        Boolean rotationEnabled = Settings.System.getInt(getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION, 0) != 0;
+        int mode = Settings.System.getInt(getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION_ANGLES,
+                ROTATION_0_MODE | ROTATION_90_MODE
+                        | ROTATION_270_MODE);
+
+        if (!rotationEnabled) {
+            summary.append(getString(R.string.display_rotation_disabled));
+        } else {
+            ArrayList<String> rotationList = new ArrayList<String>();
+            String delim = "";
+            if ((mode & ROTATION_0_MODE) != 0) {
+                rotationList.add(ROTATION_ANGLE_0);
+            }
+            if ((mode & ROTATION_90_MODE) != 0) {
+                rotationList.add(ROTATION_ANGLE_90);
+            }
+            if ((mode & ROTATION_180_MODE) != 0) {
+                rotationList.add(ROTATION_ANGLE_180);
+            }
+            if ((mode & ROTATION_270_MODE) != 0) {
+                rotationList.add(ROTATION_ANGLE_270);
+            }
+            for (int i = 0; i < rotationList.size(); i++) {
+                summary.append(delim).append(rotationList.get(i));
+                if ((rotationList.size() - i) > 2) {
+                    delim = ", ";
+                } else {
+                    delim = " & ";
+                }
+            }
+            summary.append(" " + getString(R.string.display_rotation_unit));
+        }
+        mRotationAnglesPreference.setSummary(summary);
+        mRotationAnglesPreference.setEnabled(rotationEnabled);
+        // update checked state if tile was toggled
+        if (Boolean.compare(rotationEnabled, mAccelerometerPreference.isChecked()) != 0) {
+            mAccelerometerPreference.setChecked(rotationEnabled);
+        }
+    }
+
+    private Set<String> getRotationValuesFromBits(int rotationBits) {
+        Set<String> vals = new HashSet<>();
+        if ((rotationBits & ROTATION_0_MODE) != 0) {
+            vals.add(String.valueOf(ROTATION_0_MODE));
+        }
+        if ((rotationBits & ROTATION_90_MODE) != 0) {
+            vals.add(String.valueOf(ROTATION_90_MODE));
+        }
+        if ((rotationBits & ROTATION_180_MODE) != 0) {
+            vals.add(String.valueOf(ROTATION_180_MODE));
+        }
+        if ((rotationBits & ROTATION_270_MODE) != 0) {
+            vals.add(String.valueOf(ROTATION_270_MODE));
+        }
+        return vals;
+    }
+
+    private Set<String> getRotationDefaultValues() {
+        Set<String> vals = new HashSet<>();
+        vals.addAll(Arrays.asList(getResources().getStringArray(
+                R.array.display_rotation_default_values)));
+        return vals;
+    }
+
+    private int getRotationBitsFromVals(Set<String> vals) {
+        int mode = 0;
+        if (vals.isEmpty()) {
+            vals.addAll(getRotationDefaultValues());
+        }
+        for (String val : vals) {
+            mode |= Integer.parseInt(val);
+        }
+        return mode;
+    }
+
     @Override
     public void onResume() {
         super.onResume();
@@ -456,8 +536,18 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mScreenTimeoutPreference.removeUnusableTimeouts(maxTimeout, admin);
         }
         updateTimeoutPreferenceDescription(currentTimeout);
+        updateRotationPreferencesState();
 
         disablePreferenceIfManaged(KEY_WALLPAPER, UserManager.DISALLOW_SET_WALLPAPER);
+        getContentResolver().registerContentObserver(
+                Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION), true,
+                mAccelerometerRotationObserver);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        getContentResolver().unregisterContentObserver(mAccelerometerRotationObserver);
     }
 
     @Override
@@ -619,7 +709,22 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     Settings.System.WAKEUP_WHEN_PLUGGED_UNPLUGGED,
                     (Boolean) objValue ? 1 : 0);
         }
-
+        if (preference == mAccelerometerPreference) {
+            boolean value = (Boolean) objValue;
+            RotationPolicy.setRotationLockForAccessibility(getActivity(), !value);
+        }
+        if (preference == mRotationAnglesPreference) {
+            Set<String> vals = (Set<String>) objValue;
+            if (vals.isEmpty()) {
+                // if none are selected, set back to default
+                vals.addAll(getRotationDefaultValues());
+                mRotationAnglesPreference.setValues(vals);
+            }
+            int mode = getRotationBitsFromVals(vals);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.ACCELEROMETER_ROTATION_ANGLES, mode);
+            updateRotationPreferencesState();
+        }
         return true;
     }
 
@@ -742,7 +847,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                         result.add(KEY_DOZE);
                     }
                     if (!RotationPolicy.isRotationLockToggleVisible(context)) {
-                        result.add(KEY_AUTO_ROTATE);
+                        result.add(KEY_ACCELEROMETER);
+                        result.add(KEY_ROTATION_ANGLES);
                     }
                     if (!isTapToWakeAvailable(context.getResources())) {
                         result.add(KEY_TAP_TO_WAKE);

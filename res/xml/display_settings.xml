@@ -113,11 +113,6 @@
                 android:title="@string/screen_zoom_title"
                 settings:keywords="@string/screen_zoom_keywords" />
 
-        <DropDownPreference
-                android:key="auto_rotate"
-                android:summary="%s"
-                android:title="@string/display_auto_rotate_title" />
-
         <PreferenceScreen
                 android:key="wifi_display"
                 android:title="@string/wifi_display_settings_title"
@@ -128,6 +123,25 @@
                 android:key="vr_display_pref"
                 android:summary="%s"
                 android:title="@string/display_vr_pref_title" />
+
+        <PreferenceCategory
+                android:key="rotation_category"
+                android:title="@string/display_rotation_category_title">
+
+        <SwitchPreference
+                android:key="accelerometer"
+                android:title="@string/accelerometer_title"
+                android:persistent="false" />
+
+        <MultiSelectListPreference
+                android:key="rotation_angles"
+                android:title="@string/display_rotation_title"
+                android:defaultValue="@array/display_rotation_default_values"
+                android:entries="@array/display_rotation_entries"
+                android:entryValues="@array/display_rotation_values"
+                android:persistent="false" />
+
+        </PreferenceCategory>
 
 	<PreferenceCategory
              android:key="category_wakeup_options"
