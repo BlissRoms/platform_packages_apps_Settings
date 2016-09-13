@@ -70,7 +70,7 @@
         android:key="advanced_sound_category"
         android:title="@string/advanced_sound_category" > 
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+    <com.android.settings.bliss.SystemSettingSwitchPreference
         android:key="volume_keys_control_media_stream"
         android:title="@string/volume_keys_control_media_stream_title"
         android:summary="@string/volume_keys_control_media_stream_summary"
