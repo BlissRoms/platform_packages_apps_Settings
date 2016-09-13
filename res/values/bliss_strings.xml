@@ -40,4 +40,9 @@
    <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
    <string name="bluetooth_accept_all_files">Accept all file types</string>
 
+   <!-- Wakeup options -->
+   <string name="display_category_wakeup_options_title">Wakeup options</string>
+   <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
+   <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
+
 </resources>
