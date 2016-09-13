@@ -93,6 +93,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_VR_DISPLAY_PREF = "vr_display_pref";
     private static final String KEY_WAKEUP_WHEN_PLUGGED_UNPLUGGED = "wakeup_when_plugged_unplugged";
     private static final String KEY_WAKEUP_CATEGORY = "category_wakeup_options";
+    private static final String KEY_VOLUME_ROCKER_WAKE = "volume_rocker_wake";
 
     private Preference mFontSizePref;
 
@@ -100,6 +101,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private SwitchPreference mWakeUpWhenPluggedOrUnplugged;
     private PreferenceCategory mWakeUpOptions;
+    private SwitchPreference mVolumeWake;
 
     private ListPreference mNightModePreference;
     private Preference mScreenSaverPreference;
@@ -257,21 +259,37 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mNightModePreference.setOnPreferenceChangeListener(this);
         }
 
+
         mWakeUpOptions = (PreferenceCategory) prefSet.findPreference(KEY_WAKEUP_CATEGORY);
+        int counter = 0;
+        mVolumeWake = (SwitchPreference) findPreference(KEY_VOLUME_ROCKER_WAKE);
+        if (mVolumeWake != null) {
+            if (!getResources().getBoolean(R.bool.config_show_volumeRockerWake)) {
+                mWakeUpOptions.removePreference(mVolumeWake);
+                counter++;
+            } else {
+                mVolumeWake.setChecked(Settings.System.getInt(resolver,
+                        Settings.System.VOLUME_ROCKER_WAKE, 0) == 1);
+                mVolumeWake.setOnPreferenceChangeListener(this);
+            }
+        }
+
         mWakeUpWhenPluggedOrUnplugged =
             (SwitchPreference) findPreference(KEY_WAKEUP_WHEN_PLUGGED_UNPLUGGED);
-
         // hide option if device is already set to never wake up
         if(!getResources().getBoolean(
                 com.android.internal.R.bool.config_unplugTurnsOnScreen)) {
                 mWakeUpOptions.removePreference(mWakeUpWhenPluggedOrUnplugged);
-                prefSet.removePreference(mWakeUpOptions);
+                counter++;
         } else {
             mWakeUpWhenPluggedOrUnplugged.setChecked(Settings.System.getInt(resolver,
                         Settings.System.WAKEUP_WHEN_PLUGGED_UNPLUGGED, 1) == 1);
             mWakeUpWhenPluggedOrUnplugged.setOnPreferenceChangeListener(this);
         }
 
+        if (counter == 2) {
+            prefSet.removePreference(mWakeUpOptions);
+        }
     }
 
     private static boolean allowAllRotations(Context context) {
@@ -429,6 +447,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist screen timeout setting", e);
             }
+        }
+        if (KEY_VOLUME_ROCKER_WAKE.equals(key)) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.VOLUME_ROCKER_WAKE,
+                    (Boolean) objValue ? 1 : 0);
         }
         if (preference == mAutoBrightnessPreference) {
             boolean auto = (Boolean) objValue;
