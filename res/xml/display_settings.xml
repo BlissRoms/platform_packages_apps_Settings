@@ -130,6 +130,19 @@
 
         </PreferenceCategory>
 
+        <PreferenceCategory
+                android:key="dashboard_category"
+                android:title="@string/dashboard_category">
+
+        <com.android.settings.bliss.SystemSettingSwitchPreference
+                android:key="disable_suggestions"
+                android:title="@string/dashboard_suggestions_title"
+                android:summaryOn="@string/summary_dashboard_suggestions_enabled"
+                android:summaryOff="@string/summary_dashboard_suggestions_disabled"
+                android:defaultValue="true" />
+
+        </PreferenceCategory>
+
 	<PreferenceCategory
              android:key="category_wakeup_options"
              android:title="@string/display_category_wakeup_options_title" >
