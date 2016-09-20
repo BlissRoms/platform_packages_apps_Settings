@@ -57,6 +57,9 @@
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Close</string>
 
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Display music visualizer</string>
+
     <!-- Dashboard -->
     <string name="dashboard_conditions_title">Dashboard conditions</string>
     <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
