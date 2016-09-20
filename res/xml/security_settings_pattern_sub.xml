@@ -40,4 +40,9 @@
                 android:summary="@string/owner_info_settings_summary"/>
 
 
+        <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_visualizer"
+            android:title="@string/lockscreen_visualizer_title"
+            android:defaultValue="true"/>
+
 </PreferenceScreen>
