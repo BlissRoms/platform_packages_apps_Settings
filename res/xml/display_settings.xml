@@ -124,6 +124,10 @@
         android:defaultValue="0"
         settings:controller="com.android.settings.display.DisplayCutoutPreferenceController" />
 
+    <com.android.settings.display.DensityPreference
+        android:key="density"
+        android:title="@string/developer_smallest_width" />
+
     <ListPreference
         android:key="refresh_rate_setting"
         android:title="@string/refresh_rate_title"
