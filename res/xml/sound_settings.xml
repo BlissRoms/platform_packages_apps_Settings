@@ -20,6 +20,12 @@
         android:key="sound_settings"
         settings:keywords="@string/keywords_sounds">
 
+        <!-- Volume Steps -->
+        <PreferenceScreen
+                android:key="volume_steps"
+                android:title="@string/volume_steps_title"
+                android:fragment="com.android.settings.bliss.VolumeSteps" />
+
         <!-- Media volume -->
         <com.android.settings.notification.VolumeSeekBarPreference
                 android:key="media_volume"
