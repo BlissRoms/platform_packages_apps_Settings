@@ -62,7 +62,7 @@ public class ExpandedDesktopExtraPrefs extends SettingsPreferenceFragment
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.SAOSP_TWEAKS;
+        return MetricsEvent.BLISSIFY;
     }
 
     @Override
