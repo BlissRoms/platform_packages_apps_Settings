@@ -218,8 +218,6 @@
     <string name="night_bright_low">Low brightness</string>
     <string name="night_bright_medium">Medium brightness</string>
 
-
-<<<<<<< HEAD:res/values/bliss_strings.xml
     <!-- Density category -->
     <string name="density_category">Font options</string>
 
@@ -255,4 +253,9 @@
     <!-- Lock screen vibrate settings -->
     <string name="lockscreen_vibrate_enabled_title">Vibrate</string>
     <string name="lockscreen_vibrate_enabled_head">Vibrate when unlocking</string>
+
+    <!-- Whether the keyguard will directly show the lock entry -->
+    <string name="directly_show_lock">Direct unlock</string>
+    <string name="directly_show_lock_summary">Skip the swipe to unlock screen and immediately begin key entry</string>
+
 </resources>
