@@ -92,4 +92,11 @@
         android:title="@string/gesture_prevent_ringing_screen_title"
         android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
         settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController" />
+
+    <Preference
+        android:key="volume_button_music_control_summary"
+        android:title="@string/volume_button_music_control_title"
+        android:fragment="com.android.settings.gestures.VolumeButtonMusicControlGestureSettings"
+        settings:controller="com.android.settings.gestures.VolumeButtonMusicControlPreferenceController" />
+
 </PreferenceScreen>
