@@ -154,4 +154,9 @@
     <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
     <string name="notification_importance_very_low">No full screen interruption, peeking, sound, or vibration. Show at the bottom of the notification list. Hide from lock screen.</string>
 
+    <!-- Settings drawer switch -->
+    <string name="show_settings_drawer_title">Show settings drawer</string>
+    <string name="show_settings_drawer_enabled">Settings drawer enabled</string>
+    <string name="show_settings_drawer_disabled">Settings drawer disabled</string>
+
 </resources>
