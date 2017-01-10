@@ -25,6 +25,7 @@
 
     <!-- Buttons -->
     <string name="buttons_pref_title">Buttons</string>
+    <string name="buttons_pref_summary">Tweak the actions of your phones physical buttons</string>
     <string name="enable_navigation_bar_title">Enable software keys</string>
     <string name="enable_navigation_bar_summary">Enable on-screen navigation keys</string>
     <string name="hardware_brightness_keys_title">Backlight</string>
