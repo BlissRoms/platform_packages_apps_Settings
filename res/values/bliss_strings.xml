@@ -160,4 +160,6 @@
     <string name="show_settings_drawer_enabled">Settings drawer enabled</string>
     <string name="show_settings_drawer_disabled">Settings drawer disabled</string>
 
+    <string name="reset_wallpaper_notice">Default wallpaper restored</string>
+
 </resources>
