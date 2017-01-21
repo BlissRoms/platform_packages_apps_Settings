@@ -157,8 +157,17 @@
                 android:key="dashboard_category"
                 android:title="@string/dashboard_category">
 
+        <ListPreference
+                android:key="dashboard_columns"
+                android:title="@string/dashboard_columns_title"
+                android:dialogTitle="@string/dashboard_columns_dialog_title"
+                android:entries="@array/dashboard_columns_entries"
+                android:entryValues="@array/dashboard_columns_values"
+                android:summary="@string/dashboard_columns_summary"
+                android:persistent="false" />
+
         <com.android.settings.bliss.SystemSettingSwitchPreference
-                android:key="disable_dashboard_suggestions"
+                android:key="disable_suggestions"
                 android:title="@string/dashboard_suggestions_title"
                 android:summaryOn="@string/summary_dashboard_suggestions_enabled"
                 android:summaryOff="@string/summary_dashboard_suggestions_disabled"
