@@ -105,11 +105,18 @@
     <string name="substratum_title">Substratum</string>
     <string name="substratum_summary">Manage System Themes</string>
 
-    <!-- Dashboard suggestions -->
+    <!-- Dashboard options -->
     <string name="dashboard_category">Dashboard options</string>
-    <string name="dashboard_suggestions_title">Dashboard suggestions</string>
+    <string name="disable_suggestions_title">Disable suggestions</string>
+    <string name="disable_suggestions_summary">Disable the suggestions that appear on top of the dashboard</string>
+    <string name="remove_tile_summaries_title">Remove tile summaries</string>
+    <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
+    <string name="dashboard_conditions_title">Dashboard conditions</string>
+    <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
+    <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
     <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
     <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
+    <string name="dashboard_suggestions_title">Suggestions</string>
 
     <!-- BlissRoms OTA -->
     <string name="bliss_ota">Bliss OTA</string>
