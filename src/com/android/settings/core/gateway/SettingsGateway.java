@@ -36,6 +36,7 @@ import com.android.settings.accounts.ManagedProfileSettings;
 import com.android.settings.applications.AppAndNotificationDashboardFragment;
 import com.android.settings.applications.ProcessStatsSummary;
 import com.android.settings.applications.ProcessStatsUi;
+import com.android.settings.applications.RunningServices;
 import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.appinfo.AppInfoDashboardFragment;
 import com.android.settings.applications.appinfo.DrawOverlayDetails;
@@ -291,6 +292,7 @@ public class SettingsGateway {
             DarkModeSettingsFragment.class.getName(),
             Blissify.class.getName(),
             GamingMode.class.getName(),
+            RunningServices.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -331,5 +333,6 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.BlissifySettingsActivity.class.getName(),
             Settings.GamingModeActivity.class.getName(),
+            Settings.DevRunningServicesActivity.class.getName(),
     };
 }
