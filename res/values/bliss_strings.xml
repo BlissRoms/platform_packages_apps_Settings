@@ -134,4 +134,7 @@
     <string name="custom_timeout_summary_48hours">48 hours</string>
     <string name="custom_timeout_summary_72hours">72 hours</string>
 
+    <!-- Running services - Background processes tab -->
+    <string name="background_processes_settings_title">Background processes</string>
+
 </resources>
