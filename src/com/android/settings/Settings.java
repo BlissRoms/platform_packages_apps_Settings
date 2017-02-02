@@ -657,4 +657,6 @@ public class Settings extends SettingsActivity {
     public static class ScreenRefreshRateActivity extends SettingsActivity {}
 
     public static class BlissifyActivity extends SettingsActivity {}
+
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }
