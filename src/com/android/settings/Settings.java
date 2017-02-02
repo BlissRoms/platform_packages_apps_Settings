@@ -524,4 +524,6 @@ public class Settings extends SettingsActivity {
     public static class ContactsStorageSettingsActivity extends SettingsActivity { /* empty */ }
 
     public static class BlissifyActivity extends SettingsActivity {}
+
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }
