@@ -241,4 +241,6 @@ public class Settings extends SettingsActivity {
      */
     public static class MediaControlsSettingsActivity extends SettingsActivity {}
 
+    // Blissify Additions.
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }

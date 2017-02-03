@@ -66,4 +66,7 @@
     <!-- Ambient Wake Gestures -->
     <string name="ambient_wake_gestures_title">Ambient wake gestures</string>
     <string name="ambient_wake_gestures_summary">Show Ambient Display instead of normal losckreen on wake gestures</string>
+
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Background processes</string>
 </resources>
