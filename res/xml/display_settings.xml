@@ -148,6 +148,12 @@
 
         </PreferenceCategory>
 
+        <ListPreference
+                android:entries="@array/screenshot_type_entries"
+                android:entryValues="@array/screenshot_type_values"
+                android:key="screenshot_type"
+                android:title="@string/screenshot_type_title" />
+
 	<PreferenceCategory
              android:key="category_wakeup_options"
              android:title="@string/display_category_wakeup_options_title" >
