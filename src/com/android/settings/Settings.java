@@ -172,4 +172,5 @@ public class Settings extends SettingsActivity {
     public static class BlissifyActivity extends SettingsActivity { /* empty */ }
     public static class SubstratumActivity extends SettingsActivity { /* empty */ }
     public static class SuperSUActivity extends SettingsActivity { /* empty */ }
+    public static class QSWeatherActivity extends SettingsActivity { /* empty */ }
 }
