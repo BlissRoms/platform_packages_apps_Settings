@@ -140,6 +140,7 @@ import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 import com.blissroms.blissify.Blissify;
 import com.blissroms.BlissInfoSettings;
+import com.blissroms.blissify.quicksettings.tabs.QSWeather;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -391,7 +392,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             NightDisplaySettings.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
-            Blissify.class.getName()
+            Blissify.class.getName(),
+            QSWeather.class.getName()
     };
 
 

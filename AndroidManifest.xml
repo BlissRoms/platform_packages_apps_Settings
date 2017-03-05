@@ -3143,6 +3143,20 @@
                 android:resource="@string/wifi_calling_suggestion_summary" />
         </activity>
 
+        <!-- Quick Settings -->
+        <activity android:name="Settings$QSWeatherActivity"
+                android:label="@string/qs_weather_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.blissroms.blissify.quicksettings.tabs.QSWeather" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@string/qs_weather_title" />
+        </activity>
+
         <provider
             android:name=".search.SettingsSearchIndexablesProvider"
             android:authorities="com.android.settings"
@@ -3359,6 +3373,8 @@
             android:theme="@android:style/Theme.NoDisplay"
             android:permission="android.permission.DUMP"
             android:enabled="@bool/config_has_help" />
+            
+            
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
