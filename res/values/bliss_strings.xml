@@ -107,5 +107,10 @@
     <string name="screenshot_type_title">Screenshot type</string>
     <string name="screenshot_type_fullscreen">Take fullscreen screenshots</string>
     <string name="screenshot_type_partial">Take screenshots of selectable area</string>
+    <!-- Dashboard -->
+    <string name="supersu_title">SuperSU</string>
+    <string name="supersu_summary">Manage Root Settings</string>
+    <string name="substratum_title">Substratum</string>
+    <string name="substratum_summary">Manage System Themes</string>
 
 </resources>
