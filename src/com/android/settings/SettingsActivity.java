@@ -139,6 +139,7 @@ import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 import com.blissroms.blissify.Blissify;
+import com.blissroms.BlissInfoSettings;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -283,7 +284,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             Settings.AccountSettingsActivity.class.getName(),
             //system_section
             Settings.DateTimeSettingsActivity.class.getName(),
-            Settings.DeviceInfoSettingsActivity.class.getName(),
+            Settings.BlissInfoSettingsActivity.class.getName(),
             Settings.AccessibilitySettingsActivity.class.getName(),
             Settings.PrintSettingsActivity.class.getName(),
             Settings.PaymentSettingsActivity.class.getName(),
@@ -312,7 +313,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             UserDictionarySettings.class.getName(),
             HomeSettings.class.getName(),
             DisplaySettings.class.getName(),
-            DeviceInfoSettings.class.getName(),
+            BlissInfoSettings.class.getName(),
             ManageApplications.class.getName(),
             NotificationApps.class.getName(),
             ManageAssist.class.getName(),
@@ -1266,11 +1267,6 @@ public class SettingsActivity extends SettingsDrawerActivity
                 Settings.PrintSettingsActivity.class.getName()),
                 (!getResources().getBoolean(R.bool.config_settings_rjil_layout))
                 &&pm.hasSystemFeature(PackageManager.FEATURE_PRINTING), isAdmin, pm);
-
-        //deviceinfo disable in RJIL
-        setTileEnabled(new ComponentName(packageName,
-                        Settings.DeviceInfoSettingsActivity.class.getName()),
-                !getResources().getBoolean(R.bool.config_settings_rjil_layout), isAdmin, pm);
 
         //other settings visible in RJIL
         setTileEnabled(new ComponentName(packageName,

@@ -121,5 +121,6 @@
 
     <!-- BlissRoms OTA -->
     <string name="bliss_ota">Bliss OTA</string>
+    <string name="about_tab_title">About</string>
 
 </resources>
