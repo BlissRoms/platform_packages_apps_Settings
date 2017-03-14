@@ -46,7 +46,7 @@
     <PreferenceScreen
         android:fragment="com.android.settings.DeviceInfoSettings"
         android:key="about_settings"
-        android:title="@string/about_settings" />
+        android:title="@string/about_tab_title" />
 
 
 </PreferenceScreen>
