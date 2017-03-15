@@ -15,14 +15,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-   <!-- About phone screen, Bliss version -->
-   <string name="bliss_version">Bliss version</string>
-   <string name="bliss_version_default">Unknown</string>
-
-   <!-- About phone screen, Bliss build date -->
-   <string name="build_date">Bliss build date</string>
-   <string name="build_date_default">2014-01-01-0000</string>
-
    <!-- Bliss Settings -->
    <string name="header_category_bliss_options">Bliss Options</string>
    <string name="bliss_settings_title">Blissify</string>
