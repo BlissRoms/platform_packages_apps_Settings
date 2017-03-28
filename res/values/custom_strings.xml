@@ -48,4 +48,7 @@
     <string name="hardware_keys_action_launch_camera">Open camera</string>
     <string name="hardware_keys_action_last_app">Launch last app</string>
 
+    <!-- AOSP-CAF Version -->
+    <string name="version_title">CAF Version</string>
+    <string name="version_default">Unknown</string>
 </resources>
