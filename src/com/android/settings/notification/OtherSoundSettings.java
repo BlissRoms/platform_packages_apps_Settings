@@ -78,6 +78,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_DOCK_AUDIO_MEDIA = "dock_audio_media";
     private static final String KEY_EMERGENCY_TONE = "emergency_tone";
     public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
+    private static final String KEY_SCREENSHOT_SHUTTER_SOUND = "screenshot_shutter_sound";
 
     private SwitchPreference mVolBtnMusicCtrl;
 
@@ -180,6 +181,9 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements
         }
     };
 
+    private static final SettingPref PREF_SCREENSHOT_SHUTTER_SOUND = new SettingPref(
+            TYPE_SYSTEM, KEY_SCREENSHOT_SHUTTER_SOUND, System.SCREENSHOT_SHUTTER_SOUND, DEFAULT_ON);
+
     private static final SettingPref[] PREFS = {
         PREF_DIAL_PAD_TONES,
         PREF_SCREEN_LOCKING_SOUNDS,
@@ -189,6 +193,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements
         PREF_VIBRATE_ON_TOUCH,
         PREF_DOCK_AUDIO_MEDIA,
         PREF_EMERGENCY_TONE,
+        PREF_SCREENSHOT_SHUTTER_SOUND
     };
 
     private SwitchPreference mBootSounds;
