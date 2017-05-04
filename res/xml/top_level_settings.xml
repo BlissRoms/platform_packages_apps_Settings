@@ -47,6 +47,15 @@
         android:summary="@string/app_and_notification_dashboard_summary"/>
 
     <Preference
+        android:fragment="org.blissroms.blissify.Blissify"
+        android:icon="@drawable/ic_dashboard_blissify"
+        android:key="top_level_blissify_settings"
+        android:order="-125"
+        android:title="@string/blissify_settings_title"
+        android:summary="@string/blissify_settings_summary"
+        settings:controller="org.blissroms.blissify.TopLevelBlissifyPreferenceController" />
+
+    <Preference
         android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
         android:icon="@drawable/ic_notifications"
         android:key="top_level_notification"
