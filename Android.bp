@@ -44,7 +44,14 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.java", 
+        "Blissify/src/**/*.java"],
+
+    aaptflags: ["--extra-packages org.blissroms.blissify"],
+
+    resource_dirs: ["res",
+                    "Blissify/res"
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
