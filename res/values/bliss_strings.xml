@@ -33,4 +33,8 @@
     <!-- String for removal of sensitive info on about, depending on tap -->
     <string name="device_info_protected_single_press">Tap to show info</string>
 
+    <!-- Blissify -->
+    <string name="blissify_settings_title">Blissify</string>
+    <string name="blissify_settings_summary">Blissify your device!</string>
+
 </resources>

@@ -1,0 +1,2 @@
+# Blissify
+-keep class org.blissroms.blissify.**
