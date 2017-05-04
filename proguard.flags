@@ -13,6 +13,8 @@
     *;
 }
 
+-keep class com.blissroms.blissify.**
+
 -keep class * extends com.android.settings.core.TogglePreferenceController {
     *;
 }
