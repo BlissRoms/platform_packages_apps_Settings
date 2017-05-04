@@ -3292,6 +3292,19 @@
                 android:value="com.android.settings.gestures.GlobalActionsPanelSettings" />
         </activity>
 
+        <!-- Blissify -->
+        <activity android:name=".Settings$BlissifySettingsActivity"
+            android:label="@string/blissify_settings_title"
+            android:icon="@drawable/ic_dashboard_blissify"
+            android:parentActivityName="com.android.settings">
+            <intent-filter android:priority="31">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.blissroms.blissify.Blissify" />
+        </activity>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
