@@ -205,6 +205,8 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
+import org.blissroms.blissify.Blissify;
+ 
 public class SettingsGateway {
 
     /**
@@ -398,6 +400,7 @@ public class SettingsGateway {
             CellularSecuritySettingsFragment.class.getName(),
             AccessibilityHearingAidsFragment.class.getName(),
             HearingDevicePairingFragment.class.getName(),
+            Blissify.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -444,5 +447,6 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
+            Settings.BlissifySettingsActivity.class.getName(),
     };
 }
