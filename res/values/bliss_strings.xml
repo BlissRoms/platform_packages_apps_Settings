@@ -68,4 +68,8 @@
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Screen refresh rate</string>
 
+    <!-- Blissify -->
+    <string name="blissify_settings_title">Blissify</string>
+    <string name="blissify_settings_summary">Blissify your device!</string>
+
 </resources>
