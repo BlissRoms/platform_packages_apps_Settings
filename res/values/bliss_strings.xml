@@ -65,4 +65,8 @@
     <string name="package_version">Package version</string>
     <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
 
+    <!-- Blissify -->
+    <string name="blissify_settings_title">Blissify</string>
+    <string name="blissify_settings_summary">Blissify your device!</string>
+
 </resources>
