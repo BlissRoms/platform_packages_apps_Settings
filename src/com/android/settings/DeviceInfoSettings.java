@@ -43,8 +43,6 @@ import com.android.settings.search.Index;
 import com.android.settings.search.Indexable;
 import com.android.settingslib.DeviceInfoUtils;
 import com.android.settingslib.RestrictedLockUtils;
-import com.android.internal.os.RegionalizationEnvironment;
-import com.android.internal.os.IRegionalizationService;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -75,12 +73,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
-    private static final String KEY_MBN_VERSION = "mbn_version";
-    private static final String PROPERTY_MBN_VERSION = "persist.mbn.version";
-    private static final String KEY_QGP_VERSION = "qgp_version";
-    private static final String PROPERTY_QGP_VERSION = "persist.qgp.version";
-    private static final String MBN_VERSION_PATH = "/persist/speccfg/mbnversion";
-    private static final String QGP_VERSION_PATH = "/persist/speccfg/devicetype";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -94,7 +86,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private boolean mFunDisallowedBySystem;
     private EnforcedAdmin mDebuggingFeaturesDisallowedAdmin;
     private boolean mDebuggingFeaturesDisallowedBySystem;
-    private IRegionalizationService mRegionalizationService = null;
 
     @Override
     protected int getMetricsCategory() {
@@ -131,22 +122,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setStringSummary(KEY_DEVICE_MODEL, Build.MODEL);
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
-        //setValueSummary(KEY_QGP_VERSION, PROPERTY_QGP_VERSION);
-        // Remove QGP Version if property is not present
-        //removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_QGP_VERSION,
-        //        PROPERTY_QGP_VERSION);
-        String mQGPVersion = getQGPVersionValue();
-        setStringSummary(KEY_QGP_VERSION, mQGPVersion);
-        if(TextUtils.isEmpty(mQGPVersion)){
-            getPreferenceScreen().removePreference(findPreference(KEY_QGP_VERSION));
-        }
         findPreference(KEY_KERNEL_VERSION).setSummary(DeviceInfoUtils.customizeFormatKernelVersion(
                 getResources().getBoolean(R.bool.def_hide_kernel_version_name)));
-        String mMbnVersion = getMBNVersionValue();
-        setStringSummary(KEY_MBN_VERSION, mMbnVersion);
-        if(TextUtils.isEmpty(mMbnVersion)){
-            getPreferenceScreen().removePreference(findPreference(KEY_MBN_VERSION));
-        }
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
@@ -403,53 +380,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         }
     }
 
-    private String getMBNVersionValue() {
-        String mVersion = null;
-
-        if (RegionalizationEnvironment.isSupported()) {
-            mRegionalizationService = RegionalizationEnvironment.getRegionalizationService();
-        }
-        if(mRegionalizationService != null){
-            try{
-                if(!mRegionalizationService.checkFileExists(MBN_VERSION_PATH))
-                    return null;
-                if(mRegionalizationService.readFile(MBN_VERSION_PATH, "").size() > 0){
-                    mVersion = mRegionalizationService.readFile(MBN_VERSION_PATH, "").get(0);
-                }
-                Log.d(LOG_TAG,"read MBNVersion="+mVersion);
-            }catch (Exception e) {
-                Log.e(LOG_TAG, "IOException:"+ e.getMessage());
-            }
-        }
-        return mVersion;
-    }
-
-    private String getQGPVersionValue() {
-        String mVersion = null;
-        String mQGPString = null;
-        List<String> mContents = null;
-        if (RegionalizationEnvironment.isSupported()) {
-            mRegionalizationService = RegionalizationEnvironment.getRegionalizationService();
-        }
-        if(mRegionalizationService != null){
-            try{
-                if(!mRegionalizationService.checkFileExists(QGP_VERSION_PATH))
-                    return null;
-                mContents = mRegionalizationService.readFile(QGP_VERSION_PATH, null);
-                if(!(mContents.size() > 1))
-                    return null;
-                mQGPString = mContents.get(1);
-                if (!mQGPString.startsWith("qgpversion=")) {
-                    return null;
-                }
-                mVersion = mQGPString.substring("qgpversion=".length());
-                Log.d(LOG_TAG,"read QGPVersion="+mVersion);
-            }catch (Exception e) {
-                Log.e(LOG_TAG, "IOException:"+ e.getMessage());
-            }
-        }
-        return mVersion;
-    }
     private void setValueSummary(String preference, String property) {
         try {
             findPreference(preference).setSummary(
