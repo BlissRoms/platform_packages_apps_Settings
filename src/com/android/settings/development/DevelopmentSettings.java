@@ -233,7 +233,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private static final String KEY_CONVERT_FBE = "convert_to_file_encryption";
 
-    private static final String OTA_DISABLE_AUTOMATIC_UPDATE_KEY = "ota_disable_automatic_update";
+    //private static final String OTA_DISABLE_AUTOMATIC_UPDATE_KEY = "ota_disable_automatic_update";
 
     private static final int RESULT_DEBUG_APP = 1000;
     private static final int RESULT_MOCK_LOCATION_APP = 1001;
@@ -293,7 +293,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private ListPreference mBluetoothSelectA2dpChannelMode;
     private ListPreference mBluetoothSelectA2dpLdacPlaybackQuality;
 
-    private SwitchPreference mOtaDisableAutomaticUpdate;
+    //private SwitchPreference mOtaDisableAutomaticUpdate;
     private SwitchPreference mWifiAllowScansWithTraffic;
     private SwitchPreference mStrictMode;
     private SwitchPreference mPointerLocation;
@@ -357,6 +357,9 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private BugReportPreferenceController mBugReportController;
     private BugReportInPowerPreferenceController mBugReportInPowerController;
     private TelephonyMonitorPreferenceController mTelephonyMonitorController;
+
+    //Custom
+    private boolean mOtaDisabledOnce = false;
 
     public DevelopmentSettings() {
         super(UserManager.DISALLOW_DEBUGGING_FEATURES);
@@ -554,7 +557,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             removePreference(KEY_CONVERT_FBE);
         }
 
-        mOtaDisableAutomaticUpdate = findAndInitSwitchPref(OTA_DISABLE_AUTOMATIC_UPDATE_KEY);
+        //mOtaDisableAutomaticUpdate = findAndInitSwitchPref(OTA_DISABLE_AUTOMATIC_UPDATE_KEY);
 
         mColorModePreference = (ColorModePreference) findPreference(KEY_COLOR_MODE);
         mColorModePreference.updateCurrentAndSupported();
@@ -571,6 +574,19 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         } else {
             removePreference(COLOR_TEMPERATURE_KEY);
             mColorTemperaturePreference = null;
+        }
+
+        /* With this commit we are removing the user switch, but this is a System API and as Google
+            says in the original commit this value is set internally (and its code is within Google services too).
+            Indeed the related frameworks base commit just publishes the String, but the main code is
+            somewhere else.
+            So, to be sure the automatic update function is really kept disabled, we are forcing it to disabled
+            (it means we are enabling the "disable automatic ota" feature) at least once in the onCreate method.*/
+        final ContentResolver cr = getActivity().getContentResolver();
+        if (!mOtaDisabledOnce &&
+                (Settings.Global.getInt(cr, Settings.Global.OTA_DISABLE_AUTOMATIC_UPDATE, 0) != 1)) {
+            Settings.Global.putInt(cr, Settings.Global.OTA_DISABLE_AUTOMATIC_UPDATE, 1);
+            mOtaDisabledOnce = true;
         }
 
         addDashboardCategoryPreferences();
@@ -800,7 +816,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         updateShowAllANRsOptions();
         updateShowNotificationChannelWarningsOptions();
         mVerifyAppsOverUsbController.updatePreference();
-        updateOtaDisableAutomaticUpdateOptions();
+        //updateOtaDisableAutomaticUpdateOptions();
         updateBugreportOptions();
         updateForceRtlOptions();
         updateLogdSizeValues();
@@ -1002,23 +1018,23 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }
     }
 
-    private void updateOtaDisableAutomaticUpdateOptions() {
+    //private void updateOtaDisableAutomaticUpdateOptions() {
         // We use the "disabled status" in code, but show the opposite text
         // "Automatic system updates" on screen. So a value 0 indicates the
         // automatic update is enabled.
-        updateSwitchPreference(mOtaDisableAutomaticUpdate, Settings.Global.getInt(
-                getActivity().getContentResolver(),
-                Settings.Global.OTA_DISABLE_AUTOMATIC_UPDATE, 0) != 1);
-    }
+    //    updateSwitchPreference(mOtaDisableAutomaticUpdate, Settings.Global.getInt(
+    //            getActivity().getContentResolver(),
+    //            Settings.Global.OTA_DISABLE_AUTOMATIC_UPDATE, 0) != 1);
+    //}
 
-    private void writeOtaDisableAutomaticUpdateOptions() {
+    //private void writeOtaDisableAutomaticUpdateOptions() {
         // We use the "disabled status" in code, but show the opposite text
         // "Automatic system updates" on screen. So a value 0 indicates the
         // automatic update is enabled.
-        Settings.Global.putInt(getActivity().getContentResolver(),
-                Settings.Global.OTA_DISABLE_AUTOMATIC_UPDATE,
-                mOtaDisableAutomaticUpdate.isChecked() ? 0 : 1);
-    }
+    //    Settings.Global.putInt(getActivity().getContentResolver(),
+    //            Settings.Global.OTA_DISABLE_AUTOMATIC_UPDATE,
+    //            mOtaDisableAutomaticUpdate.isChecked() ? 0 : 1);
+    //}
 
     private static boolean showEnableOemUnlockPreference(Context context) {
         return context.getSystemService(Context.OEM_LOCK_SERVICE) != null;
@@ -2478,8 +2494,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             startActivityForResult(intent, RESULT_DEBUG_APP);
         } else if (preference == mWaitForDebugger) {
             writeDebuggerOptions();
-        } else if (preference == mOtaDisableAutomaticUpdate) {
-            writeOtaDisableAutomaticUpdateOptions();
+        //} else if (preference == mOtaDisableAutomaticUpdate) {
+        //    writeOtaDisableAutomaticUpdateOptions();
         } else if (preference == mStrictMode) {
             writeStrictModeVisualOptions();
         } else if (preference == mPointerLocation) {
