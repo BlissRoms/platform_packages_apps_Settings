@@ -26,9 +26,12 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.backup.BackupSettingsActivityPreferenceController;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.deviceinfo.UpdatePreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+import com.android.settingslib.core.AbstractPreferenceController;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -80,6 +83,16 @@ public class SystemDashboardFragment extends DashboardFragment {
             }
         }
         return visibleCount;
+    }
+
+    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+        return buildPreferenceControllers(context);
+    }
+
+    private static List<AbstractPreferenceController> buildPreferenceControllers(Context context) {
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new UpdatePreferenceController(context));
+        return controllers;
     }
 
     /**
