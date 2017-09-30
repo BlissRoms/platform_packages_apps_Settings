@@ -118,6 +118,12 @@
         <Preference android:key="dsu_loader"
                     android:title="@string/dsu_loader_title" />
 
+    <com.bliss.support.preferences.GlobalSettingSwitchPreference
+            android:key="show_cpu_overlay"
+            android:title="@string/show_cpu_info"
+            android:summary="@string/show_cpu_info_summary" 
+            android:defaultValue="false" />
+
         <Preference
             android:key="demo_mode"
             android:title="@string/demo_mode">
