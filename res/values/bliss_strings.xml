@@ -73,4 +73,9 @@
     <!-- Home button wake -->
     <string name="home_wake_button_title">Home button wake-up</string>
     <string name="home_wake_button_summary">Enable home button to waking up screen</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Show CPU info</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 </resources>
