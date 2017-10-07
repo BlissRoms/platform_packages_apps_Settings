@@ -66,6 +66,14 @@
         android:fragment="com.android.settings.bliss.health.ChargingControlSettings"
         settings:controller="com.android.settings.bliss.notificationlight.ChargingControlPreferenceController" />
 
+    <!-- Battery light -->
+    <Preference
+        android:key="battery_lights"
+        android:title="@string/battery_light_title"
+        android:summary="@string/battery_light_summary"
+        android:fragment="com.android.settings.bliss.notificationlight.BatteryLightSettings"
+        settings:controller="com.android.settings.bliss.notificationlight.BatteryLightPreferenceController" />
+
     <SwitchPreferenceCompat
         android:key="battery_percentage"
         android:title="@string/battery_percentage"
