@@ -14,17 +14,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
+<!-- This file only contains custom attribute and style definition for preferences -->
+<!-- Things unrelated to preference framework UI customization should go to other styles files -->
 <resources>
+    <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.SettingsBase">
+        <item name="customPreferenceStyle">@style/CustomPreference</item>
+    </style>
 
-    <attr name="customPreferenceStyle" format="reference" />
-
-    <!-- Interval seekbar -->
-    <declare-styleable name="IntervalSeekBar">
-        <attr name="minI" format="float" />
-        <attr name="maxI" format="float" />
-        <attr name="defaultValuePure" format="float" />
-        <attr name="digits" format="integer" />
-    </declare-styleable>
-
+    <style name="CustomPreference" parent="Preference.SettingsBase">
+        <item name="allowDividerAbove">false</item>
+    </style>
 </resources>
-
