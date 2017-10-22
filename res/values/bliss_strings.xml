@@ -32,6 +32,9 @@
 
     <!-- Charging vibration -->
     <string name="charging_vibro_title">Charging vibration</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
     
     <!-- Bliss Updater -->
     <string name="bliss_updater_title">Bliss Updater</string>
