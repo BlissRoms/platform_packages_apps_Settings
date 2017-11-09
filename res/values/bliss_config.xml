@@ -29,4 +29,7 @@
     <string name="config_settingsintelligence_suggestions_class" translatable="false">
         com.android.settings.intelligence.suggestions.SuggestionService
     </string>
+
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage" translatable="false"></string>
 </resources>
