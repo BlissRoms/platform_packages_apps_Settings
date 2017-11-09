@@ -21,4 +21,7 @@
 
     <bool name="config_show_color_mode">true</bool>
 
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage" translatable="false"></string>
+
 </resources>
