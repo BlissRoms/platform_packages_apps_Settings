@@ -24,4 +24,5 @@
     <string name="value_equals_default">def</string>
     <string name="show_light_on_zen_title">Blink during Do Not Disturb</string>
 
+    <string name="select_sim_for_sms">Select a SIM for SMS</string>
 </resources>
