@@ -22,9 +22,9 @@ import android.support.v7.preference.PreferenceScreen;
 import android.text.TextUtils;
 
 import com.android.settings.R;
-import com.android.settings.core.PreferenceController;
+import com.android.settingslib.core.AbstractPreferenceController;
 
-public class BlissVersionPreferenceController extends PreferenceController {
+public class BlissVersionPreferenceController extends AbstractPreferenceController {
 
     private static final String PROPERTY_BLISS_VERSION = "ro.bliss.version";
     private static final String KEY_BLISS_VERSION = "bliss_version";
