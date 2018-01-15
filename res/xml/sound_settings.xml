@@ -87,6 +87,14 @@
         android:order="-140"
         settings:controller="com.android.settings.notification.NotificationVolumePreferenceController"/>
 
+    <!-- Link ringtone and notification volumes -->
+    <com.bliss.support.preferences.SecureSettingSwitchPreference
+        android:key="volume_link_notification"
+        android:title="@string/volume_link_notification_title"
+        android:defaultValue="true"
+        android:order="-138"
+        settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
+
     <!-- Increasing ring -->
     <com.bliss.support.preferences.SystemSettingSwitchPreference
         android:key="increasing_ring"
