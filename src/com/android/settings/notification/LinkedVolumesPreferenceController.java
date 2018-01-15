@@ -19,25 +19,15 @@ package com.android.settings.notification;
 import android.content.Context;
 
 import com.android.settings.Utils;
-import com.android.settings.core.PreferenceControllerMixin;
-import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settings.core.BasePreferenceController;
 
-public class LinkedVolumesPreferenceController extends AbstractPreferenceController
-        implements PreferenceControllerMixin {
-
-    private static final String KEY_VOLUME_LINK_NOTIFICATION = "volume_link_notification";
-
-    public LinkedVolumesPreferenceController(Context context) {
-        super(context);
+public class LinkedVolumesPreferenceController extends BasePreferenceController {
+    public LinkedVolumesPreferenceController(Context context, String key) {
+        super(context, key);
     }
 
     @Override
-    public String getPreferenceKey() {
-        return KEY_VOLUME_LINK_NOTIFICATION;
-    }
-
-    @Override
-    public boolean isAvailable() {
-        return Utils.isVoiceCapable(mContext);
+    public int getAvailabilityStatus() {
+        return Utils.isVoiceCapable(mContext) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 }
