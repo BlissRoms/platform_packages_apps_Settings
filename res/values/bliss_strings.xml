@@ -156,4 +156,7 @@
     <string name="notification_guts_kill_app_button_title">Force stop button</string>
     <string name="notification_guts_kill_app_button_summary">Show force stop button in the notification\'s longpress menu</string>
 
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
+
 </resources>
