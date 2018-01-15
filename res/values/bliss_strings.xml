@@ -43,5 +43,8 @@
 
     <!-- Volume settings - Volume adjustment sound -->
     <string name="volume_adjust_sounds_title">Volume key sounds</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
     
 </resources>
