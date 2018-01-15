@@ -72,4 +72,6 @@
     <string name="blissify_settings_title">Blissify</string>
     <string name="blissify_settings_summary">Blissify your device!</string>
 
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
 </resources>
