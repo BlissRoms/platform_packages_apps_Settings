@@ -1445,6 +1445,7 @@ public class InstalledAppDetails extends AppInfoBase
             //Log.d(LOG_TAG, "Got broadcast response: Restart status for "
             //        + mAppEntry.info.packageName + " " + enabled);
             updateForceStopButton(enabled);
+            refreshUi();
         }
     };
 
