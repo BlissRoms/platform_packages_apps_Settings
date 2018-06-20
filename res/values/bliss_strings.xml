@@ -26,6 +26,10 @@
     <string name="bliss_device">Bliss device</string>
     <string name="bliss_codename">Bliss Codename</string>
 
+    <!-- Hardware info -->
+    <string name="platform_revision">Platform</string>
+    <string name="total_ram">Total RAM</string>
+
     <!-- Bliss maintainer -->
     <string name="maintainer">Maintainer</string>
     <string name="bliss_maintainer">Unofficial Maintainer</string>
