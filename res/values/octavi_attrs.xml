@@ -23,4 +23,8 @@
         <attr name="digits" format="integer" />
     </declare-styleable>
 
+    <!-- Hardware info -->
+    <string name="platform_revision">Platform</string>
+    <string name="total_ram">Total RAM</string>
+
 </resources>
