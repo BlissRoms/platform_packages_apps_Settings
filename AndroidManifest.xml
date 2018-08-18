@@ -3556,5 +3556,8 @@
                 android:value="com.blissroms.blissify.system.SleepMode" />
         </activity>
 
+        <!-- Hide Apps from Recents (HAFR) -->
+        <activity android:name="com.blissroms.blissify.fragments.navigation.HAFRAppListActivity" />
+
     </application>
 </manifest>
