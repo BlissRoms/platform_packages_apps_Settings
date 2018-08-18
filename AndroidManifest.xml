@@ -3324,6 +3324,10 @@
                 android:value="com.blissroms.blissify.fragments.misc.GamingMode" />
         </activity>
 
+        <!-- So why not make it longer and add Carbon Features? -->
+        <!-- Hide Apps from Recents (HAFR) -->
+        <activity android:name="com.blissroms.blissify.fragments.misc.HAFRAppListActivity" />
+
         <!-- This is the longest AndroidManifest.xml ever. -->
 
     </application>
