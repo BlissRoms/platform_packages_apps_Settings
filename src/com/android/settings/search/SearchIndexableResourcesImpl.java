@@ -104,6 +104,7 @@ import java.util.Set;
 
 import org.omnirom.omnigears.OmniDashboardFragment;
 import org.omnirom.omnigears.ButtonSettings;
+import org.omnirom.omnigears.interfacesettings.StyleSettings;
 import org.omnirom.omnigears.moresettings.MoreSettings;
 
 public class SearchIndexableResourcesImpl implements SearchIndexableResources {
@@ -199,6 +200,7 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(OmniDashboardFragment.class);
         addIndex(ButtonSettings.class);
         addIndex(MoreSettings.class);
+        addIndex(StyleSettings.class);
     }
 
     @Override
