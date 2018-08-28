@@ -69,7 +69,7 @@
     <PreferenceCategory
         android:key="channel_advanced"
         android:order="50"
-        settings:initialExpandedChildrenCount="0">
+        settings:initialExpandedChildrenCount="8">
 
         <!-- Default ringtone -->
         <com.android.settings.notification.app.NotificationSoundPreference
