@@ -17,4 +17,7 @@
     <string name="app_package_name_title">Package</string>
     <string name="app_version_title">Version</string>
 
+    <!-- Vendor security patch level -->
+    <string name="vendor_security_patch">Vendor security patch level</string>
+
 </resources>

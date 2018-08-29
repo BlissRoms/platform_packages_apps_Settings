@@ -53,6 +53,20 @@
 
         <TextView
             style="@style/device_info_dialog_label"
+            android:id="@+id/vendor_security_patch_level_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vendor_security_patch"/>
+        <TextView
+            style="@style/device_info_dialog_value"
+            android:id="@+id/vendor_security_patch_level_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="?android:attr/colorAccent"/>
+
+        <TextView
+            style="@style/device_info_dialog_label"
             android:id="@+id/baseband_version_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
