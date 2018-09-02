@@ -125,6 +125,10 @@
         <attr name="preview" format="reference" />
     </declare-styleable>
 
+    <declare-styleable name="CustomVideoPreference">
+        <attr name="animation" format="reference" />
+    </declare-styleable>
+
     <!-- For AspectRatioFrameLayout -->
     <declare-styleable name="AspectRatioFrameLayout">
         <attr name="aspectRatio" format="float" />
