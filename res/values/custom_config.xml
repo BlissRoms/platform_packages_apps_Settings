@@ -19,4 +19,6 @@
     <!-- Whether USB host mode is supported -->
     <bool name="config_isUsbDataRoleHostSupported">true</bool>
 
+    <bool name="config_show_color_mode">true</bool>
+
 </resources>
