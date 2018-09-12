@@ -8,7 +8,8 @@
 
     <com.android.settingslib.widget.UsageProgressBarPreference
         android:key="battery_header"
-        android:selectable="false"
+        android:order="-8"
+        android:selectable="true"
         android:title="@string/summary_placeholder"
         settings:controller="com.android.settings.fuelgauge.BatteryHeaderPreferenceController" />
 
