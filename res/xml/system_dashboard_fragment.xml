@@ -20,6 +20,12 @@
     android:key="system_dashboard_screen"
     android:title="@string/header_category_system">
 
+    <!-- bliss Logo Header -->
+    <Preference 
+        android:key="bliss_logo"
+        android:order="-500"
+        android:layout="@layout/bliss_logo" />
+
     <Preference
         android:key="language_input_settings"
         android:title="@string/language_settings"
