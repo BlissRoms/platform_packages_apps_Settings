@@ -500,4 +500,8 @@
     <!-- Ambient display -->
     <string name="custom_ambient_display_summary">Configure advanced Ambient display</string>
 
+    <!-- System theme -->
+    <string name="applying_theme_toast">Applying theme, please wait...</string>
+    <string name="theme_applied_toast">Theme applied!</string>
+
 </resources>
