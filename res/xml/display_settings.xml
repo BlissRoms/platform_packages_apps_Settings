@@ -149,6 +149,11 @@
         android:title="@string/tap_to_wake"
         android:summary="@string/tap_to_wake_summary" />
 
+    <com.bliss.support.preferences.SystemSettingSwitchPreference
+        android:key="home_wake_button"
+        android:title="@string/home_wake_button_title"
+        android:summary="@string/home_wake_button_summary" />
+
     <ListPreference
         android:key="theme"
         android:title="@string/device_theme"
