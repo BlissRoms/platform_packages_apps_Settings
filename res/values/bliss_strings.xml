@@ -69,4 +69,8 @@
 
     <!-- Running services -->
     <string name="background_processes_settings_title">Background processes</string>
+
+    <!-- Home button wake -->
+    <string name="home_wake_button_title">Home button wake-up</string>
+    <string name="home_wake_button_summary">Enable home button to waking up screen</string>
 </resources>
