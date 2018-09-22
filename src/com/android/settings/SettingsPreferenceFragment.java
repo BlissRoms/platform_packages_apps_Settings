@@ -69,6 +69,8 @@ import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import java.util.UUID;
 
+import org.blissroms.blissify.preferences.CustomDialogPref;
+
 /**
  * Base class for Settings fragments, with some helper functions and dialog management.
  */
@@ -625,6 +627,9 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
                     .newInstance(preference.getKey());
         } else if (preference instanceof CustomDialogPreferenceCompat) {
             f = CustomDialogPreferenceCompat.CustomPreferenceDialogFragment
+                    .newInstance(preference.getKey());
+        } else if (preference instanceof CustomDialogPref) {
+            f = CustomDialogPref.CustomPreferenceDialogFragment
                     .newInstance(preference.getKey());
         } else if (preference instanceof CustomEditTextPreferenceCompat) {
             f = CustomEditTextPreferenceCompat.CustomPreferenceDialogFragment
