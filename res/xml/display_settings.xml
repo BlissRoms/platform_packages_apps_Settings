@@ -56,6 +56,18 @@
             android:targetClass="@string/config_wallpaper_picker_class" />
     </com.android.settingslib.RestrictedPreference>
 
+    <ListPreference
+        android:key="system_theme_style"
+        android:title="@string/device_theme"
+        android:persistent="false"
+        android:entries="@array/system_theme_style_entries"
+        android:entryValues="@array/system_theme_style_values" />
+
+    <ListPreference
+        android:key="theme"
+        android:title="@string/color_theme"
+        android:summary="@string/summary_placeholder" />
+
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
     <com.android.settings.TimeoutListPreference
         android:key="screen_timeout"
@@ -124,11 +136,6 @@
         android:title="@string/tap_to_wake"
         android:summary="@string/tap_to_wake_summary" />
 
-    <ListPreference
-        android:key="theme"
-        android:title="@string/color_theme"
-        android:summary="@string/summary_placeholder" />
-
     <PreferenceCategory
         android:key="density_category"
 	android:title="@string/density_category">
@@ -155,20 +162,6 @@
             android:key="density"
 	    android:title="@string/developer_smallest_width" />
     </PreferenceCategory>
-
-    <ListPreference
-        android:key="systemui_theme"
-        android:title="@string/device_theme"
-        android:entries="@array/systemui_theme_entries"
-        android:entryValues="@array/systemui_theme_values"
-        settings:controller="com.android.settings.display.SystemUiThemePreferenceController" />
-
-    <ListPreference
-        android:key="system_theme_style"
-        android:title="@string/device_theme"
-        android:persistent="false"
-        android:entries="@array/system_theme_style_entries"
-        android:entryValues="@array/system_theme_style_values" />
 
     <Preference
         android:key="vr_display_pref"
