@@ -116,6 +116,7 @@ public class ConfigureNotificationSettings extends DashboardFragment {
 
         });
         controllers.add(new ZenModePreferenceController(context, lifecycle, KEY_ZEN_MODE));
+        controllers.add(new LessNotificationSoundsController(context));
         return controllers;
     }
 
