@@ -31,6 +31,9 @@
     <!-- Vendor security patch level -->
     <string name="vendor_security_patch">Vendor security patch level</string>
 
+    <!-- Ambient display -->
+    <string name="custom_ambient_display_summary">Configure advanced Ambient display</string>
+
     <!-- Custom light color -->
     <string name="custom_light_title">Light color</string>
     <string name="custom_light_on_time_title">Light ON time during led pulse (ms)</string>

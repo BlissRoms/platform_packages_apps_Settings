@@ -79,4 +79,10 @@ public class AmbientDisplayCustomPreferenceController extends AbstractPreference
     public boolean isAvailable() {
         return Utils.hasAltAmbientDisplay(mContext.getApplicationContext());
     }
+
+    @Override
+    public void updateState(Preference preference) {
+        super.updateState(preference);
+        preference.setSummary(R.string.custom_ambient_display_summary);
+    }
 }
