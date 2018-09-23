@@ -24,6 +24,7 @@ import com.android.internal.hardware.AmbientDisplayConfiguration;
 import com.android.settings.R;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.internal.util.omni.DeviceUtils;
 
 public class AmbientDisplayPreferenceController extends AbstractPreferenceController implements
         PreferenceControllerMixin {
@@ -42,7 +43,7 @@ public class AmbientDisplayPreferenceController extends AbstractPreferenceContro
 
     @Override
     public boolean isAvailable() {
-        return mConfig.available();
+        return mConfig.available() && !DeviceUtils.hasAltAmbientDisplay(mContext.getApplicationContext());
     }
 
     @Override
