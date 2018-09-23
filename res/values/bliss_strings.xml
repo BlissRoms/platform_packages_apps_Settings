@@ -497,4 +497,7 @@
     <string name="bliss_version">Version</string>
     <string name="bliss_type">Build type</string>
 
+    <!-- Ambient display -->
+    <string name="custom_ambient_display_summary">Configure advanced Ambient display</string>
+
 </resources>
