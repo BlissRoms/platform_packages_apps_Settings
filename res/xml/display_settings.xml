@@ -130,6 +130,23 @@
         android:summary="@string/summary_placeholder" />
 
     <PreferenceCategory
+        android:key="theme_category"
+        android:title="@string/theme_category_title">
+
+        <ListPreference
+            android:key="system_theme_style"
+            android:title="@string/device_theme"
+            android:entries="@array/system_theme_style_entries"
+            android:entryValues="@array/system_theme_style_values"
+            android:persistent="false" />
+
+        <Preference
+            android:key="accent_picker"
+            android:title="@string/theme_accent_picker_title" />
+
+     </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="density_category"
 	android:title="@string/density_category">
 
@@ -155,13 +172,6 @@
             android:key="density"
 	    android:title="@string/developer_smallest_width" />
     </PreferenceCategory>
-
-    <ListPreference
-        android:key="system_theme_style"
-        android:title="@string/device_theme"
-        android:entries="@array/system_theme_style_entries"
-        android:entryValues="@array/system_theme_style_values"
-        android:persistent="false" />
 
     <Preference
         android:key="vr_display_pref"
