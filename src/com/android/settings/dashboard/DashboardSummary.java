@@ -19,14 +19,11 @@ package com.android.settings.dashboard;
 import android.app.Activity;
 import android.app.LoaderManager;
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.service.settings.suggestions.Suggestion;
 import android.support.annotation.VisibleForTesting;
 import android.support.annotation.WorkerThread;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -35,7 +32,6 @@ import android.view.ViewGroup;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
-import com.android.settings.SettingsActivity;
 import com.android.settings.core.InstrumentedFragment;
 import com.android.settings.dashboard.conditional.Condition;
 import com.android.settings.dashboard.conditional.ConditionManager;
@@ -71,7 +67,7 @@ public class DashboardSummary extends InstrumentedFragment
     private DashboardAdapter mAdapter;
     private SummaryLoader mSummaryLoader;
     private ConditionManager mConditionManager;
-    private GridLayoutManager mLayoutManager;
+    private LinearLayoutManager mLayoutManager;
     private SuggestionControllerMixin mSuggestionControllerMixin;
     private DashboardFeatureProvider mDashboardFeatureProvider;
     @VisibleForTesting
@@ -80,11 +76,6 @@ public class DashboardSummary extends InstrumentedFragment
 
     private DashboardCategory mStagingCategory;
     private List<Suggestion> mStagingSuggestions;
-
-    // omni additions start
-    private int mNumColumns = 1;
-    private SharedPreferences.OnSharedPreferenceChangeListener mAppPreferencesListener;
-    private SharedPreferences mAppPreferences;
 
     @Override
     public int getMetricsCategory() {
@@ -130,15 +121,6 @@ public class DashboardSummary extends InstrumentedFragment
             mIsOnCategoriesChangedCalled =
                     savedInstanceState.getBoolean(STATE_CATEGORIES_CHANGE_CALLED);
         }
-        mAppPreferencesListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
-            @Override
-            public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-                updateSettings();
-            }
-        };
-        mAppPreferences = getContext().getSharedPreferences(SettingsActivity.APP_PREFERENCES_NAME,
-                Context.MODE_PRIVATE);
-
         if (DEBUG_TIMING) {
             Log.d(TAG, "onCreate took " + (System.currentTimeMillis() - startTime) + " ms");
         }
@@ -147,9 +129,6 @@ public class DashboardSummary extends InstrumentedFragment
     @Override
     public void onDestroy() {
         mSummaryLoader.release();
-        mAppPreferences.unregisterOnSharedPreferenceChangeListener(
-                mAppPreferencesListener);
-        mAppPreferencesListener = null;
         super.onDestroy();
     }
 
@@ -157,8 +136,7 @@ public class DashboardSummary extends InstrumentedFragment
     public void onResume() {
         long startTime = System.currentTimeMillis();
         super.onResume();
-        mAppPreferences.registerOnSharedPreferenceChangeListener(
-                mAppPreferencesListener);
+
         ((SettingsDrawerActivity) getActivity()).addCategoryListener(this);
         mSummaryLoader.setListening(true);
         final int metricsCategory = getMetricsCategory();
@@ -219,13 +197,7 @@ public class DashboardSummary extends InstrumentedFragment
         long startTime = System.currentTimeMillis();
         final View root = inflater.inflate(R.layout.dashboard, container, false);
         mDashboard = root.findViewById(R.id.dashboard_container);
-        mLayoutManager = new GridLayoutManager(getContext(), mNumColumns);
-        mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-            @Override
-            public int getSpanSize(int position) {
-                return mAdapter.isPositionFullSpan(position) ? mNumColumns : 1;
-            }
-        });
+        mLayoutManager = new LinearLayoutManager(getContext());
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         if (bundle != null) {
             int scrollPosition = bundle.getInt(STATE_SCROLL_POSITION);
@@ -239,8 +211,6 @@ public class DashboardSummary extends InstrumentedFragment
                 mConditionManager.getConditions(), mSuggestionControllerMixin, getLifecycle());
         mDashboard.setAdapter(mAdapter);
         mSummaryLoader.setSummaryConsumer(mAdapter);
-        updateSettings();
-
         ActionBarShadowController.attachToRecyclerView(
                 getActivity().findViewById(R.id.search_bar_container), getLifecycle(), mDashboard);
         rebuildUI();
@@ -321,17 +291,5 @@ public class DashboardSummary extends InstrumentedFragment
             Log.d(TAG, "Suggestion NOT loaded, delaying setCategory by " + MAX_WAIT_MILLIS + "ms");
             mHandler.postDelayed(() -> mAdapter.setCategory(mStagingCategory), MAX_WAIT_MILLIS);
         }
-    }
-
-    private void updateSettings() {
-        boolean hideSummary = mAppPreferences.getBoolean(SettingsActivity.KEY_HIDE_SUMMARY, false);
-        int numColumns = mAppPreferences.getInt(SettingsActivity.KEY_COLUMNS_COUNT, 1);
-        boolean isLandscape = getResources().getConfiguration().orientation
-                == Configuration.ORIENTATION_LANDSCAPE;
-        // always show one column more in landscape
-        mNumColumns = isLandscape ? numColumns + 1 : numColumns;
-        mLayoutManager.setSpanCount(mNumColumns);
-        mAdapter.setHideSummary(hideSummary);
-        mAdapter.notifyDataSetChanged();
     }
 }
