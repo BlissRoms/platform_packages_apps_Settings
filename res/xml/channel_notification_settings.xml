@@ -17,7 +17,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    xmlns:omnilib="http://schemas.android.com/apk/res-auto"
+    xmlns:blissify="http://schemas.android.com/apk/res-auto"
     android:key="channel_settings"
     android:title="@string/notification_channel_title" >
 
@@ -96,12 +96,12 @@
             settings:useAdditionalSummary="true"/>
 
         <!-- Custom led color -->
-        <org.omnirom.omnilib.preference.ColorSelectPreference
+        <com.android.settings.bliss.preference.ColorPickerPreference
             android:key="custom_light"
             android:dependency="lights"
             android:order="17"
             android:title="@string/custom_light_title"
-            omnilib:ledPreview="true" />
+            ledPreview="true" />
 
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="show_light_on_zen"
@@ -109,23 +109,23 @@
             android:order="18"
             android:title="@string/show_light_on_zen_title"/>
 
-        <org.omnirom.omnilib.preference.SeekBarPreference
+        <com.android.settings.bliss.preference.SystemSettingSeekBarPreference
             android:key="custom_light_on_time"
             android:dependency="lights"
             android:title="@string/custom_light_on_time_title"
             android:order="19"
             android:max="5000"
-            omnilib:min="0"
-            omnilib:interval="100" />
+            blissify:min="0"
+            blissify:interval="100" />
 
-        <org.omnirom.omnilib.preference.SeekBarPreference
+        <com.android.settings.bliss.preference.SystemSettingSeekBarPreference
             android:key="custom_light_off_time"
             android:dependency="lights"
             android:title="@string/custom_light_off_time_title"
             android:order="20"
             android:max="5000"
-            omnilib:min="0"
-            omnilib:interval="100" />
+            blissify:min="0"
+            blissify:interval="100" />
 
         <Preference
             android:key="app_link"

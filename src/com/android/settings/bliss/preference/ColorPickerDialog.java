@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package net.margaritov.preference.colorpicker;
+package com.android.settings.bliss.preference;
 
 import android.app.AlertDialog;
 import android.app.NotificationManager;
@@ -30,7 +30,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import com.blissroms.blissify.R;
+import com.android.settings.R;
 
 public class ColorPickerDialog extends AlertDialog implements ColorPickerView.OnColorChangedListener, View.OnClickListener {
 

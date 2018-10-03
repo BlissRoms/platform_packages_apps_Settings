@@ -28,7 +28,7 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 
-import org.omnirom.omnilib.preference.ColorSelectPreference;
+import com.android.settings.bliss.preference.ColorPickerPreference;
 
 public class CustomLightsPreferenceController extends NotificationPreferenceController
         implements PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
@@ -61,12 +61,12 @@ public class CustomLightsPreferenceController extends NotificationPreferenceCont
     public void updateState(Preference preference) {
         if (mChannel != null) {
              //light color pref
-            ColorSelectPreference mCustomLight = (ColorSelectPreference) preference;
+            ColorPickerPreference mCustomLight = (ColorPickerPreference) preference;
             int defaultLightColor = mContext.getResources()
                     .getColor(com.android.internal.R.color.config_defaultNotificationColor);
-            mCustomLight.setColor(defaultLightColor);
+            mCustomLight.setNewPreviewColor(defaultLightColor);
             mLedColor = (mChannel.getLightColor() != 0 ? mChannel.getLightColor() : defaultLightColor);
-            mCustomLight.setColor(mLedColor);
+            mCustomLight.setNewPreviewColor(mLedColor);
         }
     }
 

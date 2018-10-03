@@ -28,7 +28,7 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 
-import org.omnirom.omnilib.preference.SeekBarPreference;
+import com.android.settings.bliss.preference.SystemSettingSeekBarPreference;
 
 public class CustomLightOffTimePreferenceController extends NotificationPreferenceController
         implements PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
@@ -64,7 +64,7 @@ public class CustomLightOffTimePreferenceController extends NotificationPreferen
     public void updateState(Preference preference) {
         if (mChannel != null) {
             //light off time pref
-            SeekBarPreference mLightOffTime = (SeekBarPreference) preference;
+            SystemSettingSeekBarPreference mLightOffTime = (SystemSettingSeekBarPreference) preference;
             int lightOff = mChannel.getLightOffTime();
             int defaultLightOff = mContext.getResources().getInteger(
                     com.android.internal.R.integer.config_defaultNotificationLedOff);

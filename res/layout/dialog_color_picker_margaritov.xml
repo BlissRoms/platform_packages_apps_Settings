@@ -24,7 +24,7 @@
     android:padding="@dimen/alert_dialog_padding_material"
     android:orientation="vertical">
 
-    <net.margaritov.preference.colorpicker.ColorPickerView
+    <com.android.settings.bliss.preference.ColorPickerView
         android:id="@+id/color_picker_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
         android:orientation="horizontal"
         android:layout_marginBottom="10dp">
 
-        <net.margaritov.preference.colorpicker.ColorPickerPanelView
+        <com.android.settings.bliss.preference.ColorPickerPanelView
             android:id="@+id/old_color_panel"
             android:layout_width="0px"
             android:layout_height="fill_parent"
@@ -92,7 +92,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp" />
 
-        <net.margaritov.preference.colorpicker.ColorPickerPanelView
+        <com.android.settings.bliss.preference.ColorPickerPanelView
             android:id="@+id/new_color_panel"
             android:layout_width="0px"
             android:layout_height="wrap_content"

@@ -19,6 +19,7 @@
 
     <declare-styleable name="SeekBarPreference">
         <!-- preference -->
+        <attr name="min" format="integer" />
         <attr name="unitsLeft" format="string|reference" />
         <attr name="unitsRight" format="string|reference" />
         <attr name="interval" format="integer" />
