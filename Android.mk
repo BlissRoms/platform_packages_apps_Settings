@@ -20,7 +20,6 @@ LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../Blissify/src)
-LOCAL_SRC_FILES += $(call all-java-files-under, ../OmniGears/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     $(ANDROID_SUPPORT_DESIGN_TARGETS) \
@@ -52,12 +51,10 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
-    --extra-packages com.blissroms.blissify \
-    --extra-packages org.omnirom.omnigears
+    --extra-packages com.blissroms.blissify
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
-    packages/apps/Blissify/res \
-    packages/apps/OmniGears/res
+    packages/apps/Blissify/res
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
@@ -67,7 +64,6 @@ endif
 
 include frameworks/opt/setupwizard/library/common-gingerbread.mk
 include frameworks/base/packages/SettingsLib/common.mk
-include packages/apps/OmniLib/common.mk
 
 include $(BUILD_PACKAGE)
 

@@ -178,6 +178,5 @@ public class Settings extends SettingsActivity {
     public static class BlissifyActivity extends SettingsActivity { /* empty */ }
 
     // omni additions start
-    public static class OmniDashboardActivity extends SettingsActivity {}
     public static class SwipeToNotificationSuggestionActivity extends SettingsActivity { /* empty */ }
 }

@@ -139,16 +139,6 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.blissroms.blissify.BlissifySettings;
 
-import org.omnirom.omnigears.OmniDashboardFragment;
-import org.omnirom.omnigears.ButtonSettings;
-import org.omnirom.omnigears.GestureSettings;
-import org.omnirom.omnigears.batterylight.BatteryLightSettings;
-import org.omnirom.omnigears.interfacesettings.BarsSettings;
-import org.omnirom.omnigears.interfacesettings.LockscreenItemSettings;
-import org.omnirom.omnigears.interfacesettings.StyleSettings;
-import org.omnirom.omnigears.moresettings.MoreSettings;
-import org.omnirom.omnigears.moresettings.OmniJawsSettings;
-
 public class SettingsGateway {
 
     /**
@@ -276,16 +266,6 @@ public class SettingsGateway {
             
             BlissifySettings.class.getName(),
 
-            // omni additions start
-            OmniDashboardFragment.class.getName(),
-            StyleSettings.class.getName(),
-            ButtonSettings.class.getName(),
-            MoreSettings.class.getName(),
-            GestureSettings.class.getName(),
-            BarsSettings.class.getName(),
-            BatteryLightSettings.class.getName(),
-            OmniJawsSettings.class.getName(),
-            LockscreenItemSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -327,7 +307,5 @@ public class SettingsGateway {
             
             Settings.BlissifyActivity.class.getName(),
             
-            // Home page > OmniGears
-            Settings.OmniDashboardActivity.class.getName(),
     };
 }
