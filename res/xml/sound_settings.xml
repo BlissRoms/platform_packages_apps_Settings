@@ -94,6 +94,12 @@
         android:order="-135"
         settings:controller="com.android.settings.notification.IncreasingRingVolumePreferenceController" />
 
+    <!-- Volume Steps -->
+    <PreferenceScreen
+        android:key="volume_steps"
+        android:title="@string/volume_steps_title"
+        android:fragment="com.android.settings.bliss.VolumeSteps" />
+
     <!-- Also vibrate for calls -->
     <SwitchPreference
         android:key="vibrate_when_ringing"
