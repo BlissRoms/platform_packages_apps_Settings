@@ -12,6 +12,8 @@
 -keep class * extends com.android.settings.core.TogglePreferenceController {
     *;
 }
+ # Blissify
+-keep class com.blissroms.blissify.**
 
 # We want to keep methods in Activity that could be used in the XML attribute onClick.
 -keepclassmembers class * extends android.app.Activity {
@@ -52,4 +54,3 @@
     public static ** SUMMARY_PROVIDER_FACTORY;
 }
 -keep class android.support.v4.app.CoreComponentFactory
--keep class com.blissroms.blissify.**

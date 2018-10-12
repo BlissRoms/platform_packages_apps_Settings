@@ -176,6 +176,7 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
 
     public static class BlissifyActivity extends SettingsActivity { /* empty */ }
+    public static class OmniJawsSettingsActivity extends SettingsActivity { /* empty */ }
 
     // omni additions start
     public static class SwipeToNotificationSuggestionActivity extends SettingsActivity { /* empty */ }

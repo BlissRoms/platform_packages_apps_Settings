@@ -33,8 +33,10 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-support-v7-cardview \
     android-support-v7-preference \
     android-support-v7-recyclerview \
+    android-support-design \
     android-support-v14-preference \
     android-support-transition \
+    android-support-v7-palette \
 
 LOCAL_JAVA_LIBRARIES := \
     bouncycastle \
@@ -48,13 +50,22 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     jsr305 \
     settings-logtags \
 
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+    frameworks/support/v7/preference/res \
+    frameworks/support/v14/preference/res \
+    frameworks/support/v7/appcompat/res \
+    frameworks/support/v7/recyclerview/res \
+    packages/apps/Blissify/res
+
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
+    --extra-packages android.support.v7.preference \
+    --extra-packages android.support.v14.preference \
+    --extra-packages android.support.v17.preference \
+    --extra-packages android.support.v7.appcompat \
+    --extra-packages android.support.v7.recyclerview \
     --extra-packages com.blissroms.blissify
-
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
-    packages/apps/Blissify/res
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
