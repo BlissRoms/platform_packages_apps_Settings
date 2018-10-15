@@ -3353,6 +3353,10 @@
 
         <!-- This is the longest AndroidManifest.xml ever. -->
 
+        <!-- So why not make it longer and add Bliss Features? -->
+        <!-- Hide Apps from Recents (HAFR) -->
+        <activity android:name="com.blissroms.blissify.fragments.recents.hideappfromrecents.HAFRAppListActivity" />
+
         <activity
             android:name=".Settings$SwipeToNotificationSuggestionActivity"
             android:label="@string/fingerprint_swipe_for_notifications_title"
@@ -3403,6 +3407,6 @@
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/blissify_dashboard_summary"/>
         </activity>
-        
+
     </application>
 </manifest>
