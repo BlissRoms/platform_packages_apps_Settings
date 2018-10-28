@@ -201,4 +201,7 @@
     <string name="changelog_loading">Loading changelog\u2026</string>
     <string name="changelog_error">Unable to load changelog</string>
 
+    <string name="smart_pixels_settings_title">Smart Pixels</string>
+    <string name="weather_title">Weather</string>
+
 </resources>

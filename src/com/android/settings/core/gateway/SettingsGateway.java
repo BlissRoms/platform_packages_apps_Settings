@@ -139,6 +139,8 @@ import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.blissroms.blissify.BlissifySettings;
+import com.blissroms.blissify.fragments.ui.Weather;
+import com.blissroms.blissify.fragments.ui.SmartPixels;
 
 public class SettingsGateway {
 
@@ -265,7 +267,9 @@ public class SettingsGateway {
             ToggleBackupSettingFragment.class.getName(),
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
             BlissifySettings.class.getName(),
-            RunningServices.class.getName()
+            RunningServices.class.getName(),
+            SmartPixels.class.getName(),
+            Weather.class.getName()
 
     };
 
@@ -306,6 +310,8 @@ public class SettingsGateway {
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
-            Settings.BlissifyActivity.class.getName()
+            Settings.BlissifyActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
+            Settings.OmniJawsSettingsActivity.class.getName()
     };
 }
