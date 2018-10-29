@@ -435,4 +435,17 @@
         <item>2</item>
     </string-array>
 
+    <!-- Double Tap/Longpress Power Flashlight -->
+    <string-array name="double_tap_power_flashlight_entries" translatable="false">
+        <item>@string/torch_power_button_gesture_none</item>
+        <item>@string/torch_power_button_gesture_dt</item>
+        <item>@string/torch_power_button_gesture_lp</item>
+    </string-array>
+
+    <string-array name="double_tap_power_flashlight_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>
