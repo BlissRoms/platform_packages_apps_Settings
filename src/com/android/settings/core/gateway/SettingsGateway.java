@@ -142,6 +142,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.blissroms.blissify.BlissifySettings;
 import com.blissroms.blissify.fragments.ui.Weather;
 import com.blissroms.blissify.fragments.ui.SmartPixels;
+import com.android.settings.custom.ambient.history.AmbientPlayHistory;
 
 public class SettingsGateway {
 
@@ -271,8 +272,8 @@ public class SettingsGateway {
             BlissifySettings.class.getName(),
             RunningServices.class.getName(),
             SmartPixels.class.getName(),
-            Weather.class.getName()
-
+            Weather.class.getName(),
+            AmbientPlayHistory.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
