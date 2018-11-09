@@ -497,4 +497,8 @@
     <string name="aggressive_battery_saver_title">Auto-enable on battery saver </string> 
     <string name="aggressive_battery_saver_summary">Enable Aggressive Battery automatically when using battery saver</string>
 
+    <!-- Fingerprint Notification Swipe -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+
 </resources>
