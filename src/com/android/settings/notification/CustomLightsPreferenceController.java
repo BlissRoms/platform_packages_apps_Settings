@@ -54,6 +54,7 @@ public class CustomLightsPreferenceController extends NotificationPreferenceCont
         if (mChannel == null) {
             return false;
         }
+
         return checkCanBeVisible(NotificationManager.IMPORTANCE_DEFAULT)
                 && canPulseLight();
     }
@@ -62,9 +63,8 @@ public class CustomLightsPreferenceController extends NotificationPreferenceCont
         if (mChannel != null) {
              //light color pref
             ColorPickerPreference mCustomLight = (ColorPickerPreference) preference;
-            int defaultLightColor = mContext.getResources()
-                    .getColor(com.android.internal.R.color.config_defaultNotificationColor);
-            mCustomLight.setNewPreviewColor(defaultLightColor);
+            int defaultLightColor = mContext.getResources().getColor(com.android.internal.R.color.config_defaultNotificationColor);
+            mCustomLight.setDefaultColor(defaultLightColor);
             mLedColor = (mChannel.getLightColor() != 0 ? mChannel.getLightColor() : defaultLightColor);
             mCustomLight.setNewPreviewColor(mLedColor);
         }
