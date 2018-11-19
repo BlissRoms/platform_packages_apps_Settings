@@ -180,6 +180,10 @@ public class Settings extends SettingsActivity {
     public static class OmniJawsSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
+    public static class NavigationSettingsActivity extends SettingsActivity {}
+    public static class SmartbarSettingsActivity extends SettingsActivity {}
+    public static class FlingSettingsActivity extends SettingsActivity {}
+    public static class PulseSettingsActivity extends SettingsActivity {}
 
     // omni additions start
     public static class SwipeToNotificationSuggestionActivity extends SettingsActivity { /* empty */ }
