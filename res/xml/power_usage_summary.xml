@@ -47,6 +47,12 @@
         android:title="@string/smart_battery_manager_title_custom"
         settings:controller="com.android.settings.fuelgauge.batterytip.BatteryManagerPreferenceController" />
 
+    <PreferenceScreen
+        android:key="battery_charge_sound"
+        android:title="@string/notification_sound_battery_charge_title"
+        android:summary="@string/notification_sound_battery_charge_summary"
+        android:fragment="com.android.settings.fuelgauge.BatteryChargeSoundSettings" />
+
     <!-- Custom perf profiles settings -->
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="perf_profile_settings"
