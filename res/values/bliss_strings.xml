@@ -102,4 +102,13 @@
     <string name="refresh_rate_summary_90">90Hz / Refresh rate locked at 90Hz for all content. Increased battery usage</string>
     <string name="auto_refresh_rate">Auto</string>
 
+    <!-- Battery charge warning -->
+    <string name="notification_sound_battery_charge_title">Battery Charge Warning</string>
+    <string name="notification_sound_battery_charge_summary">Play a sound when battery reaches charge level</string>
+    <string name="notification_battery_charge_level_title">Battery Charge Warning</string>
+    <string name="notification_battery_charge_level_summary">Enable to play a sound when the battery reaches the specified level when charging</string>
+    <string name="notification_battery_charge_level_seek_bar">Battery Level</string>
+    <string name="notification_battery_charge_level_ringtone">Ringtone</string>
+    <string name="notification_battery_charge_level_silent">Silent</string>
+
 </resources>
