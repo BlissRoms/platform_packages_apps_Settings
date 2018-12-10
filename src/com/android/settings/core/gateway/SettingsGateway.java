@@ -146,6 +146,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.blissroms.blissify.BlissifySettings;
 import com.blissroms.blissify.fragments.ui.Weather;
 import com.blissroms.blissify.fragments.ui.SmartPixels;
+import com.blissroms.blissify.fragments.gestures.PieSettings;
 import com.android.settings.custom.ambient.history.AmbientPlayHistory;
 
 public class SettingsGateway {
@@ -281,7 +282,8 @@ public class SettingsGateway {
             NavigationSettingsActivity.class.getName(),
             SmartbarSettingsActivity.class.getName(),
             FlingSettingsActivity.class.getName(),
-            PulseSettingsActivity.class.getName()
+            PulseSettingsActivity.class.getName(),
+            PieSettings.class.getName()
 
     };
 
@@ -328,6 +330,7 @@ public class SettingsGateway {
             Settings.NavigationSettingsActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(), 
-            Settings.PulseSettingsActivity.class.getName()
+            Settings.PulseSettingsActivity.class.getName(),
+            Settings.PieControlSettingsActivity.class.getName()
     };
 }

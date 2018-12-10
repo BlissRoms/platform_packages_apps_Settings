@@ -3391,6 +3391,19 @@
         <!-- Hide Apps from Recents (HAFR) -->
         <activity android:name="com.blissroms.blissify.fragments.recents.hideappfromrecents.HAFRAppListActivity" />
 
+        <!-- PA Pie settings activity. -->
+        <activity android:name="Settings$PieControlSettingsActivity"
+                android:label="@string/pa_pie_control_title"
+                android:excludeFromRecents="true">
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.PIE_SETTINGS" />
+                <action android:name="android.settings.PIE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.blissroms.blissify.fragments.gestures.PieSettings" />
+        </activity>
+
         <activity
             android:name=".Settings$SwipeToNotificationSuggestionActivity"
             android:label="@string/fingerprint_swipe_for_notifications_title"
