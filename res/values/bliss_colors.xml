@@ -20,4 +20,6 @@
     
     <!-- Settings HomePage Blissify -->
     <color name="homepage_blissify_background">#78A0D0</color>
+
+    <color name="settings_icon_oneplus">@android:color/white</color>
 </resources>
