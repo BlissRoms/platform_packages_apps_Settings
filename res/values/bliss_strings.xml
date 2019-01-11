@@ -129,4 +129,9 @@
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Total RAM</string>
 
+    <!-- Bliss Updater -->
+    <string name="bliss_updater_title">Bliss Updater</string>
+    <string name="bliss_updater_summary">Check for the latest version of the rom</string>
+    <string name="keywords_bliss_updater">BlissOTA, updater, OTA</string>
+
 </resources>
