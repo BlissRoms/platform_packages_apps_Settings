@@ -56,6 +56,18 @@
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
     </Preference>
 
+    <!-- Bliss Updater -->
+    <Preference
+        android:key="bliss_updater"
+        android:title="@string/bliss_updater_title"
+        android:summary="@string/bliss_updater_summary"
+        android:icon="@drawable/ic_system_update"
+        android:order="-35"
+        settings:keywords="@string/keywords_bliss_updater"
+        settings:controller="com.android.settings.system.BlissUpdatePreferenceController">
+        <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
+    </Preference>
+
     <Preference
         android:key="additional_system_update_settings"
         android:title="@string/additional_system_update_settings_list_item_title"
