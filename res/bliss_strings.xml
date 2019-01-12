@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">"调色器"</string>
+    <string name="press_color_to_apply">"选择颜色以便应用"</string>
+    <string name="arrow_right">"→"</string>
+    <string name="arrow_down">"↓"</string>
+    <string name="hex">"Hex:"</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">"设置"</string>
+    <string name="color_default">"默认"</string>
+
+    <!-- Pixel color on sim card -->
+    <string name="blissify_dashboard_title">"Bliss设置"</string>
+    <string name="blissify_dashboard_summary">"让设备使用bliss设置"</string>
+
+    <!-- Pixel color on sim card -->
+    <string name="pixel_sim_color">"Pixel"</string>
+
+    <!-- Android debugging over WiFi -->
+    <string name="adb_over_network">"ADB网络调试"</string>
+    <string name="adb_over_network_summary">"启用ADB网络调试端口（Wi-Fi，USB网络）上的TCP/IP调试。此设置在重新启动时重置"</string>
+    <!-- Warning for Adb over Network -->
+    <string name="adb_over_network_warning">"警告：启用ADB网络调试端口后，您的手机将打开所有连接网络（包括GSM数据网络）！当您在可信网络上连接时，只能使用此功能。你真的想要启用这个功能吗？"</string>
+    <string name="adb_over_network_warning_title">"保持ADB网络调试?"</string>
+
+    <string name="app_package_name_title">"包"</string>
+    <string name="app_version_title">"版本"</string>
+
+    <!-- Vendor security patch level -->
+    <string name="vendor_security_patch">"供应商安全补丁级别"</string>
+
+    <!-- Custom light color -->
+    <string name="custom_light_title">"Led颜色"</string>
+    <string name="custom_light_on_time_title">"充电期间LED的亮灯时间 (毫秒)"</string>
+    <string name="custom_light_off_time_title">"充电期间LED的关闭时间 (毫秒)"</string>
+    <string name="value_equals_default">"def"</string>
+    <string name="show_light_on_zen_title">"勿扰时闪烁"</string>
+
+    <string name="select_sim_for_sms">"选择SIM卡发送短信"</string>
+
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">"Google Play"</string>
+
+    <string name="screenshot_shutter_sound_title">"截图声音"</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">"重置统计信息"</string>
+    <string name="battery_stats_message">"将重置电池历史记录统计信息"</string>
+    <string name="ok_string">"确定"</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">"增加铃声音量"</string>
+    <string name="increasing_ring_min_volume_title">"启动音量"</string>
+    <string name="increasing_ring_ramp_up_time_title">"加速时间"</string>
+
+    <!-- Hostname setting -->
+    <string name="device_hostname">"设备主机名"</string>
+
+    <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">"位置"</string>
+    <string name="app_ops_cat_personal">"个人"</string>
+    <string name="app_ops_cat_messaging">"通知信息"</string>
+    <string name="app_ops_cat_media">"媒体"</string>
+    <string name="app_ops_cat_device">"设备"</string>
+    <string name="app_ops_cat_bootup">"启动"</string>
+
+    <!-- App ops labels -->
+    <string name="app_ops_access_camera">"相机"</string>
+    <string name="app_ops_access_location">"位置"</string>
+    <string name="app_ops_access_notifications">"通知"</string>
+    <string name="app_ops_activate_vpn">"VPN"</string>
+    <string name="app_ops_auto_start">"自动启动"</string>
+    <string name="app_ops_delete_call_log">"删除通话记录"</string>
+    <string name="app_ops_delete_contacts">"删除联系人"</string>
+    <string name="app_ops_delete_mms">"删除彩信"</string>
+    <string name="app_ops_delete_sms">"删除信息"</string>
+    <string name="app_ops_draw_on_top">"在顶部绘制"</string>
+    <string name="app_ops_get_usage_stats">"获取使用情况统计信息"</string>
+    <string name="app_ops_keep_device_awake">"保持唤醒"</string>
+    <string name="app_ops_make_phone_call">"拨打电话"</string>
+    <string name="app_ops_modify_calendar">"更新日历"</string>
+    <string name="app_ops_modify_call_log">"更新通话记录"</string>
+    <string name="app_ops_modify_clipboard">"修改剪贴板"</string>
+    <string name="app_ops_modify_contacts">"更新联系人"</string>
+    <string name="app_ops_modify_settings">"更新设置"</string>
+    <string name="app_ops_mute_unmute_microphone">"静音/取消 麦克风"</string>
+    <string name="app_ops_play_audio">"播放音频"</string>
+    <string name="app_ops_post_notification">"发布通知"</string>
+    <string name="app_ops_project_media">"项目媒体"</string>
+    <string name="app_ops_read_calendar">"读取日历"</string>
+    <string name="app_ops_read_call_log">"读取呼叫日志"</string>
+    <string name="app_ops_read_clipboard">"读取剪贴板"</string>
+    <string name="app_ops_read_contacts">"读取联系人"</string>
+    <string name="app_ops_read_mms">"读取彩信"</string>
+    <string name="app_ops_read_sms">"读取短信"</string>
+    <string name="app_ops_receive_sms">"接收短信"</string>
+    <string name="app_ops_record_audio">"录制音频"</string>
+    <string name="app_ops_send_mms">"发送彩信"</string>
+    <string name="app_ops_send_sms">"发送短信"</string>
+    <string name="app_ops_toast_window">"toast消息"</string>
+    <string name="app_ops_use_alarm_volume">"警报音量"</string>
+    <string name="app_ops_use_audio_focus">"音频焦点"</string>
+    <string name="app_ops_use_bluetooth_volume">"蓝牙音量"</string>
+    <string name="app_ops_use_master_volume">"主音量"</string>
+    <string name="app_ops_use_media_buttons">"媒体按钮"</string>
+    <string name="app_ops_use_media_volume">"媒体音量"</string>
+    <string name="app_ops_use_notification_volume">"通知音量"</string>
+    <string name="app_ops_use_ring_volume">"铃声音量"</string>
+    <string name="app_ops_use_vibrate">"振动反馈"</string>
+    <string name="app_ops_use_voice_volume">"语音通话音量"</string>
+    <string name="app_ops_write_mms">"写彩信"</string>
+    <string name="app_ops_write_sms">"写短信"</string>
+    <string name="app_ops_use_fingerprint">"指纹"</string>
+    <string name="app_ops_add_voicemail">"语音信箱"</string>
+    <string name="app_ops_read_phone_state">"访问手机状态"</string>
+    <string name="app_ops_scan_wifi">"扫描WiFi网络"</string>
+    <string name="app_ops_change_wallpaper">"更改壁纸"</string>
+    <string name="app_ops_assist_structure">"辅助配置"</string>
+    <string name="app_ops_assist_screenshot">"截图"</string>
+    <string name="app_ops_use_body_sensors">"身体传感器"</string>
+    <string name="app_ops_read_cell_broadcasts">"小区广播"</string>
+    <string name="app_ops_mock_location">"模拟位置"</string>
+    <string name="app_ops_read_external_storage">"读取ext.stor."</string>
+    <string name="app_ops_write_external_storage">"写入ext.stor."</string>
+    <string name="app_ops_turn_on_screen">"打开屏幕"</string>
+    <string name="app_ops_get_accounts">"设备帐户"</string>
+    <string name="app_ops_run_in_background">"后台进程"</string>
+    <string name="app_ops_accessibility_volume">"辅助功能音量"</string>
+    <string name="app_ops_read_phone_numbers">"读取电话号码"</string>
+    <string name="app_ops_request_install_packages">"安装包"</string>
+    <string name="app_ops_picture_in_picture">"pip手势"</string>
+    <string name="app_ops_app_start_foreground">"启用置顶运行"</string>
+    <string name="app_ops_answer_phone_calls">"接听电话"</string>
+    <string name="app_ops_run_any_in_background">"运行背景"</string>
+    <string name="app_ops_change_wifi_state">"更改wifi状态"</string>
+    <string name="app_ops_request_delete_packages">"删除包"</string>
+    <string name="app_ops_bind_accessibility_service">"绑定到辅助功能"</string>
+    <string name="app_ops_accept_handover">"接受切换"</string>
+    <string name="app_ops_manage_ipsec_tunnels">"管理ip通道"</string>
+    <string name="app_ops_start_foreground">"启用置顶运行"</string>
+    <string name="app_ops_bluetooth_scan">"蓝牙扫描"</string>
+    <string name="app_ops_boot_completed">"自动启动"</string>
+
+    <!-- App ops detail -->
+    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (used <xliff:g id="count">%2$s</xliff:g>)</string>
+    <string name="app_ops_allowed_count">"允许"<xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_ignored_count">"拒绝"<xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_both_count">"允许"<xliff:g id="count">%1$s</xliff:g>, denied <xliff:g id="count">%2$s</xliff:g></string>
+    <!-- App ops menu options -->
+    <string name="app_ops_show_user_apps">"显示用户应用"</string>
+    <string name="app_ops_show_system_apps">"显示内置应用"</string>
+    <string name="app_ops_reset_counters">"重置允许/取消计数器"</string>
+    <string name="app_ops_reset_confirm_title">"确认计数器重置"</string>
+    <string name="app_ops_reset_confirm_mesg">"您确定要重置计数器吗？"</string>
+
+    <!-- Less Notification sounds -->
+    <string name="less_notification_sounds_title">"通知声音的频率"</string>
+    <string name="less_notification_sounds_summary">Play the notification sound of each app only once per set time period</string>
+    <string name="less_notification_sounds_default">"默认行为"</string>
+    <string name="less_notification_sounds_3s">"每3秒"</string>
+    <string name="less_notification_sounds_5s">"每5秒"</string>
+    <string name="less_notification_sounds_10s">"每10秒"</string>
+    <string name="less_notification_sounds_15s">"每15秒"</string>
+    <string name="less_notification_sounds_30s">"每30秒"</string>
+    <string name="less_notification_sounds_45s">"每45秒"</string>
+    <string name="less_notification_sounds_1m">"每1分钟"</string>
+    <string name="less_notification_sounds_2m">"每2分钟"</string>
+    <string name="less_notification_sounds_5m">"每5分钟"</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">"音量级别"</string>
+    <string name="volume_steps_alarm_title">"音量级别: 警告"</string>
+    <string name="volume_steps_dtmf_title">"音量级别: DTMF"</string>
+    <string name="volume_steps_music_title">"音量级别: 音乐"</string>
+    <string name="volume_steps_notification_title">"音量级别: 通知"</string>
+    <string name="volume_steps_ring_title">"音量级别: 铃声"</string>
+    <string name="volume_steps_system_title">"音量级别: 系统"</string>
+    <string name="volume_steps_voice_call_title">"音量级别: 通话音量"</string>
+    <string name="volume_steps_reset">"重置"</string>
+    <string name="volume_steps_60">"60"</string>
+    <string name="volume_steps_45">"45"</string>
+    <string name="volume_steps_30">"30"</string>
+    <string name="volume_steps_15">"15"</string>
+    <string name="volume_steps_7">"7"</string>
+    <string name="volume_steps_5">"5"</string>
+
+    <!-- Running services -->
+    <string name="background_processes_settings_title">"后台进程"</string>
+
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">"蜂窝数据"</string>
+    <string name="data_usage_app_restrict_data_summary">"启用蜂窝数据"</string>
+    <string name="data_usage_app_restrict_wifi">"WiFi 数据"</string>
+    <string name="data_usage_app_restrict_wifi_summary">"启用WiFi 数据"</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">"更改日志"</string>
+    <string name="changelog_summary">"最近的更改"</string>
+    <string name="changelog_loading">"加载更新日志"</string>
+    <string name="changelog_error">"无法加载更新日志"</string>
+
+    <string name="smart_pixels_settings_title">"智能Pixels"</string>
+    <string name="weather_title">"天气"</string>
+
+    <!-- Nav Gesture -->
+    <string name="full_gesture_mode_title">"启用全屏手势模式"</string>
+    <string name="full_gesture_mode_summary">"此模式禁用后退按钮，您可以通过导航栏上的左侧滑动触发后退按钮操作。向右滑动仍会触发上一个应用程序和概述应用程序滚动。要回家，您可以点击任何导航栏空白区域，而不仅是主页按钮。当键盘显示时，长按导航栏以移动文本光标。"</string>
+    <string name="full_gesture_mode_dt2s_title">"启用双击睡眠"</string>
+    <string name="full_gesture_mode_dt2s_summary">"点击空的导航栏空间，但不点击主页按钮以关闭屏幕。"</string>
+
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_category">"亮度"</string>
+    <string name="night_brightness_value_title">"夜间亮度会降低"</string>
+    <string name="night_bright_disabled">"禁用"</string>
+    <string name="night_bright_minimum">"最小亮度"</string>
+    <string name="night_bright_low">"低亮度"</string>
+    <string name="night_bright_medium">"中等亮度"</string>
+
+    <!-- Ambient Play -->
+    <string name="ambient_play_title" translatable="false">@*android:string/ambient_recognition_notification</string>
+    <string name="ambient_play_recognition_information" translatable="false">@*android:string/ambient_recognition_information</string>
+    <string name="ambient_play_summary">"显示附近的歌曲"</string>
+    <string name="ambient_play_lockscreen_title">"在锁屏上显示歌曲"</string>
+    <string name="ambient_play_notifications_title">"通知"</string>
+    <string name="ambient_play_switch_bar_on">"开启"</string>
+    <string name="ambient_play_switch_bar_off">"关闭"</string>
+    <string name="ambient_play_help_text">"当在附近播放音乐时，您可以看到歌曲名称和艺术家。如果启用，电池寿命和数据使用可能会受到影响。"</string>
+    <string name="ambient_play_history">"正在播放历史记录"</string>
+    <string name="ambient_play_loading_data">"正在加载数据..."</string>
+    <string name="ambient_play_history_today">"今天"</string>
+    <string name="ambient_play_history_yesterday">"昨天"</string>
+    <string name="ambient_play_history_dialog_play">"立即播放"</string>
+    <string name="ambient_play_history_dialog_search">"通过网页搜索"</string>
+    <string name="ambient_play_history_dialog_remove">"删除"</string>
+    <string name="ambient_play_history_empty">"音乐历史记录为空"</string>
+    <string name="ambient_play_history_menu_remove_all">"删除所有"</string>
+    <string name="ambient_play_history_menu_add_to_home">"添加到主屏幕"</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">"你确定吗？"</string>
+
+    <!-- Density category -->
+    <string name="density_category">"字体选项"</string>
+
+    <!-- Font picker -->
+    <string name="font_picker_title">"字体管理器"</string>
+    <string name="disable_fonts_installed_title">"字体选择器不可用以避免与Substratum冲突。如果您想使用字体选择器，请将其卸载。"</string>
+    <string name="font_picker_progress">"应用字体"</string>
+
+</resources>
