@@ -147,7 +147,6 @@ import com.blissroms.blissify.BlissifySettings;
 import com.blissroms.blissify.fragments.ui.Weather;
 import com.blissroms.blissify.fragments.ui.SmartPixels;
 import com.blissroms.blissify.fragments.gestures.PieSettings;
-import com.android.settings.custom.ambient.history.AmbientPlayHistory;
 
 public class SettingsGateway {
 
@@ -278,7 +277,6 @@ public class SettingsGateway {
             RunningServices.class.getName(),
             SmartPixels.class.getName(),
             Weather.class.getName(),
-            AmbientPlayHistory.class.getName(),
             NavigationSettingsActivity.class.getName(),
             SmartbarSettingsActivity.class.getName(),
             FlingSettingsActivity.class.getName(),

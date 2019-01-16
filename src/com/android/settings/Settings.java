@@ -188,7 +188,4 @@ public class Settings extends SettingsActivity {
 
     // omni additions start
     public static class SwipeToNotificationSuggestionActivity extends SettingsActivity { /* empty */ }
-
-    // Ambient play
-    public static class AmbientPlayHistoryActivity extends SettingsActivity { /* empty */ }
 }
