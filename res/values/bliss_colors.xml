@@ -15,4 +15,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Shortcuts -->
+    <color name="icon_accent_custom">@*android:color/accent_device_default_light</color>
 </resources>
