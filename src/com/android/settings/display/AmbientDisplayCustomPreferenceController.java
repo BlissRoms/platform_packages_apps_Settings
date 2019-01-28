@@ -58,7 +58,7 @@ public class AmbientDisplayCustomPreferenceController extends AbstractPreference
             mMetricsFeatureProvider.action(mContext, ACTION_AMBIENT_DISPLAY);
             try {
                 Intent intent = new Intent();
-                if (Build.PRODUCT.equals("Moto G5 Plus")) {
+                if (Build.PRODUCT.equals("potter")) {
                     intent.setClassName(
                             "com.dirtyunicorns.settings.device",
                             "com.dirtyunicorns.settings.device.DozeSettingsActivity");
