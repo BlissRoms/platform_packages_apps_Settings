@@ -513,7 +513,7 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     @Override
     public void setTaskDescription(ActivityManager.TaskDescription taskDescription) {
-        final Bitmap icon = getBitmapFromXmlResource(R.drawable.ic_launcher_settings);
+        final Bitmap icon = getBitmapFromXmlResource(R.mipmap.ic_launcher_settings);
         taskDescription.setIcon(icon);
         super.setTaskDescription(taskDescription);
     }
