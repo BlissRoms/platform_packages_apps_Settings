@@ -52,7 +52,7 @@
 
     <com.android.settings.widget.DefaultIndicatorSeekBar
         android:id="@*android:id/seekbar"
-        style="@android:style/Widget.Material.SeekBar.Discrete"
+        style="@android:style/Widget.DeviceDefault.SeekBar"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentEnd="true"
