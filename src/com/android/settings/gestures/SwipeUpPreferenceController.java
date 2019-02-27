@@ -69,7 +69,7 @@ public class SwipeUpPreferenceController extends BasePreferenceController
     }
 
     static boolean isGestureAvailable(Context context) {
-        if (!context.getResources().getBoolean(R.bool.config_swipe_up_gesture_setting_available)) {
+        if (!context.getResources().getBoolean(R.bool.config_swipe_up_gesture_setting_available) || !isPieRecentsEnabled(context)) {
             return false;
         }
 
@@ -82,6 +82,11 @@ public class SwipeUpPreferenceController extends BasePreferenceController
             return false;
         }
         return true;
+    }
+
+    static boolean isPieRecentsEnabled(Context mContext) {
+       return Settings.System.getInt(mContext.getContentResolver(),
+                      Settings.System.RECENTS_LAYOUT_STYLE, 0) == 0;
     }
 
     @Override
