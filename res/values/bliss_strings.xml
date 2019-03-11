@@ -433,6 +433,10 @@
     <string name="night_bright_low">Low brightness</string>
     <string name="night_bright_medium">Medium brightness</string>
 
+    <!-- doze on charge -->
+    <string name="doze_on_charge_title">Show when charging</string>
+    <string name="doze_on_charge_summary">Wake screen when charging</string>
+
     <!-- Density category -->
     <string name="density_category">Font options</string>
 
