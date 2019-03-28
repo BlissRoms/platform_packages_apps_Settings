@@ -25,4 +25,7 @@
     <string name="config_batDesCap"></string>
     <string name="config_batChargeCycle"></string>
 
+    <!-- Smart Charging -->
+    <bool name="config_supportSmartCharging">false</bool>
+
 </resources>
