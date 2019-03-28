@@ -55,6 +55,12 @@
         android:title="@string/aggressive_battery_title"
         android:summary="@string/aggressive_battery_summary" />
 
+    <Preference
+        android:fragment="com.android.settings.fuelgauge.smartcharging.SmartChargingSettings"
+        android:key="smart_charging_key"
+        android:title="@string/smart_charging_title"
+        android:summary="@string/smart_charging_summary" />
+
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="last_full_charge"
         android:title="@string/battery_last_full_charge"
