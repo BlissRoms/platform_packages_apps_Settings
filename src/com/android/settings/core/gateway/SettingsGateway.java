@@ -172,6 +172,7 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherClientManager;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
+import com.android.settings.livedisplay.LiveDisplaySettings;
 import org.blissroms.blissify.Blissify;
 import org.blissroms.blissify.fragments.HeadsUpSettings;
 
@@ -336,7 +337,8 @@ public class SettingsGateway {
             Blissify.class.getName(),
             HeadsUpSettings.class.getName(),
             RunningServices.class.getName(),
-            WifiTetherClientManager.class.getName()
+            WifiTetherClientManager.class.getName(),
+            LiveDisplaySettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
