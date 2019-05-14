@@ -72,4 +72,9 @@
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Screen refresh rate</string>
 
+    <!-- Bliss Updater -->
+    <string name="bliss_updater_title">Bliss Updater</string>
+    <string name="bliss_updater_summary">Check for the latest version of the rom</string>
+    <string name="keywords_bliss_updater">BlissOTA, updater, OTA</string>
+
 </resources>
