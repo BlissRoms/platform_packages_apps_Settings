@@ -78,4 +78,9 @@
     <string name="show_cpu_info">Show CPU info</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+
+    <!-- Bliss Updater -->
+    <string name="bliss_updater_title">Bliss Updater</string>
+    <string name="bliss_updater_summary">Check for the latest version of the rom</string>
+    <string name="keywords_bliss_updater">BlissOTA, updater, OTA</string>
 </resources>
