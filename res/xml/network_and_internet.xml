@@ -122,6 +122,7 @@
         android:key="private_dns_settings"
         android:title="@string/select_private_dns_configuration_title"
         android:order="20"
+        android:icon="@drawable/ic_dns"
         android:dialogTitle="@string/select_private_dns_configuration_dialog_title"
         android:dialogLayout="@layout/private_dns_mode_dialog"
         android:positiveButtonText="@string/save"
