@@ -43,6 +43,58 @@
                 android:id="@+id/private_dns_mode_provider"
                 layout="@layout/preference_widget_dialog_radiobutton"/>
 
+            <include
+                android:id="@+id/private_dns_mode_adguard"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_appliedprivacy"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_cira"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_cleanbrowsing"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_cloudflare"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_cznic"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_google"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_mullvad"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_quadnine"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_restena"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_switch"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_twnic"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
+            <include
+                android:id="@+id/private_dns_mode_uncensoreddns"
+                layout="@layout/preference_widget_dialog_radiobutton"/>
+
             <EditText
                 android:id="@+id/private_dns_mode_provider_hostname"
                 android:hint="@string/private_dns_mode_provider_hostname_hint"
