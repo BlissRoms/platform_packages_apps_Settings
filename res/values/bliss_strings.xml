@@ -551,4 +551,20 @@
     <string name="work_hours_end_notification_title">End of work day</string>
     <string name="work_hours_end_notification_description">Tap to turn off work apps</string>
 
+    <!-- Private DNS -->
+    <string name="private_dns_mode_adguard" translatable="false">AdGuard (CY)</string>
+    <string name="private_dns_mode_appliedprivacy" translatable="false">AppliedPrivacy (AT)</string>
+    <string name="private_dns_mode_cira" translatable="false">CIRA (CA)</string>
+    <string name="private_dns_mode_cleanbrowsing" translatable="false">CleanBrowsing (US)</string>
+    <string name="private_dns_mode_cloudflare" translatable="false">Cloudflare (US)</string>
+    <string name="private_dns_mode_cznic" translatable="false">CZ.NIC (CZ)</string>
+    <string name="private_dns_mode_google" translatable="false">Google (US)</string>
+    <string name="private_dns_mode_mullvad" translatable="false">Mullvad (SE)</string>
+    <string name="private_dns_mode_quadnine" translatable="false">Quad9 (CH)</string>
+    <string name="private_dns_mode_restena" translatable="false">Restena (LU)</string>
+    <string name="private_dns_mode_switch" translatable="false">SWITCH (CH)</string>
+    <string name="private_dns_mode_twnic" translatable="false">TW.NIC (TW)</string>
+    <string name="private_dns_mode_uncensoreddns" translatable="false">UncensoredDNS (DK)</string>
+    <string name="private_dns_mode_provider_failure">Couldn\'t connect</string>
+
 </resources>
