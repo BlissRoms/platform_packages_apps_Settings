@@ -39,5 +39,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
+        <TextView
+            style="@style/device_info_dialog_label"
+            android:id="@+id/bliss_type_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bliss_type"/>
+            
+        <TextView
+            style="@style/device_info_dialog_value"
+            android:id="@+id/bliss_type_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
     </LinearLayout>
 </ScrollView>

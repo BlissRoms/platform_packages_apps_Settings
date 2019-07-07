@@ -84,6 +84,7 @@ public class BlissInfoDialogFragment extends InstrumentedDialogFragment {
     }
 
     private void initializeControllers() {
-         new BlissVersionDialogController(this).initialize(); 
+         new BlissVersionDialogController(this).initialize();
+         new BlissTypeDialogController(this).initialize();
     }
 }
