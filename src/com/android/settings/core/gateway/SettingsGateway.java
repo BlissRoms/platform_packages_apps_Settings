@@ -205,6 +205,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import org.blissroms.blissify.Blissify;
 import com.android.settings.bliss.tether.WifiTetherClientManager;
+import org.blissroms.blissify.fragments.misc.SmartPixels;
 
 public class SettingsGateway {
 
@@ -398,7 +399,8 @@ public class SettingsGateway {
             VibrationIntensitySettingsFragment.class.getName(),
             Blissify.class.getName(),
 	    RunningServices.class.getName(),
-            WifiTetherClientManager.class.getName()
+            WifiTetherClientManager.class.getName(),
+            SmartPixels.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -446,6 +448,7 @@ public class SettingsGateway {
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
             Settings.BlissifySettingsActivity.class.getName(),
-            Settings.DevRunningServicesActivity.class.getName()
+            Settings.DevRunningServicesActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
     };
 }
