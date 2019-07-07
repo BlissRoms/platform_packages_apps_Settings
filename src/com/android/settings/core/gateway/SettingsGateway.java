@@ -175,6 +175,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.android.settings.livedisplay.LiveDisplaySettings;
 import org.blissroms.blissify.Blissify;
 import org.blissroms.blissify.fragments.HeadsUpSettings;
+import org.blissroms.blissify.fragments.SmartPixels;
 
 public class SettingsGateway {
 
@@ -338,6 +339,7 @@ public class SettingsGateway {
             HeadsUpSettings.class.getName(),
             RunningServices.class.getName(),
             WifiTetherClientManager.class.getName(),
+            SmartPixels.class.getName(),
             LiveDisplaySettings.class.getName()
     };
 
@@ -381,6 +383,7 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.BlissifySettingsActivity.class.getName(),
             Settings.HeadsUpSettingsActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName()
     };
 }
