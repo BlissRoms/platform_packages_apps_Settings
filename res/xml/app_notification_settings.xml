@@ -62,13 +62,13 @@
         android:title="@string/show_light_on_zen_title"/>
 
     <!-- Custom led color -->
-    <com.android.settings.bliss.preference.ColorPickerPreference
+    <com.bliss.support.colorpicker.ColorPickerPreference
         android:key="custom_light"
         android:dependency="lights"
         android:title="@string/custom_light_title"
         ledPreview="true" />
 
-    <com.android.settings.bliss.preference.SystemSettingSeekBarPreference
+    <com.bliss.support.preferences.SystemSettingSeekBarPreference
         android:key="custom_light_on_time"
         android:dependency="lights"
         android:title="@string/custom_light_on_time_title"
@@ -76,7 +76,7 @@
         blissify:min="0"
         blissify:interval="100" />
 
-    <com.android.settings.bliss.preference.SystemSettingSeekBarPreference
+    <com.bliss.support.preferences.SystemSettingSeekBarPreference
         android:key="custom_light_off_time"
         android:dependency="lights"
         android:title="@string/custom_light_off_time_title"

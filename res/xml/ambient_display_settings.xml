@@ -44,7 +44,7 @@
             android:fragment="com.android.settings.gestures.PickupGestureSettings"
             settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
 
-        <com.blissroms.blissify.preference.SystemSettingSwitchPreference
+        <com.bliss.support.preferences.SystemSettingSwitchPreference
             android:key="doze_on_charge"
             android:title="@string/doze_on_charge_title"
             android:summary="@string/doze_on_charge_summary"

@@ -54,7 +54,7 @@ import com.android.settingslib.CustomEditTextPreference;
 import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.widget.FooterPreferenceMixin;
 
-import com.blissroms.blissify.preference.LegacyCustomDialogPreference;
+import com.bliss.support.preferences.LegacyCustomDialogPreference;
 
 import java.util.UUID;
 
