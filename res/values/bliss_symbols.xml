@@ -20,4 +20,7 @@
     <!-- Battery Health -->
     <java-symbol type="bool" name="config_supportBatteryHealth" />
 
+    <!-- Smart Charging -->
+    <java-symbol type="bool" name="config_supportSmartCharging"/>
+
 </resources>
