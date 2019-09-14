@@ -19,5 +19,7 @@
     <string name="bliss_version">Bliss version</string>
     <string name="bliss_version_default">Unknown</string>
     <string name="keywords_bliss_version">Bliss version, bliss</string>
-    
+    <string name="bliss_build_date">Build date</string>
+    <string name="bliss_build_default">Unknown</string>
+    <string name="keywords_build_date">Bliss build , build info</string>
 </resources>
