@@ -22,4 +22,5 @@
     <string name="bliss_build_date">Build date</string>
     <string name="bliss_build_default">Unknown</string>
     <string name="bliss_build_type">Build status</string>
+    <string name="bliss_device">Bliss device</string>
 </resources>
