@@ -30,6 +30,14 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.bliss.BlissVersionPreferenceController"/>
 
+    <!-- Bliss build type -->
+    <Preference
+        android:key="bliss_build_type"
+        android:title="@string/bliss_build_type"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.bliss.BlissBuildTypePreferenceController"/>
+        
     <!-- Bliss build date -->
     <Preference
         android:key="bliss_build_date"
