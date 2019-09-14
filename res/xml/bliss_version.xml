@@ -54,4 +54,11 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.bliss.BlissBuildDatePreferenceController"/>
 
+    <!-- Changelog -->
+    <Preference
+        android:key="changelog"
+        android:order="1"
+        android:title="@string/changelog_title"
+        android:summary="@string/changelog_summary"
+        android:fragment="com.android.settings.deviceinfo.bliss.Changelog" />
 </PreferenceScreen>
