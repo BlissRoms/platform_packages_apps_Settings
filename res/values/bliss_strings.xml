@@ -27,4 +27,8 @@
     <!-- Bliss maintainer -->
     <string name="maintainer">Maintainer</string>
     <string name="bliss_maintainer">Unofficial Maintainer</string>
+
+    <!-- Battery temp -->
+    <string name="battery_temp">Battery temperature</string>
+
 </resources>
