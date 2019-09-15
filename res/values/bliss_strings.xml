@@ -441,4 +441,6 @@
     <string name="ime_default">Default</string>
     <string name="ime_hidden">Hidden</string>
 
+    <string name="battery_temperature">Battery temperature</string>
+
 </resources>
