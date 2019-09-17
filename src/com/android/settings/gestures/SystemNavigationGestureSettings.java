@@ -160,19 +160,11 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
 
         RadioButtonPreferenceWithExtraWidget p = (RadioButtonPreferenceWithExtraWidget) pref;
         if (info.getKey() == KEY_SYSTEM_NAV_GESTURAL) {
-            if (SystemNavigationPreferenceController.isGestureNavSupportedByDefaultLauncher(
-                    getContext())) {
                 p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_SETTING);
                 p.setExtraWidgetOnClickListener((v) -> GestureNavigationBackSensitivityDialog
                         .show(this, getBackSensitivity(getContext(), mOverlayManager)));
-            } else {
-                p.setEnabled(false);
-                p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_INFO);
-                p.setExtraWidgetOnClickListener((v) ->
-                        GestureNavigationNotAvailableDialog.show(this));
-            }
         } else {
-            p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_GONE);
+               return false;
         }
     }
 
