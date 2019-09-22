@@ -35,6 +35,7 @@ import androidx.preference.Preference;
 import com.android.settings.R;
 import com.android.settings.RingtonePreference;
 import com.android.settings.core.OnActivityResultListener;
+import com.android.settings.Utils;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.sound.HandsFreeProfileOutputPreferenceController;
@@ -62,6 +63,8 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
 
     @VisibleForTesting
     final VolumePreferenceCallback mVolumeCallback = new VolumePreferenceCallback();
+    private final IncreasingRingVolumePreferenceCallback mIncreasingRingVolumeCallback =
+            new IncreasingRingVolumePreferenceCallback();
     @VisibleForTesting
     final Handler mHandler = new Handler(Looper.getMainLooper()) {
         @Override
@@ -69,6 +72,7 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
             switch (msg.what) {
                 case STOP_SAMPLE:
                     mVolumeCallback.stopSample();
+                    mIncreasingRingVolumeCallback.stopSample();
                     break;
             }
         }
@@ -108,6 +112,7 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
     public void onPause() {
         super.onPause();
         mVolumeCallback.stopSample();
+        mIncreasingRingVolumeCallback.stopSample();
     }
 
     @Override
@@ -191,6 +196,11 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
             controller.setCallback(mVolumeCallback);
             getSettingsLifecycle().addObserver(controller);
         }
+
+        IncreasingRingVolumePreferenceController irvpc =
+                use(IncreasingRingVolumePreferenceController.class);
+        irvpc.setCallback(mIncreasingRingVolumeCallback);
+        getLifecycle().addObserver(irvpc);
     }
 
     // === Volumes ===
@@ -203,6 +213,7 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
             if (mCurrent != null && mCurrent != sbv) {
                 mCurrent.stopSample();
             }
+            mIncreasingRingVolumeCallback.stopSample();
             mCurrent = sbv;
             if (mCurrent != null) {
                 mHandler.removeMessages(STOP_SAMPLE);
@@ -225,6 +236,26 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
         }
     }
 
+    final class IncreasingRingVolumePreferenceCallback implements
+            IncreasingRingVolumePreference.Callback {
+        private IncreasingRingVolumePreference mPlayingPref;
+
+        @Override
+        public void onSampleStarting(IncreasingRingVolumePreference pref) {
+            mPlayingPref = pref;
+            mVolumeCallback.stopSample();
+            mHandler.removeMessages(STOP_SAMPLE);
+            mHandler.sendEmptyMessageDelayed(STOP_SAMPLE, SAMPLE_CUTOFF);
+        }
+
+        public void stopSample() {
+            if (mPlayingPref != null) {
+                mPlayingPref.stopSample();
+                mPlayingPref = null;
+            }
+        }
+    };
+
     private static List<AbstractPreferenceController> buildPreferenceControllers(Context context,
             SoundSettings fragment, Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
@@ -235,6 +266,8 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
         controllers.add(new PhoneRingtonePreferenceController(context));
         controllers.add(new AlarmRingtonePreferenceController(context));
         controllers.add(new NotificationRingtonePreferenceController(context));
+        controllers.add(new IncreasingRingPreferenceController(context));
+        controllers.add(new IncreasingRingVolumePreferenceController(context));
 
         // === Work Sound Settings ===
         controllers.add(new WorkSoundPreferenceController(context, fragment, lifecycle));
@@ -246,6 +279,8 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
                 new ScreenLockSoundPreferenceController(context, fragment, lifecycle);
         final ChargingSoundPreferenceController chargingSoundPreferenceController =
                 new ChargingSoundPreferenceController(context, fragment, lifecycle);
+        final ChargingVibroPreferenceController chargingVibroPreferenceController =
+                new ChargingVibroPreferenceController(context, fragment, lifecycle);
         final DockingSoundPreferenceController dockingSoundPreferenceController =
                 new DockingSoundPreferenceController(context, fragment, lifecycle);
         final TouchSoundPreferenceController touchSoundPreferenceController =
@@ -258,16 +293,20 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
                 new BootSoundPreferenceController(context);
         final EmergencyTonePreferenceController emergencyTonePreferenceController =
                 new EmergencyTonePreferenceController(context, fragment, lifecycle);
+        final ScreenshotSoundPreferenceController screenshotSoundPreferenceController =
+                new ScreenshotSoundPreferenceController(context, fragment, lifecycle);
 
         controllers.add(dialPadTonePreferenceController);
         controllers.add(screenLockSoundPreferenceController);
         controllers.add(chargingSoundPreferenceController);
+        controllers.add(chargingVibroPreferenceController);
         controllers.add(dockingSoundPreferenceController);
         controllers.add(touchSoundPreferenceController);
         controllers.add(vibrateOnTouchPreferenceController);
         controllers.add(dockAudioMediaPreferenceController);
         controllers.add(bootSoundPreferenceController);
         controllers.add(emergencyTonePreferenceController);
+        controllers.add(screenshotSoundPreferenceController);
         controllers.add(new PreferenceCategoryController(context,
                 "other_sounds_and_vibrations_category").setChildren(
                 Arrays.asList(dialPadTonePreferenceController,

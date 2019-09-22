@@ -65,7 +65,7 @@
     <!-- Ring volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
         android:key="ring_volume"
-        android:icon="@drawable/ic_notifications"
+        android:icon="@drawable/ic_audio_ring"
         android:title="@string/ring_volume_option_title"
         android:order="-160"
         settings:controller="com.android.settings.notification.RingVolumePreferenceController"/>
@@ -86,6 +86,29 @@
         android:title="@string/notification_volume_option_title"
         android:order="-140"
         settings:controller="com.android.settings.notification.NotificationVolumePreferenceController"/>
+
+    <!-- Link ringtone and notification volumes -->
+    <com.bliss.support.preferences.SecureSettingSwitchPreference
+        android:key="volume_link_notification"
+        android:title="@string/volume_link_notification_title"
+        android:defaultValue="true"
+        android:order="-138"
+        settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
+
+    <!-- Increasing ring -->
+    <com.bliss.support.preferences.SystemSettingSwitchPreference
+        android:key="increasing_ring"
+        android:title="@string/increasing_ring_volume_option_title"
+        android:order="-138"
+        settings:controller="com.android.settings.notification.IncreasingRingPreferenceController" />
+
+    <!-- Increasing ring volume -->
+    <com.android.settings.notification.IncreasingRingVolumePreference
+        android:key="increasing_ring_volume"
+        android:icon="@drawable/ring_notif_increasing"
+        android:dependency="increasing_ring"
+        android:order="-135"
+        settings:controller="com.android.settings.notification.IncreasingRingVolumePreferenceController" />
 
     <!-- Also vibrate for calls -->
     <SwitchPreference
@@ -162,10 +185,20 @@
           android:key="charging_sounds"
           android:title="@string/charging_sounds_title"/>
 
+        <!-- Charging vibro -->
+        <SwitchPreference
+          android:key="charging_vibro"
+          android:title="@string/charging_vibro_title" />
+
         <!-- Docking sounds -->
         <SwitchPreference
           android:key="docking_sounds"
           android:title="@string/docking_sounds_title"/>
+
+        <!-- Screenshot sounds -->
+        <SwitchPreference
+          android:key="screenshot_sounds"
+          android:title="@string/screenshot_sound_title" />
 
         <!-- Touch sounds -->
         <SwitchPreference
