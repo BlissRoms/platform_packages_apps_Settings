@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.development;
+package com.android.settings.display;
 
 import android.content.Context;
 import android.os.SystemProperties;
@@ -24,10 +24,10 @@ import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
 
 import com.android.settings.core.PreferenceControllerMixin;
-import com.android.settingslib.development.DeveloperOptionsPreferenceController;
 import com.android.settingslib.development.SystemPropPoker;
+import com.android.settingslib.core.AbstractPreferenceController;
 
-public class ForceDarkPreferenceController extends DeveloperOptionsPreferenceController
+public class ForceDarkPreferenceController extends AbstractPreferenceController
         implements Preference.OnPreferenceChangeListener, PreferenceControllerMixin {
 
     private static final String HWUI_FORCE_DARK = "hwui_force_dark";
