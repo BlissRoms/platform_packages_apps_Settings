@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="2dp"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="14dp">
 
         <TextView android:id="@+id/low_tick"
                   android:layout_width="match_parent"
@@ -64,4 +64,13 @@
                   android:ellipsize="marquee" />
 
     </LinearLayout>
+
+    <Switch
+        android:id="@+id/nav_bar_gestural_hide_nav_switch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="left"
+        android:text="@string/hide_gesture_navigation_bar_title" />
 </LinearLayout>

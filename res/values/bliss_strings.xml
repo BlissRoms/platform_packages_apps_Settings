@@ -166,4 +166,7 @@
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Close</string>
 
+    <!-- Hide gesture navigation bar -->
+    <string name="hide_gesture_navigation_bar_title">Hide gesture navigation bar</string>
+
 </resources>
