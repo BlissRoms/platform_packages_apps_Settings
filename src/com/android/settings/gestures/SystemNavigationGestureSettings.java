@@ -56,6 +56,8 @@ import com.android.settings.widget.VideoPreference;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.CandidateInfo;
 
+import com.aosip.internal.util.NavBarUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -285,12 +287,15 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
             case KEY_SYSTEM_NAV_GESTURAL:
                 int sensitivity = getBackSensitivity(context, overlayManager);
                 setNavBarInteractionMode(overlayManager, BACK_GESTURE_INSET_OVERLAYS[sensitivity]);
+                NavBarUtils.setGesturalNavBarHiddenOverlay(overlayManager, USER_CURRENT, NavBarUtils.isGesturalNavBarHidden(context, USER_CURRENT));
                 break;
             case KEY_SYSTEM_NAV_2BUTTONS:
                 setNavBarInteractionMode(overlayManager, NAV_BAR_MODE_2BUTTON_OVERLAY);
+                NavBarUtils.setGesturalNavBarHiddenOverlay(overlayManager, USER_CURRENT, false);
                 break;
             case KEY_SYSTEM_NAV_3BUTTONS:
                 setNavBarInteractionMode(overlayManager, NAV_BAR_MODE_3BUTTON_OVERLAY);
+                NavBarUtils.setGesturalNavBarHiddenOverlay(overlayManager, USER_CURRENT, false);
                 break;
         }
     }
