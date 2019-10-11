@@ -135,36 +135,6 @@
         android:title="@string/camera_gesture_title"
         android:summary="@string/camera_gesture_desc" />
 
-    <SwitchPreference
-        android:key="lift_to_wake"
-        android:title="@string/lift_to_wake_title" />
-
-    <SwitchPreference
-        android:key="tap_to_wake"
-        android:title="@string/tap_to_wake"
-        android:summary="@string/tap_to_wake_summary" />
-
-    <!-- Double tap to sleep -->
-    <lineageos.preference.LineageSystemSettingSwitchPreference
-        android:key="double_tap_sleep_gesture"
-        android:title="@string/status_bar_double_tap_to_sleep_title"
-        android:summary="@string/status_bar_double_tap_to_sleep_summary"
-        android:defaultValue="true" />
-
-    <lineageos.preference.LineageGlobalSettingSwitchPreference
-        android:key="wake_when_plugged_or_unplugged"
-        android:title="@string/wake_when_plugged_or_unplugged_title"
-        android:summary="@string/wake_when_plugged_or_unplugged_summary"
-        android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
-
-    <!-- Prevent accidental wake-up -->
-    <lineageos.preference.LineageSystemSettingSwitchPreference
-        android:key="proximity_on_wake"
-        android:title="@string/proximity_wake_title"
-        android:summary="@string/proximity_wake_summary"
-        android:defaultValue="false"
-        lineage:requiresConfig="@*lineageos.platform:bool/config_proximityCheckOnWake" />
-
     <ListPreference
         android:key="theme"
         android:title="@string/device_theme"
@@ -179,20 +149,6 @@
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
-
-    <com.bliss.support.preferences.SystemSettingSwitchPreference
-        android:key="enable_conditions"
-        android:title="@string/dashboard_conditions_title"
-        android:summaryOn="@string/summary_dashboard_conditions_enabled"
-        android:summaryOff="@string/summary_dashboard_conditions_disabled"
-        android:defaultValue="true" />
-
-    <com.bliss.support.preferences.SystemSettingSwitchPreference
-        android:key="enable_suggestions"
-        android:title="@string/dashboard_suggestions_title"
-        android:summaryOn="@string/summary_dashboard_suggestions_enabled"
-        android:summaryOff="@string/summary_dashboard_suggestions_disabled"
-        android:defaultValue="true" />
 
     <PreferenceCategory
         android:key="theme_customization_category"
