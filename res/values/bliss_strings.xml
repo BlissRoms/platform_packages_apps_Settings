@@ -78,4 +78,7 @@
     <string name="prevent_ringing_option_mute_no_media">Mute, no media</string>
     <string name="prevent_ringing_option_mute_no_media_summary">On (mute, no media)</string>
 
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tap to show info</string>
+
 </resources>
