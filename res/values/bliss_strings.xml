@@ -136,4 +136,7 @@
     <string name="bliss_updater_summary">Check for the latest version of the rom</string>
     <string name="keywords_bliss_updater">BlissOTA, updater, OTA</string>
 
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tap to show info</string>
+
 </resources>
