@@ -104,6 +104,12 @@
             <intent android:action="org.lineageos.settings.device.DOZE_SETTINGS" />
         </lineageos.preference.RemotePreference>
 
+        <SwitchPreference
+            android:key="pulse_on_new_tracks"
+            android:title="@string/pulse_on_new_tracks_title"
+            android:summary="@string/pulse_on_new_tracks_summary"
+            settings:controller="com.android.settings.display.PulseOnNewTracksPreferenceController" />
+
         <Preference
             android:key="ambient_display_custom"
             android:title="@string/advanced_settings" />
