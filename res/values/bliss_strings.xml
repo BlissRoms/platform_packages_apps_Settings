@@ -442,4 +442,8 @@
     <string name="ime_default">Default</string>
     <string name="ime_hidden">Hidden</string>
 
+    <!-- Android debugging as root -->
+    <string name="adb_enable_root">Rooted debugging</string>
+    <string name="adb_enable_summary_root">Allow running Android debugging as root</string>
+
 </resources>
