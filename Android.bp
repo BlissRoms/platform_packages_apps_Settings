@@ -64,6 +64,7 @@ android_library {
         "android.hardware.dumpstate-V1.1-java",
         "org.lineageos.platform.internal",
 	"airbnb-lottie",
+        "VendorSupport-preference",
     ],
 
     libs: [
