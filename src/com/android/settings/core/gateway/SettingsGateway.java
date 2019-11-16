@@ -150,7 +150,8 @@ import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.blissroms.blissify.Blissify;
- 
+import com.blissroms.blissify.fragments.misc.GamingMode;
+
 public class SettingsGateway {
 
     /**
@@ -287,8 +288,9 @@ public class SettingsGateway {
             BatterySaverScheduleSettings.class.getName(),
             MobileNetworkListFragment.class.getName(),
             GlobalActionsPanelSettings.class.getName(),
-            DarkModeSettingsFragment.class.getName()
-            Blissify.class.getName()
+            DarkModeSettingsFragment.class.getName(),
+            Blissify.class.getName(),
+            GamingMode.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -328,5 +330,6 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.BlissifySettingsActivity.class.getName(),
+            Settings.GamingModeActivity.class.getName(),
     };
 }
