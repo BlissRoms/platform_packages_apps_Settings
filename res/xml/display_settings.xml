@@ -55,11 +55,13 @@
         settings:controller="com.android.settings.display.WallpaperPreferenceController">
     </com.android.settingslib.RestrictedPreference>
 
-
-    <SwitchPreference
+    <com.android.settings.display.darkmode.DarkModePreference
         android:key="dark_ui_mode"
         android:title="@string/dark_ui_mode"
         settings:keywords="@string/keywords_dark_ui_mode"
+        android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
+        android:widgetLayout="@null"
+        settings:widgetLayout="@null"
         settings:controller="com.android.settings.display.DarkUIPreferenceController"/>
 
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
