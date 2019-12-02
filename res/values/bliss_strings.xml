@@ -46,4 +46,7 @@
     <string name="platform_revision">Platform</string>
     <string name="total_ram">Total RAM</string>
 
+    <!-- Device Name -->
+    <string name="about_device_name">Device</string>
+
 </resources>
