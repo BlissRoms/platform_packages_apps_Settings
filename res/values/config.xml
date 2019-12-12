@@ -67,7 +67,7 @@
     <bool name="config_storage_manager_settings_enabled">false</bool>
 
     <!-- If the support features are enabled. -->
-    <bool name="config_support_enabled">false</bool>
+    <bool name="config_support_enabled">true</bool>
 
     <!-- Whether to enable "show operator name in the status bar" setting -->
     <bool name="config_showOperatorNameInStatusBar">false</bool>
@@ -264,7 +264,7 @@
     <bool name="config_hide_swipe_security_option">false</bool>
 
     <!--Whether help links are defined. -->
-    <bool name="config_has_help">false</bool>
+    <bool name="config_has_help">true</bool>
 
     <!-- Whether Wi-Fi settings should be shown or not.
     This also controls whether Wi-fi related sub-settings (e.g. Wi-Fi preferences) will
