@@ -107,7 +107,6 @@ import com.android.settings.nfc.AndroidBeam;
 import com.android.settings.nfc.PaymentSettings;
 import com.android.settings.notification.AppBubbleNotificationSettings;
 import com.android.settings.notification.AppNotificationSettings;
-import com.android.settings.notification.ChannelGroupNotificationSettings;
 import com.android.settings.notification.ChannelNotificationSettings;
 import com.android.settings.notification.ConfigureNotificationSettings;
 import com.android.settings.notification.NotificationAccessSettings;
@@ -243,7 +242,6 @@ public class SettingsGateway {
             AppNotificationSettings.class.getName(),
             NotificationAssistantPicker.class.getName(),
             ChannelNotificationSettings.class.getName(),
-            ChannelGroupNotificationSettings.class.getName(),
             ApnSettings.class.getName(),
             ApnEditor.class.getName(),
             WifiCallingSettings.class.getName(),
