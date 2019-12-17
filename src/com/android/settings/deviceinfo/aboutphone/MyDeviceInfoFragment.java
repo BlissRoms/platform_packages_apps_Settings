@@ -82,7 +82,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
     @Override
     public void onStart() {
         super.onStart();
-        initHeader();
+        //initHeader();
     }
 
     @Override
