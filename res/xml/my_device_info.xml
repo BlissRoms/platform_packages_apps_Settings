@@ -24,12 +24,12 @@
         android:order="0"
         app:animation="@raw/bliss_about_animation" />
 
-    <com.android.settingslib.widget.LayoutPreference
+    <!--com.android.settingslib.widget.LayoutPreference
         android:key="my_device_info_header"
         android:order="1"
         android:layout="@layout/settings_entity_header"
         android:selectable="false"
-        settings:isPreferenceVisible="false"/>
+        settings:isPreferenceVisible="false"/-->
 
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
