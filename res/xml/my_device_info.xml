@@ -59,12 +59,12 @@
     <PreferenceCategory
         android:title="@string/my_device_info_legal_category_title">
 
-        <!-- Legal information -->
+        <!-- Legal information 
         <Preference
             android:key="legal_container"
             android:order="15"
             android:title="@string/legal_information"
-            android:fragment="com.android.settings.LegalSettings"/>
+            android:fragment="com.android.settings.LegalSettings"/-->
 
         <!-- Regulatory labels -->
         <Preference
