@@ -18,26 +18,18 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/settings_homepage_spacer"
+    android:id="@+id/settings_submenu_spacer"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/homepage_spacer_height"
+    android:layout_height="@dimen/homepage_spacer_height_base"
     android:outlineProvider="none"
     app:cardBackgroundColor="?android:attr/colorPrimary"
     app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
-
-    <ImageView
-        android:layout_width="@dimen/homepage_logo_size"
-        android:layout_height="@dimen/homepage_logo_size"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/homepage_spacer_imageview_marginBottom"
-        android:src="@drawable/ic_homepage_legion"/>
 
     <TextView 
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:textAppearance="@style/homepage_spacer_title_style"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/homepage_spacer_title_marginTop"
         android:text="@string/settings_label" />
 
 </com.google.android.material.card.MaterialCardView>

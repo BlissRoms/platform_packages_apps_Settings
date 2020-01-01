@@ -119,6 +119,19 @@ public class SettingsHomepageActivity extends FragmentActivity {
         fragmentTransaction.commit();
     }
 
+    private boolean isHomepageSpacerEnabled() {
+        return Settings.System.getInt(this.getContentResolver(),
+        Settings.System.SETTINGS_SPACER, 0) != 0;
+    }
+
+    private static void setMargins (View v, int l, int t, int r, int b) {
+        if (v.getLayoutParams() instanceof ViewGroup.MarginLayoutParams) {
+            ViewGroup.MarginLayoutParams p = (ViewGroup.MarginLayoutParams) v.getLayoutParams();
+            p.setMargins(l, t, r, b);
+            v.requestLayout();
+        }
+    }
+
     @VisibleForTesting
     void setHomepageContainerPaddingTop() {
         final View view = this.findViewById(R.id.homepage_container);
