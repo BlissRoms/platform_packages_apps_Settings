@@ -21,8 +21,7 @@
     android:id="@+id/search_bar"
     style="@style/SearchBarStyle"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layout_scrollFlags="scroll|enterAlways">
+    android:layout_height="wrap_content">
     <ImageView
         android:src="@drawable/cardview_search_background"
         android:layout_width="match_parent"
