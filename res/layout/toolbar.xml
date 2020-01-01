@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2019 Extended-UI
+     Copyright (C) 2018 The Android Open Source Project
+     Copyright (C) 2019 ExtendedUI
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,26 +19,14 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/settings_homepage_spacer"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/homepage_spacer_height"
-    android:outlineProvider="none"
-    app:cardBackgroundColor="?android:attr/colorPrimary"
-    app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
-
-    <ImageView
-        android:layout_width="@dimen/homepage_logo_size"
-        android:layout_height="@dimen/homepage_logo_size"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/homepage_spacer_imageview_marginBottom"
-        android:src="@drawable/ic_homepage_legion"/>
-
-    <TextView 
+    android:layout_height="wrap_content">
+    <Toolbar
+        android:id="@+id/action_bar"
+        style="?android:attr/actionBarStyle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:textAppearance="@style/homepage_spacer_title_style"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/homepage_spacer_title_marginTop"
-        android:text="@string/settings_label" />
-
+        android:theme="?android:attr/actionBarTheme"
+        android:navigationContentDescription="@*android:string/action_bar_up_description"
+        android:background="?android:attr/colorPrimary" />
 </com.google.android.material.card.MaterialCardView>
