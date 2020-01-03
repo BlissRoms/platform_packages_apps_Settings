@@ -25,13 +25,6 @@
     app:cardBackgroundColor="?android:attr/colorPrimary"
     app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
 
-    <ImageView
-        android:layout_width="@dimen/homepage_logo_size"
-        android:layout_height="@dimen/homepage_logo_size"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/homepage_spacer_imageview_marginBottom"
-        android:src="@drawable/ic_homepage_legion"/>
-
     <TextView 
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
