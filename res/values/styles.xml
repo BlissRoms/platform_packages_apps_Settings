@@ -493,7 +493,7 @@
         <item name="android:paddingEnd">8dp</item>
 
         <item name="rowStyle">@style/SliceRowStyle</item>
-        <item name="android:background">?android:attr/colorBackgroundFloating</item>
+        <item name="android:background">@color/settings_panel_background_color</item>
     </style>
 
     <style name="ContextualCardSliceViewStyle" parent="SliceViewStyle">

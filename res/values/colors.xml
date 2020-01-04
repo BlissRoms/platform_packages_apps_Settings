@@ -148,4 +148,7 @@
     <color name="dialog_background">@*android:color/background_device_default_light</color>
 
     <color name="face_intro_outline">#ffdadce0</color>
+
+    <color name="settings_panel_background_color">@android:color/white</color>
+
 </resources>
