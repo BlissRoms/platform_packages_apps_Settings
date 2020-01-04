@@ -53,7 +53,8 @@ android_library {
 
     resource_dirs: ["res",
                     "res-pixel",
-                    "Blissify/res"
+                    "Blissify/res",
+        	    "TouchGestures/res"
     ],
 
     static_libs: [

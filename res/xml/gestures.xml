@@ -53,6 +53,18 @@
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTwistPreferenceController" />
 
+    <Preference
+        android:key="touchscreen_gesture_settings"
+        android:persistent="false"
+        android:title="@string/touchscreen_gesture_settings_title"
+        android:summary="@string/touchscreen_gesture_settings_summary"
+        settings:controller="com.android.settings.gestures.TouchGestureSettingsPreferenceController">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.touch.gestures"
+            android:targetClass="com.android.touch.gestures.TouchscreenGestureSettings" />
+    </Preference>
+
     <!--Preference
         android:key="gesture_system_navigation_input_summary"
         android:title="@string/system_navigation_title"
