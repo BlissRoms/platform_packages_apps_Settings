@@ -32,6 +32,7 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.appcompat_appcompat \
     androidx.cardview_cardview \
     androidx.preference_preference \
+    androidx.palette_palette \
     androidx.recyclerview_recyclerview \
     com.google.android.material_material \
     setupcompat \
