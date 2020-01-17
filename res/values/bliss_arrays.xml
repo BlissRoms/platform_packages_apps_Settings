@@ -37,4 +37,34 @@
         <item>2</item>
     </string-array>
 
+    <!-- Notification vibration intensity entries -->
+    <string-array name="notification_vibration_intensity_entries">
+        <item>Disabled</item>
+        <item>Light</item>
+        <item>Medium</item>
+        <item>Strong</item>
+    </string-array>
+
+    <!-- Do not translate. -->
+    <string-array name="notification_vibration_intensity_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Vibration intensity entries -->
+    <string-array name="ringtone_vibration_intensity_entries">
+        <item>Light</item>
+        <item>Medium</item>
+        <item>Strong</item>
+    </string-array>
+
+    <!-- Do not translate. -->
+    <string-array name="ringtone_vibration_intensity_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
 </resources>
