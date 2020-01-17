@@ -81,6 +81,9 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                 mArrowSwitchChecked = arrowSwitch.isChecked() ? true : false;
             }
         });
+
+        Switch mEdgeHaptic = view.findViewById(R.id.back_gesture_haptic);
+
         final Switch gesturePillSwitch = view.findViewById(R.id.gesture_pill_switch);
         mGesturePillSwitchChecked = Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.GESTURE_PILL_TOGGLE, 0) == 1;
@@ -91,6 +94,7 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                 mGesturePillSwitchChecked = gesturePillSwitch.isChecked() ? true : false;
             }
         });
+        mEdgeHaptic.setChecked(NavBarUtils.isBackHapticEnabled(getContext(), USER_CURRENT));
         return new AlertDialog.Builder(getContext())
                 .setTitle(R.string.back_options_dialog_title)
                 .setMessage(R.string.back_sensitivity_dialog_message)
@@ -100,6 +104,11 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                     getArguments().putInt(KEY_BACK_SENSITIVITY, sensitivity);
                     int height = seekBarHeight.getProgress();
                     getArguments().putInt(KEY_BACK_HEIGHT, height);
+
+                    final boolean isBackHaptic = mEdgeHaptic.isChecked();
+                    Settings.System.putIntForUser(getContext().getContentResolver(),
+                        Settings.System.BACK_GESTURE_HAPTIC, isBackHaptic ? 1 : 0, USER_CURRENT);
+
                     SystemNavigationGestureSettings.setBackHeight(getActivity(), height);
                     SystemNavigationGestureSettings.setBackSensitivity(getActivity(),
                             getOverlayManager(), sensitivity);
