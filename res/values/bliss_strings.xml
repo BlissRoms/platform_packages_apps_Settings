@@ -137,4 +137,9 @@
     <!-- NavigationBar Gestural Mode Tweaks -->
     <string name="gesture_pill_message">Hide the navigation bar pill for seamless fullscreen gestures.</string>
 
+    <!-- Control Vibration intensities -->
+    <string name="vibration_intensity_ringer">Ringtone vibration intensity</string>
+    <string name="vibration_intensity_notification">Notification vibration intensity</string>
+    <string name="vibration_intensity_haptic">Haptic feedback vibration intensity</string>
+
 </resources>
