@@ -120,4 +120,9 @@
     <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Show an animated arrow for back gesture.</string>
 
+    <!-- Control Vibration intensities -->
+    <string name="vibration_intensity_ringer">Ringtone vibration intensity</string>
+    <string name="vibration_intensity_notification">Notification vibration intensity</string>
+    <string name="vibration_intensity_haptic">Haptic feedback vibration intensity</string>
+
 </resources>

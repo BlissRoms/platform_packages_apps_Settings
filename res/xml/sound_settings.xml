@@ -118,6 +118,23 @@
         settings:controller="com.android.settings.notification.VibrateWhenRingPreferenceController"
         android:order="-130"/>
 
+    <com.bliss.support.preferences.SystemSettingListPreference
+        android:key="ring_vibration_intensity"
+        android:title="@string/vibration_intensity_ringer"
+        android:dependency="vibrate_when_ringing"
+        android:defaultValue="2"
+        android:order="-127"
+        android:entries="@array/ringtone_vibration_intensity_entries"
+        android:entryValues="@array/ringtone_vibration_intensity_values" />
+
+    <com.bliss.support.preferences.SystemSettingListPreference
+        android:key="notification_vibration_intensity"
+        android:title="@string/vibration_intensity_notification"
+        android:defaultValue="2"
+        android:order="-125"
+        android:entries="@array/notification_vibration_intensity_entries"
+        android:entryValues="@array/notification_vibration_intensity_values" />
+
     <!-- Interruptions -->
     <com.android.settingslib.RestrictedPreference
         android:key="zen_mode"
@@ -212,6 +229,14 @@
           android:title="@string/vibrate_on_touch_title"
           android:summary="@string/vibrate_on_touch_summary"
           settings:keywords="@string/keywords_vibrate_on_touch"/>
+
+        <com.bliss.support.preferences.SystemSettingListPreference
+          android:key="haptic_feedback_intensity"
+          android:title="@string/vibration_intensity_haptic"
+          android:dependency="vibrate_on_touch"
+          android:defaultValue="2"
+          android:entries="@array/ringtone_vibration_intensity_entries"
+          android:entryValues="@array/ringtone_vibration_intensity_values" />
 
         <!-- Dock speaker plays -->
         <DropDownPreference
