@@ -53,11 +53,11 @@
             android:title="@string/translucent_lockscreen_notifications_bg_title"
             android:defaultValue="false" />
 
-        <SwitchPreference
+        <!--SwitchPreference
             android:key="security_setting_lockdown_enabled"
             android:title="@string/lockdown_settings_title"
             android:summary="@string/lockdown_settings_summary"
-            settings:controller="com.android.settings.security.LockdownButtonPreferenceController" />
+            settings:controller="com.android.settings.security.LockdownButtonPreferenceController" /-->
 
     </PreferenceCategory>
 
