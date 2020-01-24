@@ -26,7 +26,9 @@
         style="?android:attr/actionBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="?android:attr/actionBarTheme" />
+        android:theme="?android:attr/actionBarTheme"
+        android:navigationContentDescription="@*android:string/back_button_label"
+        android:outlineProvider="none" />
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
