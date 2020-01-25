@@ -89,7 +89,7 @@ public class PermissionBarChartPreferenceController extends BasePreferenceContro
 
     @Override
     public int getAvailabilityStatus() {
-        return UNSUPPORTED_ON_DEVICE;
+        return AVAILABLE_UNSEARCHABLE;
     }
 
     @Override
