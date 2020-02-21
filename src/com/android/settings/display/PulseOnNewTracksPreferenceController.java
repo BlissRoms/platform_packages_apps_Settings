@@ -25,6 +25,8 @@ import android.text.TextUtils;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 
+import com.android.internal.util.bliss.BlissUtils;
+
 import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
@@ -41,9 +43,11 @@ public class PulseOnNewTracksPreferenceController extends
 
     private final MetricsFeatureProvider mMetricsFeatureProvider;
     private AmbientDisplayConfiguration mConfig;
+    private Context mContext;
 
     public PulseOnNewTracksPreferenceController(Context context, String key) {
         super(context, key);
+        mContext = context;
         mMetricsFeatureProvider = FeatureFactory.getFactory(context).getMetricsFeatureProvider();
     }
 
@@ -82,6 +86,7 @@ public class PulseOnNewTracksPreferenceController extends
     @Override
     public int getAvailabilityStatus() {
         return getAmbientConfig().pulseOnNotificationAvailable()
+                && !BlissUtils.isDozePackageAvailable(mContext)
                 ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
