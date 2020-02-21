@@ -26,6 +26,8 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
 
+import com.android.internal.util.aicp.PackageUtils;
+
 public class PickupGesturePreferenceController extends GesturePreferenceController {
 
     private static final int ON = 1;
@@ -39,10 +41,12 @@ public class PickupGesturePreferenceController extends GesturePreferenceControll
     private AmbientDisplayConfiguration mAmbientConfig;
     @UserIdInt
     private final int mUserId;
+    private Context mContext;
 
     public PickupGesturePreferenceController(Context context, String key) {
         super(context, key);
         mUserId = UserHandle.myUserId();
+        mContext = context;
         mPickUpPrefKey = key;
     }
 
@@ -59,8 +63,10 @@ public class PickupGesturePreferenceController extends GesturePreferenceControll
 
     @Override
     public int getAvailabilityStatus() {
-        // No hardware support for Pickup Gesture
-        if (!getAmbientConfig().dozePickupSensorAvailable()) {
+        // No hardware support for Pickup Gesture or
+        // custom touch gestures package is available
+        if (!getAmbientConfig().dozePickupSensorAvailable() ||
+                PackageUtils.isTouchGesturesPackageAvailable(mContext)) {
             return UNSUPPORTED_ON_DEVICE;
         }
 

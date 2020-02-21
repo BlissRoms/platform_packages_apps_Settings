@@ -28,6 +28,8 @@ import android.text.TextUtils;
 
 import androidx.annotation.VisibleForTesting;
 
+import com.android.internal.util.aicp.PackageUtils;
+
 public class DoubleTapScreenPreferenceController extends GesturePreferenceController {
 
     private final int ON = 1;
@@ -40,10 +42,12 @@ public class DoubleTapScreenPreferenceController extends GesturePreferenceContro
     private AmbientDisplayConfiguration mAmbientConfig;
     @UserIdInt
     private final int mUserId;
+    private Context mContext;
 
     public DoubleTapScreenPreferenceController(Context context, String key) {
         super(context, key);
         mUserId = UserHandle.myUserId();
+        mContext = context;
     }
 
     public DoubleTapScreenPreferenceController setConfig(AmbientDisplayConfiguration config) {
@@ -64,8 +68,10 @@ public class DoubleTapScreenPreferenceController extends GesturePreferenceContro
 
     @Override
     public int getAvailabilityStatus() {
-        // No hardware support for Double Tap
-        if (!getAmbientConfig().doubleTapSensorAvailable()) {
+        // No hardware support for Double Tap or
+        // custom touch gestures package is available
+        if (!getAmbientConfig().doubleTapSensorAvailable() ||
+                PackageUtils.isTouchGesturesPackageAvailable(mContext)) {
             return UNSUPPORTED_ON_DEVICE;
         }
 
