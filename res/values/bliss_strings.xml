@@ -237,4 +237,7 @@
     <string name="clipboard_toast_info_show_all">Show all access alerts</string>
 
     <string name="battery_charge_cycles">Charge Cycles Completed</string>
+
+    <string name="auto_brightness_min_title">Minimal brightness level</string>
+    <string name="auto_brightness_description_new">Your screen brightness will automatically adjust to your environment and activities.\n\nYou can adjust a minimal brightness level that will be used.</string>
 </resources>
