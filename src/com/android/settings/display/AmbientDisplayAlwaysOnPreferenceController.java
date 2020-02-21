@@ -22,6 +22,7 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
 
+import com.android.internal.util.bliss.BlissUtils;
 import com.android.settings.core.TogglePreferenceController;
 
 public class AmbientDisplayAlwaysOnPreferenceController extends TogglePreferenceController {
@@ -34,6 +35,7 @@ public class AmbientDisplayAlwaysOnPreferenceController extends TogglePreference
 
     private AmbientDisplayConfiguration mConfig;
     private OnPreferenceChangedCallback mCallback;
+    private Context mContext;
 
     public interface OnPreferenceChangedCallback {
         void onPreferenceChanged();
@@ -41,12 +43,14 @@ public class AmbientDisplayAlwaysOnPreferenceController extends TogglePreference
 
     public AmbientDisplayAlwaysOnPreferenceController(Context context, String key) {
         super(context, key);
+        mContext = context;
     }
 
     @Override
     public int getAvailabilityStatus() {
         return isAvailable(getConfig())
-                && !SystemProperties.getBoolean(PROP_AWARE_AVAILABLE, false) ?
+                && !SystemProperties.getBoolean(PROP_AWARE_AVAILABLE, false)
+                && !BlissUtils.isDozePackageAvailable(mContext) ?
                 AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
