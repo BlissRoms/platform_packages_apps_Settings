@@ -61,18 +61,6 @@ public class WallpaperSuggestionActivity extends StyleSuggestionActivityBase imp
                 public List<SearchIndexableRaw> getRawDataToIndex(Context context,
                         boolean enabled) {
                     final List<SearchIndexableRaw> result = new ArrayList<>();
-                    WallpaperPreferenceController controller =
-                            new WallpaperPreferenceController(context, "dummy key");
-                    SearchIndexableRaw data = new SearchIndexableRaw(context);
-                    data.title = controller.getTitle();
-                    data.screenTitle = data.title;
-                    ComponentName component = controller.getComponentName();
-                    data.intentTargetPackage = component.getPackageName();
-                    data.intentTargetClass = component.getClassName();
-                    data.intentAction = Intent.ACTION_MAIN;
-                    data.key = SUPPORT_SEARCH_INDEX_KEY;
-                    data.keywords = controller.getKeywords();
-                    result.add(data);
                     return result;
                 }
             };
