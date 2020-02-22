@@ -36,15 +36,11 @@ public class TopLevelDisplayPreferenceController extends BasePreferenceControlle
 
     @Override
     public CharSequence getSummary() {
-        final WallpaperPreferenceController controller =
-                new WallpaperPreferenceController(mContext, "dummy_key");
-        if (controller.isAvailable()) {
-            return mContext.getText(
-                    controller.areStylesAvailable()
-                    ? R.string.display_dashboard_summary_with_style
-                    : R.string.display_dashboard_summary);
+        if (new WallpaperPreferenceController(mContext, "dummy_key").isAvailable()) {
+            return mContext.getText(R.string.display_dashboard_summary);
         } else {
             return mContext.getText(R.string.display_dashboard_nowallpaper_summary);
         }
     }
+
 }

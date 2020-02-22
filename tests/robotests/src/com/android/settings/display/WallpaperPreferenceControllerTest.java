@@ -18,156 +18,74 @@ package com.android.settings.display;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
-import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 
-import androidx.fragment.app.FragmentActivity;
-import androidx.preference.Preference;
-
 import com.android.settings.R;
-import com.android.settings.testutils.shadow.SettingsShadowResources;
-
-import com.google.common.collect.Lists;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.Robolectric;
+
+import java.util.ArrayList;
+import java.util.List;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.Shadows;
-import org.robolectric.annotation.Config;
-import org.robolectric.shadows.ShadowPackageManager;
 
 @RunWith(RobolectricTestRunner.class)
-@Config(shadows = {SettingsShadowResources.class})
 public class WallpaperPreferenceControllerTest {
+
+    private static final String WALLPAPER_PACKAGE = "TestPkg";
+    private static final String WALLPAPER_CLASS = "TestCls";
     private static final String TEST_KEY = "test_key";
 
-    private Intent mWallpaperIntent;
-    private Intent mStylesAndWallpaperIntent;
-    private FragmentActivity mContext;
-    private ShadowPackageManager mShadowPackageManager;
+    @Mock
+    private Context mContext;
+    @Mock
+    private PackageManager mPackageManager;
 
     private WallpaperPreferenceController mController;
 
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        mContext = Robolectric.buildActivity(FragmentActivity.class).get();
-        SettingsShadowResources.overrideResource(
-                R.string.config_wallpaper_picker_package, "bogus.package.for.testing");
-        SettingsShadowResources.overrideResource(
-                R.string.config_styles_and_wallpaper_picker_class, "bogus.package.class");
-        mWallpaperIntent =  new Intent().setComponent(new ComponentName(
-                mContext.getString(R.string.config_wallpaper_picker_package),
-                mContext.getString(R.string.config_wallpaper_picker_class)));
-        mStylesAndWallpaperIntent = new Intent().setComponent(new ComponentName(
-                mContext.getString(R.string.config_wallpaper_picker_package),
-                mContext.getString(R.string.config_styles_and_wallpaper_picker_class)));
-        mShadowPackageManager = Shadows.shadowOf(mContext.getPackageManager());
+        when(mContext.getString(R.string.config_wallpaper_picker_package))
+                .thenReturn(WALLPAPER_PACKAGE);
+        when(mContext.getString(R.string.config_wallpaper_picker_class))
+                .thenReturn(WALLPAPER_CLASS);
+        when(mContext.getPackageManager()).thenReturn(mPackageManager);
+
         mController = new WallpaperPreferenceController(mContext, TEST_KEY);
     }
 
     @Test
     public void isAvailable_wallpaperPickerEnabled_shouldReturnTrue() {
-        mShadowPackageManager.setResolveInfosForIntent(
-                mWallpaperIntent, Lists.newArrayList(mock(ResolveInfo.class)));
+        final List<ResolveInfo> resolveInfos = new ArrayList<>();
+        resolveInfos.add(mock(ResolveInfo.class));
+        when(mPackageManager.queryIntentActivities(any(Intent.class), anyInt()))
+                .thenReturn(resolveInfos);
 
         assertThat(mController.isAvailable()).isTrue();
     }
 
     @Test
     public void isAvailable_wallpaperPickerDisabled_shouldReturnFalse() {
-        mShadowPackageManager.setResolveInfosForIntent(
-                mWallpaperIntent, Lists.newArrayList());
+        when(mPackageManager.queryIntentActivities(any(Intent.class), anyInt())).thenReturn(null);
 
         assertThat(mController.isAvailable()).isFalse();
-    }
 
-    @Test
-    public void areStylesAvailable_noComponentSpecified() {
-        SettingsShadowResources.overrideResource(
-                R.string.config_styles_and_wallpaper_picker_class, "");
-        mShadowPackageManager.setResolveInfosForIntent(
-                mStylesAndWallpaperIntent, Lists.newArrayList());
+        final List<ResolveInfo> resolveInfos = new ArrayList<>();
+        when(mPackageManager.queryIntentActivities(any(Intent.class), anyInt()))
+                .thenReturn(resolveInfos);
 
-        assertThat(mController.areStylesAvailable()).isFalse();
-    }
-
-    @Test
-    public void areStylesAvailable_componentUnresolveable() {
-        mShadowPackageManager.setResolveInfosForIntent(
-                mStylesAndWallpaperIntent, Lists.newArrayList());
-
-        assertThat(mController.areStylesAvailable()).isFalse();
-    }
-
-    @Test
-    public void areStylesAvailable_componentResolved() {
-        mShadowPackageManager.setResolveInfosForIntent(
-                mStylesAndWallpaperIntent,
-                Lists.newArrayList(mock(ResolveInfo.class)));
-
-        assertThat(mController.areStylesAvailable()).isTrue();
-    }
-
-    @Test
-    public void getKeywords_withoutStyles() {
-        mShadowPackageManager.setResolveInfosForIntent(
-                mStylesAndWallpaperIntent, Lists.newArrayList());
-
-        assertThat(mController.getKeywords())
-                .contains(mContext.getString(R.string.keywords_wallpaper));
-        assertThat(mController.getKeywords())
-                .doesNotContain(mContext.getString(R.string.theme_customization_category));
-    }
-
-    @Test
-    public void getKeywords_withStyles() {
-        mShadowPackageManager.setResolveInfosForIntent(
-                mStylesAndWallpaperIntent,
-                Lists.newArrayList(mock(ResolveInfo.class)));
-
-        assertThat(mController.areStylesAvailable()).isTrue();
-        assertThat(mController.getKeywords())
-                .contains(mContext.getString(R.string.keywords_wallpaper));
-        assertThat(mController.getKeywords())
-                .contains(mContext.getString(R.string.theme_customization_category));
-    }
-
-    @Test
-    public void handlePreferenceTreeClick_wallpaperOnly() {
-        mShadowPackageManager.setResolveInfosForIntent(
-                mWallpaperIntent, Lists.newArrayList(mock(ResolveInfo.class)));
-        mShadowPackageManager.setResolveInfosForIntent(
-                mStylesAndWallpaperIntent, Lists.newArrayList());
-        Preference preference = new Preference(mContext);
-        preference.setKey(TEST_KEY);
-
-        mController.handlePreferenceTreeClick(preference);
-
-        assertThat(Shadows.shadowOf(mContext)
-                .getNextStartedActivityForResult().intent.getComponent().getClassName())
-                .isEqualTo(mContext.getString(R.string.config_wallpaper_picker_class));
-    }
-
-    @Test
-    public void handlePreferenceTreeClick_stylesAndWallpaper() {
-        mShadowPackageManager.setResolveInfosForIntent(
-                mWallpaperIntent, Lists.newArrayList());
-        mShadowPackageManager.setResolveInfosForIntent(
-                mStylesAndWallpaperIntent, Lists.newArrayList(mock(ResolveInfo.class)));
-        Preference preference = new Preference(mContext);
-        preference.setKey(TEST_KEY);
-
-        mController.handlePreferenceTreeClick(preference);
-
-        assertThat(Shadows.shadowOf(mContext)
-                .getNextStartedActivityForResult().intent.getComponent().getClassName())
-                .isEqualTo(mContext.getString(R.string.config_styles_and_wallpaper_picker_class));
+        assertThat(mController.isAvailable()).isFalse();
     }
 }

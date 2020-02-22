@@ -27,7 +27,6 @@ import androidx.annotation.VisibleForTesting;
 
 import com.android.settings.R;
 import com.android.settings.core.SubSettingLauncher;
-import com.android.settings.display.WallpaperPreferenceController;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
@@ -37,21 +36,6 @@ public abstract class StyleSuggestionActivityBase extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final PackageManager pm = getPackageManager();
-        final Intent intent = new Intent()
-                .setComponent(new WallpaperPreferenceController(this, "dummy key")
-                        .getComponentName())
-                .addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
-
-        // passing the necessary extra to next page
-        WizardManagerHelper.copyWizardManagerExtras(getIntent(), intent);
-
-        addExtras(intent);
-
-        if (pm.resolveActivity(intent, 0) != null) {
-            startActivity(intent);
-        } else {
-            startFallbackSuggestion();
-        }
 
         finish();
     }
