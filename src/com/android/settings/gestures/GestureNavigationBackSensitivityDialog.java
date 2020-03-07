@@ -48,7 +48,7 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
     private static final String KEY_BACK_BLOCK_IME = "back_block_ime";
 
     public static void show(SystemNavigationGestureSettings parent, int sensitivity, int height,
-    boolean blockIme) {
+            int length, boolean blockIme) {
         if (!parent.isAdded()) {
             return;
         }
@@ -58,6 +58,7 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
         final Bundle bundle = new Bundle();
         bundle.putInt(KEY_BACK_SENSITIVITY, sensitivity);
         bundle.putInt(KEY_BACK_HEIGHT, height);
+        bundle.putInt(KEY_HOME_HANDLE_SIZE, length);
         bundle.putBoolean(KEY_BACK_BLOCK_IME, blockIme);
         dialog.setArguments(bundle);
         dialog.setTargetFragment(parent, 0);
@@ -77,6 +78,8 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
         seekBarSensitivity.setProgress(getArguments().getInt(KEY_BACK_SENSITIVITY));
         final SeekBar seekBarHeight = view.findViewById(R.id.back_height_seekbar);
         seekBarHeight.setProgress(getArguments().getInt(KEY_BACK_HEIGHT));
+        final SeekBar seekBarHandleSize = view.findViewById(R.id.home_handle_seekbar);
+        seekBarHandleSize.setProgress(getArguments().getInt(KEY_HOME_HANDLE_SIZE));
         final Switch blockImeSwitch = view.findViewById(R.id.back_block_ime);
         blockImeSwitch.setChecked(getArguments().getBoolean(KEY_BACK_BLOCK_IME));
         final Switch arrowSwitch = view.findViewById(R.id.back_arrow_gesture_switch);
@@ -118,11 +121,14 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                     getArguments().putInt(KEY_BACK_SENSITIVITY, sensitivity);
                     int height = seekBarHeight.getProgress();
                     getArguments().putInt(KEY_BACK_HEIGHT, height);
+                    int length = seekBarHandleSize.getProgress();
+                    getArguments().putInt(KEY_HOME_HANDLE_SIZE, length);
                     boolean blockIme = blockImeSwitch.isChecked();
                     getArguments().putBoolean(KEY_BACK_BLOCK_IME, blockIme);
                     SystemNavigationGestureSettings.setBackHeight(getActivity(), height);
                     SystemNavigationGestureSettings.setBackSensitivity(getActivity(),
                             getOverlayManager(), sensitivity);
+                    SystemNavigationGestureSettings.setHomeHandleSize(getActivity(), length);
                     SystemNavigationGestureSettings.setBackBlockIme(getActivity(), blockIme);
                     Settings.Secure.putInt(getActivity().getContentResolver(),
                             Settings.Secure.SHOW_BACK_ARROW_GESTURE, mArrowSwitchChecked ? 1 : 0);
