@@ -256,7 +256,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
         context.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE).edit()
                 .putInt(PREFS_BACK_SENSITIVITY_KEY, sensitivity).apply();
         if (getCurrentSystemNavigationMode(context) == KEY_SYSTEM_NAV_GESTURAL) {
-            setNavBarInteractionMode(overlayManager, BACK_GESTURE_OVERLAYS_TO_USE[sensitivity]);
+            setNavBarInteractionMode(overlayManager, BACK_GESTURE_OVERLAYS_TO_USE[sensitivity], false);
         }
     }
 
@@ -298,6 +298,13 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
         // 0 means aosp size
         Settings.System.putInt(context.getContentResolver(),
                 Settings.System.NAVIGATION_HANDLE_WIDTH, length);
+        // if gesture nav is already set, force overlay reloading
+        if (getCurrentSystemNavigationMode(context) == KEY_SYSTEM_NAV_GESTURAL) {
+            final IOverlayManager overlayManager = IOverlayManager.Stub.asInterface(
+                    ServiceManager.getService(Context.OVERLAY_SERVICE));
+            int sensitivity = getBackSensitivity(context, overlayManager);
+            setNavBarInteractionMode(overlayManager, BACK_GESTURE_OVERLAYS_TO_USE[sensitivity], true);
+        }
     }
 
     static int getHomeHandleSize(Context context) {
@@ -344,20 +351,24 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
         switch (key) {
             case KEY_SYSTEM_NAV_GESTURAL:
                 int sensitivity = getBackSensitivity(context, overlayManager);
-                setNavBarInteractionMode(overlayManager, BACK_GESTURE_OVERLAYS_TO_USE[sensitivity]);
+                setNavBarInteractionMode(overlayManager, BACK_GESTURE_OVERLAYS_TO_USE[sensitivity], false);
                 break;
             case KEY_SYSTEM_NAV_2BUTTONS:
-                setNavBarInteractionMode(overlayManager, NAV_BAR_MODE_2BUTTON_OVERLAY);
+                setNavBarInteractionMode(overlayManager, NAV_BAR_MODE_2BUTTON_OVERLAY, false);
                 break;
             case KEY_SYSTEM_NAV_3BUTTONS:
-                setNavBarInteractionMode(overlayManager, NAV_BAR_MODE_3BUTTON_OVERLAY);
+                setNavBarInteractionMode(overlayManager, NAV_BAR_MODE_3BUTTON_OVERLAY, false);
                 break;
         }
     }
 
     private static void setNavBarInteractionMode(IOverlayManager overlayManager,
-            String overlayPackage) {
+            String overlayPackage, boolean force) {
         try {
+            if (force) {
+                // disable then enable again
+                overlayManager.setEnabled(overlayPackage, false, USER_CURRENT);
+            }
             overlayManager.setEnabledExclusiveInCategory(overlayPackage, USER_CURRENT);
         } catch (RemoteException e) {
             throw e.rethrowFromSystemServer();
