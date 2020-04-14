@@ -25,7 +25,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.res.TypedArray;
-import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -35,6 +34,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.FrameLayout;
 import android.widget.Toolbar;
 
 import androidx.fragment.app.FragmentActivity;
@@ -44,9 +44,6 @@ import com.android.settings.SubSettings;
 import com.android.settings.dashboard.CategoryManager;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
-
-import eightbitlab.com.blurview.BlurView;
-import eightbitlab.com.blurview.RenderScriptBlur;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -86,12 +83,6 @@ public class SettingsBaseActivity extends FragmentActivity {
 
         final View decorView = getWindow().getDecorView();
         final ViewGroup root = (ViewGroup) decorView.findViewById(android.R.id.content);
-        final ViewGroup contentFrame = findViewById(R.id.content_frame);
-        final Drawable windowBackground = decorView.getBackground();
-
-        final BlurView actionBarBlur = findViewById(R.id.action_bar_blur);
-        actionBarBlur.setupWith(contentFrame).setFrameClearDrawable(windowBackground)
-                .setBlurAlgorithm(new RenderScriptBlur(this)).setHasFixedTransformationMatrix(true);
 
         final Toolbar toolbar = findViewById(R.id.action_bar);
         if (theme.getBoolean(android.R.styleable.Theme_windowNoTitle, false)) {
@@ -104,14 +95,14 @@ public class SettingsBaseActivity extends FragmentActivity {
                 | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
         root.setOnApplyWindowInsetsListener((v, insets) -> {
+            final FrameLayout contentFrame = findViewById(R.id.content_frame);
             final TypedArray styledAttributes = getTheme().obtainStyledAttributes(
                 new int[] { android.R.attr.actionBarSize });
-            final int actionBarSize = (int) styledAttributes.getDimension(0, 0)
-                    + insets.getSystemWindowInsetTop();
+            final int actionBarSize = (int) styledAttributes.getDimension(0, 0);
             styledAttributes.recycle();
 
             toolbar.setPadding(0, insets.getSystemWindowInsetTop(), 0, 0);
-            contentFrame.setPadding(0, actionBarSize, 0, 0);
+            contentFrame.setPadding(0, insets.getSystemWindowInsetTop() + actionBarSize, 0, 0);
             return insets;
         });
 
