@@ -195,4 +195,7 @@ Notifications may be delayed for these apps."</string>
     <string name="stock_statusbar_in_hide">Stock statusbar height</string>
     <string name="stock_statusbar_in_hide_summary">Use default statusbar height in Hide</string>
 
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Enable to show IME button space and navbar pill</string>
+
 </resources>
