@@ -163,7 +163,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
             p.setExtraWidgetOnClickListener((v) -> GestureNavigationBackSensitivityDialog
                         .show(this, getBackSensitivity(getContext(), mOverlayManager),
                         getBackHeight(getContext()), getBackBlockIme(getContext()),
-                        getHomeHandleSize(getContext()), getShowNav(getContext())));
+                        getHomeHandleSize(getContext()), getShowNav(getContext()), getImeSpace(getContext())));
         } else {
             p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_GONE);
         }
@@ -298,6 +298,11 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
                 Settings.System.GESTURE_NAVBAR_SHOW, 1,
                 USER_CURRENT) != 0;
         return show;
+    }
+
+    static boolean getImeSpace(Context context) {
+        return Settings.System.getInt(context.getContentResolver(),
+                Settings.System.NAVIGATION_BAR_IME_SPACE, 1) == 1;
     }
 
     static void setShowNav(Context context, boolean show) {
