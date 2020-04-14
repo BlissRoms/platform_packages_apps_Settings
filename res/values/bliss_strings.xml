@@ -187,4 +187,8 @@ Notifications may be delayed for these apps."</string>
     <!-- IME button space -->
     <string name="navigation_bar_ime_space_title">Enable to show IME button space and pill</string>
 
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Swipe up to unlock</string>
+    <string name="security_settings_face_require_swipe_summary">Swipe up on the lockscreen to use face unlock</string>
+
 </resources>
