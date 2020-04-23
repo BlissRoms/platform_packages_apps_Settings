@@ -34,7 +34,7 @@ public class BlissUpdatePreferenceController extends BasePreferenceController {
 
     private static final String KEY_SYSTEM_UPDATE_SETTINGS = "bliss_update_settings";
 
-    private static final String BLISS_BUILD_TYPE_PROP = "ro.bliss.releasetype";
+    private static final String BLISS_BUILD_TYPE_PROP = "ro.bliss.build.status";
     private static final String BLISS_UPDATER_PACKAGE = "com.blissroms.updater";
 
     private final UserManager mUm;
