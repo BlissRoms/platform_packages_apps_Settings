@@ -26,7 +26,7 @@ public class BlissBuildTypePreferenceController extends BasePreferenceController
 
     private static final String TAG = "BlissBuildType";
 
-    private static final String KEY_BLISS_BUILD_TYPE = "ro.bliss.releasetype";
+    private static final String KEY_BLISS_BUILD_TYPE = "ro.bliss.build.status";
 
     public BlissBuildTypePreferenceController(Context context, String key) {
         super(context, key);
