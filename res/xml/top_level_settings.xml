@@ -42,7 +42,7 @@
         android:key="top_level_blissify_settings"
         android:title="@string/blissify_settings_title"
         android:summary="@string/blissify_settings_summary"
-        android:icon="@drawable/ic_dashboard_blissify"
+        android:icon="@drawable/ic_homepage_blissify"
         android:order="-105"
         android:fragment="com.blissroms.blissify.Blissify"/>
 

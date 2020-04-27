@@ -17,4 +17,7 @@
 
     <!-- Shortcuts -->
     <color name="icon_accent_custom">@*android:color/accent_device_default_light</color>
+    
+    <!-- Settings HomePage Blissify -->
+    <color name="homepage_blissify_background">#78A0D0</color>
 </resources>
