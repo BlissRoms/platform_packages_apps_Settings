@@ -3331,7 +3331,7 @@
         <!-- Blissify -->
         <activity android:name=".Settings$BlissifySettingsActivity"
             android:label="@string/blissify_settings_title"
-            android:icon="@drawable/ic_dashboard_blissify"
+            android:icon="@drawable/ic_homepage_blissify"
             android:parentActivityName="com.android.settings">
             <intent-filter android:priority="31">
                 <action android:name="android.intent.action.MAIN" />
