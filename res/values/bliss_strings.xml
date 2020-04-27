@@ -130,4 +130,8 @@
     <string name="show_dev_on_cm">You have enabled development settings!</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <string name="show_dev_already_cm">No need, you have already enabled development settings.</string>
+
+    <!-- Mobile network setting screen, summary of Mobile data switch preference when the network
+         is unavailable, the preference selection will be disabled. [CHAR LIMIT=NONE] -->
+    <string name="mobile_data_settings_summary_unavailable">No SIM card available</string>
 </resources>
