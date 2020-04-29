@@ -91,6 +91,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     private static final String KEY_BATTERY_TEMP = "battery_temp";
     private static final String KEY_TIME_SINCE_LAST_FULL_CHARGE = "last_full_charge";
     private static final String KEY_BATTERY_SAVER_SUMMARY = "battery_saver_summary";
+    private static final String KEY_SMART_CHARGING = "smart_charging_key";
 
     @VisibleForTesting
     static final int BATTERY_INFO_LOADER = 1;
@@ -127,6 +128,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @VisibleForTesting
     BatteryTipPreferenceController mBatteryTipPreferenceController;
     private int mStatsType = BatteryStats.STATS_SINCE_CHARGED;
+    private Preference mSmartCharging;
 
     @VisibleForTesting
     final ContentObserver mSettingsObserver = new ContentObserver(new Handler()) {
@@ -251,6 +253,11 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 KEY_TIME_SINCE_LAST_FULL_CHARGE);
         mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.battery_footer_summary);
         mBatteryUtils = BatteryUtils.getInstance(getContext());
+
+        mSmartCharging = (Preference) findPreference(KEY_SMART_CHARGING);
+        if (!getResources().getBoolean(com.android.internal.R.bool.config_smartChargingAvailable)) {
+            getPreferenceScreen().removePreference(mSmartCharging);
+        }
 
         restartBatteryInfoLoader();
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
