@@ -41,7 +41,6 @@ public class PhoneRingtone2PreferenceController extends RingtonePreferenceContro
         DefaultRingtonePreference ringtonePreference =
                 (DefaultRingtonePreference) screen.findPreference(KEY_PHONE_RINGTONE2);
         ringtonePreference.setSlotId(SLOT_ID);
-        ringtonePreference.setEnabled(hasCard());
     }
 
     @Override
@@ -59,11 +58,5 @@ public class PhoneRingtone2PreferenceController extends RingtonePreferenceContro
     @Override
     public int getRingtoneType() {
         return RingtoneManager.TYPE_RINGTONE;
-    }
-
-    private boolean hasCard() {
-        TelephonyManager telephonyManager =
-                (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        return telephonyManager.hasIccCard(SLOT_ID);
     }
 }
