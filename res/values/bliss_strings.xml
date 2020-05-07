@@ -25,4 +25,8 @@
     <string name="bliss_build_type">Build status</string>
     <string name="bliss_device">Bliss device</string>
     <string name="bliss_codename">Bliss Codename</string>
+
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Maintainer</string>
+
 </resources>
