@@ -36,6 +36,14 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.bliss.BlissVersionPreferenceController"/>
 
+    <!-- Bliss maintainer -->
+    <Preference
+        android:key="maintainer"
+        android:title="@string/maintainer"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.bliss.BlissMaintainerPreferenceController"/>
+
     <!-- Bliss Device -->
     <Preference
         android:key="bliss_device"

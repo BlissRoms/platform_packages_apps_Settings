@@ -23,4 +23,7 @@
     <string name="bliss_build_default">Unknown</string>
     <string name="bliss_build_type">Build status</string>
     <string name="bliss_device">Bliss device</string>
+
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Maintainer</string>
 </resources>
