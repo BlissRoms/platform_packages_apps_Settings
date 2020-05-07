@@ -199,4 +199,7 @@ Notifications may be delayed for these apps."</string>
     <!-- Notification log -->
     <string name="notification_log_summary">Show notifications history log</string>
 
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Maintainer</string>
+
 </resources>
