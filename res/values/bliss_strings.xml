@@ -145,4 +145,7 @@
     <string name="bliss_updater_title">Bliss Updater</string>
     <string name="bliss_updater_summary">Check for the latest version of the rom</string>
     <string name="keywords_bliss_updater">BlissOTA, updater, OTA</string>
+
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Maintainer</string>
 </resources>
