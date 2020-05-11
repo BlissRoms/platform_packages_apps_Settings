@@ -36,4 +36,9 @@
 
     <!-- Smart Charging -->
     <bool name="config_supportSmartCharging">false</bool>
+
+    <!-- Battery Health -->
+    <string name="config_batCurCap"></string>
+    <string name="config_batDesCap"></string>
+
 </resources>
