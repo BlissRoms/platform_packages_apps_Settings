@@ -30,4 +30,8 @@
 
     <!-- Screen off FOD -->
     <bool name="config_supportScreenOffFod">false</bool>
+
+    <!-- Battery Health -->
+    <string name="config_batCurCap"></string>
+    <string name="config_batDesCap"></string>
 </resources>
