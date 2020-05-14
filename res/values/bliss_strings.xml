@@ -43,4 +43,7 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
 
+    <!-- Phone Specs -->
+    <string name="specs_title">Phone Specifications</string>
+
 </resources>
