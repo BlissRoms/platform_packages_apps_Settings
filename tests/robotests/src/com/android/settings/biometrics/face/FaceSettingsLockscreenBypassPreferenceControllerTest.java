@@ -18,12 +18,10 @@ package com.android.settings.biometrics.face;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.when;
 
 import android.content.Context;
 import android.hardware.face.FaceManager;
-import android.os.UserManager;
 import android.provider.Settings;
 
 import androidx.preference.SwitchPreference;
@@ -43,8 +41,6 @@ public class FaceSettingsLockscreenBypassPreferenceControllerTest {
     @Mock
     private FaceManager mFaceManager;
     private SwitchPreference mPreference;
-    @Mock
-    private UserManager mUserManager;
 
     private Context mContext;
     private FaceSettingsLockscreenBypassPreferenceController mController;
@@ -55,9 +51,8 @@ public class FaceSettingsLockscreenBypassPreferenceControllerTest {
         mContext = RuntimeEnvironment.application;
         mPreference = new SwitchPreference(mContext);
 
-        mController = new FaceSettingsLockscreenBypassPreferenceController(mContext, "test_key");
+        mController = new FaceSettingsLockscreenBypassPreferenceController(mContext);
         ReflectionHelpers.setField(mController, "mFaceManager", mFaceManager);
-        ReflectionHelpers.setField(mController, "mUserManager", mUserManager);
     }
 
     @Test
@@ -65,13 +60,6 @@ public class FaceSettingsLockscreenBypassPreferenceControllerTest {
         assertThat(mController.isAvailable()).isFalse();
         when(mFaceManager.isHardwareDetected()).thenReturn(true);
         assertThat(mController.isAvailable()).isTrue();
-    }
-
-    @Test
-    public void isAvailable_isManagedProfile_shouldReturnUnsupported() {
-        when(mUserManager.isManagedProfile(anyInt())).thenReturn(true);
-
-        assertThat(mController.isAvailable()).isFalse();
     }
 
     @Test
