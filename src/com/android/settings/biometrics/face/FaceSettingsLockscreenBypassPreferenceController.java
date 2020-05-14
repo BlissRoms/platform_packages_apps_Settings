@@ -19,8 +19,6 @@ package com.android.settings.biometrics.face;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.hardware.face.FaceManager;
-import android.os.UserHandle;
-import android.os.UserManager;
 import android.provider.Settings;
 
 import androidx.preference.Preference;
@@ -30,17 +28,20 @@ import com.android.internal.annotations.VisibleForTesting;
 public class FaceSettingsLockscreenBypassPreferenceController
         extends FaceSettingsPreferenceController {
 
+    static final String KEY = "security_lockscreen_bypass";
+
     @VisibleForTesting
     protected FaceManager mFaceManager;
-    private UserManager mUserManager;
+
+    public FaceSettingsLockscreenBypassPreferenceController(Context context) {
+        this(context, KEY);
+    }
 
     public FaceSettingsLockscreenBypassPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
         if (context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_FACE)) {
             mFaceManager = context.getSystemService(FaceManager.class);
         }
-
-        mUserManager = context.getSystemService(UserManager.class);
     }
 
     @Override
@@ -74,10 +75,6 @@ public class FaceSettingsLockscreenBypassPreferenceController
 
     @Override
     public int getAvailabilityStatus() {
-        if (mUserManager.isManagedProfile(UserHandle.myUserId())) {
-            return UNSUPPORTED_ON_DEVICE;
-        }
-
         if (mFaceManager != null && mFaceManager.isHardwareDetected()) {
             return mFaceManager.hasEnrolledTemplates(getUserId())
                     ? AVAILABLE : DISABLED_DEPENDENT_SETTING;
