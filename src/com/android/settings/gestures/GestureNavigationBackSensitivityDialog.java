@@ -35,7 +35,6 @@ import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
  * Dialog to set the back gesture's sensitivity in Gesture navigation mode.
  */
 public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFragment {
-    private boolean mGesturePillSwitchChecked;
 
     private boolean mArrowSwitchChecked;
 
@@ -92,16 +91,6 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                 mArrowSwitchChecked = arrowSwitch.isChecked() ? true : false;
             }
         });
-        final Switch gesturePillSwitch = view.findViewById(R.id.gesture_pill_switch);
-        mGesturePillSwitchChecked = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.GESTURE_PILL_TOGGLE, 0) == 1;
-        gesturePillSwitch.setChecked(mGesturePillSwitchChecked);
-        gesturePillSwitch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mGesturePillSwitchChecked = gesturePillSwitch.isChecked() ? true : false;
-            }
-        });
         final Switch GestureHapticSwitch = view.findViewById(R.id.back_gesture_haptic);
         mGestureHapticChecked = Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.BACK_GESTURE_HAPTIC, 0) == 1;
@@ -133,12 +122,7 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                     Settings.Secure.putInt(getActivity().getContentResolver(),
                             Settings.Secure.SHOW_BACK_ARROW_GESTURE, mArrowSwitchChecked ? 1 : 0);
                     Settings.System.putInt(getActivity().getContentResolver(),
-                            Settings.System.GESTURE_PILL_TOGGLE, mGesturePillSwitchChecked ? 1 : 0);
-                    Settings.System.putInt(getActivity().getContentResolver(),
                             Settings.System.BACK_GESTURE_HAPTIC, mGestureHapticChecked ? 1 : 0);
-                    SystemNavigationGestureSettings.setBackGestureOverlaysToUse(getActivity());
-                    SystemNavigationGestureSettings.setCurrentSystemNavigationMode(getActivity(),
-                            getOverlayManager(), SystemNavigationGestureSettings.getCurrentSystemNavigationMode(getActivity()));
                 })
                 .create();
     }
