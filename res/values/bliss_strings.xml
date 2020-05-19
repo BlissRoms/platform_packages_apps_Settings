@@ -108,11 +108,6 @@ Notifications may be delayed for these apps."</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Total RAM</string>
 
-    <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Notch behavior</string>
-    <string name="display_cutout_mode_normal">Default</string>
-    <string name="display_cutout_mode_hidden">Hidden</string>
-
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Screen refresh rate</string>
     <string name="refresh_rate_summary_auto">Auto / Automatically raises the refresh rate from 60 to 90Hz for some content</string>
