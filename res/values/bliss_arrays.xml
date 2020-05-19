@@ -15,16 +15,6 @@
 -->
 <resources>
 
-    <!-- Notch behavior -->
-    <string-array name="display_cutout_mode_entries" translatable="false">
-        <item>@string/display_cutout_mode_normal</item>
-        <item>@string/display_cutout_mode_hidden</item>
-    </string-array>
-    <string-array name="display_cutout_mode_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-
     <!-- Refresh rate -->
     <string-array name="refresh_rate_entries">
         <item>@string/auto_refresh_rate</item>
