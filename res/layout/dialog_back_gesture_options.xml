@@ -198,12 +198,13 @@
 
     <Switch
         android:id="@+id/back_gesture_haptic"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
-        android:gravity="left"
-        android:text="@string/back_gesture_haptic" />
+        android:text="@string/back_gesture_haptic"
+        android:textAppearance="?android:attr/textAppearance"
+        style="@android:style/TextAppearance.Material.Subhead" />
 
     <Switch
         android:id="@+id/back_arrow_gesture_switch"
