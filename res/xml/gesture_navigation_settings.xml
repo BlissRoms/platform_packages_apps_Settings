@@ -84,4 +84,15 @@
             android:summary="@string/back_gesture_arrow_summary"
             android:defaultValue="true" />
 
+    <PreferenceCategory
+        android:title="@string/navbar_category">
+
+        <com.bliss.support.preferences.SecureSettingSwitchPreference
+            android:key="navigation_bar_hint"
+            android:title="@string/hide_navbar_gesture_bar_title"
+            android:summary="@string/hide_navbar_gesture_bar_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>
+
 </PreferenceScreen>
