@@ -1,0 +1,30 @@
+<!--
+     Copyright (C) 2021 Project 404
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="vector"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+    <path
+        android:name="path"
+        android:pathData="M 30 15 C 30 23.284 23.284 30 15 30 C 6.716 30 0 23.284 0 15 C 0 6.716 6.716 0 15 0 C 23.284 0 30 6.716 30 15 Z"
+        android:fillColor="#5bf77d"
+        android:strokeWidth="1"/>
+    <path
+        android:name="path_1"
+        android:pathData="M 14.555 4.778 C 16.498 4.778 18.374 5.485 19.834 6.766 C 21.294 8.048 22.238 9.817 22.489 11.743 L 24.739 15.282 C 24.887 15.515 24.857 15.862 24.514 16.01 L 22.555 16.848 L 22.555 19.778 C 22.555 20.308 22.345 20.817 21.97 21.192 C 21.595 21.567 21.086 21.778 20.555 21.778 L 18.556 21.778 L 18.555 24.778 L 9.555 24.778 L 9.555 21.084 C 9.555 19.904 9.119 18.787 8.311 17.779 C 7.369 16.602 6.778 15.184 6.607 13.686 C 6.436 12.188 6.692 10.673 7.344 9.314 C 7.997 7.956 9.02 6.809 10.296 6.006 C 11.571 5.204 13.048 4.778 14.555 4.778 Z M 14.025 10.541 C 13.864 10.374 13.671 10.24 13.457 10.149 C 13.244 10.057 13.014 10.008 12.782 10.006 C 12.55 10.004 12.319 10.049 12.104 10.136 C 11.889 10.224 11.694 10.354 11.529 10.519 C 11.365 10.683 11.235 10.878 11.147 11.093 C 11.059 11.308 11.014 11.539 11.016 11.771 C 11.018 12.004 11.067 12.233 11.158 12.447 C 11.25 12.66 11.383 12.853 11.55 13.015 L 14.555 16.021 L 17.56 13.015 C 17.727 12.853 17.861 12.66 17.952 12.447 C 18.044 12.233 18.092 12.004 18.094 11.771 C 18.096 11.539 18.052 11.308 17.964 11.093 C 17.876 10.878 17.746 10.683 17.581 10.519 C 17.417 10.354 17.222 10.224 17.007 10.136 C 16.792 10.049 16.561 10.004 16.329 10.006 C 16.096 10.008 15.867 10.057 15.653 10.149 C 15.44 10.24 15.247 10.374 15.085 10.541 L 14.555 11.071 L 14.025 10.541 Z"
+        android:fillColor="#00681d"
+        android:strokeWidth="1"/>
+</vector>

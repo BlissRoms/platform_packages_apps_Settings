@@ -18,4 +18,21 @@
     <!-- Settings HomePage Blissify -->
     <color name="homepage_blissify_background">#78A0D0</color>
 
+   <!-- DashBoard Bliss Colors -->
+    <color name="dashboard_bliss_privacy">#65DAFF</color>
+    <color name="dashboard_bliss_network">#9DDCFF</color>
+    <color name="dashboard_bliss_devices">#A6F87F</color>
+    <color name="dashboard_bliss_apps">#EBAA9C</color>
+    <color name="dashboard_bliss_info">#3BA1FF</color>
+    <color name="dashboard_bliss_location">#52ACFF</color>
+    <color name="dashboard_bliss_battery">#5EEE8F</color>
+    <color name="dashboard_bliss_display">#F5DB7E</color>
+    <color name="dashboard_bliss_sound">#5AD2C4</color>
+    <color name="dashboard_bliss_storage">#C880D3</color>
+    <color name="dashboard_bliss_security">#60D664</color>
+    <color name="dashboard_bliss_accounts">#DD6EBE</color>
+    <color name="dashboard_bliss_accessibility">#C76CFF</color>
+    <color name="dashboard_bliss_about">#9E9E9E</color>
+    <color name="dashboard_bliss_google">#8D83FF</color>
+    <color name="dashboard_bliss_wellbeing">#5BF67D</color>
 </resources>

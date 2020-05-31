@@ -1,0 +1,30 @@
+<!--
+     Copyright (C) 2021 Project 404
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="vector"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+    <path
+        android:name="path_2"
+        android:pathData="M 30 15 C 30 23.284 23.284 30 15 30 C 6.716 30 0 23.284 0 15 C 0 6.716 6.716 0 15 0 C 23.284 0 30 6.716 30 15 Z"
+        android:fillColor="#5ad2c4"
+        android:strokeWidth="1"/>
+    <path
+        android:name="path_3"
+        android:pathData="M 15 5 L 15 16.713 C 14.11 16.224 13.075 16.028 12.056 16.156 C 11.036 16.285 10.09 16.729 9.364 17.422 C 8.638 18.114 8.172 19.015 8.039 19.985 C 7.906 20.955 8.114 21.94 8.629 22.786 C 9.145 23.633 9.94 24.293 10.89 24.666 C 11.841 25.038 12.894 25.101 13.886 24.846 C 14.879 24.59 15.755 24.03 16.378 23.252 C 17.001 22.474 17.337 21.522 17.333 20.543 L 17.333 9.441 L 22 9.441 L 22 5 L 15 5 Z M 20.25 23.874 C 19.904 23.874 19.566 23.776 19.278 23.593 C 18.99 23.41 18.766 23.15 18.633 22.846 C 18.501 22.542 18.466 22.207 18.534 21.884 C 18.601 21.561 18.768 21.264 19.013 21.031 C 19.257 20.798 19.569 20.64 19.909 20.575 C 20.248 20.511 20.6 20.544 20.92 20.67 C 21.239 20.796 21.513 21.01 21.705 21.284 C 21.897 21.557 22 21.879 22 22.209 C 22 22.65 21.816 23.074 21.487 23.386 C 21.159 23.699 20.714 23.874 20.25 23.874 Z"
+        android:fillColor="#005e53"
+        android:strokeWidth="1"/>
+</vector>
