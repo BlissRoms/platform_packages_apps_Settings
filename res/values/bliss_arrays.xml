@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2012-2015 The CyanogenMod Project
+     Copyright (C) 2014-2021 BlissRoms Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,14 +14,22 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <!-- Fingerprint sensor locations.  Devices should configure their sensor location using
-         config_fingerprintSensorLocation -->
-    <string-array name="security_settings_fingerprint_sensor_locations" translatable="false">
-        <item>@string/security_settings_fingerprint_enroll_find_sensor_message</item>
-        <item>@string/security_settings_fingerprint_enroll_find_sensor_message_front</item>
-        <item>@string/security_settings_fingerprint_enroll_find_sensor_message_left</item>
-        <item>@string/security_settings_fingerprint_enroll_find_sensor_message_right</item>
-    </string-array>
 
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Vibration patterns -->
+    <string-array name="vibration_pattern_entries">
+        <item>@string/pattern_dzzz_dzzz</item>
+        <item>@string/pattern_dzzz_da</item>
+        <item>@string/pattern_mm_mm_mm</item>
+        <item>@string/pattern_da_da_dzzz</item>
+        <item>@string/pattern_da_dzzz_da</item>
+    </string-array>
+    <string-array name="vibration_pattern_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 </resources>
