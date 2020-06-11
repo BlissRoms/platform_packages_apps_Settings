@@ -229,15 +229,24 @@
           android:key="docking_sounds"
           android:title="@string/docking_sounds_title"/>
 
-        <!-- Screenshot sounds -->
-        <SwitchPreference
-          android:key="screenshot_sounds"
-          android:title="@string/screenshot_sound_title" />
-
         <!-- Touch sounds -->
         <SwitchPreference
           android:key="touch_sounds"
           android:title="@string/touch_sounds_title"/>
+
+        <!-- Vibrate on touch -->
+        <SwitchPreference
+          android:key="vibrate_on_touch"
+          android:title="@string/vibrate_on_touch_title"
+          android:summary="@string/vibrate_on_touch_summary"
+          settings:keywords="@string/keywords_vibrate_on_touch"/>
+
+        <!-- In-call feedback -->
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+          android:key="incall_feeedback_vibrate"
+          android:title="@string/incall_feeedback_vibrate_title"
+          android:defaultValue="false"
+          settings:controller="com.android.settings.sound.IncallFeedbackPreferenceController" />
 
         <!-- Dock speaker plays -->
         <DropDownPreference
