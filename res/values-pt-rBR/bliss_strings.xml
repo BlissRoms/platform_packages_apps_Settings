@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2019 BlissRoms Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     
+          http://www.apache.org/licenses/LICENSE-2.0
+          
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Menos de um minuto</string>
+    <string name="screen_time_summary_usage_today">%1$s hoje</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Use o Desbloqueio facial para desbloquear seu dispositivo.\n\nLembre-se:\nOlhar para o telefone pode desbloqueá-lo, mesmo quando você não quiser.\n\nSeu telefone poderá ser desbloqueado por outra pessoa se ele for segurado na altura do seu rosto quando seus olhos estiverem abertos.\n\nSeu telefone pode ser desbloqueado por alguém que se parece muito com você, como seu filho ou gêmeo idêntico.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Os dados gravados pelo Desbloqueio facial serão excluídos permanentemente e de forma segura. Após a remoção, você precisará do PIN, padrão ou senha para desbloquear o telefone.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Ativar bateria adaptável</string>
+    <string name="smart_battery_footer_custom">"Para aumentar a vida útil da bateria, o recurso Bateria Adaptável limita o uso de energia para aplicativos pouco utilizados. Com o tempo, seu smartphone aprenderá como você utiliza esses aplicativos.
+
+É possível que haja atraso das notificações desses Apps."</string>
+    <string name="smart_battery_manager_title_custom">Bateria adaptável</string>
+    <string name="smart_battery_title_custom">Usar Bateria Adaptável</string>
+    <!-- BlissRoms Version -->
+    <string name="bliss_version">Versão da Bliss</string>
+    <string name="bliss_version_default">Desconhecido</string>
+    <string name="keywords_bliss_version">Versão da Bliss</string>
+    <string name="bliss_build_date">Data da compilação</string>
+    <string name="bliss_build_default">Desconhecido</string>
+    <string name="bliss_build_type">Status de compilação</string>
+    <string name="bliss_device">Dispositivo Bliss</string>
+    <!-- Changelog -->
+    <string name="changelog_title">Lista de mudanças</string>
+    <string name="changelog_summary">Mudanças recentes</string>
+    <string name="changelog_loading">Carregando registro de mudanças\u2026</string>
+    <string name="changelog_error">Não é possível carregar o changelog</string>
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Som de captura de tela</string>
+    <!-- Bliss Updater -->
+    <string name="bliss_updater_title">Atualizador Bliss</string>
+    <string name="bliss_updater_summary">Procurar pela ultima versão da ROM</string>
+    <string name="keywords_bliss_updater">OTA, atualizador, OTA</string>
+    <!-- Blissify -->
+    <string name="blissify_settings_title">Configurações</string>
+    <string name="blissify_settings_summary">Configure seu dispositivo!</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
+    <string name="unlock_quick_unlock_control_summary">Desbloquear automaticamente quando o PIN/senha correto for inserido</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Resetar estatísticas</string>
+    <string name="battery_stats_message">O histórico e as estatísticas da bateria serão reiniciados</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permitir que os clientes utilizem a conexão deste dispositivo\u2019s para se conectar a VPN.</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Toque de chamada - SIM 1</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Toque de chamada - SIM 2</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Fechar</string>
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Mostrar o visualizador de música</string>
+    <!-- Dashboard -->
+    <string name="dashboard_conditions_title">Condições de painel</string>
+    <string name="summary_dashboard_conditions_enabled">Condições do painel de controle estão habilitadas</string>
+    <string name="summary_dashboard_conditions_disabled">Condições do painel estão desativadas</string>
+    <string name="dashboard_suggestions_title">Sugestões de painel</string>
+    <string name="summary_dashboard_suggestions_enabled">Sugestões do painel estão habilitados</string>
+    <string name="summary_dashboard_suggestions_disabled">Sugestões do painel estão habilitados</string>
+    <string name="back_height_low_label">Completa</string>
+    <string name="back_height_high_label">Botão</string>
+    <string name="back_options_dialog_title">Opções</string>
+    <string name="back_height_message">Quantidade de altura de tela usada como região tocável para gesto de voltar.</string>
+    <string name="back_gesture_haptic">Ativar o efeito tátil no gesto de voltar</string>
+    <string name="back_block_ime_title">Bloquear a altura do teclado virtual como região tocável para o gesto voltar.</string>
+    <string name="battery_temp">Temperatura da bateria</string>
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Carregamento Inteligente</string>
+    <string name="smart_charging_summary">Definir o nível máximo de carregamento</string>
+    <string name="smart_charging_switch_title">Usar carregamento inteligente</string>
+    <string name="smart_charging_level_title">Nível para interromper o carregamento</string>
+    <string name="smart_charging_resume_level_title">Nível para começar o carregamento</string>
+    <string name="smart_charging_reset_stats_title">Redefinir estatísticas da bateria</string>
+    <string name="smart_charging_reset_stats_summary">Redefinir as estatísticas da bateria depois de atingir o nível de carga definido pelo usuário</string>
+    <string name="smart_charging_footer">O carregamento inteligente permite que você defina o nível máximo de carregamento para prolongar a vida útil da bateria. Quando ativada, a bateria para de carregar ao atingir o nível de Parada e retoma o carregamento ao atingir o nível de Início O nível de parada deve ser sempre maior que o nível de Início.</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Deslize no sensor biométrico para a esquerda ou para a direita para descartar notificações</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Para descartar suas notificações, deslize para esquerda ou direita no sensor de impressões digitais na parte de trás do seu telefone.</string>
+    <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">Mudo, sem mídia</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Ligado (mudo, sem mídia)</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Toque para mostrar informações</string>
+    <string name="pulse_on_new_tracks_title">Ícone de música ambiente</string>
+    <string name="pulse_on_new_tracks_summary">Mostrar a tela ambiente quando uma nova música for tocada. Toque duas vezes na informação da música para pular para a próxima faixa.</string>
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Plataforma</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Total de memória RAM</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Comportamento do notch</string>
+    <string name="display_cutout_mode_normal">Padrão</string>
+    <string name="display_cutout_mode_hidden">Oculto</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Taxa de atualização da tela</string>
+    <string name="refresh_rate_summary_auto">Automático / Aumenta automaticamente a taxa de atualização de 60 para 90Hz para alguns conteúdos</string>
+    <string name="refresh_rate_summary_60">60Hz / Taxa de atualização bloqueada em 60Hz para todo o conteúdo</string>
+    <string name="refresh_rate_summary_90">90Hz / Taxa de atualização bloqueada em 90Hz para todo o conteúdo. Maior uso de bateria</string>
+    <string name="auto_refresh_rate">Automático</string>
+    <!-- Battery charge warning -->
+    <string name="notification_sound_battery_charge_title">Aviso de carregamento da bateria</string>
+    <string name="notification_sound_battery_charge_summary">Reproduzir um som quando a bateria atingir o nível de carga</string>
+    <string name="notification_battery_charge_level_title">Aviso de carregamento da bateria</string>
+    <string name="notification_battery_charge_level_summary">Ativar para tocar um som quando a bateria atingir o nível especificado ao carregar</string>
+    <string name="notification_battery_charge_level_seek_bar">Nível da bateria</string>
+    <string name="notification_battery_charge_level_ringtone">Toque de chamada</string>
+    <string name="notification_battery_charge_level_silent">Silencioso</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Processos em segundo plano</string>
+    <!-- NavigationBar Gestural Mode Tweaks -->
+    <string name="gesture_pill_message">Oculte a pílula da barra de navegação para obter gestos em tela cheia.</string>
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">Mostrar uma seta animada para o gesto voltar.</string>
+    <!-- Custom Vibration fragment -->
+    <string name="vibration_preferences">Vibração &amp; retorno tátil</string>
+    <string name="summary_vibration_preferences">Alterar intensidades, padrão e mais</string>
+    <string name="keywords_vibration_preferences">padrão de vibração, intensidade da vibração, durante chamadas, resposta tátil, força da vibração</string>
+    <string name="ringtone_vibration_pattern">Padrão de vibração do toque</string>
+    <string name="vibration_intensity_ringer">Intensidade da vibração do toque</string>
+    <string name="vibration_intensity_notification">Intensidade da vibração da notificação</string>
+    <string name="vibration_intensity_haptic">Intensidade de vibração de retorno tátil</string>
+    <string name="vibration_intensity_disabled">Desativado</string>
+    <string name="vibration_intensity_light">Luz</string>
+    <string name="vibration_intensity_medium">Médio</string>
+    <string name="vibration_intensity_strong">Forte</string>
+    <string name="vibration_intensity_custom">Personalizado</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
+    <string name="pattern_mm_mm_mm">mm-mm-mm</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
+    <string name="unknown_night_light_time">Desconhecido - pressione para atualizar</string>
+    <string name="night_display_location_text">\n\nA programação de anoitecer ao amanhecer requerem que os serviços de localização estejam ativos e obtenham os horários corretos da sua localização.</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Tamanho da barra de gestos</string>
+    <string name="home_handle_low_label">Pequeno (AOSP)</string>
+    <string name="home_handle_high_label">Longo</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Reprodução adaptável</string>
+    <string name="adaptive_playback_timeout_title">Usar tempo limite de</string>
+    <string name="adaptive_playback_timeout_none_summary">Desligado</string>
+    <string name="adaptive_playback_timeout_30_secs">30 segundos</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Ativo (30 segundos)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minuto</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Ativado (1 minuto)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minutos</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Ativado (2 minutos)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minutos</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Ativado (5 minutos)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minutos</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Ativado (10 minutos)</string>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2019 BlissRoms Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     
+          http://www.apache.org/licenses/LICENSE-2.0
+          
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Kurang dari 1 menit</string>
+    <string name="screen_time_summary_usage_today">%1$s hari ini</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Gunakan fitur Pengenalan Wajah untuk membuka perangkat.\n\nPerlu diingat:\nMelihat ke ponsel secara tak sengaja dapat membuka kunci.\n\nPonsel Anda dapat dibuka oleh orang lain jika ponsel dihadapkan ke wajah Anda dengan mata terbuka.\n\nPonsel Anda dapat dibuka oleh orang lain yang mirip dengan Anda, seperti anak atau saudara yang mirip.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Data yang disimpan dengan metode pengenalan wajah akan dihapus dan diamankan secara permanen. Setelah dihapus, Anda akan memerlukan PIN, pola, atau kata sandi untuk membuka ponsel Anda.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Aktifkan Baterai Adaptif</string>
+    <string name="smart_battery_footer_custom">"Untuk memperpanjang masa pakai baterai, baterai adaptif membatasi baterai untuk aplikasi yang jarang dipakai. Ponsel akan mempelajari cara Anda menggunakan aplikasi seiring waktu.
+
+Notifikasi dapat tertunda untuk beberapa aplikasi."</string>
+    <string name="smart_battery_manager_title_custom">Baterai Adaptif</string>
+    <string name="smart_battery_title_custom">Gunakan Baterai Adaptif</string>
+    <!-- BlissRoms Version -->
+    <string name="bliss_version">Versi Bliss</string>
+    <string name="bliss_version_default">Tak diketahui</string>
+    <string name="keywords_bliss_version">Versi Bliss, bliss</string>
+    <string name="bliss_build_date">Tanggal pembuatan</string>
+    <string name="bliss_build_default">Tak diketahui</string>
+    <string name="bliss_build_type">Status pembuatan</string>
+    <string name="bliss_device">Perangkat Bliss</string>
+    <!-- Changelog -->
+    <string name="changelog_title">Log Perubahan</string>
+    <string name="changelog_summary">Perubahan terkini</string>
+    <string name="changelog_loading">Memuat log perubahan\u2026</string>
+    <string name="changelog_error">Tidak dapat memuat daftar perubahan</string>
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Suara tangkap layar</string>
+    <!-- Bliss Updater -->
+    <string name="bliss_updater_title">Pembaruan Bliss</string>
+    <string name="bliss_updater_summary">Periksa versi rom terbaru</string>
+    <string name="keywords_bliss_updater">OTABliss, pembaruan, OTA</string>
+    <!-- Blissify -->
+    <string name="blissify_settings_title">Blissify</string>
+    <string name="blissify_settings_summary">Blissify perangkatmu!</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Membuka cepat</string>
+    <string name="unlock_quick_unlock_control_summary">Membuka secara otomatis ketika PIN/kata sandi yang dimasukkan benar</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Atur ulang statistik</string>
+    <string name="battery_stats_message">Statistik penggunaan baterai akan disetel ulang</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Izinkan klien hotspot untuk menggunakan koneksi VPN perangkat\u2019s ini untuk konektivitas upstream</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Nada dering telepon - SIM 1</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Nada dering telepon - SIM 2</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Tutup</string>
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Tampilkan visualisasi musik</string>
+    <!-- Dashboard -->
+    <string name="dashboard_conditions_title">Kondisi dasbor</string>
+    <string name="summary_dashboard_conditions_enabled">Kondisi dasbor diaktifkan</string>
+    <string name="summary_dashboard_conditions_disabled">Kondisi dasbor dinonaktifkan</string>
+    <string name="dashboard_suggestions_title">Saran dasbor</string>
+    <string name="summary_dashboard_suggestions_enabled">Saran dasbor diaktifkan</string>
+    <string name="summary_dashboard_suggestions_disabled">Saran dasbor dinonaktifkan</string>
+    <string name="back_height_low_label">Penuh</string>
+    <string name="back_height_high_label">Bawah</string>
+    <string name="back_options_dialog_title">Opsi</string>
+    <string name="back_height_message">Jumlah ketinggian layar yang digunakan sebagai daerah yang dapat disentuh untuk gestur kembali.</string>
+    <string name="back_gesture_haptic">Aktifkan efek getaran pada tombol gestur kembali</string>
+    <string name="back_block_ime_title">Memblokir ketinggian keyboard virtual sebagai wilayah yang dapat disentuh untuk gestur kembali.</string>
+    <string name="battery_temp">Temperatur baterai</string>
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Pengisian Pintar</string>
+    <string name="smart_charging_summary">Atur tingkat maksimum pengisian daya</string>
+    <string name="smart_charging_switch_title">Gunakan pengisian daya pintar</string>
+    <string name="smart_charging_level_title">Batas akhir picu</string>
+    <string name="smart_charging_resume_level_title">Titik mulai picu</string>
+    <string name="smart_charging_reset_stats_title">Atur ulang statistik baterai</string>
+    <string name="smart_charging_reset_stats_summary">Atur ulang statistik baterai setelah mencapai batas pengisian</string>
+    <string name="smart_charging_footer">Pengisian Pintar mengizinkan Anda untuk mengatur batas maksimal pengisian, guna memperpanjang usia baterai. Ketika dinyalakan, baterai akan berhenti diisi saat mencapai batas maksimal picu dan diisi pada titik mulai picu. Batas maksimal picu harus di atas titik mulai.</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Usap menggunakan sidik jari ke kiri atau ke kanan untuk menghapus pemberitahuan</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Untuk mengabaikan pemberitahuan Anda, usap ke kiri atau kanan pada sensor sidik jari di bagian belakang telepon Anda.</string>
+    <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">Senyap, tanpa media</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Hidup (senyap, tanpa media)</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Sentuh untuk melihat info</string>
+    <string name="pulse_on_new_tracks_title">Musik ticker ambient</string>
+    <string name="pulse_on_new_tracks_summary">Tampilkan Ambient Display saat trek musik baru diputar. Ketuk dua kali pada info trek untuk melompat ke trek berikutnya.</string>
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Platform</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Total RAM</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Perilaku Notch</string>
+    <string name="display_cutout_mode_normal">Bawaan</string>
+    <string name="display_cutout_mode_hidden">Tersembunyi</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Tingkat refresh layar</string>
+    <string name="refresh_rate_summary_auto">Otomatis / otomatis meningkatkan refresh layar dari 60 ke 90Hz untuk beberapa konten</string>
+    <string name="refresh_rate_summary_60">60Hz / Refresh rate dikunci pada 60Hz untuk semua konten</string>
+    <string name="refresh_rate_summary_90">90 Hz / Refresh rate dikunci pada 90Hz untuk semua konten. Meningkatkan penggunaan baterai</string>
+    <string name="auto_refresh_rate">Otomatis</string>
+    <!-- Battery charge warning -->
+    <string name="notification_sound_battery_charge_title">Peringatan daya baterai</string>
+    <string name="notification_sound_battery_charge_summary">Putar suara saat baterai mencapai tingkat pengisian daya</string>
+    <string name="notification_battery_charge_level_title">Peringatan daya baterai</string>
+    <string name="notification_battery_charge_level_summary">Memungkinkan untuk memutar suara ketika baterai mencapai level yang ditentukan saat mengisi daya</string>
+    <string name="notification_battery_charge_level_seek_bar">Tingkat Baterai</string>
+    <string name="notification_battery_charge_level_ringtone">Nada Dering</string>
+    <string name="notification_battery_charge_level_silent">Diam</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Proses di latar belakang</string>
+    <!-- NavigationBar Gestural Mode Tweaks -->
+    <string name="gesture_pill_message">Sembunyikan bar pill navigasi untuk gerakan layar penuh yang mulus.</string>
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">Tampilkan animasi panah untuk gestur kembali.</string>
+    <!-- Custom Vibration fragment -->
+    <string name="vibration_preferences">Getaran &amp; haptics</string>
+    <string name="summary_vibration_preferences">Ubah intensitas, pola dan banyak lagi</string>
+    <string name="keywords_vibration_preferences">pola getaran, intensitas getaran, dalam panggilan, haptics, tap, kekuatan getaran</string>
+    <string name="ringtone_vibration_pattern">Pola getaran nada dering</string>
+    <string name="vibration_intensity_ringer">Intensitas getaran nada dering</string>
+    <string name="vibration_intensity_notification">Intensitas getaran pemberitahuan</string>
+    <string name="vibration_intensity_haptic">Umpan balik interaksi getaran</string>
+    <string name="vibration_intensity_disabled">Dinonaktifkan</string>
+    <string name="vibration_intensity_light">Ringan</string>
+    <string name="vibration_intensity_medium">Menengah</string>
+    <string name="vibration_intensity_strong">Kuat</string>
+    <string name="vibration_intensity_custom">Kustom</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
+    <string name="pattern_mm_mm_mm">mm-mm-mm</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
+    <string name="unknown_night_light_time">Tidak diketahui - tekan untuk pembaruan</string>
+    <string name="night_display_location_text">\n\nJadwal dari matahari terbenam hingga matahari terbit membutuhkan layanan lokasi yang diaktifkan untuk mendapatkan waktu yang tepat untuk lokasi Anda.</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Ukuran bar gestur</string>
+    <string name="home_handle_low_label">Kecil (AOSP)</string>
+    <string name="home_handle_high_label">Panjang</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Pemutaran adaptif</string>
+    <string name="adaptive_playback_timeout_title">Gunakan batas waktu</string>
+    <string name="adaptive_playback_timeout_none_summary">Mati</string>
+    <string name="adaptive_playback_timeout_30_secs">30 detik</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Hidup (30 detik)</string>
+    <string name="adaptive_playback_timeout_1_min">1 menit</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Hidup (1 menit)</string>
+    <string name="adaptive_playback_timeout_2_min">2 menit</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Hidup (2 menit)</string>
+    <string name="adaptive_playback_timeout_5_min">5 menit</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Hidup (5 menit)</string>
+    <string name="adaptive_playback_timeout_10_min">10 menit</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Hidup (10 menit)</string>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2019 BlissRoms Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     
+          http://www.apache.org/licenses/LICENSE-2.0
+          
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Менше хвилини</string>
+    <string name="screen_time_summary_usage_today">%1$s сьогодні</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">З функцією фейсконтролю можна розблоковувати пристрій, входити в додатки й підтверджувати платежі.\n\nЗверніть увагу:\nпоглянувши на телефон, ви можете випадково розблокувати його в недоречний момент.\n\nБудь-хто може розблокувати телефон, якщо піднесе його до вашого обличчя, навіть коли у вас закриті очі.\n\nТелефон може розблокувати людина, схожа на вас, наприклад, ваш близнюк.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Дані, записані функцією розпізнавання обличчя, будуть остаточно й безпечно видалені. Після їх видалення для розблокування телефону вам потрібно буде ввести PIN-код, графічний код або пароль.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Увімкнути адаптивний акумулятор</string>
+    <string name="smart_battery_footer_custom">"Щоб пристрій працював довше, адаптивний акумулятор обмежує споживання заряду для додатків, які рідко використовуються. Телефон із часом визначить, як ви ними користуєтесь.
+
+Сповіщення з деяких додатків можуть надходити із затримкою."</string>
+    <string name="smart_battery_manager_title_custom">Адаптивний акумулятор</string>
+    <string name="smart_battery_title_custom">Увімкнути адаптивний акумулятор</string>
+    <!-- BlissRoms Version -->
+    <string name="bliss_version">Версія Bliss</string>
+    <string name="bliss_version_default">Невідомо</string>
+    <string name="keywords_bliss_version">Версія Bliss</string>
+    <string name="bliss_build_date">Дата збірки</string>
+    <string name="bliss_build_default">Невідомо</string>
+    <string name="bliss_build_type">Статус збірки</string>
+    <string name="bliss_device">Пристрій Bliss</string>
+    <!-- Changelog -->
+    <string name="changelog_title">Список змін</string>
+    <string name="changelog_summary">Останні зміни</string>
+    <string name="changelog_loading">Завантаження списку змін\u2026</string>
+    <string name="changelog_error">Помилка завантаження списку змін</string>
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Звук скріншоту</string>
+    <!-- Bliss Updater -->
+    <string name="bliss_updater_title">Оновлювач Bliss</string>
+    <string name="bliss_updater_summary">Перевірити на наявність оновлень</string>
+    <string name="keywords_bliss_updater">BlissOTA, оновлювач</string>
+    <!-- Blissify -->
+    <string name="blissify_settings_title">Blissify</string>
+    <string name="blissify_settings_summary">Blissify ваш пристрій!</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Швидке розблокування</string>
+    <string name="unlock_quick_unlock_control_summary">Автоматичне розблокування при введенні правильного пароля чи PIN-коду</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Скинути статистику</string>
+    <string name="battery_stats_message">Історія використання батареї буде скинута</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Дозволити клієнтам точки доступу використовувати цей пристрій\u2019s VPN-з\'єднання для підключення до потоку</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Рінгтон дзвінка - SIM 1</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Рінгтон дзвінка - SIM 2</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Закрити</string>
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Відображати візуалізатор музики</string>
+    <!-- Dashboard -->
+    <string name="dashboard_conditions_title">Сповіщення в головному меню</string>
+    <string name="summary_dashboard_conditions_enabled">Сповіщення меню налаштувань увімкнено</string>
+    <string name="summary_dashboard_conditions_disabled">Сповіщення в меню налаштувань вимкнено</string>
+    <string name="dashboard_suggestions_title">Підказки в головному меню</string>
+    <string name="summary_dashboard_suggestions_enabled">Підказки в головному меню ввімкнено</string>
+    <string name="summary_dashboard_suggestions_disabled">Підказки в меню налаштувань вимкнено</string>
+    <string name="back_height_low_label">Повний</string>
+    <string name="back_height_high_label">Знизу</string>
+    <string name="back_options_dialog_title">Параметри</string>
+    <string name="back_height_message">Довжина екрану використовується як сенсорна область для жесту \"Назад\".</string>
+    <string name="back_gesture_haptic">Увімкнути тактильний ефект від жесту назад</string>
+    <string name="back_block_ime_title">Висота віртуальної клавіатури у якості сенсорної області для керування жестами.</string>
+    <string name="battery_temp">Температура батареї</string>
+    <!-- Smart charging -->
+    <string name="smart_charging_title">«Розумне» заряджання</string>
+    <string name="smart_charging_summary">Встановити максимальний рівень зарядки</string>
+    <string name="smart_charging_switch_title">Використовувати «Розумне» заряджання</string>
+    <string name="smart_charging_level_title">Рівень зупинки заряджання</string>
+    <string name="smart_charging_resume_level_title">Рівень початку заряджання</string>
+    <string name="smart_charging_reset_stats_title">Скинути статистику акумулятора</string>
+    <string name="smart_charging_reset_stats_summary">Скинути статистику акумулятора після досягнення визначеного користувачем рівня зарядки</string>
+    <string name="smart_charging_footer">«Розумне» заряджання дозволяє встановити максимальний рівень зарядки для продовження терміну служби батарейки. Коли ввімкнено, батарея перестає заряджатись при досягненні рівня зупинки і відновлює заряджання на рівні початку. Рівень зупинки повинен завжди бути більшим, ніж рівень повзунка початку роботи.</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Проведіть по сканеру відбитка пальця вліво або вправо, щоб прибрати сповіщення</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Щоб прибрати сповіщення, свайпніть ліворуч або праворуч по сканеру відбитка пальця на задній стороні телефону.</string>
+    <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">Вимкнення звуку, без медіа відтворення</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Ввімкнено (без звуку, без медіа відтворення)</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Натисніть, щоб відобразити інформацію</string>
+    <string name="pulse_on_new_tracks_title">Музичне сповіщення на Ambient дисплеї</string>
+    <string name="pulse_on_new_tracks_summary">Показати Ambient Display коли відтворюється музичний трек. Подвійне натискання на сповіщення переключає на наступний трек.</string>
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Платформа</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Всього ОЗП</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Налаштування вирізу</string>
+    <string name="display_cutout_mode_normal">За замовчанням</string>
+    <string name="display_cutout_mode_hidden">Прихований</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Частота оновлення екрана</string>
+    <string name="refresh_rate_summary_auto">Авто / Автоматичне підвищення частоти оновлення з 60 на 90 Гц для певного вмісту</string>
+    <string name="refresh_rate_summary_60">60Hz / Частота оновлення встановлена на 60Гц для всіх додатків</string>
+    <string name="refresh_rate_summary_90">90Hz / Частота оновлення встановлена на 90Гц для всіх додатків. Збільшене використання заряду акумулятора</string>
+    <string name="auto_refresh_rate">Автоматично</string>
+    <!-- Battery charge warning -->
+    <string name="notification_sound_battery_charge_title">Попередження про заряд акумулятора</string>
+    <string name="notification_sound_battery_charge_summary">Програвати мелодію коли заряд акумулятора досягне певного рівня</string>
+    <string name="notification_battery_charge_level_title">Попередження про заряд акумулятора</string>
+    <string name="notification_battery_charge_level_summary">Програти звук коли батарея досягне встановленого рівня заряду при зарядці</string>
+    <string name="notification_battery_charge_level_seek_bar">Рівень акумулятора</string>
+    <string name="notification_battery_charge_level_ringtone">Рінгтон</string>
+    <string name="notification_battery_charge_level_silent">Без звуку</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Фонові процеси</string>
+    <!-- NavigationBar Gestural Mode Tweaks -->
+    <string name="gesture_pill_message">Приховати панель навігації для жестів в повноекранному режимі.</string>
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">Показати анімовану стрілку для жесту \"Назад\".</string>
+    <!-- Custom Vibration fragment -->
+    <string name="vibration_preferences">Вібрація &amp; тактиктильний відгук</string>
+    <string name="summary_vibration_preferences">Змінення інтенсивності, графіків і багато іншого</string>
+    <string name="keywords_vibration_preferences">шаблон вібросигналу, інтенсивність, вібрація під час виклику, тактильна вібрація, дотик, сила вібрації</string>
+    <string name="ringtone_vibration_pattern">Шаблон вібрації під час виклику</string>
+    <string name="vibration_intensity_ringer">Інтенсивність вібрації при дзвінку</string>
+    <string name="vibration_intensity_notification">Інтенсивність вібрації при сповіщенні</string>
+    <string name="vibration_intensity_haptic">Інтенсивність тактильного зворотного зв\'язку</string>
+    <string name="vibration_intensity_disabled">Вимкнено</string>
+    <string name="vibration_intensity_light">Світло</string>
+    <string name="vibration_intensity_medium">Середній</string>
+    <string name="vibration_intensity_strong">Міцний</string>
+    <string name="vibration_intensity_custom">Користувацький</string>
+    <string name="pattern_dzzz_dzzz">дззз-дззз</string>
+    <string name="pattern_dzzz_da">дззз-да</string>
+    <string name="pattern_mm_mm_mm">мм-мм-мм</string>
+    <string name="pattern_da_da_dzzz">да-да-дззз</string>
+    <string name="pattern_da_dzzz_da">да-дззз-да</string>
+    <string name="unknown_night_light_time">Невідомо - натисніть щоб оновити</string>
+    <string name="night_display_location_text">\n\nРозклад від заходу до сходу вимагає ввімкнених служб місцезнаходження, щоб отримати точний час для вашого розташування.</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Розмір панелі жестів</string>
+    <string name="home_handle_low_label">Малий (AOSP)</string>
+    <string name="home_handle_high_label">Довгий</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Адаптивне відтворення</string>
+    <string name="adaptive_playback_timeout_title">Використовувати тайм-аут</string>
+    <string name="adaptive_playback_timeout_none_summary">Вимк.</string>
+    <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Увімкнено (30 секунд)</string>
+    <string name="adaptive_playback_timeout_1_min">1 хвилина</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Увімкнено (1 хвилина)</string>
+    <string name="adaptive_playback_timeout_2_min">2 хвилини</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Увімкнено (2 хвилини)</string>
+    <string name="adaptive_playback_timeout_5_min">5 хвилин</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Увімкнено (5 хвилини)</string>
+    <string name="adaptive_playback_timeout_10_min">10 хвилин</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Увімкнено (10 хвилин)</string>
+</resources>
