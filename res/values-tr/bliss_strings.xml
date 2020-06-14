@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2019 BlissRoms Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     
+          http://www.apache.org/licenses/LICENSE-2.0
+          
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">1 dakikadan az</string>
+    <string name="screen_time_summary_usage_today">Bugün %1$s</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Cihazınızın kilidini açmak için Yüz tanıma kilidini kullanın.\n\nŞunları unutmayın:\nFarkında olmadığınız durumlarda bile telefona baktığınızda telefonun kilidi açılabilir.\n\nGözleriniz açıkken telefonunuz yüzünüze doğru çevrilirse telefonunuzun kilidi başka biri tarafından açılabilir.\n\nTelefonunuzun kilidi, size çok benzeyen biri (ör. çocuğunuz ya da ikiz kardeşiniz) tarafından açılabilir.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Yüz tanıma kilidi ile kaydedilen veriler kalıcı ve güvenli bir şekilde silinir. Kaldırma işleminden sonra telefonunuzun kilidini açmak için PIN, desen veya şifre kullanmanız gerekir.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Uyarlanabilir Pili aç</string>
+    <string name="smart_battery_footer_custom">"Uyarlanabilir Pil özelliği pil ömrünü uzatmak için, sık kullanılmayan uygulamaların pil tüketimini sınırlar. Telefonunuz, zamanla uygulamaları nasıl kullandığınızı öğrenir.
+
+Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
+    <string name="smart_battery_manager_title_custom">Uyarlanabilir Pil</string>
+    <string name="smart_battery_title_custom">Uyarlanabilir Pil özelliğini kullan</string>
+    <!-- BlissRoms Version -->
+    <string name="bliss_version">Bliss sürümü</string>
+    <string name="bliss_version_default">Bilinmiyor</string>
+    <string name="keywords_bliss_version">Bliss sürümü, bliss</string>
+    <string name="bliss_build_date">Sürüm tarihi</string>
+    <string name="bliss_build_default">Bilinmiyor</string>
+    <string name="bliss_build_type">İnşa Durumu</string>
+    <string name="bliss_device">Bliss cihazı</string>
+    <!-- Changelog -->
+    <string name="changelog_title">Değişiklik</string>
+    <string name="changelog_summary">Son değişiklikler</string>
+    <string name="changelog_loading">Değişiklik günlüğü yükleniyor\u2026</string>
+    <string name="changelog_error">Değişiklik günlüğü yüklenemedi</string>
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Ekran görüntüsü sesi</string>
+    <!-- Bliss Updater -->
+    <string name="bliss_updater_title">Bliss Güncelleyici</string>
+    <string name="bliss_updater_summary">Rom\'un son sürümünü kontrol edin</string>
+    <string name="keywords_bliss_updater">BlissOTA, güncelleyici, OTA</string>
+    <!-- Blissify -->
+    <string name="blissify_settings_title">Blissify</string>
+    <string name="blissify_settings_summary">Cihazınızı mutlu edin!</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Hızlı kilit açma</string>
+    <string name="unlock_quick_unlock_control_summary">Doğru PIN/Şifre girildiğinde otomatik olarak kilidi aç</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">İstatistikleri sıfırla</string>
+    <string name="battery_stats_message">Pil geçmişi istatistikleri sıfırlanacak</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Hotspot kullanıcılarının bağlantıları sırasında bu cihazın \u2019s VPN bağlantısını kullanmasına izin ver</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Telefon zil sesi - SIM 1</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Telefon zil sesi - SIM 2</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Kapat</string>
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Ekran müzik görselleştiricisi</string>
+    <!-- Dashboard -->
+    <string name="dashboard_conditions_title">Ayarlar menüsü durumları</string>
+    <string name="summary_dashboard_conditions_enabled">Ayarlar menüsü durumları etkin</string>
+    <string name="summary_dashboard_conditions_disabled">Ayarlar menüsü durumları devre dışı</string>
+    <string name="dashboard_suggestions_title">Ayarlar menüsü önerileri</string>
+    <string name="summary_dashboard_suggestions_enabled">Ayarlar menüsü önerileri etkin</string>
+    <string name="summary_dashboard_suggestions_disabled">Ayarlar menüsü önerileri devre dışı</string>
+    <string name="back_height_low_label">Dolu</string>
+    <string name="back_height_high_label">Alt</string>
+    <string name="back_options_dialog_title">Seçenekler</string>
+    <string name="back_height_message">Geri hareketi için dokunmatik bölge olarak kullanılan ekran yüksekliği miktarı.</string>
+    <string name="back_gesture_haptic">Geri hareketinde titreşimi aç</string>
+    <string name="back_block_ime_title">Geri hareketi için dokunmatik bölge olarak sanal klavyenin yüksekliğini engeller.</string>
+    <string name="battery_temp">Pil sıcaklığı</string>
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Akıllı Şarj</string>
+    <string name="smart_charging_summary">Maksimum şarj seviyesini ayarlayın</string>
+    <string name="smart_charging_switch_title">Akıllı şarjı kullan</string>
+    <string name="smart_charging_level_title">Durdurma tetikleyici seviyesi</string>
+    <string name="smart_charging_resume_level_title">Başlatma tetikleyici seviyesi</string>
+    <string name="smart_charging_reset_stats_title">Pil istatistiklerini sıfırla</string>
+    <string name="smart_charging_reset_stats_summary">Kullanıcının tanımladığı şarj değerine ulaşınca pil istatistiklerini sıfırla</string>
+    <string name="smart_charging_footer">Akıllı Şarj Etme size maksimum şarj etme düzeyini belirlemenizi ve pilinizin ömrünü uzatmanızı sağlar. Aktif edildiği zaman, pil durma noktasına ulaştığında şarj olmayı durdurur ve başlama noktasına gelince şarj olmaya devam eder. Durma noktası her zaman başlama noktasından büyük olmalıdır.</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Bildirimleri kapatmak için parmağınızı parmak izinde sağa veya sola kaydırın</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Bildirimlerinizi yok saymak için, parmağınızı parmak izi sönsöründe sola veya sağa doğru kaydırın.</string>
+    <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">Sessiz, medya yok</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Açık (sessiz, medya yok)</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Bilgileri göstermek için dokunun</string>
+    <string name="pulse_on_new_tracks_title">Ortam ekranı müzik bilgisi</string>
+    <string name="pulse_on_new_tracks_summary">Yeni bir müzik parçası çalındığında Ortam Ekranını göster. Sonraki parçaya atlamak için parça bilgisine iki kez dokunun.</string>
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Platform</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Toplam RAM</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Çentik davranışı</string>
+    <string name="display_cutout_mode_normal">Varsayılan</string>
+    <string name="display_cutout_mode_hidden">Gizli</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Ekran yenileme oranı</string>
+    <string name="refresh_rate_summary_auto">Otomatik / Bazı içerikler için yenileme hızını otomatik olarak 60\'dan 90Hz\'e yükseltir</string>
+    <string name="refresh_rate_summary_60">60Hz / Tüm içerik için yenileme hızı 60Hz\'de kilitlendi</string>
+    <string name="refresh_rate_summary_90">90Hz / Tüm içerik için yenileme hızı 90Hz\'de kilitlendi. Pil kullanımını arttırır</string>
+    <string name="auto_refresh_rate">Otomatik</string>
+    <!-- Battery charge warning -->
+    <string name="notification_sound_battery_charge_title">Pil şarj uyarısı</string>
+    <string name="notification_sound_battery_charge_summary">Pil belirlenen seviyeye ulaştığında ses çıkar</string>
+    <string name="notification_battery_charge_level_title">Pil şarj uyarısı</string>
+    <string name="notification_battery_charge_level_summary">Pil şarj olurken belirlenen seviyeye ulaştığında bir sesli bildirim sağlar</string>
+    <string name="notification_battery_charge_level_seek_bar">Pil seviyesi</string>
+    <string name="notification_battery_charge_level_ringtone">Zil Sesi</string>
+    <string name="notification_battery_charge_level_silent">Sessiz</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Arkaplan işlemleri</string>
+    <!-- NavigationBar Gestural Mode Tweaks -->
+    <string name="gesture_pill_message">Tam ekran hareketleri için navigasyon çubuğunu gizle.</string>
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">Geri hareketi için animasyonlu bir ok göster.</string>
+    <!-- Custom Vibration fragment -->
+    <string name="vibration_preferences">Titreşim &amp; dokunsal geri bildirim</string>
+    <string name="summary_vibration_preferences">Yoğunlukları, deseni ve daha fazlasını değiştirin</string>
+    <string name="keywords_vibration_preferences">titreşim deseni, titreşim yoğunluğu, gelen arama, geri bildirimler, dokunma</string>
+    <string name="ringtone_vibration_pattern">Zil sesi titreşim deseni</string>
+    <string name="vibration_intensity_ringer">Zil sesi titreşim yoğunluğu</string>
+    <string name="vibration_intensity_notification">Bildirim titreşim yoğunluğu</string>
+    <string name="vibration_intensity_haptic">Dokunma geri bildirimi titreşim yoğunluğu</string>
+    <string name="vibration_intensity_disabled">Kapalı</string>
+    <string name="vibration_intensity_light">Hafif</string>
+    <string name="vibration_intensity_medium">Orta</string>
+    <string name="vibration_intensity_strong">Güçlü</string>
+    <string name="vibration_intensity_custom">Özelleştir</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
+    <string name="pattern_mm_mm_mm">mm-mm-mm</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
+    <string name="unknown_night_light_time">Bilinmiyor - güncellemek için dokunun</string>
+    <string name="night_display_location_text">\n\nGün batımından gün doğumuna kadar olan zamanlamanın, konumunuza göre doğru zamanları alabilmesi için konum servislerini etkin olması gerekir.</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Hareket çubuğu boyutu</string>
+    <string name="home_handle_low_label">Kısa (AOSP)</string>
+    <string name="home_handle_high_label">Uzun</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Uyarlanabilir oynatma</string>
+    <string name="adaptive_playback_timeout_title">Zaman aşımı kullanın</string>
+    <string name="adaptive_playback_timeout_none_summary">Kapalı</string>
+    <string name="adaptive_playback_timeout_30_secs">30 saniye</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Açık (30 saniye)</string>
+    <string name="adaptive_playback_timeout_1_min">1 dakika</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Açık (1 dakika)</string>
+    <string name="adaptive_playback_timeout_2_min">2 dakika</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Açık (2 dakika)</string>
+    <string name="adaptive_playback_timeout_5_min">5 dakika</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Açık (5 dakika)</string>
+    <string name="adaptive_playback_timeout_10_min">10 dakika</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Açık (10 dakika)</string>
+</resources>

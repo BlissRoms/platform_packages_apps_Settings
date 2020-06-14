@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2019 BlissRoms Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     
+          http://www.apache.org/licenses/LICENSE-2.0
+          
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Méně než 1 minuta</string>
+    <string name="screen_time_summary_usage_today">Dnes %1$s</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Zařízení odemknete pomocí odemknutí obličejem.\n\nNezapomeňte:\nTelefon můžete odemknout pohledem na obrazovku, i když to nemáte v úmyslu.\n\nVáš telefon může odemknout i jiná osoba, pokud jej podrží před vaším obličejem a vy budete mít otevřené oči.\n\nVáš telefon mohou odemknout osoby s podobným vzhledem, například vaše dítě nebo identický sourozenec.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Data, která se při odemknutí obličeje uloží, budou trvale a bezpečně smazána. Pokud chcete odemknout telefon po jejich odstranění, musíte zadat kód PIN, gesto nebo heslo.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Zapněte adaptivní baterii</string>
+    <string name="smart_battery_footer_custom">"Adaptivní baterie prodlužuje výdrž baterie tím, že omezuje využití baterie aplikacemi, které nepoužíváte tak často. Telefon postupem času sám zjistí, jak aplikace využíváte.
+
+Oznámení z těchto aplikací se mohou zobrazovat se zpožděním."</string>
+    <string name="smart_battery_manager_title_custom">Adaptivní baterie</string>
+    <string name="smart_battery_title_custom">Použít adaptivní baterii</string>
+    <!-- BlissRoms Version -->
+    <string name="bliss_version">Verze Bliss</string>
+    <string name="bliss_version_default">Neznámá</string>
+    <string name="keywords_bliss_version">Verze Bliss, bliss</string>
+    <string name="bliss_build_date">Datum sestavení</string>
+    <string name="bliss_build_default">Neznámé</string>
+    <string name="bliss_build_type">Stav sestavení</string>
+    <string name="bliss_device">Zařízení Bliss</string>
+    <!-- Changelog -->
+    <string name="changelog_title">Seznam změn</string>
+    <string name="changelog_summary">Poslední změny</string>
+    <string name="changelog_loading">Načítání seznamu změn\u2026</string>
+    <string name="changelog_error">Nelze načíst seznam změn</string>
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Zvuk při snímku obrazovky</string>
+    <!-- Bliss Updater -->
+    <string name="bliss_updater_title">Aktualizace Bliss</string>
+    <string name="bliss_updater_summary">Zkontrolujte nejnovější verzi ROM</string>
+    <string name="keywords_bliss_updater">BlissOTA, aktualizace, OTA</string>
+    <!-- Blissify -->
+    <string name="blissify_settings_title">Blissify</string>
+    <string name="blissify_settings_summary">Přizpůsobte vaše zařízení ve stylu Bliss!</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Rychlé odemknutí</string>
+    <string name="unlock_quick_unlock_control_summary">Automatické odemknutí pokud je zadán správný PIN/heslo</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Vynulovat statistiky</string>
+    <string name="battery_stats_message">Chystáte se obnovit historii statistiky baterie</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Povolit klientům hotspotu používat připojení VPN tohoto zařízení pro upstream konektivitu</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Vyzváněcí tón telefonu - SIM 1</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Vyzváněcí tón telefonu - SIM 2</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Zavřít</string>
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Zobrazit hudební vizualizaci</string>
+    <!-- Dashboard -->
+    <string name="dashboard_conditions_title">Podmínky hlavního panelu</string>
+    <string name="summary_dashboard_conditions_enabled">Podmínky hlavního panelu jsou povoleny</string>
+    <string name="summary_dashboard_conditions_disabled">Podmínky hlavního panelu jsou zakázány</string>
+    <string name="dashboard_suggestions_title">Návrhy hlavního panelu</string>
+    <string name="summary_dashboard_suggestions_enabled">Návrhy hlavního panelu jsou povoleny</string>
+    <string name="summary_dashboard_suggestions_disabled">Návrhy hlavního panelu jsou zakázány</string>
+    <string name="back_height_low_label">Celá</string>
+    <string name="back_height_high_label">Dolní</string>
+    <string name="back_options_dialog_title">Možnosti</string>
+    <string name="back_height_message">Hodnota výšky obrazovky použité jako dotyková oblast pro gesto „Zpět“.</string>
+    <string name="back_gesture_haptic">Povolit efekt krátkého zavibrování při použití gesta „Zpět“</string>
+    <string name="back_block_ime_title">Zakázat výšku virtuální klávesnice jako dotykovou oblast pro gesto „Zpět“.</string>
+    <string name="battery_temp">Teplota baterie</string>
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Chytré nabíjení</string>
+    <string name="smart_charging_summary">Nastavit maximální úroveň nabíjení</string>
+    <string name="smart_charging_switch_title">Použít Chytré nabíjení</string>
+    <string name="smart_charging_level_title">Úroveň ukončení</string>
+    <string name="smart_charging_resume_level_title">Úroveň spuštění</string>
+    <string name="smart_charging_reset_stats_title">Obnovit statistiky baterie</string>
+    <string name="smart_charging_reset_stats_summary">Obnoví statistiku baterie po dosažení úrovně nabití definované uživatelem</string>
+    <string name="smart_charging_footer">Chytré nabíjení vám umožňuje nastavit maximální úroveň nabíjení pro prodloužení životnosti baterie. Pokud je povoleno, baterie se přestane nabíjet po dosažení Úrovně ukončení, a zase bude v nabíjení pokračovat při dosažení Úrovně spuštění. Úroveň ukončení by měla být vždy vyšší než Úroveň spuštění.</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Obchod Play</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Pro odmítnutí oznámení přejeďte prstem vlevo nebo vpravo přes snímač otisků prstů</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Chcete-li zrušit oznámení, přejeďte prstem vlevo nebo vpravo pře snímač otisků prstů na zadní straně telefonu.</string>
+    <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">Ztlumit, žádná média</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Zap. (ztlumit, žádná média)</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Klepnutím zobrazíte informace</string>
+    <string name="pulse_on_new_tracks_title">Rozpoznávání okolní hudby</string>
+    <string name="pulse_on_new_tracks_summary">Zobrazí Ambientní displej při přehrávání nové hudební skladby. Dvojím poklepáním na informaci o skladbě přeskočíte na další skladbu.</string>
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Platforma</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Celkem RAM</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Vlastnosti výřezu</string>
+    <string name="display_cutout_mode_normal">Výchozí</string>
+    <string name="display_cutout_mode_hidden">Skrytý</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Obnovovací frekvence obrazovky</string>
+    <string name="refresh_rate_summary_auto">Automaticky / Pro určitý obsah se automaticky zvýší obnovovací frekvence obrazovky z 60Hz na 90Hz</string>
+    <string name="refresh_rate_summary_60">60Hz / Pro veškerý obsah je obnovovací frekvence obrazovky uzamčena na 60Hz</string>
+    <string name="refresh_rate_summary_90">90Hz / Pro veškerý obsah je obnovovací frekvence obrazovky uzamčena na 90Hz. Zvýšená spotřeba baterie</string>
+    <string name="auto_refresh_rate">Autom.</string>
+    <!-- Battery charge warning -->
+    <string name="notification_sound_battery_charge_title">Varování úrovně nabití baterie</string>
+    <string name="notification_sound_battery_charge_summary">Přehrát zvuk, když baterie dosáhne úrovně nabití</string>
+    <string name="notification_battery_charge_level_title">Varování úrovně nabití baterie</string>
+    <string name="notification_battery_charge_level_summary">Povolit přehrávání zvuku, když baterie dosáhne stanovené úrovně při nabíjení</string>
+    <string name="notification_battery_charge_level_seek_bar">Úroveň nabití</string>
+    <string name="notification_battery_charge_level_ringtone">Vyzváněcí tón</string>
+    <string name="notification_battery_charge_level_silent">Tichý</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Procesy na pozadí</string>
+    <!-- NavigationBar Gestural Mode Tweaks -->
+    <string name="gesture_pill_message">Skrýt pilulku navigačního panelu pro plynulá gesta na celé obrazovce.</string>
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">Zobrazit animovanou šipku gesta „Zpět“.</string>
+    <!-- Custom Vibration fragment -->
+    <string name="vibration_preferences">Síla vibrací &amp; hmatová odezva</string>
+    <string name="summary_vibration_preferences">Změnit intenzity, vzory a další</string>
+    <string name="keywords_vibration_preferences">vzor vibrací, intenzita vibrací, příchozí hovor, hmatová odezva, klepnutí</string>
+    <string name="ringtone_vibration_pattern">Vzor vibrací vyzvánění</string>
+    <string name="vibration_intensity_ringer">Intenzita vibrací vyzvánění</string>
+    <string name="vibration_intensity_notification">Intenzita vibrací oznámení</string>
+    <string name="vibration_intensity_haptic">Intenzita vibrací hmatové odezvy</string>
+    <string name="vibration_intensity_disabled">Vypnuto</string>
+    <string name="vibration_intensity_light">Lehká</string>
+    <string name="vibration_intensity_medium">Střední</string>
+    <string name="vibration_intensity_strong">Silná</string>
+    <string name="vibration_intensity_custom">Vlastní</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
+    <string name="pattern_mm_mm_mm">mm-mm-mm</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
+    <string name="unknown_night_light_time">Není známo - stiskněte pro aktualizaci</string>
+    <string name="night_display_location_text">\n\nPlán od západu do východu slunce vyžaduje povolené lokalizační služby k získání správného času pro vaší polohu.</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Velikost panelu pro gesta</string>
+    <string name="home_handle_low_label">Malý (AOSP)</string>
+    <string name="home_handle_high_label">Dlouhý</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Adaptivní přehrávání</string>
+    <string name="adaptive_playback_timeout_title">Použít tento časový limit</string>
+    <string name="adaptive_playback_timeout_none_summary">Vyp.</string>
+    <string name="adaptive_playback_timeout_30_secs">30 sekund</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Zap. (30 sekund)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minuta</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Zap. (1 minuta)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minuty</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Zap. (2 minuty)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minut</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Zap. (5 minut)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minut</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Zap. (10 minut)</string>
+</resources>

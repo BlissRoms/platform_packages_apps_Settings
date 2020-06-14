@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2019 BlissRoms Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     
+          http://www.apache.org/licenses/LICENSE-2.0
+          
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Dưới 1 phút</string>
+    <string name="screen_time_summary_usage_today">%1$s hôm nay</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Sử dụng Mở khóa bằng khuôn mặt để mở khóa thiết bị của bạn.\n\nHãy nhớ:\nViệc nhìn vào điện thoại có thể mở khóa khi bạn không có ý định này.\n\nĐiện thoại của bạn có thể bị một người khác mở khóa nếu điện thoại điện giữ trước mặt bạn khi bạn mở mắt.\n\nĐiện thoại của bạn có thể bị ai đó trông rất giống bạn, ví như con hay anh chị em song sinh của bạn mở khóa.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Dữ liệu được ghi lại bằng tính năng mở khóa bằng khuôn mặt sẽ bị xóa vĩnh viễn và an toàn. Sau khi xóa, bạn sẽ cần mã PIN, mẫu hình, mật khẩu để mở khóa điện thoại.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Bật tùy chọn Pin thích ứng</string>
+    <string name="smart_battery_footer_custom">"Để kéo dài tuổi thọ pin, Pin thích ứng giới hạn pin cho các ứng dụng được sử dụng không thường xuyên. Điện thoại của bạn sẽ tìm hiểu cách bạn sử dụng ứng dụng theo thời gian.
+
+Thông báo có thể bị trì hoãn cho các ứng dụng này."</string>
+    <string name="smart_battery_manager_title_custom">Pin thích ứng</string>
+    <string name="smart_battery_title_custom">Sử dụng pin thích ứng</string>
+    <!-- BlissRoms Version -->
+    <string name="bliss_version">Phiên bản BlissRoms</string>
+    <string name="bliss_version_default">Không xác định</string>
+    <string name="keywords_bliss_version">Phiên bản Bliss</string>
+    <string name="bliss_build_date">Ngày dựng phiên bản Bliss</string>
+    <string name="bliss_build_default">Không xác định</string>
+    <string name="bliss_build_type">Trạng thái phiên bản Bliss</string>
+    <string name="bliss_device">Thiết bị Bliss</string>
+    <!-- Changelog -->
+    <string name="changelog_title">Nhật kí cập nhật</string>
+    <string name="changelog_summary">Những Thay Đổi Gần Đây</string>
+    <string name="changelog_loading">Đang tải danh sách các thay đổi</string>
+    <string name="changelog_error">Không thể tải nhật ký thay đổi</string>
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Âm thanh chụp ảnh màn hình</string>
+    <!-- Bliss Updater -->
+    <string name="bliss_updater_title">Cập nhật Bliss</string>
+    <string name="bliss_updater_summary">Kiểm tra phiên bản mới nhất của rom</string>
+    <string name="keywords_bliss_updater">Cập nhật BlissOTA</string>
+    <!-- Blissify -->
+    <string name="blissify_settings_title">Blissify</string>
+    <string name="blissify_settings_summary">Blissify cho thiết bị của bạn!</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Mở khóa nhanh</string>
+    <string name="unlock_quick_unlock_control_summary">Tự động mở khóa khi nhập đúng mật khẩu/PIN</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Xoá dữ liệu sử dụng pin</string>
+    <string name="battery_stats_message">Thống kê lịch sử pin sẽ được thiết lập lại</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Cho phép máy khách sử dụng điểm truy cập với kết nối VPN của thiết bị này để kết nối đến máy chủ</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Nhạc chuông - SIM 1</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Nhạc chuông - SIM 2</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Đóng</string>
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Hiển thị trình trực quan âm nhạc</string>
+    <!-- Dashboard -->
+    <string name="dashboard_conditions_title">Bảng điều khiển đề xuất</string>
+    <string name="summary_dashboard_conditions_enabled">Bảng điều khiển đề xuất đã được bật</string>
+    <string name="summary_dashboard_conditions_disabled">Điều kiện bảng điều khiển bị vô hiệu hóa</string>
+    <string name="dashboard_suggestions_title">Bảng điều khiển đề xuất</string>
+    <string name="summary_dashboard_suggestions_enabled">Bảng điều khiển đề xuất được bật</string>
+    <string name="summary_dashboard_suggestions_disabled">Bảng điều khiển đề xuất bị vô hiệu hoá</string>
+    <string name="back_height_low_label">Đầy đủ</string>
+    <string name="back_height_high_label">Bên dưới</string>
+    <string name="back_options_dialog_title">Tùy chọn</string>
+    <string name="back_height_message">Số lượng chiều cao màn hình được sử dụng làm vùng có thể chạm cho cử chỉ quay lại.</string>
+    <string name="back_gesture_haptic">Kích hoạt hiệu ứng đánh dấu haptic trên cử chỉ quay lại</string>
+    <string name="back_block_ime_title">Phần màn hình tương đương với chiều cao của bàn phím không thể sử dụng cử chỉ quay lại.</string>
+    <string name="battery_temp">Nhiệt độ pin</string>
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Sạc Thông minh</string>
+    <string name="smart_charging_summary">Điều chỉnh mức sạc tối đa</string>
+    <string name="smart_charging_switch_title">Sử dụng Sạc Thông minh</string>
+    <string name="smart_charging_level_title">Dừng mức kích hoạt</string>
+    <string name="smart_charging_resume_level_title">Bắt đầu mức kích hoạt</string>
+    <string name="smart_charging_reset_stats_title">Đặt lại thống kê pin</string>
+    <string name="smart_charging_reset_stats_summary">Đặt lại thống kê pin sau khi đạt mức sạc do người dùng đề ra</string>
+    <string name="smart_charging_footer">Sạc thông minh cho phép bạn đặt mức sạc tối đa để kéo dài tuổi thọ của pin. Khi được bật, pin sẽ ngừng sạc ở mức Dừng và tiếp tục sạc ở mức Bắt đầu. Mức Dừng phải luôn luôn lớn hơn mức Bắt đầu.</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Vuốt sang trái hoặc phải trên cảm biến vân tay để loại bỏ thông báo</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Để loại bỏ thông báo, vuốt sang trái hoặc phải trên cảm biến vân tay ở mặt sau của điện thoại.</string>
+    <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">Tắt tiếng, không có phương tiện</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Bật (tắt tiếng, không có phương tiện)</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Chạm để hiện thông tin</string>
+    <string name="pulse_on_new_tracks_title">Thẻ âm nhạc trên Màn hình sáng</string>
+    <string name="pulse_on_new_tracks_summary">Hiển thị Ambient Display khi một bản nhạc mới được phát. Nhấn đúp vào thông tin theo dõi để bỏ qua bài hát tiếp theo.</string>
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Nền tảng</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Tổng RAM</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Cách hiển thị tai thỏ</string>
+    <string name="display_cutout_mode_normal">Mặc định</string>
+    <string name="display_cutout_mode_hidden">Ẩn</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Tần số quét của màn hình</string>
+    <string name="refresh_rate_summary_auto">Tự động / Tự động tăng tần số quét màn hình từ 60Hz lên 90Hz cho một số nội dụng</string>
+    <string name="refresh_rate_summary_60">60Hz / Tần số quét của màn hình cố định ở mức 60Hz cho mọi nội dung</string>
+    <string name="refresh_rate_summary_90">90Hz / Tần số quét của màn hình cố định ở mức 90Hz cho mọi nội dung. Tăng tần suất sử dụng pin</string>
+    <string name="auto_refresh_rate">Tự động</string>
+    <!-- Battery charge warning -->
+    <string name="notification_sound_battery_charge_title">Cảnh báo sạc</string>
+    <string name="notification_sound_battery_charge_summary">Phát âm thanh khi pin đạt mức sạc</string>
+    <string name="notification_battery_charge_level_title">Cảnh báo sạc</string>
+    <string name="notification_battery_charge_level_summary">Cho phép phát âm thanh khi pin đạt đến mức chỉ định khi sạc</string>
+    <string name="notification_battery_charge_level_seek_bar">Mức dung lượng Pin</string>
+    <string name="notification_battery_charge_level_ringtone">Nhạc chuông</string>
+    <string name="notification_battery_charge_level_silent">Im lặng</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Tiến trình nền</string>
+    <!-- NavigationBar Gestural Mode Tweaks -->
+    <string name="gesture_pill_message">Ẩn thanh điều hướng cho cử chỉ toàn màn hình.</string>
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">Hiển thị hoạt ảnh mũi tên cho cử chỉ trở lại.</string>
+    <!-- Custom Vibration fragment -->
+    <string name="vibration_preferences">Rung &amp; xúc giác</string>
+    <string name="summary_vibration_preferences">Thay đổi cường độ, hình và nhiều hơn nữa</string>
+    <string name="keywords_vibration_preferences">rung khi vẽ mẫu hình, cường độ rung, trong cuộc gọi, chạm, độ rung</string>
+    <string name="ringtone_vibration_pattern">Chuông và rung khi vẽ mẫu hình</string>
+    <string name="vibration_intensity_ringer">Cường độ rung và chuông</string>
+    <string name="vibration_intensity_notification">Cường độ rung cho thông báo</string>
+    <string name="vibration_intensity_haptic">Cường độ phản hồi xúc giác</string>
+    <string name="vibration_intensity_disabled">Tắt</string>
+    <string name="vibration_intensity_light">Đèn</string>
+    <string name="vibration_intensity_medium">Trung bình</string>
+    <string name="vibration_intensity_strong">Mạnh</string>
+    <string name="vibration_intensity_custom">Tùy chỉnh</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
+    <string name="pattern_mm_mm_mm">mm-mm-mm</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
+    <string name="unknown_night_light_time">Không xác định - chạm để cập nhật</string>
+    <string name="night_display_location_text">\n\nLịch trình từ hoàng hôn đến bình minh yêu cầu các dịch vụ vị trí được kích hoạt để có được thời gian chính xác cho vị trí của bạn.</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Kích thước cử chỉ điều hướng</string>
+    <string name="home_handle_low_label">Nhỏ (AOSP)</string>
+    <string name="home_handle_high_label">Lâu</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Phát nhạc linh động</string>
+    <string name="adaptive_playback_timeout_title">Sử dụng thời gian chờ của</string>
+    <string name="adaptive_playback_timeout_none_summary">Tắt</string>
+    <string name="adaptive_playback_timeout_30_secs">30 giây</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Bật (30 giây)</string>
+    <string name="adaptive_playback_timeout_1_min">1 phút</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Bật (1 phút)</string>
+    <string name="adaptive_playback_timeout_2_min">2 phút</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Bật (2 phút)</string>
+    <string name="adaptive_playback_timeout_5_min">5 phút</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Bật (5 phút)</string>
+    <string name="adaptive_playback_timeout_10_min">10 phút</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Bật (10 phút)</string>
+</resources>
