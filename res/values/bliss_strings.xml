@@ -28,5 +28,6 @@
 
     <!-- Bliss maintainer -->
     <string name="maintainer">Maintainer</string>
+    <string name="bliss_maintainer">Unofficial Maintainer</string>
 
 </resources>
