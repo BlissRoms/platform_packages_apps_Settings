@@ -179,6 +179,7 @@ Notifications may be delayed for these apps."</string>
 
     <!-- Bliss maintainer -->
     <string name="maintainer">Maintainer</string>
+    <string name="bliss_maintainer">Unofficial Maintainer</string>
 
     <!-- Gesture nav gear options -->
     <!-- [CHAR LIMIT=60] -->
