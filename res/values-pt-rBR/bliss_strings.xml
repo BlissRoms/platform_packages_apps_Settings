@@ -55,22 +55,7 @@
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Resetar estatísticas</string>
     <string name="battery_stats_message">O histórico e as estatísticas da bateria serão reiniciados</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Permitir que os clientes utilizem a conexão deste dispositivo\u2019s para se conectar a VPN.</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone1_title">Toque de chamada - SIM 1</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone2_title">Toque de chamada - SIM 2</string>
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <string name="suggestion_button_close">Fechar</string>
-    <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Mostrar o visualizador de música</string>
-    <!-- Dashboard -->
-    <string name="dashboard_conditions_title">Condições de painel</string>
-    <string name="summary_dashboard_conditions_enabled">Condições do painel de controle estão habilitadas</string>
-    <string name="summary_dashboard_conditions_disabled">Condições do painel estão desativadas</string>
-    <string name="dashboard_suggestions_title">Sugestões de painel</string>
-    <string name="summary_dashboard_suggestions_enabled">Sugestões do painel estão habilitados</string>
-    <string name="summary_dashboard_suggestions_disabled">Sugestões do painel estão habilitados</string>
+    <!-- Navigation mode settings -->
     <string name="back_height_low_label">Completa</string>
     <string name="back_height_high_label">Botão</string>
     <string name="back_options_dialog_title">Opções</string>
@@ -103,10 +88,6 @@
     <string name="platform_revision">Plataforma</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Total de memória RAM</string>
-    <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Comportamento do notch</string>
-    <string name="display_cutout_mode_normal">Padrão</string>
-    <string name="display_cutout_mode_hidden">Oculto</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Taxa de atualização da tela</string>
     <string name="refresh_rate_summary_auto">Automático / Aumenta automaticamente a taxa de atualização de 60 para 90Hz para alguns conteúdos</string>
@@ -123,8 +104,6 @@
     <string name="notification_battery_charge_level_silent">Silencioso</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Processos em segundo plano</string>
-    <!-- NavigationBar Gestural Mode Tweaks -->
-    <string name="gesture_pill_message">Oculte a pílula da barra de navegação para obter gestos em tela cheia.</string>
     <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Mostrar uma seta animada para o gesto voltar.</string>
     <!-- Custom Vibration fragment -->
@@ -149,12 +128,14 @@
     <string name="night_display_location_text">\n\nA programação de anoitecer ao amanhecer requerem que os serviços de localização estejam ativos e obtenham os horários corretos da sua localização.</string>
     <!-- Home handle sizing -->
     <string name="home_handle_sizer_title">Tamanho da barra de gestos</string>
-    <string name="home_handle_low_label">Pequeno (AOSP)</string>
+    <string name="home_handle_low_label">Sem pílula</string>
     <string name="home_handle_high_label">Longo</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Reprodução adaptável</string>
+    <string name="adaptive_playback_disabled_summary">Desligado</string>
     <string name="adaptive_playback_timeout_title">Usar tempo limite de</string>
-    <string name="adaptive_playback_timeout_none_summary">Desligado</string>
+    <string name="adaptive_playback_timeout_none">Sem tempo limite</string>
+    <string name="adaptive_playback_timeout_none_summary">Ligado (sem limite de tempo)</string>
     <string name="adaptive_playback_timeout_30_secs">30 segundos</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Ativo (30 segundos)</string>
     <string name="adaptive_playback_timeout_1_min">1 minuto</string>
@@ -165,4 +146,16 @@
     <string name="adaptive_playback_timeout_5_min_summary">Ativado (5 minutos)</string>
     <string name="adaptive_playback_timeout_10_min">10 minutos</string>
     <string name="adaptive_playback_timeout_10_min_summary">Ativado (10 minutos)</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Mostrar registro do histórico de notificações</string>
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Mantenedor</string>
+    <!-- Gesture nav gear options -->
+    <!-- [CHAR LIMIT=60] -->
+    <string name="show_gestures_navbar_switch_text">Ativar mostrar gestos na barra de navegação</string>
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Ativar para mostrar o espaço e a pílula do botão IME</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Deslize para cima para desbloquear</string>
+    <string name="security_settings_face_require_swipe_summary">Deslize para cima na tela de bloqueio para usar o desbloqueio facial</string>
 </resources>

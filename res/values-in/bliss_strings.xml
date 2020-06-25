@@ -55,22 +55,7 @@ Notifikasi dapat tertunda untuk beberapa aplikasi."</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Atur ulang statistik</string>
     <string name="battery_stats_message">Statistik penggunaan baterai akan disetel ulang</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Izinkan klien hotspot untuk menggunakan koneksi VPN perangkat\u2019s ini untuk konektivitas upstream</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone1_title">Nada dering telepon - SIM 1</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone2_title">Nada dering telepon - SIM 2</string>
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <string name="suggestion_button_close">Tutup</string>
-    <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Tampilkan visualisasi musik</string>
-    <!-- Dashboard -->
-    <string name="dashboard_conditions_title">Kondisi dasbor</string>
-    <string name="summary_dashboard_conditions_enabled">Kondisi dasbor diaktifkan</string>
-    <string name="summary_dashboard_conditions_disabled">Kondisi dasbor dinonaktifkan</string>
-    <string name="dashboard_suggestions_title">Saran dasbor</string>
-    <string name="summary_dashboard_suggestions_enabled">Saran dasbor diaktifkan</string>
-    <string name="summary_dashboard_suggestions_disabled">Saran dasbor dinonaktifkan</string>
+    <!-- Navigation mode settings -->
     <string name="back_height_low_label">Penuh</string>
     <string name="back_height_high_label">Bawah</string>
     <string name="back_options_dialog_title">Opsi</string>
@@ -103,10 +88,6 @@ Notifikasi dapat tertunda untuk beberapa aplikasi."</string>
     <string name="platform_revision">Platform</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Total RAM</string>
-    <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Perilaku Notch</string>
-    <string name="display_cutout_mode_normal">Bawaan</string>
-    <string name="display_cutout_mode_hidden">Tersembunyi</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Tingkat refresh layar</string>
     <string name="refresh_rate_summary_auto">Otomatis / otomatis meningkatkan refresh layar dari 60 ke 90Hz untuk beberapa konten</string>
@@ -123,8 +104,6 @@ Notifikasi dapat tertunda untuk beberapa aplikasi."</string>
     <string name="notification_battery_charge_level_silent">Diam</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Proses di latar belakang</string>
-    <!-- NavigationBar Gestural Mode Tweaks -->
-    <string name="gesture_pill_message">Sembunyikan bar pill navigasi untuk gerakan layar penuh yang mulus.</string>
     <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Tampilkan animasi panah untuk gestur kembali.</string>
     <!-- Custom Vibration fragment -->
@@ -149,12 +128,14 @@ Notifikasi dapat tertunda untuk beberapa aplikasi."</string>
     <string name="night_display_location_text">\n\nJadwal dari matahari terbenam hingga matahari terbit membutuhkan layanan lokasi yang diaktifkan untuk mendapatkan waktu yang tepat untuk lokasi Anda.</string>
     <!-- Home handle sizing -->
     <string name="home_handle_sizer_title">Ukuran bar gestur</string>
-    <string name="home_handle_low_label">Kecil (AOSP)</string>
+    <string name="home_handle_low_label">Kecil (Aosp)</string>
     <string name="home_handle_high_label">Panjang</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Pemutaran adaptif</string>
+    <string name="adaptive_playback_disabled_summary">Nonaktif</string>
     <string name="adaptive_playback_timeout_title">Gunakan batas waktu</string>
-    <string name="adaptive_playback_timeout_none_summary">Mati</string>
+    <string name="adaptive_playback_timeout_none">Tanpa batas waktu</string>
+    <string name="adaptive_playback_timeout_none_summary">Aktif (tidak ada batas waktu)</string>
     <string name="adaptive_playback_timeout_30_secs">30 detik</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Hidup (30 detik)</string>
     <string name="adaptive_playback_timeout_1_min">1 menit</string>
@@ -165,4 +146,16 @@ Notifikasi dapat tertunda untuk beberapa aplikasi."</string>
     <string name="adaptive_playback_timeout_5_min_summary">Hidup (5 menit)</string>
     <string name="adaptive_playback_timeout_10_min">10 menit</string>
     <string name="adaptive_playback_timeout_10_min_summary">Hidup (10 menit)</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Tampilkan log riwayat notifikasi</string>
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Pengelola</string>
+    <!-- Gesture nav gear options -->
+    <!-- [CHAR LIMIT=60] -->
+    <string name="show_gestures_navbar_switch_text">Aktifkan untuk menampilkan gerakan navbar</string>
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Aktifkan untuk menampilkan ruang tombol IME dan pil</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Geser ke atas untuk membuka kunci</string>
+    <string name="security_settings_face_require_swipe_summary">Geser ke atas pada layar kunci untuk menggunakan buka kunci wajah</string>
 </resources>
