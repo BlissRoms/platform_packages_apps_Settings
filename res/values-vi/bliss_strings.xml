@@ -55,22 +55,7 @@ Thông báo có thể bị trì hoãn cho các ứng dụng này."</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Xoá dữ liệu sử dụng pin</string>
     <string name="battery_stats_message">Thống kê lịch sử pin sẽ được thiết lập lại</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Cho phép máy khách sử dụng điểm truy cập với kết nối VPN của thiết bị này để kết nối đến máy chủ</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone1_title">Nhạc chuông - SIM 1</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone2_title">Nhạc chuông - SIM 2</string>
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <string name="suggestion_button_close">Đóng</string>
-    <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Hiển thị trình trực quan âm nhạc</string>
-    <!-- Dashboard -->
-    <string name="dashboard_conditions_title">Bảng điều khiển đề xuất</string>
-    <string name="summary_dashboard_conditions_enabled">Bảng điều khiển đề xuất đã được bật</string>
-    <string name="summary_dashboard_conditions_disabled">Điều kiện bảng điều khiển bị vô hiệu hóa</string>
-    <string name="dashboard_suggestions_title">Bảng điều khiển đề xuất</string>
-    <string name="summary_dashboard_suggestions_enabled">Bảng điều khiển đề xuất được bật</string>
-    <string name="summary_dashboard_suggestions_disabled">Bảng điều khiển đề xuất bị vô hiệu hoá</string>
+    <!-- Navigation mode settings -->
     <string name="back_height_low_label">Đầy đủ</string>
     <string name="back_height_high_label">Bên dưới</string>
     <string name="back_options_dialog_title">Tùy chọn</string>
@@ -103,10 +88,6 @@ Thông báo có thể bị trì hoãn cho các ứng dụng này."</string>
     <string name="platform_revision">Nền tảng</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Tổng RAM</string>
-    <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Cách hiển thị tai thỏ</string>
-    <string name="display_cutout_mode_normal">Mặc định</string>
-    <string name="display_cutout_mode_hidden">Ẩn</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Tần số quét của màn hình</string>
     <string name="refresh_rate_summary_auto">Tự động / Tự động tăng tần số quét màn hình từ 60Hz lên 90Hz cho một số nội dụng</string>
@@ -123,8 +104,6 @@ Thông báo có thể bị trì hoãn cho các ứng dụng này."</string>
     <string name="notification_battery_charge_level_silent">Im lặng</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Tiến trình nền</string>
-    <!-- NavigationBar Gestural Mode Tweaks -->
-    <string name="gesture_pill_message">Ẩn thanh điều hướng cho cử chỉ toàn màn hình.</string>
     <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Hiển thị hoạt ảnh mũi tên cho cử chỉ trở lại.</string>
     <!-- Custom Vibration fragment -->
@@ -149,12 +128,14 @@ Thông báo có thể bị trì hoãn cho các ứng dụng này."</string>
     <string name="night_display_location_text">\n\nLịch trình từ hoàng hôn đến bình minh yêu cầu các dịch vụ vị trí được kích hoạt để có được thời gian chính xác cho vị trí của bạn.</string>
     <!-- Home handle sizing -->
     <string name="home_handle_sizer_title">Kích thước cử chỉ điều hướng</string>
-    <string name="home_handle_low_label">Nhỏ (AOSP)</string>
+    <string name="home_handle_low_label">Không thuốc</string>
     <string name="home_handle_high_label">Lâu</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Phát nhạc linh động</string>
+    <string name="adaptive_playback_disabled_summary">Tắt</string>
     <string name="adaptive_playback_timeout_title">Sử dụng thời gian chờ của</string>
-    <string name="adaptive_playback_timeout_none_summary">Tắt</string>
+    <string name="adaptive_playback_timeout_none">Không có thời gian chờ</string>
+    <string name="adaptive_playback_timeout_none_summary">Bật (không có thời gian chờ)</string>
     <string name="adaptive_playback_timeout_30_secs">30 giây</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Bật (30 giây)</string>
     <string name="adaptive_playback_timeout_1_min">1 phút</string>
@@ -165,4 +146,16 @@ Thông báo có thể bị trì hoãn cho các ứng dụng này."</string>
     <string name="adaptive_playback_timeout_5_min_summary">Bật (5 phút)</string>
     <string name="adaptive_playback_timeout_10_min">10 phút</string>
     <string name="adaptive_playback_timeout_10_min_summary">Bật (10 phút)</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Hiển thị nhật ký lịch sử thông báo</string>
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Người bảo trì</string>
+    <!-- Gesture nav gear options -->
+    <!-- [CHAR LIMIT=60] -->
+    <string name="show_gestures_navbar_switch_text">Cho phép hiển thị thanh điều hướng cử chỉ</string>
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Cho phép hiển thị không gian phím IME và pill</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Vuốt lên để mở khóa</string>
+    <string name="security_settings_face_require_swipe_summary">Vuốt lên trên màn hình khóa để sử dụng mở khóa bằng khuôn mặt</string>
 </resources>

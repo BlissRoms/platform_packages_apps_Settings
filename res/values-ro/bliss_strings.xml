@@ -55,22 +55,7 @@ Notificările de la aceste aplicații pot fi primite cu întârziere."</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Resetare statistici</string>
     <string name="battery_stats_message">Statisticile privind istoricul bateriei vor fi resetate</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Permite clienților hotspot-ului să utilizeze conexiunile VPN ale acestui dispozitiv pentru conexiunea upstream</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone1_title">Ton de apel - SIM 1</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone2_title">Ton de apel - SIM 2</string>
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <string name="suggestion_button_close">Închide</string>
-    <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Afişare vizualizator muzică</string>
-    <!-- Dashboard -->
-    <string name="dashboard_conditions_title">Editor panou de comandă</string>
-    <string name="summary_dashboard_conditions_enabled">Sugestiile tabloului de bord sunt activate</string>
-    <string name="summary_dashboard_conditions_disabled">Sugestiile tabloului de bord sunt dezactivate</string>
-    <string name="dashboard_suggestions_title">Sugestii tablou de bord</string>
-    <string name="summary_dashboard_suggestions_enabled">Sugestiile tabloului de bord sunt activate</string>
-    <string name="summary_dashboard_suggestions_disabled">Sugestiile tabloului de bord sunt dezactivate</string>
+    <!-- Navigation mode settings -->
     <string name="back_height_low_label">Complet</string>
     <string name="back_height_high_label">Jos</string>
     <string name="back_options_dialog_title">Opţiuni</string>
@@ -103,10 +88,6 @@ Notificările de la aceste aplicații pot fi primite cu întârziere."</string>
     <string name="platform_revision">Platforma</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">RAM total</string>
-    <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Comportament breton</string>
-    <string name="display_cutout_mode_normal">Prestabilit</string>
-    <string name="display_cutout_mode_hidden">Ascuns</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Rata de actualizare a ecranului</string>
     <string name="refresh_rate_summary_auto">Auto / Crește rata de actualizare de la 60 la 90 Hz pentru un anumit conținut in mod automat</string>
@@ -123,8 +104,6 @@ Notificările de la aceste aplicații pot fi primite cu întârziere."</string>
     <string name="notification_battery_charge_level_silent">Silențios</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Procesele de fundal</string>
-    <!-- NavigationBar Gestural Mode Tweaks -->
-    <string name="gesture_pill_message">Ascundeți pilula din bare de navigare pentru gesturi pe ecran complet.</string>
     <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Afișează o săgeată animată pentru gestul de înapoi.</string>
     <!-- Custom Vibration fragment -->
@@ -149,12 +128,14 @@ Notificările de la aceste aplicații pot fi primite cu întârziere."</string>
     <string name="night_display_location_text">\n\nProgramul de la apus la răsărit necesită servicii de locație activate pentru a obține orele corecte pentru locația dvs.</string>
     <!-- Home handle sizing -->
     <string name="home_handle_sizer_title">Dimensiune bară de gesturi</string>
-    <string name="home_handle_low_label">Mică (AOSP)</string>
+    <string name="home_handle_low_label">Nicio pilulă</string>
     <string name="home_handle_high_label">Lung</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Redare adaptivă</string>
+    <string name="adaptive_playback_disabled_summary">Dezactivat</string>
     <string name="adaptive_playback_timeout_title">Folosește un timp expirare de</string>
-    <string name="adaptive_playback_timeout_none_summary">Dezactivat</string>
+    <string name="adaptive_playback_timeout_none">Fără pauză</string>
+    <string name="adaptive_playback_timeout_none_summary">Activat (nicio perioadă de timp)</string>
     <string name="adaptive_playback_timeout_30_secs">30 secunde</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Pornit (30 de secunde)</string>
     <string name="adaptive_playback_timeout_1_min">1 minut</string>
@@ -165,4 +146,16 @@ Notificările de la aceste aplicații pot fi primite cu întârziere."</string>
     <string name="adaptive_playback_timeout_5_min_summary">Pornit (5 minute)</string>
     <string name="adaptive_playback_timeout_10_min">10 minute</string>
     <string name="adaptive_playback_timeout_10_min_summary">Pornit (10 minute)</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Afișare istoric notificări</string>
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Dezvoltator</string>
+    <!-- Gesture nav gear options -->
+    <!-- [CHAR LIMIT=60] -->
+    <string name="show_gestures_navbar_switch_text">Activează afișarea barei de navigare gesturi</string>
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Activează afișarea spațiului butoanelor IME și pastilă</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Glisați degetul în sus pentru deblocare</string>
+    <string name="security_settings_face_require_swipe_summary">Glisați în sus pe ecranul de blocare pentru a utiliza deblocarea feței</string>
 </resources>

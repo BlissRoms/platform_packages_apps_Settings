@@ -55,22 +55,7 @@ Nende rakenduste märguanded võivad viibida."</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Nulli näidud</string>
     <string name="battery_stats_message">Akukasutamise ajalugu nullitakse</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Luba kuumkoha klientidel kasutada selle seadme VPN-ühendusi ülesvoolu ühenduvuseks</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone1_title">Telefoni helin - SIM 1</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone2_title">Telefoni helin - SIM 2</string>
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <string name="suggestion_button_close">Sulge</string>
-    <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Näita muusika visualiseerijat</string>
-    <!-- Dashboard -->
-    <string name="dashboard_conditions_title">Armatuurlaua tingimused</string>
-    <string name="summary_dashboard_conditions_enabled">Armatuurlaua tingimused on lubatud</string>
-    <string name="summary_dashboard_conditions_disabled">Armatuurlaua tingimused on keelatud</string>
-    <string name="dashboard_suggestions_title">Armatuurlaua soovitused</string>
-    <string name="summary_dashboard_suggestions_enabled">Armatuurlaua soovitused on lubatud</string>
-    <string name="summary_dashboard_suggestions_disabled">Armatuurlaua soovitused on keelatud</string>
+    <!-- Navigation mode settings -->
     <string name="back_height_low_label">Täielik</string>
     <string name="back_height_high_label">Alla</string>
     <string name="back_options_dialog_title">Valikud</string>
@@ -103,10 +88,6 @@ Nende rakenduste märguanded võivad viibida."</string>
     <string name="platform_revision">Platvorm</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Kogu RAM</string>
-    <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Aste käitumine</string>
-    <string name="display_cutout_mode_normal">Vaikimisi</string>
-    <string name="display_cutout_mode_hidden">Peidetud</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Ekraani värskenduskiirus</string>
     <string name="refresh_rate_summary_auto">Automaatne / Automaatselt tõstab värskenduskiiruse 60 pealt 90Hz peale teatud sisu juures</string>
@@ -123,8 +104,6 @@ Nende rakenduste märguanded võivad viibida."</string>
     <string name="notification_battery_charge_level_silent">Hääletu</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Taustaprotsessid</string>
-    <!-- NavigationBar Gestural Mode Tweaks -->
-    <string name="gesture_pill_message">Peida navigeerimispulk segajateta täisekraanis viibete jaoks.</string>
     <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Kuva tagasiviipel animeeritud noolt.</string>
     <!-- Custom Vibration fragment -->
@@ -149,12 +128,14 @@ Nende rakenduste märguanded võivad viibida."</string>
     <string name="night_display_location_text">\n\nAjakava päikeseloojangust päikesetõusuni nõuab lubatud asukohateenuseid, et saada teie asukohale õiged kellaajad.</string>
     <!-- Home handle sizing -->
     <string name="home_handle_sizer_title">Žestiriba suurus</string>
-    <string name="home_handle_low_label">Nõrk (AOSP)</string>
+    <string name="home_handle_low_label">Ilma žesti triipudetta</string>
     <string name="home_handle_high_label">Pikk</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Adaptiivne taasesitus</string>
+    <string name="adaptive_playback_disabled_summary">Välja</string>
     <string name="adaptive_playback_timeout_title">Kasutage ooteaega</string>
-    <string name="adaptive_playback_timeout_none_summary">Väljas</string>
+    <string name="adaptive_playback_timeout_none">Ooteajata</string>
+    <string name="adaptive_playback_timeout_none_summary">Sees (ooteajata)</string>
     <string name="adaptive_playback_timeout_30_secs">30 sekundit</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Sees (30 sek)</string>
     <string name="adaptive_playback_timeout_1_min">1 minut</string>
@@ -165,4 +146,16 @@ Nende rakenduste märguanded võivad viibida."</string>
     <string name="adaptive_playback_timeout_5_min_summary">Sees (5 minutit)</string>
     <string name="adaptive_playback_timeout_10_min">10 minutit</string>
     <string name="adaptive_playback_timeout_10_min_summary">Sees (10 minutit)</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Kuva teate ajaloo logi</string>
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Arendaja</string>
+    <!-- Gesture nav gear options -->
+    <!-- [CHAR LIMIT=60] -->
+    <string name="show_gestures_navbar_switch_text">Lülitage sisse žestiriba kuvamiseks</string>
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Lülitage sisse, et kuvada sisestusmeetod ja liigutusriba nupud</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Libista avamiseks üles</string>
+    <string name="security_settings_face_require_swipe_summary">Lukust vabastamiseks libistage lukustuskuval üles</string>
 </resources>
