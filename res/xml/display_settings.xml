@@ -23,6 +23,10 @@
     settings:keywords="@string/keywords_display"
     settings:initialExpandedChildrenCount="8">
 
+   <Preference
+        android:key="display_animation"
+        android:layout="@layout/display_animation" />
+
     <PreferenceCategory
         android:key="screen_category"
         android:title="@string/display_screen_category">
