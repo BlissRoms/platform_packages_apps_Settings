@@ -34,6 +34,10 @@
         android:layout="@layout/wifi_animation"
         android:order="-999"/>
 
+    <PreferenceCategory
+        android:key="storage_divider"
+        android:order="-998"/>
+
     <com.android.settings.widget.MasterSwitchPreference
         android:fragment="com.android.settings.wifi.WifiSettings"
         android:key="main_toggle_wifi"

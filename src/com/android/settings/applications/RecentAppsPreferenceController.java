@@ -94,7 +94,6 @@ public class RecentAppsPreferenceController extends BasePreferenceController
         mRecentAppsPreference = screen.findPreference(getPreferenceKey());
         final View view = mRecentAppsPreference.findViewById(R.id.app_entities_header);
         mAppEntitiesController = AppEntitiesHeaderController.newInstance(mContext, view)
-                .setHeaderTitleRes(R.string.recent_app_category_title)
                 .setHeaderDetailsClickListener((View v) -> {
                     mMetricsFeatureProvider.logClickedPreference(mRecentAppsPreference,
                             getMetricsCategory());
