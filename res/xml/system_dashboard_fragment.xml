@@ -25,7 +25,7 @@
     <Preference 
         android:key="bliss_logo"
         android:order="-500"
-        android:layout="@layout/bliss_logo" />
+        android:layout="@layout/system_animation" />
 
     <Preference
         android:key="gesture_settings"
