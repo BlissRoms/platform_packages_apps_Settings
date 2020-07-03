@@ -27,6 +27,10 @@
         android:key="display_animation"
         android:layout="@layout/display_animation" />
 
+    <PreferenceCategory
+        android:key="screen_category"
+        android:title="@string/display_screen_category">
+
     <com.android.settingslib.RestrictedPreference
         android:key="brightness"
         android:title="@string/brightness"
@@ -35,15 +39,6 @@
         settings:userRestriction="no_config_brightness">
         <intent android:action="com.android.intent.action.SHOW_BRIGHTNESS_DIALOG" />
     </com.android.settingslib.RestrictedPreference>
-
-    <com.android.settings.display.darkmode.DarkModePreference
-        android:key="dark_ui_mode"
-        android:title="@string/dark_ui_mode"
-        android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
-        android:widgetLayout="@null"
-        settings:widgetLayout="@null"
-        settings:controller="com.android.settings.display.DarkUIPreferenceController"
-        settings:keywords="@string/keywords_dark_ui_mode"/>
 
     <com.android.settings.display.NightDisplayPreference
         android:key="night_display"
@@ -100,6 +95,17 @@
         settings:controller="com.android.settings.display.ColorModePreferenceController"
         settings:keywords="@string/keywords_color_mode" />
 
+    <Preference
+        android:key="screensaver"
+        android:title="@string/screensaver_settings_title"
+        android:fragment="com.android.settings.dream.DreamSettings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="display_customisation_category"
+        android:title="@string/display_customisation_title">
+
     <SwitchPreference
         android:key="display_white_balance"
         android:title="@string/display_white_balance_title"
@@ -133,16 +139,17 @@
         lineage:requiresConfig="@*lineageos.platform:bool/config_haveHigherAspectRatioScreen" />
 
     <Preference
-        android:key="screensaver"
-        android:title="@string/screensaver_settings_title"
-        android:fragment="com.android.settings.dream.DreamSettings" />
-
-    <Preference
         android:key="lockscreen_from_display_settings"
         android:title="@string/lockscreen_settings_title"
         android:fragment="com.android.settings.security.LockscreenDashboardFragment"
         settings:keywords="@string/keywords_ambient_display_screen"
         settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="wake_options_category"
+        android:title="@string/wake_options_category_title">
 
     <SwitchPreference
         android:key="camera_gesture"
@@ -186,14 +193,27 @@
         android:defaultValue="false"
         lineage:requiresFeature="lineagehardware:FEATURE_HIGH_TOUCH_SENSITIVITY" />
 
-    <ListPreference
-        android:key="theme"
-        android:title="@string/device_theme"
-        android:summary="@string/summary_placeholder" />
-
     <Preference
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="theme_customization_category"
+        android:title="@string/theme_customization_category"
+        android:order="1200"> <!-- Incremented by 100 from last order (i.e. 1100) -->
+
+    <com.android.settings.display.darkmode.DarkModePreference
+        android:key="dark_ui_mode"
+        android:title="@string/dark_ui_mode"
+        android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
+        android:widgetLayout="@null"
+        settings:widgetLayout="@null"
+        settings:controller="com.android.settings.display.DarkUIPreferenceController"
+        settings:keywords="@string/keywords_dark_ui_mode"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
