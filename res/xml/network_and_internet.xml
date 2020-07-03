@@ -29,6 +29,11 @@
         android:order="-40"
         settings:controller="com.android.settings.network.MultiNetworkHeaderController"/>
 
+    <Preference
+        android:key="wifi_anim"
+        android:layout="@layout/wifi_animation"
+        android:order="-999"/>
+
     <com.android.settings.widget.MasterSwitchPreference
         android:fragment="com.android.settings.wifi.WifiSettings"
         android:key="main_toggle_wifi"
