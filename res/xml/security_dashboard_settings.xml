@@ -119,6 +119,11 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory 
+        android:title="@string/security_passwords_title" 
+        android:key="security_settings_misc_category" 
+        android:order="30">
+
     <Preference
         android:order="50"
         android:key="sim_lock_settings"
@@ -151,5 +156,7 @@
         android:title="@string/screen_pinning_title"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.security.ScreenPinningSettings" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
