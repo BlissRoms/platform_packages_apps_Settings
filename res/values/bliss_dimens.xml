@@ -18,4 +18,9 @@
 <resources>
     <!-- Fingerprint -->
     <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
+
+    <!-- PreferenceCategory -->
+    <dimen name="bliss_preference_category_padding_top">0.0dip</dimen>
+    <dimen name="bliss_preference_category_line_margin_start">10.0dip</dimen>
+    <dimen name="bliss_preference_category_height">40.0dip</dimen>
 </resources>
