@@ -27,6 +27,10 @@
         android:order="-999"/>
 
     <PreferenceCategory
+        android:key="storage_divider"
+        android:order="-998"/>
+
+    <PreferenceCategory
         android:key="multi_network_header"
         android:title="@string/summary_placeholder"
         android:layout="@layout/preference_category_no_label"
