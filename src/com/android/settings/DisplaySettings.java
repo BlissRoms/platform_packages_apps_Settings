@@ -23,6 +23,7 @@ import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 
 import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceCategory;
 
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.display.BrightnessLevelPreferenceController;
@@ -59,8 +60,10 @@ public class DisplaySettings extends DashboardFragment {
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_HIGH_TOUCH_SENSITIVITY = "high_touch_sensitivity_enable";
     private static final String KEY_REFRESH_RATE_SETTING = "refresh_rate_setting";
+    private static final String KEY_DISPLAY_CUSTOMISATION_CATEGORY = "display_customisation_category";
 
     private GlobalSettingListPreference mVariableRefreshRate;
+    private PreferenceCategory mDisplayCust;
 
     @Override
     public int getMetricsCategory() {
@@ -84,12 +87,14 @@ public class DisplaySettings extends DashboardFragment {
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         mVariableRefreshRate = (GlobalSettingListPreference) prefScreen.findPreference(KEY_REFRESH_RATE_SETTING);
+        mDisplayCust = (PreferenceCategory) prefScreen.findPreference(KEY_DISPLAY_CUSTOMISATION_CATEGORY);
         boolean hasVariableRefreshRate =
             getContext().getResources().getBoolean(com.android.internal.R.bool.config_hasVariableRefreshRate);
 
         if (!hasVariableRefreshRate) {
-            prefScreen.removePreference(mVariableRefreshRate);
+            mDisplayCust.removePreference(mVariableRefreshRate);
         } else {
+            mDisplayCust.addPreference(mVariableRefreshRate);
             int defVarRateSetting = getContext().getResources().getInteger(
                  com.android.internal.R.integer.config_defaultVariableRefreshRateSetting);
             int mVarRateSetting = Settings.Global.getInt(getContext().getContentResolver(),
