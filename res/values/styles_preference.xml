@@ -25,6 +25,7 @@
         <item name="slicePreferenceStyle">@style/SlicePreference</item>
         <item name="seekBarPreferenceStyle">@style/SettingsSeekBarPreference</item>
         <item name="twoStateButtonPreferenceStyle">@style/TwoStateButtonPreference</item>
+        <item name="preferenceCategoryStyle">@style/Preference.Bliss.Category</item>
         <item name="preferenceCategoryTitleTextAppearance">@style/TextAppearance.CategoryTitle
         </item>
         <item name="preferenceCategoryStyle">@style/SettingsCategoryPreference</item>
@@ -33,6 +34,18 @@
     </style>
 
     <style name="SettingsCategoryPreference" parent="Preference.Category.Material" />
+
+    <style name="Preference.Bliss.Category" parent="@style/Preference.Category">
+        <item name="android:layout">@layout/bliss_preference_category_material</item>
+        <item name="android:selectable">false</item>
+        <item name="allowDividerBelow">false</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+
+    <style name="PreferenceCategoryTitleTextStyle">
+        <item name="android:textAppearance">?preferenceCategoryTitleTextAppearance</item>
+        <item name="android:textColor">?android:colorAccent</item>
+    </style>
 
     <style name="PreferenceTheme.SetupWizard">
         <item name="preferenceFragmentCompatStyle">@style/SetupWizardPreferenceFragmentStyle</item>
