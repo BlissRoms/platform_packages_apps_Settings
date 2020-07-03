@@ -36,6 +36,7 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.recyclerview_recyclerview \
     com.google.android.material_material \
     setupcompat \
+    airbnb-lottie \
     setupdesign
 
 LOCAL_JAVA_LIBRARIES := \
@@ -54,7 +55,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     settings-logtags \
     zxing-core-1.7 \
     faceunlock_utils \
-    org.lineageos.platform.internal
+    org.lineageos.platform.internal \
+    airbnb-lottie
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     packages/apps/Blissify/res \
