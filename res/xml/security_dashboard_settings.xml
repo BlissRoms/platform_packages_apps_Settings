@@ -119,6 +119,11 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory 
+        android:title="@string/security_passwords_title" 
+        android:key="security_settings_misc_category" 
+        android:order="30">
+
     <Preference
         android:order="50"
         android:key="sim_lock_settings"
@@ -159,5 +164,7 @@
         android:title="@string/confirm_sim_deletion_title"
         android:summary="@string/confirm_sim_deletion_description"
         settings:controller="com.android.settings.security.ConfirmSimDeletionPreferenceController"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
