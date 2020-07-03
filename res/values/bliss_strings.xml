@@ -110,5 +110,8 @@
     <string name="do_not_disturb_category_title">Do Not Disturb</string>
     <string name="ringtone_category_title">Ringtone</string>
     <string name="vibrations_category_title">Vibrations</string>
+    <string name="apps_category">Apps</string>
+    <string name="connected_devices_category_title">Connected Devices</string>
+    <string name="theme_customization_category">Theming</string>
 
 </resources>
