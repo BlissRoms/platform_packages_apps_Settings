@@ -28,20 +28,26 @@
         android:layout="@layout/notification_animation" 
         android:order="-999"/>
 
+    <PreferenceCategory
+        android:title="@string/recent_app_category_title"
+        android:key="recent_apps_category"
+        android:order="-998">
+
     <Preference
         android:key="all_app_info"
         android:title="@string/applications_settings"
-        android:order="-999"
+        android:order="-997"
         android:fragment="com.android.settings.applications.manageapplications.ManageApplications"
         settings:controller="com.android.settings.applications.AllAppsInfoPreferenceController"
         settings:keywords="@string/keywords_applications_settings"/>
+    </PreferenceCategory>
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="recent_open_apps"
         android:title="@string/recent_app_category_title"
         android:layout="@layout/app_entities_header"
         android:selectable="false"
-        android:order="-998"
+        android:order="-996"
         settings:allowDividerBelow="true"
         settings:controller="com.android.settings.applications.RecentAppsPreferenceController"/>
 
@@ -49,7 +55,12 @@
     <PreferenceCategory
         android:key="recent_apps_divider"
         android:layout="@layout/preference_category_no_label"
-        android:order="-997"/>
+        android:order="-995"/>
+
+    <PreferenceCategory
+        android:title="@string/apps_category"
+        android:key="recent_apps_category"
+        android:order="-994">
 
     <Preference
         android:key="conversations"
@@ -65,11 +76,6 @@
         android:summary="@string/notification_screen_summary"
         android:order="-440"
         android:fragment="com.android.settings.notification.ConfigureNotificationSettings"/>
-
-    <!-- Notifications (appears before manage_perms), default apps (appears after) -->
-    <PreferenceCategory
-        android:key="dashboard_tile_placeholder"
-        android:order="10"/>
 
     <Preference
         android:key="default_apps"
@@ -105,5 +111,6 @@
         android:title="@string/special_access"
         android:order="20"
         settings:controller="com.android.settings.applications.SpecialAppAccessPreferenceController"/>
+    </PreferenceCategory>
 
 </PreferenceScreen>
