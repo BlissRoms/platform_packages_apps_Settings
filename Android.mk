@@ -54,7 +54,9 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     settings-logtags \
     zxing-core-1.7 \
     faceunlock_utils \
-    org.lineageos.platform.internal
+    org.lineageos.platform.internal \
+    bubbletabbar \
+    kotlin-stdlib
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     packages/apps/Blissify/res \
@@ -63,7 +65,8 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
-    --extra-packages com.blissroms.blissify
+    --extra-packages com.blissroms.blissify \
+    --extra-packages com.fxn
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
@@ -81,7 +84,8 @@ include $(BUILD_PACKAGE)
 include $(CLEAR_VARS)
 
 LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := \
-    contextualcards:libs/contextualcards.aar
+    contextualcards:libs/contextualcards.aar \
+    bubbletabbar:libs/bubbletabbar.aar
 include $(BUILD_MULTI_PREBUILT)
 
 # Use the following include to make our test apk.
