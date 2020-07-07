@@ -518,6 +518,7 @@
     <dimen name="qrcode_preview_margin">40dp</dimen>
     <dimen name="qrcode_preview_radius">30dp</dimen>
     <dimen name="qrcode_icon_size">27dp</dimen>
+
     <!-- Margin for SD card setup completion Image -->
     <dimen name="setup_completion_margin_top">88dp</dimen>
 
@@ -534,4 +535,10 @@
 
     <!-- Default margin for side fps enroll find sensor lottie -->
     <dimen name="sfps_enroll_find_sensor_lottie_margin">0dp</dimen>
+
+    <!-- Category Headers -->
+    <dimen name="x_preference_category_padding_top">0.0dip</dimen>
+    <dimen name="x_preference_category_line_margin_start">10.0dip</dimen>
+    <dimen name="x_preference_category_height">40.0dip</dimen>
+
 </resources>
