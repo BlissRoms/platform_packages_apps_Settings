@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2024 BlissRoms Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Bliss Category Headers -->
+    <dimen name="bliss_preference_category_padding_top">0.0dip</dimen>
+    <dimen name="bliss_preference_category_line_margin_start">10.0dip</dimen>
+    <dimen name="bliss_preference_category_height">40.0dip</dimen>
+
+</resources>

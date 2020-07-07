@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2023 BlissRoms Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/bliss_preference_category_padding_top"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/bliss_preference_category_height"
+    android:paddingStart="?android:listPreferredItemPaddingStart"
+    android:paddingEnd="?android:listPreferredItemPaddingEnd">
+
+    <include layout="@layout/image_frame" />
+
+    <TextView
+        android:id="@android:id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/PreferenceCategoryTitleTextStyle" />
+
+    <View
+        android:background="?android:attr/colorAccent"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginStart="@dimen/bliss_preference_category_line_margin_start" />
+
+</LinearLayout>
