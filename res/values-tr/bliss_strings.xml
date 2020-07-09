@@ -31,7 +31,7 @@ Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <string name="bliss_version">Bliss sürümü</string>
     <string name="bliss_version_default">Bilinmiyor</string>
     <string name="keywords_bliss_version">Bliss sürümü, bliss</string>
-    <string name="bliss_build_date">Sürüm tarihi</string>
+    <string name="bliss_build_date">Yapım tarihi</string>
     <string name="bliss_build_default">Bilinmiyor</string>
     <string name="bliss_build_type">İnşa Durumu</string>
     <string name="bliss_device">Bliss cihazı</string>
@@ -55,22 +55,7 @@ Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">İstatistikleri sıfırla</string>
     <string name="battery_stats_message">Pil geçmişi istatistikleri sıfırlanacak</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Hotspot kullanıcılarının bağlantıları sırasında bu cihazın \u2019s VPN bağlantısını kullanmasına izin ver</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone1_title">Telefon zil sesi - SIM 1</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone2_title">Telefon zil sesi - SIM 2</string>
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <string name="suggestion_button_close">Kapat</string>
-    <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Ekran müzik görselleştiricisi</string>
-    <!-- Dashboard -->
-    <string name="dashboard_conditions_title">Ayarlar menüsü durumları</string>
-    <string name="summary_dashboard_conditions_enabled">Ayarlar menüsü durumları etkin</string>
-    <string name="summary_dashboard_conditions_disabled">Ayarlar menüsü durumları devre dışı</string>
-    <string name="dashboard_suggestions_title">Ayarlar menüsü önerileri</string>
-    <string name="summary_dashboard_suggestions_enabled">Ayarlar menüsü önerileri etkin</string>
-    <string name="summary_dashboard_suggestions_disabled">Ayarlar menüsü önerileri devre dışı</string>
+    <!-- Navigation mode settings -->
     <string name="back_height_low_label">Dolu</string>
     <string name="back_height_high_label">Alt</string>
     <string name="back_options_dialog_title">Seçenekler</string>
@@ -103,10 +88,6 @@ Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <string name="platform_revision">Platform</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Toplam RAM</string>
-    <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Çentik davranışı</string>
-    <string name="display_cutout_mode_normal">Varsayılan</string>
-    <string name="display_cutout_mode_hidden">Gizli</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Ekran yenileme oranı</string>
     <string name="refresh_rate_summary_auto">Otomatik / Bazı içerikler için yenileme hızını otomatik olarak 60\'dan 90Hz\'e yükseltir</string>
@@ -123,8 +104,6 @@ Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <string name="notification_battery_charge_level_silent">Sessiz</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Arkaplan işlemleri</string>
-    <!-- NavigationBar Gestural Mode Tweaks -->
-    <string name="gesture_pill_message">Tam ekran hareketleri için navigasyon çubuğunu gizle.</string>
     <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Geri hareketi için animasyonlu bir ok göster.</string>
     <!-- Custom Vibration fragment -->
@@ -149,12 +128,14 @@ Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <string name="night_display_location_text">\n\nGün batımından gün doğumuna kadar olan zamanlamanın, konumunuza göre doğru zamanları alabilmesi için konum servislerini etkin olması gerekir.</string>
     <!-- Home handle sizing -->
     <string name="home_handle_sizer_title">Hareket çubuğu boyutu</string>
-    <string name="home_handle_low_label">Kısa (AOSP)</string>
+    <string name="home_handle_low_label">Kısa (Aosp)</string>
     <string name="home_handle_high_label">Uzun</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Uyarlanabilir oynatma</string>
+    <string name="adaptive_playback_disabled_summary">Kapalı</string>
     <string name="adaptive_playback_timeout_title">Zaman aşımı kullanın</string>
-    <string name="adaptive_playback_timeout_none_summary">Kapalı</string>
+    <string name="adaptive_playback_timeout_none">Zaman aşımı yok</string>
+    <string name="adaptive_playback_timeout_none_summary">Açık (zaman aşımı yok)</string>
     <string name="adaptive_playback_timeout_30_secs">30 saniye</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Açık (30 saniye)</string>
     <string name="adaptive_playback_timeout_1_min">1 dakika</string>
@@ -165,4 +146,17 @@ Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <string name="adaptive_playback_timeout_5_min_summary">Açık (5 dakika)</string>
     <string name="adaptive_playback_timeout_10_min">10 dakika</string>
     <string name="adaptive_playback_timeout_10_min_summary">Açık (10 dakika)</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Bildirim geçmişi günlüğünü göster</string>
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Cihaz sorumlusu</string>
+    <string name="bliss_maintainer">Resmi Olmayan Sorumlular</string>
+    <!-- Gesture nav gear options -->
+    <!-- [CHAR LIMIT=60] -->
+    <string name="show_gestures_navbar_switch_text">Gezinme çubuğu hareketlerini göstermeyi etkinleştir</string>
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Giriş yöntemi düğme alanını ve çıkıntıyı göstermeyi etkinleştir</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Kilidi açmak için yukarı kaydırın</string>
+    <string name="security_settings_face_require_swipe_summary">Yüz kilidini açmak için kilit ekranında yukarı kaydırın</string>
 </resources>

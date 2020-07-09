@@ -150,6 +150,7 @@ Thông báo có thể bị trì hoãn cho các ứng dụng này."</string>
     <string name="notification_log_summary">Hiển thị nhật ký lịch sử thông báo</string>
     <!-- Bliss maintainer -->
     <string name="maintainer">Người bảo trì</string>
+    <string name="bliss_maintainer">Người bảo trì không chính thức</string>
     <!-- Gesture nav gear options -->
     <!-- [CHAR LIMIT=60] -->
     <string name="show_gestures_navbar_switch_text">Cho phép hiển thị thanh điều hướng cử chỉ</string>
