@@ -36,6 +36,7 @@
     <!-- Work Policy info -->
     <Preference
         android:key="work_policy_info"
+        android:icon="@drawable/ic_manage_perms"
         android:title="@string/work_policy_privacy_settings"
         android:summary="@string/work_policy_privacy_settings_summary"
         settings:allowDividerAbove="true"
@@ -45,6 +46,7 @@
     <Preference
         android:key="privacy_accessibility_usage"
         android:title="@string/accessibility_usage_title"
+        android:icon="@drawable/ic_manage_perms"
         settings:allowDividerAbove="true"
         settings:controller="com.android.settings.privacy.AccessibilityUsagePreferenceController">
         <intent android:action="android.intent.action.REVIEW_ACCESSIBILITY_SERVICES"/>
@@ -53,6 +55,7 @@
     <!-- App permissions -->
     <Preference
         android:key="privacy_manage_perms"
+        android:icon="@drawable/ic_manage_perms"
         android:title="@string/app_permissions"
         settings:allowDividerAbove="true"
         settings:keywords="@string/keywords_app_permissions"
@@ -63,6 +66,7 @@
     <!-- Show passwords -->
     <SwitchPreference
         android:key="show_password"
+        android:icon="@drawable/ic_show_password"
         android:title="@string/show_password"
         android:summary="@string/show_password_summary"
         settings:controller="com.android.settings.security.ShowPasswordPreferenceController"/>
@@ -70,6 +74,7 @@
     <!-- On lock screen notifications -->
     <com.android.settings.RestrictedListPreference
         android:key="privacy_lock_screen_notifications"
+        android:icon="@drawable/ic_privacy_lock_screen_notifications"
         android:title="@string/lock_screen_notifications_title"
         android:summary="@string/summary_placeholder"
         settings:searchable="false"/>
@@ -77,6 +82,7 @@
     <!-- Clipboard access toast notification -->
     <com.bliss.support.preferences.SystemSettingSwitchPreference
         android:key="show_clipboard_toast"
+        android:icon="@drawable/ic_manage_perms"
         android:title="@string/show_clipboard_toast"
         android:summary="@string/show_clipboard_toast_summary"
         android:defaultValue="false" />
@@ -94,14 +100,13 @@
     <PreferenceCategory
         android:key="privacy_work_profile_notifications_category"
         android:title="@string/profile_section_header"
-        android:order="998"
         settings:searchable="false">
 
         <com.android.settings.RestrictedListPreference
             android:key="privacy_lock_screen_work_profile_notifications"
+            android:icon="@drawable/ic_manage_perms"
             android:title="@string/locked_work_profile_notification_title"
             android:summary="@string/summary_placeholder"
-            android:order="999"
             settings:searchable="false"/>
     </PreferenceCategory>
 
@@ -114,12 +119,14 @@
 
     <SwitchPreference
         android:key="content_capture"
+        android:icon="@drawable/ic_manage_perms"
         android:title="@string/content_capture"
         android:summary="@string/content_capture_summary"
         settings:controller="com.android.settings.privacy.EnableContentCapturePreferenceController"/>
 
     <com.android.settings.widget.MasterSwitchPreference
         android:key="content_capture_custom_settings"
+        android:icon="@drawable/ic_manage_perms"
         android:title="@string/content_capture"
         android:summary="@string/content_capture_summary"
         settings:controller="com.android.settings.privacy.EnableContentCaptureWithServiceSettingsPreferenceController">
