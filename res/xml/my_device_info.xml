@@ -21,6 +21,9 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <Preference
+            android:key="about_bliss_animation"
+            android:layout="@layout/about_bliss_animation" />
 
     <!--com.android.settingslib.widget.LayoutPreference
         android:key="my_device_info_header"
