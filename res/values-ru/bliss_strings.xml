@@ -55,22 +55,7 @@
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Сброс статистики</string>
     <string name="battery_stats_message">Статистика батареи будет сброшена</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Разрешить клиентам точки доступа использовать VPN-соединения этого устройства для подключения к сети</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone1_title">Мелодия звонка - SIM 1</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone2_title">Мелодия звонка - SIM 2</string>
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <string name="suggestion_button_close">Закрыть</string>
-    <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Визуализация спектра музыки</string>
-    <!-- Dashboard -->
-    <string name="dashboard_conditions_title">Состояния меню настроек</string>
-    <string name="summary_dashboard_conditions_enabled">Состояния меню настроек включены</string>
-    <string name="summary_dashboard_conditions_disabled">Уведомления в меню настроек выключены</string>
-    <string name="dashboard_suggestions_title">Подсказки в меню настроек</string>
-    <string name="summary_dashboard_suggestions_enabled">Подсказки в меню настроек включены</string>
-    <string name="summary_dashboard_suggestions_disabled">Подсказки в меню настроек выключены</string>
+    <!-- Navigation mode settings -->
     <string name="back_height_low_label">Полный</string>
     <string name="back_height_high_label">Снизу</string>
     <string name="back_options_dialog_title">Параметры</string>
@@ -103,10 +88,6 @@
     <string name="platform_revision">Платформа</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Всего ОЗУ</string>
-    <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Настройки выреза</string>
-    <string name="display_cutout_mode_normal">По умолчанию</string>
-    <string name="display_cutout_mode_hidden">Скрыт</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Частота обновления экрана</string>
     <string name="refresh_rate_summary_auto">Автоматическое повышение частоты обновления с 60 до 90 Гц для некоторого контента</string>
@@ -123,8 +104,6 @@
     <string name="notification_battery_charge_level_silent">Без звука</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Фоновые процессы</string>
-    <!-- NavigationBar Gestural Mode Tweaks -->
-    <string name="gesture_pill_message">Скрыть панель навигации для полноэкранных жестов.</string>
     <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Показать анимированную стрелку для жеста \"Назад\".</string>
     <!-- Custom Vibration fragment -->
@@ -149,12 +128,14 @@
     <string name="night_display_location_text">\n\nДля расписания от заката до рассвета требуются включить службы определения местоположения для получения вашего местного времени.</string>
     <!-- Home handle sizing -->
     <string name="home_handle_sizer_title">Размер полоски жестов</string>
-    <string name="home_handle_low_label">Маленький (AOSP)</string>
+    <string name="home_handle_low_label">Без полосы жестов</string>
     <string name="home_handle_high_label">Длинный</string>
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Адаптивное воспроизведение</string>
+    <string name="adaptive_playback_disabled_summary">Выключен</string>
     <string name="adaptive_playback_timeout_title">Использовать таймаут</string>
-    <string name="adaptive_playback_timeout_none_summary">Выкл</string>
+    <string name="adaptive_playback_timeout_none">Без времени ожидания</string>
+    <string name="adaptive_playback_timeout_none_summary">Включен (без времени ожидания)</string>
     <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Вкл (30 секунд)</string>
     <string name="adaptive_playback_timeout_1_min">1 минута</string>
@@ -165,4 +146,17 @@
     <string name="adaptive_playback_timeout_5_min_summary">Вкл (5 минут)</string>
     <string name="adaptive_playback_timeout_10_min">10 минут</string>
     <string name="adaptive_playback_timeout_10_min_summary">Вкл (10 минут)</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Показывать журнал истории уведомлений</string>
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Сопровождающий</string>
+    <string name="bliss_maintainer">Неофициальный сопровождающий</string>
+    <!-- Gesture nav gear options -->
+    <!-- [CHAR LIMIT=60] -->
+    <string name="show_gestures_navbar_switch_text">Включите, чтобы показывать полосу жестов</string>
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Включите для отображения кнопки смены метода ввода и полосы жестов</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Проведите вверх, чтобы разблокировать</string>
+    <string name="security_settings_face_require_swipe_summary">Проведите вверх на экране блокировки, чтобы использовать разблокировку лицом</string>
 </resources>

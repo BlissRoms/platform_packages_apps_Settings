@@ -36,7 +36,7 @@ Thông báo có thể bị trì hoãn cho các ứng dụng này."</string>
     <string name="bliss_build_type">Trạng thái phiên bản Bliss</string>
     <string name="bliss_device">Thiết bị Bliss</string>
     <!-- Changelog -->
-    <string name="changelog_title">Nhật kí cập nhật</string>
+    <string name="changelog_title">Thay đổi</string>
     <string name="changelog_summary">Những Thay Đổi Gần Đây</string>
     <string name="changelog_loading">Đang tải danh sách các thay đổi</string>
     <string name="changelog_error">Không thể tải nhật ký thay đổi</string>
@@ -45,7 +45,7 @@ Thông báo có thể bị trì hoãn cho các ứng dụng này."</string>
     <!-- Bliss Updater -->
     <string name="bliss_updater_title">Cập nhật Bliss</string>
     <string name="bliss_updater_summary">Kiểm tra phiên bản mới nhất của rom</string>
-    <string name="keywords_bliss_updater">Cập nhật BlissOTA</string>
+    <string name="keywords_bliss_updater">BlissOTA, cập nhật, OTA</string>
     <!-- Blissify -->
     <string name="blissify_settings_title">Blissify</string>
     <string name="blissify_settings_summary">Blissify cho thiết bị của bạn!</string>
@@ -150,6 +150,7 @@ Thông báo có thể bị trì hoãn cho các ứng dụng này."</string>
     <string name="notification_log_summary">Hiển thị nhật ký lịch sử thông báo</string>
     <!-- Bliss maintainer -->
     <string name="maintainer">Người bảo trì</string>
+    <string name="bliss_maintainer">Người bảo trì không chính thức</string>
     <!-- Gesture nav gear options -->
     <!-- [CHAR LIMIT=60] -->
     <string name="show_gestures_navbar_switch_text">Cho phép hiển thị thanh điều hướng cử chỉ</string>
