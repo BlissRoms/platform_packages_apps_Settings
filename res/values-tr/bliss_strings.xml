@@ -150,7 +150,6 @@ Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <string name="notification_log_summary">Bildirim geçmişi günlüğünü göster</string>
     <!-- Bliss maintainer -->
     <string name="maintainer">Cihaz sorumlusu</string>
-    <string name="bliss_maintainer">Resmi Olmayan Sorumlular</string>
     <!-- Gesture nav gear options -->
     <!-- [CHAR LIMIT=60] -->
     <string name="show_gestures_navbar_switch_text">Gezinme çubuğu hareketlerini göstermeyi etkinleştir</string>

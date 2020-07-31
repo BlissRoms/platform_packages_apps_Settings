@@ -150,7 +150,6 @@
     <string name="notification_log_summary">Mostrar registro do histórico de notificações</string>
     <!-- Bliss maintainer -->
     <string name="maintainer">Mantenedor</string>
-    <string name="bliss_maintainer">Mantedor não oficial</string>
     <!-- Gesture nav gear options -->
     <!-- [CHAR LIMIT=60] -->
     <string name="show_gestures_navbar_switch_text">Ativar mostrar gestos na barra de navegação</string>
