@@ -150,7 +150,6 @@ Notifikasi dapat tertunda untuk beberapa aplikasi."</string>
     <string name="notification_log_summary">Tampilkan log riwayat notifikasi</string>
     <!-- Bliss maintainer -->
     <string name="maintainer">Pengelola</string>
-    <string name="bliss_maintainer">Pengelola tidak resmi</string>
     <!-- Gesture nav gear options -->
     <!-- [CHAR LIMIT=60] -->
     <string name="show_gestures_navbar_switch_text">Aktifkan untuk menampilkan gerakan navbar</string>

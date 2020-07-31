@@ -150,7 +150,6 @@ Notificările de la aceste aplicații pot fi primite cu întârziere."</string>
     <string name="notification_log_summary">Afișare istoric notificări</string>
     <!-- Bliss maintainer -->
     <string name="maintainer">Dezvoltator</string>
-    <string name="bliss_maintainer">Responsabil neoficial,</string>
     <!-- Gesture nav gear options -->
     <!-- [CHAR LIMIT=60] -->
     <string name="show_gestures_navbar_switch_text">Activează afișarea barei de navigare gesturi</string>
