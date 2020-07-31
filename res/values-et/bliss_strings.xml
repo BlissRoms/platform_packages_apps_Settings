@@ -150,7 +150,6 @@ Nende rakenduste märguanded võivad viibida."</string>
     <string name="notification_log_summary">Kuva teate ajaloo logi</string>
     <!-- Bliss maintainer -->
     <string name="maintainer">Arendaja</string>
-    <string name="bliss_maintainer">Mitteametlik arendaja</string>
     <!-- Gesture nav gear options -->
     <!-- [CHAR LIMIT=60] -->
     <string name="show_gestures_navbar_switch_text">Lülitage sisse žestiriba kuvamiseks</string>

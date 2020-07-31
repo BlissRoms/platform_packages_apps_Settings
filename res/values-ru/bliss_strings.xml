@@ -150,7 +150,6 @@
     <string name="notification_log_summary">Показывать журнал истории уведомлений</string>
     <!-- Bliss maintainer -->
     <string name="maintainer">Сопровождающий</string>
-    <string name="bliss_maintainer">Неофициальный сопровождающий</string>
     <!-- Gesture nav gear options -->
     <!-- [CHAR LIMIT=60] -->
     <string name="show_gestures_navbar_switch_text">Включите, чтобы показывать полосу жестов</string>
