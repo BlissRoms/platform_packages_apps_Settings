@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2014-2021 BlissRoms Project
+<!-- Copyright (C) 2014-2022 BlissRoms Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,15 +13,10 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Whether to show min/max refresh rate in display settings -->
-    <bool name="config_show_refresh_rate_controls">false</bool>
-
-    <!-- Battery health -->
-    <bool name="config_supportBatteryHealth">false</bool>
-    <string name="config_batteryCalculatedCapacity">/sys/class/power_supply/bms/charge_full</string>
-    <string name="config_batteryDesignCapacity">/sys/class/power_supply/bms/charge_full_design</string>
-    <string name="config_batteryChargeCycles">/sys/class/power_supply/bms/cycle_count</string>
+    <!-- Battery Health -->
+    <java-symbol type="bool" name="config_supportBatteryHealth" />
 
 </resources>
