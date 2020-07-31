@@ -17,4 +17,7 @@
     <!-- Screen off FOD -->
     <java-symbol type="bool" name="config_supportScreenOffFod" />
 
+    <!-- Battery Health -->
+    <java-symbol type="bool" name="config_supportBatteryHealth" />
+
 </resources>
