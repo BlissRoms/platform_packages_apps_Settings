@@ -240,4 +240,11 @@
 
     <string name="auto_brightness_min_title">Minimal brightness level</string>
     <string name="auto_brightness_description_new">Your screen brightness will automatically adjust to your environment and activities.\n\nYou can adjust a minimal brightness level that will be used.</string>
+
+    <!-- Asus Power Master -->
+    <string name="asus_powermaster_title">Asus Power Master</string>
+
+    <!-- Asus Mobile Manager -->
+    <string name="asus_mobile_manager">Asus Mobile Manager</string>
+    <string name="asus_category_title">Asus Battery Care</string>
 </resources>
