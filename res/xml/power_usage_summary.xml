@@ -34,6 +34,10 @@
         android:title="@string/summary_placeholder"
         settings:controller="com.android.settings.fuelgauge.batterytip.BatteryTipPreferenceController" />
 
+    <PreferenceCategory
+        android:key="battery_saver_category_title"
+        android:title="@string/battery_saver_category_title">
+
     <Preference
         android:fragment="com.android.settings.fuelgauge.batterysaver.BatterySaverSettings"
         android:key="battery_saver_summary"
@@ -64,12 +68,39 @@
         android:summary="@string/battery_percentage_description"
         settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="asus_category"
+        android:title="@string/asus_category_title">
 
     <Preference
         android:fragment="com.android.settings.fuelgauge.smartcharging.SmartChargingSettings"
         android:key="smart_charging_key"
         android:title="@string/smart_charging_title"
         android:summary="@string/smart_charging_summary" />
+
+    <Preference
+        android:title="@string/asus_powermaster_title"
+        android:key="powermaster">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.asus.powersaver"
+                    android:targetClass="com.asus.powersaver.PowerSaverSettings"/>
+    </Preference>
+
+    <Preference
+        android:title="@string/asus_mobile_manager"
+        android:key="mobilemanager">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.asus.mobilemanager"
+                    android:targetClass="com.asus.mobilemanager.entry.FunctionActivity"/>
+    </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="battery_info_title"
+        android:title="@string/battery_info_title">
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="last_full_charge"
@@ -101,5 +132,7 @@
         android:key="battery_temp"
         android:title="@string/battery_temp"
         android:selectable="false" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
