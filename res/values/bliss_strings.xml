@@ -235,4 +235,11 @@
     <string name="show_clipboard_toast">Show clipboard access alerts</string>
     <string name="show_clipboard_toast_summary">Display a toast when an app tries to access the clipboard</string>
     <string name="battery_charge_cycles">Charge Cycles Completed</string>
+
+    <!-- Asus Power Master -->
+    <string name="asus_powermaster_title">Asus Power Master</string>
+
+    <!-- Asus Mobile Manager -->
+    <string name="asus_mobile_manager">Asus Mobile Manager</string>
+    <string name="asus_category_title">Asus Battery Care</string>
 </resources>
