@@ -80,6 +80,22 @@
         android:title="@string/smart_charging_title"
         android:summary="@string/smart_charging_summary" />
 
+    <Preference
+        android:title="@string/asus_powermaster_title"
+        android:key="powermaster">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.asus.powersaver"
+                    android:targetClass="com.asus.powersaver.PowerSaverSettings"/>
+    </Preference>
+
+    <Preference
+        android:title="@string/asus_mobile_manager"
+        android:key="mobilemanager">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.asus.mobilemanager"
+                    android:targetClass="com.asus.mobilemanager.entry.FunctionActivity"/>
+    </Preference>
+
     </PreferenceCategory>
 
     <PreferenceCategory
