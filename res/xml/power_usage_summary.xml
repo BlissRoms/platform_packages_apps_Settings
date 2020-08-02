@@ -33,6 +33,10 @@
         android:title="@string/summary_placeholder"
         settings:controller="com.android.settings.fuelgauge.batterytip.BatteryTipPreferenceController" />
 
+    <PreferenceCategory
+        android:key="battery_saver_category"
+        android:title="@string/battery_saver_category_title">
+
     <Preference
         android:fragment="com.android.settings.fuelgauge.batterysaver.BatterySaverSettings"
         android:key="battery_saver_summary"
@@ -51,23 +55,39 @@
         android:summary="@string/battery_percentage_description"
         settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="smart_charging_category"
+        android:title="@string/smart_charging_category_title">
+
     <Preference
         android:fragment="com.android.settings.fuelgauge.smartcharging.SmartChargingSettings"
         android:key="smart_charging_key"
         android:title="@string/smart_charging_title"
-        settings:allowDividerAbove="true"
         android:summary="@string/smart_charging_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="battery_usage_category"
+        android:title="@string/battery_usage_category_title"> 
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="last_full_charge"
         android:title="@string/battery_last_full_charge"
-        android:selectable="false"
-        settings:allowDividerAbove="true" />
+        android:selectable="false" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="screen_usage"
         android:title="@string/device_screen_usage"
         android:selectable="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="battery_info_category"
+        android:title="@string/battery_health_category_title">
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="designed_battery_capacity"
@@ -83,6 +103,8 @@
         android:key="battery_charge_cycles" 
         android:title="@string/battery_charge_cycles"
         android:selectable="false" />
+
+    </PreferenceCategory>
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="battery_temp"
