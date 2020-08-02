@@ -202,6 +202,9 @@
     <string name="apps_category">Apps</string>
     <string name="volume_key_category_title">Volume Shortcut</string>
     <string name="connected_devices_category_title">Connected Devices</string>
+    <string name="battery_saver_category_title">Battery Saver</string>
+    <string name="smart_charging_category_title">Smart Charging</string>
+    <string name="battery_info_title">Battery Info</string>
 
     <!-- A2DP codec priority -->
     <string name="a2dp_source_codec_priority_title">Bluetooth Audio Codec (preferred)</string>
