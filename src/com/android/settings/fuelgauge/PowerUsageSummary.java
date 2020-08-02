@@ -300,6 +300,10 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
             getPreferenceScreen().removePreference(mBatteryInfoCat);
         }
 
+        Preference mCyclesHealthPref = (Preference) findPreference(KEY_BATTERY_CHARGE_CYCLES);
+        if (mBatteryInfoCat != null && !getResources().getBoolean(R.bool.config_showChargingCycles)) {
+            mBatteryInfoCat.removePreference(mCyclesHealthPref);
+        }
     }
 
     @Override
