@@ -298,11 +298,11 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         // Check availability of Battery Health
         if (!getResources().getBoolean(R.bool.config_supportBatteryHealth)) {
             getPreferenceScreen().removePreference(mBatteryInfoCat);
-        }
-
-        Preference mCyclesHealthPref = (Preference) findPreference(KEY_BATTERY_CHARGE_CYCLES);
-        if (mBatteryInfoCat != null && !getResources().getBoolean(R.bool.config_showChargingCycles)) {
-            mBatteryInfoCat.removePreference(mCyclesHealthPref);
+        } else {
+            Preference mCyclesHealthPref = (Preference) findPreference(KEY_BATTERY_CHARGE_CYCLES);
+            if (mBatteryInfoCat != null && !getResources().getBoolean(R.bool.config_showChargingCycles)) {
+                mBatteryInfoCat.removePreference(mCyclesHealthPref);
+            }
         }
     }
 
