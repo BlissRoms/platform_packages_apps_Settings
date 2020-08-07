@@ -83,8 +83,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="battery_info_category"
-        android:title="@string/battery_info_category_title">
+        android:key="battery_usage_category"
+        android:title="@string/battery_usage_category_title">
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="last_full_charge"
@@ -96,6 +96,12 @@
         android:key="screen_usage"
         android:title="@string/device_screen_usage"
         android:selectable="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="battery_info_category"
+        android:title="@string/battery_info_category_title">
 		
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="designed_battery_capacity"
