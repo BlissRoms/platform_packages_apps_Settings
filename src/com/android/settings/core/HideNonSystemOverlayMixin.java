@@ -45,7 +45,7 @@ public class HideNonSystemOverlayMixin implements LifecycleObserver {
 
     @VisibleForTesting
     boolean isEnabled() {
-        return !Build.IS_ENG;
+        return !Build.IS_DEBUGGABLE;
     }
 
     @OnLifecycleEvent(ON_START)
