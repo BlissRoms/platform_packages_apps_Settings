@@ -22,7 +22,7 @@
     <string name="security_settings_face_settings_remove_dialog_details_moto">Yüz tanıma kilidi ile kaydedilen veriler kalıcı ve güvenli bir şekilde silinir. Kaldırma işleminden sonra telefonunuzun kilidini açmak için PIN, desen veya şifre kullanmanız gerekir.</string>
     <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Uyarlanabilir Pili aç</string>
-    <string name="smart_battery_footer_custom">"Uyarlanabilir Pil özelliği pil ömrünü uzatmak için, sık kullanılmayan uygulamaların pil tüketimini sınırlar. Telefonunuz, zamanla uygulamaları nasıl kullandığınızı öğrenir.
+    <string name="smart_battery_footer_custom">"Uyarlamalı Pil özelliği pil ömrünü uzatmak için, sık kullanılmayan uygulamaların pil tüketimini sınırlar. Telefonunuz, zamanla uygulamaları nasıl kullandığınızı öğrenir.
 
 Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <string name="smart_battery_manager_title_custom">Uyarlanabilir Pil</string>
@@ -158,4 +158,40 @@ Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <!-- Swipe up for face unlock -->
     <string name="security_settings_face_require_swipe">Kilidi açmak için yukarı kaydırın</string>
     <string name="security_settings_face_require_swipe_summary">Yüz kilidini açmak için kilit ekranında yukarı kaydırın</string>
+    <!-- categories -->
+    <string name="display_screen_category">Ekran</string>
+    <string name="display_customisation_title">Ekran Özelleştirme</string>
+    <string name="wake_options_category_title">Uyandırma Seçenekleri</string>
+    <string name="volume_adjustment_category_title">Ses Seviyesi Ayarlamaları</string>
+    <string name="sound_effects_category_title">Efektler</string>
+    <string name="do_not_disturb_category_title">Rahatsız Etme</string>
+    <string name="ringtone_category_title">Zil Sesi</string>
+    <string name="vibrations_category_title">Titreşimler</string>
+    <string name="apps_category">Uygulamalar</string>
+    <string name="volume_key_category_title">Ses Tuşu Kısayolu</string>
+    <string name="connected_devices_category_title">Bağlı Cihazlar</string>
+    <string name="battery_saver_category_title">Pil Tasarrufu</string>
+    <string name="smart_charging_category_title">Akıllı şarj</string>
+    <string name="battery_info_category_title">Pil Bilgisi</string>
+    <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Bluetooth Ses Kodeği (tercih edilir)</string>
+    <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">SBC HD ses</string>
+    <string name="sbc_hd_priority_summary">SBC kodeki için varsayılan olarak Çift Kanal modunun kullanılıp kullanılmayacağı</string>
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Tam ekran uygulamaları</string>
+    <string name="display_cutout_force_fullscreen_summary">Uygulamaları çentik alanını yoksaymaya zorlanır</string>
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Kilit ekranı zaman aşımı</string>
+    <!-- Battery health -->
+    <string name="battery_health_title">Pil sağlığı</string>
+    <string name="battery_health_summary">Cihazınızın pil sağlığını izleyin</string>
+    <string name="current_battery_capacity">Mevcut pil kapasitesi</string>
+    <string name="current_battery_capacity_summary">Çekirdek tarafından ölçülen mevcut pil kapasitesi</string>
+    <string name="designed_battery_capacity">Tasarlanmış pil kapasitesi</string>
+    <string name="designed_battery_capacity_summary">Üretici tarafından tasarlanan pil kapasitesi</string>
+    <!-- Clipboard toast toggle -->
+    <string name="show_clipboard_toast">Pano erişim uyarılarını göster</string>
+    <string name="show_clipboard_toast_summary">Bir uygulama panoya erişmeye çalıştığında bir alt bildirim görüntüle</string>
+    <string name="battery_charge_cycles">Şarj Döngüleri Tamamlandı</string>
 </resources>

@@ -22,9 +22,7 @@
     <string name="security_settings_face_settings_remove_dialog_details_moto">Data yang disimpan dengan metode pengenalan wajah akan dihapus dan diamankan secara permanen. Setelah dihapus, Anda akan memerlukan PIN, pola, atau kata sandi untuk membuka ponsel Anda.</string>
     <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Aktifkan Baterai Adaptif</string>
-    <string name="smart_battery_footer_custom">"Untuk memperpanjang masa pakai baterai, baterai adaptif membatasi baterai untuk aplikasi yang jarang dipakai. Ponsel akan mempelajari cara Anda menggunakan aplikasi seiring waktu.
-
-Notifikasi dapat tertunda untuk beberapa aplikasi."</string>
+    <string name="smart_battery_footer_custom">"Untuk memperpanjang masa pakai baterai, Baterai Adaptif membatasi baterai untuk aplikasi yang jarang digunakan. Ponsel Anda akan mempelajari cara Anda menggunakan aplikasi dari waktu ke waktu. Notifikasi untuk aplikasi ini mungkin tertunda."</string>
     <string name="smart_battery_manager_title_custom">Baterai Adaptif</string>
     <string name="smart_battery_title_custom">Gunakan Baterai Adaptif</string>
     <!-- BlissRoms Version -->
@@ -158,4 +156,40 @@ Notifikasi dapat tertunda untuk beberapa aplikasi."</string>
     <!-- Swipe up for face unlock -->
     <string name="security_settings_face_require_swipe">Geser ke atas untuk membuka kunci</string>
     <string name="security_settings_face_require_swipe_summary">Geser ke atas pada layar kunci untuk menggunakan buka kunci wajah</string>
+    <!-- categories -->
+    <string name="display_screen_category">Layar</string>
+    <string name="display_customisation_title">Kustomisasi Tampilan</string>
+    <string name="wake_options_category_title">Opsi Bangun</string>
+    <string name="volume_adjustment_category_title">Penyesuaian Volume</string>
+    <string name="sound_effects_category_title">Efek</string>
+    <string name="do_not_disturb_category_title">Jangan Ganggu</string>
+    <string name="ringtone_category_title">Nada Dering</string>
+    <string name="vibrations_category_title">Getaran</string>
+    <string name="apps_category">Aplikasi</string>
+    <string name="volume_key_category_title">Pintasan Volume</string>
+    <string name="connected_devices_category_title">Perangkat Terhubung</string>
+    <string name="battery_saver_category_title">Penghemat Baterai</string>
+    <string name="smart_charging_category_title">Pengisian Pintar</string>
+    <string name="battery_info_category_title">Info Baterai</string>
+    <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Bluetooth Audio Codec (lebih disukai)</string>
+    <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">Audio SBC HD</string>
+    <string name="sbc_hd_priority_summary">Apakah akan menggunakan mode Dual Channel untuk SBC codec secara default</string>
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Aplikasi layar penuh</string>
+    <string name="display_cutout_force_fullscreen_summary">Paksa aplikasi untuk mengabaikan ruang takik</string>
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Batas waktu layar kunci</string>
+    <!-- Battery health -->
+    <string name="battery_health_title">Kesehatan baterai</string>
+    <string name="battery_health_summary">Monitor kesehatan baterai perangkat Anda</string>
+    <string name="current_battery_capacity">Kapasitas baterai saat ini</string>
+    <string name="current_battery_capacity_summary">Kapasitas baterai saat ini diukur oleh kernel</string>
+    <string name="designed_battery_capacity">Kapasitas baterai yang dirancang</string>
+    <string name="designed_battery_capacity_summary">Kapasitas baterai dirancang oleh pabrikan</string>
+    <!-- Clipboard toast toggle -->
+    <string name="show_clipboard_toast">Tampilkan toast akses clipboard</string>
+    <string name="show_clipboard_toast_summary">Tampilkan toast ketika aplikasi mencoba mengakses clipboard</string>
+    <string name="battery_charge_cycles">Siklus Mengisi Selesai</string>
 </resources>
