@@ -35,8 +35,8 @@
         android:layout_marginEnd="28dp"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1.0">
-
+        android:layout_weight="1.0"
+        android:layout_gravity="end">
 
         <Toolbar
             android:id="@+id/search_action_bar"
@@ -64,6 +64,7 @@
         android:layout_marginRight="@dimen/search_bar_margin"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="26dp" 
+        android:layout_gravity="bottom|right"
         android:contentDescription="@string/search_bar_account_avatar_content_description" />
 </LinearLayout>

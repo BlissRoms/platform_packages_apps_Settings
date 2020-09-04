@@ -123,7 +123,7 @@
     <dimen name="search_bar_margin">8dp</dimen>
 
     <dimen name="search_bar_height">50dp</dimen>
-    <dimen name="search_bar_corner_radius">24dp</dimen>
+    <dimen name="search_bar_corner_radius">50dp</dimen>
     <dimen name="search_bar_text_size">16dp</dimen>
     <dimen name="search_bar_card_elevation">2dp</dimen>
     <dimen name="search_bar_content_inset">64dp</dimen>
@@ -425,6 +425,24 @@
 
     <!-- Text padding for EmptyTextSettings -->
     <dimen name="empty_text_padding">24dp</dimen>
+
+    <dimen name="homepage_spacer_off_margin">@dimen/actionbar_size</dimen>
+    <dimen name="homepage_spacer_height">288dp</dimen>
+    <dimen name="homepage_spacer_margin">255dp</dimen>
+    <dimen name="homepage_spacer_height_base">288dp</dimen>
+    <dimen name="homepage_spacer_margin_base">255dp</dimen>
+    <dimen name="homepage_spacer_imageview_marginBottom">10dp</dimen>
+    <dimen name="homepage_spacer_title_marginTop">8dp</dimen>
+
+    <dimen name="op_control_margin_list_top2">12dp</dimen>
+    <dimen name="op_control_margin_space1">4dp</dimen>
+    <dimen name="op_control_margin_space7">40.0dip</dimen>
+    <dimen name="op_control_margin_screen_right3">20.0dip</dimen>
+    <dimen name="op_control_margin_screen_left3">20dp</dimen>
+    <dimen name="op_control_margin_space3">16.0dip</dimen>
+    <dimen name="op_control_margin_list_bottom4">21.0dip</dimen>
+    <dimen name="op_control_margin_list_top4">21.0dip</dimen>
+    <dimen name="op_control_avatar_size3">33.0dip</dimen>
 
     <!-- Custom dimens -->
     <dimen name="card_view_start_padding">20dp</dimen>
