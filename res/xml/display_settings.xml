@@ -21,7 +21,7 @@
     android:key="display_settings_screen"
     android:title="@string/display_settings"
     settings:keywords="@string/keywords_display"
-    settings:initialExpandedChildrenCount="8">
+    settings:initialExpandedChildrenCount="17">
 
    <Preference
         android:key="display_animation"
