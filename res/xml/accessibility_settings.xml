@@ -199,7 +199,7 @@
         android:key="experimental_category"
         android:persistent="false"
         android:title="@string/experimental_category_title"
-        settings:initialExpandedChildrenCount="1">
+        settings:initialExpandedChildrenCount="2">
 
         <SwitchPreference
             android:key="toggle_high_text_contrast_preference"
