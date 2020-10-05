@@ -133,14 +133,14 @@
             android:title="@string/notification_pulse_title"
             settings:controller="com.android.settings.notification.PulseNotificationPreferenceController"/>
 
-        <!-- Default notification ringtone -->
+        <!-- Default notification ringtone
         <com.android.settings.DefaultRingtonePreference
             android:key="notification_default_ringtone"
             android:title="@string/notification_ringtone_title"
             android:dialogTitle="@string/notification_ringtone_title"
             android:summary="@string/summary_placeholder"
             android:ringtoneType="notification"
-            settings:searchable="false"/>
+            settings:searchable="false"/> -->
 
         <!--Preference
             android:key="gesture_swipe_down_fingerprint_notifications"

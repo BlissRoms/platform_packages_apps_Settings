@@ -48,7 +48,7 @@
         android:persistent="false"
         android:title="@string/display_category_title">
 
-        <Preference
+       <!-- <Preference
             android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
             android:key="font_size_preference_screen"
             android:persistent="false"
@@ -68,7 +68,7 @@
             android:persistent="false"
             android:title="@string/dark_ui_mode"
             settings:controller="com.android.settings.display.DarkUIPreferenceController"
-            settings:searchable="false"/>
+            settings:searchable="false"/> -->
 
        <Preference
             android:fragment="com.android.settings.accessibility.MagnificationPreferenceFragment"
@@ -138,13 +138,13 @@
             android:title="@string/accessibility_vibration_settings_title"
             settings:controller="com.android.settings.accessibility.VibrationPreferenceController"/>
 
-        <Preference
+        <!-- <Preference
             android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
             android:key="gesture_system_navigation_input_summary_accessibility"
             android:persistent="false"
             android:title="@string/system_navigation_title"
             settings:searchable="false"
-            settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"/>
+            settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"/>-->
 
     </PreferenceCategory>
 

@@ -51,7 +51,6 @@ import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.accessibility.AccessibilityUtil.AccessibilityServiceFragmentType;
 import com.android.settings.dashboard.DashboardFragment;
-import com.android.settings.display.DarkUIPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 import com.android.settingslib.RestrictedLockUtilsInternal;
@@ -221,7 +220,6 @@ public class AccessibilitySettings extends DashboardFragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        use(DarkUIPreferenceController.class).setParentFragment(this);
         use(AccessibilityHearingAidPreferenceController.class)
                 .setFragmentManager(getFragmentManager());
     }
