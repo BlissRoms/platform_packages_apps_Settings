@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2020 The BlissRoms Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
+        xmlns:aapt="http://schemas.android.com/aapt"
+
+        android:height="63dp"
+        android:width="63dp"
+        android:viewportWidth="63"
+        android:viewportHeight="63">
+    <group>
+        <group android:translateX="-969"
+                android:translateY="-610">
+            <group android:translateY="538">
+                <group android:translateX="969"
+                        android:translateY="72">
+                    <path android:pathData="M 0 0 H 63 V 63 H 0 V 0 Z"
+                            android:strokeWidth="1"
+                            android:strokeAlpha="0.4"
+                            android:fillAlpha="0.4"
+                            />
+                    <path android:fillColor="#b9b9b9"
+                            android:pathData="M32,44.0040015 L32,44.0040015 C38.627417,44.0040015 44,38.6305227 44,32.0020008 C44,25.3734788 38.627417,20 32,20 C25.372583,20 20,25.3734788 20,32.0020008 C20,38.6305227 25.372583,44.0040015 32,44.0040015 L32,44.0040015 L32,44.0040015 L32,44.0040015 L32,44.0040015 L32,44.0040015 L32,44.0040015 Z M32,50 C22.0588745,50 14,41.9411255 14,32 C14,22.0588745 22.0588745,14 32,14 C41.9411255,14 50,22.0588745 50,32 C50,41.9411255 41.9411255,50 32,50 L32,50 Z M32,38 C35.3137085,38 38,35.3137085 38,32 C38,28.6862915 35.3137085,26 32,26 C28.6862915,26 26,28.6862915 26,32 C26,35.3137085 28.6862915,38 32,38 L32,38 Z"
+                            android:strokeWidth="1"/>
+                </group>
+            </group>
+        </group>
+    </group>
+</vector>
