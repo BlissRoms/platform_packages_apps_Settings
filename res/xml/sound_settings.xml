@@ -110,6 +110,7 @@
 
     <com.android.settingslib.RestrictedPreference
         android:key="zen_mode"
+        android:icon="@drawable/ic_do_not_disturb2"
         android:title="@string/zen_mode_settings_title"
         android:fragment="com.android.settings.notification.zen.ZenModeSettings"
         android:order="-120"
@@ -120,6 +121,7 @@
 
     <Preference
         android:key="gesture_prevent_ringing_sound"
+        android:icon="@drawable/ic_do_not_disturb"
         android:title="@string/gesture_prevent_ringing_sound_title"
         android:order="-107"
         android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
@@ -135,6 +137,7 @@
     <!-- Link ringtone and notification volumes -->
     <lineageos.preference.SecureSettingSwitchPreference
         android:key="volume_link_notification"
+        android:icon="@drawable/ic_audio_ring_notif_mute"
         android:title="@string/volume_link_notification_title"
         android:defaultValue="true"
         android:order="-138"
@@ -144,6 +147,7 @@
     <Preference
         android:fragment="com.android.settings.sound.VibrateForCallsPreferenceFragment"
         android:key="vibrate_for_calls"
+        android:icon="@drawable/ic_calls_and_vibration"
         android:title="@string/vibrate_when_ringing_title"
         android:order="-130"
         settings:controller="com.android.settings.sound.VibrateForCallsPreferenceController"
@@ -151,6 +155,7 @@
 
     <Preference
         android:key="media_controls_summary"
+        android:icon="@drawable/ic_settings_headset"
         android:title="@string/media_controls_title"
         android:fragment="com.android.settings.sound.MediaControlsSettings"
         android:order="-110"
@@ -167,6 +172,7 @@
     <!-- Phone ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="phone_ringtone"
+        android:icon="@drawable/ic_system_ringtone"
         android:title="@string/ringtone_title"
         android:dialogTitle="@string/ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -177,6 +183,7 @@
     <!-- Default notification ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="notification_ringtone"
+        android:icon="@drawable/ic_sms_ringtone"
         android:title="@string/notification_ringtone_title"
         android:dialogTitle="@string/notification_ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -186,6 +193,7 @@
     <!-- Default alarm ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="alarm_ringtone"
+        android:icon="@drawable/ic_audio_alarm"
         android:title="@string/alarm_ringtone_title"
         android:dialogTitle="@string/alarm_ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -200,6 +208,14 @@
           android:key="other_sounds_and_vibrations_category"
           android:title="@string/other_sound_category_preference_title"
           android:order="500">
+
+        <!-- Vibrate on touch -->
+        <SwitchPreference
+          android:key="vibrate_on_touch"
+          android:icon="@drawable/ic_system_vibrate"
+          android:title="@string/vibrate_on_touch_title"
+          android:summary="@string/vibrate_on_touch_summary"
+          settings:keywords="@string/keywords_vibrate_on_touch"/>
 
         <!-- Dial pad tones -->
         <SwitchPreference
@@ -225,13 +241,6 @@
         <SwitchPreference
           android:key="touch_sounds"
           android:title="@string/touch_sounds_title"/>
-
-        <!-- Vibrate on touch -->
-        <SwitchPreference
-          android:key="vibrate_on_touch"
-          android:title="@string/vibrate_on_touch_title"
-          android:summary="@string/vibrate_on_touch_summary"
-          settings:keywords="@string/keywords_vibrate_on_touch"/>
 
         <!-- Dock speaker plays -->
         <DropDownPreference

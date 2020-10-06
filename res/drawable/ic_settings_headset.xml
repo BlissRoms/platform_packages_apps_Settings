@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2020 The BlissRoms Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:tint="?android:attr/colorControlNormal"
+        android:height="24dp"
+        android:width="24dp"
+        android:viewportWidth="24"
+        android:viewportHeight="24">
+    <path 
+        android:fillColor="#000000"
+        android:pathData="M3.75 19.92c0 0.182254 0.147746 0.33 0.33 0.33l1.84 0c0.182254 0 0.33 -0.147746 0.33 -0.33l0 -4.84c0 -0.182254 -0.147746 -0.33 -0.33 -0.33l-2.17 0 0 5.17zm0 -6.67l0 0.75 -1.5 0 0.0000296 -2.086666C2.2809925 8.4300046 4.1679372 5.2277944 7.20007 3.5129446 10.232203 1.7980947 13.948871 1.8311318 16.950041 3.599611 19.95121 5.3680902 21.780933 8.6033375 21.75 12.08l0 1.92 -1.5 0 0.00003 -1.926666C20.276229 9.1258818 18.727992 6.3883467 16.188524 4.8919314 13.649055 3.395516 10.504162 3.3675614 7.9384939 4.8185978 5.372826 6.2696342 3.7761699 8.9792146 3.75 11.92l0 1.33 2.17 0c1.0106811 0 1.83 0.819319 1.83 1.83l0 4.84c0 1.010681 -0.8193189 1.83 -1.83 1.83l-1.84 0c-1.0106811 0 -1.83 -0.819319 -1.83 -1.83l0 -6.67 1.5 0zm14.33 1.5c-0.182254 0 -0.33 0.147746 -0.33 0.33l0 4.84c0 0.08752 0.03477 0.171458 0.09665 0.233345 0.06189 0.06189 0.145824 0.09665 0.233345 0.09665l1.84 0c0.182254 0 0.33 -0.147746 0.33 -0.33l0 -5.17 -2.17 0zm1.84 7l-1.84 0c-0.485346 0 -0.950814 -0.192803 -1.294005 -0.535995C16.442803 20.870814 16.25 20.405346 16.25 19.92l0 -4.84c0 -1.010681 0.819319 -1.83 1.83 -1.83l3.67 0 0 6.67c0 1.010681 -0.819319 1.83 -1.83 1.83z"/>
+</vector>
