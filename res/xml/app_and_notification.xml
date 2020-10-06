@@ -64,6 +64,7 @@
 
     <Preference
         android:key="conversations"
+        android:icon="@drawable/ic_sms_ringtone"
         android:title="@string/conversations_category_title"
         android:order="-550"
         settings:controller="com.android.settings.notification.ConversationListSummaryPreferenceController"
@@ -72,6 +73,7 @@
 
     <Preference
         android:key="configure_notification_settings"
+        android:icon="@drawable/ic_audio_ring_notif"
         android:title="@string/configure_notification_settings"
         android:summary="@string/notification_screen_summary"
         android:order="-440"
@@ -79,6 +81,7 @@
 
     <Preference
         android:key="default_apps"
+        android:icon="@drawable/ic_default_apps"
         android:title="@string/app_default_dashboard_title"
         android:order="11"
         settings:controller="com.android.settings.applications.DefaultAppsPreferenceController">
@@ -87,6 +90,7 @@
 
     <Preference
         android:key="manage_perms"
+        android:icon="@drawable/ic_manage_perms"
         android:title="@string/app_permissions"
         android:summary="@string/runtime_permissions_summary_control_app_access"
         android:order="12"
@@ -96,12 +100,14 @@
 
     <Preference
         android:key="platform_compat_dashboard"
+        android:icon="@drawable/ic_settings_multi_app"
         android:title="@string/platform_compat_dashboard_title"
         android:summary="@string/platform_compat_dashboard_summary"
         android:fragment="com.android.settings.development.compat.PlatformCompatDashboard" />
 
     <com.android.settingslib.RestrictedPreference
         android:key="app_and_notif_cell_broadcast_settings"
+        android:icon="@drawable/ic_cell_broadcast_settings"
         android:title="@string/cell_broadcast_settings"
         android:order="15"
         settings:useAdminDisabledSummary="true">
@@ -113,6 +119,7 @@
 
     <Preference
         android:key="special_access"
+        android:icon="@drawable/ic_special_access"
         android:fragment="com.android.settings.applications.specialaccess.SpecialAccessSettings"
         android:title="@string/special_access"
         android:order="20"
