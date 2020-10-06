@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2020 The BlissRoms Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector 
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:tint="?android:attr/colorControlNormal"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path 
+        android:pathData="M -3.90798505e-14 0 H 24 V 24 H -3.90798505e-14 V 0 Z"
+        android:strokeWidth="1"
+        />
+    <path android:fillColor="#000000"
+        android:pathData="M4.00123271,22.3090873 C2.90863282,23.2189843 1.25,22.4420529 1.25,21.021 L1.25,3 C1.25,2.03301571 2.03355684,1.25 3,1.25 L21,1.25 C21.9672136,1.25 22.75,2.03278644 22.75,3 L22.75,17 C22.75,17.9664432 21.9669843,18.75 21,18.75 L8.363,18.75 C8.3033676,18.75 8.24632761,18.7705923 8.20223271,18.8070873 L4.00123271,22.3090873 Z M7.24375853,17.6532586 C7.55855209,17.3926795 7.95376978,17.25 8.363,17.25 L21,17.25 C21.1383251,17.25 21.25,17.1382479 21.25,17 L21.25,3 C21.25,2.86121356 21.1387864,2.75 21,2.75 L3,2.75 C2.86175208,2.75 2.75,2.8616749 2.75,3 L2.75,21.021 C2.75,21.170371 2.92563308,21.2526784 3.04096175,21.1567506 L7.24375853,17.6532586 Z M9,8.75 L9,7.25 L18,7.25 L18,8.75 L9,8.75 Z M6,7.25 L18,7.25 L18,8.75 L6,8.75 L6,7.25 Z M6.0005,12.7496 L6.0005,11.2496 L16.0005,11.2496 L16.0005,12.7496 L6.0005,12.7496 Z"
+        android:strokeWidth="1"/>
+</vector>
