@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2020 The BlissRoms Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:tint="?android:attr/colorControlNormal"
+        android:height="24dp"
+        android:width="24dp"
+        android:viewportWidth="24"
+        android:viewportHeight="24">
+    <path android:fillColor="#000000"
+          android:pathData="M10.7544392 7.50529887L8.21320427 15.5052989L9.71749723 15.5052989L10.3334972 13.7567274L13.6614972 13.7567274L14.2752115 15.5052989L15.7727249 15.5052989L13.0557829 7.50529887L10.7544392 7.50529887ZM10.8254461 12.2596451L12.0020687 8.99101315L13.1592449 12.2647157L10.8254461 12.2596451ZM7 2.75C6.86192881 2.75 6.75 2.86192881 6.75 3L6.75 21.0105977C6.75 21.1486689 6.86192881 21.2605977 7 21.2605977L16.9859291 21.2605977C17.1240003 21.2605977 17.2359291 21.1486689 17.2359291 21.0105977L17.2359291 3C17.2359291 2.86192881 17.1240003 2.75 16.9859291 2.75L7 2.75ZM7 1.25L16.9859291 1.25C17.9524275 1.25 18.7359291 2.03350169 18.7359291 3L18.7359291 21.0105977C18.7359291 21.977096 17.9524275 22.7605977 16.9859291 22.7605977L7 22.7605977C6.03350169 22.7605977 5.25 21.977096 5.25 21.0105977L5.25 3C5.25 2.03350169 6.03350169 1.25 7 1.25Z"/>
+</vector>
