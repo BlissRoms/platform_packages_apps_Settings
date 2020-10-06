@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2020 The BlissRoms Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:tint="?android:attr/colorControlNormal"
+        android:height="24dp"
+        android:width="24dp"
+        android:viewportWidth="24"
+        android:viewportHeight="24">
+    <path android:fillColor="#000000"
+          android:pathData="M17 1.25L7 1.25C6.03532176 1.25437999 5.25437999 2.03532176 5.25 3L5.25 21C5.25437999 21.9646782 6.03532176 22.74562 7 22.75L17 22.75C17.9646782 22.74562 18.74562 21.9646782 18.75 21L18.75 3C18.74562 2.03532176 17.9646782 1.25437999 17 1.25ZM17.25 21C17.2505382 21.0664677 17.2243719 21.1303693 17.1773706 21.1773706C17.1303693 21.2243719 17.0664677 21.2505382 17 21.25L7 21.25C6.93353234 21.2505382 6.86963066 21.2243719 6.82262939 21.1773706C6.77562811 21.1303693 6.74946177 21.0664677 6.75 21L6.75 3C6.74946177 2.93353234 6.77562811 2.86963066 6.82262939 2.82262939C6.86963066 2.77562811 6.93353234 2.74946177 7 2.75L17 2.75C17.0664677 2.74946177 17.1303693 2.77562811 17.1773706 2.82262939C17.2243719 2.86963066 17.2505382 2.93353234 17.25 3L17.25 21ZM10.3505986 13.9199623L13.6494014 13.9199623L13.6494014 14.0849024C13.6002242 14.9485574 12.8640456 15.6111181 12 15.5693637C11.1359544 15.6111181 10.3997758 14.9485574 10.3505986 14.0849024L10.3505986 13.9199623ZM15.6937167 12.2121249C15.731779 12.2249796 15.7575094 12.260548 15.7578077 12.3007213L15.7578077 12.9774472L8.24219226 12.9774472L8.24219226 12.3007213C8.24249062 12.260548 8.26822097 12.2249796 8.30628328 12.2121249C9.10893965 11.9616335 9.60243569 11.1559256 9.46086429 10.3270947L9.46086429 9.8039988C9.55012344 8.46734403 10.6603683 7.42876644 12 7.42876644C13.3396317 7.42876644 14.4498766 8.46734403 14.5391357 9.8039988L14.5391357 10.3299222C14.3991123 11.1577812 14.892294 11.9617679 15.6937167 12.2121249Z"/>
+</vector>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2020 The BlissRoms Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:tint="?android:attr/colorControlNormal"
+        android:height="24dp"
+        android:width="24dp"
+        android:viewportWidth="24"
+        android:viewportHeight="24">
+    <path android:fillColor="#000000"
+          android:pathData="M7.06 3.39030011L11.06 7.39030011L10 8.45030011L7.28 5.73130011L7.28 12.9203001L5.78 12.9203001L5.78 5.73130011L3.06 8.45030011L2 7.39030011L6 3.39030011C6.1404953 3.24960458 6.3311681 3.1705458 6.53 3.1705458C6.728832 3.1705458 6.9195047 3.24960458 7.06 3.39030011ZM4.51004952 17.9569254C4.87435307 18.008764 5.24210469 18.0325007 5.61004952 18.0279254C10.7163988 18.0224139 14.8545381 13.8842746 14.8600495 8.77792536C14.8677851 6.38991962 13.9423449 4.09336376 12.2810495 2.37792536C12.0611215 2.14957629 12.0085308 1.80760543 12.1496848 1.52372661C12.2908387 1.23984778 12.595244 1.07538716 12.9100495 1.11292536C17.608768 1.68066418 21.3828274 5.25572132 22.2040152 9.91682995C23.025203 14.5779386 20.700151 19.2275289 16.4783623 21.3668707C12.2565735 23.5062124 7.1321695 22.6315462 3.85904952 19.2129254C3.63733992 18.9805901 3.58815711 18.6328804 3.73673156 18.3481693C3.88530601 18.0634581 4.19866187 17.9049366 4.51604952 17.9539254L4.51004952 17.9569254ZM11.6100495 21.0279254C16.1105528 21.0290697 19.9585919 17.7905504 20.7259621 13.3559507C21.4933323 8.92135108 18.9572524 4.57811372 14.7180495 3.06692536C16.710281 6.2449358 16.902193 10.2315019 15.2244434 13.5861841C13.5466938 16.9408663 10.2418577 19.1786325 6.50404952 19.4909254C8.01549752 20.4992726 9.7931297 21.0343726 11.6100495 21.0279254Z"/>
+</vector>
