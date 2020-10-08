@@ -15,4 +15,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Settings HomePage Blissify -->
+    <color name="homepage_blissify_background">#78A0D0</color>
+
 </resources>
