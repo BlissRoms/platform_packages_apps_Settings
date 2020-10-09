@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2020 The BlissRoms Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:tint="?android:attr/colorControlNormal"
+        android:height="24dp"
+        android:width="24dp"
+        android:viewportWidth="24"
+        android:viewportHeight="24">
+    <group>
+        <group android:translateX="2"
+                android:translateY="1">
+            <path android:fillColor="#000000"
+                    android:pathData="M3,12 L6.326,12 C6.68285149,13.7454238 8.21847055,14.9988515 10,14.9988515 C11.7815295,14.9988515 13.3171485,13.7454238 13.674,12 L17,12 C17.4142136,12 17.75,11.6642136 17.75,11.25 L17.75,10.875 C17.7488978,9.90895859 16.9660414,9.12610216 16,9.125 C15.8619288,9.125 15.75,9.01307119 15.75,8.875 L15.75,6.25 C15.75,3.07436269 13.1756373,0.5 10,0.5 C6.82436269,0.5 4.25,3.07436269 4.25,6.25 L4.25,8.875 C4.25,9.01307119 4.13807119,9.125 4,9.125 C3.03395859,9.12610216 2.25110216,9.90895859 2.25,10.875 L2.25,11.25 C2.25,11.6642136 2.58578644,12 3,12 Z M10,13.5 C9.04972002,13.496656 8.20419244,12.8961393 7.888,12 L12.112,12 C11.7958076,12.8961393 10.95028,13.496656 10,13.5 Z M5.75,8.875 L5.75,6.25 C5.75000003,3.90278984 7.65278984,2.00000006 10,2.00000006 C12.3472102,2.00000006 14.25,3.90278984 14.25,6.25 L14.25,8.875 C14.25075,9.59037282 14.6861117,10.2335208 15.35,10.5 L4.649,10.5 C5.31328103,10.2338373 5.74908597,9.59061933 5.75,8.875 Z M8.75,18.5 L8.75,17.25 C8.74727332,16.8369211 8.41307886,16.5027267 8,16.5 L4,16.5 C3.58692114,16.5027267 3.25272668,16.8369211 3.25,17.25 L3.25,18.5 L0,18.5 L0,20 L3.25,20 L3.25,21.25 C3.25272668,21.6630789 3.58692114,21.9972733 4,22 L8,22 C8.41307886,21.9972733 8.74727332,21.6630789 8.75,21.25 L8.75,20 L20,20 L20,18.5 L8.75,18.5 Z M7.25,20.5 L4.75,20.5 L4.75,18 L7.25,18 L7.25,20.5 Z"
+                    android:strokeWidth="1"/>
+        </group>
+    </group>
+</vector>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2020 The BlissRoms Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector 
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:tint="?android:attr/colorControlNormal"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path 
+        android:fillColor="#000000"
+        android:pathData="M7.00703543 2.74470113C6.86896424 2.74470113 6.75703543 2.85662995 6.75703543 2.99470113L6.75703543 21.0052989C6.75703543 21.1433701 6.86896424 21.2552989 7.00703543 21.2552989L16.9929646 21.2552989C17.1310358 21.2552989 17.2429646 21.1433701 17.2429646 21.0052989L17.2429646 2.99470113C17.2429646 2.85662995 17.1310358 2.74470113 16.9929646 2.74470113L7.00703543 2.74470113ZM7.00703543 1.24470113L16.9929646 1.24470113C17.9594629 1.24470113 18.7429646 2.02820282 18.7429646 2.99470113L18.7429646 21.0052989C18.7429646 21.9717972 17.9594629 22.7552989 16.9929646 22.7552989L7.00703543 22.7552989C6.04053711 22.7552989 5.25703543 21.9717972 5.25703543 21.0052989L5.25703543 2.99470113C5.25703543 2.02820282 6.04053711 1.24470113 7.00703543 1.24470113ZM9.19313033 4.20599739L10.4609851 6.92492075L9.10152344 7.55884814L7.83366865 4.83992478L9.19313033 4.20599739ZM14.8984766 16.4411519L16.1663313 19.1600752L14.8068697 19.7940026L13.5390149 17.0750793L14.8984766 16.4411519ZM12.9966945 12.362767L14.2645493 15.0816904L12.9050876 15.7156178L11.6372328 12.9966944L12.9966945 12.362767ZM11.0949124 8.28438221L12.3627672 11.0033056L11.0033055 11.637233L9.73545073 8.9183096L11.0949124 8.28438221Z"
+        />
+</vector>

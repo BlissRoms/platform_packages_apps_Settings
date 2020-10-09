@@ -33,6 +33,7 @@
 
     <com.android.settingslib.RestrictedPreference
         android:key="brightness"
+        android:icon="@drawable/ic_settings_adaptive_brightness"
         android:title="@string/brightness"
         settings:keywords="@string/keywords_display_brightness_level"
         settings:useAdminDisabledSummary="true"
@@ -42,6 +43,7 @@
 
     <com.android.settings.display.NightDisplayPreference
         android:key="night_display"
+        android:icon="@drawable/ic_settings_night_mode"
         android:title="@string/night_display_title"
         android:fragment="com.android.settings.display.NightDisplaySettings"
         android:widgetLayout="@null"
@@ -49,10 +51,42 @@
 
     <Preference
         android:key="auto_brightness_entry"
+        android:icon="@drawable/ic_settings_adaptive_brightness"
         android:title="@string/auto_brightness_title"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.display.AutoBrightnessSettings"
         settings:controller="com.android.settings.display.AutoBrightnessPreferenceController"/>
+
+    <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
+    <com.android.settings.display.TimeoutListPreference
+        android:key="screen_timeout"
+        android:icon="@drawable/ic_settings_sleep_standby_optimization"
+        android:title="@string/screen_timeout"
+        android:summary="@string/summary_placeholder"
+        android:entries="@array/screen_timeout_entries"
+        android:entryValues="@array/screen_timeout_values"
+        settings:keywords="@string/keywords_screen_timeout" />
+
+    <Preference
+        android:key="adaptive_sleep_entry"
+        android:icon="@drawable/ic_settings_sleep"
+        android:title="@string/adaptive_sleep_title"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.display.AdaptiveSleepSettings"
+        settings:controller="com.android.settings.display.AdaptiveSleepPreferenceController" />
+
+    <SwitchPreference
+        android:key="auto_rotate"
+        android:icon="@drawable/ic_auto_rotate_screen"
+        android:title="@string/accelerometer_title"
+        settings:keywords="@string/keywords_auto_rotate"
+        settings:controller="com.android.settings.display.AutoRotatePreferenceController" />
+
+    <Preference
+        android:key="screensaver"
+        android:icon="@drawable/ic_screensaver"
+        android:title="@string/screensaver_settings_title"
+        android:fragment="com.android.settings.dream.DreamSettings" />
 
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="livedisplay"
@@ -66,39 +100,12 @@
         settings:controller="com.android.settings.display.WallpaperPreferenceController">
     </com.android.settingslib.RestrictedPreference>
 
-    <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
-    <com.android.settings.display.TimeoutListPreference
-        android:key="screen_timeout"
-        android:title="@string/screen_timeout"
-        android:summary="@string/summary_placeholder"
-        android:entries="@array/screen_timeout_entries"
-        android:entryValues="@array/screen_timeout_values"
-        settings:keywords="@string/keywords_screen_timeout" />
-
-    <Preference
-        android:key="adaptive_sleep_entry"
-        android:title="@string/adaptive_sleep_title"
-        android:summary="@string/summary_placeholder"
-        android:fragment="com.android.settings.display.AdaptiveSleepSettings"
-        settings:controller="com.android.settings.display.AdaptiveSleepPreferenceController" />
-
-    <SwitchPreference
-        android:key="auto_rotate"
-        android:title="@string/accelerometer_title"
-        settings:keywords="@string/keywords_auto_rotate"
-        settings:controller="com.android.settings.display.AutoRotatePreferenceController" />
-
     <Preference
         android:key="color_mode"
         android:title="@string/color_mode_title"
         android:fragment="com.android.settings.display.ColorModePreferenceFragment"
         settings:controller="com.android.settings.display.ColorModePreferenceController"
         settings:keywords="@string/keywords_color_mode" />
-
-    <Preference
-        android:key="screensaver"
-        android:title="@string/screensaver_settings_title"
-        android:fragment="com.android.settings.dream.DreamSettings" />
 
     </PreferenceCategory>
 
@@ -120,12 +127,14 @@
 
     <Preference
         android:key="font_size"
+        android:icon="@drawable/ic_font_size"
         android:title="@string/title_font_size"
         android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
         settings:controller="com.android.settings.display.FontSizePreferenceController" />
 
     <com.android.settings.display.ScreenZoomPreference
         android:key="display_settings_screen_zoom"
+        android:icon="@drawable/ic_screen_zoom"
         android:title="@string/screen_zoom_title"
         android:fragment="com.android.settings.display.ScreenZoomSettings"/>
 
@@ -140,6 +149,7 @@
 
     <Preference
         android:key="lockscreen_from_display_settings"
+        android:icon="@drawable/ic_smart_lock"
         android:title="@string/lockscreen_settings_title"
         android:fragment="com.android.settings.security.LockscreenDashboardFragment"
         settings:keywords="@string/keywords_ambient_display_screen"
@@ -157,13 +167,14 @@
         android:summary="@string/camera_gesture_desc" />
 
     <SwitchPreference
-        android:key="lift_to_wake"
-        android:title="@string/lift_to_wake_title" />
-
-    <SwitchPreference
         android:key="tap_to_wake"
+        android:icon="@drawable/ic_settings_quick_gestures"
         android:title="@string/tap_to_wake"
         android:summary="@string/tap_to_wake_summary" />
+
+    <SwitchPreference
+        android:key="lift_to_wake"
+        android:title="@string/lift_to_wake_title" />
 
     <!-- Prevent accidental wake-up -->
     <lineageos.preference.LineageSystemSettingSwitchPreference
