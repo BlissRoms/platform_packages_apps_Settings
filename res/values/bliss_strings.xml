@@ -220,4 +220,7 @@
     <!-- AoD on charge -->
     <string name="doze_on_charge_title">Always On when charging</string>
     <string name="doze_on_charge_summary">Show Always On Ambient display when charging</string>
+
+    <!-- Volume panel on left switch -->
+    <string name="volume_panel_on_left_title">Show volume panel on left</string>
 </resources>
