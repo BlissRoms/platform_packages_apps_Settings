@@ -11,22 +11,29 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center"
-    android:orientation="horizontal" >
+    android:orientation="vertical" >
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/system_lottie"
+        android:id="@+id/lottie_view"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_gravity="center"
         android:clickable="false"
-        app:lottie_rawRes="@raw/system"
-        app:lottie_loop="true"
+        app:lottie_fileName="system.json"
         app:lottie_autoPlay="true" />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/video_play_button"
+        android:layout_width="@dimen/gestures_play_button_size"
+        android:layout_height="@dimen/gestures_play_button_size"
+        android:src="@drawable/ic_gesture_play_button"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</FrameLayout>
