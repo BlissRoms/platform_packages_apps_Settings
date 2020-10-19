@@ -22,10 +22,8 @@
     settings:initialExpandedChildrenCount="8">
 
     <!-- bliss Logo Header -->
-    <Preference 
-        android:key="bliss_logo"
-        android:order="-500"
-        android:layout="@layout/system_animation" />
+    <com.android.settings.widget.LottiePreference
+        android:order="-500" />
 
     <Preference
         android:key="language_input_settings"
