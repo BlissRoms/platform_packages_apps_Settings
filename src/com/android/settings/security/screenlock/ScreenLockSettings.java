@@ -82,6 +82,8 @@ public class ScreenLockSettings extends DashboardFragment
         controllers.add(new PinScramblePreferenceController(
                 context, MY_USER_ID, lockPatternUtils));
         controllers.add(new OwnerInfoPreferenceController(context, parent));
+        controllers.add(new FODAnimationsSwitchPreferenceController(context));
+        controllers.add(new FODAnimationsListPreferenceController(context));
         return controllers;
     }
 
