@@ -54,4 +54,11 @@
         android:title="@string/unlock_scramble_pin_layout_title"
         android:summary="@string/unlock_scramble_pin_layout_summary" />
 
+    <!-- FOD recognizing animation -->
+    <com.bliss.support.preferences.SystemSettingSwitchPreference
+            android:key="fod_recognizing_animation"
+            android:title="@string/fod_recog_animation"
+            android:summary="@string/fod_recog_animation_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
