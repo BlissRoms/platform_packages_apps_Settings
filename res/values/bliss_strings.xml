@@ -46,4 +46,9 @@
     <!-- Phone Specs -->
     <string name="specs_title">Phone Specifications</string>
 
+    <!-- Back gesture height -->
+    <string name="back_height_low_label">Full</string>
+    <string name="back_height_high_label">Bottom</string>
+    <string name="back_height_message">Amount of screen height used as touchable region for back gesture</string>
+
 </resources>
