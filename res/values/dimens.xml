@@ -432,7 +432,7 @@
     <dimen name="empty_text_padding">24dp</dimen>
 
     <dimen name="homepage_spacer_off_margin">@dimen/actionbar_size</dimen>
-    <dimen name="homepage_spacer_height">200dp</dimen>
+    <dimen name="homepage_spacer_height">90dp</dimen>
     <dimen name="homepage_spacer_margin">255dp</dimen>
     <dimen name="homepage_spacer_height_base">200dp</dimen>
     <dimen name="homepage_spacer_margin_base">255dp</dimen>

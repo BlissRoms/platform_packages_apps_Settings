@@ -35,4 +35,6 @@
     <color name="dashboard_bliss_about">#9E9E9E</color>
     <color name="dashboard_bliss_google">#8D83FF</color>
     <color name="dashboard_bliss_wellbeing">#5BF67D</color>
+
+    <color name="settingsHeaderColor">@*android:color/accent_device_default_light</color>
 </resources>
