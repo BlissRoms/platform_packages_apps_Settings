@@ -121,4 +121,7 @@
     <string name="navbar_length">Gesture bar length</string>
     <string name="short_label">Short</string>
     <string name="long_label">Long</string>
+
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
 </resources>
