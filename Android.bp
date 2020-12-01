@@ -47,7 +47,9 @@ android_library {
     srcs: ["src/**/*.java", 
         "Blissify/src/**/*.java"],
 
-    aaptflags: ["--extra-packages com.blissroms.blissify"],
+    aaptflags: ["--extra-packages com.blissroms.blissify",
+                "--extra-packages nl.joery.animatedbottombar",
+                "--extra-packages com.google.android.flexbox",],
 
     resource_dirs: ["res",
                     "Blissify/res"
@@ -81,6 +83,14 @@ android_library {
         "android.hardware.dumpstate-V1.1-java",
         "lottie",
         "VendorSupport-preference",
+        "animatedbottombar",
+        "flexbox",
+        "androidx.navigation_navigation-common-ktx",
+        "androidx.navigation_navigation-fragment-ktx",
+        "androidx.navigation_navigation-runtime-ktx",
+        "androidx.navigation_navigation-ui-ktx",
+        "androidx.viewpager2_viewpager2",
+        "kotlin-stdlib",
     ],
 
     libs: [
@@ -136,4 +146,15 @@ filegroup {
 filegroup {
     name: "Settings_manifest",
     srcs: ["AndroidManifest.xml"],
+}
+
+android_library_import {
+    name: "animatedbottombar",
+    aars: ["libs/animatedbottombar.aar"],
+    sdk_version: "current",
+}
+android_library_import {
+    name: "flexbox",
+    aars: ["libs/flexbox.aar"],
+    sdk_version: "current",
 }
