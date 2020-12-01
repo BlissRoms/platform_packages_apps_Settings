@@ -30,7 +30,9 @@ android_library {
     srcs: ["src/**/*.java", 
         "Blissify/src/**/*.java"],
 
-    aaptflags: ["--extra-packages com.blissroms.blissify"],
+    aaptflags: ["--extra-packages com.blissroms.blissify",
+                "--extra-packages nl.joery.animatedbottombar",
+                "--extra-packages com.google.android.flexbox",],
 
     resource_dirs: ["res",
                     "Blissify/res"
@@ -47,6 +49,8 @@ android_library {
         "androidx.preference_preference",
         "androidx.recyclerview_recyclerview",
         "com.google.android.material_material",
+        "animatedbottombar",
+        "flexbox",
         "setupcompat",
         "setupdesign",
         "androidx-constraintlayout_constraintlayout-solver",
@@ -62,9 +66,16 @@ android_library {
         "zxing-core-1.7",
         "android.hardware.dumpstate-V1.0-java",
         "android.hardware.dumpstate-V1.1-java",
-	"airbnb-lottie",
+	    "airbnb-lottie",
         "org.lineageos.platform.internal",
         "VendorSupport-preference",
+        "androidx.navigation_navigation-common-ktx",
+        "androidx.navigation_navigation-fragment-ktx",
+        "androidx.navigation_navigation-runtime-ktx",
+        "androidx.navigation_navigation-ui-ktx",
+        "androidx.viewpager2_viewpager2",
+        "kotlin-stdlib",
+        "animatedbottombar",
     ],
 
     libs: [
@@ -104,4 +115,16 @@ android_app {
 android_library_import {
     name: "contextualcards",
     aars: ["libs/contextualcards.aar"],
+}
+
+android_library_import {
+    name: "animatedbottombar",
+    aars: ["libs/animatedbottombar.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "flexbox",
+    aars: ["libs/flexbox.aar"],
+    sdk_version: "current",
 }

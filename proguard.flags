@@ -71,3 +71,12 @@
 
 # Custom rules
 -keep class com.google.android.settings.** { *; }
+
+# AnimatedBottomBar
+-keep class nl.joery.animatedbottombar.AnimatedBottomBar { *; }
+-keep class nl.joery.animatedbottombar.BadgeView { *; }
+-keep class nl.joery.animatedbottombar.BottomBarStyle** { *; }
+-keep class nl.joery.animatedbottombar.TabAdapter { *; }
+-keep class nl.joery.animatedbottombar.TabIndicator { *; }
+-keep class nl.joery.animatedbottombar.TabView { *; }
+-keep class com.google.android.flexbox.FlexboxLayoutManager { *; }
