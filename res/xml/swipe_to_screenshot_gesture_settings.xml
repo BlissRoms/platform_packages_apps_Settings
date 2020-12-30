@@ -28,6 +28,7 @@
 
     <SwitchPreference
         android:key="swipe_to_screenshot"
+        android:icon="@drawable/ic_three_finger_gesture"
         android:title="@string/three_finger_gesture"
         android:summary="@string/three_finger_gesture_summary"
         app:keywords="@string/keywords_gesture"
