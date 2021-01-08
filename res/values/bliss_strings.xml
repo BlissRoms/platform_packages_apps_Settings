@@ -567,4 +567,8 @@
     <string name="private_dns_mode_uncensoreddns" translatable="false">UncensoredDNS (DK)</string>
     <string name="private_dns_mode_provider_failure">Couldn\'t connect</string>
 
+    <!-- Developer Options -->
+    <string name="cleartext_network_policy_title">Restrict cleartext network traffic</string>
+    <string name="cleartext_network_policy_summary">Blocks all non-TLS network traffic. Requires Private DNS configuration. Note: Without explicit exemptions, apps that use cleartext traffic may not work</string>
+
 </resources>
