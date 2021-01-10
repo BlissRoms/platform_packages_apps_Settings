@@ -93,6 +93,13 @@
         android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
         settings:controller="com.android.settings.gestures.SwipeToScreenshotPreferenceController" />
 
+    <Preference
+        android:key="doze_double_tap_summary"
+        android:title="@string/double_tap_title"
+        android:fragment="com.android.settings.gestures.DoubleTapAmbientSettings"
+        settings:userRestriction="no_ambient_display"
+        settings:controller="com.android.settings.gestures.DoubleTapAmbientPreferenceController" />
+
     <com.android.settingslib.PrimarySwitchPreference
         android:key="gesture_prevent_ringing_summary"
         android:title="@string/gesture_prevent_ringing_screen_title"
