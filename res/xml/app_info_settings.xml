@@ -25,16 +25,13 @@
         android:key="header_view"
         android:layout="@layout/settings_entity_header"
         android:selectable="false"
-        android:order="-10000"
-        settings:allowDividerBelow="true"/>
+        android:order="-10000" />
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="instant_app_buttons"
         android:layout="@layout/instant_app_buttons"
         android:selectable="false"
-        android:order="-9999"
-        settings:allowDividerAbove="true"
-        settings:allowDividerBelow="true"/>
+        android:order="-9999" />
 
     <com.android.settingslib.widget.ActionButtonsPreference
         android:key="action_buttons"
@@ -43,8 +40,7 @@
     <Preference
         android:key="notification_settings"
         android:title="@string/notifications_label"
-        settings:controller="com.android.settings.applications.appinfo.AppNotificationPreferenceController"
-        settings:allowDividerAbove="true"/>
+        settings:controller="com.android.settings.applications.appinfo.AppNotificationPreferenceController" />
 
     <com.android.settings.widget.FixedLineSummaryPreference
         android:key="permission_settings"

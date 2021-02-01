@@ -24,7 +24,7 @@
         android:layout="@layout/settings_entity_header"
         android:selectable="false"
         android:order="-10000"
-        settings:allowDividerBelow="true"/>
+        settings:allowDividerBelow="false"/>
 
     <com.android.settings.datausage.DataUsageSummaryPreference
         android:key="status_header"
@@ -41,7 +41,7 @@
         android:key="signal_strength"
         android:title="@string/wifi_signal"
         android:selectable="false"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <Preference
         android:key="frequency"
@@ -74,7 +74,7 @@
         android:key="add_device_to_network"
         android:title="@string/wifi_dpp_add_device"
         android:summary="@string/wifi_dpp_connect_network_using_qr_code"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <!-- Network Details -->
     <PreferenceCategory

@@ -25,7 +25,7 @@
     <com.android.settings.applications.SpacePreference
         android:key="storage_space"
         android:layout_height="8dp"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <Preference
         android:key="storage_used"
