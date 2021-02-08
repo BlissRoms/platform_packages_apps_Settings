@@ -150,4 +150,9 @@
     <string name="long_label">Long</string>
     <string name="hidden_label">Hidden</string>
 
+    <!-- Navbar radius -->
+    <string name="navbar_radius">Gesture bar Radius</string>
+    <string name="small_label">1 dp</string>
+    <string name="big_label">4 dp</string>
+
 </resources>
