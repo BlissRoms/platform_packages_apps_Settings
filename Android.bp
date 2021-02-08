@@ -74,6 +74,7 @@ android_library {
         "androidx.navigation_navigation-ui-ktx",
         "androidx.viewpager2_viewpager2",
         "kotlin-stdlib",
+        "faceunlock_framework",
     ],
 
     libs: [
