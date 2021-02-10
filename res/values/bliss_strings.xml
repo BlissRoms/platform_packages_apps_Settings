@@ -49,4 +49,7 @@
     <!-- Device Name -->
     <string name="about_device_name">Device</string>
 
+    <!-- Deep Sleep percentage in device info -->
+    <string name="status_sleep_time">Deep sleep</string>
+
 </resources>
