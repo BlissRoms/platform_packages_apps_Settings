@@ -98,6 +98,16 @@
             android:selectable="false"
             app:layout="@layout/bliss_card_mid_abt"/>
 
+        <!-- Device deep sleep time -->
+        <Preference
+            android:icon="@drawable/uptime"
+            android:key="sleep_time"
+            android:order="8"
+            android:title="@string/status_sleep_time"
+            android:summary="@string/summary_placeholder"
+            android:selectable="false"
+            app:layout="@layout/bliss_card_mid_abt"/>
+
         <!-- Build number -->
         <Preference
             android:icon="@drawable/build_acc"

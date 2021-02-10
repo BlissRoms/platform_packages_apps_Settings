@@ -169,4 +169,7 @@
     <!-- Running services - Background processes tab -->
     <string name="background_processes_settings_title">Background processes</string>
 
+    <!-- Deep Sleep percentage in device info -->
+    <string name="status_sleep_time">Deep sleep</string>
+
 </resources>
