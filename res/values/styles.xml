@@ -483,10 +483,9 @@
     </style>
 
     <style name="SearchBarStyle">
-        <item name="android:layout_margin">@dimen/search_bar_margin</item>
-        <item name="cardCornerRadius">32dp</item>
-        <item name="enforceMaterialTheme">false</item>
-        <item name="cardElevation">@null</item>
+        <item name="cardCornerRadius">38dp</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="cardElevation">3dp</item>
         <item name="shapeAppearance">@null</item>
     </style>
 
