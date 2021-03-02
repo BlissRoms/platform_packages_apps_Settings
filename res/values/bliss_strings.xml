@@ -87,4 +87,9 @@
     <!-- Screen resolution -->
     <string name="screen_resolution_footer_custom">Full resolution uses more of your battery. SystemUI will be restarted to reload proper layout.</string>
 
+    <!-- Default getTimeSpentInApp string for Wellbeing to display. [CHAR LIMIT=NONE] --> 
+    <string name="duration_less_than_one_minute">Less than 1 Minute</string> 
+
+    <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
+    <string name="screen_time_summary_usage_today">%1$s today</string>
 </resources>
