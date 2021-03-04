@@ -796,4 +796,11 @@
            parent="@*android:style/TextAppearance.DeviceDefault.Subhead">
         <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
     </style>
+
+   <!-- Silky UI -->
+
+    <style name="bliss_title">
+        <item name="android:textSize">35.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
 </resources>

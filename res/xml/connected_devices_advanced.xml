@@ -20,6 +20,12 @@
     android:title="@string/connected_device_connections_title">
 
     <Preference
+        android:layout="@layout/bliss_header"
+        android:title="@string/top_connected_title"
+        android:order="-11"
+        android:selectable="false"/>
+
+    <Preference
         android:fragment="com.android.settings.connecteddevice.BluetoothDashboardFragment"
         android:key="bluetooth_switchbar_screen"
         android:title="@string/bluetooth_settings_title"

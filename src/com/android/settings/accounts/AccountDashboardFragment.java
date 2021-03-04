@@ -22,6 +22,7 @@ import android.accounts.AccountManager;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.pm.UserInfo;
+import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
 
@@ -64,6 +65,12 @@ public class AccountDashboardFragment extends DashboardFragment {
     @Override
     public int getHelpResource() {
         return R.string.help_url_user_and_account_dashboard;
+    }
+
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        getActivity().getActionBar().setTitle(" ");
     }
 
     @Override

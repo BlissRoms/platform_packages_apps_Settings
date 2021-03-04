@@ -54,6 +54,7 @@ public class SystemDashboardFragment extends DashboardFragment {
             screen.setInitialExpandedChildrenCount(Integer.MAX_VALUE);
         }
 
+        getActivity().getActionBar().setTitle(" ");
         showRestrictionDialog();
     }
 

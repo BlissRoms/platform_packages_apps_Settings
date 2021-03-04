@@ -20,6 +20,12 @@
     android:title="@string/storage_settings"
     android:orderingFromXml="false">
 
+    <Preference
+        android:layout="@layout/bliss_header"
+        android:title="@string/top_storage_title"
+        android:order="-10"
+        android:selectable="false"/>
+    
     <com.android.settings.deviceinfo.storage.StorageSummaryDonutPreference
         android:key="storage_summary"
         android:order="0"

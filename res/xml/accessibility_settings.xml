@@ -22,8 +22,10 @@
     android:title="@string/accessibility_settings">
 
     <Preference
-            android:key="accesibility_animation"
-            android:layout="@layout/accessibility_animation" />
+        android:layout="@layout/bliss_header"
+        settings:allowDividerBelow="false"
+        android:title="@string/top_accessibility_title"
+        android:selectable="false"/>
 
     <PreferenceCategory
         android:key="user_installed_services_category"
@@ -38,6 +40,8 @@
         <Preference
             android:fragment="com.android.settings.tts.TextToSpeechSettings"
             android:key="tts_settings_preference"
+            settings:allowDividerBelow="false"
+            settings:allowDividerAbove="false"
             android:persistent="false"
             android:title="@string/tts_settings_title"
             settings:controller="com.android.settings.language.TtsPreferenceController"/>

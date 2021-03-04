@@ -81,7 +81,7 @@ public class StorageDashboardFragment extends DashboardFragment
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-
+        getActivity().getActionBar().setTitle(" ");
         // Initialize the storage sizes that we can quickly calc.
         final Activity activity = getActivity();
         StorageManager sm = activity.getSystemService(StorageManager.class);

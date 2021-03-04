@@ -20,6 +20,14 @@
     android:title="@string/storage_settings"
     settings:keywords="@string/keywords_storage">
 
+    <Preference
+        android:key="storage_header"
+        android:layout="@layout/bliss_header"
+        android:title="@string/top_storage_title"
+        android:selectable="false"
+        settings:allowDividerBelow="false"
+        android:order="-5"/>
+
     <PreferenceCategory
         android:key="storage_internal"
         android:title="@string/storage_internal_title" />

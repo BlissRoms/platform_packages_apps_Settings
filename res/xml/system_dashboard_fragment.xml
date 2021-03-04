@@ -23,9 +23,10 @@
 
     <!-- bliss Logo Header -->
     <Preference 
-        android:key="bliss_logo"
-        android:order="-500"
-        android:layout="@layout/system_animation" />
+        android:layout="@layout/bliss_header"
+        android:order="-270"
+        android:title="@string/top_system_title"
+        android:selectable="false"/>
 
     <Preference
         android:key="language_input_settings"

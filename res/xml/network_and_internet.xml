@@ -21,18 +21,20 @@
     android:title="@string/network_dashboard_title"
     settings:initialExpandedChildrenCount="5">
 
+    <Preference
+        android:layout="@layout/bliss_header"
+        android:title="@string/top_network_title"
+        android:order="-45"
+        settings:allowDividerBelow="false"
+        android:selectable="false"/>
+
     <PreferenceCategory
         android:key="multi_network_header"
         android:title="@string/summary_placeholder"
         android:layout="@layout/preference_category_no_label"
-        settings:allowDividerBelow="true"
+        settings:allowDividerBelow="false"
         android:order="-40"
         settings:controller="com.android.settings.network.MultiNetworkHeaderController"/>
-
-    <Preference
-        android:key="wifi_anim"
-        android:layout="@layout/wifi_animation"
-        android:order="-999"/>
 
     <com.android.settings.widget.MasterSwitchPreference
         android:fragment="com.android.settings.wifi.WifiSettings"

@@ -101,6 +101,12 @@ public class AppAndNotificationDashboardFragment extends DashboardFragment
     }
 
     @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        getActivity().getActionBar().setTitle(" ");
+    }
+
+    @Override
     public void onReloadDataCompleted(@NonNull List<UsageStats> recentApps) {
         showPinnedHeader(false);
         if (!recentApps.isEmpty()) {

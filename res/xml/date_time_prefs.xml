@@ -53,6 +53,8 @@
         settings:keywords="@string/keywords_time_zone"/>
 
     <PreferenceCategory
+        settings:allowDividerBelow="false"
+        settings:allowDividerAbove="false"
         android:key="time_format_preference_category"
         android:title="@string/time_format_category_title"
         settings:keywords="@string/keywords_time_format">

@@ -28,6 +28,8 @@
         android:fragment="com.android.settings.localepicker.LocaleListEditor" />
 
     <PreferenceCategory
+        settings:allowDividerBelow="false"
+        settings:allowDividerAbove="false"
         android:key="keyboards_category"
         android:title="@string/keyboard_and_input_methods_category">
         <Preference
@@ -43,6 +45,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        settings:allowDividerBelow="false"
+        settings:allowDividerAbove="false"
         android:key="input_assistance_category"
         android:title="@string/input_assistance">
         <!-- Spell checker preference title, summary and fragment will be set programmatically. -->
@@ -69,6 +73,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        settings:allowDividerBelow="false"
+        settings:allowDividerAbove="false"
         android:key="pointer_and_tts_category"
         android:layout="@layout/preference_category_no_label">
 
@@ -92,6 +98,8 @@
         settings:controller="com.android.settings.inputmethod.GameControllerPreferenceController" />
 
     <com.android.settings.widget.WorkOnlyCategory
+        settings:allowDividerBelow="false"
+        settings:allowDividerAbove="false"
         android:key="language_and_input_for_work_category"
         android:title="@string/language_and_input_for_work_category_title"
         settings:searchable="false">

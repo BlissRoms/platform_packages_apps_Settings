@@ -67,6 +67,7 @@ public class DisplaySettings extends DashboardFragment {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+	getActivity().getActionBar().setTitle(" ");
     }
 
     @Override

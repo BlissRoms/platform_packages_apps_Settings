@@ -22,8 +22,10 @@
     settings:keywords="@string/keywords_accounts">
 
     <Preference
-        android:key="account_animation"
-        android:layout="@layout/account_animation" />
+        android:layout="@layout/bliss_header"
+        settings:allowDividerBelow="false"
+        android:title="@string/top_accounts_title"
+        android:selectable="false"/>
 
     <PreferenceCategory
         android:key="dashboard_tile_placeholder"
