@@ -179,7 +179,7 @@
     <string name="font_picker_progress">Applying new font\u2026</string>
 
     <!-- Smart charging -->
-    <string name="smart_charging_title">Smart Charging</string>
+    <string name="smart_charging_title">Smart charging</string>
     <string name="smart_charging_summary">Set maximum charging level</string>
     <string name="smart_charging_switch_title">Use Smart charging</string>
     <string name="smart_charging_level_title">Stop trigger level</string>
@@ -202,7 +202,14 @@
 
     <!-- Battery categorization -->
     <string name="battery_saver_category_title">Battery saver</string>
-    <string name="smart_charging_category_title">Smart charging</string>
+    <string name="smart_features_category_title">Smart features</string>
     <string name="battery_health_category_title">Battery health</string>
     <string name="battery_usage_category_title">Battery usage</string>
+
+    <!-- Smart cutoff -->
+    <string name="smart_cutoff_title">Smart cutoff</string>
+    <string name="smart_cutoff_summary">Set maximum temperature</string>
+    <string name="smart_cutoff_switch_title">Use Smart cutoff</string>
+    <string name="smart_cutoff_level_title">Stop trigger level</string>
+    <string name="smart_cutoff_resume_level_title">Start trigger level</string>
 </resources>

@@ -38,6 +38,6 @@
     <bool name="config_supportBatteryHealth">true</bool>
 
     <!-- Smart Charging -->
-    <bool name="config_supportSmartCharging">true</bool>
+    <bool name="config_supportSmartFeatures">true</bool>
 
 </resources>

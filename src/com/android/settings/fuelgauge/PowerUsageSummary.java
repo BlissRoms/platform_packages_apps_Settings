@@ -80,7 +80,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     private static final String KEY_SCREEN_USAGE = "screen_usage";
     private static final String KEY_TIME_SINCE_LAST_FULL_CHARGE = "last_full_charge";
     private static final String KEY_BATTERY_TEMP = "battery_temp";
-    private static final String KEY_SMART_CHARGING_CATEGORY = "smart_charging_category";
+    private static final String KEY_SMART_FEATURES_CATEGORY = "smart_features_category";
     private static final String KEY_BATTERY_INFO_CATEGORY = "battery_info_category";
     private static final String KEY_CURRENT_BATTERY_CAPACITY = "current_battery_capacity";
     private static final String KEY_DESIGNED_BATTERY_CAPACITY = "designed_battery_capacity";
@@ -90,7 +90,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     private String mBatCurCap;
     private String mBatChgCyc;
 
-    private PreferenceCategory mSmartChargingCat;
+    private PreferenceCategory mSmartFeaturesCat;
     private PreferenceCategory mBatteryInfoCat;
     @VisibleForTesting
     static final int BATTERY_INFO_LOADER = 1;
@@ -272,10 +272,10 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
             getPreferenceScreen().removePreference(mBatteryInfoCat);
         }
 
-        // Check availability of Smart Charging
-        mSmartChargingCat = (PreferenceCategory) findPreference(KEY_SMART_CHARGING_CATEGORY);
-        if (!getResources().getBoolean(R.bool.config_supportSmartCharging)) {
-            getPreferenceScreen().removePreference(mSmartChargingCat);
+        // Check availability of Smart Features
+        mSmartFeaturesCat = (PreferenceCategory) findPreference(KEY_SMART_FEATURES_CATEGORY);
+        if (!getResources().getBoolean(R.bool.config_supportSmartFeatures)) {
+            getPreferenceScreen().removePreference(mSmartFeaturesCat);
         }
     }
 
