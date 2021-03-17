@@ -126,10 +126,10 @@
     <dimen name="switchbar_subsettings_margin_start">72dp</dimen>
     <dimen name="switchbar_subsettings_margin_end">16dp</dimen>
 
-    <dimen name="search_bar_margin">26dp</dimen>
+    <dimen name="search_bar_margin">8dp</dimen>
 
     <dimen name="search_bar_height">50dp</dimen>
-    <dimen name="search_bar_corner_radius">24.0dp</dimen>
+    <dimen name="search_bar_corner_radius">24dp</dimen>
     <dimen name="search_bar_text_size">16dp</dimen>
     <dimen name="search_bar_card_elevation">2dp</dimen>
     <dimen name="search_bar_content_inset">64dp</dimen>
@@ -338,8 +338,9 @@
 
     <!-- Homepage cards size and padding -->
     <dimen name="contextual_card_icon_size">24dp</dimen>
-    <dimen name="contextual_card_vertical_margin">8dp</dimen>
-    <dimen name="contextual_card_side_margin">4dp</dimen>
+    <dimen name="contextual_card_top_margin">24dp</dimen>
+    <dimen name="contextual_card_bottom_margin">16dp</dimen>
+    <dimen name="contextual_card_side_margin">8dp</dimen>
     <dimen name="contextual_card_icon_padding_start">14dp</dimen>
     <dimen name="contextual_card_text_padding_start">16dp</dimen>
     <dimen name="contextual_card_padding_end">16dp</dimen>

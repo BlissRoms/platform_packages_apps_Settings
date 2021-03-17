@@ -470,7 +470,8 @@
     </style>
 
     <style name="ContextualCardStyle">
-        <item name="android:layout_marginBottom">@dimen/contextual_card_vertical_margin</item>
+        <item name="android:layout_marginTop">@dimen/contextual_card_top_margin</item>
+        <item name="android:layout_marginBottom">@dimen/contextual_card_bottom_margin</item>
         <item name="android:layout_marginStart">@dimen/contextual_card_side_margin</item>
         <item name="android:layout_marginEnd">@dimen/contextual_card_side_margin</item>
         <item name="cardBackgroundColor">@color/contextual_card_background</item>
