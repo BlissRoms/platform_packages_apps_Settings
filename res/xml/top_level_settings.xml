@@ -21,15 +21,17 @@
     android:key="top_level_settings">
 
     <Preference
+        android:layout="@layout/card_view_pref_top"
         android:key="top_level_network"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_network"
-        android:order="-120"
+        android:order="-125"
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         settings:controller="com.android.settings.network.TopLevelNetworkEntryPreferenceController"/>
 
     <Preference
+        android:layout="@layout/card_view_pref_middle"
         android:key="top_level_connected_devices"
         android:title="@string/connected_devices_dashboard_title"
         android:summary="@string/summary_placeholder"
@@ -39,6 +41,7 @@
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
     <Preference
+        android:layout="@layout/card_view_pref_middle"
         android:key="top_level_blissify_settings"
         android:title="@string/blissify_settings_title"
         android:summary="@string/blissify_settings_summary"
@@ -46,116 +49,139 @@
         android:order="-105"
         android:fragment="com.blissroms.blissify.Blissify"/>
 
+    <Preference android:layout="@layout/divider" android:order="-120"/>
+
     <Preference
+        android:layout="@layout/card_view_pref_top"
         android:key="top_level_apps_and_notifs"
         android:title="@string/app_and_notification_dashboard_title"
         android:summary="@string/app_and_notification_dashboard_summary"
         android:icon="@drawable/ic_homepage_apps"
-        android:order="-100"
+        android:order="-115"
         android:fragment="com.android.settings.applications.AppAndNotificationDashboardFragment"/>
 
     <Preference
+        android:layout="@layout/card_view_pref_middle"
         android:key="top_level_battery"
         android:title="@string/power_usage_summary_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_battery"
         android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"
-        android:order="-90"
+        android:order="-110"
         settings:controller="com.android.settings.fuelgauge.TopLevelBatteryPreferenceController"/>
 
     <Preference
+        android:layout="@layout/card_view_pref_middle"
         android:key="top_level_display"
         android:title="@string/display_settings"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_display"
-        android:order="-80"
+        android:order="-105"
         android:fragment="com.android.settings.DisplaySettings"
         settings:controller="com.android.settings.display.TopLevelDisplayPreferenceController"/>
 
     <Preference
+        android:layout="@layout/card_view_pref_bottom"
         android:key="top_level_sound"
         android:title="@string/sound_settings"
         android:summary="@string/sound_dashboard_summary"
         android:icon="@drawable/ic_homepage_sound"
-        android:order="-70"
+        android:order="-100"
         android:fragment="com.android.settings.notification.SoundSettings"/>
 
+    <Preference android:layout="@layout/divider" android:order="-95"/>
+
     <Preference
+        android:layout="@layout/card_view_pref_top"
         android:key="top_level_storage"
         android:title="@string/storage_settings"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_storage"
-        android:order="-60"
+        android:order="-90"
         android:fragment="com.android.settings.deviceinfo.StorageSettings"
         settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
 
     <Preference
+        android:layout="@layout/card_view_pref_middle"
         android:key="top_level_privacy"
         android:title="@string/privacy_dashboard_title"
         android:summary="@string/privacy_dashboard_summary"
         android:icon="@drawable/ic_homepage_privacy"
-        android:order="-55"
+        android:order="-85"
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"/>
 
     <Preference
+        android:layout="@layout/card_view_pref_bottom"
         android:key="top_level_location"
         android:title="@string/location_settings_title"
         android:summary="@string/location_settings_loading_app_permission_stats"
         android:icon="@drawable/ic_homepage_location"
-        android:order="-50"
+        android:order="-80"
         android:fragment="com.android.settings.location.LocationSettings"
         settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
 
+    <Preference android:order="-75" android:layout="@layout/divider"/>
+
     <Preference
+        android:layout="@layout/card_view_pref_top"
         android:key="top_level_security"
         android:title="@string/security_settings_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_security"
-        android:order="-40"
+        android:order="-70"
         android:fragment="com.android.settings.security.SecuritySettings"
         settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
 
     <Preference
+        android:layout="@layout/card_view_pref_middle"
         android:key="top_level_accounts"
         android:title="@string/account_dashboard_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_accounts"
-        android:order="-30"
+        android:order="-65"
         android:fragment="com.android.settings.accounts.AccountDashboardFragment"
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
     <Preference
+        android:layout="@layout/card_view_pref_bottom"
         android:key="top_level_accessibility"
         android:title="@string/accessibility_settings"
         android:summary="@string/accessibility_settings_summary"
         android:icon="@drawable/ic_homepage_accessibility"
-        android:order="-20"
+        android:order="-60"
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
         settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
 
+    <Preference android:order="-55" android:layout="@layout/divider"/>
+
     <Preference
+        android:layout="@layout/card_view_pref_top"
         android:key="top_level_system"
         android:title="@string/header_category_system"
         android:summary="@string/system_dashboard_summary"
         android:icon="@drawable/ic_homepage_system_dashboard"
-        android:order="10"
+        android:order="-50"
         android:fragment="com.android.settings.system.SystemDashboardFragment"/>
 
     <Preference
+        android:layout="@layout/card_view_pref_bottom"
         android:key="top_level_about_device"
         android:title="@string/about_settings"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_about"
-        android:order="20"
+        android:order="-45"
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
         settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
 
     <Preference
+        android:layout="@layout/card_view_pref_middle"
         android:key="top_level_support"
         android:summary="@string/support_summary"
         android:title="@string/page_tab_title_support"
         android:icon="@drawable/ic_homepage_support"
-        android:order="100"
+        android:order="-40"
         settings:controller="com.android.settings.support.SupportPreferenceController"/>
+
+    <Preference android:order="-35" android:layout="@layout/divider"/>
 
 </PreferenceScreen>

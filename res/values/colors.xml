@@ -169,5 +169,11 @@
     <color name="palette_list_dark_mode_color_blue">#8AB4F8</color> <!-- Material Blue 300 -->
     <color name="palette_list_dark_mode_color_purple">#c58af9</color> <!-- Material Purple 300 -->
 
+    <!-- Custom colors -->
+    <color name="colorAccentSettings">@*android:color/accent_device_default_light</color>
+    <color name="card_view_bg">#EBEBEB</color>
+    <color name="black">#171717</color>
+    <color name="off_black">#90171717</color>
+
 </resources>
 

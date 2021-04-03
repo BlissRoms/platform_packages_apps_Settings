@@ -39,5 +39,11 @@
     <color name="palette_list_color_blue">@color/palette_list_dark_mode_color_blue</color>
     <color name="palette_list_color_purple">@color/palette_list_dark_mode_color_purple</color>
     <color name="gestures_setting_background_color">@android:color/black</color>
+
+    <!-- Custom colors -->
+    <color name="card_view_bg">#1B1B1B</color>
+    <color name="black">#FAFAFA</color>
+    <color name="off_black">#90FAFAFA</color>
+
 </resources>
 

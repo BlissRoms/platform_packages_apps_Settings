@@ -452,4 +452,11 @@
     <dimen name="op_control_margin_list_top4">21.0dip</dimen>
     <dimen name="op_control_avatar_size3">33.0dip</dimen>
 
+    <!-- Custom dimens -->
+    <dimen name="card_view_start_padding">20dp</dimen>
+    <dimen name="card_view_end_padding">20dp</dimen>
+    <dimen name="card_view_start_margin">15dp</dimen>
+    <dimen name="card_view_end_margin">15dp</dimen>
+    <dimen name="card_height_settings">75dp</dimen>
+
 </resources>
