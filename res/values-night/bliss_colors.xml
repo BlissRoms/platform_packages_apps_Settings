@@ -15,4 +15,7 @@
 
     <color name="settingsHeaderColor">@*android:color/accent_device_default_dark</color>
 
+    <color name="op_control_text_color_primary">#ffffffff</color>
+    <color name="op_control_text_color_secondary">#89ffffff</color>
+
 </resources>

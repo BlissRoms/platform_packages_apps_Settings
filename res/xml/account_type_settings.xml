@@ -21,7 +21,7 @@
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="account_header"
-        android:layout="@layout/settings_entity_header"
+        android:layout="@layout/op_settings_entity_header"
         android:selectable="false"
         android:order="-10000"/>
 

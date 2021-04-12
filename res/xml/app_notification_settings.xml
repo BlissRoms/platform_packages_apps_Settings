@@ -20,7 +20,7 @@
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="pref_app_header"
-        android:layout="@layout/settings_entity_header" />
+        android:layout="@layout/op_settings_entity_header" />
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="block"

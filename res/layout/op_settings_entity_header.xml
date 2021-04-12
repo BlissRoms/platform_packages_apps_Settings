@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" 
+                android:id="@id/entity_header" 
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/entity_header_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="33.0dip" android:layout_marginBottom="25.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/entity_header_icon" android:layout_width="56.0dip" android:layout_height="56.0dip" android:antialias="true" android:scaleType="fitCenter" />
+        <TextView android:textColor="@color/op_control_text_color_primary" android:ellipsize="marquee" android:gravity="center" android:id="@id/entity_header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginTop="@dimen/op_control_margin_list_top2" android:layout_marginRight="48.0dip" android:singleLine="false" android:textDirection="locale" style="@style/op_control_text_style_h6" />
+        <TextView android:textColor="@color/op_control_text_color_secondary" android:id="@id/install_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" style="@style/op_control_text_style_body1" />
+        <TextView android:textColor="@color/op_control_text_color_secondary" android:id="@id/entity_header_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" style="@style/op_control_text_style_body1" />
+        <TextView android:textColor="@color/op_control_text_color_secondary" android:id="@id/entity_header_second_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/op_control_text_style_body1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageButton android:id="@android:id/button1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@null" android:tint="?android:colorAccent" android:minWidth="24.0dip" android:layout_weight="1.0" style="?android:actionOverflowButtonStyle" />
+        <ImageButton android:id="@android:id/button2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@null" android:tint="?android:colorAccent" android:minWidth="24.0dip" android:layout_weight="1.0" style="?android:actionOverflowButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

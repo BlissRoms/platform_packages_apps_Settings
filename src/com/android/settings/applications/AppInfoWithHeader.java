@@ -22,8 +22,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+
 import androidx.preference.Preference;
 
+import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.widget.EntityHeaderController;
 import com.android.settingslib.applications.AppUtils;
@@ -45,7 +49,7 @@ public abstract class AppInfoWithHeader extends AppInfoBase {
         if (mPackageInfo == null) return;
         final Activity activity = getActivity();
         final Preference pref = EntityHeaderController
-                .newInstance(activity, this, null /* header */)
+                .newInstance(activity, this, LayoutInflater.from(activity).inflate(R.layout.op_settings_entity_header, (ViewGroup) null))
                 .setRecyclerView(getListView(), getSettingsLifecycle())
                 .setIcon(Utils.getBadgedIcon(getContext(), mPackageInfo.applicationInfo))
                 .setLabel(mPackageInfo.applicationInfo.loadLabel(mPm))

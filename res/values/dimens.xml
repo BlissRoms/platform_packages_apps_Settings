@@ -439,4 +439,15 @@
     <dimen name="homepage_logo_size">50dp</dimen>
     <dimen name="homepage_spacer_imageview_marginBottom">10dp</dimen>
     <dimen name="homepage_spacer_title_marginTop">50dp</dimen>
+
+    <dimen name="op_control_margin_list_top2">12dp</dimen>
+    <dimen name="op_control_margin_space1">4dp</dimen>
+    <dimen name="op_control_margin_space7">40.0dip</dimen>
+    <dimen name="op_control_margin_screen_right3">20.0dip</dimen>
+    <dimen name="op_control_margin_screen_left3">20dp</dimen>
+    <dimen name="op_control_margin_space3">16.0dip</dimen>
+    <dimen name="op_control_margin_list_bottom4">21.0dip</dimen>
+    <dimen name="op_control_margin_list_top4">21.0dip</dimen>
+    <dimen name="op_control_avatar_size3">33.0dip</dimen>
+
 </resources>
