@@ -117,6 +117,7 @@ android_library {
         "kotlinx-coroutines-android",
         "glide",
 	"VendorSupport-preference",
+        "androidx.dynamicanimation_dynamicanimation",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
