@@ -116,6 +116,7 @@ android_library {
         "androidx.fragment_fragment",
         "androidx.fragment_fragment-ktx",
         "androidx.preference_preference-ktx",
+        "androidx.dynamicanimation_dynamicanimation",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
