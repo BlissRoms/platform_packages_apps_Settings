@@ -28,6 +28,16 @@
         android:order="-500"
         android:layout="@layout/bliss_logo" />
 
+    <!-- About Bliss -->
+    <Preference
+        android:key="about_bliss"
+        android:title="@string/about_bliss_title"
+        android:summary="@string/about_bliss_summary"
+        settings:keywords="@string/keywords_about_bliss"
+        settings:controller="com.android.settings.deviceinfo.bliss.AboutBlissPreferenceController">
+        <intent android:action="android.settings.SYSTEM_ABOUT_BLISS" />
+    </Preference>
+
     <!-- Bliss version -->
     <Preference
         android:key="bliss_version"

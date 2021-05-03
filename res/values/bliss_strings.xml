@@ -83,4 +83,10 @@
     <string name="bliss_updater_title">Bliss Updater</string>
     <string name="bliss_updater_summary">Check for the latest version of the rom</string>
     <string name="keywords_bliss_updater">BlissOTA, updater, OTA</string>
+
+    <!-- About Bliss -->
+    <string name="about_bliss_title">About Bliss</string>
+    <string name="about_bliss_summary">Know more about BlissRoms!</string>
+    <string name="keywords_about_bliss">About, About Bliss, BlissRoms</string>
+
 </resources>
