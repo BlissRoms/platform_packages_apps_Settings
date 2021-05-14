@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2020 BlissRoms Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Backup Transport selection settings menu and activity title -->
+    <string name="backup_transport_setting_label">Yedekleme sağlayıcısını değiştir</string>
+    <string name="backup_transport_title">Yedekleme sağlayıcısını seçin</string>
+    <!-- BlissRoms Version -->
+    <string name="bliss_version">Bliss sürümü</string>
+    <string name="bliss_version_default">Bilinmiyor</string>
+    <string name="keywords_bliss_version">Bliss sürümü, bliss</string>
+    <string name="bliss_build_date">Yapım tarihi</string>
+    <string name="bliss_build_default">Bilinmiyor</string>
+    <string name="bliss_build_type">İnşa Durumu</string>
+    <string name="bliss_device">Bliss cihazı</string>
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Cihaz sorumlusu</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Bilgileri göstermek için dokunun</string>
+    <!-- Changelog -->
+    <string name="changelog_title">Değişiklik</string>
+    <string name="changelog_summary">Son güncellemedeki değişiklikler</string>
+    <string name="changelog_error">Değişiklik günlüğü yüklenemedi</string>
+    <!-- Blissify -->
+    <string name="blissify_settings_title">Blissify</string>
+    <string name="blissify_settings_summary">Cihazınızı mutlu edin!</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux durumu</string>
+    <string name="selinux_status_disabled">Devre dışı</string>
+    <string name="selinux_status_permissive">Permissive (Serbest)</string>
+    <string name="selinux_status_enforcing">Enforcing (Zorunlu)</string>
+    <!-- Torch Power button gestures -->
+    <string name="double_tap_power_flashlight_screen_title">El fenerini etkinleştirin</string>
+    <string name="double_tap_power_flashlight_title">Ekran kapalı iken güç tuşu ile feneri açma</string>
+    <string name="torch_power_button_gesture_none">Devre dışı</string>
+    <string name="torch_power_button_gesture_dt">El fenerini açmak için güç tuşuna iki defa basın</string>
+    <string name="torch_power_button_gesture_lp">El fenerini açmak için güç tuşuna uzun basın</string>
+    <!-- Ambient Music -->
+    <string name="pulse_on_new_tracks_title">Ortam ekranı müzik bilgisi</string>
+    <string name="pulse_on_new_tracks_summary">Yeni bir müzik parçası çalındığında Ortam Ekranını göster. Sonraki parçaya atlamak için parça bilgisine iki kez dokunun.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Yeni bir müzik parçası çalındığında ortam ekranında göster</string>
+    <!-- Ambient Wake Gestures -->
+    <string name="ambient_wake_gestures_title">Ortam ekranı uyandırma hareketleri</string>
+    <string name="ambient_wake_gestures_summary">Uyandırma hareketlerinde normal kilit ekranı yerine ortam ekranını göster</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Arkaplan işlemleri</string>
+    <!-- Home button wake -->
+    <string name="home_wake_button_title">Ana ekran tuşu ile uyan</string>
+    <string name="home_wake_button_summary">Ekranı uyandırmak için ana ekran tuşunu etkinleştir</string>
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">İşlemci bilgisini göster</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Geçerli işlemci bilgisini gösteren ekran yer paylaşımı</string>
+</resources>

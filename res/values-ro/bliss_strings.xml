@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2020 BlissRoms Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Backup Transport selection settings menu and activity title -->
+    <string name="backup_transport_setting_label">Schimbă furnizorul de backup</string>
+    <string name="backup_transport_title">Selectați furnizorul de backup</string>
+    <!-- BlissRoms Version -->
+    <string name="bliss_version">Versiune bliss</string>
+    <string name="bliss_version_default">Necunoscută</string>
+    <string name="keywords_bliss_version">Versiune Bliss</string>
+    <string name="bliss_build_date">Dată compilare</string>
+    <string name="bliss_build_default">Necunoscută</string>
+    <string name="bliss_build_type">Statusul Versiunii</string>
+    <string name="bliss_device">Dispozitiv Bliss</string>
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Dezvoltator</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Atingeți pentru a afișa informații</string>
+    <!-- Changelog -->
+    <string name="changelog_title">Istoric schimbări</string>
+    <string name="changelog_summary">De la ultima actualizare</string>
+    <string name="changelog_error">Nu am putut încărca jurnalul cu schimbări</string>
+    <!-- Blissify -->
+    <string name="blissify_settings_title">Blissify</string>
+    <string name="blissify_settings_summary">Blissify dispozitivul tău!</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">Stare SELinux</string>
+    <string name="selinux_status_disabled">Dezactivat</string>
+    <string name="selinux_status_permissive">Permisiv</string>
+    <string name="selinux_status_enforcing">Obligatoriu</string>
+    <!-- Torch Power button gestures -->
+    <string name="double_tap_power_flashlight_screen_title">Activează lanterna</string>
+    <string name="double_tap_power_flashlight_title">Lanternă cu butonul de pornire</string>
+    <string name="torch_power_button_gesture_none">Dezactivat</string>
+    <string name="torch_power_button_gesture_dt">Atingeți de două ori puterea pentru a comuta lanterna</string>
+    <string name="torch_power_button_gesture_lp">Apăsați lung butonul pornire pentru lanternă</string>
+    <!-- Ambient Music -->
+    <string name="pulse_on_new_tracks_title">Afișare muzică pe ecranul ambiental</string>
+    <string name="pulse_on_new_tracks_summary">Afişare ambientală atunci când este redată o piesă muzicală. Apăsaţi de două ori pe informaţiile piesei pentru a sări peste piesa următoare.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Afișare ecran ambiental când este redată o piesă nouă</string>
+    <!-- Ambient Wake Gestures -->
+    <string name="ambient_wake_gestures_title">Gesturi trezire ambientală</string>
+    <string name="ambient_wake_gestures_summary">Arată afișarea ambientală în locul losckreen-ului normal la trezirea gesturilor</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Procesele de fundal</string>
+    <!-- Home button wake -->
+    <string name="home_wake_button_title">Trezirea butonului Acasă</string>
+    <string name="home_wake_button_summary">Activează butonul acasă pentru a trezi ecranul</string>
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Afișare informații CPU</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Suprapunere de ecran ce afişează informația curentă a procesorului</string>
+</resources>
