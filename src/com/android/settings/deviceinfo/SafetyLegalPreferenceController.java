@@ -35,7 +35,7 @@ public class SafetyLegalPreferenceController extends AbstractPreferenceControlle
 
     @Override
     public boolean isAvailable() {
-        return !TextUtils.isEmpty(SystemProperties.get(PROPERTY_URL_SAFETYLEGAL));
+        return false;
     }
 
     @Override
