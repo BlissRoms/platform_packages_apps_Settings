@@ -40,7 +40,8 @@ public class SafetyInfoPreferenceController extends AbstractPreferenceController
 
     @Override
     public boolean isAvailable() {
-        return !mPackageManager.queryIntentActivities(INTENT_PROBE, 0).isEmpty();
+        //return !mPackageManager.queryIntentActivities(INTENT_PROBE, 0).isEmpty();
+        return false;
     }
 
     @Override
