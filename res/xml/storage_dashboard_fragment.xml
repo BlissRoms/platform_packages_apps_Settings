@@ -31,14 +31,14 @@
         android:title="@string/automatic_storage_manager_preference_title"
         android:icon="@drawable/ic_storage"
         android:order="1"
-        settings:allowDividerAbove="true"
-        settings:allowDividerBelow="true"
+        settings:allowDividerAbove="false"
+        settings:allowDividerBelow="false"
         settings:controller="com.android.settings.deviceinfo.storage.AutomaticStorageManagementSwitchPreferenceController" />
     <com.android.settings.deviceinfo.StorageItemPreference
         android:key="pref_photos_videos"
         android:title="@string/storage_photos_videos"
         android:icon="@drawable/ic_photo_library"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         android:order="2" />
     <com.android.settings.deviceinfo.StorageItemPreference
         android:key="pref_music_audio"

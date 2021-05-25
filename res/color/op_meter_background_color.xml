@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/op_control_donut_view_meter_background_color" android:alpha="0.06"/>
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <com.android.settings.widget.OPAdaptiveIconShapeDrawable android:height="@dimen/dashboard_tile_image_size" android:width="@dimen/dashboard_tile_image_size" android:color="@color/oneplus_homepage_icon_background"/>
+    </item>
+    <item android:gravity="center" android:height="@dimen/dashboard_tile_foreground_image_size" android:width="@dimen/dashboard_tile_foreground_image_size" android:drawable="@drawable/op_ic_homepage_wellbeing"/>
+</layer-list>

@@ -20,11 +20,11 @@
     <style name="Theme.Settings.Home" parent="Theme.Settings.HomeBase">
         <item name="colorPrimary">@*android:color/primary_device_default_settings</item>
         <item name="colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
-        <item name="android:colorBackground">?android:attr/colorPrimaryDark</item>
+        <item name="android:colorBackground">@color/homepage_background_dark</item>
     </style>
 
     <style name="ThemeOverlay.Settings.SearchBar" parent="Theme.Settings">
-        <item name="android:colorBackground">?android:attr/colorPrimaryDark</item>
+        <item name="android:colorBackground">@color/searchbar_background_dark</item>
         <item name="cardBackgroundColor">?android:attr/colorPrimary</item>
         <item name="android:colorControlNormal">?android:attr/colorAccent</item>
     </style>
