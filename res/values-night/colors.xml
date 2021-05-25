@@ -41,9 +41,14 @@
     <color name="gestures_setting_background_color">@android:color/black</color>
 
     <!-- Custom colors -->
-    <color name="card_view_bg">#1B1B1B</color>
+    <color name="card_view_bg">#ff202124</color>
     <color name="black">#FAFAFA</color>
     <color name="off_black">#90FAFAFA</color>
     <color name="tl_preference_divider_bg">#ff202124</color>
+
+    <!-- OnePlus-->
+    <color name="oneplus_homepage_icon_background">#000000</color>
+    <color name="oneplus_accent_color">@color/settingsHeaderColor</color>
+    <color name="settings_accent_color">@color/oneplus_accent_color</color>
 
 </resources>
