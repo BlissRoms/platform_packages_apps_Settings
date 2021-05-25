@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2020 The BlissRom Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Settings header -->
+    <dimen name="homepage_spacer_off_margin">@dimen/actionbar_size</dimen>
+    <dimen name="homepage_spacer_height">90dp</dimen>
+    <dimen name="homepage_spacer_margin">255dp</dimen>
+    <dimen name="homepage_spacer_height_base">200dp</dimen>
+    <dimen name="homepage_spacer_margin_base">255dp</dimen>
+    <dimen name="homepage_logo_size">50dp</dimen>
+    <dimen name="homepage_spacer_imageview_marginBottom">10dp</dimen>
+    <dimen name="homepage_spacer_title_marginTop">50dp</dimen>
+
+    <!-- OnePlus Control Margin Space-->
+    <dimen name="op_control_margin_space1">4.0dip</dimen>
+    <dimen name="op_control_margin_space2">8.0dip</dimen>
+    <dimen name="op_control_margin_space3">16.0dip</dimen>
+    <dimen name="op_control_margin_space4">20.0dip</dimen>
+    <dimen name="op_control_margin_space5">24.0dip</dimen>
+    <dimen name="op_control_margin_space6">32.0dip</dimen>
+    <dimen name="op_control_margin_space7">40.0dip</dimen>
+
+    <!-- OnePlus Control Margin Screen-->
+    <dimen name="op_control_margin_screen_bottom1">8.0dip</dimen>
+    <dimen name="op_control_margin_screen_bottom2">16.0dip</dimen>
+    <dimen name="op_control_margin_screen_bottom3">20.0dip</dimen>
+    <dimen name="op_control_margin_screen_left1">8.0dip</dimen>
+    <dimen name="op_control_margin_screen_left2">16.0dip</dimen>
+    <dimen name="op_control_margin_screen_left3">20.0dip</dimen>
+    <dimen name="op_control_margin_screen_right1">8.0dip</dimen>
+    <dimen name="op_control_margin_screen_right2">16.0dip</dimen>
+    <dimen name="op_control_margin_screen_right3">20.0dip</dimen>
+
+    <!-- OnePlus Control Radius -->
+    <dimen name="op_control_radius_r12">11.0dip</dimen>
+    <dimen name="op_control_radius_r16">16.0dip</dimen>
+    <dimen name="op_control_radius_r2">2.0dip</dimen>
+    <dimen name="op_control_radius_r32">32.0dip</dimen>
+    <dimen name="op_control_radius_r4">4.0dip</dimen>
+
+    <!-- OnePlus Control Shadow -->
+    <dimen name="op_control_shadow_z1">1.0dip</dimen>
+    <dimen name="op_control_shadow_z2">2.0dip</dimen>
+    <dimen name="op_control_shadow_z3">3.0dip</dimen>
+    <dimen name="op_control_shadow_z4">4.0dip</dimen>
+    <dimen name="op_control_shadow_z5">5.0dip</dimen>
+
+    <!-- OnePlus Control Margin List -->
+    <dimen name="op_control_margin_list_bottom1">10.0dip</dimen>
+    <dimen name="op_control_margin_list_bottom2">13.0dip</dimen>
+    <dimen name="op_control_margin_list_bottom3">15.0dip</dimen>
+    <dimen name="op_control_margin_list_bottom4">21.0dip</dimen>
+    <dimen name="op_control_margin_list_top1">9.0dip</dimen>
+    <dimen name="op_control_margin_list_top2">12.0dip</dimen>
+    <dimen name="op_control_margin_list_top3">15.0dip</dimen>
+    <dimen name="op_control_margin_list_top4">21.0dip</dimen>
+
+    <!-- OnePlus Control Avatar Size -->
+    <dimen name="op_control_avatar_size1">120.0dip</dimen>
+    <dimen name="op_control_avatar_size2">54.0dip</dimen>
+    <dimen name="op_control_avatar_size3">33.0dip</dimen>
+
+    <!-- OnePlus dashboard -->
+    <dimen name="dashboard_tile_image_size">36dp</dimen>
+    <dimen name="dashboard_tile_foreground_image_size">24dp</dimen>
+    <dimen name="op_control_icon_size_indicator">16.0dip</dimen>
+
+    <!-- OnePlus fonts -->
+    <dimen name="op_line_space_multiplier_h2">0.8</dimen>
+
+    <!-- Storage donut -->
+    <dimen name="oneplus_settings_storage_summary_donut_margin_top">22dp</dimen>
+    <dimen name="oneplus_settings_storage_summary_donut_padding_bottom">26dp</dimen>
+</resources>

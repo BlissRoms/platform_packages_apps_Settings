@@ -17,8 +17,10 @@
 package com.android.settings.deviceinfo.storage;
 
 import android.app.settings.SettingsEnums;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.storage.StorageManager;
 import android.util.AttributeSet;
 import android.view.View;
@@ -47,16 +49,14 @@ public class StorageSummaryDonutPreference extends Preference implements View.On
     public StorageSummaryDonutPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        setLayoutResource(R.layout.storage_summary_donut);
+        setLayoutResource(R.layout.op_storage_summary_donut);
         setEnabled(false);
     }
 
     public void setPercent(long usedBytes, long totalBytes) {
-        if (totalBytes == 0) {
-            return;
+        if (totalBytes != 0) {
+            mPercent = usedBytes / (double) totalBytes;
         }
-
-        mPercent = usedBytes / (double) totalBytes;
     }
 
     @Override
@@ -84,8 +84,16 @@ public class StorageSummaryDonutPreference extends Preference implements View.On
             metricsFeatureProvider.logClickedPreference(this,
                     getExtras().getInt(DashboardFragment.CATEGORY));
             metricsFeatureProvider.action(context, SettingsEnums.STORAGE_FREE_UP_SPACE_NOW);
-            final Intent intent = new Intent(StorageManager.ACTION_MANAGE_STORAGE);
-            context.startActivity(intent);
+            try {
+                Intent intent = new Intent(StorageManager.ACTION_MANAGE_STORAGE);
+                context.startActivity(intent);
+            } catch (ActivityNotFoundException e) {
+                // Launch an intent to the Play Store to install files go
+                String playURL = "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(playURL));
+                context.startActivity(i);
+            }
         }
     }
 }

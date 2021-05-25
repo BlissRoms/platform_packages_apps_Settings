@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/homepage_card_bg_middle" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/op_control_margin_screen_left2" android:layout_marginEnd="@dimen/op_control_margin_screen_right2">
+    <LinearLayout android:gravity="center_vertical" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/icon_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="18dp" android:layout_marginEnd="18dp">
+            <androidx.preference.internal.PreferenceImageView android:id="@android:id/icon" android:padding="1.5dp" android:layout_width="36dp" android:layout_height="36dp" app:maxHeight="@dimen/op_control_avatar_size3" app:maxWidth="@dimen/op_control_avatar_size3"/>
+        </FrameLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/op_control_margin_list_top2" android:layout_marginBottom="@dimen/op_control_margin_list_bottom2" android:layout_weight="1" android:layout_marginEnd="@dimen/op_control_margin_screen_right2">
+            <TextView android:textColor="@color/op_control_text_color_primary" android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/op_control_text_style_h6"/>
+            <TextView android:textColor="@color/op_control_text_color_secondary" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="4" android:layout_below="@android:id/title" android:layout_alignLeft="@android:id/title" android:layout_alignStart="@android:id/title" style="@style/op_control_text_style_body1"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

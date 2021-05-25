@@ -21,6 +21,7 @@
    <!-- DashBoard Bliss Colors -->
     <color name="dashboard_bliss_privacy">#65DAFF</color>
     <color name="dashboard_bliss_network">#9DDCFF</color>
+    <color name="dashboard_bliss_blissify">#00abec</color>
     <color name="dashboard_bliss_devices">#A6F87F</color>
     <color name="dashboard_bliss_apps">#EBAA9C</color>
     <color name="dashboard_bliss_info">#3BA1FF</color>
@@ -36,8 +37,41 @@
     <color name="dashboard_bliss_google">#8D83FF</color>
     <color name="dashboard_bliss_wellbeing">#5BF67D</color>
 
-    <color name="settingsHeaderColor">@*android:color/accent_device_default_light</color>
 
     <color name="op_control_text_color_primary">#ffffffff</color>
     <color name="op_control_text_color_secondary">#89ffffff</color>
+
+    <color name="settingsHeaderColor">@*android:color/accent_device_default_light</color>
+
+    <!-- OnePlus Dashboard -->
+    <color name="oneplus_homepage_icon_background">#ffffff</color>
+    <color name="oneplus_accent_color">@color/settingsHeaderColor</color>
+    <color name="settings_accent_color">@color/oneplus_accent_color</color>
+    <color name="oos_bg_of_card">#f1f1f1</color>
+    <color name="op_control_donut_view_meter_background_color">@*android:color/black</color>
+
+    <color name="homepage_background_dark">@*android:color/primary_dark_device_default_settings</color>
+    <color name="searchbar_background_dark">@*android:color/primary_dark_device_default_settings</color>
+
+    <!-- Settings Homepage Stupidity -->
+    <color name="oos2_homepage_background">#f7f7f7</color>
+    <color name="oos2_homepage_icon_background">#f7f7f7</color>
+    <color name="oos2_homepage_icon_about_device_color">#6971c7</color>
+    <color name="oos2_homepage_icon_accounts_color">#f1c542</color>
+    <color name="oos2_homepage_icon_app_color">#6a41b1</color>
+    <color name="oos2_homepage_icon_battery_color">#38946f</color>
+    <color name="oos2_homepage_icon_connected_device_color">#afcb3a</color>
+    <color name="oos2_homepage_icon_display_color">#ff9729</color>
+    <color name="oos2_homepage_icon_location_color">#ff9801</color>
+    <color name="oos2_homepage_icon_network_color">#0a78ff</color>
+    <color name="oos2_homepage_icon_privacy_color">#555dca</color>
+    <color name="oos2_homepage_icon_security_color">#d45046</color>
+    <color name="oos2_homepage_icon_sound_color">#3cbcc3</color>
+    <color name="oos2_homepage_icon_storage_color">#4f76d7</color>
+    <color name="oos2_homepage_icon_system_dashboard_color">#989898</color>
+    <color name="oos2_homepage_icon_theme_color">#f17979</color>
+    <color name="oos2_homepage_icon_tools_color">#e99092</color>
+    <color name="tl_preference_divider_bg">#f7f7f7</color>
+    <color name="oos2_homepage_icon_google_color">#4285f4</color>
+    <color name="oos2_homepage_icon_wellbeing_color">#f06292</color>
 </resources>

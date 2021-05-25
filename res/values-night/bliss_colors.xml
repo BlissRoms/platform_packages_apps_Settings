@@ -17,5 +17,11 @@
 
     <color name="op_control_text_color_primary">#ffffffff</color>
     <color name="op_control_text_color_secondary">#89ffffff</color>
+    <color name="oos_bg_of_card">@*android:color/material_grey_800</color>
+    <color name="op_control_donut_view_meter_background_color">@android:color/white</color>
 
+    <!-- Settings Homepage Stupidity -->
+    <color name="oos2_homepage_background">#ff000000</color>
+    <color name="oos2_homepage_icon_background">#ff202124</color>
+    <color name="tl_preference_divider_bg">#ff202124</color>
 </resources>
