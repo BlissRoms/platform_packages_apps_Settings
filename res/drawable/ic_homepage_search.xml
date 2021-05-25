@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Copyright (C) 2019 The Android Open Source Project
-
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-
        http://www.apache.org/licenses/LICENSE-2.0
-
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -23,5 +20,5 @@
         android:tint="?android:attr/colorAccent">
     <path
         android:fillColor="#FF000000"
-        android:pathData="M20.49,19l-5.73,-5.73C15.53,12.2 16,10.91 16,9.5C16,5.91 13.09,3 9.5,3S3,5.91 3,9.5C3,13.09 5.91,16 9.5,16c1.41,0 2.7,-0.47 3.77,-1.24L19,20.49L20.49,19zM5,9.5C5,7.01 7.01,5 9.5,5S14,7.01 14,9.5S11.99,14 9.5,14S5,11.99 5,9.5z"/>
+        android:pathData="M 4.5 4.5 C 5.302 3.703 6.254 3.071 7.301 2.642 C 8.348 2.213 9.469 1.995 10.6 2 C 12.88 2.011 15.068 2.908 16.7 4.5 C 18.231 6.039 19.124 8.102 19.198 10.271 C 19.272 12.441 18.522 14.56 17.1 16.2 L 21.8 21 C 21.883 21.062 21.945 21.149 21.976 21.248 C 22.008 21.347 22.008 21.453 21.976 21.552 C 21.945 21.651 21.883 21.738 21.8 21.8 C 21.753 21.862 21.693 21.913 21.624 21.947 C 21.554 21.982 21.478 22 21.4 22 L 21 21.8 L 16.2 17.1 C 14.56 18.522 12.441 19.272 10.271 19.198 C 8.102 19.124 6.039 18.231 4.5 16.7 C 2.908 15.068 2.011 12.88 2 10.6 C 1.995 9.469 2.213 8.348 2.642 7.301 C 3.071 6.254 3.703 5.302 4.5 4.5 Z M 5.3 15.8 C 6.693 17.185 8.581 17.961 10.545 17.958 C 12.509 17.955 14.394 17.172 15.783 15.783 C 17.172 14.394 17.955 12.509 17.958 10.545 C 17.961 8.581 17.185 6.693 15.8 5.3 C 15.114 4.624 14.302 4.091 13.41 3.731 C 12.517 3.37 11.562 3.19 10.6 3.2 C 8.63 3.196 6.732 3.948 5.3 5.3 C 3.95 6.714 3.195 8.595 3.195 10.55 C 3.195 12.505 3.95 14.386 5.3 15.8 Z"/>
 </vector>

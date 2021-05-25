@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:settings="http://schemas.android.com/apk/res-auto" 
+    android:gravity="center_vertical" 
+    android:orientation="horizontal" 
+    android:background="@drawable/contextual_card_bg" 
+    android:paddingTop="@dimen/op_control_margin_space6" 
+    android:paddingBottom="@dimen/oneplus_settings_storage_summary_donut_padding_bottom" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="@dimen/oneplus_settings_storage_summary_donut_margin_top" 
+    android:layout_marginBottom="@dimen/op_control_margin_space4" 
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd" 
+    android:layout_marginStart="@dimen/op_control_margin_screen_left2" 
+    android:layout_marginEnd="@dimen/op_control_margin_screen_right2">
+
+    <LinearLayout 
+        android:gravity="center_vertical" 
+        android:orientation="vertical" 
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content" 
+        android:layout_weight="1">
+
+        <TextView 
+            android:textColor="@color/op_control_text_color_primary" 
+            android:ellipsize="marquee" 
+            android:id="@android:id/title" 
+            android:fadingEdge="horizontal" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="-10dp" 
+            android:layout_marginBottom="-9dp" 
+            android:singleLine="true" 
+            android:includeFontPadding="false" 
+            android:textAlignment="viewStart" 
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart" 
+            style="@style/op_control_text_style_h2"/>
+
+        <TextView 
+            android:id="@android:id/summary" 
+            android:paddingTop="@dimen/op_control_margin_list_top1" 
+            android:paddingBottom="@dimen/op_control_margin_list_top4" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content" 
+            android:maxLines="10" 
+            android:textAlignment="viewStart" 
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart" 
+            style="@style/op_control_text_style_body1" />
+
+        <Button 
+            android:textColor="@color/settingsHeaderColor" 
+            android:id="@+id/deletion_helper_button" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="@string/storage_menu_free" 
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart" 
+            android:layout_below="@android:id/summary" 
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+    <com.android.settings.widget.DonutView 
+        android:gravity="right|center_vertical|center_horizontal|center|end" 
+        android:id="@+id/donut" 
+        android:layout_width="103dp" 
+        android:layout_height="103dp" 
+        android:minWidth="58dp" 
+        android:layout_marginStart="@dimen/op_control_margin_space3" 
+        settings:applyColorAccent="false" 
+        settings:meterBackgroundColor="@color/op_meter_background_color" 
+        settings:meterConsumedColor="?android:attr/colorAccent" 
+        settings:thickness="8dp"/>
+
+</LinearLayout>
