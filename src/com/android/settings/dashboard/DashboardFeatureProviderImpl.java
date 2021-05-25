@@ -85,6 +85,8 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
     private static final String PACKAGENAME_GMS = "com.google.android.gms";
     private static final String PACKAGENAME_WELLBEING = "com.google.android.apps.wellbeing";
 
+    private int mIconStyle;
+
     protected final Context mContext;
 
     private final MetricsFeatureProvider mMetricsFeatureProvider;
@@ -363,13 +365,32 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
         // Use preference context instead here when get icon from Tile, as we are using the context
         // to get the style to tint the icon. Using mContext here won't get the correct style.
         final Icon tileIcon = tile.getIcon(preference.getContext());
+        mIconStyle = Settings.System.getIntForUser(mContext.getContentResolver(),
+                    Settings.System.SETTINGS_DASHBOARD_ICONS, 0, UserHandle.USER_CURRENT);
         if (tileIcon != null) {
             Drawable iconDrawable = tileIcon.loadDrawable(preference.getContext());
-            if (tile.getPackageName().equals(PACKAGENAME_GMS)
+                if (mIconStyle == 1) {
+                if ("com.google.android.gms".equals(tile.getPackageName()) && "Google".equalsIgnoreCase(tile.getTitle(preference.getContext()).toString())) {
+                iconDrawable = preference.getContext().getDrawable(R.drawable.op_ic_homepage_google_settings);
+                preference.setLayoutResource(R.layout.op_home_preference_card_bottom);
+                } else if ("com.google.android.apps.wellbeing".equals(tile.getPackageName())) {
+                iconDrawable = preference.getContext().getDrawable(R.drawable.op_ic_homepage_wellbeing_settings);
+                preference.setLayoutResource(R.layout.op_home_preference_card_middle);
+                }
+                } else if (mIconStyle == 2) {
+                if (tile.getPackageName().equals(PACKAGENAME_GMS)
+                        && tile.getTitle(preference.getContext()).toString().equalsIgnoreCase("Google")) {
+                    iconDrawable = preference.getContext().getDrawable(R.drawable.ic_homepage_google_settings_oos2);
+                } else if (tile.getPackageName().equals(PACKAGENAME_WELLBEING)) {
+                    iconDrawable = preference.getContext().getDrawable(R.drawable.ic_homepage_wellbeing_settings_oos2);
+                }
+                } else if (mIconStyle == 3) {
+                if (tile.getPackageName().equals(PACKAGENAME_GMS)
                     && tile.getTitle(preference.getContext()).toString().equalsIgnoreCase("Google")) {
                 iconDrawable = preference.getContext().getDrawable(R.drawable.ic_homepage_google_settings);
             } else if (tile.getPackageName().equals(PACKAGENAME_WELLBEING)) {
                 iconDrawable = preference.getContext().getDrawable(R.drawable.ic_homepage_wellbeing_settings);
+            }
             } else if (forceRoundedIcon
                     && !TextUtils.equals(mContext.getPackageName(), tile.getPackageName())) {
                 iconDrawable = new AdaptiveIcon(mContext, iconDrawable);
