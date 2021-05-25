@@ -25,6 +25,7 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 
 import androidx.fragment.app.Fragment;
@@ -60,7 +61,18 @@ public class TopLevelSettings extends DashboardFragment implements
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.top_level_settings;
+        switch (mIconStyle) {
+           case 0:
+               return R.xml.top_level_settings_stylish;
+           case 1:
+               return R.xml.top_level_settings_oos;
+           case 2:
+               return R.xml.top_level_settings_oos2;
+           case 3:
+               return R.xml.top_level_settings_default;
+           default:
+               return R.xml.top_level_settings_stylish;
+        }
     }
 
     @Override
@@ -77,6 +89,7 @@ public class TopLevelSettings extends DashboardFragment implements
     public void onAttach(Context context) {
         super.onAttach(context);
         use(SupportPreferenceController.class).setActivity(getActivity());
+        setIconStyle(context);
     }
 
     @Override
@@ -209,4 +222,9 @@ public class TopLevelSettings extends DashboardFragment implements
                     return false;
                 }
             };
+
+    private void setIconStyle(Context context) {
+        mIconStyle = Settings.System.getIntForUser(context.getContentResolver(),
+                    Settings.System.SETTINGS_DASHBOARD_ICONS, 0, UserHandle.USER_CURRENT);
+    }
 }

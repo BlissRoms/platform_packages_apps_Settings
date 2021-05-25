@@ -60,6 +60,5 @@
         android:keyboardNavigationCluster="false"
         android:layout_height="wrap_content">
         <include layout="@layout/homepage_spacer"/>
-        <include layout="@layout/search_bar"/>
     </com.google.android.material.appbar.AppBarLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

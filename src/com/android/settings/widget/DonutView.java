@@ -122,18 +122,18 @@ public class DonutView extends View {
                 : Paint.BIDI_RTL;
 
         mTextPaint = new TextPaint();
-        mTextPaint.setColor(Utils.getColorAccentDefaultColor(getContext()));
+        mTextPaint.setColor(getResources().getColor(R.color.op_control_text_color_secondary));
         mTextPaint.setAntiAlias(true);
         mTextPaint.setTextSize(
-                resources.getDimension(R.dimen.storage_donut_view_label_text_size));
+                resources.getDimension(R.dimen.conversation_status_text_size));
         mTextPaint.setTextAlign(Paint.Align.CENTER);
         mTextPaint.setBidiFlags(bidiFlags);
 
         mBigNumberPaint = new TextPaint();
-        mBigNumberPaint.setColor(Utils.getColorAccentDefaultColor(getContext()));
+        mBigNumberPaint.setColor(getResources().getColor(R.color.op_control_text_color_primary));
         mBigNumberPaint.setAntiAlias(true);
         mBigNumberPaint.setTextSize(
-                resources.getDimension(R.dimen.storage_donut_view_percent_text_size));
+                resources.getDimension(R.dimen.conversation_message_text_size));
         mBigNumberPaint.setTypeface(Typeface.create(
                 context.getString(com.android.internal.R.string.config_headlineFontFamily),
                 Typeface.NORMAL));
