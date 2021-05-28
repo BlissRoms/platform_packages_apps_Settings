@@ -113,11 +113,6 @@
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController" />
 
-    <com.android.settings.display.FontDialogPreference
-        android:key="custom_font"
-        android:title="@string/font_picker_title"
-        android:persistent="false" />
-
     <Preference
         android:key="font_size"
         android:title="@string/title_font_size"

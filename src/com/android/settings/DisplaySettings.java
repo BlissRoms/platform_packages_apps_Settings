@@ -17,10 +17,7 @@
 package com.android.settings;
 
 import android.app.settings.SettingsEnums;
-import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 
 import com.android.settings.dashboard.DashboardFragment;
@@ -36,7 +33,6 @@ import com.android.settings.display.TapToWakePreferenceController;
 import com.android.settings.display.ThemePreferenceController;
 import com.android.settings.display.TimeoutPreferenceController;
 import com.android.settings.display.VrDisplayPreferenceController;
-import com.android.settings.display.FontPickerPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
@@ -50,19 +46,6 @@ public class DisplaySettings extends DashboardFragment {
     private static final String TAG = "DisplaySettings";
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
-
-    private IntentFilter mIntentFilter;
-    private static FontPickerPreferenceController mFontPickerPreference;
-
-    private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            String action = intent.getAction();
-            if (action.equals("com.android.server.ACTION_FONT_CHANGED")) {
-                mFontPickerPreference.stopProgress();
-            }
-        }
-    };
 
     @Override
     public int getMetricsCategory() {
@@ -82,23 +65,6 @@ public class DisplaySettings extends DashboardFragment {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        mIntentFilter = new IntentFilter();
-        mIntentFilter.addAction("com.android.server.ACTION_FONT_CHANGED");
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        final Context context = getActivity();
-        context.registerReceiver(mIntentReceiver, mIntentFilter);
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        final Context context = getActivity();
-        context.unregisterReceiver(mIntentReceiver);
-        mFontPickerPreference.stopProgress();
     }
 
     @Override
@@ -126,7 +92,6 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new ShowOperatorNamePreferenceController(context));
         controllers.add(new ThemePreferenceController(context));
         controllers.add(new BrightnessLevelPreferenceController(context, lifecycle));
-        controllers.add(mFontPickerPreference = new FontPickerPreferenceController(context, lifecycle));
         return controllers;
     }
 
