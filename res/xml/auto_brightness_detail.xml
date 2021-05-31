@@ -36,7 +36,7 @@
         settings:controller="com.android.settings.display.AutoBrightnessDetailPreferenceController"
         settings:useAdminDisabledSummary="true"
         settings:userRestriction="no_config_brightness"
-        settings:allowDividerAbove="true" />
+        settings:allowDividerAbove="false" />
 
     <com.android.settingslib.widget.FooterPreference
         android:key="auto_brightness_footer"

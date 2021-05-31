@@ -29,7 +29,7 @@
         android:key="notification_history"
         android:title="@string/notification_history"
         android:summary="@string/notification_history_summary"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:allowDividerBelow="false"
         android:order="2">
         <intent
