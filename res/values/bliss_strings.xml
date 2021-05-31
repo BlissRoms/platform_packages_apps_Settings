@@ -353,4 +353,7 @@
 
     <string name="wifi_tether_client_list_title">Client List</string>
     <string name="wifi_tether_client_list_summary">Manage clients connected to hotspot</string>
+
+    <!-- Battery saver -->
+    <string name="battery_saver_is_enabled">Battery saver is enabled</string>
 </resources>

@@ -164,6 +164,7 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.blissroms.blissify.Blissify;
+import com.blissroms.blissify.fragments.system.SleepMode;
 import com.android.settings.livedisplay.LiveDisplaySettings;
 import com.blissroms.blissify.fragments.lockscreen.OmniJawsSettings;
 
@@ -320,7 +321,8 @@ public class SettingsGateway {
             Blissify.class.getName(),
             RunningServices.class.getName(),
             LiveDisplaySettings.class.getName(),
-            OmniJawsSettings.class.getName()
+            OmniJawsSettings.class.getName(),
+            SleepMode.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -362,6 +364,7 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.BlissifySettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
-            Settings.OmniJawsSettingsActivity.class.getName()
+            Settings.OmniJawsSettingsActivity.class.getName(),
+            Settings.SleepModeActivity.class.getName(),
     };
 }

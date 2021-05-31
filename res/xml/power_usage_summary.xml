@@ -83,6 +83,12 @@
         android:key="battery_usage_category"
         android:title="@string/battery_usage_category_title"> 
 
+    <Preference
+        android:fragment="com.blissroms.blissify.fragments.system.BatteryTweaks"
+        android:key="battery_tweaks"
+        android:summary="@string/battery_tweaks_summary"
+        android:title="@string/battery_tweaks_title" />
+
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="last_full_charge"
         android:title="@string/battery_last_full_charge"
