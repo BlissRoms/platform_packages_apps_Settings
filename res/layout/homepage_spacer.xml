@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:textAppearance="@style/homepage_spacer_title_style"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/homepage_spacer_title_marginTop"
+        android:layout_marginTop="10dp"
         android:text="@string/settings_label" />
 
 </com.google.android.material.card.MaterialCardView>
