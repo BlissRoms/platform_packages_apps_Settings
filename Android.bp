@@ -110,6 +110,7 @@ android_library {
         "device_policy_aconfig_flags_lib",
         "kotlinx-coroutines-core",
         "kotlinx-coroutines-android",
+        "glide",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
@@ -165,4 +166,9 @@ android_library_import {
 filegroup {
     name: "Settings_proguard_flags",
     srcs: ["proguard.flags"],
+}
+
+android_library_import {
+    name: "glide",
+    aars: ["libs/glide-4.9.0.aar"],
 }
