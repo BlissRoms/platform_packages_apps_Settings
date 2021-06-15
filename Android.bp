@@ -134,6 +134,7 @@ android_library {
         "androidx.appsearch_appsearch-builtin-types",
         "com.android.extensions.appfunctions.impl",
         "device-state-schema",
+        "glide",
 
         // Lineage dependencies
         "org.lineageos.platform.internal",
@@ -216,4 +217,9 @@ android_library_import {
 filegroup {
     name: "Settings_proguard_flags",
     srcs: ["proguard.flags"],
+}
+
+android_library_import {
+    name: "glide",
+    aars: ["libs/glide-4.16.0.aar"],
 }
