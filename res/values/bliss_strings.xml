@@ -571,4 +571,8 @@
     <string name="cleartext_network_policy_title">Restrict cleartext network traffic</string>
     <string name="cleartext_network_policy_summary">Blocks all non-TLS network traffic. Requires Private DNS configuration. Note: Without explicit exemptions, apps that use cleartext traffic may not work</string>
 
+    <!-- App data usage Datura Firewall link -->
+    <string name="data_usage_app_datura_firewall">Datura Firewall</string>
+    <string name="data_usage_app_datura_firewall_summary">Firewall settings have been moved to the new Firewall app. Tap to open.</string>
+
 </resources>
