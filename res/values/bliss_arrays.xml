@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2022 BlissRoms Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Face Unlock -->
+    <string-array name="face_unlock_method_entries">
+        <item>@string/face_unlock_method_default</item>
+        <item>@string/face_unlock_method_swipe</item>
+    </string-array>
+
+    <string-array name="face_unlock_method_values">
+        <item>0</item>
+        <item>1</item>
+	</string-array>
+</resources>
