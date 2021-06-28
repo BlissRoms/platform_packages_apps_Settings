@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2020 BlissRoms Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Backup Transport selection settings menu and activity title -->
+    <string name="backup_transport_setting_label">Změnit poskytovatele zálohování</string>
+    <string name="backup_transport_title">Nastavit poskytovatele zálohování</string>
+    <!-- BlissRoms Version -->
+    <string name="bliss_version">Verze Bliss</string>
+    <string name="bliss_version_default">Neznámá</string>
+    <string name="keywords_bliss_version">Verze Bliss, bliss</string>
+    <string name="bliss_build_date">Datum sestavení</string>
+    <string name="bliss_build_default">Neznámá</string>
+    <string name="bliss_build_type">Stav sestavení</string>
+    <string name="bliss_device">Zařízení Bliss</string>
+    <!-- Bliss maintainer -->
+    <string name="maintainer">Správce</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Klepnutím zobrazíte informace</string>
+    <!-- Changelog -->
+    <string name="changelog_title">Seznam změn</string>
+    <string name="changelog_summary">Od poslední aktualizace</string>
+    <string name="changelog_error">Nelze načíst seznam změn</string>
+    <!-- Blissify -->
+    <string name="blissify_settings_title">Blissify</string>
+    <string name="blissify_settings_summary">Přizpůsobte vaše zařízení ve stylu Bliss!</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">Stav zabezpečení SELinux</string>
+    <string name="selinux_status_disabled">Vypnuto</string>
+    <string name="selinux_status_permissive">Mírný</string>
+    <string name="selinux_status_enforcing">Vynucený</string>
+    <!-- Torch Power button gestures -->
+    <string name="double_tap_power_flashlight_screen_title">Zapnout svítilnu</string>
+    <string name="double_tap_power_flashlight_title">Aktivace svítilny tlačítkem napájení při vypnuté obrazovce</string>
+    <string name="torch_power_button_gesture_none">Vypnuto</string>
+    <string name="torch_power_button_gesture_dt">Přepínat svítilnu dvojím stisknutím tlačítka napájení</string>
+    <string name="torch_power_button_gesture_lp">Dlouhým stisknutím tlačítka napájení přepínat svítilnu</string>
+    <!-- Ambient Music -->
+    <string name="pulse_on_new_tracks_title">Rozpoznávání okolní hudby</string>
+    <string name="pulse_on_new_tracks_summary">Zobrazí Ambientní displej při přehrávání nové hudební skladby. Dvojím poklepáním na informaci o skladbě přeskočíte na další skladbu.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Zobrazit Ambientní displej po spuštění nové hudební skladby</string>
+    <!-- Ambient Wake Gestures -->
+    <string name="ambient_wake_gestures_title">Gesta pro probuzení</string>
+    <string name="ambient_wake_gestures_summary">Zobrazit Ambientní displej namísto normální zamykací obrazovky při probuzení</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Procesy na pozadí</string>
+    <!-- Home button wake -->
+    <string name="home_wake_button_title">Probudit tlačítkem Domů</string>
+    <string name="home_wake_button_summary">Povolit tlačítko Domů pro probuzení obrazovky</string>
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Zobrazit využití CPU</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Překrytí obrazovky informacemi o aktuálním vytížení CPU</string>
+    <!-- Bliss Updater -->
+    <string name="bliss_updater_title">Aktualizace Bliss</string>
+    <string name="bliss_updater_summary">Zkontrolujte nejnovější verzi ROM</string>
+    <string name="keywords_bliss_updater">BlissOTA, aktualizace, OTA</string>
+    <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Odstranit existující sken obličeje a vytvořit nový</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Přeskenovat obličej</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Zámek obrazovky, otisk prstu, odemknutí obličejem</string>
+    <string name="face_redo_confirm_btn">Opakovat</string>
+    <string name="face_redo_warning_msg">Chcete odstranit stávající sken obličeje a vytvořit nový?</string>
+    <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Vyhledejte snímač otisků prstů na přední straně telefonu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Vyhledejte snímač otisků prstů na levé straně telefonu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Vyhledejte snímač otisků prstů na pravé straně telefonu.</string>
+    <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Vyhledejte snímač otisků prstů na přední straně zařízení.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Vyhledejte snímač otisků prstů na levé straně zařízení.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Vyhledejte snímač otisků prstů na pravé straně zařízení.</string>
+    <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Vyhledejte snímač otisků prstů na přední straně tabletu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Vyhledejte snímač otisků prstů na levé straně tabletu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Vyhledejte snímač otisků prstů na pravé straně tabletu.</string>
+    <!-- App Lock -->
+    <string name="applock_title">Zámek aplikací</string>
+    <string name="applock_locked">Uzamčeno</string>
+    <string name="applock_unlocked">Odemčeno</string>
+    <string name="applock_locked_apps">Uzamčené aplikace</string>
+    <string name="applock_unlocked_apps">Odemčené aplikace</string>
+    <string name="applock_lock_after_title">Uzamknout aplikaci po</string>
+    <string name="applock_lock_after_instantly">Okamžitě</string>
+    <string name="applock_lock_after_15_seconds">15 sekund</string>
+    <string name="applock_lock_after_screen_off">Vypnout obrazovku</string>
+    <string name="applock_lock_after_summary">Po zvoleném časovém limitu bude aplikace uzamčena</string>
+    <string name="applock_lock_after_instantly_summary">Po zavření bude aplikace okamžitě uzamčena</string>
+    <string name="applock_lock_after_15_seconds_summary">15 sekund po ukončení bude aplikace uzamčena</string>
+    <string name="applock_lock_after_screen_off_summary">Po vypnutí obrazovky bude aplikace uzamčena</string>
+    <string name="applock_notification_info">Obsah oznámení můžete zobrazit nebo skrýt pro jednotlivé aplikace kliknutím na ikonu oznámení zobrazenou v předvolbách každé zamčené aplikace</string>
+    <string name="applock_show_notif">Obsah oznámení je zobrazován</string>
+    <string name="applock_hide_notif">Obsah oznámení je skrýván</string>
+    <string name="applock_setup">Nastavit zámek aplikací</string>
+    <string name="applock_overlay_summary">Tato funkce není k dispozici, protože tato aplikace je uzamčena</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 aplikace uzamčena</item>
+        <item quantity="few">%d aplikace uzamčeny</item>
+        <item quantity="many">%d aplikací uzamčeno</item>
+        <item quantity="other">%d aplikací uzamčeno</item>
+    </plurals>
+    <string name="keywords_applock_settings">uzamknout aplikaci, uzamykání aplikace, uzamčení aplikace, zámek aplikací</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Povolit přístup k síti</string>
+    <string name="data_usage_app_restrict_all_summary">Zapnout využití sítě</string>
+    <string name="data_usage_app_restrict_mobile">Mobilní data</string>
+    <string name="data_usage_app_restrict_mobile_summary">Povolit používání mobilních dat</string>
+    <string name="data_usage_app_restrict_vpn">VPN data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Povolit používání VPN dat</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Povolit použití Wi\u2011Fi dat</string>
+    <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Hmatová odezva</string>
+    <string name="back_gesture_haptic_summary">Povolit efekt krátkého zavibrování při použití gesta „Zpět“</string>
+    <!-- Navbar length -->
+    <string name="navbar_length">Délka panelu gesta</string>
+    <string name="long_label">Dlouhý</string>
+    <string name="hidden_label">Skryté</string>
+    <!-- Navbar radius -->
+    <string name="navbar_radius">Poloměr panelu pro gesta</string>
+    <string name="small_label">1 dp</string>
+    <string name="big_label">4 dp</string>
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Kroky hlasitosti</string>
+    <string name="volume_steps_summary">Počet kroků hlasitosti</string>
+    <string name="volume_steps_alarm_title">Kroky hlasitosti: Budík</string>
+    <string name="volume_steps_dtmf_title">Kroky hlasitosti: DTMF</string>
+    <string name="volume_steps_music_title">Kroky hlasitosti: Hudba</string>
+    <string name="volume_steps_notification_title">Kroky hlasitosti: Oznámení</string>
+    <string name="volume_steps_ring_title">Kroky hlasitosti: Vyzvánění</string>
+    <string name="volume_steps_system_title">Kroky hlasitosti: Systémové zvuky</string>
+    <string name="volume_steps_voice_call_title">Kroky hlasitosti: Hlasové hovory</string>
+    <string name="volume_steps_reset">Resetovat</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">Písmo</string>
+    <string name="disable_fonts_installed_title">Výběr písma není k dispozici, aby se zamezilo konfliktům se Substratum. Pokud chcete použít výběr písma, odinstalujte Substratum.</string>
+    <string name="font_picker_progress">Aplikuji nové písmo\u2026</string>
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Chytré nabíjení</string>
+    <string name="smart_charging_summary">Nastavit maximální úroveň nabíjení</string>
+    <string name="smart_charging_switch_title">Použít Chytré nabíjení</string>
+    <string name="smart_charging_level_title">Úroveň ukončení</string>
+    <string name="smart_charging_resume_level_title">Úroveň spuštění</string>
+    <string name="smart_charging_reset_stats_title">Obnovit statistiky baterie</string>
+    <string name="smart_charging_reset_stats_summary">Obnoví statistiku baterie po dosažení úrovně nabití definované uživatelem</string>
+    <string name="smart_charging_footer">Chytré nabíjení vám umožní nastavit maximální úroveň nabíjení pro prodloužení životnosti baterie</string>
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Teplota baterie</string>
+    <!-- Battery health -->
+    <string name="battery_health_title">Zdraví baterie</string>
+    <string name="battery_health_summary">Sledujte zdraví baterie vašeho zařízení</string>
+    <string name="current_battery_capacity">Aktuální kapacita baterie</string>
+    <string name="current_battery_capacity_summary">Aktuální kapacita baterie změřená jádrem</string>
+    <string name="designed_battery_capacity">Výrobní kapacita baterie</string>
+    <string name="designed_battery_capacity_summary">Kapacita baterie navržená výrobcem</string>
+    <string name="battery_charge_cycles">Dokončené nabíjecí cykly</string>
+    <!-- Battery categorization -->
+    <string name="battery_saver_category_title">Spořič baterie</string>
+    <string name="smart_features_category_title">Chytré funkce</string>
+    <string name="battery_health_category_title">Zdraví baterie</string>
+    <string name="battery_usage_category_title">Využití baterie</string>
+    <!-- Smart cutoff -->
+    <string name="smart_cutoff_title">Chytré odpojení</string>
+    <string name="smart_cutoff_summary">Nastavit maximální teplotu</string>
+    <string name="smart_cutoff_switch_title">Použít Chytré odpojení</string>
+    <string name="smart_cutoff_level_title">Úroveň ukončení</string>
+    <string name="smart_cutoff_resume_level_title">Úroveň spuštění</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Zabránit náhodnému probuzení</string>
+    <string name="proximity_wake_summary">Před probuzení obrazovky zkontrolovat senzor přiblížení</string>
+    <!-- AoD on charge -->
+    <string name="doze_on_charge_title">Vždy zapnuto při nabíjení</string>
+    <string name="doze_on_charge_summary">Vždy zobrazovat Ambientní displej při nabíjení</string>
+    <!-- Volume panel on left switch -->
+    <string name="volume_panel_on_left_title">Panel hlasitosti vlevo</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Vynulovat statistiky</string>
+    <string name="battery_stats_message">Tímto obnovíte statistiky historie baterie. Chcete pokračovat?</string>
+</resources>
