@@ -39,6 +39,6 @@
     <bool name="config_showChargingCycles">false</bool>
 
     <!-- Smart Charging -->
-    <bool name="config_supportSmartFeatures">true</bool>
+    <bool name="config_supportSmartFeatures">false</bool>
 
 </resources>
