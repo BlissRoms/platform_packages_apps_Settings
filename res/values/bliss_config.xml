@@ -41,4 +41,6 @@
     <!-- Smart Charging -->
     <bool name="config_supportSmartFeatures">true</bool>
 
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage" translatable="false"></string>
 </resources>
