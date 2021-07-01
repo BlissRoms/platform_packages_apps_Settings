@@ -21,6 +21,8 @@
     android:key="top_level_settings"
     android:title="Settings">
 
+    <Preference android:layout="@layout/divider" android:order="-125"/>
+
     <Preference
         android:key="top_level_network"
         android:title="@string/network_dashboard_title"
