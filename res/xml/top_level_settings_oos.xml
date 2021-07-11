@@ -48,7 +48,7 @@
         android:title="@string/blissify_settings_title"
         android:summary="@string/blissify_settings_summary"
         android:layout="@layout/op_home_preference_card_top"
-        android:icon="@drawable/ic_homepage_blissify_oos"
+        android:icon="@drawable/op_ic_homepage_blissify"
         android:order="-100"
         android:fragment="com.blissroms.blissify.Blissify"/>
 
