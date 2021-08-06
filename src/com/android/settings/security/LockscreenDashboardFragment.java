@@ -26,6 +26,7 @@ import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController;
 import com.android.settings.display.AmbientDisplayNotificationsPreferenceController;
+import com.android.settings.display.AmbientDisplayCustomPreferenceController;
 import com.android.settings.display.PulseOnNewTracksPreferenceController;
 import com.android.settings.display.PulseOnNewTracksSoliPreferenceController;
 import com.android.settings.display.AmbientWakeGesturesPreferenceController;
@@ -98,6 +99,7 @@ public class LockscreenDashboardFragment extends DashboardFragment
         use(PulseOnNewTracksPreferenceController.class).setConfig(getConfig(context));
         use(PulseOnNewTracksSoliPreferenceController.class).setConfig(getConfig(context));
         use(AmbientWakeGesturesPreferenceController.class).setConfig(getConfig(context));
+        addPreferenceController(new AmbientDisplayCustomPreferenceController(context));
     }
 
     @Override
