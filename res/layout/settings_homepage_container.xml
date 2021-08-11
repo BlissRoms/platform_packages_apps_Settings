@@ -28,14 +28,13 @@
         android:id="@+id/main_content_scrollable_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="300dp"
         app:layout_behavior="com.android.settings.widget.FloatingAppBarScrollingViewBehavior">
 
         <LinearLayout
             android:id="@+id/homepage_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-	    android:layout_marginTop="48dp"
             android:orientation="vertical">
 
             <!--FrameLayout
