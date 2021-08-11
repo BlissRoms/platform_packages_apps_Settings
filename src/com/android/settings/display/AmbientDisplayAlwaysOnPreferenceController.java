@@ -69,8 +69,7 @@ public class AmbientDisplayAlwaysOnPreferenceController extends TogglePreference
 
     @Override
     public boolean isChecked() {
-        // not using getConfig().alwaysOnEnabled so we keep aod on charge unlinked from this
-        return getConfig().alwaysOnEnabledSetting(MY_USER);
+        return getConfig().alwaysOnEnabled(MY_USER);
     }
 
     @Override
