@@ -144,4 +144,9 @@
     <string name="hardware_keys_action_expand_qs_panel">Expand QS panel</string>
     <string name="hardware_keys_action_ringer_modes">Change ringer mode</string>
 
+    <!-- Gesture navbar length -->
+    <string name="gesture_navbar_length_title">Pill length</string>
+    <string name="short_label">Short</string>
+    <string name="long_label">Long</string>
+
 </resources>
