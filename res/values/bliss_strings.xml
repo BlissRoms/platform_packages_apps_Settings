@@ -24,6 +24,7 @@
     <string name="bliss_build_default">Unknown</string>
     <string name="bliss_build_type">Build status</string>
     <string name="bliss_device">Bliss device</string>
+    <string name="bliss_codename">Bliss Codename</string>
 
     <!-- String for removal of sensitive info on about, depending on tap -->
     <string name="device_info_protected_single_press">Tap to show info</string>
