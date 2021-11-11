@@ -30,6 +30,14 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.bliss.BlissVersionPreferenceController"/>
 
+    <!-- Bliss Codename -->
+    <Preference
+        android:key="bliss_codename"
+        android:title="@string/bliss_codename"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.bliss.BlissCodenamePreferenceController"/>
+
     <!-- Bliss Device -->
     <Preference
         android:key="bliss_device"
