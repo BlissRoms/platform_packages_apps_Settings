@@ -161,6 +161,13 @@
             android:summary="@string/wake_when_plugged_or_unplugged_summary"
             android:defaultValue="true" />
 
+        <com.bliss.support.preferences.SecureSettingSwitchPreference
+            android:key="show_combined_status_bar_signal_icons"
+            android:title="@string/combined_status_bar_signal_icons"
+            android:summary="@string/combined_status_bar_signal_icons_summary"
+            settings:controller="com.android.settings.display.CombinedSignalIconsPreferenceController"
+            android:defaultValue="false" />
+
         <SwitchPreference
             android:key="home_wake_button"
             android:title="@string/home_wake_button_title"
