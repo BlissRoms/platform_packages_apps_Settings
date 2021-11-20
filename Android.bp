@@ -116,6 +116,7 @@ android_library {
         "kotlinx-coroutines-core",
         "kotlinx-coroutines-android",
         "glide",
+	"VendorSupport-preference",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
