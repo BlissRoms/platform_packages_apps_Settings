@@ -176,4 +176,9 @@
     <string name="prevent_ringing_option_cycle">Cycle through modes</string>
     <string name="prevent_ringing_option_cycle_summary">On (cycle through modes)</string>
 
+    <!-- Fullscreen gestures -->
+    <string name="other_controls_title">Other controls</string>
+    <string name="fullscreen_gestures_title">Fullscreen gestures</string>
+    <string name="fullscreen_gestures_summary">Hide navbar pill and keyboard space</string>
+
 </resources>
