@@ -27,7 +27,6 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import com.airbnb.lottie.LottieAnimationView;
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.biometrics.BiometricEnrollBase;
@@ -88,13 +87,6 @@ public class FingerprintEnrollFindSensor extends BiometricEnrollBase implements
                     .setTheme(R.style.SudGlifButton_Primary)
                     .build()
             );
-
-            LottieAnimationView lottieAnimationView = findViewById(R.id.illustration_lottie);
-            AccessibilityManager am = getSystemService(AccessibilityManager.class);
-            if (am.isEnabled()) {
-                lottieAnimationView.setAnimation(R.raw.udfps_edu_a11y_lottie);
-            }
-
         } else {
             setHeaderText(R.string.security_settings_fingerprint_enroll_find_sensor_title);
 
