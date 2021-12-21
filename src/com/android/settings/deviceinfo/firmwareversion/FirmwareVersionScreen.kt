@@ -74,7 +74,6 @@ open class FirmwareVersionScreen : PreferenceScreenMixin, PreferenceSummaryProvi
             +AboutDeviceNamePreference()
             +FirmwareVersionDetailPreference()
             +SecurityPatchLevelPreference()
-            +MainlineModuleVersionPreference()
             +BasebandVersionPreference()
             +KernelVersionPreference()
             +SelinuxStatusPreference()
