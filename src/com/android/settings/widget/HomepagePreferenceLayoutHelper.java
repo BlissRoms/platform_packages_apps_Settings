@@ -40,43 +40,21 @@ public class HomepagePreferenceLayoutHelper {
     }
 
     public HomepagePreferenceLayoutHelper(Preference preference) {
-        preference.setLayoutResource(
-                Flags.homepageRevamp()
-                        ? R.layout.homepage_preference_v2
-                        : R.layout.homepage_preference);
+       /** empty function */
     }
 
     /** Sets whether the icon should be visible */
     public void setIconVisible(boolean visible) {
-        mIconVisible = visible;
-        if (mIcon != null) {
-            mIcon.setVisibility(visible ? View.VISIBLE : View.GONE);
-        }
     }
 
     /** Sets the icon padding start */
     public void setIconPaddingStart(int paddingStart) {
-        mIconPaddingStart = paddingStart;
-        if (mIcon != null && paddingStart >= 0) {
-            mIcon.setPaddingRelative(paddingStart, mIcon.getPaddingTop(), mIcon.getPaddingEnd(),
-                    mIcon.getPaddingBottom());
-        }
     }
 
     /** Sets the text padding start */
     public void setTextPaddingStart(int paddingStart) {
-        mTextPaddingStart = paddingStart;
-        if (mText != null && paddingStart >= 0) {
-            mText.setPaddingRelative(paddingStart, mText.getPaddingTop(), mText.getPaddingEnd(),
-                    mText.getPaddingBottom());
-        }
     }
 
     void onBindViewHolder(PreferenceViewHolder holder) {
-        mIcon = holder.findViewById(R.id.icon_frame);
-        mText = holder.findViewById(R.id.text_frame);
-        setIconVisible(mIconVisible);
-        setIconPaddingStart(mIconPaddingStart);
-        setTextPaddingStart(mTextPaddingStart);
     }
 }

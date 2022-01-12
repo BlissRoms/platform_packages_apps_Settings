@@ -72,7 +72,7 @@ public class TopLevelWallpaperPreferenceController extends BasePreferenceControl
 
     public String getTitle() {
         return mContext.getString(areStylesAvailable()
-                ? R.string.style_and_wallpaper_settings_title : R.string.wallpaper_settings_title);
+                ? R.string.wallpaper_settings_title : R.string.wallpaper_settings_title);
     }
 
     public ComponentName getComponentName() {

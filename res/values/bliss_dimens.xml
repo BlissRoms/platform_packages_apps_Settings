@@ -12,4 +12,12 @@
 
     <dimen name="package_list_padding_top">16dp</dimen>
 
+    <!-- Cards -->
+    <dimen name="bliss_cardview_padding">16dp</dimen>
+    <dimen name="bliss_top_icn">42dp</dimen>
+    <dimen name="bliss_top_icn_max">52.5dp</dimen>
+    <dimen name="bliss_cardview_margin_list">16dip</dimen>
+    <dimen name="bliss_pref_vert">5.5dp</dimen>
+    <dimen name="bliss_card_radius">32dp</dimen>
+
 </resources>

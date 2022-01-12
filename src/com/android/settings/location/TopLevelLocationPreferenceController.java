@@ -49,19 +49,6 @@ public class TopLevelLocationPreferenceController extends BasePreferenceControll
         return AVAILABLE;
     }
 
-    @Override
-    public CharSequence getSummary() {
-        if (mLocationManager.isLocationEnabled()) {
-            if (sSummary == null) {
-                sSummary = mContext.getString(
-                        R.string.location_settings_loading_app_permission_stats);
-            }
-            return sSummary;
-        } else {
-            return mContext.getString(R.string.location_settings_summary_location_off);
-        }
-    }
-
     @VisibleForTesting
     void setLocationAppCount(int numApps) {
         sSummary = StringUtil.getIcuPluralsString(mContext, numApps,

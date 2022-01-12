@@ -20,7 +20,7 @@
     <item>
         <shape android:shape="oval">
             <solid
-                android:color="@color/homepage_location_background"/>
+                android:color="@color/homepage_icon_bg"/>
             <size
                 android:width="@android:dimen/app_icon_size"
                 android:height="@android:dimen/app_icon_size"/>
@@ -32,5 +32,6 @@
         android:height="@dimen/dashboard_tile_foreground_image_size"
         android:start="@dimen/preference_icon_foreground_image_inset"
         android:top="@dimen/preference_icon_foreground_image_inset"
-        android:drawable="@drawable/ic_settings_location"/>
+        android:drawable="@drawable/ic_settings_location"
+        android:tint="@color/homepage_subicon_bg"/>
 </layer-list>

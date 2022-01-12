@@ -167,7 +167,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    private void initHeader() {
+   private void initHeader() {
         // TODO: Migrate into its own controller.
         final LayoutPreference headerPreference =
                 getPreferenceScreen().findPreference(KEY_MY_DEVICE_INFO_HEADER);

@@ -15,4 +15,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <color name="bliss_crd_bg">@android:color/system_neutral1_0</color>
+    <color name="scrimCol">#000000</color>
+    <color name="textCol">#000000</color>
+
 </resources>

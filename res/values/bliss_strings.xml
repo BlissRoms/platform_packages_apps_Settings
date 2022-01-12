@@ -615,4 +615,7 @@
     <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
     <string name="battery_maximum_capacity_not_available" translatable="false">@string/battery_cycle_count_not_available</string>
 
+    <!-- Home -->
+    <string name="wellbeing">Digital Wellbeing</string>
+
 </resources>

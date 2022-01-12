@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/bliss_cardview_padding"
+    android:layout_marginBottom="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginVertical="@dimen/bliss_pref_vert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@id/icon_frame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp">
+
+            <androidx.preference.internal.PreferenceImageView
+                android:id="@android:id/icon"
+                android:padding="0dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:maxHeight="0dp"
+                app:maxWidth="0dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bliss_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp">
+
+            <androidx.preference.internal.PreferenceImageView
+                android:id="@+id/bliss_icon"
+                android:padding="1.5dip"
+                android:layout_width="@dimen/bliss_top_icn"
+                android:layout_height="@dimen/bliss_top_icn"
+                app:maxHeight="@dimen/bliss_top_icn_max"
+                android:src="@drawable/ic_homepage_google"
+                app:maxWidth="@dimen/bliss_top_icn_max" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bliss_cardview_margin_list"
+            android:layout_marginBottom="@dimen/bliss_cardview_margin_list"
+            android:layout_weight="1.0"
+            android:layout_marginEnd="@dimen/bliss_cardview_padding">
+            <TextView
+                android:ellipsize="marquee"
+                android:id="@android:id/title"
+                android:fadingEdge="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                style="@style/bliss_cardview_text_primary" />
+
+            <TextView
+                android:id="@android:id/summary"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:layout_marginTop="2.0dip"
+                android:maxLines="4"
+                android:layout_below="@android:id/title"
+                android:layout_alignLeft="@android:id/title"
+                android:layout_alignStart="@android:id/title" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minWidth="64dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="99dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bliss_chevron_right" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

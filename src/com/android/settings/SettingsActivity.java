@@ -125,6 +125,7 @@ public class SettingsActivity extends SettingsBaseActivity
     // at all by setting it to null
     protected static final String EXTRA_PREFS_SET_NEXT_TEXT = "extra_prefs_set_next_text";
     protected static final String EXTRA_PREFS_SET_BACK_TEXT = "extra_prefs_set_back_text";
+    protected static final String EXTRA_PREFS_SET_SKIP_TEXT = "extra_prefs_set_skip_text";
 
     /**
      * When starting this activity and using {@link #EXTRA_SHOW_FRAGMENT},
@@ -372,6 +373,12 @@ public class SettingsActivity extends SettingsBaseActivity
                 }
                 if (intent.getBooleanExtra(EXTRA_PREFS_SHOW_SKIP, false)) {
                     skipButton.setVisibility(View.VISIBLE);
+                }
+                if (intent.hasExtra(EXTRA_PREFS_SET_SKIP_TEXT)) {
+                    String buttonText = intent.getStringExtra(EXTRA_PREFS_SET_SKIP_TEXT);
+                    if (!TextUtils.isEmpty(buttonText)) {
+                        skipButton.setText(buttonText);
+                    }
                 }
             }
         }

@@ -63,8 +63,6 @@ public class TopLevelBatteryPreferenceController extends BasePreferenceControlle
                                 Log.d(TAG, "getBatteryInfo: " + info);
                                 mBatteryInfo = info;
                                 updateState(mPreference);
-                                // Update the preference summary text to the latest state.
-                                setSummaryAsync(info);
                             },
                             true /* shortString */);
                 });
@@ -96,102 +94,10 @@ public class TopLevelBatteryPreferenceController extends BasePreferenceControlle
         mBatteryBroadcastReceiver.unRegister();
     }
 
-    @Override
-    public CharSequence getSummary() {
-        return getSummary(true /* batteryStatusUpdate */);
-    }
-
-    private CharSequence getSummary(boolean batteryStatusUpdate) {
-        // Display help message if battery is not present.
-        if (!mIsBatteryPresent) {
-            return mContext.getText(R.string.battery_missing_message);
-        }
-        return getDashboardLabel(mContext, mBatteryInfo, batteryStatusUpdate);
-    }
-
-    protected CharSequence getDashboardLabel(
-            Context context, BatteryInfo info, boolean batteryStatusUpdate) {
-        if (info == null || context == null) {
-            return null;
-        }
-        Log.d(
-                TAG,
-                "getDashboardLabel: "
-                        + mBatteryStatusLabel
-                        + " batteryStatusUpdate="
-                        + batteryStatusUpdate);
-
-        if (batteryStatusUpdate) {
-            setSummaryAsync(info);
-        }
-        return mBatteryStatusLabel == null ? generateLabel(info) : mBatteryStatusLabel;
-    }
-
-    private void setSummaryAsync(BatteryInfo info) {
-        ThreadUtils.postOnBackgroundThread(
-                () -> {
-                    // Return false if built-in status should be used, will use
-                    // updateBatteryStatus()
-                    // method to inject the customized battery status label.
-                    final boolean triggerBatteryStatusUpdate =
-                            mBatteryStatusFeatureProvider.triggerBatteryStatusUpdate(this, info);
-                    ThreadUtils.postOnMainThread(
-                            () -> {
-                                if (!triggerBatteryStatusUpdate) {
-                                    mBatteryStatusLabel = null; // will generateLabel()
-                                }
-                                mPreference.setSummary(
-                                        mBatteryStatusLabel == null
-                                                ? generateLabel(info)
-                                                : mBatteryStatusLabel);
-                            });
-                });
-    }
-
-    private CharSequence generateLabel(BatteryInfo info) {
-        if (Utils.containsIncompatibleChargers(mContext, TAG)) {
-            return mContext.getString(
-                    com.android.settingslib.R.string.power_incompatible_charging_settings_home_page,
-                    info.batteryPercentString);
-        }
-        if (BatteryUtils.isBatteryDefenderOn(info)) {
-            return mContext.getString(
-                    com.android.settingslib.R.string.power_charging_on_hold_settings_home_page,
-                    info.batteryPercentString);
-        }
-        final BatterySettingsFeatureProvider featureProvider =
-                FeatureFactory.getFeatureFactory().getBatterySettingsFeatureProvider();
-        if (info.chargeLabel != null && featureProvider.isChargingOptimizationMode(mContext)) {
-            return info.chargeLabel;
-        }
-        if (info.batteryStatus == BatteryManager.BATTERY_STATUS_NOT_CHARGING) {
-            // Present status only if no remaining time or status anomalous
-            return info.statusLabel;
-        } else if (!info.discharging && info.chargeLabel != null) {
-            return info.chargeLabel;
-        } else if (info.remainingLabel == null) {
-            return info.batteryPercentString;
-        } else {
-            return mContext.getString(
-                    com.android.settingslib.R.string.power_remaining_settings_home_page,
-                    info.batteryPercentString,
-                    info.remainingLabel);
-        }
-    }
-
     /** Callback which receives text for the label. */
     @Override
     public void updateBatteryStatus(String label, BatteryInfo info) {
-        mBatteryStatusLabel = label; // Null if adaptive charging is not active
-        if (mPreference == null) {
-            return;
-        }
-        // Do not triggerBatteryStatusUpdate() here to cause infinite loop
-        final CharSequence summary = getSummary(false /* batteryStatusUpdate */);
-        if (summary != null) {
-            mPreference.setSummary(summary);
-        }
-        Log.d(TAG, "updateBatteryStatus: " + label + " summary: " + summary);
+        /* Gaming ROM fr */
     }
 
     @VisibleForTesting

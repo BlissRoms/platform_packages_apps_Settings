@@ -74,6 +74,7 @@ public class DashboardFragmentRegistry {
 
     static {
         PARENT_TO_CATEGORY_KEY_MAP = new ArrayMap<>();
+        // Actual homepage
         PARENT_TO_CATEGORY_KEY_MAP.put(TopLevelSettings.class.getName(),
                 CategoryKey.CATEGORY_HOMEPAGE);
         PARENT_TO_CATEGORY_KEY_MAP.put(
