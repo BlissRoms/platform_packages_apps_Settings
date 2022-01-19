@@ -171,7 +171,8 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import org.blissroms.blissify.Blissify;
- 
+import org.blissroms.blissify.fragments.HeadsUpSettings;
+
 public class SettingsGateway {
 
     /**
@@ -330,7 +331,8 @@ public class SettingsGateway {
             NetworkSelectSettings.class.getName(),
             AlarmsAndRemindersDetails.class.getName(),
             MediaManagementAppsDetails.class.getName(),
-            Blissify.class.getName()
+            Blissify.class.getName(),
+            HeadsUpSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -372,5 +374,6 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.BlissifySettingsActivity.class.getName(),
+            Settings.HeadsUpSettingsActivity.class.getName(),
     };
 }
