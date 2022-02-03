@@ -24,4 +24,7 @@
 
     <!-- Whether to show Touch Gestures Settings -->
     <bool name="config_show_touch_gestures_settings">true</bool>
+
+    <!-- Indicates whether device has a front facing fingerprint sensor (not udfps). -->
+    <bool name="config_is_front_facing_fps" translatable="false">false</bool>
 </resources>
