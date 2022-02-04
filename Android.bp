@@ -45,6 +45,8 @@ android_library {
     ],
 
     srcs: ["src/**/*.java", 
+           "src/**/*.kt",
+           "Blissify/src/**/*.kt",
         "Blissify/src/**/*.java"],
 
     aaptflags: ["--extra-packages org.blissroms.blissify"],
@@ -61,7 +63,9 @@ android_library {
         "androidx.core_core",
         "androidx.appcompat_appcompat",
         "androidx.cardview_cardview",
+        "androidx.fragment_fragment-ktx",
         "androidx.preference_preference",
+        "androidx.preference_preference-ktx",
         "androidx.recyclerview_recyclerview",
         "com.google.android.material_material",
         "setupcompat",
