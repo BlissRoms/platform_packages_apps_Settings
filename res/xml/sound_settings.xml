@@ -248,4 +248,10 @@
         android:fragment="com.android.settings.notification.SoundWorkSettings"
         android:order="100"
         settings:controller="com.android.settings.notification.WorkSoundsPreferenceController"/>
+
+    <com.bliss.support.preferences.SystemSettingSwitchPreference
+            android:key="app_volume"
+            android:title="@string/app_volume_title"
+            android:summary="@string/app_volume_summary"
+            android:defaultValue="true" />
 </PreferenceScreen>
