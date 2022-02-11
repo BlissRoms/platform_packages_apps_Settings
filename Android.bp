@@ -86,6 +86,7 @@ android_library {
         "lottie",
         "glide",
         "VendorSupport-preference",
+        "faceunlock_framework",
     ],
 
     libs: [
