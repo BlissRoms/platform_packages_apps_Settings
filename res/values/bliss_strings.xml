@@ -214,4 +214,8 @@
     <string name="button_settings_activity_title">3-Button Navigation Settings</string>
     <string name="navigation_bar_inverse_title">Inverse Layout</string>
     <string name="navigation_bar_inverse_summary">Swipe positions between back and recents</string>
+
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Always on when charging</string>
+    <string name="doze_on_charge_summary">Show doze screen all the time when charging</string>
 </resources>
