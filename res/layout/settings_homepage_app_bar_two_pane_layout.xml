@@ -29,9 +29,10 @@
 
     <ImageView
         android:id="@+id/account_avatar_two_pane_version"
-        android:layout_width="@dimen/avatar_length"
-        android:layout_height="@dimen/avatar_length"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
         android:contentDescription="@string/search_bar_account_avatar_content_description"/>
 
 </LinearLayout>
