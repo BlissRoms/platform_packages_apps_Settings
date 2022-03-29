@@ -14,5 +14,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
+     <color name="homepage_blaze_background">#536dfe</color>
+     <color name="user_crd_bg">@android:color/system_neutral1_0</color>
 </resources>
