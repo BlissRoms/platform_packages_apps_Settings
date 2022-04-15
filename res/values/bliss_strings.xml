@@ -62,4 +62,11 @@
     <!-- Volume button music control -->
     <string name="volume_button_music_control_title">Playback control</string>
     <string name="volume_button_music_control_summary">When the screen is off, long-pressing volume keys will skip music tracks</string>
+
+    <!-- Package details -->
+    <string name="package_details_group_title">Package details</string>
+    <string name="package_name">Package name</string>
+    <string name="package_version">Package version</string>
+    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+
 </resources>
