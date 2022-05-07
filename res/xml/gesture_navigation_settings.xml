@@ -62,5 +62,22 @@
         android:title="@string/back_sensitivity_dialog_message"
         android:selectable="false"
         settings:searchable="false"/>
+
+    <PreferenceCategory
+        android:title="@string/navbar_category">
+
+        <com.bliss.support.preferences.SecureSettingSwitchPreference
+            android:key="navigation_bar_hint"
+            android:title="@string/hide_navbar_gesture_bar_title"
+            android:summary="@string/hide_navbar_gesture_bar_summary"
+            android:defaultValue="false" />
+
+        <com.bliss.support.preferences.SecureSettingSwitchPreference
+            android:key="keyboard_no_navigation_bar"
+            android:title="@string/keyboard_no_navigation_title"
+            android:summary="@string/keyboard_no_navigation_summary"
+            android:defaultValue="false"
+            android:dependency="navigation_bar_hint" />
+    </PreferenceCategory>
 </PreferenceScreen>
 
