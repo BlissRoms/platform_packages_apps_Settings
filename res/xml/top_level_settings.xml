@@ -50,7 +50,7 @@
         android:summary="@string/app_and_notification_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_apps"/>
 
-    <Preference
+    <com.android.settings.widget.HomepagePreference
         android:fragment="org.blissroms.blissify.Blissify"
         android:icon="@drawable/ic_dashboard_blissify"
         android:key="top_level_blissify_settings"
