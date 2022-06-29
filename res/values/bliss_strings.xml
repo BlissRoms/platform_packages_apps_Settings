@@ -292,4 +292,9 @@
     <string name="data_usage_app_restrict_background_all">Background network access</string>
     <!-- Summary message for checkbox that restricts background network access of a specific application. [CHAR LIMIT=NONE] -->
     <string name="data_usage_app_restrict_background_all_summary">Enable network usage in the background</string>
+
+    <!-- Fingerprint wake-and-unlock -->
+    <string name="fingerprint_wake_unlock_title">Touch fingerprint to unlock</string>
+    <string name="fingerprint_wake_unlock_touch">Listens for events while the screen is off</string>
+    <string name="fingerprint_wake_unlock_press">Only listens for events once the screen is on</string>
 </resources>
