@@ -218,4 +218,16 @@
 
     <!-- Running services - Background processes tab -->
     <string name="background_processes_settings_title">Background processes</string>
+
+    <!-- Model and Hardware -->
+    <string name="bliss_processor_title">Processor</string>
+    <string name="bliss_storage_code_title">Storage</string>
+    <string name="bliss_battery_type_title">Battery</string>
+    <string name="bliss_screen_title">Screen</string>
+    <string name="net_info">Network</string>
+    <string name="mod_info">@string/model_info</string> 
+    <string name="id_info">Identifiers</string>
+    <string name="model_summary">Model, phone number, IMEI, etc</string>
+    <string name="model_name">Device status</string>
+    <string name="legal_summary">Licenses and legal</string>
 </resources>
