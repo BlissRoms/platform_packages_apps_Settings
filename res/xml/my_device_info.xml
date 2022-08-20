@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Copyright (C) 2018 The Android Open Source Project
-
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-
        http://www.apache.org/licenses/LICENSE-2.0
-
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -15,207 +12,128 @@
   limitations under the License.
   -->
 
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
-    <PreferenceCategory
-        android:key="basic_info_category"
-        android:selectable="false"
-        android:title="@string/my_device_info_basic_info_category_title">
+    <com.android.settingslib.widget.LayoutPreference
+    android:key="bliss_info"
+    android:layout="@layout/about_phone_info"
+    android:selectable="false" />
 
-        <!-- Device name -->
-        <com.android.settings.widget.ValidatedEditTextPreference
-            android:key="device_name"
-            android:order="1"
-            android:title="@string/my_device_info_device_name_preference_title"
-            android:summary="@string/summary_placeholder"
-            settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
-            settings:enableCopying="true"/>
 
-        <!-- Account name -->
-        <Preference
-            android:key="branded_account"
-            android:order="2"
-            android:title="@string/my_device_info_account_preference_title"
-            android:summary="@string/summary_placeholder"
-            settings:enableCopying="true"
-            settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
+    <!-- Top category -->
+    <!-- Device name -->
+    <com.android.settings.widget.ValidatedEditTextPreference
+        android:icon="@drawable/ic_settings_display_acc"
+        android:key="device_name"
+        android:summary="@string/summary_placeholder"
+        android:title="@string/my_device_info_device_name_preference_title"
+        settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
+        settings:enableCopying="true"
+        settings:layout="@layout/top_level_preference_top" />
 
-        <!-- Phone number
-        <Preference
-        <com.android.settings.deviceinfo.PhoneNumberSummaryPreference
-            android:key="phone_number"
-            android:order="3"
-            android:title="@string/status_number"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:isPreferenceVisible="@bool/config_show_sim_info"
-            settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
-            settings:enableCopying="true"/>-->
-    </PreferenceCategory>
+    <!-- Build number -->
+    <Preference
+        android:icon="@drawable/ic_build_acc"
+        android:key="build_number"
+        android:summary="@string/summary_placeholder"
+        android:title="@string/build_number"
+        settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"
+        settings:enableCopying="true"
+        settings:layout="@layout/top_level_preference_middle" />
 
-    <!--PreferenceCategory
-        android:title="@string/my_device_info_legal_category_title"-->
+    <!-- Model & hardware -->
+    <Preference
+        android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
+        android:icon="@drawable/ic_settings_system_dashboard_acc"
+        android:key="device_model"
+        android:summary="@string/model_summary"
+        android:title="@string/model_name"
+        settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"
+        settings:enableCopying="true"
+        settings:keywords="@string/keywords_model_and_hardware"
+        settings:layout="@layout/top_level_preference_middle" />
 
-        <!-- Legal information --> 
-        <!--Preference
-            android:key="legal_container"
-            android:order="15"
-            android:title="@string/legal_information"
-            android:fragment="com.android.settings.LegalSettings"/-->
-
-        <!-- Regulatory labels-->
-        <!--Preference
-            android:key="regulatory_info"
-            android:order="16"
-            android:title="@string/regulatory_labels">
-            <intent android:action="android.settings.SHOW_REGULATORY_INFO"/-->
-        <!--/Preference-->
-
-        <!-- Safety & regulatory manual -->
-        <!--Preference
-            android:key="safety_info"
-            android:order="17"
-            android:title="@string/safety_and_regulatory_info"/-->
-        <!--/Preference -->
-    <!--/PreferenceCategory-->
-
-    <PreferenceCategory
-        android:key="device_detail_category"
-        android:selectable="false"
-        android:title="@string/my_device_info_device_details_category_title">
-
-        <!-- SIM status -->
-        <Preference
-            android:key="sim_status"
-            android:order="18"
-            android:title="@string/sim_status_title"
-            settings:keywords="@string/keywords_sim_status"
-            android:summary="@string/summary_placeholder"
-            settings:isPreferenceVisible="@bool/config_show_sim_info"
-            settings:enableCopying="true"/>
-
-        <!-- Model & hardware -->
-        <Preference
-            android:key="device_model"
-            android:order="31"
-            android:title="@string/model_info"
-            android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
-            settings:enableCopying="true"
-            settings:keywords="@string/keywords_model_and_hardware"
-            settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
-
-        <!-- IMEI -->
-        <com.android.settings.deviceinfo.PhoneNumberSummaryPreference
-            android:key="imei_info"
-            android:order="32"
-            android:title="@string/status_imei"
-            android:summary="@string/summary_placeholder"
-            settings:keywords="@string/keywords_imei_info"
-            settings:enableCopying="true"
-            settings:isPreferenceVisible="@bool/config_show_sim_info"
-            settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
-
-        <!-- Android version -->
-        <Preference
-            android:key="firmware_version"
-            android:order="42"
-            android:title="@string/firmware_version"
-            android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
-            settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
+    <!-- Android version -->
+    <Preference
+        android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
+        android:icon="@drawable/ic_android_acc"
+        android:key="firmware_version"
+        android:summary="@string/summary_placeholder"
+        android:title="@string/firmware_version"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"
+        settings:layout="@layout/top_level_preference_middle" />
 
     <!-- Bliss version -->
     <Preference
-        android:key="bliss_version"
-        android:order="43"
-        android:title="@string/bliss_version"
-        android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.deviceinfo.bliss.BlissVersionSettings"
-        settings:controller="com.android.settings.deviceinfo.bliss.BlissVersionPreferenceController"/>
-    </PreferenceCategory>
+        android:icon="@drawable/ic_android_acc"
+        android:key="bliss_version"
+        android:summary="@string/summary_placeholder"
+        android:title="@string/bliss_version"
+        settings:controller="com.android.settings.deviceinfo.bliss.BlissVersionPreferenceController"
+        settings:layout="@layout/top_level_preference_bottom" />
 
-    <PreferenceCategory
-        android:title="@string/my_device_info_device_identifiers_category_title">
+    <!-- Bottom category -->
+    <!-- Device up time -->
+    <Preference
+        android:icon="@drawable/ic_uptime"
+        android:key="up_time"
+        android:selectable="false"
+        android:summary="@string/summary_placeholder"
+        android:title="@string/status_up_time"
+        settings:layout="@layout/top_level_preference_top" />
 
-        <!--IP address -->
-        <Preference
-            android:key="wifi_ip_address"
-            android:order="44"
-            android:title="@string/wifi_ip_address"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:enableCopying="true"/>
 
-        <!-- Wi-Fi MAC address -->
-        <Preference
-            android:key="saved_accesspoints_wifi_mac_address"
-            android:order="45"
-            android:title="@string/status_wifi_mac_address"
-            android:summary="@string/view_saved_network"
-            android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"
-            settings:enableCopying="false"/>
+    <!-- Legal information -->
+    <Preference
+        android:fragment="com.android.settings.LegalSettings"
+        android:icon="@drawable/ic_doc"
+        android:key="legal_container"
+        android:summary="@string/legal_summary"
+        android:title="@string/legal_information"
+        settings:layout="@layout/top_level_preference_bottom" />
 
-        <!-- Factory Wi-Fi MAC address -->
-        <Preference
-            android:key="wifi_mac_address"
-            android:order="46"
-            android:title="@string/status_device_wifi_mac_address"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:enableCopying="true"/>
 
-        <!-- Bluetooth address -->
-        <Preference
-            android:key="bt_address"
-            android:order="47"
-            android:title="@string/status_bt_address"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:enableCopying="true"/>
+    <!-- Prefs below are usually hidden -->
+    <!-- Regulatory labels -->
+    <Preference
+        android:key="regulatory_info"
+        settings:layout="@layout/top_level_preference_top"
+        android:title="@string/regulatory_labels">
+        <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
+    </Preference>
 
-        <!-- Device up time -->
-        <Preference
-            android:key="up_time"
-            android:order="48"
-            android:title="@string/status_up_time"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"/>
+    <!-- Safety & regulatory manual -->
+    <Preference
+        android:key="safety_info"
+        settings:layout="@layout/top_level_preference_middle"
+        android:title="@string/safety_and_regulatory_info">
+        <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO" />
+    </Preference>
 
-        <!-- Manual -->
-        <Preference
-            android:key="manual"
-            android:order="50"
-            android:title="@string/manual">
-            <intent android:action="android.settings.SHOW_MANUAL"/>
-        </Preference>
+    <!-- Manual -->
+    <Preference
+        android:key="manual"
+        settings:layout="@layout/top_level_preference_middle"
+        android:title="@string/manual">
+        <intent android:action="android.settings.SHOW_MANUAL" />
+    </Preference>
 
-        <!-- Feedback on the device -->
-        <Preference
-            android:key="device_feedback"
-            android:order="51"
-            android:title="@string/device_feedback"
-            settings:keywords="@string/keywords_device_feedback"/>
+    <!-- Feedback on the device -->
+    <Preference
+        android:key="device_feedback"
+        android:title="@string/device_feedback"
+        settings:layout="@layout/top_level_preference_middle"
+        settings:keywords="@string/keywords_device_feedback" />
 
-        <!-- Device FCC equipment id -->
-        <Preference
-            android:key="fcc_equipment_id"
-            android:order="52"
-            android:title="@string/fcc_equipment_id"
-            android:summary="@string/summary_placeholder"/>
-
-        <!-- Build number -->
-        <Preference
-            android:key="build_number"
-            android:order="53"
-            android:title="@string/build_number"
-            android:summary="@string/summary_placeholder"
-            settings:enableCopying="true"
-            settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
-    </PreferenceCategory>
+    <!-- Device FCC equipment id -->
+    <Preference
+        android:key="fcc_equipment_id"
+        settings:layout="@layout/top_level_preference_bottom"
+        android:summary="@string/summary_placeholder"
+        android:title="@string/fcc_equipment_id" />
 
 </PreferenceScreen>
