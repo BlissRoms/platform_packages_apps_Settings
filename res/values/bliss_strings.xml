@@ -501,4 +501,8 @@
     <string name="doze_gesture_ambient_title">Show Ambient</string>
     <string name="doze_gesture_ambient_summary">Show Ambient Display instead of fully waking the screen up</string>
 
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Parallel space</string>
+    <string name="laboratory_parallel_space_summary">Allow running multiple instances of the same application in parallel.</string>
+
 </resources>
