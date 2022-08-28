@@ -162,4 +162,8 @@
     <!-- Sound: Title for the option managing ring volume. When unlinked [CHAR LIMIT=30] -->
     <string name="ring_volume_unlinked_option_title">Ring volume</string>
 
+    <!-- Game Space -->
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
+
 </resources>
