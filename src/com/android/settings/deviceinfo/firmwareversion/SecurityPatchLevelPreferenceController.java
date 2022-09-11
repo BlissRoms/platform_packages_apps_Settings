@@ -20,7 +20,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.SystemProperties;
 import android.text.TextUtils;
+import android.text.format.DateFormat;
 import android.util.Log;
 
 import androidx.preference.Preference;
@@ -28,11 +30,18 @@ import androidx.preference.Preference;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settingslib.DeviceInfoUtils;
 
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class SecurityPatchLevelPreferenceController extends BasePreferenceController {
 
     private static final String TAG = "SecurityPatchCtrl";
     private static final Uri INTENT_URI_DATA = Uri.parse(
             "https://source.android.com/security/bulletin/");
+    private static final String KEY_BLISS_SECURITY_PATCH = "ro.bliss.security_patch_level";
 
     private final PackageManager mPackageManager;
     private final String mCurrentPatch;
@@ -40,7 +49,24 @@ public class SecurityPatchLevelPreferenceController extends BasePreferenceContro
     public SecurityPatchLevelPreferenceController(Context context, String key) {
         super(context, key);
         mPackageManager = mContext.getPackageManager();
-        mCurrentPatch = DeviceInfoUtils.getSecurityPatch();
+        mCurrentPatch = getBlissSecurityPatch();
+    }
+
+    public static String getBlissSecurityPatch() {
+        String patch = SystemProperties.get(KEY_BLISS_SECURITY_PATCH);
+        if (!"".equals(patch)) {
+            try {
+                SimpleDateFormat template = new SimpleDateFormat("yyyy-MM-dd");
+                Date patchDate = template.parse(patch);
+                String format = DateFormat.getBestDateTimePattern(Locale.getDefault(), "dMMMMyyyy");
+                patch = DateFormat.format(format, patchDate).toString();
+            } catch (ParseException e) {
+                // broken parse; fall through and use the raw string
+            }
+            return patch;
+        } else {
+            return null;
+        }
     }
 
     @Override
