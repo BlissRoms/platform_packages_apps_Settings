@@ -225,4 +225,9 @@
     <!-- Black theme for dark mode -->
     <string name="berry_black_theme_title">Pure black</string>
     <string name="berry_black_theme_summary">Pure black background for dark theme</string>
+
+    <!-- Text shown for the title of the panic option -->
+    <string name="power_menu_panic_title">Panic trigger</string>
+    <!-- Text shown for the description of the panic option -->
+    <string name="power_menu_panic_summary">Activates an emergency panic trigger</string>
 </resources>
