@@ -83,4 +83,8 @@
     <string name="thin_label">Thin</string>
     <string name="thick_label">Thick</string>
 
+    <!-- Show clipboard overlay -->
+    <string name="show_clipboard_overlay_title">Show clipboard overlay</string>
+    <string name="show_clipboard_overlay_summary">Show an overlay in the left bottom corner of the screen when something is copied to the clipboard</string>
+
 </resources>
