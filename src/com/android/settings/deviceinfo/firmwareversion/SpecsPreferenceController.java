@@ -36,7 +36,7 @@ import java.util.List;
 public class SpecsPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    static final String PROCESSOR_MODEL = "ro.processor.model";
+    static final String PROCESSOR_MODEL = "ro.soc.model";
     static String aprox;
     static String aproxRam;
     public SpecsPreferenceController(Context context, String preferenceKey) {
