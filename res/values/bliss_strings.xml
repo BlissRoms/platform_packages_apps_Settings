@@ -577,5 +577,6 @@
 
     <!-- Other Fragment -->
     <string name="other_settings">Other options</string>
+    <string name="quick_settings">Quick Settings</string>
 
 </resources>
