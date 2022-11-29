@@ -452,4 +452,7 @@
     <!-- QS Brightness slider haptic feedback -->
     <string name="qs_brightness_slider_haptic_feedback_title">Vibrate on brightness slider changes</string>
 
+    <!-- Volume slider haptic feedback -->
+    <string name="volume_slider_haptic_feedback_title">Vibrate on volume slider changes</string>
+
 </resources>

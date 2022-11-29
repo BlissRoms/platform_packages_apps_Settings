@@ -21,11 +21,11 @@ import android.os.Vibrator;
 
 import com.android.settings.core.BasePreferenceController;
 
-public class BrightnessSliderHapticPreferenceController extends BasePreferenceController {
+public class CustomHapticPreferenceController extends BasePreferenceController {
 
     private final boolean mHasVibrator;
 
-    public BrightnessSliderHapticPreferenceController(Context context, String key) {
+    public CustomHapticPreferenceController(Context context, String key) {
         super(context, key);
         mHasVibrator = context.getSystemService(Vibrator.class).hasVibrator();
     }
