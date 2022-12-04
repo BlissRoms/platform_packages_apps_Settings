@@ -22,4 +22,6 @@
         <attr name="digits" format="integer" />
     </declare-styleable>
 
+    <!-- Screen resolution -->
+    <string name="custom_screen_resolution_title">Custom screen resolution</string>
 </resources>
