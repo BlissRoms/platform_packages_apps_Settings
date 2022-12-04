@@ -146,6 +146,12 @@
             settings:controller="com.android.settings.display.ScreenResolutionController"/>
 
         <SwitchPreferenceCompat
+            android:key="custom_screen_resolution"
+            android:title="@string/custom_screen_resolution_title"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.display.CustomScreenResolutionController"/>
+
+        <SwitchPreferenceCompat
             android:key="display_white_balance"
             android:title="@string/display_white_balance_title"
             android:summary="@string/display_white_balance_summary"
