@@ -65,9 +65,6 @@
     <string name="package_version">Package version</string>
     <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
 
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Screen refresh rate</string>
-
     <!-- Blissify -->
     <string name="blissify_settings_title">Blissify</string>
     <string name="blissify_settings_summary">Blissify your device!</string>
