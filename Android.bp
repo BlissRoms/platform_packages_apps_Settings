@@ -99,6 +99,8 @@ android_library {
         "Settings-change-ids",
 	"VendorSupport-preference",
         "faceunlock_framework",
+	"kotlinx_coroutines_android",
+        "kotlinx_coroutines",
     ],
 
     libs: [
