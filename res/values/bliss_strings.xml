@@ -651,4 +651,8 @@
     <string name="hide_from_launcher_title">Hide from launcher</string>
     <string name="hide_from_launcher_summary">Prevent this application from showing up in any launcher. Requires a launcher restart for changes to take effect.</string>
 
+    <!-- Doze enablement -->
+    <string name="doze_enabled_title">Ambient display</string>
+    <string name="doze_enabled_summary">Whether to enable the doze package functionality</string>
+
 </resources>
