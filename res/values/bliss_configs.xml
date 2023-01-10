@@ -21,4 +21,7 @@
 
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">false</bool>
+
+    <!-- Whether to show Touch Gestures Settings -->
+    <bool name="config_show_touch_gestures_settings">true</bool>
 </resources>
