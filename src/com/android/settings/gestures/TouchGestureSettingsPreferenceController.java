@@ -19,7 +19,7 @@ package com.android.settings.gestures;
 import android.content.Context;
 
 import com.android.internal.lineage.hardware.LineageHardwareManager;
-
+import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
 public class TouchGestureSettingsPreferenceController extends BasePreferenceController {
@@ -40,7 +40,7 @@ public class TouchGestureSettingsPreferenceController extends BasePreferenceCont
 
     @Override
     public int getAvailabilityStatus() {
-        if (!mHardware.isSupported(LineageHardwareManager.FEATURE_TOUCHSCREEN_GESTURES)){
+        if (!mHardware.isSupported(LineageHardwareManager.FEATURE_TOUCHSCREEN_GESTURES) || !mContext.getResources().getBoolean(R.bool.config_show_touch_gestures_settings)){
             return UNSUPPORTED_ON_DEVICE;
         }
         return AVAILABLE;

@@ -19,4 +19,6 @@
     <!-- Device specific doze package -->
     <string name="config_customDozePackage" translatable="false"></string>
 
+    <!-- Whether to show Touch Gestures Settings -->
+    <bool name="config_show_touch_gestures_settings">false</bool>
 </resources>
