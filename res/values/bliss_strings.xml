@@ -576,6 +576,7 @@
     <string name="data_usage_app_datura_firewall_summary">Firewall settings have been moved to the new Firewall app. Tap to open.</string>
 
     <!-- Other Fragment -->
+    <string name="miscellaneous_settings">Miscellaneous</string>
     <string name="other_settings">Other options</string>
     <string name="quick_settings">Quick Settings</string>
 
