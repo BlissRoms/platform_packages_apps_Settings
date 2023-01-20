@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3277791_8ebeb27d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000096
+      },
+      "writtenOn": "2023-01-20T15:38:21Z",
+      "side": 1,
+      "message": "it\u0027s better to merge the check of onCreateOptionsMenu \u0026 onPrepareOptionsMenu into 1. But if you are too lazy then you can merge this",
+      "revId": "031eca3d35ce72763af438a1721491dd544c88f4",
+      "serverId": "b7386340-edb3-408c-9cac-98e148952b30"
+    }
+  ]
+}
