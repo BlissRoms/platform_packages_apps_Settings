@@ -29,13 +29,13 @@ import androidx.preference.Preference
 import androidx.preference.forEach
 
 import com.android.internal.logging.nano.MetricsProto
-import com.android.internal.util.crdroid.Utils
+import com.android.internal.util.bliss.BlissUtils
 
 import com.android.settings.R
 import com.android.settings.core.SubSettingLauncher
 import com.android.settings.dashboard.DashboardFragment
 import com.android.settingslib.PrimarySwitchPreference
-import com.android.settingslib.widget.TwoTargetPreference.ICON_SIZE_SMALL
+import com.android.settingslib.widget.TwoTargetPreference.ICON_SIZE_MEDIUM
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -55,7 +55,7 @@ class AppLockPackageListFragment : DashboardFragment() {
         super.onAttach(context)
         appLockManager = context.getSystemService(AppLockManager::class.java)
         pm = context.packageManager
-        launchablePackages = Utils.launchablePackages(context)
+        launchablePackages = BlissUtils.launchablePackages(context)
         whiteListedPackages = resources.getStringArray(
             com.android.internal.R.array.config_appLockAllowedSystemApps)
     }
@@ -116,7 +116,7 @@ class AppLockPackageListFragment : DashboardFragment() {
             key = packageInfo.packageName
             title = label
             icon = packageInfo.applicationInfo.loadIcon(pm)
-            setIconSize(ICON_SIZE_SMALL)
+            setIconSize(ICON_SIZE_MEDIUM)
             isChecked = isProtected
             setOnPreferenceChangeListener { _, newValue ->
                 lifecycleScope.launch(Dispatchers.IO) {
