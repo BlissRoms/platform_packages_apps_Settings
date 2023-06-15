@@ -69,7 +69,7 @@
     <!-- Bliss version -->
     <Preference
         android:fragment="com.android.settings.deviceinfo.bliss.BlissVersionSettings"
-        android:icon="@drawable/ic_android_acc"
+        android:icon="@drawable/ic_bliss_acc"
         android:key="bliss_version"
         android:summary="@string/summary_placeholder"
         android:title="@string/bliss_version"
