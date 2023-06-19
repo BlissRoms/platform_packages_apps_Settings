@@ -174,4 +174,8 @@
 
     <!-- Running services - Background processes tab -->
     <string name="background_processes_settings_title">Background processes</string>
+
+    <!-- Separate ring & notification toggle -->
+    <string name="volume_separate_notification_title">Separated Ring and Notification</string>
+    <string name="volume_separate_notification_summary">Allow controlling each stream individually</string>
 </resources>
