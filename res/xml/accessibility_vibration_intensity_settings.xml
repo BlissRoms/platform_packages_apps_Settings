@@ -90,6 +90,13 @@
         android:key="misc_vibration_category"
         android:title="@string/misc_vibration_category_title" >
 
+        <!-- QS Bightness slider haptic feedback -->
+        <com.bliss.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_brightness_slider_haptic_feedback"
+            android:title="@string/qs_brightness_slider_haptic_feedback_title"
+            android:defaultValue="false"
+            settings:controller="com.android.settings.sound.BrightnessSliderHapticPreferenceController" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
