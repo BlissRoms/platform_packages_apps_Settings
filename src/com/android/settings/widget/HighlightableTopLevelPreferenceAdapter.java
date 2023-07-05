@@ -230,22 +230,40 @@ public class HighlightableTopLevelPreferenceAdapter extends PreferenceGroupAdapt
     private void addHighlightBackground(PreferenceViewHolder holder) {
         final View v = holder.itemView;
         v.setBackgroundResource(RES_HIGHLIGHTED_BACKGROUND);
-        ((TextView) v.findViewById(android.R.id.title)).setTextColor(mTitleColorHighlight);
-        ((TextView) v.findViewById(android.R.id.summary)).setTextColor(mSummaryColorHighlight);
-        final Drawable drawable = ((ImageView) v.findViewById(android.R.id.icon)).getDrawable();
-        if (drawable != null) {
-            drawable.setTint(mIconColorHighlight);
+        final TextView title = (TextView) v.findViewById(android.R.id.title);
+        if (title != null) {
+            title.setTextColor(mTitleColorHighlight);
+        }
+        final TextView summary = (TextView) v.findViewById(android.R.id.summary);
+        if (summary != null) {
+            summary.setTextColor(mSummaryColorHighlight);
+        }
+        final ImageView icon = (ImageView) v.findViewById(android.R.id.icon);
+        if (icon != null) {
+            final Drawable drawable = icon.getDrawable();
+            if (drawable != null) {
+                drawable.setTint(mIconColorHighlight);
+            }
         }
     }
 
     private void removeHighlightBackground(PreferenceViewHolder holder) {
         final View v = holder.itemView;
         v.setBackgroundResource(RES_NORMAL_BACKGROUND);
-        ((TextView) v.findViewById(android.R.id.title)).setTextColor(mTitleColorNormal);
-        ((TextView) v.findViewById(android.R.id.summary)).setTextColor(mSummaryColorNormal);
-        final Drawable drawable = ((ImageView) v.findViewById(android.R.id.icon)).getDrawable();
-        if (drawable != null) {
-            drawable.setTint(mIconColorNormal);
+        final TextView title = (TextView) v.findViewById(android.R.id.title);
+        if (title != null) {
+            title.setTextColor(mTitleColorNormal);
+        }
+        final TextView summary = (TextView) v.findViewById(android.R.id.summary);
+        if (summary != null) {
+            summary.setTextColor(mSummaryColorNormal);
+        }
+        final ImageView icon = (ImageView) v.findViewById(android.R.id.icon);
+        if (icon != null) {
+            final Drawable drawable = icon.getDrawable();
+            if (drawable != null) {
+                drawable.setTint(mIconColorNormal);
+            }
         }
     }
 
