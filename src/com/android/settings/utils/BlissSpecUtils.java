@@ -107,7 +107,7 @@ public class BlissSpecUtils {
         WindowManager windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         Display display = windowManager.getDefaultDisplay();
         Point size = new Point();
-        display.getSize(size);
+        display.getRealSize(size);
         int width = size.x;
         int height = size.y + getNavigationBarHeight(windowManager);
         return width + " x " + height;
