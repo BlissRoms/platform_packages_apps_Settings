@@ -221,7 +221,7 @@ public class PowerUsageSummary extends PowerUsageBase implements
 
         // Check availability of Smart Charging
         Preference mSmartCharging = (Preference) findPreference("smart_charging_key");
-        if (!getResources().getBoolean(R.bool.config_supportSmartCharging)) {
+        if (!getResources().getBoolean(com.android.internal.R.bool.config_smartChargingAvailable)) {
             getPreferenceScreen().removePreference(mSmartCharging);
         }
     }
