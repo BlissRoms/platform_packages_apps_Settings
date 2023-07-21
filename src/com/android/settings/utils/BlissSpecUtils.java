@@ -109,20 +109,8 @@ public class BlissSpecUtils {
         Point size = new Point();
         display.getRealSize(size);
         int width = size.x;
-        int height = size.y + getNavigationBarHeight(windowManager);
+        int height = size.y;
         return width + " x " + height;
-    }
-
-    private static int getNavigationBarHeight(WindowManager wm) {
-        DisplayMetrics metrics = new DisplayMetrics();
-        wm.getDefaultDisplay().getMetrics(metrics);
-        int usableHeight = metrics.heightPixels;
-        wm.getDefaultDisplay().getRealMetrics(metrics);
-        int realHeight = metrics.heightPixels;
-        if (realHeight > usableHeight)
-            return realHeight - usableHeight;
-        else
-            return 0;
     }
 
     public static int getBatteryCapacity(Context context) {
