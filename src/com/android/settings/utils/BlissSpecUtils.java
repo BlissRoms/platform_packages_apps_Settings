@@ -125,7 +125,12 @@ public class BlissSpecUtils {
             rotation = 270;
         } else rotation = 0;
 
-        return String.format("%dx%d, Rotation: %d, DPI: %d", width, height, rotation, dpi);
+        // Return the screen resolution
+        // Swap Width and Height in case w < h
+        if (width < height){
+        return String.format("%dx%d, Rotation: %d, DPI: %d", height, width, rotation, dpi);
+        } else {
+        return String.format("%dx%d, Rotation: %d, DPI: %d", width, height, rotation, dpi);}
     }
 
     public static int getBatteryCapacity(Context context) {
