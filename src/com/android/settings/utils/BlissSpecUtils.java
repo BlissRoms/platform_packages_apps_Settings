@@ -106,11 +106,14 @@ public class BlissSpecUtils {
     public static String getScreenRes(Context context) {
         WindowManager windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         Display display = windowManager.getDefaultDisplay();
+        DisplayMetrics metrics = new DisplayMetrics();
+        windowManager.getDefaultDisplay().getRealMetrics(metrics);
         Point size = new Point();
         display.getRealSize(size);
         int width = size.x;
         int height = size.y;
         int rot = windowManager.getDefaultDisplay().getRotation();
+        int dpi = metrics.densityDpi;
         int rotation = 0;
 
         // Show the screen rotation degree
@@ -122,7 +125,7 @@ public class BlissSpecUtils {
             rotation = 270;
         } else rotation = 0;
 
-        return String.format("%dx%d, Rotation: %d", width, height, rotation);
+        return String.format("%dx%d, Rotation: %d, DPI: %d", width, height, rotation, dpi);
     }
 
     public static int getBatteryCapacity(Context context) {
