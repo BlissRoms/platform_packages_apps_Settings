@@ -110,7 +110,19 @@ public class BlissSpecUtils {
         display.getRealSize(size);
         int width = size.x;
         int height = size.y;
-        return width + " x " + height;
+        int rot = windowManager.getDefaultDisplay().getRotation();
+        int rotation = 0;
+
+        // Show the screen rotation degree
+        if (rot == 1){
+            rotation = 90;
+        } else if (rot == 2){
+            rotation = 180;
+        } else if (rot == 3){
+            rotation = 270;
+        } else rotation = 0;
+
+        return String.format("%dx%d, Rotation: %d", width, height, rotation);
     }
 
     public static int getBatteryCapacity(Context context) {
