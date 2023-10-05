@@ -29,6 +29,7 @@ import com.android.settings.fuelgauge.batteryusage.BatteryDiffData;
 import com.android.settings.fuelgauge.batteryusage.BatteryEvent;
 import com.android.settings.fuelgauge.batteryusage.DetectRequestSourceType;
 import com.android.settings.fuelgauge.batteryusage.PowerAnomalyEventList;
+import com.android.settings.fuelgauge.batteryusage.BatteryHistEntry;
 import com.android.settingslib.fuelgauge.Estimate;
 
 import java.util.List;
@@ -110,6 +111,21 @@ public interface PowerUsageFeatureProvider {
     /** Checks whether smart battery feature is supported in this device */
     boolean isSmartBatterySupported();
 
+    /**
+     * Returns the string to show in the advanced usage battery page when enhanced estimates are
+     * enabled. This string notifies users that the estimate is using enhanced prediction.
+     */
+    String getAdvancedUsageScreenInfoString();
+
+    /**
+     * Returns a signal to indicate if the device will need to warn the user they may not make it
+     * to their next charging time.
+     *
+     * @param id Optional string used to identify the caller for metrics. Usually the class name of
+     *           the caller
+     */
+    boolean getEarlyWarningSignal(Context context, String id);
+
     /** Checks whether we should show usage information by slots or not */
     boolean isChartGraphSlotsEnabled(Context context);
 
@@ -130,7 +146,14 @@ public interface PowerUsageFeatureProvider {
     PowerAnomalyEventList detectPowerAnomaly(
             Context context, double displayDrain, DetectRequestSourceType detectRequestSourceType);
 
-    /** Gets an intent for one time bypass charge limited to resume charging. */
+    /** Gets an intent for one time bypass charge limited to resume charging.
+     * Returns battery history data with corresponding timestamp key.
+     */
+    Map<Long, Map<String, BatteryHistEntry>> getBatteryHistory(Context context);
+
+    /**
+     * Returns {@link Set} for hidding applications background usage time.
+     */
     Intent getResumeChargeIntent(boolean isDockDefender);
 
     /** Returns the intent action used to mark as the full charge start event. */
