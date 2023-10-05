@@ -28,10 +28,12 @@ import android.util.SparseIntArray;
 
 import com.android.internal.util.ArrayUtils;
 import com.android.settings.fuelgauge.batteryusage.PowerAnomalyEventList;
+import com.android.settings.fuelgauge.batteryusage.BatteryHistEntry;
 import com.android.settingslib.fuelgauge.Estimate;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /** Implementation of {@code PowerUsageFeatureProvider} */
@@ -136,6 +138,16 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
     }
 
     @Override
+    public String getAdvancedUsageScreenInfoString() {
+        return null;
+    }
+
+    @Override
+    public boolean getEarlyWarningSignal(Context context, String id) {
+        return false;
+    }
+
+    @Override
     public boolean isSmartBatterySupported() {
         return mContext.getResources().getBoolean(
                 com.android.internal.R.bool.config_smart_battery_available);
@@ -178,6 +190,12 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
     public Set<Integer> getOthersSystemComponentSet() {
         return new ArraySet<>();
     }
+
+    @Override
+    public Map<Long, Map<String, BatteryHistEntry>> getBatteryHistory(Context context) {
+        return null;
+    }
+
 
     @Override
     public Set<String> getOthersCustomComponentNameSet() {
