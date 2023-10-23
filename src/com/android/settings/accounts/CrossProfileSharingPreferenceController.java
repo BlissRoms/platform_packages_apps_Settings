@@ -38,7 +38,7 @@ public class CrossProfileSharingPreferenceController extends TogglePreferenceCon
     private final IPackageManager mPackageManager;
     private final DevicePolicyManager mDevicePolicyManager;
 
-    private UserHandle mManagedUser;
+    private UserHandle mManagedProfile;
     private UserHandle mParentUser;
 
     public CrossProfileSharingPreferenceController(Context context, String key) {
@@ -46,26 +46,25 @@ public class CrossProfileSharingPreferenceController extends TogglePreferenceCon
         // Set default managed profile for the current user, otherwise isAvailable will be false and
         // the setting won't be searchable.
         UserManager userManager = context.getSystemService(UserManager.class);
-        mManagedUser = Utils.getManagedProfile(userManager);
+        mManagedProfile = Utils.getManagedProfile(userManager);
         if (userManager != null) {
-            mParentUser = userManager.getProfileParent(mManagedUser);
+            mParentUser = userManager.getProfileParent(mManagedProfile);
         }
         mPackageManager = AppGlobals.getPackageManager();
         mDevicePolicyManager = context.getSystemService(DevicePolicyManager.class);
     }
 
-    @VisibleForTesting
-    void setManagedUser(UserHandle managedUser) {
-        mManagedUser = managedUser;
+    public void setManagedProfile(UserHandle managedProfile) {
+        mManagedProfile = managedProfile;
         UserManager userManager = mContext.getSystemService(UserManager.class);
         if (userManager != null) {
-            mParentUser = userManager.getProfileParent(mManagedUser);
+            mParentUser = userManager.getProfileParent(mManagedProfile);
         }
     }
 
     @Override
     public int getAvailabilityStatus() {
-        if (mManagedUser != null && mParentUser != null) {
+        if (mManagedProfile != null && mParentUser != null) {
             return AVAILABLE;
         }
 
@@ -74,7 +73,7 @@ public class CrossProfileSharingPreferenceController extends TogglePreferenceCon
 
     @Override
     public boolean isChecked() {
-        if (mManagedUser == null || mParentUser == null) {
+        if (mManagedProfile == null || mParentUser == null) {
             return false;
         }
         for (String action : new String[]{Intent.ACTION_SEND, Intent.ACTION_SEND_MULTIPLE}) {
@@ -82,10 +81,10 @@ public class CrossProfileSharingPreferenceController extends TogglePreferenceCon
             try {
                 boolean canForwardToParent = mPackageManager.canForwardTo(intent,
                         intent.resolveTypeIfNeeded(mContext.getContentResolver()),
-                        mManagedUser.getIdentifier(), mParentUser.getIdentifier());
+                        mManagedProfile.getIdentifier(), mParentUser.getIdentifier());
                 boolean canForwardToProfile = mPackageManager.canForwardTo(intent,
                         intent.resolveTypeIfNeeded(mContext.getContentResolver()),
-                        mParentUser.getIdentifier(), mManagedUser.getIdentifier());
+                        mParentUser.getIdentifier(), mManagedProfile.getIdentifier());
                 if (!canForwardToParent || !canForwardToProfile) {
                     return false;
                 }
@@ -99,7 +98,7 @@ public class CrossProfileSharingPreferenceController extends TogglePreferenceCon
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        if (mManagedUser == null || mParentUser == null) {
+        if (mManagedProfile == null || mParentUser == null) {
             return false;
         }
         IntentFilter intentFilter = new IntentFilter();
@@ -108,21 +107,22 @@ public class CrossProfileSharingPreferenceController extends TogglePreferenceCon
         intentFilter.addCategory(Intent.CATEGORY_DEFAULT);
         try {
             intentFilter.addDataType("*/*");
-            ComponentName profileOwner = mDevicePolicyManager.getProfileOwnerAsUser(mManagedUser);
+            ComponentName profileOwner =
+                    mDevicePolicyManager.getProfileOwnerAsUser(mManagedProfile);
             String ownerPackage = null;
             if (profileOwner != null) {
                 ownerPackage = profileOwner.getPackageName();
             }
             if (isChecked) {
                 mPackageManager.addCrossProfileIntentFilter(intentFilter, ownerPackage,
-                        mParentUser.getIdentifier(), mManagedUser.getIdentifier(), 0);
+                        mParentUser.getIdentifier(), mManagedProfile.getIdentifier(), 0);
                 mPackageManager.addCrossProfileIntentFilter(intentFilter, ownerPackage,
-                        mManagedUser.getIdentifier(), mParentUser.getIdentifier(), 0);
+                        mManagedProfile.getIdentifier(), mParentUser.getIdentifier(), 0);
             } else {
                 mPackageManager.removeCrossProfileIntentFilter(intentFilter, ownerPackage,
-                        mParentUser.getIdentifier(), mManagedUser.getIdentifier(), 0);
+                        mParentUser.getIdentifier(), mManagedProfile.getIdentifier(), 0);
                 mPackageManager.removeCrossProfileIntentFilter(intentFilter, ownerPackage,
-                        mManagedUser.getIdentifier(), mParentUser.getIdentifier(), 0);
+                        mManagedProfile.getIdentifier(), mParentUser.getIdentifier(), 0);
             }
             return true;
         } catch (IntentFilter.MalformedMimeTypeException e) {
