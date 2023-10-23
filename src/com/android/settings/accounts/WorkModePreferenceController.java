@@ -18,6 +18,7 @@ package com.android.settings.accounts;
 import android.content.Context;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.os.UserHandle;
 
 import androidx.lifecycle.DefaultLifecycleObserver;
 import androidx.lifecycle.LifecycleOwner;
@@ -37,12 +38,16 @@ public class WorkModePreferenceController extends BasePreferenceController
         implements OnCheckedChangeListener, DefaultLifecycleObserver,
         ManagedProfileQuietModeEnabler.QuietModeChangeListener {
 
-    private final ManagedProfileQuietModeEnabler mQuietModeEnabler;
+    private ManagedProfileQuietModeEnabler mQuietModeEnabler;
     private MainSwitchPreference mPreference;
 
     public WorkModePreferenceController(Context context, String key) {
         super(context, key);
         mQuietModeEnabler = new ManagedProfileQuietModeEnabler(context, this);
+    }
+
+    public void setManagedProfile(UserHandle managedProfile) {
+        mQuietModeEnabler.setManagedProfile(managedProfile);
     }
 
     @Override

@@ -43,7 +43,7 @@ final class ManagedProfileQuietModeEnabler implements DefaultLifecycleObserver {
     private static final String TAG = "QuietModeEnabler";
     private final Context mContext;
     private final QuietModeChangeListener mListener;
-    @Nullable private final UserHandle mManagedProfile;
+    @Nullable private UserHandle mManagedProfile;
     private final UserManager mUserManager;
 
     public interface QuietModeChangeListener {
@@ -56,6 +56,10 @@ final class ManagedProfileQuietModeEnabler implements DefaultLifecycleObserver {
         mListener = listener;
         mUserManager = context.getSystemService(UserManager.class);
         mManagedProfile = Utils.getManagedProfile(mUserManager);
+    }
+
+    public void setManagedProfile(UserHandle managedProfile) {
+        mManagedProfile = managedProfile;
     }
 
     public void setQuietModeEnabled(boolean enabled) {
