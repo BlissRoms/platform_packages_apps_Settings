@@ -35,26 +35,25 @@ public class CrossProfileCalendarPreferenceController extends TogglePreferenceCo
 
     private static final String TAG = "CrossProfileCalendarPreferenceController";
 
-    private UserHandle mManagedUser;
+    private UserHandle mManagedProfile;
 
     public CrossProfileCalendarPreferenceController(Context context, String key) {
         super(context, key);
         // Set default managed profile for the current user, otherwise isAvailable will be false and
         // the setting won't be searchable.
         UserManager userManager = context.getSystemService(UserManager.class);
-        mManagedUser = Utils.getManagedProfile(userManager);
+        mManagedProfile = Utils.getManagedProfile(userManager);
     }
 
-    @VisibleForTesting
-    void setManagedUser(UserHandle managedUser) {
-        mManagedUser = managedUser;
+    public void setManagedProfile(UserHandle managedProfile) {
+        mManagedProfile = managedProfile;
     }
 
     @Override
     public int getAvailabilityStatus() {
-        if (mManagedUser != null
+        if (mManagedProfile != null
                 && !isCrossProfileCalendarDisallowedByAdmin(
-                        mContext, mManagedUser.getIdentifier())) {
+                        mContext, mManagedProfile.getIdentifier())) {
             return AVAILABLE;
         }
 
@@ -63,22 +62,22 @@ public class CrossProfileCalendarPreferenceController extends TogglePreferenceCo
 
     @Override
     public boolean isChecked() {
-        if (mManagedUser == null) {
+        if (mManagedProfile == null) {
             return false;
         }
         return Settings.Secure.getIntForUser(mContext.getContentResolver(),
                 CROSS_PROFILE_CALENDAR_ENABLED, /* default= */ 0,
-                mManagedUser.getIdentifier()) == 1;
+                mManagedProfile.getIdentifier()) == 1;
     }
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        if (mManagedUser == null) {
+        if (mManagedProfile == null) {
             return false;
         }
         final int value = isChecked ? 1 : 0;
         return Settings.Secure.putIntForUser(mContext.getContentResolver(),
-                CROSS_PROFILE_CALENDAR_ENABLED, value, mManagedUser.getIdentifier());
+                CROSS_PROFILE_CALENDAR_ENABLED, value, mManagedProfile.getIdentifier());
     }
 
     @Override

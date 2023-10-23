@@ -71,7 +71,7 @@ public class CrossProfileCalendarPreferenceControllerTest {
         MockitoAnnotations.initMocks(this);
         mContext = spy(RuntimeEnvironment.application);
         mController = new CrossProfileCalendarPreferenceController(mContext, PREF_KEY);
-        mController.setManagedUser(mManagedUser);
+        mController.setManagedProfile(mManagedUser);
         mPreference = spy(new RestrictedSwitchPreference(mContext));
         dpm = ShadowDevicePolicyManager.getShadow();
 
@@ -82,7 +82,7 @@ public class CrossProfileCalendarPreferenceControllerTest {
 
     @Test
     public void getAvailabilityStatus_noManagedUser_shouldBeDisabled() {
-        mController.setManagedUser(null);
+        mController.setManagedProfile(null);
 
         assertThat(mController.getAvailabilityStatus())
                 .isNotEqualTo(CrossProfileCalendarPreferenceController.AVAILABLE);

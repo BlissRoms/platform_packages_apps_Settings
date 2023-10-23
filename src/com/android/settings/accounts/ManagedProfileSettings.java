@@ -51,7 +51,7 @@ import java.util.List;
 public class ManagedProfileSettings extends DashboardFragment {
 
     private UserManager mUserManager;
-    private UserHandle mManagedUser;
+    private UserHandle mManagedProfile;
 
     private ManagedProfileBroadcastReceiver mManagedProfileBroadcastReceiver;
 
@@ -71,11 +71,15 @@ public class ManagedProfileSettings extends DashboardFragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         mUserManager = (UserManager) getSystemService(Context.USER_SERVICE);
-        mManagedUser = getManagedUserFromArgument();
+        mManagedProfile = getManagedProfileFromArgument();
 
-        if (mManagedUser == null) {
+        if (mManagedProfile == null) {
             getActivity().finish();
         }
+
+        use(WorkModePreferenceController.class).setManagedProfile(mManagedProfile);
+        use(ContactSearchPreferenceController.class).setManagedProfile(mManagedProfile);
+        use(CrossProfileCalendarPreferenceController.class).setManagedProfile(mManagedProfile);
     }
 
     @Override
@@ -106,7 +110,7 @@ public class ManagedProfileSettings extends DashboardFragment {
         }
     }
 
-    private UserHandle getManagedUserFromArgument() {
+    private UserHandle getManagedProfileFromArgument() {
         Bundle arguments = getArguments();
         if (arguments != null) {
             UserHandle userHandle = arguments.getParcelable(Intent.EXTRA_USER);
@@ -139,8 +143,8 @@ public class ManagedProfileSettings extends DashboardFragment {
                 @Override
                 protected boolean isPageSearchEnabled(Context context) {
                     UserManager userManager = context.getSystemService(UserManager.class);
-                    UserHandle managedUser = Utils.getManagedProfile(userManager);
-                    return managedUser != null;
+                    UserHandle managedProfile = Utils.getManagedProfile(userManager);
+                    return managedProfile != null;
                 }
 
             };
@@ -156,7 +160,7 @@ public class ManagedProfileSettings extends DashboardFragment {
             Log.v(TAG, "Received broadcast: " + action);
             if (Intent.ACTION_MANAGED_PROFILE_REMOVED.equals(action)) {
                 if (intent.getIntExtra(Intent.EXTRA_USER_HANDLE,
-                        UserHandle.USER_NULL) == mManagedUser.getIdentifier()) {
+                        UserHandle.USER_NULL) == mManagedProfile.getIdentifier()) {
                     getActivity().finish();
                 }
                 return;
