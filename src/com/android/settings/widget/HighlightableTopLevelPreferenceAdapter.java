@@ -235,12 +235,22 @@ public class HighlightableTopLevelPreferenceAdapter extends RoundCornerPreferenc
             @DrawableRes int bgRes = getRoundCornerDrawableRes(position, true /*isSelected*/);
             v.setBackgroundResource(bgRes);
         } else {
+            if (v == null) return;
             v.setBackgroundResource(RES_HIGHLIGHTED_BACKGROUND);
-            ((TextView) v.findViewById(android.R.id.title)).setTextColor(mTitleColorHighlight);
-            ((TextView) v.findViewById(android.R.id.summary)).setTextColor(mSummaryColorHighlight);
-            final Drawable drawable = ((ImageView) v.findViewById(android.R.id.icon)).getDrawable();
-            if (drawable != null) {
-                drawable.setTint(mIconColorHighlight);
+            TextView titleTextView = v.findViewById(android.R.id.title);
+            if (titleTextView != null) {
+               titleTextView.setTextColor(mTitleColorHighlight);
+            }
+            TextView summaryTextView = v.findViewById(android.R.id.summary);
+            if (summaryTextView != null) {
+               summaryTextView.setTextColor(mSummaryColorHighlight);
+            }
+            ImageView iconImageView = v.findViewById(android.R.id.icon);
+            if (iconImageView != null) {
+               Drawable drawable = iconImageView.getDrawable();
+               if (drawable != null) {
+                   drawable.setTint(mIconColorHighlight);
+               }
             }
         }
     }
@@ -251,13 +261,23 @@ public class HighlightableTopLevelPreferenceAdapter extends RoundCornerPreferenc
             @DrawableRes int bgRes = getRoundCornerDrawableRes(position, false /*isSelected*/);
             v.setBackgroundResource(bgRes);
         } else {
+            if (v == null) return;
             v.setBackgroundResource(RES_NORMAL_BACKGROUND);
-            ((TextView) v.findViewById(android.R.id.title)).setTextColor(mTitleColorNormal);
-            ((TextView) v.findViewById(android.R.id.summary)).setTextColor(mSummaryColorNormal);
-            final Drawable drawable = ((ImageView) v.findViewById(android.R.id.icon)).getDrawable();
+            TextView titleTextView = v.findViewById(android.R.id.title);
+            if (titleTextView != null) {
+               titleTextView.setTextColor(mTitleColorNormal);
+            }
+            TextView summaryTextView = v.findViewById(android.R.id.summary);
+            if (summaryTextView != null) {
+               summaryTextView.setTextColor(mSummaryColorNormal);
+            }
+            ImageView iconImageView = v.findViewById(android.R.id.icon);
+            if (iconImageView != null) {
+                Drawable drawable = iconImageView.getDrawable();
             if (drawable != null) {
                 drawable.setTint(mIconColorNormal);
             }
+          }
         }
     }
 
