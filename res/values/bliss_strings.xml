@@ -27,7 +27,6 @@
     <string name="bliss_codename">Bliss Codename</string>
 
     <!-- Bliss maintainer -->
-
     <string name="bliss_maintainer_title">Build status</string>
     <string name="maintainer">Maintainer</string>
     <string name="bliss_maintainer">Unofficial Maintainer</string>
@@ -92,4 +91,7 @@
 
     <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
     <string name="screen_time_summary_usage_today">%1$s today</string>
+
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">Unlock automatically if you input a correct PIN. This is slightly less secure than tapping Enter to confirm.</string>
 </resources>
