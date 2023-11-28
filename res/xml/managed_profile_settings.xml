@@ -43,6 +43,12 @@
         android:title="@string/cross_profile_sharing_title"
         settings:controller="com.android.settings.accounts.CrossProfileSharingPreferenceController"/>
 
+    <SwitchPreference
+        android:key="work_hours"
+        android:title="@string/work_hours_title"
+        android:summary="@string/work_hours_end_off_summary"
+        settings:controller="com.android.settings.accounts.WorkHoursPreferenceController"/>
+
     <com.android.settingslib.widget.FooterPreference
         android:title="@string/managed_profile_settings_footer"
         android:key="managed_profile_footer"
