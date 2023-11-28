@@ -81,6 +81,7 @@ public class ManagedProfileSettings extends DashboardFragment {
         use(ContactSearchPreferenceController.class).setManagedProfile(mManagedProfile);
         use(CrossProfileCalendarPreferenceController.class).setManagedProfile(mManagedProfile);
         use(CrossProfileSharingPreferenceController.class).setManagedProfile(mManagedProfile);
+        use(WorkHoursPreferenceController.class).setManagedProfile(mManagedProfile);
     }
 
     @Override

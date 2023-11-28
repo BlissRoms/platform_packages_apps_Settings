@@ -5343,6 +5343,13 @@
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/blissify_settings_summary"/>
         </activity>
+       <receiver android:name=".users.UserTimeoutReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_TIMEOUT"/>
+            </intent-filter>
+        </receiver>
 
         <!-- Provide direct entry into Dev settings - Running Services -->
         <activity android:name="Settings$DevRunningServicesActivity"
