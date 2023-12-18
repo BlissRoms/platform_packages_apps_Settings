@@ -340,6 +340,27 @@ public class SettingsHomepageActivityTest {
         verify(activity).startActivityAsUser(any(Intent.class), any(UserHandle.class));
     }
 
+    @Test
+    public void onCreate_notTaskRoot_shouldFinishActivity() {
+        SettingsHomepageActivity activity =
+                spy(Robolectric.buildActivity(SettingsHomepageActivity.class).get());
+        doReturn(false).when(activity).isTaskRoot();
+
+        activity.onCreate(/* savedInstanceState */ null);
+
+        verify(activity).finish();
+    }
+    @Test
+    public void onCreate_singleTaskActivity_shouldNotFinishActivity() {
+        SettingsHomepageActivity activity =
+                spy(Robolectric.buildActivity(DeepLinkHomepageActivity.class).get());
+        doReturn(false).when(activity).isTaskRoot();
+
+        activity.onCreate(/* savedInstanceState */ null);
+
+        verify(activity, never()).finish();
+    }
+
     /** This test is for large screen devices Activity embedding. */
     @Test
     @Config(shadows = ShadowActivityEmbeddingUtils.class)
