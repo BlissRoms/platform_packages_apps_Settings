@@ -214,4 +214,8 @@
         <item quantity="one">Up to <xliff:g id="device_num">%1$d</xliff:g> device can connect to this hotspot</item>
     </plurals>
 
+    <!-- Enforce DNS for VPN -->
+    <string name="vpn_enforce_dns_title">Disable for VPN</string>
+    <string name="vpn_enforce_dns_summary">Disable the private DNS when connected to a VPN\nWill restore upon disconnecting</string>
+
 </resources>
