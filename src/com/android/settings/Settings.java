@@ -56,6 +56,8 @@ import com.android.settings.display.ColorModeScreen;
 import com.android.settings.emergency.EmergencyDashboardFragment;
 import com.android.settings.emergency.EmergencyDashboardScreen;
 import com.android.settings.enterprise.EnterprisePrivacySettings;
+import com.bliss.settings.display.refreshrate.ScreenRefreshRateFragment;
+import com.bliss.settings.display.refreshrate.ScreenRefreshRateScreen;
 import com.android.settings.network.AdaptiveConnectivityScreen;
 import com.android.settings.network.AdaptiveConnectivitySettings;
 import com.android.settings.network.AirplaneModeSettingsScreen;
@@ -816,6 +818,12 @@ public class Settings extends SettingsActivity {
                     Log.e(TAG, "Unable to open Airplane Settings", e);
                 }
             }
+        }
+    }
+
+    public static class ScreenRefreshRateActivity extends CatalystSettingsActivity {
+        public ScreenRefreshRateActivity() {
+            super(ScreenRefreshRateScreen.KEY, ScreenRefreshRateFragment.class);
         }
     }
 }
