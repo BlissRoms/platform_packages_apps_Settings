@@ -20,6 +20,11 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/security_advanced_settings">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="sec_illustration"
+        android:order="-999"
+        settings:lottie_rawRes="@raw/sec_illustration"/>
+
     <PreferenceCategory
         android:order="1"
         android:key="dashboard_tile_placeholder" />

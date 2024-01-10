@@ -23,7 +23,7 @@
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="sec_illustration"
-        android:order="-1010"
+        android:order="-999"
         settings:lottie_rawRes="@raw/sec_illustration"/>
 
     <!-- security_settings_status.xml -->

@@ -20,7 +20,7 @@
     android:key="accessibility_settings_screen"
     android:persistent="false"
     android:title="@string/accessibility_settings">
-    
+
     <com.android.settingslib.widget.IllustrationPreference
         android:key="acces_illustration"
         settings:lottie_rawRes="@raw/acces_illustration"

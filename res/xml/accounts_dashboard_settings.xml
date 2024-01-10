@@ -21,6 +21,11 @@
     android:title="@string/account_dashboard_title"
     settings:keywords="@string/keywords_accounts">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="accounts_illustration"
+        settings:lottie_rawRes="@raw/accounts_illustration"
+        android:order="-1001" />
+
     <PreferenceCategory
         android:key="passwords_category"
         android:order="10"
