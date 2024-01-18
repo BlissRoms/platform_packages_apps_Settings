@@ -88,11 +88,14 @@ public class PeakRefreshRatePreferenceController extends TogglePreferenceControl
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
 
-        int defaultPeakRefreshRate = Math.round(mPeakRefreshRate);
-
         mPreference = screen.findPreference(getPreferenceKey());
-        mPreference.setSummary(mContext.getString(
-                R.string.peak_refresh_rate_summary, defaultPeakRefreshRate));
+
+        if (!Float.toString(mPeakRefreshRate).contains("90")) {
+          String preferenceSummary = mContext.getResources().getString(
+                  R.string.peak_refresh_rate_summary);
+          mPreference.setSummary(preferenceSummary.replace("90",
+                  Integer.toString(Math.round(mPeakRefreshRate))));
+        }
     }
 
     @Override
@@ -123,7 +126,6 @@ public class PeakRefreshRatePreferenceController extends TogglePreferenceControl
                 mContext.getContentResolver(), Settings.System.PEAK_REFRESH_RATE, peakRefreshRate);
     }
 
-    @Override
     public int getSliceHighlightMenuRes() {
         return R.string.menu_key_display;
     }
@@ -141,9 +143,13 @@ public class PeakRefreshRatePreferenceController extends TogglePreferenceControl
     @VisibleForTesting
     float findPeakRefreshRate(Display.Mode[] modes) {
         float peakRefreshRate = DEFAULT_REFRESH_RATE;
+        float defaultPeakRefreshRate = (float) mContext.getResources().getInteger(
+                    com.android.internal.R.integer.config_defaultPeakRefreshRate);
         for (Display.Mode mode : modes) {
-            if (Math.round(mode.getRefreshRate()) > peakRefreshRate) {
-                peakRefreshRate = mode.getRefreshRate();
+            float refreshRate = Math.round(mode.getRefreshRate());
+            if (refreshRate > peakRefreshRate
+                    && (defaultPeakRefreshRate == 0 || refreshRate <= defaultPeakRefreshRate)) {
+                peakRefreshRate = refreshRate;
             }
         }
         return peakRefreshRate;
