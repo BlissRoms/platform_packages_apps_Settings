@@ -114,6 +114,15 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
 
         final Context context = getActivity();
         mUserManager = (UserManager) context.getSystemService(Context.USER_SERVICE);
+        if (mUserManager.isProfile()) {
+            // Throughout this class, we treat UserManager as if it refers to the parent.
+            // In some situations, the context above refers to the child profile.
+            // Get the UserManager instance for the parent.
+            final Context userContext = context.createContextAsUser(
+                    mUserManager.getProfileParent(UserHandle.of(UserHandle.myUserId())),
+                            0 /* flags */);
+            mUserManager = (UserManager) userContext.getSystemService(Context.USER_SERVICE);
+        }
         mUserCaps = UserCapabilities.create(context);
         addPreferencesFromResource(R.xml.user_details_settings);
 
