@@ -16,9 +16,9 @@ import java.util.List;
 
 import com.bliss.display.RefreshRateManager;
 
-import com.bliss.settings.fragment.PerAppConfigFragment;
+import com.bliss.settings.fragment.PerAppListConfigFragment;
 
-public class PerAppRefreshRateFragment extends PerAppConfigFragment {
+public class PerAppRefreshRateFragment extends PerAppListConfigFragment {
 
     private DisplayRefreshRateHelper mHelper;
     private RefreshRateManager mRefreshRateManager;

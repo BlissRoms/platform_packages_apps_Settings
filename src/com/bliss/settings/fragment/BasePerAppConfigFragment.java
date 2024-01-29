@@ -17,9 +17,7 @@ import android.text.TextUtils;
 import android.util.Pair;
 import android.view.View;
 
-import androidx.preference.ListPreference;
 import androidx.preference.Preference;
-import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settings.R;
@@ -31,22 +29,20 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import com.bliss.settings.widget.AppListPreference;
+public abstract class BasePerAppConfigFragment extends EmptyTextSettings {
 
-public abstract class PerAppConfigFragment extends EmptyTextSettings {
-
-    private Context mContext;
+    protected Context mContext;
     private PackageManager mPackageManager;
 
     /**
      * Comparator by label, if null or empty then packageName.
      */
-    static class AppComparator implements Comparator<Pair<String, String>> {
+    private static class AppComparator implements Comparator<Pair<String, String>> {
 
         private final Collator mCollator = Collator.getInstance();
 
-        public final int compare(Pair<String, String> a,
-                Pair<String, String> b) {
+        @Override
+        public final int compare(Pair<String, String> a, Pair<String, String> b) {
             String sa = a.first;
             if (TextUtils.isEmpty(sa)) sa = a.second;
             String sb = b.first;
@@ -76,52 +72,7 @@ public abstract class PerAppConfigFragment extends EmptyTextSettings {
         // Rebuild the list of prefs
         final Context prefContext = getPrefContext();
         for (final Pair<String, String> appData : apps) {
-            final ListPreference pref = new AppListPreference(prefContext);
-            pref.setIcon(getIcon(appData.second));
-            pref.setTitle(appData.first);
-            pref.setDialogTitle(appData.first);
-
-            int size = getEntries().size();
-
-            CharSequence[] entries = new CharSequence[size];
-            CharSequence[] values = new CharSequence[size];
-            for (int i = 0; i < size; ++i) {
-                entries[i] = getEntries().get(i);
-                values[i] = String.valueOf(getValues().get(i));
-            }
-            pref.setEntries(entries);
-            pref.setEntryValues(values);
-
-            final String value = String.valueOf(getCurrentValue(appData.second));
-            CharSequence summary = "-1";
-            for (int i = 0; i < size; ++i) {
-                if (values[i].equals(value)) {
-                    summary = entries[i];
-                    break;
-                }
-            }
-            pref.setValue(value);
-            pref.setSummary(summary);
-
-            pref.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
-                @Override
-                public boolean onPreferenceChange(Preference preference, Object newValue) {
-                    final String newValueStr = String.valueOf(newValue);
-                    onValueChanged(appData.second, Integer.parseInt(newValueStr));
-                    CharSequence[] entries = pref.getEntries();
-                    CharSequence[] values = pref.getEntryValues();
-                    CharSequence summary = entries[0];
-                    for (int i = 0; i < entries.length; ++i) {
-                        if (values[i].equals(newValueStr)) {
-                            summary = entries[i];
-                            break;
-                        }
-                    }
-                    pref.setSummary(summary);
-                    return true;
-                }
-            });
-            screen.addPreference(pref);
+            screen.addPreference(createAppPreference(prefContext, appData));
         }
     }
 
@@ -167,7 +118,7 @@ public abstract class PerAppConfigFragment extends EmptyTextSettings {
         return apps;
     }
 
-    private Drawable getIcon(String packageName) {
+    protected Drawable getIcon(String packageName) {
         Drawable loadIcon = null;
         if (packageName != null) {
             try {
@@ -178,11 +129,6 @@ public abstract class PerAppConfigFragment extends EmptyTextSettings {
         return loadIcon != null ? loadIcon : mPackageManager.getDefaultActivityIcon();
     }
 
-    protected abstract List<String> getEntries();
-
-    protected abstract List<Integer> getValues();
-
-    protected abstract int getCurrentValue(String packageName);
-
-    protected abstract void onValueChanged(String packageName, int value);
+    protected abstract Preference createAppPreference(
+            Context prefContext, Pair<String, String> appData);
 }
