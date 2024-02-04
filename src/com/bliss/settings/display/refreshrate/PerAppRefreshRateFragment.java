@@ -50,6 +50,11 @@ public class PerAppRefreshRateFragment extends PerAppListConfigFragment {
     }
 
     @Override
+    protected int getTopInfoResId() {
+        return R.string.per_app_refresh_rate_summary;
+    }
+
+    @Override
     protected List<String> getEntries() {
         return mEntries;
     }
