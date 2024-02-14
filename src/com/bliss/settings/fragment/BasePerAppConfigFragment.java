@@ -117,15 +117,17 @@ public abstract class BasePerAppConfigFragment extends EmptyTextSettings {
                     pi.applicationInfo.loadLabel(mPackageManager).toString(),
                     pi.packageName));
         }
-        final String[] systemApps = mContext.getResources().getStringArray(
-                R.array.config_perAppConfAllowedSystemApps);
-        for (String app : systemApps) {
-            try {
-                final PackageInfo pi = mPackageManager.getPackageInfo(app, 0);
-                pi.applicationInfo.loadLabel(mPackageManager).toString();
-                apps.add(new Pair<>(
-                        pi.applicationInfo.loadLabel(mPackageManager).toString(), app));
-            } catch (NameNotFoundException e) {
+        if (showSystemApp()) {
+            final String[] systemApps = mContext.getResources().getStringArray(
+                    R.array.config_perAppConfAllowedSystemApps);
+            for (String app : systemApps) {
+                try {
+                    final PackageInfo pi = mPackageManager.getPackageInfo(app, 0);
+                    pi.applicationInfo.loadLabel(mPackageManager).toString();
+                    apps.add(new Pair<>(
+                            pi.applicationInfo.loadLabel(mPackageManager).toString(), app));
+                } catch (NameNotFoundException e) {
+                }
             }
         }
         Collections.sort(apps, new AppComparator());
@@ -145,6 +147,10 @@ public abstract class BasePerAppConfigFragment extends EmptyTextSettings {
 
     protected int getTopInfoResId() {
         return 0;
+    }
+
+    protected boolean showSystemApp() {
+        return true;
     }
 
     protected abstract Preference createAppPreference(
