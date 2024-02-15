@@ -6,7 +6,6 @@
 package com.bliss.settings.fragment;
 
 import android.content.Context;
-import android.util.Pair;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -19,11 +18,11 @@ import com.bliss.settings.widget.AppListPreference;
 public abstract class PerAppListConfigFragment extends BasePerAppConfigFragment {
 
     @Override
-    protected Preference createAppPreference(Context prefContext, Pair<String, String> appData) {
+    protected Preference createAppPreference(Context prefContext, AppData appData) {
         final ListPreference pref = new AppListPreference(prefContext);
-        pref.setIcon(getIcon(appData.second));
-        pref.setTitle(appData.first);
-        pref.setDialogTitle(appData.first);
+        pref.setIcon(getIcon(appData.packageName));
+        pref.setTitle(appData.label);
+        pref.setDialogTitle(appData.label);
 
         int size = getEntries().size();
 
@@ -36,7 +35,7 @@ public abstract class PerAppListConfigFragment extends BasePerAppConfigFragment 
         pref.setEntries(entries);
         pref.setEntryValues(values);
 
-        final String value = String.valueOf(getCurrentValue(appData.second));
+        final String value = String.valueOf(getCurrentValue(appData.packageName, appData.uid));
         CharSequence summary = "-1";
         for (int i = 0; i < size; ++i) {
             if (values[i].equals(value)) {
@@ -51,7 +50,7 @@ public abstract class PerAppListConfigFragment extends BasePerAppConfigFragment 
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 final String newValueStr = String.valueOf(newValue);
-                onValueChanged(appData.second, Integer.parseInt(newValueStr));
+                onValueChanged(appData.packageName, appData.uid, Integer.parseInt(newValueStr));
                 CharSequence[] entries = pref.getEntries();
                 CharSequence[] values = pref.getEntryValues();
                 CharSequence summary = entries[0];
@@ -73,7 +72,7 @@ public abstract class PerAppListConfigFragment extends BasePerAppConfigFragment 
 
     protected abstract List<Integer> getValues();
 
-    protected abstract int getCurrentValue(String packageName);
+    protected abstract int getCurrentValue(String packageName, int uid);
 
-    protected abstract void onValueChanged(String packageName, int value);
+    protected abstract void onValueChanged(String packageName, int uid, int value);
 }
