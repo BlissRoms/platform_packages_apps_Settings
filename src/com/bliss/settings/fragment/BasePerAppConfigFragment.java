@@ -28,6 +28,7 @@ import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
 
 public abstract class BasePerAppConfigFragment extends EmptyTextSettings {
@@ -61,6 +62,25 @@ public abstract class BasePerAppConfigFragment extends EmptyTextSettings {
             this.label = label;
             this.packageName = packageName;
             this.uid = uid;
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            if (obj instanceof AppData) {
+                final AppData other = (AppData) obj;
+                return label.equals(other.label) &&
+                        packageName.equals(other.packageName) &&
+                        uid == other.uid;
+            }
+            return false;
+        }
+
+        @Override
+        public int hashCode() {
+            int result = label.hashCode();
+            result = 31 * result + packageName.hashCode();
+            result = 31 * result + uid;
+            return result;
         }
     }
 
@@ -117,7 +137,7 @@ public abstract class BasePerAppConfigFragment extends EmptyTextSettings {
      * with extra system applications defined in R.array.config_perAppConfAllowedSystemApps.
      */
     private ArrayList<AppData> collectApps() {
-        final ArrayList<AppData> apps = new ArrayList<>();
+        final HashSet<AppData> apps = new HashSet<>();
         final List<PackageInfo> installedPackages =
                 mPackageManager.getInstalledPackages(0);
         for (PackageInfo pi : installedPackages) {
@@ -143,8 +163,10 @@ public abstract class BasePerAppConfigFragment extends EmptyTextSettings {
                 }
             } catch (Exception e) {}
         }
-        Collections.sort(apps, new AppComparator());
-        return apps;
+        final ArrayList<AppData> appList = new ArrayList<>();
+        appList.addAll(apps);
+        Collections.sort(appList, new AppComparator());
+        return appList;
     }
 
     protected Drawable getIcon(String packageName) {
