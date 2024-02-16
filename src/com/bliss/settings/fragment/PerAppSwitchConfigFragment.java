@@ -35,7 +35,8 @@ public abstract class PerAppSwitchConfigFragment extends BasePerAppConfigFragmen
         pref.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
-                final boolean ret = onSetChecked(appData.packageName, appData.uid, (Boolean) newValue);
+                final boolean ret = onSetChecked((SwitchPreference) preference,
+                        appData.packageName, appData.uid, (Boolean) newValue);
                 if (ret) {
                     mPkgCheckState.put(appData.packageName, (Boolean) newValue);
                     onCheckedListUpdated(generateCheckedPkgList());
@@ -59,7 +60,7 @@ public abstract class PerAppSwitchConfigFragment extends BasePerAppConfigFragmen
 
     protected abstract boolean isChecked(String packageName, int uid);
 
-    protected abstract boolean onSetChecked(String packageName, int uid, boolean checked);
+    protected abstract boolean onSetChecked(SwitchPreference pref, String packageName, int uid, boolean checked);
 
     protected abstract void onCheckedListUpdated(List<String> pkgList);
 }
