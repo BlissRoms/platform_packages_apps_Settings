@@ -43,7 +43,7 @@
         android:title="@string/cross_profile_sharing_title"
         settings:controller="com.android.settings.accounts.CrossProfileSharingPreferenceController"/>
 
-    <SwitchPreference
+    <SwitchPreferenceCompat
         android:key="work_hours"
         android:title="@string/work_hours_title"
         android:summary="@string/work_hours_end_off_summary"

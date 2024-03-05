@@ -25,7 +25,6 @@ import android.text.format.DateFormat;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
 
 import com.android.settings.R;
 import com.android.settings.Utils;
