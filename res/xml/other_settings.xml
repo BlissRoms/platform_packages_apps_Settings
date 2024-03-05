@@ -35,7 +35,7 @@
     <PreferenceCategory
         android:title="@string/quick_settings">
 
-        <SwitchPreference
+        <SwitchPreferenceCompat
             android:key="sensors_off_quick_settings"
             android:title="@string/sensors_off_quick_settings_title"
             android:summary="@string/enable_quick_setting"

@@ -25,9 +25,6 @@ import android.os.ServiceManager;
 import android.provider.Settings;
 import android.util.Log;
 
-import androidx.preference.Preference;
-import androidx.preference.SwitchPreference;
-
 import com.android.internal.statusbar.IStatusBarService;
 import com.android.settings.R;
 import com.android.settings.core.TogglePreferenceController;
