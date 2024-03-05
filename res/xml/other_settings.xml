@@ -24,7 +24,7 @@
     <PreferenceCategory
         android:title="@string/debug_networking_category">
 
-        <SwitchPreference
+        <SwitchPreferenceCompat
             android:key="cleartext_network_policy"
             android:title="@string/cleartext_network_policy_title"
             android:summary="@string/cleartext_network_policy_summary"
