@@ -37,4 +37,7 @@
     <!-- Whether to show custom screen resolution settings -->
     <bool name="config_show_custom_screen_resolution_switch">false</bool>
 
+    <!-- Show battery information -->
+    <bool name="config_show_battery_info" translatable="false">true</bool>
+
 </resources>
