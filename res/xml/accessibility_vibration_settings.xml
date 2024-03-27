@@ -95,18 +95,21 @@
         <com.bliss.support.preferences.SystemSettingSwitchPreference
             android:key="qs_brightness_slider_haptic_feedback"
             android:title="@string/qs_brightness_slider_haptic_feedback_title"
+            android:dependency="vibration_preference_touch"
             android:defaultValue="false" />
 
         <!-- QS Tiles haptic -->
         <com.bliss.support.preferences.SystemSettingSwitchPreference
             android:key="qs_tiles_haptic_feedback"
             android:title="@string/qs_tiles_haptic_feedback_title"
+            android:dependency="vibration_preference_touch"
             android:defaultValue="false" />
 
         <!-- Volume slider haptic -->
         <com.bliss.support.preferences.SystemSettingSwitchPreference
             android:key="volume_slider_haptic_feedback"
             android:title="@string/volume_slider_haptic_feedback_title"
+            android:dependency="vibration_preference_touch"
             android:defaultValue="false" />
 
         <!-- Scroll fling haptic feedback -->
@@ -114,7 +117,7 @@
             android:key="scroll_fling_haptic_feedback"
             android:title="@string/scroll_fling_haptic_feedback_title"
             android:summary="@string/scroll_fling_haptic_feedback_summary"
-            android:dependency="vibration_intensity_preference_touch"
+            android:dependency="vibration_preference_touch"
             android:defaultValue="false" />
 
     </PreferenceCategory>
