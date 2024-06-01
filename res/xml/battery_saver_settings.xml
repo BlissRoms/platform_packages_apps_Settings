@@ -26,13 +26,13 @@
         android:title="@string/battery_saver_master_switch_title"
         settings:controller="com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController"/>
 
-    <PreferenceCategory android:layout="@layout/preference_category_no_label" android:key="battery_saver_entry" android:order="30" settings:controller="com.google.android.settings.fuelgauge.batterysaver.BatterySaverModePreferenceController">
+    <!--<PreferenceCategory android:layout="@layout/preference_category_no_label" android:key="battery_saver_entry" android:order="30" settings:controller="com.android.settings.fuelgauge.batterysaver.BatterySaverModePreferenceController">
 
         <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/basic_battery_saver_title" android:key="basic_battery_saver_entry" 
 android:summary="@string/basic_battery_saver_summary"/>
 
         <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/extreme_battery_saver_title" android:key="extreme_battery_saver_entry" android:summary="@string/extreme_battery_saver_summary"/>
-    </PreferenceCategory>
+    </PreferenceCategory>-->
 
     <Preference
         android:order="50"
