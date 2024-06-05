@@ -37,10 +37,10 @@ import org.blissroms.blissify.preferences.CustomSeekBarPreference;
  * volume steps settings under sound
  */
 @SearchIndexable
-public class VolumeSteps extends SettingsPreferenceFragment implements
+public class VolumeStepsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String TAG = "VolumeSteps";
+    private static final String TAG = "VolumeStepsSettings";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

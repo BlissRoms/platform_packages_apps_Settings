@@ -46,4 +46,7 @@
 
     <!-- Show Now Playing -->
     <bool name="config_show_now_playing">false</bool>
+
+    <!-- Whether to show volume steps settings -->
+    <bool name="config_supports_volume_steps" translatable="false">true</bool>
 </resources>
