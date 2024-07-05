@@ -30,6 +30,8 @@
     <color name="homepage_purple_bg">@color/m3_ref_palette_purple80</color>
 
     <color name="contextual_card_background">@*android:color/material_grey_900</color>
+    <color name="homepage_subicon_bg">?android:attr/colorAccent</color>
+    <color name="homepage_icon_bg">@*android:color/system_neutral2_700</color>
     <color name="notification_importance_button_unselected">#5F6368</color>
 
     <!-- Palette list preference colors. -->
