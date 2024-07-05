@@ -20,8 +20,8 @@
     <color name="homepage_support_background">#3F5FBD</color>
     <color name="contextual_card_background">@*android:color/material_grey_900</color>
     <color name="search_bar_background">?androidprv:attr/materialColorSurfaceBright</color>
-    <color name="homepage_subicon_bg">@*android:color/system_neutral1_10</color>
-    <color name="homepage_icon_bg">@*android:color/system_neutral2_600</color>
+    <color name="homepage_subicon_bg">?android:attr/colorAccent</color>
+    <color name="homepage_icon_bg">@*android:color/system_neutral2_700</color>
     <color name="notification_importance_button_unselected">#5F6368</color>
 
     <!-- Palette list preference colors. -->

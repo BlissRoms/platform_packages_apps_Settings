@@ -30,7 +30,6 @@ import com.android.settings.Utils;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.deviceinfo.BluetoothAddressPreferenceController;
 import com.android.settings.deviceinfo.BuildNumberPreferenceController;
-import com.android.settings.deviceinfo.DeviceNamePreferenceController;
 import com.android.settings.deviceinfo.FccEquipmentIdPreferenceController;
 import com.android.settings.deviceinfo.FeedbackPreferenceController;
 import com.android.settings.deviceinfo.IpAddressPreferenceController;
@@ -58,11 +57,9 @@ import java.util.concurrent.Executors;
 import java.util.function.Consumer;
 
 @SearchIndexable
-public class MyDeviceInfoFragment extends DashboardFragment
-        implements DeviceNamePreferenceController.DeviceNamePreferenceHost {
+public class MyDeviceInfoFragment extends DashboardFragment {
 
     private static final String LOG_TAG = "MyDeviceInfoFragment";
-    private static final String KEY_EID_INFO = "eid_info";
     private static final String KEY_MY_DEVICE_INFO_HEADER = "my_device_info_header";
 
     private BuildNumberPreferenceController mBuildNumberPreferenceController;
@@ -80,7 +77,6 @@ public class MyDeviceInfoFragment extends DashboardFragment
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        use(DeviceNamePreferenceController.class).setHost(this /* parent */);
         mBuildNumberPreferenceController = use(BuildNumberPreferenceController.class);
         mBuildNumberPreferenceController.setHost(this /* parent */);
     }
@@ -109,53 +105,8 @@ public class MyDeviceInfoFragment extends DashboardFragment
             Context context, MyDeviceInfoFragment fragment, Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
 
-        final ExecutorService executor = (fragment == null) ? null :
-                Executors.newSingleThreadExecutor();
-        androidx.lifecycle.Lifecycle lifecycleObject = (fragment == null) ? null :
-                fragment.getLifecycle();
-        final SlotSimStatus slotSimStatus = new SlotSimStatus(context, executor, lifecycleObject);
-
-        controllers.add(new IpAddressPreferenceController(context, lifecycle));
-        controllers.add(new WifiMacAddressPreferenceController(context, lifecycle));
-        controllers.add(new BluetoothAddressPreferenceController(context, lifecycle));
-        controllers.add(new RegulatoryInfoPreferenceController(context));
-        controllers.add(new SafetyInfoPreferenceController(context));
-        controllers.add(new ManualPreferenceController(context));
-        controllers.add(new FeedbackPreferenceController(fragment, context));
-        controllers.add(new FccEquipmentIdPreferenceController(context));
         controllers.add(new UptimePreferenceController(context, lifecycle));
 
-        Consumer<String> imeiInfoList = imeiKey -> {
-            ImeiInfoPreferenceController imeiRecord =
-                    new ImeiInfoPreferenceController(context, imeiKey);
-            imeiRecord.init(fragment, slotSimStatus);
-            controllers.add(imeiRecord);
-        };
-
-        if (fragment != null) {
-            imeiInfoList.accept(ImeiInfoPreferenceController.DEFAULT_KEY);
-        }
-
-        for (int slotIndex = 0; slotIndex < slotSimStatus.size(); slotIndex ++) {
-            SimStatusPreferenceController slotRecord =
-                    new SimStatusPreferenceController(context,
-                    slotSimStatus.getPreferenceKey(slotIndex));
-            slotRecord.init(fragment, slotSimStatus);
-            controllers.add(slotRecord);
-
-            if (fragment != null) {
-                imeiInfoList.accept(ImeiInfoPreferenceController.DEFAULT_KEY + (1 + slotIndex));
-            }
-        }
-
-        EidStatus eidStatus = new EidStatus(slotSimStatus, context, executor);
-        SimEidPreferenceController simEid = new SimEidPreferenceController(context, KEY_EID_INFO);
-        simEid.init(slotSimStatus, eidStatus);
-        controllers.add(simEid);
-
-        if (executor != null) {
-            executor.shutdown();
-        }
         return controllers;
     }
 
@@ -165,49 +116,6 @@ public class MyDeviceInfoFragment extends DashboardFragment
             return;
         }
         super.onActivityResult(requestCode, resultCode, data);
-    }
-
-   private void initHeader() {
-        // TODO: Migrate into its own controller.
-        final LayoutPreference headerPreference =
-                getPreferenceScreen().findPreference(KEY_MY_DEVICE_INFO_HEADER);
-        final boolean shouldDisplayHeader = getContext().getResources().getBoolean(
-                R.bool.config_show_device_header_in_device_info);
-        headerPreference.setVisible(shouldDisplayHeader);
-        if (!shouldDisplayHeader) {
-            return;
-        }
-        final View headerView = headerPreference.findViewById(R.id.entity_header);
-        final Activity context = getActivity();
-        final Bundle bundle = getArguments();
-        final EntityHeaderController controller = EntityHeaderController
-                .newInstance(context, this, headerView)
-                .setButtonActions(EntityHeaderController.ActionType.ACTION_NONE,
-                        EntityHeaderController.ActionType.ACTION_NONE);
-
-        // TODO: There may be an avatar setting action we can use here.
-        final int iconId = bundle.getInt("icon_id", 0);
-        if (iconId == 0) {
-            final UserManager userManager = (UserManager) getActivity().getSystemService(
-                    Context.USER_SERVICE);
-            final UserInfo info = Utils.getExistingUser(userManager,
-                    android.os.Process.myUserHandle());
-            controller.setLabel(info.name);
-            controller.setIcon(
-                    com.android.settingslib.Utils.getUserIcon(getActivity(), userManager, info));
-        }
-
-        controller.done(true /* rebindActions */);
-    }
-
-    @Override
-    public void showDeviceNameWarningDialog(String deviceName) {
-        DeviceNameWarningDialog.show(this);
-    }
-
-    public void onSetDeviceNameConfirm(boolean confirm) {
-        final DeviceNamePreferenceController controller = use(DeviceNamePreferenceController.class);
-        controller.updateDeviceName(confirm);
     }
 
     /**
