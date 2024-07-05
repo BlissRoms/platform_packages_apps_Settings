@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2025 BlissRoms Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Cards -->
+    <dimen name="bliss_dashboard_padding">16dp</dimen>
+    <dimen name="bliss_top_icn">42dp</dimen>
+    <dimen name="bliss_top_icn_max">52.5dp</dimen>
+    <dimen name="bliss_dashboard_margin_list">16dip</dimen>
+    <dimen name="bliss_pref_vert">5.5dp</dimen>
+    <dimen name="bliss_card_radius">32dp</dimen>
+
+</resources>
