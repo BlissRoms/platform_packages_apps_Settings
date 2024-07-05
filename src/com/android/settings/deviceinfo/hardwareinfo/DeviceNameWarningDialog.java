@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.deviceinfo.aboutphone;
+package com.android.settings.deviceinfo.hardwareinfo;
 
 import android.app.Dialog;
 import android.app.settings.SettingsEnums;
@@ -35,7 +35,7 @@ public class DeviceNameWarningDialog extends InstrumentedDialogFragment
 
     public static final String TAG = "DeviceNameWarningDlg";
 
-    public static void show(MyDeviceInfoFragment host) {
+    public static void show(HardwareInfoFragment host) {
         final FragmentManager manager = host.getActivity().getSupportFragmentManager();
         if (manager.findFragmentByTag(TAG) != null) {
             return;
@@ -64,7 +64,7 @@ public class DeviceNameWarningDialog extends InstrumentedDialogFragment
 
     @Override
     public void onClick(DialogInterface dialog, int which) {
-        final MyDeviceInfoFragment host = (MyDeviceInfoFragment) getTargetFragment();
+        final HardwareInfoFragment host = (HardwareInfoFragment) getTargetFragment();
         if (which == DialogInterface.BUTTON_POSITIVE) {
             host.onSetDeviceNameConfirm(true);
         } else {
