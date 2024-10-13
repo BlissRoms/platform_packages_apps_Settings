@@ -71,12 +71,13 @@
 
         <TextView
             android:id="@android:id/summary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_below="@android:id/title"
             android:layout_alignStart="@android:id/title"
             android:layout_gravity="start"
             android:textAlignment="viewStart"
+            android:visibility="gone"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="?androidprv:attr/materialColorOnSurfaceVariant"
             android:maxLines="4"
