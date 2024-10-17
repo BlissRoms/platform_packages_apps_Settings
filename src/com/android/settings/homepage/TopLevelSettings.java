@@ -251,6 +251,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
             "poco",
             "xiaomi",
             "asus",
+            "glyph",
             "moto",
             getContext().getResources().getString(R.string.ds_ia)
         };
