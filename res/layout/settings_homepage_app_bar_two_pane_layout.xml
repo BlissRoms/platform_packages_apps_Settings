@@ -22,8 +22,7 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="@dimen/homepage_app_bar_margin_horizontal_two_pane"
     android:padding="@dimen/homepage_app_bar_padding_two_pane"
-    android:orientation="horizontal"
-    android:background="@drawable/homepage_app_bar_background">
+    android:orientation="horizontal" >
 
     <include layout="@layout/search_bar_two_pane_version"/>
 
