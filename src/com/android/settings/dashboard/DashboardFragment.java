@@ -82,7 +82,8 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
     private static final long TIMEOUT_MILLIS = 50L;
 
     private static final List<String> ACCOUNT_INJECTED_KEYS = Arrays.asList(
-        "top_level_google"
+        "top_level_google",
+        "bliss_device_parts_settings"
     );
 
     private static final List<String> SYSTEM_INFO_INJECTED_KEYS = Arrays.asList(
@@ -676,6 +677,8 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
                         group = screen.findPreference("top_level_system_info_category");
                     } else if (SECURITY_PRIVACY_INJECTED_KEYS.contains(key)) {
                         group = screen.findPreference("top_level_security_privacy_category");
+                    } else {
+                        group = screen.findPreference("top_level_category_undefined");
                     }
                     // Order the prefs within their respective category
                     if (KEY_ORDER.containsKey(key)) {
@@ -684,6 +687,7 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
                     if (group instanceof PreferenceCategory) {
                         ((PreferenceCategory) group).addPreference(pref);
                     } else {
+                        // Should never get here now
                         screen.addPreference(pref);
                     }
                 }
