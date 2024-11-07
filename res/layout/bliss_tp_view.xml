@@ -51,7 +51,7 @@
                     android:layout_width="wrap_content"
                     android:textSize="35sp"
                     android:textColor="#FFFFFF"
-                    android:text="BlissROMs" />
+                    android:text="BlissRoms" />
                 
                 <TextView
                     android:layout_height="wrap_content"
