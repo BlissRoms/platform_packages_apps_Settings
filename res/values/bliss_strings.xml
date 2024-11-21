@@ -27,6 +27,8 @@
     <string name="bliss_codename">Bliss Codename</string>
 
     <!-- Bliss maintainer -->
+
+    <string name="bliss_maintainer_title">Build status</string>
     <string name="maintainer">Maintainer</string>
     <string name="bliss_maintainer">Unofficial Maintainer</string>
 
