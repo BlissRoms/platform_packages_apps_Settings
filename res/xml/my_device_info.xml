@@ -65,6 +65,16 @@
             app:controller="com.android.settings.deviceinfo.bliss.BlissVersionPreferenceController"
             app:layout="@layout/bliss_card_top_abt"/>
 
+        <!-- Bliss maintainer -->
+        <Preference
+            android:key="bliss_maintainer"
+            android:icon="@drawable/maintainer_unofficial"
+            android:order="7"
+            android:title="@string/bliss_maintainer_title"
+            android:summary="@string/summary_placeholder"
+            app:controller="com.android.settings.deviceinfo.bliss.BlissMaintainerPreferenceController"
+            app:layout="@layout/bliss_card_mid_abt"/>
+
         <!-- Model & hardware -->
         <Preference
             android:key="device_model"

@@ -31,6 +31,8 @@
     <string name="total_ram">Total RAM</string>
 
     <!-- Bliss maintainer -->
+
+    <string name="bliss_maintainer_title">Build status</string>
     <string name="maintainer">Maintainer</string>
     <string name="bliss_maintainer">Unofficial Maintainer</string>
 

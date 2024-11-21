@@ -17,6 +17,7 @@
 package com.android.settings.deviceinfo.bliss;
 
 import android.content.Context;
+import android.os.SystemProperties;
 import android.content.res.Resources;
 import android.text.TextUtils;
 
@@ -28,6 +29,7 @@ import com.android.settings.core.BasePreferenceController;
 public class BlissMaintainerPreferenceController extends BasePreferenceController {
 
     private static final String TAG = "BlissMaintainerPreferenceController";
+    private static final String KEY_BLISS_BUILD_STATUS_PROP = "ro.bliss.build.status";
 
     public BlissMaintainerPreferenceController(Context context, String key) {
         super(context, key);
@@ -37,8 +39,39 @@ public class BlissMaintainerPreferenceController extends BasePreferenceControlle
         return AVAILABLE;
     }
 
+    @Override
     public CharSequence getSummary() {
+        String buildStatus = getBuildStatus();
         String maintainer = mContext.getResources().getString(R.string.bliss_maintainer);
-        return maintainer;
+
+        if (!TextUtils.isEmpty(buildStatus) && !buildStatus.equals(mContext.getString(R.string.unknown))) {
+            return buildStatus + " by " + maintainer;        }
+
+        return mContext.getString(R.string.unknown);
+    }
+
+    @Override
+    public void updateState(Preference preference) {
+        super.updateState(preference);
+
+        String buildStatus = getBuildStatus();
+
+        if ("OFFICIAL".equalsIgnoreCase(buildStatus)) {
+            preference.setIcon(R.drawable.maintainer_official);
+        } else if ("UNOFFICIAL".equalsIgnoreCase(buildStatus)) {
+            preference.setIcon(R.drawable.maintainer_unofficial);
+        } else {
+            preference.setIcon(R.drawable.maintainer_unofficial);
+        }
+    }
+
+    private String getBuildStatus() {
+        String buildStatus = SystemProperties.get(KEY_BLISS_BUILD_STATUS_PROP, null);
+
+        if ("OFFICIAL".equalsIgnoreCase(buildStatus) || "UNOFFICIAL".equalsIgnoreCase(buildStatus)) {
+            return buildStatus;
+        }
+
+        return mContext.getString(R.string.unknown);
     }
 }
