@@ -15,22 +15,34 @@
  */
 package com.android.settings.system;
 
+import android.app.Activity;
 import android.app.settings.SettingsEnums;
 import android.os.Bundle;
+import android.content.Context;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
 
+import androidx.annotation.Nullable;
+
 import com.android.settings.R;
+import com.android.settings.Utils;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
+import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.Lifecycle;
+import com.android.settingslib.search.SearchIndexable;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @SearchIndexable
 public class SystemDashboardFragment extends DashboardFragment {
 
     private static final String TAG = "SystemDashboardFrag";
+    private List<AbstractPreferenceController> mPreferenceControllers = new ArrayList<>();
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -74,6 +86,25 @@ public class SystemDashboardFragment extends DashboardFragment {
             }
         }
         return visibleCount;
+    }
+
+    @Override
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        if (Utils.isMonkeyRunning()) {
+            mPreferenceControllers = new ArrayList<>();
+            return null;
+        }
+        mPreferenceControllers = buildPreferenceControllers(context, getActivity(),
+                getSettingsLifecycle(), this);
+        return mPreferenceControllers;
+    }
+
+    private static List<AbstractPreferenceController> buildPreferenceControllers(Context context,
+            @Nullable Activity activity, @Nullable Lifecycle lifecycle,
+            @Nullable SystemDashboardFragment fragment) {
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new GameDefaultFrameRatePreferenceController(context));
+        return controllers;
     }
 
     /**

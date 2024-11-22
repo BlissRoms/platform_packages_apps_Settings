@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.development;
+package com.android.settings.system;
 
 import android.annotation.NonNull;
 import android.os.SystemProperties;

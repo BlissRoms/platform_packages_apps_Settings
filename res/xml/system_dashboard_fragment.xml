@@ -54,6 +54,13 @@
         android:fragment="com.android.settings.gestures.GestureSettings"
         settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/> -->
 
+    <SwitchPreferenceCompat
+        android:key="disable_game_default_frame_rate"
+        android:icon="@drawable/ic_game"
+        android:title="@string/disable_game_default_frame_rate_title"
+        android:summary="@string/disable_game_default_frame_rate_summary"
+        android:order="-247" />
+
     <Preference
         android:key="date_time_settings"
         android:title="@string/date_and_time"
