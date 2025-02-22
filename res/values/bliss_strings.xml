@@ -661,4 +661,8 @@
     <string name="idle_manager_title">Idle manager</string>
     <string name="idle_manager_summary">Stop all non-essential background processes when the device is idle</string>
 
+    <!-- Ongoing action chip -->
+    <string name="ongoing_action_chip_title">Ongoing action chip</string>
+    <string name="ongoing_action_chip_summary">Show progress indicator in status bar for ongoing actions like downloads</string> 
+
 </resources>
