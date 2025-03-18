@@ -30,14 +30,6 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- Lineage version -->
-    <Preference
-        android:key="lineage_version"
-        android:title="@*lineageos.platform:string/lineage_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
-
     <!-- Security patch -->
     <Preference
         android:key="security_key"
