@@ -225,6 +225,8 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.bliss.settings.display.refreshrate.ScreenRefreshRateFragment;
 
+import org.blissroms.blissify.Blissify;
+
 public class SettingsGateway {
 
     /**
@@ -437,6 +439,7 @@ public class SettingsGateway {
             SummarizationPreferenceFragment.class.getName(),
             SafetyCenterFragment.class.getName(),
             ScreenRefreshRateFragment.class.getName(),
+            Blissify.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -486,5 +489,6 @@ public class SettingsGateway {
             Settings.NavigationModeSettingsActivity.class.getName(),
             Settings.ShadeSettingsActivity.class.getName(),
             Settings.ScreenRefreshRateActivity.class.getName(),
+            Settings.BlissifyActivity.class.getName(),
     };
 }

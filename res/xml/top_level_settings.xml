@@ -148,6 +148,15 @@
             settings:controller="com.android.settings.fuelgauge.TopLevelBatteryPreferenceController"/>
 
         <com.android.settings.widget.HomepagePreference
+            android:fragment="org.blissroms.blissify.Blissify"
+            android:icon="@drawable/ic_settings_blissify"
+            android:key="top_level_blissify"
+            android:order="-25"
+            android:title="@string/blissify_settings_title"
+            android:summary="@string/blissify_settings_summary"
+            settings:controller="org.blissroms.blissify.TopLevelBlissifyPreferenceController"/>
+
+        <com.android.settings.widget.HomepagePreference
             android:fragment="com.android.settings.system.SystemDashboardFragment"
             android:icon="@drawable/ic_settings_system_dashboard_filled"
             android:key="top_level_system"
