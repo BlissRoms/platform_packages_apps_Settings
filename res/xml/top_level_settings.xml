@@ -22,6 +22,15 @@
     android:title="Settings">
 
     <com.android.settings.widget.HomepagePreference
+        android:fragment="org.blissroms.blissify.Blissify"
+        android:icon="@drawable/ic_settings_blissify"
+        android:key="top_level_blissify"
+        android:order="-160"
+        android:title="@string/blissify_settings_title"
+        android:summary="@string/blissify_settings_summary"
+        settings:controller="org.blissroms.blissify.TopLevelBlissifyPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"
         android:key="top_level_network"
