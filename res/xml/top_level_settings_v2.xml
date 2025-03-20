@@ -239,6 +239,15 @@
         android:order="-90"
         android:key="top_level_account_category"
         android:layout="@layout/settingslib_preference_category_no_title">
+
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="org.blissroms.blissify.Blissify"
+            android:icon="@drawable/ic_settings_blissify_filled"
+            android:key="top_level_blissify"
+            android:order="-50"
+            android:title="@string/blissify_settings_title"
+            android:summary="@string/blissify_settings_summary"
+            settings:controller="org.blissroms.blissify.TopLevelBlissifyPreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
