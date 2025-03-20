@@ -826,4 +826,6 @@ public class Settings extends SettingsActivity {
             super(ScreenRefreshRateScreen.KEY, ScreenRefreshRateFragment.class);
         }
     }
+
+    public static class BlissifyActivity extends SettingsActivity {}
 }

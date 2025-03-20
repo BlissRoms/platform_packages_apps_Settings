@@ -19,6 +19,8 @@
     *;
 }
 
+-keep class org.blissroms.blissify.**
+
 # Keep all preference controllers needed by slice and DashboardFragment.
 -keep class * extends com.android.settings.core.BasePreferenceController {
     *;
