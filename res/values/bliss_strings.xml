@@ -256,4 +256,8 @@
     <string name="hardware_keys_action_expand_qs_panel">Expand QS panel</string>
     <string name="hardware_keys_action_ringer_modes">Change ringer mode</string>
 
+    <!-- Navigation bar taskbar -->
+    <string name="navigation_bar_enable_taskbar_title">Taskbar</string>
+    <string name="navigation_bar_enable_taskbar_summary">Show taskbar with selected navigation mode</string>
+
 </resources>
