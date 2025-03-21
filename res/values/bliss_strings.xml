@@ -110,4 +110,38 @@
     <!-- Auto pin confirm -->
     <string name="lock_screen_auto_pin_confirm_summary_custom">Unlock automatically if you input a correct PIN. This is slightly less secure than tapping Enter to confirm.</string>
 
+    <!-- Navigation Bar -->
+    <string name="navbar_layout_category_title">Layout</string>
+    <string name="navbar_invert_layout_title">Invert layout</string>
+    <string name="navbar_invert_layout_summary">Inverts the layout of the navigation bar and other items, such as the IME switcher</string>
+    <string name="navbar_actions_category_title">Actions</string>
+    <string name="navbar_back_long_press_title">Back long press</string>
+    <string name="navbar_back_double_tap_title">Back double tap</string>
+    <string name="navbar_home_long_press_title">Home long press</string>
+    <string name="navbar_home_double_tap_title">Home double tap</string>
+    <string name="navbar_app_switch_long_press_title">Recents long press</string>
+    <string name="navbar_app_switch_double_tap_title">Recents double tap</string>
+    <string name="navbar_edge_long_swipe_title">Edge long swipe</string>
+    <string name="navbar_corner_long_swipe_title">Bottom corner swipe up</string>
+
+    <!-- Button settings -->
+    <string name="hardware_keys_action_nothing">No action</string>
+    <string name="hardware_keys_action_menu">Open/close menu</string>
+    <string name="hardware_keys_action_app_switch">Recent apps switcher</string>
+    <string name="hardware_keys_action_search">Search assistant</string>
+    <string name="hardware_keys_action_voice_search">Voice search</string>
+    <string name="hardware_keys_action_in_app_search">In-app search</string>
+    <string name="hardware_keys_action_launch_camera">Launch camera</string>
+    <string name="hardware_keys_action_sleep">Turn screen off</string>
+    <string name="hardware_keys_action_last_app">Last app</string>
+    <string name="hardware_keys_action_split_screen">Split screen</string>
+    <string name="hardware_keys_action_close_app">Kill app</string>
+    <string name="hardware_keys_action_torch">Toggle torch</string>
+    <string name="hardware_keys_action_screenshot">Take screenshot</string>
+    <string name="hardware_keys_action_volume_panel">Toggle volume panel</string>
+    <string name="hardware_keys_action_clear_all_notifications">Clear all notifications</string>
+    <string name="hardware_keys_action_notifications_panel">Toggle notifications panel</string>
+    <string name="hardware_keys_action_expand_qs_panel">Expand QS panel</string>
+    <string name="hardware_keys_action_ringer_modes">Change ringer mode</string>
+
 </resources>
