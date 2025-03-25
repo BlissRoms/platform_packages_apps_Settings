@@ -194,4 +194,8 @@
     <string name="navigation_bar_enable_taskbar_title">Taskbar</string>
     <string name="navigation_bar_enable_taskbar_summary">Show taskbar with selected navigation mode</string>
 
+    <!-- Navigation Bar -->
+    <string name="navbar_visibility_title">Navigation bar</string>
+    <string name="navbar_visibility_summary">Display navigation bar at bottom of screen</string>
+
 </resources>
