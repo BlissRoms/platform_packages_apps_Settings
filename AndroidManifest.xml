@@ -150,6 +150,8 @@
     <uses-permission android:name="android.permission.READ_SYSTEM_GRAMMATICAL_GENDER" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
+    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
+
     <application
             android:name=".SettingsApplication"
             android:label="@string/settings_label"
@@ -5542,6 +5544,17 @@
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
+        <receiver android:name="org.blissroms.blissify.fragments.lockscreen.doze.DozeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <service android:name="org.blissroms.blissify.fragements.lockscreen.doze.DozeService"
+                android:exported="true"
+                android:permission="BlissDozeService">
+        </service>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
 
