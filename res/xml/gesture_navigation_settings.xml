@@ -53,6 +53,12 @@
         settings:textStart="@string/back_height_low_label"
         settings:textEnd="@string/back_height_high_label"/>
 
+    <org.blissroms.blissify.preferences.SecureSettingSwitchPreference
+        android:key="back_gesture_haptic"
+        android:title="@string/back_gesture_haptic_title"
+        android:summary="@string/back_gesture_haptic_summary"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="assistant_gesture_category"
         android:persistent="false"
