@@ -69,7 +69,6 @@
         android:title="@string/tether_settings_title_all"
         android:icon="@drawable/ic_wifi_tethering"
         android:order="5"
-        android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.network.TetherPreferenceController"
         settings:keywords="@string/keywords_hotspot_tethering"
         settings:userRestriction="no_config_tethering"
@@ -90,7 +89,6 @@
         android:title="@string/vpn_settings_title"
         android:icon="@drawable/ic_vpn_key"
         android:order="15"
-        android:summary="@string/summary_placeholder"
         settings:userRestriction="no_config_vpn"
         settings:useAdminDisabledSummary="true" />
 
@@ -108,7 +106,6 @@
         android:fragment="com.android.settings.network.AdaptiveConnectivitySettings"
         android:key="adaptive_connectivity"
         android:title="@string/adaptive_connectivity_title"
-        android:summary="@string/summary_placeholder"
         android:order="25"
         settings:controller="com.android.settings.network.AdaptiveConnectivityPreferenceController"/>
 
