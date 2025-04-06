@@ -5568,7 +5568,7 @@
         <!-- Begin Blissify -->
         <activity android:name="Settings$BlissifyActivity"
                 android:label="@string/blissify_settings_title"
-                android:icon="@drawable/ic_homepage_blissify"
+                android:icon="@drawable/ic_dashboard_blissify"
                 android:exported="true"
                 android:taskAffinity="com.android.settings"
                 android:parentActivityName="Settings">
