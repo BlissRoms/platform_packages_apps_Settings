@@ -33,7 +33,7 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="org.blissroms.blissify.Blissify"
-        android:icon="@drawable/ic_settings_blissify_filled"
+        android:icon="@drawable/ic_dashboard_blissify"
         android:key="top_level_blissify"
         android:order="-50"
         android:title="@string/blissify_settings_title"

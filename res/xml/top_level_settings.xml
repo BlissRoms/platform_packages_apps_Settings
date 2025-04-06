@@ -23,7 +23,7 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="org.blissroms.blissify.Blissify"
-        android:icon="@drawable/ic_settings_blissify"
+        android:icon="@drawable/ic_dashboard_blissify"
         android:key="top_level_blissify"
         android:order="-160"
         android:title="@string/blissify_settings_title"
