@@ -66,15 +66,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Toque no sensor para desbloquear, mesmo com o ecrã desligado. O sensor de proximidade impedirá desbloqueios acidentais.</string>
     <string name="show_navbar_hint_title">Dica de navegação</string>
     <string name="show_navbar_hint_summary">Mostrar a barra de dicas de navegação na parte inferior do ecrã</string>
-    <string name="app_notification_sound_timeout_title">Tempo mínimo entre sons de notificação</string>
-    <string name="app_notification_sound_timeout_summary_template">Permitir sons ou vibrações, apenas uma vez, a cada <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Sem restrição</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 segundos</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15 minutos</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
     <string name="auto_brightness_one_shot_title">Brilho automático ao ligar o ecrã</string>
     <string name="auto_brightness_one_shot_summary">O ajuste do brilho ocorrerá apenas no momento em que o ecrã for ligado</string>
     <string name="data_usage_app_restrict_all">Permitir acesso à rede</string>
@@ -97,10 +88,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">Ativar o ecrã quando conectar ou desconectar uma fonte de energia</string>
     <string name="fast_charging_title">Carregamento rápido</string>
     <string name="fast_charging_summary">Desative para reduzir a temperatura produzida pelo dispositivo enquanto carrega ou para aumentar a duração da bateria</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">Mantenha premido o sensor de impressão digital para desbloquear o telemóvel</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">Mantenha premido o sensor de impressão digital para desbloquear o tablet</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">Mantenha premido o sensor de impressão digital para desbloquear o dispositivo</string>
-    <string name="ambient_display_screen_off_udfps_summary">Para ligar o ecrã e desbloquear, mantenha premido o sensor de impressão digital.</string>
     <string name="storage_warning_internal">Aviso: Esta opção pode não funcionar corretamente ou levar à perda de dados, não sendo, portanto, recomendada!</string>
     <string name="assisted_gps">Utilizar GPS assistido</string>
     <string name="assisted_gps_summary">Descarregar da internet dados de assistência por satélite, o que pode melhorar bastante o desempenho de arranque do GPS. Para chamadas de emergência, o GPS assistido é sempre permitido.</string>

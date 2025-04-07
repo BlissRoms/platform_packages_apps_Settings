@@ -59,14 +59,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Tryk på fingeraftrykssensoren på mobilens side.</string>
     <string name="show_navbar_hint_title">Navigations hint</string>
     <string name="show_navbar_hint_summary">Vis navigationsbjælke nederst på skærmen</string>
-    <string name="app_notification_sound_timeout_title">Minimumstid imellem notifikationslyde</string>
-    <string name="app_notification_sound_timeout_summary_template">Tillad ikke lyde, eller vibration, mere end én gang hver <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Ingen restriktion</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 sekunder</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 sekunder</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minutter</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minutter</string>
     <string name="auto_brightness_one_shot_title">Etskuds automatisk lysstyrke</string>
     <string name="auto_brightness_one_shot_summary">Lysstyrkejustering vil kun forekomme i det øjeblik, skærmen tændes</string>
     <string name="data_usage_app_restrict_all">Tillad netværksadgang</string>
@@ -89,9 +81,5 @@
     <string name="wake_when_plugged_or_unplugged_summary">Tænd for skærmen, ved tilslutning til, eller afbrydelse fra en strømkilde</string>
     <string name="fast_charging_title">Hurtig opladning</string>
     <string name="fast_charging_summary">Deaktiver for at reducere den varme, der produceres af enheden, mens du oplader og forlæng batteriets levetid</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">Langt tryk på fingeraftrykssensoren for at låse telefonen op</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">Langt tryk på fingeraftrykssensoren for at låse tabletten op</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">Langt tryk på fingeraftrykssensoren for at låse enheden op</string>
-    <string name="ambient_display_screen_off_udfps_summary">For at vække skærmen og låse den op, skal du trykke lang tid på fingeraftrykssensoren under displayet.</string>
     <string name="assisted_gps_summary">Download satellit-hjælpedata fra internettet, som i høj grad kan forbedre GPS opstartsfunktionen. Til nødopkald er assisteret GPS altid tilladt.</string>
 </resources>

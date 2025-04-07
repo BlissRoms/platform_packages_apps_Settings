@@ -66,15 +66,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Tocca il sensore d\'impronte per sbloccare, anche quando lo schermo è spento. Il sensore di prossimità impedisce lo sblocco accidentale.</string>
     <string name="show_navbar_hint_title">Indicatore navigazione</string>
     <string name="show_navbar_hint_summary">Mostra l\'indicatore di navigazione in fondo allo schermo</string>
-    <string name="app_notification_sound_timeout_title">Tempo minimo tra suoni di notifica</string>
-    <string name="app_notification_sound_timeout_summary_template">Consenti suoni o vibrazioni non più di una volta ogni <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Nessuna restrizione</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 secondi</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 secondi</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minuti</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15 minuti</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minuti</string>
     <string name="auto_brightness_one_shot_title">Luminosità automatica singola </string>
     <string name="auto_brightness_one_shot_summary">La regolazione della luminosità avverrà solo quando lo schermo viene acceso</string>
     <string name="data_usage_app_restrict_all">Consenti accesso alla rete</string>
@@ -97,10 +88,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">Accendi lo schermo quando si collega o si scollega l\'alimentazione</string>
     <string name="fast_charging_title">Ricarica rapida</string>
     <string name="fast_charging_summary">Disabilita per ridurre il calore prodotto dal dispositivo durante la carica o per prolungare la durata della batteria</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">Premi a lungo sul sensore d\'impronte digitali per sbloccare il telefono</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">Premi a lungo sul sensore d\'impronte digitali per sbloccare il tablet</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">Premi a lungo sul sensore d\'impronte digitali per sbloccare il dispositivo</string>
-    <string name="ambient_display_screen_off_udfps_summary">Per accendere lo schermo e sbloccare il dispositivo, premi a lungo sul sensore d\'impronte digitali sotto lo schermo.</string>
     <string name="storage_warning_internal">Attenzione: questa opzione potrebbe non funzionare correttamente o causare una perdita di dati, e quindi non è raccomandata!</string>
     <string name="assisted_gps">Usa il GPS assistito</string>
     <string name="assisted_gps_summary">Scarica da internet i dati di assistenza satellitare, che possono migliorare notevolmente le prestazioni di avvio del GPS. Per le chiamate di emergenza, il GPS assistito è sempre permesso.</string>

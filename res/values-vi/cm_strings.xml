@@ -66,15 +66,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Chạm vào cảm biến để mở khóa, ngay cả khi màn hình tắt. Cảm biến tiệm cận ngăn ngừa việc vô tình mở khóa.</string>
     <string name="show_navbar_hint_title">Gợi ý điều hướng</string>
     <string name="show_navbar_hint_summary">Hiển thị thanh gợi ý điều hướng ở cuối màn hình</string>
-    <string name="app_notification_sound_timeout_title">Thời gian tối thiểu giữa các âm thanh thông báo</string>
-    <string name="app_notification_sound_timeout_summary_template">Cho phép âm thanh hoặc rung không nhiều hơn một lần mỗi <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Không giới hạn</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 giây</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 giây</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 phút</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 phút</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15 phút</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 phút</string>
     <string name="auto_brightness_one_shot_title">Tự động điều chỉnh độ sáng một lần duy nhất</string>
     <string name="auto_brightness_one_shot_summary">Điều chỉnh độ sáng sẽ chỉ thực hiện một lần duy nhất khi màn hình được bật</string>
     <string name="data_usage_app_restrict_all">Cho phép truy cập mạng</string>
@@ -97,10 +88,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">Bật màn hình khi kết nối hoặc ngắt kết nối nguồn điện</string>
     <string name="fast_charging_title">Đang sạc nhanh</string>
     <string name="fast_charging_summary">Tắt để giảm nhiệt do thiết bị tạo ra trong khi sạc hoặc để kéo dài tuổi thọ của pin</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">Giữ cảm biến vân tay để mở khóa điện thoại</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">Giữ cảm biến vân tay để mở khóa máy tính bảng</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">Giữ cảm biến vân tay để mở khóa thiết bị</string>
-    <string name="ambient_display_screen_off_udfps_summary">Để đánh thức màn hình và mở khóa, đặt ngón tay vào cảm biến vân tay dưới màn hình của bạn</string>
     <string name="storage_warning_internal">Cảnh báo: Tùy chọn này có thể không hoạt động bình thường hoặc dẫn đến mất dữ liệu và do đó không được khuyến khích</string>
     <string name="assisted_gps">Sử dụng A-GPS</string>
     <string name="assisted_gps_summary">Tải xuống dữ liệu hỗ trợ vệ tinh từ internet có thể cải thiện đáng kể hiệu suất khởi động GPS. Đối với các cuộc gọi khẩn cấp, A-GPS luôn được phép.</string>

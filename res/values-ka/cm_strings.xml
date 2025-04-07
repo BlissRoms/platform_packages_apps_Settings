@@ -66,15 +66,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">შეხებით გახსნა გამორთული ეკრანის დროსაც. მიახლოების აღმქმელი აირიდებს შემთხვევით გახსნას.</string>
     <string name="show_navbar_hint_title">სამოძრაო მანიშნებელი</string>
     <string name="show_navbar_hint_summary">სამოძრაო მანიშნებლის ზოლის გამოჩენა ეკრანის ქვემოთ</string>
-    <string name="app_notification_sound_timeout_title">უმცირესი დრო ხმოვან სიგნალებს შორის</string>
-    <string name="app_notification_sound_timeout_summary_template">მხოლოდ ერთი ხმოვანი სიგნალის ან ვიბრაციის შესაძლებლობა, ყოველ <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">შეზღუდვის გარეშე</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 წამში</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 წამში</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 წუთში</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 წუთში</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15 წუთი</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 წუთში</string>
     <string name="auto_brightness_one_shot_title">სიკაშკაშის ერთჯერადი თვითგასწორება</string>
     <string name="auto_brightness_one_shot_summary">სიკაშკაშე გასწორდება, მხოლოდ ეკრანის ჩართვისას</string>
     <string name="data_usage_app_restrict_all">ქსელთან წვდომის ნებართვა</string>
@@ -97,10 +88,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">ეკრანის ჩართვა კვების შეერთებისას ან გამოერთებისას</string>
     <string name="fast_charging_title">სწრაფი დამუხტვა</string>
     <string name="fast_charging_summary">გამორთეთ გამოყოფილი სითბოს შესამცირებლად მოწყობილობის დამუხტვისას ან ბატარეის სიცოცხლის გასახანგრძლივებლად.</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">ტელეფონის გახსნა თითის ანაბეჭდის აღმქმელზე დიდხანს დაჭერით</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">პლანშეტის გახსნა თითის ანაბეჭდის აღმქმელზე დიდხანს დაჭერით</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">მოწყობილობის გახსნა თითის ანაბეჭდის აღმქმელზე დიდხანს დაჭერით</string>
-    <string name="ambient_display_screen_off_udfps_summary">ეკრანის ჩასართავად და გასახსნელად დიდხანს დააჭირეთ თითის ანაბეჭდის ეკრანქვეშა აღმქმელს.</string>
     <string name="storage_warning_internal">გაფრთხილება: ამ პარამეტრმა შეიძლება ვერ იმუშაოს სათანადოდ ან მონაცემთა დაკარგვა გამოიწვიოს, შესაბამისად არასასურველია!</string>
     <string name="assisted_gps">GPS ქსელის მიშველებით</string>
     <string name="assisted_gps_summary">დამხმარე თანამგზავრული მონაცემების ინტერნეტიდან ჩამოტვირთვა, რომ მეტად გაუმჯობესდეს შედეგიანობა GPS-ის ამუშავებისთანავე. გადაუდებელი ზარებისას GPS-ის დამხმარე მონაცემები მუდამ ნებადართულია.</string>

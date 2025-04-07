@@ -57,15 +57,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Sentuh sensor di bagian samping tablet Anda.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Sentuh sensor di bagian samping perangkat Anda.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Sentuh sensor di bagian samping ponsel Anda.</string>
-    <string name="app_notification_sound_timeout_title">Waktu minimum antara suara pemberitahuan</string>
-    <string name="app_notification_sound_timeout_summary_template">Memungkinkan suara atau getaran tidak lebih dari sekali setiap <xliff:g id="duration">%1$s </xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Tidak ada pembatasan</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 detik</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 detik</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 menit</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 menit</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15 menit</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 menit</string>
     <string name="auto_brightness_one_shot_title">Kecerahan otomatis satu bidikan</string>
     <string name="auto_brightness_one_shot_summary">Penyesuaian kecerahan hanya akan terjadi pada saat layar dihidupkan</string>
     <string name="data_usage_app_restrict_all">Izinkan akses jaringan</string>
@@ -88,10 +79,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">Aktifkan layar ketika menghubungkan atau melepaskan sumber daya</string>
     <string name="fast_charging_title">Pengisian daya cepat</string>
     <string name="fast_charging_summary">Nonaktifkan untuk mengurangi panas yang dihasilkan oleh perangkat saat mengisi daya atau untuk memperpanjang masa pakai baterai</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">Tekan lama pada sensor sidik jari untuk membuka kunci ponsel</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">Tekan lama pada sensor sidik jari untuk membuka kunci tablet</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">Tekan lama pada sensor sidik jari untuk membuka kunci perangkat</string>
-    <string name="ambient_display_screen_off_udfps_summary">Untuk mengaktifkan layar dan membuka kunci, tekan lama sensor sidik jari di bawah layar.</string>
     <string name="battery_technology">Teknologi</string>
     <string name="battery_health">Kesehatan</string>
     <string name="battery_health_good">Baik</string>

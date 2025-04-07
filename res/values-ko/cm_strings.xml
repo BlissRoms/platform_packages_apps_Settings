@@ -66,15 +66,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">화면이 꺼져 있을 때도 센서를 터치하여 잠금을 해제합니다. 근접 센서는 실수로 잠금이 해제되는 것을 방지합니다.</string>
     <string name="show_navbar_hint_title">내비게이션 힌트</string>
     <string name="show_navbar_hint_summary">화면 아래에 내비게이션 힌트 바를 표시합니다.</string>
-    <string name="app_notification_sound_timeout_title">알림 소리 최소 간격</string>
-    <string name="app_notification_sound_timeout_summary_template">매 <xliff:g id="duration">%1$s</xliff:g>마다 한 번씩만 소리 또는 진동을 허용합니다</string>
-    <string name="app_notification_sound_timeout_value_none">제한 없음</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10초</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30초</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1분</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5분</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15분</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30분</string>
     <string name="auto_brightness_one_shot_title">화면이 켜질 때 한 번만 밝기 조절</string>
     <string name="auto_brightness_one_shot_summary">자동 밝기 조절을 화면이 켜질 때 단 한 번만 실행합니다.</string>
     <string name="data_usage_app_restrict_all">네트워크 액세스 허용</string>
@@ -97,10 +88,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">전원이 연결되거나 분리될 때 화면 켜기</string>
     <string name="fast_charging_title">고속 충전</string>
     <string name="fast_charging_summary">충전 중에 발생하는 열을 줄여 배터리 수명을 연장하려면 비활성화</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">지문 인식 센서를 길게 눌러 휴대 전화 잠금 해제</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">지문 인식 센서를 길게 눌러 태블릿 잠금 해제</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">지문 인식 센서를 길게 눌러 기기 잠금 해제</string>
-    <string name="ambient_display_screen_off_udfps_summary">화면을 켜고 잠금을 해제하려면, 화면 아래에 있는 지문 인식 센서를 길게 누르세요.</string>
     <string name="storage_warning_internal">경고: 이 옵션은 제대로 작동하지 않거나 데이터 손실이 일어날 가능성이 있으므로 권장하지 않습니다!</string>
     <string name="assisted_gps">A-GPS 사용</string>
     <string name="assisted_gps_summary">GPS 시작 성능을 매우 개선하기 위해 A-GPS 데이터를 인터넷에서 다운로드합니다. 긴급전화의 경우, A-GPS가 항상 허용됩니다.</string>

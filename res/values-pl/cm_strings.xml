@@ -67,16 +67,7 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Dotknij czujnika znajdującego się z boku twojego telefonu.</string>
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Dotknij czujnika, aby odblokować, nawet gdy ekran jest wyłączony. Czujnik zbliżeniowy zapobiega przypadkowemu odblokowaniu.</string>
     <string name="show_navbar_hint_title">Pasek nawigacji</string>
-    <string name="show_navbar_hint_summary">Pokaż pasek nawigacji w dolnej części ekranu</string>
-    <string name="app_notification_sound_timeout_title">Minimalny czas między dźwiękami powiadomień</string>
-    <string name="app_notification_sound_timeout_summary_template">Zezwól na dźwięki i wibracje, nie więcej niż jeden raz co każde <xliff:g id="duration">%1$s </xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Brak ograniczeń</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 sekund</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 sekund</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 min</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 min</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15 minut</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minut</string>
+    <string name="show_navbar_hint_summary">Pokazuj pasek nawigacji w dolnej części ekranu</string>
     <string name="auto_brightness_one_shot_title">Jednorazowa jasność automatyczna</string>
     <string name="auto_brightness_one_shot_summary">Regulacja jasności nastąpi tylko w momencie włączenia ekranu</string>
     <string name="data_usage_app_restrict_all">Zezwól na dostęp do sieci</string>
@@ -95,13 +86,10 @@
     <string name="touchscreen_gesture_settings_summary">Wykonuj różne gesty na ekranie dotykowym, aby wykonać szybkie akcje</string>
     <string name="touchscreen_hovering_title">Wskazywanie ekranu dotykowego</string>
     <string name="touchscreen_hovering_summary">Pozwala na wskazywanie na ekranie jak myszką w przeglądarce internetowej, pulpicie zdalnym itd.</string>
+    <string name="wake_when_plugged_or_unplugged_title">Wybudzaj przy podłączaniu</string>
     <string name="wake_when_plugged_or_unplugged_summary">Włącz ekran podczas podłączania i odłączania od źródła zasilania</string>
     <string name="fast_charging_title">Szybkie ładowanie</string>
     <string name="fast_charging_summary">Wyłącz, aby zmniejszyć ciepło wytwarzane przez urządzenie podczas ładowania lub wydłużyć żywotność baterii</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">Odblokuj telefon dłużej dotykając czytnika linii papilarnych</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">Odblokuj tablet dłużej dotykając czytnika linii papilarnych</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">Odblokuj urządzenie dłużej dotykając czytnika linii papilar.</string>
-    <string name="ambient_display_screen_off_udfps_summary">Aby wybudzić i odblokować ekran, przytrzymaj czytnik linii papilarnych, znajdujący się pod wyświetlaczem.</string>
     <string name="storage_warning_internal">Ostrzeżenie: Ta opcja może nie działać poprawnie lub prowadzić do utraty danych i dlatego nie jest zalecana!</string>
     <string name="assisted_gps">Używaj wspomaganego systemu GPS</string>
     <string name="assisted_gps_summary">Pobierz dane pomocy satelitarnej z Internetu, które mogą znacznie poprawić wydajność uruchamiania GPS. W przypadku połączeń awaryjnych wspomagany GPS jest zawsze dozwolony.</string>

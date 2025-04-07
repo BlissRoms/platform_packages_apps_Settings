@@ -41,14 +41,6 @@
     <string name="min_refresh_rate_title">Taxa mínima de actualización </string>
     <string name="show_navbar_hint_title">Suxerencia de navegación</string>
     <string name="show_navbar_hint_summary">Amosar barra de suxestións de navegación na parte inferior da pantalla</string>
-    <string name="app_notification_sound_timeout_title">Tempo mínimo entre os sons das notificacións</string>
-    <string name="app_notification_sound_timeout_summary_template">Permitir os sons ou vibración non máis dunha vez cada <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Sen restrición</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 segundos</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
     <string name="auto_brightness_one_shot_title">Brillo automático ao encender a pantalla</string>
     <string name="auto_brightness_one_shot_summary">O axuste do brillo ocorrerá só no momento en que a pantalla for encendida</string>
     <string name="data_usage_app_restrict_all">Permitir acceso á rede</string>

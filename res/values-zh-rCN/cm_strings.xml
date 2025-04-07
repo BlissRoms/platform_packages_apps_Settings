@@ -66,15 +66,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">即使在屏幕关闭时，也可以通过触摸传感器来解锁。接近传感器可以防止意外解锁。</string>
     <string name="show_navbar_hint_title">导航提示</string>
     <string name="show_navbar_hint_summary">在屏幕底部显示导航提示栏</string>
-    <string name="app_notification_sound_timeout_title">最短通知铃声间隔</string>
-    <string name="app_notification_sound_timeout_summary_template">每 <xliff:g id="duration">%1$s</xliff:g> 允许一次响铃或振动</string>
-    <string name="app_notification_sound_timeout_value_none">无限制</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 秒</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 秒</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 分钟</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 分钟</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15 分钟</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 分钟</string>
     <string name="auto_brightness_one_shot_title">一键自动调整亮度</string>
     <string name="auto_brightness_one_shot_summary">亮度调整只会在打开屏幕的那一刻发生</string>
     <string name="data_usage_app_restrict_all">允许网络访问</string>
@@ -97,10 +88,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时点亮屏幕</string>
     <string name="fast_charging_title">快速充电</string>
     <string name="fast_charging_summary">禁用以减少设备在充电时产生的热量或延长电池的使用寿命</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">长按指纹传感器解锁手机</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">长按指纹传感器解锁平板电脑</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">长按指纹传感器解锁设备</string>
-    <string name="ambient_display_screen_off_udfps_summary">要唤醒您的屏幕并解锁，长按您的屏下指纹传感器。</string>
     <string name="storage_warning_internal">警告: 此选项可能无法正常工作或导致数据丢失, 因此不推荐!</string>
     <string name="assisted_gps">使用增强型GPS</string>
     <string name="assisted_gps_summary">从互联网下载卫星辅助数据，这可以极大地提高GPS启动性能。对于紧急呼叫，总是允许GPS辅助。</string>

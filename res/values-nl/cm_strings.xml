@@ -66,15 +66,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Raak de sensor aan om te ontgrendelen, zelfs wanneer het scherm is uitgeschakeld. Nabijheidssensor voorkomt onbedoeld ontgrendelen.</string>
     <string name="show_navbar_hint_title">Navigatie hint</string>
     <string name="show_navbar_hint_summary">Toon navigatiehintbalk aan de onderkant van het scherm</string>
-    <string name="app_notification_sound_timeout_title">Minimale tijd tussen meldingsgeluiden</string>
-    <string name="app_notification_sound_timeout_summary_template">Geluid of trillen niet meer dan één keer per <xliff:g id="duration">%1$s</xliff:g> toestaan</string>
-    <string name="app_notification_sound_timeout_value_none">Geen beperking</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 seconden</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 seconden</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 minuut</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minuten</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15 minuten</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minuten</string>
     <string name="auto_brightness_one_shot_title">Eén schot automatische helderheid</string>
     <string name="auto_brightness_one_shot_summary">Helderheid aanpassing zal alleen plaatsvinden op het moment dat het scherm is ingeschakeld</string>
     <string name="data_usage_app_restrict_all">Netwerktoegang toestaan</string>
@@ -97,10 +88,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">Scherm aan bij het aansluiten of loskoppelen van een lader</string>
     <string name="fast_charging_title">Snelladen</string>
     <string name="fast_charging_summary">Schakel uit om de warmteproductie van het apparaat te verminderen tijdens het opladen of om de levensduur van de batterij te verlengen</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">Vingerafdruksensor lang indrukken om telefoon te ontgrendelen</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">Vingerafdruksensor lang indrukken om tablet te ontgrendelen</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">Vingerafdruksensor lang indrukken om apparaat te ontgrendelen</string>
-    <string name="ambient_display_screen_off_udfps_summary">Houdt de vingerafdruksensor lang ingedrukt om het scherm aan te zetten en te ontgrendelen.</string>
     <string name="storage_warning_internal">Waarschuwing: Deze optie werkt mogelijk niet goed of leidt tot gegevensverlies en wordt daarom niet aangeraden!</string>
     <string name="assisted_gps">Gebruik Assisted GPS</string>
     <string name="assisted_gps_summary">Download satellietondersteuningsgegevens van het internet die de opstartprestaties van GPS aanzienlijk kunnen verbeteren. Voor noodoproepen is assisted GPS altijd toegestaan.</string>

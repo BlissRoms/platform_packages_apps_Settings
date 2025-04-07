@@ -41,14 +41,6 @@
     <string name="min_refresh_rate_title">Reat as lugha an ath-nuadhachaidh</string>
     <string name="show_navbar_hint_title">Oidheam na seòladaireachd</string>
     <string name="show_navbar_hint_summary">Seall bàr oidheam na seòladaireachd aig bonn na sgrìn</string>
-    <string name="app_notification_sound_timeout_title">An ùine as lugha eadar fuaimean bhrathan</string>
-    <string name="app_notification_sound_timeout_summary_template">Na ceadaich fuaim no brath nas trice na gach <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Gun chuingeachadh</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 diogan</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 diog</string>
-    <string name="app_notification_sound_timeout_value_1_minute">Mionaid</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 mionaidean</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">Leth-uair a thìde</string>
     <string name="auto_brightness_one_shot_title">Soilleireachd fhèin-obrachail an aon losgaidh</string>
     <string name="auto_brightness_one_shot_summary">Cha dèid gleus a chur air an t-soilleireachd ach aig an àm a thèid an sgrìn a chur air</string>
     <string name="data_usage_app_restrict_all">Ceadaich inntrigeadh dhan lìonra</string>
