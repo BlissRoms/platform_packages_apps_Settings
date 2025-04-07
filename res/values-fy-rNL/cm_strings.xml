@@ -31,14 +31,6 @@
     <string name="lock_settings_picker_pattern_size_message">Grutte patroan kieze</string>
     <string name="lockpattern_settings_enable_error_path_title">Patroanflater toane</string>
     <string name="lockpattern_settings_enable_dots_title">Patroanknoppen toane</string>
-    <string name="app_notification_sound_timeout_title">Minimale tiid tusken meldingslûden</string>
-    <string name="app_notification_sound_timeout_summary_template">Lûd of trillen net mear as ien kear yn de <xliff:g id="duration">%1$s</xliff:g> tastean</string>
-    <string name="app_notification_sound_timeout_value_none">Gjin beheining</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 sekonden</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 sekonden</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 minút</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minuten</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minuten</string>
     <string name="data_usage_app_restrict_vpn">VPN-gegevens</string>
     <string name="data_usage_app_restrict_vpn_summary">Tagong ta VPN-gegevens tastean</string>
     <string name="data_usage_app_restrict_wifi">Gegevens fia wifi</string>

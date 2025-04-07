@@ -25,14 +25,6 @@
     <string name="lock_settings_picker_pattern_size_message">Velg størrelse på mønster</string>
     <string name="lockpattern_settings_enable_error_path_title">Vis feil</string>
     <string name="lockpattern_settings_enable_dots_title">Vis mønster prikker</string>
-    <string name="app_notification_sound_timeout_title">Minimum tid imellom varsellyder</string>
-    <string name="app_notification_sound_timeout_summary_template">Gi lyder og vibrasjoner bare lov å ringe hvert <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Ingen begrensning</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 sekunder</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 sekunder</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 minutt</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minutter</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minutter</string>
     <string name="unlock_scramble_pin_layout_title">Endre layout</string>
     <string name="unlock_scramble_pin_layout_summary">Endre PIN layout når enheten låses opp</string>
     <string name="proximity_wake_title">Hindre utilsiktet vekking</string>

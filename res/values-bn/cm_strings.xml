@@ -48,12 +48,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">আপনার ট্যাবলেটের পাশের সেন্সরে টিপ দিন</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">আপনার ডিভাইসের পাশের সেন্সরে টিপ দিন</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">আপনার ফোনের পাশের সেন্সরে টিপ দিন</string>
-    <string name="app_notification_sound_timeout_value_none">বাধাহীন</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">১০ সেকেন্ড</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">৩০ সেকেন্ড</string>
-    <string name="app_notification_sound_timeout_value_1_minute">১ মিনিট</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">৫ মিনিট</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">৩০ মিনিট</string>
     <string name="data_usage_app_restrict_mobile">মোবাইল ডাটা</string>
     <string name="data_usage_app_restrict_mobile_summary">মোবাইল ডাটার ব্যবহার সক্ষম করো</string>
     <string name="data_usage_app_restrict_vpn">ভিপিএন ডাটা</string>

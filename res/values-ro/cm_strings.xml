@@ -67,15 +67,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Atingeți senzorul pentru deblocare, chiar și atunci când ecranul este oprit. Senzorul de proximitate previne deblocarea accidentală.</string>
     <string name="show_navbar_hint_title">Indicii navigare</string>
     <string name="show_navbar_hint_summary">Arată indiciul bării de navigare în partea de jos a ecranului</string>
-    <string name="app_notification_sound_timeout_title">Timp minim între sunetele notificărilor</string>
-    <string name="app_notification_sound_timeout_summary_template">Nu permiteți sunete sau vibrații mai mult de o singură dată la mai puțin de fiecare <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Fără restricţie</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 secunde</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 de secunde</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minute</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15 minute</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 de minute</string>
     <string name="auto_brightness_one_shot_title">Luminozitate automată instantă</string>
     <string name="auto_brightness_one_shot_summary">Ajustarea luminozității va avea loc doar în momentul în care ecranul este pornit</string>
     <string name="data_usage_app_restrict_all">Permiteți accesul la rețea</string>
@@ -98,10 +89,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">Aprinde ecranul când se conectează sau deconectează sursa de alimentare</string>
     <string name="fast_charging_title">Încărcare rapidă</string>
     <string name="fast_charging_summary">Dezactivați pentru a reduce căldura produsă de dispozitiv în timpul încărcării sau pentru a prelungi durata de viață a bateriei</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">Apăsați lung pe senzorul de amprentă pentru a debloca telefonul</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">Apăsați lung pe senzorul de amprentă pentru a debloca tableta</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">Apăsați lung pe senzorul de amprentă pentru a debloca dispozitivul</string>
-    <string name="ambient_display_screen_off_udfps_summary">Pentru a porni și debloca ecranul, țineți apăsat pe senzorul de amprentă under-display.</string>
     <string name="storage_warning_internal">Atenție: Este posibil ca această opțiune să nu funcționeze corespunzător sau să ducă la pierderea datelor și, prin urmare, nu este recomandată!</string>
     <string name="assisted_gps">Utilizați GPS asistat</string>
     <string name="assisted_gps_summary">Descarcă datele de asistență prin satelit de pe internet, care pot îmbunătăți considerabil performanța de pornire a GPS-ului. Pentru apelurile de urgență, GPS-ul asistat este întotdeauna permis.</string>

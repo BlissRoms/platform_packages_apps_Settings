@@ -66,15 +66,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">即使螢幕關閉，觸控感應器即可解鎖。接近感應器可防止意外解鎖。</string>
     <string name="show_navbar_hint_title">導覽列提示</string>
     <string name="show_navbar_hint_summary">在螢幕底部顯示導航列提示欄</string>
-    <string name="app_notification_sound_timeout_title">通知音效之間的最短時間</string>
-    <string name="app_notification_sound_timeout_summary_template">允許音效或震動每一次不超過 <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">無限制</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 秒</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 秒</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 分鐘</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 分鐘</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15 分鐘</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 分鐘</string>
     <string name="auto_brightness_one_shot_title">使用自動調整亮度一次</string>
     <string name="auto_brightness_one_shot_summary">將在開啟螢幕時自動調整螢幕亮度一次</string>
     <string name="data_usage_app_restrict_all">允許網路存取</string>
@@ -97,10 +88,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">接上或拔除電源時開啟螢幕</string>
     <string name="fast_charging_title">快速充電</string>
     <string name="fast_charging_summary">停用以減少裝置在充電時產生的熱量或延長電池的使用壽命</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">在指紋感應器上長按以解鎖手機</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">在指紋感應器上長按以解鎖平板</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">在指紋感應器上長按以解鎖裝置</string>
-    <string name="ambient_display_screen_off_udfps_summary">要喚醒您的螢幕並結鎖，長按您的螢幕下指紋感應器。</string>
     <string name="storage_warning_internal">警告：此選項可能無法正常運作或導致資料遺失，因此並不建議使用。</string>
     <string name="assisted_gps">使用輔助全球定位系統 (A-GPS)</string>
     <string name="assisted_gps_summary">下載衛星輔助定位資料可以取得更好的定位效能。使用緊急通話時，將一律允許使用衛星輔助定位功能。</string>

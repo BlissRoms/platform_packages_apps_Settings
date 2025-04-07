@@ -33,14 +33,6 @@
     <string name="lockpattern_settings_enable_error_path_title">Mostrar patrón erróneo</string>
     <string name="lockpattern_settings_enable_dots_title">Mostrar puntos de patrón</string>
     <string name="show_navbar_hint_title">Sugerencia de navegación</string>
-    <string name="app_notification_sound_timeout_title">Tiempo mínimo entre los sonidos de notificación</string>
-    <string name="app_notification_sound_timeout_summary_template">Permitir sonidos o vibraciones no más de una vez cada <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Sin restricción</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 segundos</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
     <string name="data_usage_app_restrict_all">Permitir acceso a la red</string>
     <string name="data_usage_app_restrict_all_summary">Habilitar el uso de red</string>
     <string name="data_usage_app_restrict_vpn">Datos de VPN</string>

@@ -30,12 +30,6 @@
     <string name="lock_settings_picker_pattern_size_message">Fren tiddi n wudlif</string>
     <string name="lockpattern_settings_enable_error_path_title">Sken tuccḍa n uzenziɣ</string>
     <string name="lockpattern_settings_enable_dots_title">Sken tinqiḍin n uzenziɣ</string>
-    <string name="app_notification_sound_timeout_value_none">Ulac tilisa</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 n tasinin</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 n tasinin</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 n tisdat</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 n tisdatin</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 n tisdatin</string>
     <string name="data_usage_app_restrict_all">Sireg anekcum ɣer uẓeṭṭa</string>
     <string name="data_usage_app_restrict_all_summary">Rmed aseqdec n uẓeṭṭa</string>
     <string name="data_usage_app_restrict_mobile">Isefka izirazen</string>

@@ -61,14 +61,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Cyffyrdda\'r synhwyrydd ar ochr dy ffôn.</string>
     <string name="show_navbar_hint_title">Awgrymiad llywio</string>
     <string name="show_navbar_hint_summary">Dangos bar awgrymiadau llywio ar waelod y sgrin</string>
-    <string name="app_notification_sound_timeout_title">Y cyfnod lleiaf o amser rhwng seiniau hysbysiadau</string>
-    <string name="app_notification_sound_timeout_summary_template">Peidio â chaniatáu synau na dirgrynu yn amlach nag unwaith pob <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Dim cyfyngiad</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 eiliad</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 eiliad</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 munud</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 munud</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 munud</string>
     <string name="auto_brightness_one_shot_title">Awto-disgleirdeb un tro</string>
     <string name="auto_brightness_one_shot_summary">Caiff y disgleirdeb ei addasu dim ond ar y foment mae\'r sgrin yn troi ymlaen.</string>
     <string name="data_usage_app_restrict_all">Caniatáu mynediad i rwydwaith</string>
@@ -91,9 +83,5 @@
     <string name="wake_when_plugged_or_unplugged_summary">Troi\'r sgrin ymlaen wrth gysylltu neu ddatgysylltu â phŵer</string>
     <string name="fast_charging_title">Gwefru cyflym</string>
     <string name="fast_charging_summary">Analluoga i leihau\'r gwres sy\'n cael ei gynhyrchu gan y ddyfais wrth wefru neu i ymestyn oes y batri</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">Dal yn hir ar y synhwyrydd ôl bys i ddatgloi\'r ffôn</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">Dal yn hir ar y synhwyrydd ôl bys i ddatgloi\'r llechen</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">Dal yn hir ar y synhwyrydd ôl bys i ddatgloi\'r ddyfais</string>
-    <string name="ambient_display_screen_off_udfps_summary">I ddeffro a datgloi dy sgrin, dalia yn hir dros y synhwyrydd ôl bys sydd o dan y sgrin.</string>
     <string name="storage_warning_internal">Rhybudd: Mae\'n bosib na fydd yr opsiwn hwn yn gweithio\'n iawn ac yn arwain at golli data, felly ni argymhellir!</string>
 </resources>

@@ -66,15 +66,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">画面がオフの場合でも、センサーをタッチしてロック解除できます。予期しないロック解除は近接センサーで防ぎます。</string>
     <string name="show_navbar_hint_title">ナビゲーションバーのヒント</string>
     <string name="show_navbar_hint_summary">画面下部にナビゲーションバーのヒントを表示します</string>
-    <string name="app_notification_sound_timeout_title">通知音の最小間隔</string>
-    <string name="app_notification_sound_timeout_summary_template"><xliff:g id="duration">%1$s</xliff:g>間に1回以上の通知音またはバイブレーションを許可しない</string>
-    <string name="app_notification_sound_timeout_value_none">無制限</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10秒</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30秒</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1分</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5分</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15分</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30分</string>
     <string name="auto_brightness_one_shot_title">画面点灯時にのみ適用する</string>
     <string name="auto_brightness_one_shot_summary">画面が点灯した時に一度だけ自動で画面の明るさ調整を行います</string>
     <string name="data_usage_app_restrict_all">ネットワークアクセスを許可する</string>
@@ -97,10 +88,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">電源を接続または切断したときに画面を点灯します</string>
     <string name="fast_charging_title">急速充電</string>
     <string name="fast_charging_summary">充電中の端末の発熱を減らしバッテリー寿命を伸ばすためには無効にしてください</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">指紋センサーを長押しして端末のロックを解除する</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">指紋センサーを長押しして端末のロックを解除する</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">指紋センサーを長押しして端末のロックを解除する</string>
-    <string name="ambient_display_screen_off_udfps_summary">画面を起動してロックを解除するには、画面内指紋センサーを長押ししてください。</string>
     <string name="storage_warning_internal">警告: このオプションは正常に動作しなかったりデータの消失に繋がる可能性があるため推奨しません！</string>
     <string name="assisted_gps">A-GPS を使用</string>
     <string name="assisted_gps_summary">GPS 始動時のパフォーマンスを大幅に向上できる衛星支援データをインターネットからダウンロードします。緊急電話のために、アシスト GPS は常に許可されています。</string>

@@ -62,12 +62,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Toca\'l sensor pa desbloquiar, magar que la pantalla tea apagada. El sensor de proximidá impide\'l desbloquéu accidental.</string>
     <string name="show_navbar_hint_title">Indicador de navegación</string>
     <string name="show_navbar_hint_summary">Amuesa una barra indicadora de navegación no baxero de la pantalla</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 segundos</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 minutu</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15 minutos</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
     <string name="auto_brightness_one_shot_title">Brillu automáticu namás una vegada</string>
     <string name="auto_brightness_one_shot_summary">L\'axuste del brillu namás se produz nel momentu que la pantalla se prenda</string>
     <string name="data_usage_app_restrict_all">Permitir l\'accesu a la rede</string>
@@ -88,10 +82,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">Priende la pantalla al des/espatar el preséu d\'una fonte llétrica</string>
     <string name="fast_charging_title">Carga rápida</string>
     <string name="fast_charging_summary">Desactiva esta opción p\'amenorgar la calor producida pol preséu mentanto carga y aumentar la vida útil de la batería</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">Tener primíu\'l sensor de buelgues desbloquia\'l teléfonu</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">Tener primíu\'l sensor de buelgues desbloquia la tableta</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">Tener primíu\'l sensor de buelgues desbloquia\'l preséu</string>
-    <string name="ambient_display_screen_off_udfps_summary">Pa esconsoñar la pantalla y desbloquiar el preséu, ten primío sobre\'l sensor de buelgues que ta so la pantalla.</string>
     <string name="storage_warning_internal">Alvertencia: ¡ye posible qu\'esta opción nun funcione afayadizamente o provoque la perda de datos, y polo tanto, nun s\'aconseya!</string>
     <string name="assisted_gps">Usar el GPS asistíu</string>
     <string name="assisted_gps_summary">Baxa los datos d\'asistencia satelitales d\'internet que puen ameyorar muncho\'l rindimientu inicial del GPS. Pa les llamaes d\'emerxencia, el GPS asistíu permítese siempre.</string>

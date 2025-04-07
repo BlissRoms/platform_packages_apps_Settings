@@ -66,15 +66,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Prekni sensorin për ta shkyçur, edhe kur ekrani është i fikur. Sensori i afërsisë parandalon zhbllokimin aksidental.</string>
     <string name="show_navbar_hint_title">Udhëzim për navigim</string>
     <string name="show_navbar_hint_summary">Shfaq shiritin e sugjerimeve të navigimit në fund të ekranit</string>
-    <string name="app_notification_sound_timeout_title">Koha minimale midis zileve të njoftimeve</string>
-    <string name="app_notification_sound_timeout_summary_template">Mos lejo zilet apo dridhjet më shumë se një herë në <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">E pakufizim</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 sekonda</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 sekonda</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 minutë</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minuta</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">15 minuta</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minuta</string>
     <string name="auto_brightness_one_shot_title">Ndriçimi automatik me një goditje</string>
     <string name="auto_brightness_one_shot_summary">Rregullimi i ndriçimit do të ndodhë në momentin kur ekrani ndizet</string>
     <string name="data_usage_app_restrict_all">Lejo hyrjen në rrjet</string>
@@ -97,10 +88,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">Ndizni ekranin kur lidhni ose shkëputni karikuesin</string>
     <string name="fast_charging_title">Karikim i shpejtë</string>
     <string name="fast_charging_summary">Çaktivizoni për të zvogëluar nxehtësinë e prodhuar nga pajisja gjatë karikimit ose për të zgjatur jetëgjatësinë e baterisë</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">Shtypni gjatë sensorin e gjurmës së gishtit për të zhbllokuar telefonin</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">Shtypni gjatë sensorin e gjurmës së gishtit për të zhbllokuar tabletin</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">Shtypni gjatë sensorin e gjurmës së gishtit për të shkyçur pajisjen</string>
-    <string name="ambient_display_screen_off_udfps_summary">Për të zgjuar ekranin dhe për të shkyçur, shtypni gjatë sensorin e gjurmës së gishtit nën ekran.</string>
     <string name="storage_warning_internal">Paralajmërim: Ky opsion mund të mos funksionojë siç duhet ose të çojë në humbje të të dhënave dhe për këtë arsye nuk rekomandohet!</string>
     <string name="assisted_gps">Përdor GPS-në e ndihmuar</string>
     <string name="assisted_gps_summary">Shkarkoni të dhënat e ndihmës satelitore nga interneti, të cilat mund të përmirësojnë shumë performancën e nisjes së GPS. Për thirrjet e urgjencës, GPS i asistuar lejohet gjithmonë.</string>

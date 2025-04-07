@@ -66,14 +66,6 @@
     <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Snertu skynjarann til að aflæsa, jafnvel þegar slökkt er á skjá. Nálægðarskynjari kemur í veg fyrir aflæsingu fyrir slysni.</string>
     <string name="show_navbar_hint_title">Ábending við flakk</string>
     <string name="show_navbar_hint_summary">Birta stiku með ábendingum um flakk neðst á skjánum</string>
-    <string name="app_notification_sound_timeout_title">Lágmarkstími milli tilkynningahljóða</string>
-    <string name="app_notification_sound_timeout_summary_template">Leyfa hljóð eða titring ekki oftar en einu sinni á <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Engar takmarkanir</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 sekúndur</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 sekúndur</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 mínúta</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 mínútur</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 mínútur</string>
     <string name="auto_brightness_one_shot_title">Sjálfvirkt birtustig fyrir eina mynd</string>
     <string name="auto_brightness_one_shot_summary">Aðlögun birtustigs mun aðeins birtast þegar kveikt er á skjánum</string>
     <string name="data_usage_app_restrict_all">Leyfa aðgang að neti</string>
@@ -97,10 +89,6 @@
     <string name="fast_charging_title">Hraðhleðsla</string>
     <string name="fast_charging_summary">Gera þetta óvirkt til að minnka hitann sem tækið framleiðir við hleðslu eða
  til að lengja líftíma rafhlöðunnar</string>
-    <string name="ambient_display_screen_off_udfps_title" product="default">Ýttu lengi á fingrafaraskanna til að taka símann úr lás</string>
-    <string name="ambient_display_screen_off_udfps_title" product="tablet">Ýttu lengi á fingrafaraskanna til að taka spjaldtölvuna úr lás</string>
-    <string name="ambient_display_screen_off_udfps_title" product="device">Ýttu lengi á fingrafaraskanna til að taka tækið úr lás</string>
-    <string name="ambient_display_screen_off_udfps_summary">Til að vekja skjáinn og aflæsa, skaltu ýta lengi á fingrafaraskannann undir skjánum.</string>
     <string name="storage_warning_internal">Aðvörun: Þessi valkostur gæti virkað ekki sem skyldi eða gæti leitt til gagnataps og er því ekki mælt með að þetta sé notað!</string>
     <string name="assisted_gps">Nota GPS með stuðningi</string>
     <string name="assisted_gps_summary">Sæktu gögn af netinu fyrir stuðning við gervihnattastaðsetningu sem geta bætt verulega afköst í ræsingu á GPS-tækjum. Í neyðarsímtölum er stuðningur við GPS alltaf leyfður.</string>

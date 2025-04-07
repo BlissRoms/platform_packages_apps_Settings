@@ -27,14 +27,6 @@
     <string name="lock_settings_picker_pattern_size_message">Aukeratu ereduaren tamaina</string>
     <string name="lockpattern_settings_enable_error_path_title">Erakutsi eredu errorea</string>
     <string name="lockpattern_settings_enable_dots_title">Erakutsi ereduaren puntuak</string>
-    <string name="app_notification_sound_timeout_title">Gutxieneko denbora jakinarazpen soinuen artean</string>
-    <string name="app_notification_sound_timeout_summary_template">Ez baimendu soinua edo bibrazioa aurrekotik denbora bat pasatu arte: <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Mugarik gabe</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 segundo</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 segundo</string>
-    <string name="app_notification_sound_timeout_value_1_minute">minutu bat</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minutu</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minutu</string>
     <string name="data_usage_app_restrict_vpn">VPN datuak</string>
     <string name="data_usage_app_restrict_vpn_summary">Gaitu VPN datuen erabilera</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi datuak</string>

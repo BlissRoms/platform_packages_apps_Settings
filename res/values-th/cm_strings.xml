@@ -35,14 +35,6 @@
     <string name="lockpattern_settings_enable_error_path_title">แสดงลายเส้นที่ผิดพลาด</string>
     <string name="lockpattern_settings_enable_dots_title">แสดงจุดที่ลากผ่าน</string>
     <string name="min_refresh_rate_title">อัตรารีเฟรชต่ำสุด</string>
-    <string name="app_notification_sound_timeout_title">ระยะเวลาขั้นต่ำระหว่างเสียงการแจ้งเตือน</string>
-    <string name="app_notification_sound_timeout_summary_template">อนุญาตให้มีเสียงหรือการสั่นไม่เกินหนึ่งครั้งทุก <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">ไม่จำกัด</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 วินาที</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 วินาที</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 นาที</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 นาที</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 นาที</string>
     <string name="data_usage_app_restrict_mobile">ข้อมูลมือถือ</string>
     <string name="data_usage_app_restrict_mobile_summary">เปิดใช้งานการใช้ข้อมูลมือถือ</string>
     <string name="data_usage_app_restrict_vpn">ข้อมูล VPN</string>
