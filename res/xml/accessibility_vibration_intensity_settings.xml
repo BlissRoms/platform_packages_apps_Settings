@@ -83,6 +83,11 @@
             app:keywords="@string/keywords_keyboard_vibration"
             app:controller="com.android.settings.accessibility.KeyboardVibrationTogglePreferenceController"/>
 
+        <org.blissroms.blissify.preferences.SecureSettingSwitchPreference
+            android:key="volume_dialog_haptic_feedback"
+            android:title="@string/volume_dialog_haptic_feedback_title"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <!-- Incall vibration options -->
