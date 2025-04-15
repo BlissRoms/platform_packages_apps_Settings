@@ -64,6 +64,8 @@
     <string name="unlock_scramble_pin_layout_title">கலரீடு தளவமைப்பு</string>
     <string name="unlock_scramble_pin_layout_summary">கருவியைத் திறக்கும்போது PIN தளவமைப்பைக் கலரீடுக</string>
     <string name="proximity_wake_title">தற்செயலான விழித்தலை தடு</string>
+    <string name="touchscreen_gesture_settings_title">தொடுதிரை மெய்ப்பாடுகள்</string>
+    <string name="touchscreen_gesture_settings_summary">விரைவான செயல்களுக்காகப் பல்வேறு தொடுதிரை மெய்ப்பாடுகளை இயற்றுக</string>
     <string name="touchscreen_hovering_title">தொடல்திறைக்கு மேல் நகர்தல்</string>
     <string name="touchscreen_hovering_summary">வலைதள உலாவிகள், ரிமோட்-டெஸ்க்டாப்புகள் உள்ளிட்டவற்றில் மவுஸ் போன்று நீங்கள் திரையின் மீது உலாவ உங்களை அனுமதிக்கிறது</string>
     <string name="wake_when_plugged_or_unplugged_title">பிளக் செய்தால் விழி</string>
