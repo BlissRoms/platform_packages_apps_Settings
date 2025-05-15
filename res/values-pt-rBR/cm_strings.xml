@@ -79,7 +79,7 @@
     <string name="unlock_scramble_pin_layout_title">Embaralhar PIN</string>
     <string name="unlock_scramble_pin_layout_summary">Embaralhar PIN ao desbloquear o dispositivo</string>
     <string name="proximity_wake_title">Evitar ativação da tela acidental</string>
-    <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de ligar a tela</string>
+    <string name="proximity_wake_summary">Conferir o sensor de proximidade antes de ligar a tela</string>
     <string name="touchscreen_gesture_settings_title">Gestos na tela</string>
     <string name="touchscreen_gesture_settings_summary">Faça diversos gestos na tela para ações rápidas</string>
     <string name="touchscreen_hovering_title">Flutuar o dedo na tela</string>
