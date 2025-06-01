@@ -89,8 +89,8 @@
     <string name="fast_charging_title">Carregamento rápido</string>
     <string name="fast_charging_summary">Desative para reduzir o calor produzido pelo dispositivo durante o carregamento ou para estender a vida útil da bateria</string>
     <string name="storage_warning_internal">Alerta: Esta opção pode não funcionar corretamente ou levar à perda de dados, portanto, não é recomendada!</string>
-    <string name="assisted_gps">Usar GPS assistido</string>
-    <string name="assisted_gps_summary">Baixar dados de assistência de satélite da internet, que pode melhorar consideravelmente a velocidade de inicialização do GPS. Em chamadas de emergência, o GPS assistido é sempre ativado.</string>
+    <string name="assisted_gps">Utilizar GPS com auxílio</string>
+    <string name="assisted_gps_summary">Baixar dados de auxílio de satélite da internet, o que pode melhorar consideravelmente a performance de inicialização do GPS. Em chamadas de emergência, o GPS com auxílio sempre será permitido.</string>
     <string name="battery_technology">Tecnologia</string>
     <string name="battery_health">Saúde</string>
     <string name="battery_health_good">Boa</string>
