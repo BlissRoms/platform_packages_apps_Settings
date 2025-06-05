@@ -7,32 +7,30 @@ package com.bliss.settings.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import androidx.preference.SwitchPreference;
-
-import com.android.settings.R;
+import androidx.preference.SwitchPreferenceCompat;
 
 /**
  * The SwitchPreference for the pages need to show apps icon.
 */
-public class AppSwitchPreference extends SwitchPreference {
+public class AppSwitchPreference extends SwitchPreferenceCompat {
 
     public AppSwitchPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        setLayoutResource(R.layout.preference_app);
+        setLayoutResource(com.android.settingslib.widget.preference.app.R.layout.preference_app);
     }
 
     public AppSwitchPreference(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setLayoutResource(R.layout.preference_app);
+        setLayoutResource(com.android.settingslib.widget.preference.app.R.layout.preference_app);
     }
 
     public AppSwitchPreference(Context context) {
         super(context);
-        setLayoutResource(R.layout.preference_app);
+        setLayoutResource(com.android.settingslib.widget.preference.app.R.layout.preference_app);
     }
 
     public AppSwitchPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setLayoutResource(R.layout.preference_app);
+        setLayoutResource(com.android.settingslib.widget.preference.app.R.layout.preference_app);
     }
 }
