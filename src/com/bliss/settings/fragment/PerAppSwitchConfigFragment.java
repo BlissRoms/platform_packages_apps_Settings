@@ -6,6 +6,7 @@
 package com.bliss.settings.fragment;
 
 import android.content.Context;
+import android.util.ArrayMap;
 
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
@@ -13,13 +14,12 @@ import androidx.preference.SwitchPreferenceCompat;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.LinkedHashMap;
 
 import com.bliss.settings.widget.AppSwitchPreference;
 
 public abstract class PerAppSwitchConfigFragment extends BasePerAppConfigFragment {
 
-    private final LinkedHashMap<String, Boolean> mPkgCheckState = new LinkedHashMap<>();
+    private final ArrayMap<String, Boolean> mPkgCheckState = new ArrayMap<>();
 
     @Override
     protected Preference createAppPreference(Context prefContext, AppData appData) {
