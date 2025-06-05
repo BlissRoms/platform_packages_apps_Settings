@@ -14,6 +14,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.ArraySet;
 import android.view.View;
 
 import androidx.preference.Preference;
@@ -28,7 +29,6 @@ import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 
 public abstract class BasePerAppConfigFragment extends EmptyTextSettings {
@@ -137,7 +137,7 @@ public abstract class BasePerAppConfigFragment extends EmptyTextSettings {
      * with extra system applications defined in R.array.config_perAppConfAllowedSystemApps.
      */
     private ArrayList<AppData> collectApps() {
-        final HashSet<AppData> apps = new HashSet<>();
+        final ArraySet<AppData> apps = new ArraySet<>();
         final List<PackageInfo> installedPackages =
                 mPackageManager.getInstalledPackages(0);
         for (PackageInfo pi : installedPackages) {
