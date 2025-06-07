@@ -73,4 +73,7 @@
     <!-- Confirm dialog -->
     <string name="confirm_before_enable_title">Continue to enable?</string>
 
+    <!-- Screen resolution -->
+    <string name="screen_resolution_footer_custom">Full resolution uses more of your battery. SystemUI will be restarted to reload proper layout.</string>
+
 </resources>

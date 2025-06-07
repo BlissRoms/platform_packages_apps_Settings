@@ -16,6 +16,10 @@
 
 package com.android.settings.display;
 
+import static com.android.settings.display.ScreenResolutionController.CUSTOM_RESOLUTION_SWITCHER;
+
+import static com.bliss.view.DisplayResolutionManager.RESTART_SYSTEMUI_ON_SWITCH;
+
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.res.Resources;
@@ -47,6 +51,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.bliss.view.DisplayResolutionManager;
+
 /** Preference fragment used for switch screen resolution */
 // LINT.IfChange
 @SearchIndexable
@@ -60,6 +66,8 @@ public class ScreenResolutionFragment extends RadioButtonPickerFragment {
     private String[] mScreenResolutionOptions;
     private Set<Point> mResolutions;
     private SpannableString[] mScreenResolutionSummaries;
+
+    private DisplayResolutionManager mDisplayResolutionManager;
 
     private IllustrationPreference mImagePreference;
     private DisplayObserver mDisplayObserver;
@@ -83,6 +91,7 @@ public class ScreenResolutionFragment extends RadioButtonPickerFragment {
         mResolutions = controller.getAllSupportedResolutions();
         mHighWidth = ScreenResolutionExtensionsKt.getHighResolutionDisplayWidth(context);
         mFullWidth = ScreenResolutionExtensionsKt.getFullResolutionDisplayWidth(context);
+        mDisplayResolutionManager = controller.getDisplayResolutionManager();
         Log.i(TAG, "mHighWidth:" + mHighWidth + "mFullWidth:" + mFullWidth);
         mScreenResolutionSummaries =
                 new SpannableString[] {
@@ -112,7 +121,8 @@ public class ScreenResolutionFragment extends RadioButtonPickerFragment {
         screen.addPreference(mImagePreference);
 
         final FooterPreference footerPreference = new FooterPreference(screen.getContext());
-        footerPreference.setTitle(R.string.screen_resolution_footer);
+        footerPreference.setTitle(RESTART_SYSTEMUI_ON_SWITCH ?
+                R.string.screen_resolution_footer_custom : R.string.screen_resolution_footer);
         footerPreference.setSelectable(false);
         footerPreference.setLayoutResource(
                 com.android.settingslib.widget.preference.footer.R.layout.preference_footer);
@@ -181,6 +191,13 @@ public class ScreenResolutionFragment extends RadioButtonPickerFragment {
 
     @Override
     protected String getDefaultKey() {
+        if (CUSTOM_RESOLUTION_SWITCHER) {
+            final int width = mDisplayResolutionManager.getDisplayResolution().x;
+            if (width > 0) {
+                return getKeyForResolution(width);
+            }
+        }
+
         int physicalWidth = getDisplayMode().getPhysicalWidth();
 
         return getKeyForResolution(physicalWidth);
@@ -193,8 +210,13 @@ public class ScreenResolutionFragment extends RadioButtonPickerFragment {
             return false;
         }
 
-        setDisplayMode(width);
         updateIllustrationImage(mImagePreference);
+
+        if (CUSTOM_RESOLUTION_SWITCHER) {
+            mDisplayResolutionManager.setDisplayResolution(width);
+        } else {
+            setDisplayMode(width);
+        }
 
         return true;
     }

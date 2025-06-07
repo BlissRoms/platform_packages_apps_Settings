@@ -16,6 +16,8 @@
 
 package com.android.settings.display;
 
+import static com.bliss.view.DisplayResolutionManager.TYPE_DISABLED;
+
 import android.content.Context;
 import android.graphics.Point;
 import android.hardware.display.DisplayManager;
@@ -33,12 +35,19 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import com.bliss.view.DisplayResolutionManager;
+
 // LINT.IfChange
 /** Controller that switch the screen resolution. */
 public class ScreenResolutionController extends BasePreferenceController {
     private static final String TAG = "ScreenResolutionController";
     static final int HIGHRESOLUTION_IDX = 0;
     static final int FULLRESOLUTION_IDX = 1;
+
+    static final boolean CUSTOM_RESOLUTION_SWITCHER =
+            DisplayResolutionManager.getDeviceType() != TYPE_DISABLED;
+
+    private final DisplayResolutionManager mDisplayResolutionManager;
 
     private Display mDisplay;
     private Set<Point> mSupportedResolutions = null;
@@ -49,6 +58,8 @@ public class ScreenResolutionController extends BasePreferenceController {
 
     public ScreenResolutionController(Context context, String key) {
         super(context, key);
+
+        mDisplayResolutionManager = mContext.getSystemService(DisplayResolutionManager.class);
 
         mDisplay =
                 mContext.getSystemService(DisplayManager.class).getDisplay(Display.DEFAULT_DISPLAY);
@@ -84,7 +95,7 @@ public class ScreenResolutionController extends BasePreferenceController {
 
     @Override
     public int getAvailabilityStatus() {
-        return ScreenResolutionExtensionsKt.checkSupportedResolutions(mContext)
+        return (CUSTOM_RESOLUTION_SWITCHER || ScreenResolutionExtensionsKt.checkSupportedResolutions(mContext))
                 ? AVAILABLE
                 : UNSUPPORTED_ON_DEVICE;
     }
@@ -129,8 +140,18 @@ public class ScreenResolutionController extends BasePreferenceController {
         return this.mFullHeight;
     }
 
+    public DisplayResolutionManager getDisplayResolutionManager() {
+        return mDisplayResolutionManager;
+    }
+
     @VisibleForTesting
     public int getDisplayWidth() {
+        if (CUSTOM_RESOLUTION_SWITCHER) {
+            final int width = mDisplayResolutionManager.getDisplayResolution().x;
+            if (width > 0) {
+                return width;
+            }
+        }
         return mDisplay.getMode().getPhysicalWidth();
     }
 
