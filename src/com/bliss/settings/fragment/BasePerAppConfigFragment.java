@@ -98,6 +98,9 @@ public abstract class BasePerAppConfigFragment extends EmptyTextSettings {
 
         final Context prefContext = getPrefContext();
         final PreferenceScreen screen = getPreferenceScreen();
+        if (screen == null) {
+            return;
+        }
 
         // Clear the prefs
         screen.removeAll();
