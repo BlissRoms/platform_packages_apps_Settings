@@ -38,8 +38,6 @@
     <string name="heads_up_notifications_enabled_summary">მნიშვნელოვანი შეტყობინებების ჩვენება პატარა ამომხტომ ფანჯარაში</string>
     <string name="high_touch_sensitivity_title">შეხების მაღალი მგრძნობელობა</string>
     <string name="high_touch_sensitivity_summary">ეკრანის მგრძნობელობის გაზრდა, ხელთათმანით გამოსაყენებლად</string>
-    <string name="tethering_allow_vpn_upstreams_title">ნებართვა, გამოიყენონ VPN</string>
-    <string name="tethering_allow_vpn_upstreams_summary">ნების მიცემა წვდომის წერტილთან მიერთებული კლიენტებისთვის, რომ შეძლონ ამ მოწყობილობის VPN-კავშირების გამოყენება აღმავალი მიმართულებით.</string>
     <string name="lock_settings_picker_pattern_size_message">მოსახაზის ზომის არჩევა</string>
     <string name="lockpattern_settings_enable_error_path_title">მონახაზის შეცდომის ჩვენება</string>
     <string name="lockpattern_settings_enable_dots_title">წერტილების ჩვენება მონახაზისთვის</string>

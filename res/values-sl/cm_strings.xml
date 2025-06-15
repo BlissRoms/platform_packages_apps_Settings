@@ -38,8 +38,8 @@
     <string name="heads_up_notifications_enabled_summary">Prikaži prednostna obvestila v majhnem lebdečem oknu</string>
     <string name="high_touch_sensitivity_title">Visoka občutljivost dotika</string>
     <string name="high_touch_sensitivity_summary">Povečaj občutljivost dotika, tako da ga lahko uporabite, ko nosite rokavice</string>
-    <string name="tethering_allow_vpn_upstreams_title">Dovoli odjemalcem uporabo VPN-jev</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Dovoli odjemalcem dostopne točke uporabo VPN povezav te naprave za povezovanje</string>
+    <string name="tethering_allow_vpn_upstreams_title">Uporabi VPN za povezane naprave</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Ko ta naprava uporablja VPN, bodo vse naprave povezane na dostopno točko uporabljale isti VPN</string>
     <string name="lock_settings_picker_pattern_size_message">Izberite velikost vzorca</string>
     <string name="lockpattern_settings_enable_error_path_title">Prikaži napako vzorca</string>
     <string name="lockpattern_settings_enable_dots_title">Prikaži pike vzorca</string>

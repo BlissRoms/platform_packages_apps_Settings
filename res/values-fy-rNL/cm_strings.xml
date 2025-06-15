@@ -26,8 +26,6 @@
     <string name="heads_up_notifications_enabled_summary">Prioriteitsmeldingen toane yn lyts swevend finster</string>
     <string name="high_touch_sensitivity_title">Hege gefoelichheid oanreitsjen</string>
     <string name="high_touch_sensitivity_summary">Gefoelichheid fan it skerm ferheegje, sadat it betsjinne wurde kin mei wanten</string>
-    <string name="tethering_allow_vpn_upstreams_title">Clients tastean om VPN\'s te brûken</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Hotspot-brûkers tastean om de VPN-ferbiningen fan dit apparaat te brûken om te uploaden</string>
     <string name="lock_settings_picker_pattern_size_message">Grutte patroan kieze</string>
     <string name="lockpattern_settings_enable_error_path_title">Patroanflater toane</string>
     <string name="lockpattern_settings_enable_dots_title">Patroanknoppen toane</string>

@@ -38,8 +38,6 @@
     <string name="heads_up_notifications_enabled_summary">Visualize lis notifichis prioritaris intun piçul barcon flotant</string>
     <string name="high_touch_sensitivity_title">Tocjade a alte sensibilitât</string>
     <string name="high_touch_sensitivity_summary">Aumente la sensibilitât dal schermi tatil par podêlu doprâ cu lis manecis</string>
-    <string name="tethering_allow_vpn_upstreams_title">Permet ai dispositîfs conetûts di doprâ lis VPNs</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Permet ai dispositîfs conetûts al pont di acès di doprâ lis conessions VPN di chest dispositîf</string>
     <string name="lock_settings_picker_pattern_size_message">Sielç la dimension de secuence</string>
     <string name="lockpattern_settings_enable_error_path_title">Mostre erôr de secuence</string>
     <string name="lockpattern_settings_enable_dots_title">Mostre ponts de secuence</string>

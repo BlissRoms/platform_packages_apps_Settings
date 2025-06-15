@@ -38,8 +38,8 @@
     <string name="heads_up_notifications_enabled_summary">在一個小的浮動視窗中顯示優先通知</string>
     <string name="high_touch_sensitivity_title">高觸控靈敏度</string>
     <string name="high_touch_sensitivity_summary">增加觸控螢幕的靈敏度，因此戴著手套也可以使用手機</string>
-    <string name="tethering_allow_vpn_upstreams_title">允許客戶端使用 VPN</string>
-    <string name="tethering_allow_vpn_upstreams_summary">允許熱點客戶端使用此裝置的 VPN 連線進行上游連線</string>
+    <string name="tethering_allow_vpn_upstreams_title">讓連線的裝置使用 VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">當此裝置使用 VPN 時，所有連線至熱點的裝置都會使用相同的 VPN</string>
     <string name="lock_settings_picker_pattern_size_message">選擇解鎖圖案大小</string>
     <string name="lockpattern_settings_enable_error_path_title">顯示解鎖圖案錯誤</string>
     <string name="lockpattern_settings_enable_dots_title">顯示解鎖圖案節點</string>

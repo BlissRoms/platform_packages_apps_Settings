@@ -31,8 +31,6 @@
     <string name="heads_up_notifications_enabled_title">Hüpikmärguanded</string>
     <string name="high_touch_sensitivity_title">Kõrge puutetundlikus</string>
     <string name="high_touch_sensitivity_summary">Suurenda puuteekraani tundlikust, et saaksid seda kasutada kindaid kandes</string>
-    <string name="tethering_allow_vpn_upstreams_title">Luba klientidel kasutada VPN-e</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Luba kuumkoha klientidel kasutada selle seadme VPN-ühendusi ülesvoolu ühenduvuseks</string>
     <string name="lockpattern_settings_enable_dots_title">Näita mustri punkte</string>
     <string name="min_refresh_rate_title">Minimaalne värskendussagedus</string>
     <string name="show_navbar_hint_title">Navigeerimise vihje</string>

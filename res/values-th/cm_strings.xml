@@ -29,8 +29,6 @@
     <string name="heads_up_notifications_enabled_title">การแจ้งเตือนด้านบน</string>
     <string name="high_touch_sensitivity_title">ความไวต่อสัมผัสสูง</string>
     <string name="high_touch_sensitivity_summary">เพิ่มความไวของหน้าจอสัมผัสเพื่อสามารถใช้ขณะสวมถุงมือ</string>
-    <string name="tethering_allow_vpn_upstreams_title">อนุญาตให้ไคลเอ็นต์ใช้ VPN</string>
-    <string name="tethering_allow_vpn_upstreams_summary">อนุญาตให้ไคลเอ็นต์ฮอตสปอตเชื่อมต่อ VPN ของอุปกรณ์นี้ สำหรับการเชื่อมต่ออัปสตรีม</string>
     <string name="lock_settings_picker_pattern_size_message">เลือกขนาดรูปแบบ</string>
     <string name="lockpattern_settings_enable_error_path_title">แสดงลายเส้นที่ผิดพลาด</string>
     <string name="lockpattern_settings_enable_dots_title">แสดงจุดที่ลากผ่าน</string>

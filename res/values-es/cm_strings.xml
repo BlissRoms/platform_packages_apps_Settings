@@ -38,8 +38,8 @@
     <string name="heads_up_notifications_enabled_summary">Mostrar las notificaciones prioritarias en una pequeña ventana flotante</string>
     <string name="high_touch_sensitivity_title">Alta sensibilidad táctil</string>
     <string name="high_touch_sensitivity_summary">Aumentar la sensibilidad de la pantalla táctil para poder utilizarla con guantes</string>
-    <string name="tethering_allow_vpn_upstreams_title">Permitir a los clientes usar VPNs</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Permitir a los clientes del punto de acceso conectarse a internet mediante las conexiones VPN de este dispositivo.</string>
+    <string name="tethering_allow_vpn_upstreams_title">Usar VPN para dispositivos conectados</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Cuando este dispositivo usa una VPN, todos los dispositivos conectados al punto de acceso usarán la misma VPN</string>
     <string name="lock_settings_picker_pattern_size_message">Elije un tamaño de patrón</string>
     <string name="lockpattern_settings_enable_error_path_title">Mostrar patrón erróneo</string>
     <string name="lockpattern_settings_enable_dots_title">Mostrar puntos de patrón</string>

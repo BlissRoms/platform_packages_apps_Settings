@@ -38,8 +38,8 @@
     <string name="heads_up_notifications_enabled_summary">نمایش آگاهی‌های مهم در یک پنجرهٔ شناور کوچک</string>
     <string name="high_touch_sensitivity_title">حساسیت بالا به لمس</string>
     <string name="high_touch_sensitivity_summary">افزایش حساسیت صفحه به لمس تا هنگام پوشیدن دستکش نیز قابل استفاده باشد</string>
-    <string name="tethering_allow_vpn_upstreams_title">اجازه دادن به کاربران برای استفاده از وی پی ان</string>
-    <string name="tethering_allow_vpn_upstreams_summary">به کاربران هات‌اسپات اجازه دهید تا از وی پی ان این دستگاه\u2019ها برای آپلود استفاده کنند</string>
+    <string name="tethering_allow_vpn_upstreams_title">استفاده از فیلترشکن برای دستگاه‌های متصل</string>
+    <string name="tethering_allow_vpn_upstreams_summary">وقتی این دستگاه از فیلترشکن استفاده می‌کند، تمام دستگاه‌های متصل به نقطه اتصال از همان فیلترشکن استفاده خواهند کرد.</string>
     <string name="lock_settings_picker_pattern_size_message">یک اندازهٔ الگو برگزینید</string>
     <string name="lockpattern_settings_enable_error_path_title">نمایش الگوی نادرست</string>
     <string name="lockpattern_settings_enable_dots_title">نمایش نقطه‌های الگو</string>

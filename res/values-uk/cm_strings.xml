@@ -28,8 +28,6 @@
     <string name="heads_up_notifications_enabled_summary">Відображати пріоритетні сповіщення у невеликому плаваючому вікні</string>
     <string name="high_touch_sensitivity_title">Висока чутливість дотику</string>
     <string name="high_touch_sensitivity_summary">Підвищити чутливість сенсорного екрану для користуванням пристроєм у рукавичках</string>
-    <string name="tethering_allow_vpn_upstreams_title">Дозволити клієнтам використовувати VPN</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Пропускати трафік клієнтів точки доступу через VPN-з\'єднання цього пристрою</string>
     <string name="lock_settings_picker_pattern_size_message">Оберіть розмір шаблону</string>
     <string name="lockpattern_settings_enable_error_path_title">Показувати неправильний ключ</string>
     <string name="lockpattern_settings_enable_dots_title">Показувати точки</string>

@@ -32,8 +32,6 @@
     <string name="heads_up_notifications_enabled_summary">Seall brathan le prìomhachas ann an uinneag bheag air fleòd</string>
     <string name="high_touch_sensitivity_title">Mothalachd àrd air an t-suathadh</string>
     <string name="high_touch_sensitivity_summary">Meudaich mothalachd na sgrìn-shuathaidh ach an gabh a cleachdadh le miotagan</string>
-    <string name="tethering_allow_vpn_upstreams_title">Leig le cliantan VPN a chleachdadh</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Thoir cead do chliantan hotspot gun cleachd iad ceanglaichean VPN an uidheim seo airson ceangal upstream a dhèanamh</string>
     <string name="lock_settings_picker_pattern_size_message">Tagh meud a’ phàtrain</string>
     <string name="lockpattern_settings_enable_error_path_title">Seall mearachd a’ phàtrain</string>
     <string name="lockpattern_settings_enable_dots_title">Seall dotagan a’ phàtrain</string>

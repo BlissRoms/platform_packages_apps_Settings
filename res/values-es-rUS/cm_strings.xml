@@ -27,8 +27,6 @@
     <string name="heads_up_notifications_enabled_summary">Mostrar notificaciones prioritarias en una pequeña ventana flotante</string>
     <string name="high_touch_sensitivity_title">Alta sensibilidad táctil</string>
     <string name="high_touch_sensitivity_summary">Aumentar la sensibilidad del panel táctil para que pueda usarse con guantes</string>
-    <string name="tethering_allow_vpn_upstreams_title">Permitir a los clientes usar VPN</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Permitir a los clientes de hotspot usar las conexiones VPN de este dispositivo\u2019 como conectividad principal</string>
     <string name="lock_settings_picker_pattern_size_message">Elija un tamaño de patrón</string>
     <string name="lockpattern_settings_enable_error_path_title">Mostrar patrón erróneo</string>
     <string name="lockpattern_settings_enable_dots_title">Mostrar puntos de patrón</string>

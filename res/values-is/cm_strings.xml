@@ -38,8 +38,6 @@
     <string name="heads_up_notifications_enabled_summary">Birta forgangstilkynningar í litlum fljótandi glugga</string>
     <string name="high_touch_sensitivity_title">Mikil snertinæmni</string>
     <string name="high_touch_sensitivity_summary">Auka næmni snertiskjás svo hægt sé að nota hann íklæddur vettlingum</string>
-    <string name="tethering_allow_vpn_upstreams_title">Leyfa forritum að nota VPN-tengingar</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Leyfa tengipunktsforritum að nota VPN-tengingar tækisins til að tengjast út (upstream)</string>
     <string name="lock_settings_picker_pattern_size_message">Veldu stærð mynsturs</string>
     <string name="lockpattern_settings_enable_error_path_title">Birta villu í mynstri</string>
     <string name="lockpattern_settings_enable_dots_title">Sýna mynsturpunkta</string>

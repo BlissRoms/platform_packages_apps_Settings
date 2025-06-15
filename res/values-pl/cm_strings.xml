@@ -40,8 +40,8 @@
     <string name="heads_up_notifications_enabled_summary">Wyświetlaj ważne powiadomienia w małym oknie pływającym</string>
     <string name="high_touch_sensitivity_title">Wysoka czułość dotyku</string>
     <string name="high_touch_sensitivity_summary">Zwiększa czułość ekranu dotykowego, więc możesz go używać podczas noszenia rękawiczek</string>
-    <string name="tethering_allow_vpn_upstreams_title">Zezwól podłączonym urządzeniom na korzystanie z VPN</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Zezwól urządzeniom, podłączonym do udostępnionej sieci, na wysyłanie pakietów, poprzez VPN tego urządzenia</string>
+    <string name="tethering_allow_vpn_upstreams_title">Używaj VPN dla podłączonych urządzeń</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Gdy to urządzenie korzysta z VPN, wszystkie urządzenia podłączone do hotspotu będą korzystać z tego samego VPN</string>
     <string name="lock_settings_picker_pattern_size_message">Wybierz rozmiar wzoru</string>
     <string name="lockpattern_settings_enable_error_path_title">Pokazuj błędny wzór</string>
     <string name="lockpattern_settings_enable_dots_title">Pokazuj punkty wzoru</string>

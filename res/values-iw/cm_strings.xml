@@ -24,6 +24,8 @@
     <string name="heads_up_notifications_enabled_summary">הראה התראות חשובות בחלון צף קטן</string>
     <string name="high_touch_sensitivity_title">רגישות גבוהה למגע</string>
     <string name="high_touch_sensitivity_summary">הגבר את רגישות מסך המגע, כך שניתן יהיה להשתמש בו בעת לבישת כפפות</string>
+    <string name="tethering_allow_vpn_upstreams_title">שימוש ב-VPN למכשירים מחוברים</string>
+    <string name="tethering_allow_vpn_upstreams_summary">כשמכשיר זה משתמש ב-VPN, כל המכשירים המחוברים לנקודה החמה ישתמשו באותו ה-VPN</string>
     <string name="lock_settings_picker_pattern_size_message">בחר גודל תבנית</string>
     <string name="lockpattern_settings_enable_error_path_title">הצג שגיאות דפוס</string>
     <string name="lockpattern_settings_enable_dots_title">הצג נקודות דפוס</string>

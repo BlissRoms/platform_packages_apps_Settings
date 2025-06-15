@@ -35,8 +35,8 @@
     <string name="heads_up_notifications_enabled_title">Avisos emerxentes</string>
     <string name="high_touch_sensitivity_title">Sensibilidá alta al tactu</string>
     <string name="high_touch_sensitivity_summary">Aumenta la sensibilidá de la pantalla táctil pa que puedas usala mentanto lleves guantes</string>
-    <string name="tethering_allow_vpn_upstreams_title">Permitir que los veceros usen les VPNs</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Permite que los veceros del puntu Wi-Fi usen les conexones VPN d\u2019esti preséu pa la conectividá</string>
+    <string name="tethering_allow_vpn_upstreams_title">Usar la VPN pa los preseos conectaos</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Cuando esti preséu tea usando una VPN, tolos preseos que se conecten al puntu Wi-Fi van usar la mesma VPN</string>
     <string name="lockpattern_settings_enable_error_path_title">Amosar los patrones incorreutos</string>
     <string name="lockpattern_settings_enable_dots_title">Amosar los puntos del patrón</string>
     <string name="max_refresh_rate_title">Tasa d\'anovamientu máxima</string>

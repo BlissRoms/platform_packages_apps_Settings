@@ -38,8 +38,8 @@
     <string name="heads_up_notifications_enabled_summary">小さなフローティングウインドウに重要な通知を表示します</string>
     <string name="high_touch_sensitivity_title">高感度タッチ</string>
     <string name="high_touch_sensitivity_summary">手袋を着けたまま使用できるようにタッチ画面の感度を向上させる</string>
-    <string name="tethering_allow_vpn_upstreams_title">クライアントの VPN 使用を許可</string>
-    <string name="tethering_allow_vpn_upstreams_summary">この端末の VPN 接続をホットスポットのクライアントが送信接続に使うことを許可する</string>
+    <string name="tethering_allow_vpn_upstreams_title">接続されたデバイスに VPN を使用する</string>
+    <string name="tethering_allow_vpn_upstreams_summary">このデバイスが VPN を使用している場合、テザリング中のすべてのデバイスは同じ VPN を使用します</string>
     <string name="lock_settings_picker_pattern_size_message">パターンサイズを選択してください</string>
     <string name="lockpattern_settings_enable_error_path_title">間違えたパターンを表示</string>
     <string name="lockpattern_settings_enable_dots_title">パターンのドットを表示</string>

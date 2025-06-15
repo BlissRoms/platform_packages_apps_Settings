@@ -41,8 +41,8 @@
     <string name="heads_up_notifications_enabled_summary">Taispeáin fógraí tosaíochta i bhfuinneog bheag ar snámh</string>
     <string name="high_touch_sensitivity_title">Íogaireacht dteagmháil ard</string>
     <string name="high_touch_sensitivity_summary">Méadaigh íogaireacht scáileáin tadhaill ionas gur féidir é a úsáid agus lámhainní á chaitheamh agat</string>
-    <string name="tethering_allow_vpn_upstreams_title">Lig do chliaint VPNanna a úsáid</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Ceadaigh do chliaint hotspot naisc VPN an ghléis seo a úsáid le haghaidh nascachta in aghaidh an tsrutha</string>
+    <string name="tethering_allow_vpn_upstreams_title">Úsáid VPN le haghaidh gléasanna ceangailte</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Nuair a bhíonn an gléas seo ag úsáid VPN, úsáidfidh gach gléas atá ceangailte leis an bpointe te an VPN céanna</string>
     <string name="lock_settings_picker_pattern_size_message">Roghnaigh méid patrún</string>
     <string name="lockpattern_settings_enable_error_path_title">Taispeáin earráid patrún</string>
     <string name="lockpattern_settings_enable_dots_title">Taispeáin poncanna patrún</string>

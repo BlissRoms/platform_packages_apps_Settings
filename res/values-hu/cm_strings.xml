@@ -38,8 +38,8 @@
     <string name="heads_up_notifications_enabled_summary">Kiemelt értesítések megjelenítése egy kis lebegő ablakban</string>
     <string name="high_touch_sensitivity_title">Magas érintési érzékenység</string>
     <string name="high_touch_sensitivity_summary">Érintőképernyő érzékenységének növelése, így kesztyű viselése esetén is használható</string>
-    <string name="tethering_allow_vpn_upstreams_title">Kliensek VPN-használatának engedélyezése</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Engedélyezze a hotspot-klienseknek, hogy a készülék VPN-kapcsolatait felfelé csatlakoztathassák</string>
+    <string name="tethering_allow_vpn_upstreams_title">VPN használata a csatlakoztatott eszközökhöz</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Amikor ez a készülék VPN-t használ, a hotspothoz csatlakoztatott összes eszköz ugyanazt a VPN-t fogja használni.</string>
     <string name="lock_settings_picker_pattern_size_message">Válassza ki a minta méretét</string>
     <string name="lockpattern_settings_enable_error_path_title">Hibás minta megjelenítése</string>
     <string name="lockpattern_settings_enable_dots_title">Feloldási pontok megjelenítése</string>

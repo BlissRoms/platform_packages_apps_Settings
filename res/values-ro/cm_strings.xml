@@ -39,8 +39,8 @@
     <string name="heads_up_notifications_enabled_summary">Afișează notificările prioritare într-o fereastră micuță plutitoare</string>
     <string name="high_touch_sensitivity_title">Sensibilitate tactilă înaltă </string>
     <string name="high_touch_sensitivity_summary">Crește sensibilitatea ecranului tactil, astfel încât acesta poate fi utilizat în timp ce se poartă mănuși</string>
-    <string name="tethering_allow_vpn_upstreams_title">Permite clienților să utilizeze VPN-uri</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Permite clienților hotspot-ului să utilizeze conexiunile VPN ale acestui dispozitiv pentru conexiunea upstream</string>
+    <string name="tethering_allow_vpn_upstreams_title">Folosește VPN pentru dispozitivele conectate</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Când acest dispozitiv folosește un VPN, toate dispozitivele conectate la hotspot vor folosi același VPN</string>
     <string name="lock_settings_picker_pattern_size_message">Alegeți dimensiunea modelului</string>
     <string name="lockpattern_settings_enable_error_path_title">Afișare eroare model</string>
     <string name="lockpattern_settings_enable_dots_title">Afișare puncte model</string>
