@@ -38,6 +38,8 @@
     <string name="heads_up_notifications_enabled_summary">작은 플로팅 창에 중요 알림 표시</string>
     <string name="high_touch_sensitivity_title">터치 감도 높이기</string>
     <string name="high_touch_sensitivity_summary">장갑을 착용해도 터치할 수 있도록 터치스크린 감도를 향상</string>
+    <string name="tethering_allow_vpn_upstreams_title">연결된 기기에 VPN 사용</string>
+    <string name="tethering_allow_vpn_upstreams_summary">기기가 VPN을 사용 중일 때 핫스팟을 켜면, 핫스팟에 연결된 기기도 같은 VPN을 사용합니다.</string>
     <string name="lock_settings_picker_pattern_size_message">패턴의 크기를 선택하세요</string>
     <string name="lockpattern_settings_enable_error_path_title">패턴 오류 표시</string>
     <string name="lockpattern_settings_enable_dots_title">패턴 점 표시</string>
