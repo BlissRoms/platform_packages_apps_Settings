@@ -20,6 +20,8 @@
     <string name="show_dev_already_cm">ھاجەتسىز، سىز ئاللىبۇرۇن ئىجادكارلار تەڭشەكلىرىنى قوزغاتقان.</string>
     <string name="high_touch_sensitivity_title">سەزگۈر ئېكراننىڭ يۇقىرى سېزىمچانلىقى</string>
     <string name="high_touch_sensitivity_summary">سەزگۈر ئېكراننىڭ سېزىمچانلىقىنى كۈچەيتىپ پەلەي كىيگەندە ئىشلىتىشكە قولايلىق يارىتىدۇ</string>
+    <string name="tethering_allow_vpn_upstreams_title">باغلانغان ئۈسكۈنىڭىزگە مەۋھۇم شەخسىي تور يەنى VPN ئىشلىتىدۇ</string>
+    <string name="tethering_allow_vpn_upstreams_summary">بۇ ئۈسكۈنە مەۋھۇم شەخسىي تور يەنى VPN ئىشلەتكەندە، قىزىق نۇقتىغا باغلانغان بارلىق ئۈسكۈنە ئوخشاش VPN نى ئىشلىتىدۇ</string>
     <string name="lockpattern_settings_enable_error_path_title">ئەندىزە خاتالىقىنى كۆرسىتىش</string>
     <string name="lockpattern_settings_enable_dots_title">ئەندىزە نۇقتىسىنى كۆرسىتىش</string>
     <string name="unlock_scramble_pin_layout_title">قالايمىقان جايلاشتۇرۇش</string>
