@@ -69,6 +69,16 @@
         android:key="charging_control"
         settings:requiresService="lineagehealth" />
 
+    <!-- Charging speed -->
+    <ListPreference
+        android:entries="@*lineageos.platform:array/charging_speed_entries"
+        android:entryValues="@*lineageos.platform:array/charging_speed_values"
+        android:key="charging_speed"
+        android:summary="%s"
+        android:title="@*lineageos.platform:string/charging_speed"
+        settings:controller="com.android.settings.fuelgauge.ChargingSpeedPreferenceController"
+        settings:requiresService="lineagehealth" />
+
     <Preference
         android:key="high_power_apps"
         android:title="@string/high_power_apps">
