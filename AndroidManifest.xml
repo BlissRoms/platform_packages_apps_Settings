@@ -843,7 +843,7 @@
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true"
                 android:clearTaskOnLaunch="true"
-                android:theme="@style/Theme.SubSettingsBase">
+                android:theme="@style/Theme.SubSettingsBase.Expressive">
             <intent-filter>
                 <action android:name="android.bluetooth.devicepicker.action.LAUNCH" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -5748,6 +5748,7 @@
         <!-- Begin Blissify -->
         <activity android:name="Settings$BlissifyActivity"
                 android:label="@string/blissify_settings_title"
+                android:theme="@style/Theme.SubSettingsBase.Expressive"
                 android:icon="@drawable/ic_homepage_blissify"
                 android:exported="true"
                 android:taskAffinity="com.android.settings"
@@ -5791,7 +5792,7 @@
         <!-- Provide direct entry into Dev settings - Running Services -->
         <activity android:name="Settings$DevRunningServicesActivity"
                 android:label="@string/runningservices_settings_title"
-                android:theme="@style/Theme.SubSettingsBase"
+                android:theme="@style/Theme.SubSettingsBase.Expressive"
                 android:enabled="true"
                 android:exported="true"
                 android:excludeFromRecents="true"
@@ -5823,6 +5824,7 @@
 
         <activity android:name=".Settings$SmartPixelsActivity"
             android:label="@string/smart_pixels_title"
+            android:theme="@style/Theme.SubSettingsBase.Expressive"
             android:taskAffinity="com.android.settings"
             android:exported="true"
             android:parentActivityName="Settings">
