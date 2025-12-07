@@ -30,33 +30,38 @@ import com.android.settingslib.metadata.PreferenceMetadata
 import com.android.settingslib.metadata.PreferenceSummaryProvider
 import com.android.settingslib.metadata.PreferenceTitleProvider
 import com.android.settingslib.preference.PreferenceBinding
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import com.android.settingslib.preference.PreferenceBindingPlaceholder
 
-/** Preference to show EID information. */
-// LINT.IfChange
-class SimEidPreference(private val context: Context) :
-    PreferenceMetadata,
-    PreferenceBinding,
+/**
+ * Preference to show EID information.
+ */
+class SimEidPreference(
+    private val context: Context,
+) : PreferenceMetadata,
     PreferenceAvailabilityProvider,
+    PreferenceBinding,
+    PreferenceBindingPlaceholder,
     PreferenceLifecycleProvider,
     PreferenceTitleProvider,
     PreferenceSummaryProvider {
 
-    private var eidMetadata = getEidMetadata()
-    private var eidUpdateJob: Job? = null
+    private data class EidMetadata(val eid: String, val associatedSlotId: Int?)
 
-    override val key
-        get() = KEY
+    private val eidMetadata = getEidMetadata()
+    private val formattedTitle = if (eidMetadata?.associatedSlotId == null) {
+        context.getString(R.string.status_eid)
+    } else {
+        context.getString(R.string.eid_multi_sim, eidMetadata.associatedSlotId + 1)
+    }
+
+    override val key = "eid_info"
 
     override fun isAvailable(context: Context): Boolean =
         context.applicationContext.getSystemService(UserManager::class.java)?.isAdminUser == true &&
-            (Utils.isMobileDataCapable(context) || Utils.isVoiceCapable(context)) &&
-            eidMetadata?.eid?.isNotEmpty() == true
+                (Utils.isMobileDataCapable(context) || Utils.isVoiceCapable(context)) &&
+                eidMetadata?.eid?.isNotEmpty() == true
 
-    override fun getTitle(context: Context): CharSequence? = eidMetadata.getTitle(context)
+    override fun getTitle(context: Context): CharSequence? = formattedTitle
 
     override fun getSummary(context: Context): CharSequence? =
         context.getString(R.string.device_info_protected_single_press)
@@ -71,62 +76,64 @@ class SimEidPreference(private val context: Context) :
         preference.onPreferenceClickListener = Preference.OnPreferenceClickListener {
                 preference.summary = eidMetadata?.eid
                 SimEidDialogFragment.show(
-                    context.childFragmentManager,
-                    it.title.toString(),
-                    eidMetadata?.eid ?: "",
+                    context.childFragmentManager, formattedTitle,
+                    eidMetadata?.eid ?: ""
                 )
-                true
+                return@OnPreferenceClickListener true
             }
-    }
-
-    override fun onStart(context: PreferenceLifecycleContext) {
-        eidUpdateJob?.cancel()
-        eidUpdateJob =
-            context.lifecycleScope.launch {
-                val eid = withContext(Dispatchers.Default) { getEidMetadata() }
-                if (eid != eidMetadata) {
-                    eidMetadata = eid
-                    context.notifyPreferenceChange(key)
-                }
-                eidUpdateJob = null
-            }
-    }
-
-    override fun onStop(context: PreferenceLifecycleContext) {
-        eidUpdateJob?.cancel()
     }
 
     private fun getEidMetadata(): EidMetadata? {
         val metadata = getEidMetadataWithAssociatedSlotId()
-        if (metadata != null) return metadata
+        if (metadata != null) {
+            return metadata
+        }
         val euiccManager = context.getSystemService(EuiccManager::class.java)
         if (euiccManager != null && euiccManager.isEnabled) {
             val eid = euiccManager.eid
-            if (eid != null) return EidMetadata(eid, null)
+            if (eid != null) {
+                return EidMetadata(eid, null)
+            }
         }
         return null
     }
 
     private fun getEidMetadataWithAssociatedSlotId(): EidMetadata? {
-        val subscriptionManager =
-            context.getSystemService(SubscriptionManager::class.java) ?: return null
-        val telephonyManager = context.getSystemService(TelephonyManager::class.java) ?: return null
-        @Suppress("DEPRECATION") val phoneCount = telephonyManager.phoneCount
-        if (phoneCount <= MAX_PHONE_COUNT_SINGLE_SIM) return null
+        val subscriptionManager = context.getSystemService(SubscriptionManager::class.java)
+        if (subscriptionManager == null) {
+            return null
+        }
+        val telephonyManager = context.getSystemService(TelephonyManager::class.java)
+        if (telephonyManager == null) {
+            return null
+        }
+        val phoneCount = telephonyManager.phoneCount
+        if (phoneCount <= MAX_PHONE_COUNT_SINGLE_SIM) {
+            return null
+        }
 
-        val activeSubscriptionInfoList =
-            subscriptionManager.getActiveSubscriptionInfoList() ?: return null
+        val activeSubscriptionInfoList = subscriptionManager.getActiveSubscriptionInfoList()
+        if (activeSubscriptionInfoList == null) {
+            return null
+        }
         val euiccCardInfoList = telephonyManager.uiccCardsInfo.filter { it.isEuicc }
-        val euiccManager = context.getSystemService(EuiccManager::class.java)
-        for (subInfo in
-            activeSubscriptionInfoList.filter { it.isEmbedded }.sortedBy { it.simSlotIndex }) {
+        for (subInfo in activeSubscriptionInfoList.filter { it.isEmbedded }
+            .sortedBy { it.simSlotIndex }) {
             for (euiccCardInfo in euiccCardInfoList) {
                 if (subInfo.cardId == euiccCardInfo.cardId) {
                     val eid = euiccCardInfo.eid
-                    if (!eid.isNullOrEmpty()) return EidMetadata(eid, subInfo.simSlotIndex)
+                    if (!eid.isNullOrEmpty()) {
+                        return EidMetadata(
+                            eid,
+                            subInfo.simSlotIndex
+                        )
+                    }
+                    val euiccManager = context.getSystemService(EuiccManager::class.java)
                     if (euiccManager != null) {
                         val eid = euiccManager.createForCardId(euiccCardInfo.cardId).getEid()
-                        if (eid != null) return EidMetadata(eid, subInfo.simSlotIndex)
+                        if (eid != null) {
+                            return EidMetadata(eid, subInfo.simSlotIndex)
+                        }
                     }
                 }
             }
@@ -135,16 +142,8 @@ class SimEidPreference(private val context: Context) :
         return null
     }
 
-    private data class EidMetadata(val eid: String, val associatedSlotId: Int?)
-
-    private fun EidMetadata?.getTitle(context: Context): String {
-        val slotId = this?.associatedSlotId ?: return context.getString(R.string.status_eid)
-        return context.getString(R.string.eid_multi_sim, slotId + 1)
-    }
-
     companion object {
-        const val KEY = "eid_info"
+        const val TAG = "SimEidPreference"
         const val MAX_PHONE_COUNT_SINGLE_SIM = 1
     }
 }
-// LINT.ThenChange(SimEidPreferenceController.kt)

@@ -40,7 +40,6 @@ import com.android.settingslib.metadata.ProvidePreferenceScreen
 import com.android.settingslib.metadata.preferenceHierarchy
 import com.android.settingslib.widget.SettingsThemeHelper.isExpressiveTheme
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 
 @ProvidePreferenceScreen(MyDeviceInfoScreen.KEY)
 open class MyDeviceInfoScreen :
@@ -81,10 +80,8 @@ open class MyDeviceInfoScreen :
                 R.string.my_device_info_device_details_category_title,
             ) +=
                 {
-                    if (Flags.catalystDeviceModel()) +HardwareInfoScreen.KEY order 30
-                    addAsync(coroutineScope, Dispatchers.Default) {
-                        +SimEidPreference(context) order 31
-                    }
+                    +HardwareInfoScreen.KEY order 30
+                    +SimEidPreference(context) order 31
                     val activeModemCount = context.activeModemCount
                     for (i in 0 until activeModemCount) {
                         +ImeiPreference(context, i, activeModemCount) order (i + 33)
