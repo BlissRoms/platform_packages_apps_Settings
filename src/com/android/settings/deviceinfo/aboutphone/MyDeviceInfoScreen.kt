@@ -25,8 +25,6 @@ import androidx.fragment.app.Fragment
 import com.android.settings.R
 import com.android.settings.Settings.MyDeviceInfoActivity
 import com.android.settings.core.PreferenceScreenMixin
-import com.android.settings.deviceinfo.firmwareversion.FirmwareVersionScreen
-import com.android.settings.deviceinfo.hardwareinfo.HardwareInfoScreen
 import com.android.settings.deviceinfo.imei.ImeiPreference
 import com.android.settings.deviceinfo.simstatus.SimEidPreference
 import com.android.settings.flags.Flags
@@ -80,13 +78,11 @@ open class MyDeviceInfoScreen :
                 R.string.my_device_info_device_details_category_title,
             ) +=
                 {
-                    +HardwareInfoScreen.KEY order 30
                     +SimEidPreference(context) order 31
                     val activeModemCount = context.activeModemCount
                     for (i in 0 until activeModemCount) {
                         +ImeiPreference(context, i, activeModemCount) order (i + 33)
                     }
-                    if (Flags.catalystFirmwareVersion()) +FirmwareVersionScreen.KEY order 42
                 }
         }
 
