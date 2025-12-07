@@ -29,7 +29,6 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settings.R;
@@ -74,8 +73,6 @@ public class MyDeviceInfoFragment extends DashboardFragment {
 
     private BuildNumberPreferenceController mBuildNumberPreferenceController;
 
-    private DeviceInfoViewModel mDeviceInfoViewModel;
-
     @Override
     public int getMetricsCategory() {
         return SettingsEnums.DEVICEINFO;
@@ -91,12 +88,6 @@ public class MyDeviceInfoFragment extends DashboardFragment {
         super.onAttach(context);
         mBuildNumberPreferenceController = use(BuildNumberPreferenceController.class);
         mBuildNumberPreferenceController.setHost(this /* parent */);
-    }
-
-    @Override
-    public void onCreate(@Nullable Bundle icicle) {
-        super.onCreate(icicle);
-        mDeviceInfoViewModel = new ViewModelProvider(getActivity()).get(DeviceInfoViewModel.class);
     }
 
     @Override
