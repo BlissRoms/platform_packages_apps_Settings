@@ -63,9 +63,7 @@ import com.android.settings.datausage.DataUsageListScreen
 import com.android.settings.datetime.DateTimeSettingsScreen
 import com.android.settings.deviceinfo.aboutphone.MyDeviceInfoScreen
 import com.android.settings.deviceinfo.firmwareversion.FirmwareVersionScreen
-import com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreference
 import com.android.settings.deviceinfo.hardwareinfo.HardwareInfoScreen
-import com.android.settings.deviceinfo.hardwareinfo.HardwareVersionPreference
 import com.android.settings.deviceinfo.legal.LegalSettingsScreen
 import com.android.settings.deviceinfo.legal.ModuleLicensesScreen
 import com.android.settings.deviceinfo.storage.StoragePreferenceScreen
@@ -650,16 +648,6 @@ private fun getDeviceStateItemList() =
             enabled = true,
             settingKey = "vibrate_on",
             settingScreenKey = VibrationScreen.KEY,
-        ),
-        DeviceStateItemConfig(
-            enabled = true,
-            settingKey = DeviceModelPreference.KEY,
-            settingScreenKey = HardwareInfoScreen.KEY,
-        ),
-        DeviceStateItemConfig(
-            enabled = true,
-            settingKey = HardwareVersionPreference.KEY,
-            settingScreenKey = HardwareInfoScreen.KEY,
         ),
         DeviceStateItemConfig(
             enabled = true,

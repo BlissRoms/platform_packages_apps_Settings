@@ -68,9 +68,7 @@ open class HardwareInfoScreen :
     }
 
     override fun getPreferenceHierarchy(context: Context, coroutineScope: CoroutineScope) =
-        preferenceHierarchy(context) {
-            +DeviceModelPreference()
-        }
+        preferenceHierarchy(context) {}
 
     companion object {
         const val KEY = "device_model"
