@@ -49,7 +49,7 @@
         android:key="top_level_personalize_category">
         <com.android.settings.widget.HomepagePreference
             android:fragment="org.blissroms.blissify.Blissify"
-            android:icon="@drawable/ic_settings_blissify"
+            android:icon="@drawable/ic_homepage_blissify"
             android:key="top_level_blissify"
             android:order="-60"
             android:title="@string/blissify_settings_title"
