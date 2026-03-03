@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">触摸位于平板电脑侧面的指纹传感器。</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">触摸位于设备侧面的指纹传感器。</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">触摸位于手机侧面的指纹传感器。</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">即使在屏幕关闭时，也可以通过触摸传感器来解锁。接近传感器可以防止意外解锁。</string>
     <string name="show_navbar_hint_title">导航提示</string>
     <string name="show_navbar_hint_summary">在屏幕底部显示导航提示栏</string>
     <string name="auto_brightness_one_shot_title">一键自动调整亮度</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">当解锁设备时使用乱序 PIN 布局</string>
     <string name="proximity_wake_title">防止意外唤醒</string>
     <string name="proximity_wake_summary">唤醒屏幕前检查距离传感器</string>
-    <string name="touchscreen_gesture_settings_title">触摸屏手势</string>
-    <string name="touchscreen_gesture_settings_summary">为快捷操作采用各种触摸屏手势</string>
     <string name="touchscreen_hovering_title">悬空操作</string>
     <string name="touchscreen_hovering_summary">允许您将手指悬停在屏幕上作为浏览器、远程桌面等处的鼠标指针</string>
     <string name="wake_when_plugged_or_unplugged_title">连接或移除电源时唤醒</string>

@@ -70,8 +70,6 @@
     <string name="unlock_scramble_pin_layout_summary">Acak tata letak PIN saat membuka perangkat</string>
     <string name="proximity_wake_title">Mencegah bangun yang tidak disengaja</string>
     <string name="proximity_wake_summary">Periksa sensor proximity sebelum membangunkan layar</string>
-    <string name="touchscreen_gesture_settings_title">Gerakan layar sentuh</string>
-    <string name="touchscreen_gesture_settings_summary">Melakukan berbagai gerakan layar sentuh untuk tindakan cepat</string>
     <string name="touchscreen_hovering_title">Ambang jari di layar sentuh</string>
     <string name="touchscreen_hovering_summary">Mengizinkan Anda mengambang jari di atas layar seperti menggunakan tetikus dalam peramban web, destop jarak jauh, dll</string>
     <string name="wake_when_plugged_or_unplugged_title">Bangun saat pengisi daya di pasang</string>

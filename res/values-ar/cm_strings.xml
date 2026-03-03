@@ -51,8 +51,6 @@
     <string name="unlock_scramble_pin_layout_summary">تخطيط رقم PIN المرمز عند إلغاء تأمين الجهاز</string>
     <string name="proximity_wake_title">منع الاستيقاظ العشوائي</string>
     <string name="proximity_wake_summary">التحقق من مستشعر القرب قبل إيقاظ الشاشة</string>
-    <string name="touchscreen_gesture_settings_title">الإيماءات اللمسية</string>
-    <string name="touchscreen_gesture_settings_summary">عمل إيماءات لمسية متعددة لأعمال سريعة</string>
     <string name="touchscreen_hovering_title">المرور فوق الشاشة اللمسية</string>
     <string name="touchscreen_hovering_summary">يسمح لك بالمرور فوق الشاشة مثل الماوس في مستعرضات الويب، أو سطح المكتب عن بُعد، إلخ</string>
     <string name="wake_when_plugged_or_unplugged_title">الإيقاظ عند التوصيل</string>

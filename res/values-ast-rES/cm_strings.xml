@@ -59,7 +59,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Toca\'l sensor de la parte llateral de la tableta.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Toca\'l sensor de la parte llateral del preséu.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Toca\'l sensor de la parte llateral del teléfonu.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Toca\'l sensor pa desbloquiar, magar que la pantalla tea apagada. El sensor de proximidá impide\'l desbloquéu accidental.</string>
     <string name="show_navbar_hint_title">Indicador de navegación</string>
     <string name="show_navbar_hint_summary">Amuesa una barra indicadora de navegación no baxero de la pantalla</string>
     <string name="auto_brightness_one_shot_title">Brillu automáticu namás una vegada</string>
@@ -76,8 +75,6 @@
     <string name="unlock_scramble_pin_layout_summary">Alteria la distribución del tecláu del PIN al desbloquiar el preséu</string>
     <string name="proximity_wake_title">Evitar l\'esconsueñu accidental</string>
     <string name="proximity_wake_summary">Revisa\'l sensor de proximidá enantes de prender la pantalla</string>
-    <string name="touchscreen_gesture_settings_title">Xestos de la pantalla táctil</string>
-    <string name="touchscreen_gesture_settings_summary">Permítete facer dellos xestos na pantalla táctil pa executar aiciones rápides</string>
     <string name="wake_when_plugged_or_unplugged_title">Esconsoñar al espatar</string>
     <string name="wake_when_plugged_or_unplugged_summary">Priende la pantalla al des/espatar el preséu d\'una fonte llétrica</string>
     <string name="storage_warning_internal">Alvertencia: ¡ye posible qu\'esta opción nun funcione afayadizamente o provoque la perda de datos, y polo tanto, nun s\'aconseya!</string>

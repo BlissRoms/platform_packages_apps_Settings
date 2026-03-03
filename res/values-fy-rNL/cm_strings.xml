@@ -37,8 +37,6 @@
     <string name="unlock_scramble_pin_layout_summary">Pin-lay-out troch inoar hutselje by apparaat ûntskoatteljen</string>
     <string name="proximity_wake_title">Troch fersin wekker meitsje opkeare</string>
     <string name="proximity_wake_summary">Tichtebysensor brûke foarôfgeand oan ûntweitsjen fan skerm</string>
-    <string name="touchscreen_gesture_settings_title">fingergebearen</string>
-    <string name="touchscreen_gesture_settings_summary">Skermgebearen brûke foar flugge aksjes</string>
     <string name="touchscreen_hovering_title">Sweve boppe skerm</string>
     <string name="touchscreen_hovering_summary">Mei jo finger boppe it skerm sweve, lykas in mûs yn browsers, buroblêd op ôfstân, ensfh.</string>
     <string name="wake_when_plugged_or_unplugged_title">Wekker meitsjen troch lader</string>

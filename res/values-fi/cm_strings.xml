@@ -50,8 +50,6 @@
     <string name="unlock_scramble_pin_layout_summary">Sekoita PIN-numerot poistettaessa lukitusta</string>
     <string name="proximity_wake_title">Estä herätys vahingossa</string>
     <string name="proximity_wake_summary">Tarkista lähesyysanturi ennen laitteen herättämistä</string>
-    <string name="touchscreen_gesture_settings_title">Kosketusnäytön eleet</string>
-    <string name="touchscreen_gesture_settings_summary">Tee erilaisia kosketusnäytön eleitä käyttääksesi pikatoimintoja</string>
     <string name="touchscreen_hovering_title">Kosketusnäytön leijunta</string>
     <string name="touchscreen_hovering_summary">Sallii näytön leijuttamisen kuten hiiri selaimessa, etätyöpöytäyhteyksissä, jne.</string>
     <string name="wake_when_plugged_or_unplugged_title">Herää laturista</string>

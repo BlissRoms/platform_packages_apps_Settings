@@ -38,6 +38,8 @@
     <string name="heads_up_notifications_enabled_summary">Küçük bir yüzen pencerede öncelikli bildirimleri görüntüle</string>
     <string name="high_touch_sensitivity_title">Yüksek dokunma hassasiyeti</string>
     <string name="high_touch_sensitivity_summary">Dokunmatik ekran hassasiyetini arttırarak eldiven ile kullanıma olanak verir</string>
+    <string name="tethering_allow_vpn_upstreams_title">Bağlanan aygıtlar için VPN kullan</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Bu aygıt VPN kullanırken hotspot ile bağlanan tüm aygıtlar da aynı VPN\'yi kullanacaktır.</string>
     <string name="lock_settings_picker_pattern_size_message">Bir desen boyutu seçin</string>
     <string name="lockpattern_settings_enable_error_path_title">Desen hatasını göster</string>
     <string name="lockpattern_settings_enable_dots_title">Desen noktalarını göster</string>
@@ -61,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Tabletinizin yan tarafındaki sensöre dokunun.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Cihazınızın yan tarafındaki sensöre dokunun.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Telefonunuzun yan tarafındaki sensöre dokunun.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Ekran kapalı olsa bile kilidi açmak için sensöre dokun. Yakınlık sensörü kilidin yanlışlıkla açılmasını önler.</string>
     <string name="show_navbar_hint_title">Gezinme ipucu</string>
     <string name="show_navbar_hint_summary">Ekranın altında gezinme ipucu çubuğunu göster</string>
     <string name="auto_brightness_one_shot_title">Tek seferlik otomatik parlaklık</string>
@@ -78,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarken PIN düzenini karıştırır</string>
     <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
     <string name="proximity_wake_summary">Ekranı uyandırmadan önce yakınlık sensörünü kontrol et</string>
-    <string name="touchscreen_gesture_settings_title">Ekran hareketleri</string>
-    <string name="touchscreen_gesture_settings_summary">Hızlı işlemler için çeşitli dokunmatik ekran hareketleri gerçekleştirin</string>
     <string name="touchscreen_hovering_title">Dokunmatik ekrana dokunmadan gezinme</string>
     <string name="touchscreen_hovering_summary">Ekrana dokunmadan parmağınızı yakınlaştırarak bir fare kullanıyormuş gibi web tarayıcılarında, uzak masaüstlerinde, vb. dolaşmanızı sağlar</string>
     <string name="wake_when_plugged_or_unplugged_title">Takıp çıkarmada uyan</string>

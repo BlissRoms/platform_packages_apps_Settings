@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">端末側面にある指紋認証センサーをタッチしてください</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">端末側面にある指紋認証センサーをタッチしてください</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">端末側面にある指紋認証センサーをタッチしてください</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">画面がオフの場合でも、センサーをタッチしてロック解除できます。予期しないロック解除は近接センサーで防ぎます。</string>
     <string name="show_navbar_hint_title">ナビゲーションバーのヒント</string>
     <string name="show_navbar_hint_summary">画面下部にナビゲーションバーのヒントを表示します</string>
     <string name="auto_brightness_one_shot_title">画面点灯時にのみ適用する</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">端末のロック解除時にPINレイアウトをランダムにする</string>
     <string name="proximity_wake_title">誤作動を防止</string>
     <string name="proximity_wake_summary">スリープ解除する前に接近センサーで確認する</string>
-    <string name="touchscreen_gesture_settings_title">タッチスクリーンジェスチャー</string>
-    <string name="touchscreen_gesture_settings_summary">様々なタッチスクリーンジェスチャーですばやくアクションを実行します</string>
     <string name="touchscreen_hovering_title">タッチ画面のホバリング</string>
     <string name="touchscreen_hovering_summary">ウェブブラウザやリモードデスクトップなどでマウスのようにホバリングできるようにする</string>
     <string name="wake_when_plugged_or_unplugged_title">接続時にスリープ解除</string>

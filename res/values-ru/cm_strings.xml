@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Коснитесь сенсора на вашем планшете.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Коснитесь сенсора на вашем устройстве.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Коснитесь сенсора на вашем телефоне.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Коснитесь сенсора, чтобы разблокировать устройство, даже если экран выключен. Датчик приближения предотвращает случайную разблокировку.</string>
     <string name="show_navbar_hint_title">Подсказки по навигации</string>
     <string name="show_navbar_hint_summary">Показать подсказку по навигации в нижней части экрана</string>
     <string name="auto_brightness_one_shot_title">Однократная автоматическая яркость</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">Переставлять кнопки ввода PIN-кода в случайном порядке</string>
     <string name="proximity_wake_title">Предотвращать случайное включение</string>
     <string name="proximity_wake_summary">Проверка датчика приближения перед включением экрана</string>
-    <string name="touchscreen_gesture_settings_title">Жесты сенсорного экрана</string>
-    <string name="touchscreen_gesture_settings_summary">Настройка жестов сенсорного экрана для выполнения действий</string>
     <string name="touchscreen_hovering_title">Наведение пальца</string>
     <string name="touchscreen_hovering_summary">Распознавать приближение пальца к экрану для событий наведения курсора в браузере или других приложениях</string>
     <string name="wake_when_plugged_or_unplugged_title">Включение при зарядке</string>

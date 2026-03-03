@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Dotaknite se tipala ob strani vašega tabličnega računalnika.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Dotaknite se tipala ob strani vaše naprave.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Dotaknite se tipala ob strani vašega telefona.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Dotaknite se tipala za odklep, tudi, ko je zaslon izklopljen. Tipalo bližine prepreči nenamerno odklepanje.</string>
     <string name="show_navbar_hint_title">Namig krmarjenja</string>
     <string name="show_navbar_hint_summary">Pokaži namig krmarjenja na dnu zaslona</string>
     <string name="auto_brightness_one_shot_title">Enkratna samodejna svetlost</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">Premešaj razporeditev PIN ob odklepanju naprave</string>
     <string name="proximity_wake_title">Prepreči nenamerno bujenje</string>
     <string name="proximity_wake_summary">Pred bujenjem zaslona preveri tipalo bližine</string>
-    <string name="touchscreen_gesture_settings_title">Poteze na zaslonu na dotik</string>
-    <string name="touchscreen_gesture_settings_summary">Za hitra dejanja na zaslonu na dotik izvedite različne poteze</string>
     <string name="touchscreen_hovering_title">Prehod zaslona na dotik</string>
     <string name="touchscreen_hovering_summary">Dovoli vam prehod nad zaslonom, kot miška v spletnih brskalnikih, oddaljenih namizjih itd.</string>
     <string name="wake_when_plugged_or_unplugged_title">Zbudi ob priključitvi napajalnika</string>

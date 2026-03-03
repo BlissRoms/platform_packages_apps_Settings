@@ -64,7 +64,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Atingeţi senzorul de pe partea laterală a tabletei.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Atingeţi senzorul de pe partea laterală a dispozitivului.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Atingeţi senzorul de pe partea laterală a telefonului.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Atingeți senzorul pentru deblocare, chiar și atunci când ecranul este oprit. Senzorul de proximitate previne deblocarea accidentală.</string>
     <string name="show_navbar_hint_title">Indicii navigare</string>
     <string name="show_navbar_hint_summary">Arată indiciul bării de navigare în partea de jos a ecranului</string>
     <string name="auto_brightness_one_shot_title">Luminozitate automată instantă</string>
@@ -81,8 +80,6 @@
     <string name="unlock_scramble_pin_layout_summary">Amestecă așezarea în pagină a ecranului de PIN atunci când se deblochează aparatul</string>
     <string name="proximity_wake_title">Previne trezirea accidentală</string>
     <string name="proximity_wake_summary">Verificaţi senzorul de proximitate înainte de a trezi ecranul</string>
-    <string name="touchscreen_gesture_settings_title">Gesturi touchscreen</string>
-    <string name="touchscreen_gesture_settings_summary">Efectuați diverse gesturi pe touchscreen pentru acţiuni rapide</string>
     <string name="touchscreen_hovering_title">Plutire peste ecran</string>
     <string name="touchscreen_hovering_summary">Vă permite să plutiți degetul peste ecran ca un mouse în browserele web, remote desktop-uri, etc</string>
     <string name="wake_when_plugged_or_unplugged_title">Trezire la alimentare</string>

@@ -61,7 +61,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Raak de sensor aan de zijkant van uw tablet aan.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Raak de sensor aan de zijkant van uw apparaat.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Raak de sensor aan de zijkant van uw telefoon.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Raak de sensor aan om te ontgrendelen, zelfs wanneer het scherm is uitgeschakeld. Nabijheidssensor voorkomt onbedoeld ontgrendelen.</string>
     <string name="show_navbar_hint_title">Navigatie hint</string>
     <string name="show_navbar_hint_summary">Toon navigatiehintbalk aan de onderkant van het scherm</string>
     <string name="auto_brightness_one_shot_title">Eén schot automatische helderheid</string>
@@ -78,8 +77,6 @@
     <string name="unlock_scramble_pin_layout_summary">PIN-lay-out door elkaar husselen bij apparaat ontgrendelen</string>
     <string name="proximity_wake_title">Per ongeluk ontwaken voorkomen</string>
     <string name="proximity_wake_summary">Nabijheidssensor gebruiken voorafgaand aan ontwaken van scherm</string>
-    <string name="touchscreen_gesture_settings_title">Schermgebaren</string>
-    <string name="touchscreen_gesture_settings_summary">Diverse schermgebaren gebruiken voor snelle acties</string>
     <string name="touchscreen_hovering_title">Zweven boven scherm</string>
     <string name="touchscreen_hovering_summary">Met uw vinger boven het zwerm zweven, zoals een muis in browsers, bureaublad op afstand, etc.</string>
     <string name="wake_when_plugged_or_unplugged_title">Ontwaken door lader</string>

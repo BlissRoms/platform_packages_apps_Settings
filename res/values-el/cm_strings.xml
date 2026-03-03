@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Αγγίξτε τον αισθητήρα στο πλάι του tablet σας.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Αγγίξτε τον αισθητήρα στο πλάι της συσκευής σας.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Αγγίξτε τον αισθητήρα στο πλάι του τηλεφώνου σας.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Αγγίξτε τον αισθητήρα για ξεκλείδωμα, ακόμα και όταν η οθόνη είναι απενεργοποιημένη. Ο αισθητήρας εγγύτητας αποτρέπει το ξεκλείδωμα κατά λάθος.</string>
     <string name="show_navbar_hint_title">Υπόδειξη πλοήγησης</string>
     <string name="show_navbar_hint_summary">Εμφάνιση γραμμής υπόδειξης πλοήγησης στο κάτω μέρος της οθόνης</string>
     <string name="auto_brightness_one_shot_title">Αυτόματη φωτεινότητα με μία λήψη</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">Ανακάτεμα της διάταξης PIN κατά το ξεκλείδωμα της συσκευής</string>
     <string name="proximity_wake_title">Πρόληψη ακούσιας αφύπνισης</string>
     <string name="proximity_wake_summary">Έλεγχος του αισθητήρα εγγύτητας πριν την αφύπνιση της οθόνης</string>
-    <string name="touchscreen_gesture_settings_title">Χειρονομίες αφής</string>
-    <string name="touchscreen_gesture_settings_summary">Εκτελέστε διάφορες χειρονομίες αφής για γρήγορες ενέργειες</string>
     <string name="touchscreen_hovering_title">Αιώρηση οθόνης αφής</string>
     <string name="touchscreen_hovering_summary">Σας επιτρέπει να αιωρείτε πάνω από την οθόνη όπως ένα ποντίκι σε προγράμματα περιήγησης στο web, απομακρυσμένες επιφάνειες εργασίας, κλπ</string>
     <string name="wake_when_plugged_or_unplugged_title">Αφύπνιση κατά τη σύνδεση</string>

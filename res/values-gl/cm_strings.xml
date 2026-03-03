@@ -53,8 +53,6 @@
     <string name="unlock_scramble_pin_layout_summary">Cambiar a disposición dos números do PIN para desbloquear o dispositivo</string>
     <string name="proximity_wake_title">Previr acender de forma accidental</string>
     <string name="proximity_wake_summary">Comprobar o sensor de proximidade antes de acender a pantalla</string>
-    <string name="touchscreen_gesture_settings_title">Xestos na pantalla táctil</string>
-    <string name="touchscreen_gesture_settings_summary">Realizar varios xestos na pantalla para accións rápidas</string>
     <string name="touchscreen_hovering_title">Pantalla táctil deslizante</string>
     <string name="touchscreen_hovering_summary">Permítelle utilizar o dedo coma un rato ao deslizalo en navegadores web, escritorios remotos, etc.</string>
     <string name="wake_when_plugged_or_unplugged_title">Acender ao enchufar</string>

@@ -61,7 +61,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Tocje il sensôr de bande laterâl dal to tablet.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Tocjeil sensôr de bande laterâl dal to dispositîf.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Tocjeil sensôr de bande laterâl dal to telefon.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Tocje il sensôr par sblocâ, ancje cuant che il schermi al è distudât. Il sensôr di prossimitât al impedìs i sblocs involontaris.</string>
     <string name="show_navbar_hint_title">Indicadôr navigazion</string>
     <string name="show_navbar_hint_summary">Mostre l\'indicadôr di navigazion te part basse dal schermi</string>
     <string name="auto_brightness_one_shot_title">Luminositât automatiche intun colp</string>
@@ -78,8 +77,6 @@
     <string name="unlock_scramble_pin_layout_summary">Messede la disposizion de tastiere PIN pal sbloc dal dispositîf</string>
     <string name="proximity_wake_title">Preven il disveâsi acidentâl</string>
     <string name="proximity_wake_summary">Controle il sensôr di prossimitât prime di impiâ il schermi</string>
-    <string name="touchscreen_gesture_settings_title">Mots su schermi tatil</string>
-    <string name="touchscreen_gesture_settings_summary">Eseguìs varis mots su schermi tatic par fâ azions rapidis</string>
     <string name="touchscreen_hovering_title">Schermi tatil a pontadôr</string>
     <string name="touchscreen_hovering_summary">Permet di passâ parsore dal schermi come cuntun mouse intal navigadôr web, tai scritoris lontans e v.i.</string>
     <string name="wake_when_plugged_or_unplugged_title">Disvee al colegament</string>

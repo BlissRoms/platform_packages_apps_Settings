@@ -50,8 +50,6 @@
     <string name="unlock_scramble_pin_layout_summary">Prehádzať rozloženie pre zadanie kódu PIN pri odomykaní zariadenia</string>
     <string name="proximity_wake_title">Zabrániť nechcenému prebudeniu</string>
     <string name="proximity_wake_summary">Pred prebudením obrazovky skontrolovať senzor priblíženia</string>
-    <string name="touchscreen_gesture_settings_title">Gestá na obrazovke</string>
-    <string name="touchscreen_gesture_settings_summary">Možnosť spustiť rýchlu akciu pomocou rôzných gest na obrazovce</string>
     <string name="touchscreen_hovering_title">Pohyb nad dotykovou obrazovkou</string>
     <string name="touchscreen_hovering_summary">Pohybovať sa nad obrazovkou podobne ako myš vo webovom prehliadači, vzdielaneých plochý, atď</string>
     <string name="wake_when_plugged_or_unplugged_title">Prebudiť po pripojení</string>

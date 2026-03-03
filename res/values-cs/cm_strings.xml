@@ -64,7 +64,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Dotkněte se senzoru na straně tabletu.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Dotkněte se senzoru na straně zařízení.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Dotkněte se senzoru na boční straně telefonu.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Dotkněte se senzoru pro odemknutí, i když je obrazovka vypnutá. Senzor přiblížení zabraňuje náhodnému odemknutí.</string>
     <string name="show_navbar_hint_title">Navigační nápověda</string>
     <string name="show_navbar_hint_summary">Zobrazit navigační nápovědu ve spodní části obrazovky (tenký proužek)</string>
     <string name="auto_brightness_one_shot_title">Rychlé nastavení automatického jasu</string>
@@ -81,8 +80,6 @@
     <string name="unlock_scramble_pin_layout_summary">Přeházet rozložení pro zadání PIN při odemykání zařízení</string>
     <string name="proximity_wake_title">Zabránit nechtěnému probuzení</string>
     <string name="proximity_wake_summary">Kontrolovat senzor přiblížení pro zabránění nechtěného probuzení</string>
-    <string name="touchscreen_gesture_settings_title">Gesta na obrazovce</string>
-    <string name="touchscreen_gesture_settings_summary">Možnost spustit rychlou akci pomocí různých gest na obrazovce</string>
     <string name="touchscreen_hovering_title">Detekce nad obrazovkou</string>
     <string name="touchscreen_hovering_summary">Umožňuje pohybovat se jakoby nad obsahem obrazovky podobně, jako když myší najedete na nějaký ovládací prvek</string>
     <string name="wake_when_plugged_or_unplugged_title">Probudit při nabíjení</string>

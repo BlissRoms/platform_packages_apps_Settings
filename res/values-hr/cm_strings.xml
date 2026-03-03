@@ -36,8 +36,6 @@
     <string name="unlock_scramble_pin_layout_summary">Nasumičan PIN raspored pri otključavanju uređaja</string>
     <string name="proximity_wake_title">Sprječavanje slučajnog buđenja</string>
     <string name="proximity_wake_summary">Provjera senzora blizine prije buđenja zaslona</string>
-    <string name="touchscreen_gesture_settings_title">Geste zaslona</string>
-    <string name="touchscreen_gesture_settings_summary">Razne geste zaslona za brze radnje</string>
     <string name="touchscreen_hovering_title">Lebdenje zaslonom</string>
     <string name="touchscreen_hovering_summary">Dopušta vam da lebdite zaslonom kao miš u web pretraživaču, udaljenom desktopu, itd</string>
     <string name="wake_when_plugged_or_unplugged_title">Buđenje pri priključivanju</string>

@@ -43,7 +43,6 @@
     <string name="unlock_scramble_pin_layout_title">Kasta om layout</string>
     <string name="unlock_scramble_pin_layout_summary">Kasta om PIN-layout vid upplåsning av enheten</string>
     <string name="proximity_wake_title">Förhindra oavsiktlig väckning</string>
-    <string name="touchscreen_gesture_settings_title">Skärmgester</string>
     <string name="touchscreen_hovering_title">Tryckskärm-hovring</string>
     <string name="touchscreen_hovering_summary">Låter dig hovra över skärmen som en mus i webbläsare, fjärrskrivbord, etc</string>
     <string name="wake_when_plugged_or_unplugged_title">Vakna vid koppling</string>

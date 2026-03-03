@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Tocca il sensore sulla parte laterale del tuo tablet.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Tocca il sensore sulla parte laterale del tuo dispositivo.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Tocca il sensore sulla parte laterale del tuo telefono.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Tocca il sensore d\'impronte per sbloccare, anche quando lo schermo è spento. Il sensore di prossimità impedisce lo sblocco accidentale.</string>
     <string name="show_navbar_hint_title">Indicatore navigazione</string>
     <string name="show_navbar_hint_summary">Mostra l\'indicatore di navigazione in fondo allo schermo</string>
     <string name="auto_brightness_one_shot_title">Luminosità automatica singola </string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">Mescola la disposizione del tastierino PIN per lo sblocco del dispositivo</string>
     <string name="proximity_wake_title">Previeni risvegli accidentali</string>
     <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di accendere lo schermo</string>
-    <string name="touchscreen_gesture_settings_title">Gesture sullo schermo</string>
-    <string name="touchscreen_gesture_settings_summary">Esegui varie gesture sullo schermo per azioni rapide</string>
     <string name="touchscreen_hovering_title">Touch a puntamento</string>
     <string name="touchscreen_hovering_summary">Consente di utilizzare il tocco come un mouse nei browser e nei desktop remoti</string>
     <string name="wake_when_plugged_or_unplugged_title">Risveglia al collegamento</string>

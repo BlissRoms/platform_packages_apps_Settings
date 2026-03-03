@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Докоснете сензора отстрани на таблета ви.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Докоснете сензора отсрани на устройството ви.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Докоснета сензора отстрани на телефона ви.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Докоснете сензора, за да отключите, дори когато екранът е изключен. Сензорът за близост предотвратява неволно октлючване.</string>
     <string name="show_navbar_hint_title">Подсказки за навигация</string>
     <string name="show_navbar_hint_summary">Показване на подсказки за навигация в долната част на екрана</string>
     <string name="auto_brightness_one_shot_title">Автоматична яркост на един кадър</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">Разбъркано PIN оформление при отключване на устройството</string>
     <string name="proximity_wake_title">Предотвратяване на случайно събуждане</string>
     <string name="proximity_wake_summary">Провери сензора за близост преди събуждане на екрана</string>
-    <string name="touchscreen_gesture_settings_title">Тъчскрийн жестове</string>
-    <string name="touchscreen_gesture_settings_summary">Изпълнява различни бързи действия чрез жестове върху сензорния екран</string>
     <string name="touchscreen_hovering_title">Сочейки по сензорния екран</string>
     <string name="touchscreen_hovering_summary">Позволява ви да сочите по екрана като с мишка в уеб браузъри, отдалечени настолни компютри и др</string>
     <string name="wake_when_plugged_or_unplugged_title">Събуждане при зареждане</string>

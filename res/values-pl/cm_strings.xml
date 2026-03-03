@@ -65,7 +65,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Dotknij czujnika znajdującego się z boku twojego tabletu.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Dotknij czujnika znajdującego się z boku twojego urządzenia.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Dotknij czujnika znajdującego się z boku twojego telefonu.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Dotknij czujnika, aby odblokować, nawet gdy ekran jest wyłączony. Czujnik zbliżeniowy zapobiega przypadkowemu odblokowaniu.</string>
     <string name="show_navbar_hint_title">Pasek nawigacji</string>
     <string name="show_navbar_hint_summary">Pokazuj pasek nawigacji w dolnej części ekranu</string>
     <string name="auto_brightness_one_shot_title">Jednorazowa jasność automatyczna</string>
@@ -82,8 +81,6 @@
     <string name="unlock_scramble_pin_layout_summary">Pomieszany układ cyfr przy odblokowywaniu urządzenia kodem PIN</string>
     <string name="proximity_wake_title">Zapobiega przypadkowemu wybudzeniu</string>
     <string name="proximity_wake_summary">Sprawdź czujnik zbliżeniowy przed wybudzeniem ekranu</string>
-    <string name="touchscreen_gesture_settings_title">Gesty ekranu dotykowego</string>
-    <string name="touchscreen_gesture_settings_summary">Wykonuj różne gesty na ekranie dotykowym, aby wykonać szybkie akcje</string>
     <string name="touchscreen_hovering_title">Wskazywanie ekranu dotykowego</string>
     <string name="touchscreen_hovering_summary">Pozwala na wskazywanie na ekranie jak myszką w przeglądarce internetowej, pulpicie zdalnym itd.</string>
     <string name="wake_when_plugged_or_unplugged_title">Wybudzaj przy podłączaniu</string>

@@ -61,7 +61,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Snertu lesarann á hlið spjaldtölvunnar.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Snertu lesarann á hlið tækisins.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Snertu lesarann á hlið símans.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Snertu skynjarann til að aflæsa, jafnvel þegar slökkt er á skjá. Nálægðarskynjari kemur í veg fyrir aflæsingu fyrir slysni.</string>
     <string name="show_navbar_hint_title">Ábending við flakk</string>
     <string name="show_navbar_hint_summary">Birta stiku með ábendingum um flakk neðst á skjánum</string>
     <string name="auto_brightness_one_shot_title">Sjálfvirkt birtustig fyrir eina mynd</string>
@@ -78,8 +77,6 @@
     <string name="unlock_scramble_pin_layout_summary">Rugla PIN-framsetningu þegar tæki er aflæst</string>
     <string name="proximity_wake_title">Koma í veg fyrir slysalega vöknun</string>
     <string name="proximity_wake_summary">Athuga nálægðarskynjara áður en skjár er vakinn</string>
-    <string name="touchscreen_gesture_settings_title">Bendingar á snertiskjá</string>
-    <string name="touchscreen_gesture_settings_summary">Framkvæma ýmsar bendingar á snertiskjá fyrir flýtiaðgerðir</string>
     <string name="touchscreen_hovering_title">Svif yfir snertiskjá</string>
     <string name="touchscreen_hovering_summary">Gerir þér kleift að láta bendil svífa eins og með mús yfir skjánum í vöfrum, fjartengdum skjáborðum, o.s.frv.</string>
     <string name="wake_when_plugged_or_unplugged_title">Vakning við tengingu</string>

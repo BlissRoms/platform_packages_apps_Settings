@@ -73,8 +73,6 @@
     <string name="unlock_scramble_pin_layout_summary">Cymysgu cynllun y PIN wrth ddatgloi\'r ddyfais</string>
     <string name="proximity_wake_title">Rhwystro deffro ar gam</string>
     <string name="proximity_wake_summary">Gwirio\'r synhwyrydd agosrwydd cyn deffro\'r sgrin</string>
-    <string name="touchscreen_gesture_settings_title">Ystumiau sgrin gyffwrdd</string>
-    <string name="touchscreen_gesture_settings_summary">Perfformio ystumiau amrywiol ar y sgrin gyffwrdd am weithredoedd cyflym</string>
     <string name="touchscreen_hovering_title">Hofran sgrin gyffwrdd</string>
     <string name="touchscreen_hovering_summary">Mae\'n dy ganiatáu i hofran ar y sgrin fel defnyddio llygoden mewn porwyr, byrddau gwaith pell, ayyb</string>
     <string name="wake_when_plugged_or_unplugged_title">Deffro wrth gysylltu â phŵer</string>

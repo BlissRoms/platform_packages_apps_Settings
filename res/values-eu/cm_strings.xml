@@ -35,8 +35,6 @@
     <string name="unlock_scramble_pin_layout_summary">PIN zenbakiaren antolaketa nahastu gailua desblokeatzean</string>
     <string name="proximity_wake_title">Eragotzi ustekabeko esnatzea</string>
     <string name="proximity_wake_summary">Kontsultatu gertutasun sentsorea pantaila piztu baino lehen</string>
-    <string name="touchscreen_gesture_settings_title">Ukitze-pantailaren keinuak</string>
-    <string name="touchscreen_gesture_settings_summary">Egin ukimen-pantailako keinuak ekintza azkarretarako</string>
     <string name="touchscreen_hovering_title">Pantailaren gainetik pasatu</string>
     <string name="touchscreen_hovering_summary">Sagua bailitzan pantailaren gainetik pasatzea ahalbidetzen dizu, nabigatzaileetan, urruneko mahaigainetan, eta abar</string>
     <string name="wake_when_plugged_or_unplugged_title">Esnatu kargadorearekin</string>

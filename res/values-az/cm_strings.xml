@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Planşetinizin yan tərəfindəki sensora toxunun.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Cihazınızın yan tərəfindəki sensora toxunun.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Telefonunuzun yan tərəfindəki sensora toxunun.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Ekran sönülü olsa belə kilidi açmaq üçün sensora toxunun. Yaxınlıq sensoru səhvən kilid açmanın qarşısını alır.</string>
     <string name="show_navbar_hint_title">Hərəkət məsləhəti</string>
     <string name="show_navbar_hint_summary">Naviqasiya ipucu çubuğunu ekranında alt hissəsində göstər</string>
     <string name="auto_brightness_one_shot_title">Tək çəkilişdə avto-parlaqlıq</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarkən PIN düzümünü qarışdır</string>
     <string name="proximity_wake_title">Təsadüfi oyanmaların qarşısını al</string>
     <string name="proximity_wake_summary">Ekranı oyandırmamışdan qabaq yaxınlıq sensorunu yoxlayın</string>
-    <string name="touchscreen_gesture_settings_title">Ekran toxunuş jestləri</string>
-    <string name="touchscreen_gesture_settings_summary">Cəld hərəkətlər üçün cürbəcür toxunaqlı ekran jestlərini həyata keçirin</string>
     <string name="touchscreen_hovering_title">Toxunuşlu ekranda toxunmadan hərəkət</string>
     <string name="touchscreen_hovering_summary">Ekrana toxunmadan barmağınızı yaxınlaşdıraraq siçan (maus) kimi veb brauzerlərdə, uzaq masaüstlərində və s. hərəkətinizi təmin edər</string>
     <string name="wake_when_plugged_or_unplugged_title">Taxıb çıxaranda oyan</string>

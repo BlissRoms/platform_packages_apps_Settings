@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">உமது தத்தல் கணினி ஓரத்தில் உணரியைத் தொடுக.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">உமது கருவி ஓரத்தில் உணரியைத் தொடுக.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">உமது செல்பேசி ஓரத்தில் உணரியைத் தொடுக.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">திரை அணைக்கப்பட்டு இருந்தாலும், பூட்டைத்திறக்க உணரியைத் தொடுக. தற்செயலானப் பூட்டுத்திறத்தலை நெருக்க உணரி தடுக்கின்றது.</string>
     <string name="show_navbar_hint_title">வழிநடத்தும் குறிப்பு</string>
     <string name="show_navbar_hint_summary">திரையின் அடிப்பகுதியில் வழிநடத்தும் குறிப்புப் பட்டியைக் காட்டுக</string>
     <string name="auto_brightness_one_shot_title">ஒரே செலுத்தலில் தானியங்கி ஒளிர்வு</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">கருவியைத் திறக்கும்போது PIN தளவமைப்பை ஒழுங்கற்று ஆக்குக</string>
     <string name="proximity_wake_title">தற்செயலான விழித்தலை தடுக்க</string>
     <string name="proximity_wake_summary">திரையை எழுப்புவதற்கு முன், நெருங்கமை உணரியைச் சரிபார்க்க</string>
-    <string name="touchscreen_gesture_settings_title">தொடுதிரை மெய்ப்பாடுகள்</string>
-    <string name="touchscreen_gesture_settings_summary">விரைவான செயல்களுக்காகப் பல்வேறு தொடுதிரை மெய்ப்பாடுகளை இயற்றுக</string>
     <string name="touchscreen_hovering_title">தொடுதிரைத் தொலைத் தொடுதல்</string>
     <string name="touchscreen_hovering_summary">வலை உலாவிகள், தொலைப் பணித்தளங்கள் போன்றவற்றில் சுட்டியைப் போலத் திரையின் மேலாக விரலை நகர்த்த உம்மை அனுமதிக்கிறது</string>
     <string name="wake_when_plugged_or_unplugged_title">செருகும்போது விழித்தெழுக</string>

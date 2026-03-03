@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">태블릿 옆면에 있는 지문 센서를 누르세요.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">기기 옆면에 있는 지문 센서를 누르세요.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">휴대전화 옆면에 있는 지문 센서를 누르세요.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">화면이 꺼져 있을 때도 센서를 터치하여 잠금을 해제합니다. 근접 센서는 실수로 잠금이 해제되는 것을 방지합니다.</string>
     <string name="show_navbar_hint_title">내비게이션 힌트</string>
     <string name="show_navbar_hint_summary">화면 아래에 내비게이션 힌트 바를 표시합니다.</string>
     <string name="auto_brightness_one_shot_title">화면이 켜질 때 한 번만 밝기 조절</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">장치를 잠금 해제할 때 PIN 레이아웃 섞기</string>
     <string name="proximity_wake_title">실수로 화면 켜기 방지</string>
     <string name="proximity_wake_summary">화면을 켜기 전에 근접 센서 확인</string>
-    <string name="touchscreen_gesture_settings_title">터치스크린 제스처</string>
-    <string name="touchscreen_gesture_settings_summary">다양한 터치스크린 제스처를 사용하여 빠른 작업 실행</string>
     <string name="touchscreen_hovering_title">터치스크린 호버링</string>
     <string name="touchscreen_hovering_summary">웹 브라우저나 원격 데스크톱과 같은 앱에서 마우스처럼 화면에 호버링하여 사용할 수 있습니다.</string>
     <string name="wake_when_plugged_or_unplugged_title">충전 시 켜짐</string>

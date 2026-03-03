@@ -35,8 +35,6 @@
     <string name="unlock_scramble_pin_layout_summary">Приказује дугмад за унос PIN кода у насумичном реду.</string>
     <string name="proximity_wake_title">Спречи случајно буђење</string>
     <string name="proximity_wake_summary">Провери сензор близине пре буђења екрана</string>
-    <string name="touchscreen_gesture_settings_title">Гестови по екрану</string>
-    <string name="touchscreen_gesture_settings_summary">Подеси разне гестове по екрану за брзе акције</string>
     <string name="touchscreen_hovering_title">Задржавање прста</string>
     <string name="touchscreen_hovering_summary">Омогућава радње при задржавању прста изнад елемената интерфејса у веб-прегледачима или другим апликацијама.</string>
     <string name="wake_when_plugged_or_unplugged_title">Буђење при пуњењу</string>

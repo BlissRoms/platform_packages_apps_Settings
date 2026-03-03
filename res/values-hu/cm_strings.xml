@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Érintse meg a szenzort készüléke oldalán.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Érintse meg a szenzort készüléke oldalán.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Érintse meg a szenzort telefonja oldalán.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">Feloldáshoz érintse meg az érzékelőt, még akkor is, ha a képernyő ki van kapcsolva.  A közelségérzékelő megakadályozza a véletlen feloldást.</string>
     <string name="show_navbar_hint_title">Navigációs tipp</string>
     <string name="show_navbar_hint_summary">A navigáció ajánlásait a képernyő alján jeleníti meg</string>
     <string name="auto_brightness_one_shot_title">Egylövéses automata-fényerő</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">PIN szoros elrendezése az eszköz feloldásakor</string>
     <string name="proximity_wake_title">Véletlen ébresztés megakadályozása</string>
     <string name="proximity_wake_summary">Közelségérzékelő ellenőrzése a képernyő felébresztése előtt</string>
-    <string name="touchscreen_gesture_settings_title">Érintőképernyő-mozdulatvezérlés</string>
-    <string name="touchscreen_gesture_settings_summary">Különböző képernyő-mozdulatvezérlések végrehajtása a gyorsműveletekhez</string>
     <string name="touchscreen_hovering_title">Lebegő érintés</string>
     <string name="touchscreen_hovering_summary">Engedélyezi a lebegéssel való vezérlést, mint egy egérrel a böngészőknél, távoli asztaloknál, stb.</string>
     <string name="wake_when_plugged_or_unplugged_title">Felébredés töltő csatlakoztatásakor</string>

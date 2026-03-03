@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">輕觸位於平板側面的感應器。</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">輕觸位於裝置側面的感應器。</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">輕觸位於手機側面的感應器。</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">即使螢幕關閉，觸控感應器即可解鎖。接近感應器可防止意外解鎖。</string>
     <string name="show_navbar_hint_title">導覽列提示</string>
     <string name="show_navbar_hint_summary">在螢幕底部顯示導航列提示欄</string>
     <string name="auto_brightness_one_shot_title">使用自動調整亮度一次</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">解鎖裝置時使用亂序 PIN 碼佈局</string>
     <string name="proximity_wake_title">防止意外喚醒</string>
     <string name="proximity_wake_summary">喚醒螢幕前檢查接近感應器</string>
-    <string name="touchscreen_gesture_settings_title">觸控螢幕手勢</string>
-    <string name="touchscreen_gesture_settings_summary">執行各種觸控螢幕手勢以進行快速動作</string>
     <string name="touchscreen_hovering_title">懸浮操作</string>
     <string name="touchscreen_hovering_summary">允許您把手指懸停在螢幕上作為瀏覽器、遠程桌面等的滑鼠</string>
     <string name="wake_when_plugged_or_unplugged_title">接上或拔除電源時喚醒</string>

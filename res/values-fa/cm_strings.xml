@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">حسگر کنار رایانه‌لوحی خود را لمس کنید.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">حسگر کنار دستگاه خود را لمس کنید.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">حسگر کنار گوشی خود را لمس کنید.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">حتی زمانی که صفحه نمایش خاموش است، حسگر را برای باز کردن قفل لمس کنید. سنسور مجاورت از باز شدن تصادفی قفل جلوگیری می کند.</string>
     <string name="show_navbar_hint_title">نوار پیمایش</string>
     <string name="show_navbar_hint_summary">نوار پیمایش را در پایین صفحه نمایش دهید</string>
     <string name="auto_brightness_one_shot_title">روشنایی خودکار یک ضربه</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">چینش درهم پین هنگام باز کردن قفل دستگاه</string>
     <string name="proximity_wake_title">جلوگیری از بیدار شدن تصادفی</string>
     <string name="proximity_wake_summary">بررسی سنسور مجاورت قبل از بیداری صفحه نمایش</string>
-    <string name="touchscreen_gesture_settings_title">حرکات لمس صفحه</string>
-    <string name="touchscreen_gesture_settings_summary">اجرا کردن حرکات لمس صفحه متعدد برای عملیات سریع</string>
     <string name="touchscreen_hovering_title">لمس شناور صفحه</string>
     <string name="touchscreen_hovering_summary">به شما اجازه می‌دهد مانند عملکرد ماوس در مرورگرهای وب، ریموت دسکتاپ و غیره، صفحه نمایش را به صورت شناور کنترل کنید</string>
     <string name="wake_when_plugged_or_unplugged_title">بیدار شدن هنگام اتصال به برق</string>

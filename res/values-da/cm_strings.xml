@@ -71,8 +71,6 @@
     <string name="unlock_scramble_pin_layout_summary">Omvælt PIN-opsætning, ved oplåsning af enhed</string>
     <string name="proximity_wake_title">Forhindr utilsigtet vækning</string>
     <string name="proximity_wake_summary">Tjek nærheds sensoren før skærmen vækkes</string>
-    <string name="touchscreen_gesture_settings_title">Bevægelser på berøringsfølsom skærm</string>
-    <string name="touchscreen_gesture_settings_summary">Udfør forskellige bevægelser på berøringsfølsom skærm, for hurtig-handlinger</string>
     <string name="touchscreen_hovering_title">Berøringsfølsom skærm-svævning</string>
     <string name="touchscreen_hovering_summary">Tillader dig at holde fingeren over skærmen, som en mus i netlæsere, på fjernskriveborde, osv.</string>
     <string name="wake_when_plugged_or_unplugged_title">Vågn ved tilslutning</string>

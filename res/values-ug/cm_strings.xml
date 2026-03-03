@@ -63,7 +63,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">تاختا كومپيۇتېرىڭىزنىڭ يان تەرىپىدىكى سەزگۈچكە تەگكۈزۈڭ.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">ئۈسكۈنىڭىزنىڭ يان تەرىپىدىكى سەزگۈچكە تەگكۈزۈڭ.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">تېلېفونىڭىزنىڭ يان تەرىپىدىكى سەزگۈچكە تەگكۈزۈڭ.</string>
-    <string name="security_settings_require_screen_on_to_auth_with_proximity_description">ئېكران تاقالغان تەقدىردىمۇ، تېگىش سەزگۈچى ئارقىلىق قۇلۇپنى ئاچقىلى بولىدۇ. سەزگۈچكە يېقىنلاشقاندا تاسادىپىي قۇلۇپ ئېچىلىپ كېتىشنىڭ ئالدىنى ئالىدۇ.</string>
     <string name="show_navbar_hint_title">يولباشچى ئەسكەرتىشى</string>
     <string name="show_navbar_hint_summary">ئېكراننىڭ ئاستىدا يولباشچى ئەسكەرتىش بالداقنى كۆرسىتىدۇ</string>
     <string name="auto_brightness_one_shot_title">بىر كۇنۇپكىدا يورۇقلۇقنى ئۆزلۈكىدىن تەڭشەش</string>
@@ -80,8 +79,6 @@
     <string name="unlock_scramble_pin_layout_summary">ئۈسكۈنە قۇلۇپىنى ئاچقاندا قالايمىقان تەرتىپتىكى PIN جايلاشتۇرۇشنى ئىشلىتىدۇ</string>
     <string name="proximity_wake_title">تاسادىپىي ئويغىتىشنىڭ ئالدىنى ئېلىش</string>
     <string name="proximity_wake_summary">ئېكراننىڭ ئويغىتىشتىن ئىلگىرى ئارىلىق سەزگۈچنى تەكشۈرىدۇ</string>
-    <string name="touchscreen_gesture_settings_title">سەزگۈر ئېكران قول ئىشارىتى</string>
-    <string name="touchscreen_gesture_settings_summary">تېز مەشغۇلاتنىڭ نۇرغۇن سەزگۈر ئېكران قول ئىشارىتىنى ئىجرا قىلىدۇ</string>
     <string name="touchscreen_hovering_title">لەيلىتىش مەشغۇلاتى</string>
     <string name="touchscreen_hovering_summary">بارمىقىڭىزنى ئېكراننىڭ ئۈستىگە لەيلىتىپ توركۆرگۈ، يىراقتىكى ئۈستەلئۈستى قاتارلىقلارنىڭ چاشقىنەك ئىستىرىلكىسى سۈپىتىدە ئىشلىتىشىگە يول قويىدۇ</string>
     <string name="wake_when_plugged_or_unplugged_title">چېتىلغاندا ئويغات</string>
