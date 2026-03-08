@@ -38,6 +38,8 @@
     <string name="heads_up_notifications_enabled_summary">Εμφάνιση ειδοποιήσεων προτεραιότητας σε ένα μικρό αιωρούμενο παράθυρο</string>
     <string name="high_touch_sensitivity_title">Υψηλή ευαισθησία αφής</string>
     <string name="high_touch_sensitivity_summary">Αύξηση της ευαισθησίας της οθόνης αφής έτσι ώστε να μπορεί να χρησιμοποιηθεί φορώντας γάντια</string>
+    <string name="tethering_allow_vpn_upstreams_title">Να χρησιμοποιείται το VPN για συνδεδεμένες συσκευές</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Όταν η συσκευή χρησιμοποιεί VPN, όλες οι συνδεδεμένες συσκευές του σημείου πρόσβασης θα χρησιμοποιούν το ίδιο VPN</string>
     <string name="lock_settings_picker_pattern_size_message">Επιλέξτε ένα μέγεθος μοτίβου</string>
     <string name="lockpattern_settings_enable_error_path_title">Εμφάνιση λάθος μοτίβου</string>
     <string name="lockpattern_settings_enable_dots_title">Εμφάνιση τελειών μοτίβου</string>

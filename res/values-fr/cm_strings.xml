@@ -38,6 +38,8 @@
     <string name="heads_up_notifications_enabled_summary">Afficher les notifications prioritaires dans une petite fenêtre de notification flottante</string>
     <string name="high_touch_sensitivity_title">Haute sensibilité tactile</string>
     <string name="high_touch_sensitivity_summary">Augmenter la sensibilité de l\'écran permettant ainsi le port de gants</string>
+    <string name="tethering_allow_vpn_upstreams_title">Utiliser le VPN pour les appareils connectés</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Lorsque cet appareil utilise un VPN, tous les appareils connectés au point d\'accès utiliseront le même VPN</string>
     <string name="lock_settings_picker_pattern_size_message">Choisissez une taille de modèle</string>
     <string name="lockpattern_settings_enable_error_path_title">Afficher l\'erreur de schéma</string>
     <string name="lockpattern_settings_enable_dots_title">Afficher les points du schéma</string>
