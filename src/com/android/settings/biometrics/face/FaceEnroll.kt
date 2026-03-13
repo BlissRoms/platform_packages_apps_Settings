@@ -27,12 +27,13 @@ import com.android.settings.biometrics.BiometricEnrollBase.RESULT_FINISHED
 import com.android.settings.biometrics.BiometricEnrollBase.RESULT_SKIP
 import com.android.settings.biometrics.BiometricEnrollBase.RESULT_TIMEOUT
 import com.android.settings.biometrics.BiometricsOnboardingProto
+import com.android.settings.biometrics.MultiBiometricEnrollHelper.EXTRA_ENROLL_AFTER_FACE
 import com.android.settings.biometrics.combination.CombinedBiometricStatusUtils
 import com.android.settings.biometrics.metrics.BiometricsLogger
 import com.android.settings.biometrics.metrics.OnboardingEvent
 import com.android.settings.overlay.FeatureFactory.Companion.featureFactory
 
-class FaceEnroll: AppCompatActivity() {
+class FaceEnroll : AppCompatActivity() {
 
     /**
      * The class of the next activity to launch. This is open to allow subclasses to provide their
@@ -45,8 +46,7 @@ class FaceEnroll: AppCompatActivity() {
     private val enrollActivityProvider: FaceEnrollActivityClassProvider
         get() = featureFactory.faceFeatureProvider.enrollActivityClassProvider
 
-    @VisibleForTesting
-    var launchedFromProvider: () -> String? = { launchedFromPackage }
+    @VisibleForTesting var launchedFromProvider: () -> String? = { launchedFromPackage }
 
     private var isLaunched = false
     private var startTimeMillis: Long = 0
@@ -65,9 +65,9 @@ class FaceEnroll: AppCompatActivity() {
 
         if (!isLaunched) {
             /**
-             *  Logs the next activity to be launched, creates an intent for that activity,
-             *  adds flags to forward the result, includes any existing extras from the current intent,
-             *  starts the new activity and then finishes the current one
+             * Logs the next activity to be launched, creates an intent for that activity, adds
+             * flags to forward the result, includes any existing extras from the current intent,
+             * starts the new activity and then finishes the current one
              */
             Log.d("FaceEnroll", "forward to $nextActivityClass")
             val nextIntent = Intent(this, nextActivityClass)
@@ -75,6 +75,7 @@ class FaceEnroll: AppCompatActivity() {
 
             // drop extras that are not allowed from external packages before launching
             if (launchedFromProvider() != packageName) {
+                nextIntent.removeExtra(EXTRA_ENROLL_AFTER_FACE)
                 nextIntent.removeExtra(Intent.EXTRA_USER_ID)
             }
             startActivityForResult(nextIntent, 0)
@@ -93,13 +94,16 @@ class FaceEnroll: AppCompatActivity() {
         requestCode: Int,
         resultCode: Int,
         data: Intent?,
-        caller: ComponentCaller
+        caller: ComponentCaller,
     ) {
         super.onActivityResult(requestCode, resultCode, data, caller)
         isLaunched = false
-        if (intent.getBooleanExtra(
-                CombinedBiometricStatusUtils.EXTRA_LAUNCH_FROM_SAFETY_SOURCE_ISSUE, false)
-            && resultCode != RESULT_FINISHED) {
+        if (
+            intent.getBooleanExtra(
+                CombinedBiometricStatusUtils.EXTRA_LAUNCH_FROM_SAFETY_SOURCE_ISSUE,
+                false,
+            ) && resultCode != RESULT_FINISHED
+        ) {
             featureFactory.biometricsFeatureProvider.notifySafetyIssueActionLaunched()
         }
         updateOnboardingEvent(resultCode, data)
