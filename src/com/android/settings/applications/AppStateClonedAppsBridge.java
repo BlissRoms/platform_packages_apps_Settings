@@ -22,24 +22,24 @@ import static com.android.settingslib.applications.ApplicationsState.AppEntry;
 import static com.android.settingslib.applications.ApplicationsState.AppFilter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.util.Log;
 
 import com.android.settings.Utils;
 import com.android.settingslib.applications.ApplicationsState;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
- * Filter to display only allowlisted apps on Cloned Apps page.
+ * Filter to display cloneable apps on Cloned Apps page.
  */
 public class AppStateClonedAppsBridge extends AppStateBaseBridge{
 
     private static final String TAG = "ClonedAppsBridge";
 
     private final Context mContext;
-    private final List<String> mAllowedApps;
     private List<String> mCloneProfileApps = new ArrayList<>();
     private int mCloneUserId;
 
@@ -47,8 +47,6 @@ public class AppStateClonedAppsBridge extends AppStateBaseBridge{
             Callback callback) {
         super(appState, callback);
         mContext = context;
-        mAllowedApps = Arrays.asList(mContext.getResources()
-                .getStringArray(com.android.internal.R.array.cloneable_apps));
     }
 
     @Override
@@ -74,9 +72,8 @@ public class AppStateClonedAppsBridge extends AppStateBaseBridge{
 
     @Override
     protected void updateExtraInfo(AppEntry app, String pkg, int uid) {
-        // Display package if allowlisted but not yet cloned.
-        // Or if the app is present in clone profile alongwith being in allowlist.
-        if (mAllowedApps.contains(pkg)
+        boolean hasLauncherActivity = mContext.getPackageManager().getLaunchIntentForPackage(pkg) != null;
+        if (hasLauncherActivity
                 && ((!mCloneProfileApps.contains(pkg) || (app.isClonedProfile())))) {
             app.extraInfo = Boolean.TRUE;
         } else {
