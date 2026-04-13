@@ -67,7 +67,16 @@ class MobileNetworkMainSwitchPreference(
     override val disableWidgetOnCheckedChanged: Boolean
         get() = false
 
-    override fun isAvailable(context: Context): Boolean = true
+    override fun isAvailable(context: Context): Boolean {
+        val subInfo =
+            subscriptionRepository.getSelectableSubscriptionInfoList().firstOrNull {
+                it.subscriptionId == subId
+            } ?: return false
+        // For eSIM, we always want the toggle. If telephony stack support disabling a pSIM
+        // directly, we show the toggle.
+        return subInfo.isEmbedded ||
+            context.requireSubscriptionManager().canDisablePhysicalSubscription()
+    }
 
     override fun tags(context: Context) = arrayOf(KEY_MOBILE_DATA)
 
