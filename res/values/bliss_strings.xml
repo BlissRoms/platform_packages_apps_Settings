@@ -281,4 +281,9 @@
     <!-- Drain display with both percent and mAh. [CHAR LIMIT=40] -->
     <string name="battery_stats_drain_pct_mah"><xliff:g id="pct" example="32">%1$d</xliff:g>%% (<xliff:g id="mah" example="1420">%2$d</xliff:g> mAh)</string>
 
+    <string name="battery_info_notif_setting_title">Battery stats notification</string>
+    <string name="battery_info_notif_setting_summary">Show a persistent notification with realtime current, temperature, and screen on/off discharge stats</string>
+
+    <string name="battery_info_monitor_enable">Enable battery monitor notification</string>
+    <string name="battery_info_monitor_disable">Disable battery monitor notification</string>
 </resources>
