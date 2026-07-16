@@ -38,6 +38,9 @@
     <!-- Show battery Maximum Capacity -->
     <bool name="config_show_battery_maximum_capacity">true</bool>
 
+    <!-- Whether Settings should open a separate camera preview during face enrollment -->
+    <bool name="config_face_enroll_hal_owns_camera">false</bool>
+
     <!-- Whether the face HAL supports the require attention feature -->
     <bool name="config_face_attention_supported">true</bool>
 
