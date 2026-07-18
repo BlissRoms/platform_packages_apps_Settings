@@ -37,9 +37,6 @@
     <string name="berry_black_theme_purpose" translatable="false">Whether the pure dark theme is enabled</string>
     <string name="berry_black_theme_summary">Pure black background for dark theme</string>
 
-    <!-- Device Info screen. LineageOS legal. -->
-    <string name="lineagelicense_title">LineageOS legal</string>
-
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
     <string name="show_dev_countdown_cm">{count, plural,
       =1      {You are now # step away from enabling development settings.}

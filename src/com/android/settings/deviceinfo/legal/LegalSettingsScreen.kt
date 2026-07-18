@@ -61,11 +61,6 @@ open class LegalSettingsScreen : PreferenceScreenMixin {
                 R.string.license_title,
                 "android.settings.LICENSE",
             )
-            +LineageLegalPreference(
-                "lineage_license",
-                R.string.terms_purpose,
-                R.string.lineagelicense_title,
-            )
             +LegalPreference(
                 "terms",
                 R.string.terms_purpose,
