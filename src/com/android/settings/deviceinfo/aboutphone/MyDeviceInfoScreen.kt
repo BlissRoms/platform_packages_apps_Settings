@@ -25,6 +25,7 @@ import androidx.fragment.app.Fragment
 import com.android.settings.R
 import com.android.settings.Settings.MyDeviceInfoActivity
 import com.android.settings.core.PreferenceScreenMixin
+import com.android.settings.deviceinfo.bliss.BlissVersionScreen
 import com.android.settings.deviceinfo.firmwareversion.FirmwareVersionScreen
 import com.android.settings.deviceinfo.hardwareinfo.HardwareInfoScreen
 import com.android.settings.deviceinfo.imei.ImeiPreference
@@ -101,6 +102,7 @@ open class MyDeviceInfoScreen :
                         +ImeiPreference(context, i, activeModemCount, imeiList) order (i + 33)
                     }
                     +FirmwareVersionScreen.KEY order 42
+                    +BlissVersionScreen.KEY order 43
                 }
         }
 

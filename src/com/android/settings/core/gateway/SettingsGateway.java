@@ -105,6 +105,7 @@ import com.android.settings.deviceinfo.StorageDashboardFragment;
 import com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment;
 import com.android.settings.deviceinfo.batteryinfo.BatteryInfoFragment;
 import com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings;
+import com.android.settings.deviceinfo.bliss.BlissVersionSettings;
 import com.android.settings.deviceinfo.legal.ModuleLicensesDashboard;
 import com.android.settings.display.AutoBrightnessSettings;
 import com.android.settings.display.ColorContrastFragment;
@@ -262,6 +263,7 @@ public class SettingsGateway {
             ManageApplications.class.getName(),
             AppStorageSettings.class.getName(),
             FirmwareVersionSettings.class.getName(),
+            BlissVersionSettings.class.getName(),
             ManageAssist.class.getName(),
             ProcessStatsUi.class.getName(),
             NotificationStation.class.getName(),
