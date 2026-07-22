@@ -145,4 +145,51 @@
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+
+    <!-- App Lock -->
+    <string name="app_lock_settings_title">App Lock</string>
+    <string name="app_lock_settings_summary">Customize App Lock and choose locked apps</string>
+    <string name="app_lock_customization_category">Customization</string>
+    <string name="app_lock_apps_category">Locked apps</string>
+    <string name="app_lock_auto_biometric_prompt_title">Automatic biometric prompt</string>
+    <string name="app_lock_auto_biometric_prompt_summary">Show the unlock prompt as soon as a locked app opens</string>
+    <string name="app_lock_relock_behavior_title">Relock behavior</string>
+    <string name="app_lock_grace_period_title">Relock timeout</string>
+    <string name="app_lock_separate_credential_title">App Lock credential</string>
+    <string name="app_lock_separate_credential_none">Device credential (default)</string>
+    <string name="app_lock_separate_credential_pin">Separate PIN</string>
+    <string name="app_lock_separate_credential_pattern">Separate pattern</string>
+    <string name="app_lock_credential_set_pin">Set separate PIN</string>
+    <string name="app_lock_credential_set_pattern">Set separate pattern</string>
+    <string name="app_lock_credential_remove">Use device credential</string>
+    <string name="app_lock_no_lockable_apps">No apps support App Lock</string>
+    <plurals name="app_lock_summary_count">
+        <item quantity="one">1 app locked</item>
+        <item quantity="other"><xliff:g id="count" example="3">%d</xliff:g> apps locked</item>
+    </plurals>
+    <string-array name="app_lock_relock_behavior_entries">
+        <item>After timeout</item>
+        <item>When screen turns off</item>
+    </string-array>
+    <string-array name="app_lock_relock_behavior_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="app_lock_grace_period_entries">
+        <item>Immediately</item>
+        <item>5 seconds</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>5 minutes</item>
+    </string-array>
+    <string-array name="app_lock_grace_period_values" translatable="false">
+        <item>0</item>
+        <item>5000</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>300000</item>
+    </string-array>
+
 </resources>
