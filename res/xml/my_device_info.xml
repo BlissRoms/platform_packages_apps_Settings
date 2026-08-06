@@ -21,6 +21,20 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <!-- Bliss Banner -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="bliss_device_info_banner"
+        android:layout="@layout/bliss_device_info_banner"
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.aboutphone.BlissBannerPreferenceController"/>
+
+    <!-- Bliss Grid -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="bliss_device_info_grid"
+        android:layout="@layout/bliss_device_info_grid"
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.aboutphone.BlissGridPreferenceController"/>
+
     <PreferenceCategory
         android:key="basic_info_category"
         android:selectable="false"
@@ -34,6 +48,33 @@
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
             settings:enableCopying="true"/>
+
+        <!-- CPU Info -->
+        <Preference
+            android:key="cpu_info"
+            android:order="2"
+            android:title="CPU"
+            android:summary="@string/summary_placeholder"
+            android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
+            settings:controller="com.android.settings.deviceinfo.aboutphone.BlissCpuPreferenceController" />
+
+        <!-- Memory Info -->
+        <Preference
+            android:key="memory_info"
+            android:order="3"
+            android:title="Memory"
+            android:summary="@string/summary_placeholder"
+            android:fragment="com.android.settings.applications.RunningServices"
+            settings:controller="com.android.settings.deviceinfo.aboutphone.BlissMemoryPreferenceController" />
+
+        <!-- Battery Info -->
+        <Preference
+            android:key="battery_info"
+            android:order="4"
+            android:title="Battery"
+            android:summary="@string/summary_placeholder"
+            android:fragment="com.android.settings.fuelgauge.batteryusage.PowerUsageSummary"
+            settings:controller="com.android.settings.deviceinfo.aboutphone.BlissBatteryPreferenceController" />
 
         <!-- Account name -->
         <Preference
@@ -130,23 +171,7 @@
             settings:isPreferenceVisible="@bool/config_show_sim_info"
             settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
 
-        <!-- Android version -->
-        <Preference
-            android:key="firmware_version"
-            android:order="42"
-            android:title="@string/firmware_version"
-            android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
-            settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
-        <!-- Bliss version -->
-        <Preference
-            android:key="bliss_version"
-            android:order="43"
-            android:title="@string/bliss_version"
-            android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.deviceinfo.bliss.BlissVersionSettings"
-            settings:controller="com.android.settings.deviceinfo.bliss.BlissVersionPreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
