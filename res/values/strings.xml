@@ -15596,7 +15596,10 @@
     <string name="permit_access_hid">Allow app to discover human interface devices (HIDs)</string>
     <!-- Description for a setting which controls whether an app can access HIDs [CHAR LIMIT=NONE] [SCREENSHOT=screen/9b4PwXWD4S9XWhD] -->
     <string name="allow_access_hid_description">If you allow access, malicious apps may reprogram your HIDs to compromise your system. For example, apps could simulate your keyboard or mouse inputs to control your system when it isn\'t open. Make sure you trust apps when allowing access.</string>
-    <!-- Search keywords for Human interface device access setting -->
     <string name="keywords_access_hid">hid, human, access, device</string>
     <!-- Access HID end -->
+
+    <!-- Now Playing -->
+    <string name="now_playing_title">Now Playing</string>
+    <string name="now_playing_summary">Identify songs playing nearby</string>
 </resources>
