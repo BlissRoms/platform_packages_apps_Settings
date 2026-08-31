@@ -198,6 +198,15 @@
             android:order="-105"
             settings:controller="com.android.settings.sound.NowPlayingPreferenceController"/>
 
+        <!-- Now Playing On-Demand Lockscreen Search Button -->
+        <SwitchPreferenceCompat
+            android:key="now_playing_on_demand"
+            android:title="@string/now_playing_on_demand_title"
+            android:summary="@string/now_playing_on_demand_summary"
+            android:defaultValue="false"
+            android:order="-104"
+            settings:controller="com.android.settings.sound.NowPlayingOnDemandPreferenceController"/>
+
         <!-- Multi Audio Focus -->
         <org.blissroms.blissify.preferences.SystemSettingSwitchPreference
             android:key="multi_audio_focus_enabled"

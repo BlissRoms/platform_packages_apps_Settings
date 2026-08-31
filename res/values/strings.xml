@@ -15602,4 +15602,6 @@
     <!-- Now Playing -->
     <string name="now_playing_title">Now Playing</string>
     <string name="now_playing_summary">Identify songs playing nearby</string>
+    <string name="now_playing_on_demand_title">Show search button on lock screen</string>
+    <string name="now_playing_on_demand_summary">Show a button to identify songs when music is not recognized automatically</string>
 </resources>
