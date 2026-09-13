@@ -28,21 +28,22 @@ public class BlissMemoryPreferenceController extends BasePreferenceController {
         return getTotalRam() + " GB RAM";
     }
 
+    private static final int[] STANDARD_RAM_SIZES = {1, 2, 3, 4, 6, 8, 12, 16, 18, 24, 32, 64};
+
     private int getTotalRam() {
         ActivityManager am = mContext.getSystemService(ActivityManager.class);
         ActivityManager.MemoryInfo memInfo = new ActivityManager.MemoryInfo();
         if (am != null) {
             am.getMemoryInfo(memInfo);
             double ramInGb = (double) memInfo.totalMem / (1024.0 * 1024.0 * 1024.0);
-            
-            // Round to standard integer sizes
-            // Use ceil to ensure 7.2 GB becomes 8 GB
-            int roundedRam = (int) Math.ceil(ramInGb);
-            
-            // For standard sizes that might fall slightly short (e.g. 5.8 GB -> 6GB) Math.ceil handles it perfectly.
-            // Even an 8GB device reporting 7.1GB available will round up to 8.
-            
-            return roundedRam > 0 ? roundedRam : 1;
+
+            for (int size : STANDARD_RAM_SIZES) {
+                if (ramInGb <= size) {
+                    return size;
+                }
+            }
+
+            return (int) Math.ceil(ramInGb);
         }
         return 0;
     }

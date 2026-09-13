@@ -1,10 +1,13 @@
 package com.android.settings.deviceinfo.aboutphone;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.BatteryManager;
 import androidx.preference.Preference;
 
-import com.android.settings.core.BasePreferenceController;
 import com.android.internal.os.PowerProfile;
+import com.android.settings.core.BasePreferenceController;
+import com.android.settingslib.fuelgauge.BatteryUtils;
 
 public class BlissBatteryPreferenceController extends BasePreferenceController {
 
@@ -31,11 +34,15 @@ public class BlissBatteryPreferenceController extends BasePreferenceController {
     private int getBatteryCapacity() {
         PowerProfile powerProfile = new PowerProfile(mContext);
         double capacity = powerProfile.getBatteryCapacity();
-        
-        // Round to nearest multiples of 500s or 100s for display
-        // Most batteries are like 4500, 5000, 5100, etc.
-        int roundedCapacity = (int) Math.round(capacity / 100.0) * 100;
-        
-        return roundedCapacity;
+        if (capacity <= 0) {
+            Intent batteryIntent = BatteryUtils.getBatteryIntent(mContext);
+            int designCapacityUah = batteryIntent != null
+                    ? batteryIntent.getIntExtra(BatteryManager.EXTRA_DESIGN_CAPACITY, -1)
+                    : -1;
+            if (designCapacityUah > 0) {
+                capacity = designCapacityUah / 1000.0;
+            }
+        }
+        return (int) Math.round(capacity);
     }
 }

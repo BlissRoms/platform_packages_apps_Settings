@@ -29,7 +29,12 @@ public class BlissCpuPreferenceController extends BasePreferenceController {
         CPU_MODELS.put("SM8450", "Snapdragon 8 Gen 1");
         CPU_MODELS.put("SM8475", "Snapdragon 8+ Gen 1");
         CPU_MODELS.put("SM8550", "Snapdragon 8 Gen 2");
+        CPU_MODELS.put("SM8635", "Snapdragon 8s Gen 3");
         CPU_MODELS.put("SM8650", "Snapdragon 8 Gen 3");
+        CPU_MODELS.put("SM8735", "Snapdragon 8s Gen 4");
+        CPU_MODELS.put("SM8750", "Snapdragon 8 Elite");
+        CPU_MODELS.put("SM8845", "Snapdragon 8 Gen 5");
+        CPU_MODELS.put("SM8850", "Snapdragon 8 Elite Gen 5");
         
         // Snapdragon 7 Series
         CPU_MODELS.put("SM7125", "Snapdragon 720G");
@@ -40,7 +45,10 @@ public class BlissCpuPreferenceController extends BasePreferenceController {
         CPU_MODELS.put("SM7325", "Snapdragon 778G / 778G+");
         CPU_MODELS.put("SM7450", "Snapdragon 7 Gen 1");
         CPU_MODELS.put("SM7475", "Snapdragon 7+ Gen 2");
-        
+        CPU_MODELS.put("SM7550", "Snapdragon 7 Gen 3");
+        CPU_MODELS.put("SM7635", "Snapdragon 7s Gen 3");
+        CPU_MODELS.put("SM7750", "Snapdragon 7 Gen 4");
+
         // Snapdragon 6 Series
         CPU_MODELS.put("SM6115", "Snapdragon 662");
         CPU_MODELS.put("SM6125", "Snapdragon 665");
