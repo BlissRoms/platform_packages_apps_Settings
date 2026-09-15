@@ -78,4 +78,16 @@
     <string name="wake_when_plugged_or_unplugged_title">Deffro wrth gysylltu â phŵer</string>
     <string name="wake_when_plugged_or_unplugged_summary">Troi\'r sgrin ymlaen wrth gysylltu neu ddatgysylltu â phŵer</string>
     <string name="storage_warning_internal">Rhybudd: Mae\'n bosib na fydd yr opsiwn hwn yn gweithio\'n iawn ac yn arwain at golli data, felly ni argymhellir!</string>
+    <string name="battery_technology">Technoleg</string>
+    <string name="battery_health">Iechyd</string>
+    <string name="battery_health_good">Da</string>
+    <string name="battery_health_overheat">Gor-boethi</string>
+    <string name="battery_health_dead">Marw</string>
+    <string name="battery_health_unspecified_failure">Methiant anhysbys</string>
+    <string name="battery_health_cold">Oer</string>
+    <string name="battery_health_unknown">Anhysybys</string>
+    <string name="battery_temperature">Tymheredd</string>
+    <string name="battery_voltage">Foltedd</string>
+    <string name="battery_charge_counter_summary">%1$d mAh</string>
+    <string name="battery_design_capacity">Capasiti dylunio</string>
 </resources>
