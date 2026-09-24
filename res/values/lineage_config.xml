@@ -37,4 +37,8 @@
 
     <!-- Show battery Maximum Capacity -->
     <bool name="config_show_battery_maximum_capacity">true</bool>
+
+    <!-- Descriptors of game controllers to hide from GameControllerListFragment. -->
+    <string-array name="config_hidden_game_controller_descriptors" translatable="false">
+    </string-array>
 </resources>
