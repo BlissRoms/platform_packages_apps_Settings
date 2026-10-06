@@ -131,7 +131,6 @@ class DarkModeSchedulePreference(
 
             if (locationManager?.lastLocation == null) {
                 TwilightLocationDialog.showLocationPending(context)
-                return false
             }
         }
         preference.setValue(newValue as String)

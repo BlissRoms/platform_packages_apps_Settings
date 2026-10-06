@@ -69,10 +69,7 @@ class DarkModeScheduleStorage(private val context: Context) :
             }
             context.getString(R.string.dark_ui_auto_mode_auto) -> {
                 val locationManager = context.getSystemService(LocationManager::class.java)
-                if (
-                    locationManager?.isLocationEnabled == true &&
-                        locationManager.lastLocation != null
-                ) {
+                if (locationManager?.isLocationEnabled == true) {
                     uiModeManager.nightMode = UiModeManager.MODE_NIGHT_AUTO
                 }
             }
