@@ -27,4 +27,7 @@
         <item>com.google.android.calendar</item>
         <item>com.google.android.gms</item>
     </string-array>
+
+    <!-- CPU name -->
+    <string name="config_cpu_name" translatable="false"></string>
 </resources>
