@@ -18,7 +18,6 @@ package com.android.settings.notification;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.content.Context;
@@ -30,10 +29,6 @@ import android.platform.test.annotations.EnableFlags;
 import android.platform.test.flag.junit.SetFlagsRule;
 import android.telephony.TelephonyManager;
 
-import androidx.preference.PreferenceScreen;
-
-import com.android.settings.DefaultRingtonePreference;
-import com.android.settings.R;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -48,10 +43,6 @@ public class PhoneRingtonePreferenceControllerTest {
 
     @Mock
     private TelephonyManager mTelephonyManager;
-    @Mock
-    private PreferenceScreen mPreferenceScreen;
-    @Mock
-    private DefaultRingtonePreference mPreference;
 
     @Mock
     private Context mMockContext;
@@ -71,17 +62,6 @@ public class PhoneRingtonePreferenceControllerTest {
         when(mMockContext.getSystemService(
                 Context.TELEPHONY_SERVICE)).thenReturn(mTelephonyManager);
         mController = new PhoneRingtonePreferenceController(mMockContext);
-    }
-
-    @Test
-    public void displayPreference_shouldUpdateTitle_for_MultiSimDevice() {
-        when(mTelephonyManager.isMultiSimEnabled()).thenReturn(true);
-        when(mPreferenceScreen.findPreference(mController.getPreferenceKey()))
-                .thenReturn(mPreference);
-        mController.displayPreference(mPreferenceScreen);
-
-        verify(mPreference).setTitle(mContext.getString(R.string.ringtone_title) + " - " +
-            String.format(mContext.getString(R.string.sim_card_number_title), 1)));
     }
 
     @Test

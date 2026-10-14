@@ -20,37 +20,14 @@ import android.content.Context;
 import android.media.RingtoneManager;
 import android.media.audio.Flags;
 
-import android.telephony.TelephonyManager;
-
-import androidx.preference.PreferenceScreen;
-
-import com.android.settings.DefaultRingtonePreference;
-import com.android.settings.R;
-
 import com.android.settings.Utils;
 
 public class PhoneRingtonePreferenceController extends RingtonePreferenceControllerBase {
 
-    private static final int SLOT_ID = 0;
     private static final String KEY_PHONE_RINGTONE = "phone_ringtone";
 
     public PhoneRingtonePreferenceController(Context context) {
         super(context);
-    }
-
-    @Override
-    public void displayPreference(PreferenceScreen screen) {
-        super.displayPreference(screen);
-
-        TelephonyManager telephonyManager =
-                (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        if (telephonyManager.isMultiSimEnabled()) {
-            DefaultRingtonePreference ringtonePreference =
-                    (DefaultRingtonePreference) screen.findPreference(KEY_PHONE_RINGTONE);
-            ringtonePreference.setTitle(mContext.getString(R.string.ringtone_title) + " - " +
-                String.format(mContext.getString(R.string.sim_card_number_title), 1));
-            ringtonePreference.setEnabled(hasCard());
-        }
     }
 
     @Override
@@ -74,11 +51,5 @@ public class PhoneRingtonePreferenceController extends RingtonePreferenceControl
     private boolean isRingtoneVibrationEnabled() {
         return Flags.enableRingtoneHapticsCustomization() && mContext.getResources().getBoolean(
                 com.android.internal.R.bool.config_ringtoneVibrationSettingsSupported);
-    }
-
-    private boolean hasCard() {
-        TelephonyManager telephonyManager =
-                (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        return telephonyManager.hasIccCard(SLOT_ID);
     }
 }
