@@ -4701,6 +4701,7 @@
 
         <activity
             android:name=".sim.SimDialogActivity"
+            android:taskAffinity="com.android.settings.sim.SimDialogActivity"
             android:theme="@style/Theme.AlertDialog.SimConfirmDialog"
             android:label="@string/sim_settings_title"
             android:launchMode="singleTop"
