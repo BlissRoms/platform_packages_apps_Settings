@@ -34,7 +34,7 @@
         android:paddingEnd="16dp">
 
         <TextView
-            android:id="@android:id/title"
+            android:id="@+id/profile_card_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"

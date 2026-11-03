@@ -23,9 +23,8 @@
     <com.android.settingslib.widget.UntitledPreferenceCategory
         android:order="-150"
         android:key="top_level_profile_category">
-        <Preference
+        <com.android.settings.homepage.profile.ProfileCardPreference
             android:key="top_level_profile_card"
-            android:layout="@layout/bliss_homepage_profile_card"
             settings:controller="com.android.settings.homepage.profile.TopLevelProfileCardPreferenceController"/>
     </com.android.settingslib.widget.UntitledPreferenceCategory>
 
