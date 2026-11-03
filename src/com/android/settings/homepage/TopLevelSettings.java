@@ -62,6 +62,7 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.SettingsThemeHelper;
 
 import java.util.List;
+import java.util.Set;
 
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements SplitLayoutListener,
@@ -70,6 +71,10 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     private static final String TAG = "TopLevelSettings";
     private static final String SAVED_HIGHLIGHT_MIXIN = "highlight_mixin";
     private static final String PREF_KEY_SUPPORT = "top_level_support";
+    private static final String PREF_KEY_PROFILE_CARD = "top_level_profile_card";
+    // These entries open outside the right pane, so they never own the two-pane highlight.
+    private static final Set<String> NON_HIGHLIGHTABLE_KEYS =
+            Set.of(PREF_KEY_SUPPORT, PREF_KEY_PROFILE_CARD);
 
     private boolean mIsEmbeddingActivityEnabled;
     private TopLevelHighlightMixin mHighlightMixin;
@@ -300,10 +305,14 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
 
     /** Highlight a preference with specified preference key */
     public void setHighlightPreferenceKey(String prefKey) {
-        // Skip Tips & support since it's full screen
-        if (mHighlightMixin != null && !TextUtils.equals(prefKey, PREF_KEY_SUPPORT)) {
+        if (mHighlightMixin != null && isHighlightable(prefKey)) {
             mHighlightMixin.setHighlightPreferenceKey(prefKey);
         }
+    }
+
+    @VisibleForTesting
+    static boolean isHighlightable(String prefKey) {
+        return prefKey == null || !NON_HIGHLIGHTABLE_KEYS.contains(prefKey);
     }
 
     /** Returns whether clicking the specified preference is considered as a duplicate click. */
@@ -313,6 +322,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
          * 2. the target preference is highlighted, and
          * 3. the current activity is embedded */
         return mHighlightMixin != null
+                && isHighlightable(pref.getKey())
                 && TextUtils.equals(pref.getKey(), mHighlightMixin.getHighlightPreferenceKey())
                 && isActivityEmbedded();
     }

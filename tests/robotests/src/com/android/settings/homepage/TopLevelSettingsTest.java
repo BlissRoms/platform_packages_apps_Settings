@@ -105,4 +105,24 @@ public class TopLevelSettingsTest {
 
         assertThat(mSettings.isRunningInFreeformWindow(recyclerView)).isFalse();
     }
+
+    @Test
+    public void isHighlightable_profileCard_returnsFalse() {
+        assertThat(TopLevelSettings.isHighlightable("top_level_profile_card")).isFalse();
+    }
+
+    @Test
+    public void isHighlightable_support_returnsFalse() {
+        assertThat(TopLevelSettings.isHighlightable("top_level_support")).isFalse();
+    }
+
+    @Test
+    public void isHighlightable_regularEntry_returnsTrue() {
+        assertThat(TopLevelSettings.isHighlightable("top_level_network")).isTrue();
+    }
+
+    @Test
+    public void isHighlightable_nullKey_returnsTrue() {
+        assertThat(TopLevelSettings.isHighlightable(null)).isTrue();
+    }
 }
