@@ -6,7 +6,7 @@
 package com.android.settings.homepage.profile
 
 import android.accounts.Account
-import android.app.Application
+import android.app.Activity
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
@@ -29,12 +29,14 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.kotlin.mock
+import org.robolectric.Robolectric
 import org.robolectric.Shadows.shadowOf
 
 @RunWith(AndroidJUnit4::class)
 class TopLevelProfileCardPreferenceControllerTest {
 
     private val context: Context = ApplicationProvider.getApplicationContext()
+    private val activity: Activity = Robolectric.buildActivity(Activity::class.java).setup().get()
     private val repository = FakeProfileCardRepository()
     private val owner: LifecycleOwner = mock()
 
@@ -226,7 +228,7 @@ class TopLevelProfileCardPreferenceControllerTest {
     }
 
     private fun controller(config: ProfileCardConfig = config()) =
-        TopLevelProfileCardPreferenceController(context, KEY, repository, config)
+        TopLevelProfileCardPreferenceController(activity, KEY, repository, config)
 
     private fun config() =
         ProfileCardConfig(
@@ -235,8 +237,7 @@ class TopLevelProfileCardPreferenceControllerTest {
             accountIntentUri = "intent:#Intent;action=$VIEW_ACCOUNT;end",
         )
 
-    private fun nextStartedActivity(): Intent =
-        shadowOf(context as Application).nextStartedActivity
+    private fun nextStartedActivity(): Intent = shadowOf(activity).nextStartedActivity
 
     private fun assertOpenedAccountDetail() {
         val intent = nextStartedActivity()

@@ -21,6 +21,7 @@ import androidx.preference.PreferenceGroup
 import androidx.preference.PreferenceScreen
 import com.android.settings.R
 import com.android.settings.accounts.AccountDetailDashboardFragment
+import com.android.settings.activityembedding.ActivityEmbeddingRulesController
 import com.android.settings.core.BasePreferenceController
 import com.android.settings.core.SubSettingLauncher
 import com.android.settings.homepage.profile.ProfileCardState.AddAccount
@@ -96,7 +97,7 @@ internal constructor(
     private fun openAccount(account: Account) {
         val accountIntent = accountIntent(account)
         if (accountIntent != null) {
-            mContext.startActivity(accountIntent)
+            launchBesideHomepage(accountIntent)
         } else {
             openAccountDetail(account)
         }
@@ -139,10 +140,25 @@ internal constructor(
     }
 
     private fun addAccount() {
-        mContext.startActivity(
+        launchBesideHomepage(
             Intent(Settings.ACTION_ADD_ACCOUNT)
                 .putExtra(Settings.EXTRA_ACCOUNT_TYPES, arrayOf(config.accountType))
         )
+    }
+
+    private fun launchBesideHomepage(intent: Intent) {
+        val component = intent.component ?: repository.resolveSystemActivity(intent)
+        if (component != null) {
+            ActivityEmbeddingRulesController.registerTwoPanePairRuleForSettingsHome(
+                mContext,
+                component,
+                intent.action,
+                false,
+                true,
+                false,
+            )
+        }
+        mContext.startActivity(intent)
     }
 
     companion object {
