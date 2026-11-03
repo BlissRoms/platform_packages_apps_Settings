@@ -30,4 +30,8 @@
 
     <!-- CPU name -->
     <string name="config_cpu_name" translatable="false"></string>
+
+    <!-- Homepage profile card -->
+    <bool name="config_show_profile_card_in_homepage">true</bool>
+    <string name="config_profile_card_account_type" translatable="false">com.google</string>
 </resources>
