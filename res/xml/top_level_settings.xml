@@ -22,6 +22,16 @@
     android:title="Settings">
 
     <PreferenceCategory
+        android:order="-150"
+        android:key="top_level_profile_category"
+        android:layout="@layout/settingslib_untitled_preference_category">
+        <Preference
+            android:key="top_level_profile_card"
+            android:layout="@layout/bliss_homepage_profile_card"
+            settings:controller="com.android.settings.homepage.profile.TopLevelProfileCardPreferenceController"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:order="-140"
         android:key="top_level_account_category"
         android:layout="@layout/settingslib_untitled_preference_category">

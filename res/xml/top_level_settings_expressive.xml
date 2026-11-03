@@ -21,6 +21,15 @@
     android:key="top_level_settings">
 
     <com.android.settingslib.widget.UntitledPreferenceCategory
+        android:order="-150"
+        android:key="top_level_profile_category">
+        <Preference
+            android:key="top_level_profile_card"
+            android:layout="@layout/bliss_homepage_profile_card"
+            settings:controller="com.android.settings.homepage.profile.TopLevelProfileCardPreferenceController"/>
+    </com.android.settingslib.widget.UntitledPreferenceCategory>
+
+    <com.android.settingslib.widget.UntitledPreferenceCategory
         android:order="-130"
         android:key="top_level_connectivity_category">
         <com.android.settings.widget.HomepagePreference
