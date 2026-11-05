@@ -18,22 +18,21 @@ package com.android.settings.system
 
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.telephony.CarrierConfigManager
 import android.util.Log
 import android.telephony.TelephonyManager
 import com.android.settings.network.telephony.safeGetConfig
 
 class ClientInitiatedActionRepository(private val context: Context) {
-    private val configManager: CarrierConfigManager? =
-        context.getSystemService(CarrierConfigManager::class.java)
+    private val configManager = context.getSystemService(CarrierConfigManager::class.java)
 
     /**
      * Trigger client initiated action (send intent) on system update
      */
     fun onSystemUpdate() {
+        if (!context.packageManager.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) return
         val configManager = configManager ?: return
-        val telephonyManager = context.getSystemService(TelephonyManager::class.java) ?: return
-        if (telephonyManager.phoneType == TelephonyManager.PHONE_TYPE_NONE) return
         val bundle =
             configManager.safeGetConfig(
                 keys = listOf(

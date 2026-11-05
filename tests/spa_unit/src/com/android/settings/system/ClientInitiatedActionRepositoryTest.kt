@@ -18,6 +18,7 @@ package com.android.settings.system
 
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.telephony.CarrierConfigManager
 import android.telephony.TelephonyManager
 import androidx.core.os.persistableBundleOf
@@ -38,14 +39,14 @@ import org.mockito.kotlin.verify
 class ClientInitiatedActionRepositoryTest {
     private val mockCarrierConfigManager = mock<CarrierConfigManager>()
 
-    private val mockTelephonyManager = mock<TelephonyManager> {
-        on { phoneType } doReturn TelephonyManager.PHONE_TYPE_GSM
+    private val mockPackageManager = mock<PackageManager> {
+        on { hasSystemFeature(PackageManager.FEATURE_TELEPHONY) } doReturn true
     }
 
     private val context = mock<Context> {
         on { applicationContext } doReturn mock
         on { getSystemService(CarrierConfigManager::class.java) } doReturn mockCarrierConfigManager
-        on { getSystemService(TelephonyManager::class.java) } doReturn mockTelephonyManager
+        on { packageManager } doReturn mockPackageManager
     }
 
     private val repository = ClientInitiatedActionRepository(context)
@@ -54,6 +55,7 @@ class ClientInitiatedActionRepositoryTest {
     fun onSystemUpdate_noCarrierConfigManager_doesNotThrowAndDoesNothing() {
         val noTelephonyContext = mock<Context> {
             on { applicationContext } doReturn mock
+            on { packageManager } doReturn mockPackageManager
         }
 
         ClientInitiatedActionRepository(noTelephonyContext).onSystemUpdate()
@@ -62,9 +64,9 @@ class ClientInitiatedActionRepositoryTest {
     }
 
     @Test
-    fun onSystemUpdate_noPhone_doNothing() {
-        mockTelephonyManager.stub {
-            on { phoneType } doReturn TelephonyManager.PHONE_TYPE_NONE
+    fun onSystemUpdate_noTelephonyFeature_doNothing() {
+        mockPackageManager.stub {
+            on { hasSystemFeature(PackageManager.FEATURE_TELEPHONY) } doReturn false
         }
 
         repository.onSystemUpdate()
